@@ -1,0 +1,8 @@
+# Apple's design resources downloaded by scripts/fetch_apple_design_resources.py
+/apple-resources/
+
+.DS_Store
+__pycache__/
+*.pyc
+.build/
+node_modules/
