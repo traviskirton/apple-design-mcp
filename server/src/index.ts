@@ -19,7 +19,7 @@ import type { OutlineLoader } from "./uikit.js";
 import { designValues, valuesPack, VALUE_PLATFORMS, VALUE_TOPICS } from "./values.js";
 
 const SERVER_NAME = "apple-design";
-const SERVER_VERSION = "0.9.0";
+const SERVER_VERSION = "0.9.1";
 
 const HIG_DATE = higPack.pack_version;
 

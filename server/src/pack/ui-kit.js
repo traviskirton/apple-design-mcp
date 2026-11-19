@@ -1,7 +1,7 @@
 // Written by scripts/build-ui-kit-pack.mjs from Apple's UI kits for Figma. Do not edit.
 export default {
  "pack_version": "2026-11-19",
- "generated_at": "2026-11-19T14:30:22.801Z",
+ "generated_at": "2026-11-19T14:55:10.597Z",
  "source": {
   "name": "Apple Design Resources, UI kits for Figma",
   "url": "https://developer.apple.com/design/resources/",
@@ -1738,7 +1738,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1004D4"
+       "default": "SF Symbol square.dashed"
       },
       {
        "name": "Label",
@@ -1833,7 +1833,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+10045A"
+       "default": "SF Symbol lock.rotation.open"
       },
       {
        "name": "Title",
@@ -1879,7 +1879,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+10045A"
+       "default": "SF Symbol lock.rotation.open"
       },
       {
        "name": "Detail",
@@ -1925,7 +1925,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+10045A"
+       "default": "SF Symbol lock.rotation.open"
       }
      ],
      "variants": [
@@ -1990,7 +1990,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+10045A"
+       "default": "SF Symbol lock.rotation.open"
       },
       {
        "name": "Title",
@@ -2036,7 +2036,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+10045A"
+       "default": "SF Symbol lock.rotation.open"
       },
       {
        "name": "Detail",
@@ -2082,7 +2082,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+10045A"
+       "default": "SF Symbol lock.rotation.open"
       }
      ],
      "variants": [
@@ -2140,7 +2140,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+10074C"
+       "default": "SF Symbol flashlight.off.fill"
       }
      ],
      "variants": [
@@ -2585,7 +2585,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1002C2"
+       "default": "SF Symbol star"
       }
      ],
      "variants": [
@@ -2632,7 +2632,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+10026C"
+       "default": "SF Symbol person.2.fill"
       },
       {
        "name": "Show Symbol",
@@ -2661,7 +2661,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1004D4"
+       "default": "SF Symbol square.dashed"
       }
      ],
      "variants": [
@@ -2982,7 +2982,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+100284"
+       "default": "SF Symbol play.fill"
       }
      ],
      "variants": [
@@ -3114,7 +3114,7 @@ export default {
       {
        "name": "Label",
        "type": "text",
-       "default": "SF Symbol U+100185"
+       "default": "SF Symbol checkmark"
       }
      ],
      "variants": [
@@ -3140,7 +3140,7 @@ export default {
       {
        "name": "Label",
        "type": "text",
-       "default": "SF Symbol U+100185"
+       "default": "SF Symbol checkmark"
       }
      ],
      "variants": [
@@ -3166,7 +3166,7 @@ export default {
       {
        "name": "Label",
        "type": "text",
-       "default": "SF Symbol U+100185"
+       "default": "SF Symbol checkmark"
       }
      ],
      "variants": [
@@ -3622,7 +3622,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1002C3"
+       "default": "SF Symbol star.fill"
       }
      ],
      "variants": [
@@ -3770,7 +3770,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+100C11"
+       "default": "SF Symbol arrow.forward"
       },
       {
        "name": "Letter",
@@ -3980,7 +3980,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1004D4"
+       "default": "SF Symbol square.dashed"
       }
      ],
      "variants": [
@@ -4247,7 +4247,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+100C11"
+       "default": "SF Symbol arrow.forward"
       },
       {
        "name": "Letter",
@@ -4463,7 +4463,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+10013C"
+       "default": "SF Symbol arrow.uturn.left"
       }
      ],
      "variants": [
@@ -4490,7 +4490,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+10013C"
+       "default": "SF Symbol arrow.uturn.left"
       }
      ],
      "variants": [
@@ -4517,7 +4517,7 @@ export default {
       {
        "name": "Label",
        "type": "text",
-       "default": "SF Symbol U+100142"
+       "default": "SF Symbol arrow.right.to.line"
       }
      ],
      "variants": [
@@ -4544,7 +4544,7 @@ export default {
       {
        "name": "Label",
        "type": "text",
-       "default": "SF Symbol U+101086"
+       "default": "SF Symbol return.left"
       }
      ],
      "variants": [
@@ -4720,7 +4720,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1004DE"
+       "default": "SF Symbol circle.dashed"
       }
      ],
      "variants": [
@@ -4750,7 +4750,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1004DE"
+       "default": "SF Symbol circle.dashed"
       }
      ],
      "variants": [
@@ -5328,7 +5328,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1004D4"
+       "default": "SF Symbol square.dashed"
       },
       {
        "name": "Show Control",
@@ -5396,7 +5396,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1004D4"
+       "default": "SF Symbol square.dashed"
       },
       {
        "name": "Label",
@@ -5447,7 +5447,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1002C2"
+       "default": "SF Symbol star"
       },
       {
        "name": "Label",
@@ -5977,7 +5977,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1004D4"
+       "default": "SF Symbol square.dashed"
       },
       {
        "name": "Show Detail",
@@ -6052,7 +6052,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1004D4"
+       "default": "SF Symbol square.dashed"
       },
       {
        "name": "Title",
@@ -6367,12 +6367,12 @@ export default {
       {
        "name": "Symbol - Max",
        "type": "text",
-       "default": "SF Symbol U+1004CF"
+       "default": "SF Symbol hare.fill"
       },
       {
        "name": "Symbol - Min",
        "type": "text",
-       "default": "SF Symbol U+1004D1"
+       "default": "SF Symbol tortoise.fill"
       },
       {
        "name": "Show Symbols",
@@ -6665,7 +6665,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+100C31"
+       "default": "SF Symbol sidebar.left"
       }
      ],
      "variants": [
@@ -6720,7 +6720,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1002AB"
+       "default": "SF Symbol magnifyingglass"
       }
      ],
      "variants": [
@@ -6746,7 +6746,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1002AB"
+       "default": "SF Symbol magnifyingglass"
       }
      ],
      "variants": [
@@ -6772,7 +6772,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1002AB"
+       "default": "SF Symbol magnifyingglass"
       }
      ],
      "variants": [
@@ -6798,7 +6798,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1002C3"
+       "default": "SF Symbol star.fill"
       },
       {
        "name": "Label",
@@ -7198,7 +7198,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1004D4"
+       "default": "SF Symbol square.dashed"
       }
      ],
      "variants": [
@@ -7226,7 +7226,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1004D4"
+       "default": "SF Symbol square.dashed"
       }
      ],
      "variants": [
@@ -7888,7 +7888,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+100FEB"
+       "default": "SF Symbol app.dashed"
       }
      ],
      "variants": [
@@ -7904,7 +7904,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+100656"
+       "default": "SF Symbol umbrella.fill"
       },
       {
        "name": "Value",
@@ -7956,7 +7956,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1001B4"
+       "default": "SF Symbol sunset.fill"
       }
      ],
      "variants": [
@@ -7972,7 +7972,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+100FEB"
+       "default": "SF Symbol app.dashed"
       }
      ],
      "variants": [
@@ -7988,7 +7988,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+100FEB"
+       "default": "SF Symbol app.dashed"
       },
       {
        "name": "Label",
@@ -8040,7 +8040,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+100FEB"
+       "default": "SF Symbol app.dashed"
       },
       {
        "name": "Label",
@@ -8090,7 +8090,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+100FEB"
+       "default": "SF Symbol app.dashed"
       },
       {
        "name": "Line 1",
@@ -8115,7 +8115,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+100FEB"
+       "default": "SF Symbol app.dashed"
       },
       {
        "name": "Title",
@@ -8160,17 +8160,17 @@ export default {
       {
        "name": "Symbol 1",
        "type": "text",
-       "default": "SF Symbol U+100FEB"
+       "default": "SF Symbol app.dashed"
       },
       {
        "name": "Symbol 2",
        "type": "text",
-       "default": "SF Symbol U+100FEB"
+       "default": "SF Symbol app.dashed"
       },
       {
        "name": "Symbol 3",
        "type": "text",
-       "default": "SF Symbol U+100FEB"
+       "default": "SF Symbol app.dashed"
       },
       {
        "name": "Line 1 Leading",
@@ -8215,7 +8215,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+100FEB"
+       "default": "SF Symbol app.dashed"
       },
       {
        "name": "Line 1",
@@ -8255,7 +8255,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+100FEB"
+       "default": "SF Symbol app.dashed"
       }
      ],
      "variants": [
@@ -8270,17 +8270,17 @@ export default {
       {
        "name": "Bullet 1",
        "type": "text",
-       "default": "SF Symbol U+100000"
+       "default": "SF Symbol circle"
       },
       {
        "name": "Bullet 2",
        "type": "text",
-       "default": "SF Symbol U+100000"
+       "default": "SF Symbol circle"
       },
       {
        "name": "Bullet 3",
        "type": "text",
-       "default": "SF Symbol U+100000"
+       "default": "SF Symbol circle"
       },
       {
        "name": "Line 1",
@@ -9785,7 +9785,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1004D4"
+       "default": "SF Symbol square.dashed"
       }
      ],
      "variants": [
@@ -9839,7 +9839,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1004D4"
+       "default": "SF Symbol square.dashed"
       }
      ],
      "variants": [
@@ -10888,7 +10888,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+100241"
+       "default": "SF Symbol doc.on.doc"
       },
       {
        "name": "Show Symbol",
@@ -11892,7 +11892,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+100215"
+       "default": "SF Symbol folder"
       },
       {
        "name": "Label",
@@ -12788,7 +12788,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1004D4"
+       "default": "SF Symbol square.dashed"
       }
      ],
      "variants": [
@@ -12816,7 +12816,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1004D4"
+       "default": "SF Symbol square.dashed"
       }
      ],
      "variants": [
@@ -12933,7 +12933,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1004D4"
+       "default": "SF Symbol square.dashed"
       }
      ],
      "variants": [
@@ -13054,7 +13054,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1004D4"
+       "default": "SF Symbol square.dashed"
       }
      ],
      "variants": [
@@ -13609,7 +13609,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+100215"
+       "default": "SF Symbol folder"
       }
      ],
      "variants": [
@@ -13649,7 +13649,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+100215"
+       "default": "SF Symbol folder"
       },
       {
        "name": "Show Symbol",
@@ -14945,7 +14945,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1001FE"
+       "default": "SF Symbol exclamationmark.triangle"
       }
      ],
      "variants": [
@@ -15081,7 +15081,7 @@ export default {
       {
        "name": "Label",
        "type": "text",
-       "default": "SF Symbol U+100184"
+       "default": "SF Symbol xmark"
       }
      ],
      "variants": [
@@ -15107,7 +15107,7 @@ export default {
       {
        "name": "Label",
        "type": "text",
-       "default": "SF Symbol U+10017C"
+       "default": "SF Symbol plus"
       }
      ],
      "variants": [
@@ -15193,7 +15193,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1002D2"
+       "default": "SF Symbol location.fill"
       }
      ],
      "variants": [
@@ -15221,7 +15221,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1002D2"
+       "default": "SF Symbol location.fill"
       },
       {
        "name": "Subtitle",
@@ -15288,7 +15288,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+101309"
+       "default": "SF Symbol figure.outdoor.cycle"
       }
      ],
      "variants": [
@@ -15701,12 +15701,12 @@ export default {
       {
        "name": "Symbol - Trailing",
        "type": "text",
-       "default": "SF Symbol U+1002A9"
+       "default": "SF Symbol speaker.3.fill"
       },
       {
        "name": "Symbol - Leading",
        "type": "text",
-       "default": "SF Symbol U+1002A5"
+       "default": "SF Symbol speaker.1.fill"
       }
      ],
      "variants": [
@@ -15993,7 +15993,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1004D4"
+       "default": "SF Symbol square.dashed"
       }
      ],
      "variants": [
