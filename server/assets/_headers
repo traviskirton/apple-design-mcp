@@ -9,3 +9,7 @@
 /ui-kit/*
   Access-Control-Allow-Origin: *
   Cache-Control: public, max-age=86400
+
+/bezels/*
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=86400
