@@ -6,6 +6,7 @@
 //                                                        with the system's own rendering, pixel by pixel
 //   swift run -c release extract-symbols --verify-only 60  compare without writing anything
 import AppKit
+import PDFVector
 import SwiftUI
 
 let args = CommandLine.arguments
@@ -33,36 +34,6 @@ let svgDir = repo.appendingPathComponent("server/assets/symbols")
 
 // MARK: - Verification
 
-/// Reads back the path data this tool writes (M, L, Q, C, Z with absolute coordinates).
-func parsePathData(_ d: String) -> CGMutablePath {
-    let path = CGMutablePath()
-    let scanner = Scanner(string: d)
-    scanner.charactersToBeSkipped = CharacterSet(charactersIn: " ,")
-    func n() -> CGFloat { CGFloat(scanner.scanDouble() ?? 0) }
-    func p() -> CGPoint { let x = n(); return CGPoint(x: x, y: n()) }
-    while !scanner.isAtEnd {
-        guard let c = scanner.scanCharacter() else { break }
-        switch c {
-        case "M": path.move(to: p())
-        case "L": path.addLine(to: p())
-        case "Q": let a = p(); path.addQuadCurve(to: p(), control: a)
-        case "C": let a = p(), b = p(); path.addCurve(to: p(), control1: a, control2: b)
-        case "Z": path.closeSubpath()
-        default: break
-        }
-    }
-    return path
-}
-
-/// Coverage (alpha, 0 to 255) of each pixel.
-func mask(width: Int, height: Int, draw: (CGContext) -> Void) -> [Int] {
-    let ctx = CGContext(data: nil, width: width, height: height, bitsPerComponent: 8, bytesPerRow: width,
-                        space: CGColorSpaceCreateDeviceGray(), bitmapInfo: CGImageAlphaInfo.alphaOnly.rawValue)!
-    draw(ctx)
-    let buf = ctx.data!.bindMemory(to: UInt8.self, capacity: width * height)
-    return (0..<(width * height)).map { Int(buf[$0]) }
-}
-
 /// Overlap of the SVG's pixels and the system's own drawing of the symbol:
 /// the PDF that SwiftUI draws, rasterized by Core Graphics with its soft masks, at 2x.
 @MainActor func overlap(_ name: String, svg: String) -> Double? {
@@ -72,8 +43,8 @@ func mask(width: Int, height: Int, draw: (CGContext) -> Void) -> [Int] {
     let (W, H) = (w * 2, h * 2)
     guard let pdf = renderPDF(name), let provider = CGDataProvider(data: pdf as CFData),
           let page = CGPDFDocument(provider)?.page(at: 1) else { print("  \(name): no reference drawing"); return nil }
-    let a = mask(width: W, height: H) { ctx in ctx.scaleBy(x: 2, y: 2); ctx.drawPDFPage(page) }
-    let b = mask(width: W, height: H) { ctx in
+    let a = coverage(width: W, height: H) { ctx in ctx.scaleBy(x: 2, y: 2); ctx.drawPDFPage(page) }
+    let b = coverage(width: W, height: H) { ctx in
         ctx.scaleBy(x: 2, y: 2); ctx.translateBy(x: 0, y: CGFloat(h)); ctx.scaleBy(x: 1, y: -1)
         let re = try! NSRegularExpression(pattern: #"<path( fill-rule="evenodd")?(?: fill-opacity="([\d.]+)")? d="([^"]*)"/>"#)
         for m in re.matches(in: svg, range: NSRange(svg.startIndex..., in: svg)) {
