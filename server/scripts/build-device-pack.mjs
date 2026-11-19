@@ -10,7 +10,7 @@
 //
 // Where the numbers come from, for each device type that `xcrun simctl list devicetypes`
 // reports: Contents/Resources/capabilities.plist (screen size, scale, pixels per inch,
-// corner radius, Dynamic Island) and Contents/Resources/profile.plist (the list of displays).
+// corner radius, Dynamic Island, and `displays[]`, the list of displays).
 import { execFileSync } from "node:child_process";
 import { existsSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -39,7 +39,9 @@ function corners(d) {
   return { top_left: tl, top_right: tr, bottom_left: bl, bottom_right: br };
 }
 
+// Some plists store numbers as strings ("3840", "1.0"), so every value is read as a number.
 function screen(widthPx, heightPx, scale, ppi, radius, nativeOrientation) {
+  [widthPx, heightPx, scale, ppi] = [widthPx, heightPx, scale, ppi].map((v) => (v === undefined ? v : Number(v)));
   return {
     width_pt: round(widthPx / scale),
     height_pt: round(heightPx / scale),
@@ -66,21 +68,33 @@ for (const type of devicetypes) {
     continue;
   }
 
-  // The device's own displays; external ones (TV out, CarPlay) and resizable scenes are left out.
-  const all = caps.displays ?? profile.displays ?? [];
-  const label = (d) => String(d.name ?? d.displayName ?? d.identifier ?? d.displayType ?? "");
-  const own = all.filter((d) => /^primary/i.test(label(d)) && d.width && d.height && d.scale);
+  // The device's own displays live in capabilities.plist `displays[]`. Built-in screens have
+  // displayType "integrated" and deviceName "primary", "primary-1", ...; TV out ("tvOut"),
+  // CarPlay ("carPlay") and the resizable scene ("scene") are left out.
+  const all = caps.displays ?? [];
+  const own = all.filter(
+    (d) => (d.displayType === "integrated" || /^primary/i.test(String(d.deviceName ?? ""))) && d.width && d.height && d.scale,
+  );
+
+  const family = FAMILY[type.productFamily] ?? String(type.productFamily ?? "other").toLowerCase();
+  // Apple Watch panels report a native rotation of 90 degrees, but the watch is worn and designed
+  // for in portrait, so only iPhone and iPad screens are marked as naturally landscape.
+  const orientation = (d) => (family === "iphone" || family === "ipad" ? d.nativeOrientation : undefined);
+  // Apple TV and Vision Pro have no physical screen corners; their zero radius is left out.
+  const cornerRadius = (r) => (r === 0 && (family === "tv" || family === "vision") ? undefined : r);
 
   let screens;
   if (own.length) {
-    screens = own.map((d) => screen(d.width, d.height, d.scale, d.hdpi, corners(d) ?? caps.DeviceCornerRadius, d.nativeOrientation));
+    screens = own.map((d) =>
+      screen(d.width, d.height, d.scale, d.hdpi, cornerRadius(corners(d) ?? caps.DeviceCornerRadius), orientation(d)),
+    );
   } else {
     const dims = caps.ScreenDimensionsCapability ?? {};
     const scale = dims["main-screen-scale"] ?? profile.mainScreenScale;
     const width = dims["main-screen-width"] ?? profile.mainScreenWidth;
     const height = dims["main-screen-height"] ?? profile.mainScreenHeight;
     if (!scale || !width || !height) continue; // no screen of its own, such as Apple TV boxes without a size
-    screens = [screen(width, height, scale, dims["main-screen-pitch"] ?? profile.mainScreenWidthDPI, caps.DeviceCornerRadius)];
+    screens = [screen(width, height, scale, dims["main-screen-pitch"] ?? profile.mainScreenWidthDPI, cornerRadius(caps.DeviceCornerRadius))];
   }
 
   // A device with two displays of its own folds: the smaller one is on the outside.
@@ -94,7 +108,7 @@ for (const type of devicetypes) {
   devices.push({
     id: type.identifier.replace("com.apple.CoreSimulator.SimDeviceType.", ""),
     name: type.name,
-    family: FAMILY[type.productFamily] ?? String(type.productFamily ?? "other").toLowerCase(),
+    family,
     ...(type.modelIdentifier ?? profile.modelIdentifier ? { model: type.modelIdentifier ?? profile.modelIdentifier } : {}),
     // The newest simulator runtime still runs it.
     current: type.maxRuntimeVersion === undefined || type.maxRuntimeVersion >= 0xffff0000,
