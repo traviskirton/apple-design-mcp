@@ -1,12 +1,13 @@
 {
   "name": "apple-design-mcp-server",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
     "pack": "node scripts/build-hig-pack.mjs",
+    "pack:devices": "node scripts/build-device-pack.mjs",
     "typecheck": "tsc --noEmit",
     "test": "node test/smoke.mjs"
   },
