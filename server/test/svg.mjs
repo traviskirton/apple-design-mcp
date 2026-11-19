@@ -112,5 +112,48 @@ check(readdirSync(join(temp, "img")).length === 1 && readFileSync(join(temp, "im
 check(moveImages(split.svg, { dir: temp, origin: "https://example.test" }).moved === 0, "a second run should change nothing");
 rmSync(temp, { recursive: true, force: true });
 
+// What Figma wrote as a picture is put back from its layers.
+{
+  const { flattened, flatLayers, match, asMarkup, redraw } = await import("../scripts/redraw-flattened.mjs");
+  const bb = (x, y, w, h) => ({ x: x + 1000, y: y + 2000, width: w, height: h });
+  const red = [{ type: "SOLID", color: { r: 1, g: 0, b: 0, a: 1 } }];
+  const root = { id: "1:1", type: "COMPONENT", absoluteBoundingBox: bb(0, 0, 402, 95), children: [
+    { id: "S", type: "FRAME", children: [
+      { id: "M", type: "FRAME", isMask: true, children: [{ id: "sym", type: "TEXT", characters: "\u{1007C9}", fills: red, absoluteBoundingBox: bb(125, 22, 68, 28), absoluteRenderBounds: bb(146, 22.7, 26, 26) }] },
+      { id: "tint", type: "RECTANGLE", blendMode: "LINEAR_BURN", fills: [{ type: "SOLID", color: { r: 0, g: 136 / 255, b: 1, a: 1 } }], absoluteBoundingBox: bb(113, 16, 92, 54) },
+    ] },
+    { id: "lab", type: "TEXT", blendMode: "LINEAR_BURN", characters: "Tab 2", style: { fontWeight: 590 }, absoluteBoundingBox: bb(210, 51, 68, 12), absoluteRenderBounds: bb(231, 53.6, 23, 7.2) },
+    { id: "plain", type: "TEXT", characters: "Title", absoluteBoundingBox: bb(231, 53, 20, 7) },
+  ] };
+  const flat = `<svg><image x="145.975" y="22.6289" width="26.042" height="26.2" preserveAspectRatio="none" xlink:href="data:image/png;base64,AAAA"/><image x="230.139" y="53" width="25.5" height="8.4" preserveAspectRatio="none" style="mix-blend-mode:multiply" href="https://example.test/ui-kit-svg/img/00ff.png"/><image id="p" width="4" height="4" xlink:href="data:image/png;base64,CCCC"/></svg>`;
+  const pics = flattened(flat);
+  const under = match(pics, flatLayers(root));
+  check(pics.length === 2 && under[0].map((l) => l.id).join() === "sym" && under[1].map((l) => l.id).join() === "lab", "each picture should get the layers under it, and not a plain layer when those with the blend mode fill it");
+  {
+    const field = { id: "1:2", type: "COMPONENT", absoluteBoundingBox: bb(0, 0, 320, 200), children: [
+      { id: "F", type: "INSTANCE", blendMode: "LINEAR_BURN", cornerRadius: 100, fills: [{ type: "SOLID", color: { r: 0.5, g: 0.5, b: 0.5, a: 1 }, opacity: 0.2 }], absoluteBoundingBox: bb(10, 64, 300, 44), children: [
+        { id: "s", type: "TEXT", characters: "Search", absoluteBoundingBox: bb(50, 78, 60, 16), absoluteRenderBounds: bb(51, 79.5, 53, 12.8) } ] },
+      { id: "e", type: "VECTOR", absoluteBoundingBox: bb(32, 150, 26, 26) },
+      { id: "m", type: "TEXT", blendMode: "LINEAR_BURN", characters: "\u{1002B0}", absoluteBoundingBox: bb(340, 150, 26, 26) },
+      { id: "ph", type: "RECTANGLE", fills: [{ type: "IMAGE" }], absoluteBoundingBox: bb(0, 180, 20, 20) },
+    ] };
+    const boxes = [{ x: 10, y: 64, w: 300, h: 44 }, { x: 32, y: 150, w: 334, h: 26 }, { x: 0, y: 180, w: 20, h: 20 }];
+    const got = match(boxes, flatLayers(field));
+    check(got[0].map((l) => l.type).join() === "FILL,TEXT" && got[0][1].burn, "a group with the blend mode should bring its own fill and mark its layers");
+    check(asMarkup(got[0][0], undefined, 1, () => "x").body === '<rect x="10" y="64" width="300" height="44" rx="22" fill="#808080" fill-opacity="0.2" style="mix-blend-mode:multiply"/>', "a group's fill should be drawn as a rectangle: " + asMarkup(got[0][0], undefined, 1, () => "x").body);
+    check(got[1].map((l) => l.id).join() === "e,m", "a plain layer taken into the same picture should be found");
+    check(got[2].length === 0 && got[2].short, "a real picture should be left alone");
+  }
+  const exports = {
+    sym: `<svg width="68" height="28">\n<path id="&#244;&#128;" d="M2 1Z" fill="#FF0000"/>\n</svg>`,
+    lab: `<svg width="68" height="12">\n<g id="Label" style="mix-blend-mode:plus-darker">\n<text fill="#1A1A1A" font-family="SF Pro" font-size="10"><tspan x="21" y="9">Tab 2</tspan></text>\n</g>\n</svg>`,
+  };
+  const out = redraw(flat, pics, under.map((u, i) => u.map((l) => asMarkup(l, exports[l.id], i, () => "diamond.fill"))));
+  check(out.includes('<g transform="translate(125 22)"><path data-symbol="diamond.fill" d="M2 1Z" fill="#0088FF"/></g>'), "a masked symbol should be a marked path in the tint color: " + out);
+  check(out.includes('<g transform="translate(210 51)"><g id="Label" style="mix-blend-mode:multiply"><text fill="#1A1A1A" font-family="SF Pro, -apple-system, system-ui, sans-serif" font-size="10" font-weight="590"><tspan x="21" y="9">Tab 2</tspan></text></g></g>'), "a label with the blend mode should be text in a multiply group: " + out);
+  check(out.includes('<image id="p"') && flattened(out).length === 0, "a picture that is a real picture should stay, and the others be gone");
+  check(asMarkup(under[0][0], `<svg><image href="data:image/png;base64,AA"/></svg>`, 9, () => "x") === null, "a layer that exports as a picture should not be used");
+}
+
 console.log(failed ? `${failed} failed` : "OK");
 process.exit(failed ? 1 : 0);
