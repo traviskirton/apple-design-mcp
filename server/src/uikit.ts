@@ -33,10 +33,12 @@ const SYNONYMS: Record<string, string[]> = {
   input: ["field"], textfield: ["field"], textbox: ["field"],
   share: ["activity"], segment: ["segmented"], checkbox: ["checkboxe"],
   tabbar: ["tab"], tooltip: ["tooltip"],
+  primary: ["prominent"], filled: ["prominent"], cta: ["prominent"],
 };
 const KIT_WORDS: Record<string, KitId> = { mac: "macos", macos: "macos", watch: "watchos", watchos: "watchos", ios: "ios", ipados: "ios" };
 const DEVICE_WORDS = new Set(["iphone", "ipad", "duo"]);
-const NOISE = new Set(["the", "a", "an", "for", "of", "in", "on", "with", "and", "apple", "component", "ui", "kit"]);
+const STATE_WORDS = new Set(["on", "off", "enabled", "disabled"]);
+const NOISE = new Set(["the", "a", "an", "for", "of", "in", "with", "and", "apple", "component", "ui", "kit"]);
 // Names from earlier systems and other toolkits, per kit. watchOS still has navigation bars, so it keeps the words.
 const BARS: [RegExp, string][] = [
   [/\b(navigation|nav) bar\b|\bnavbar\b/, "toolbar top"],
@@ -44,7 +46,9 @@ const BARS: [RegExp, string][] = [
   [/\bshare sheet\b/, "activity view"],
   [/\bsearch bar\b/, "search field"],
 ];
-const PHRASES: Record<string, [RegExp, string][]> = { ios: BARS, macos: BARS, watchos: [] };
+// "list" alone means the thing lists are made of; the kit has no component of that name.
+const LISTS: [RegExp, string][] = [[/^(list|table)( view)?$/, "list row"]];
+const PHRASES: Record<string, [RegExp, string][]> = { ios: [...BARS, ...LISTS], macos: BARS, watchos: [] };
 
 /** How well a query word matches a word of a name: 3 the same word, 2 its start or end, 0 no match. */
 function wordMatch(q: string, w: string): number {
@@ -81,6 +85,8 @@ interface Query {
   devices: string[];
   /** True when the query asks for a whole example screen. */
   examples: boolean;
+  /** Words for a state ("disabled", "off"): they choose a variant, not a component. */
+  states: string[];
 }
 
 function score(e: Indexed, q: Query): number {
@@ -113,8 +119,8 @@ function score(e: Indexed, q: Query): number {
   if (q.devices.length) {
     const other = [...DEVICE_WORDS].filter((d) => !q.devices.includes(d) && e.name.includes(d));
     total -= 3 * other.length;
-  } else if (e.name.includes("ipad") || e.name.includes("duo")) total -= 0.5;
-  else if (e.name.includes("iphone")) total += 0.5;
+  } else if (own.includes("ipad") || own.includes("duo")) total -= 0.5;
+  else if (own.includes("iphone")) total += 0.5;
 
   if (e.c.helper) total -= 6;
   if (e.c.page === "Examples") total += q.examples ? 6 : -2;
@@ -136,8 +142,10 @@ function parseQuery(query: string, asked: KitId | undefined): { kit: KitId; name
   for (const [from, to] of PHRASES[kit] ?? []) text = text.replace(from, to);
   const rest = text.split(" ").filter(Boolean);
   const examples = rest.some((w) => w === "example" || w === "screen" || w === "template");
-  const content = rest.filter((w) => !NOISE.has(w) && !DEVICE_WORDS.has(w) && !["example", "screen", "template"].includes(w));
-  return { kit, named, q: { content: content.length ? content : rest.filter((w) => !DEVICE_WORDS.has(w)), devices: rest.filter((w) => DEVICE_WORDS.has(w)), examples } };
+  const content = rest.filter((w) => !NOISE.has(w) && !DEVICE_WORDS.has(w) && !STATE_WORDS.has(w) && !["example", "screen", "template"].includes(w));
+  // A query of state words only ("on") keeps them as its content.
+  const states = content.length ? rest.filter((w) => STATE_WORDS.has(w)) : [];
+  return { kit, named, q: { content: content.length ? content : rest.filter((w) => !DEVICE_WORDS.has(w)), devices: rest.filter((w) => DEVICE_WORDS.has(w)), examples, states } };
 }
 
 function findIn(kit: KitId, query: string, q: Query): Indexed[] {
@@ -172,32 +180,65 @@ export function findComponents(query: string, asked?: KitId): { kit: KitId; hits
 
 // ---------- variants ----------
 
-/** The variant Figma shows first: the one holding the first value of every variant property. */
+// The value that is a component's everyday state, where a property has one: an enabled, idle,
+// medium-size button that is not destructive, on an iPhone.
+const USUAL: [RegExp, RegExp][] = [
+  [/destructive|disabled/i, /^(false|no|off)$/i],
+  [/enabled/i, /^(true|yes|on)$/i],
+  [/^state$/i, /^(idle|default|normal|enabled|rest|resting)$/i],
+  [/^size$/i, /^(medium|regular|default)$/i],
+  [/^device$/i, /^iphone/i],
+];
+
+/**
+ * The variant to show when the query names none: the one in the component's everyday state, and
+ * otherwise holding the first value of every variant property, which is the one Figma shows first.
+ */
 function defaultVariant(c: KitComponent): KitVariant {
-  const first = (c.variant_props ?? []).map((p) => `${p.name}=${p.values[0]}`);
+  const wanted = (c.variant_props ?? []).map((p) => {
+    const usual = USUAL.find(([name]) => name.test(p.name))?.[1];
+    return `${p.name}=${(usual && p.values.find((v) => usual.test(v))) ?? p.values[0]}`;
+  });
   const parts = (v: KitVariant) => v.name.split(", ");
   let bestV = c.variants[0];
   let bestN = -1;
   for (const v of c.variants) {
-    const n = first.filter((f) => parts(v).includes(f)).length;
+    const n = wanted.filter((f) => parts(v).includes(f)).length;
     if (n > bestN) [bestV, bestN] = [v, n];
   }
   return bestV;
 }
 
-/** The variant a query asks for ("large destructive button"), else the default one. */
+const YES = /^(true|yes|on)$/i;
+const NO = /^(false|no|off)$/i;
+
+/**
+ * The variant a query asks for ("large destructive button"), else the default one. A word can be a
+ * property's value ("large"), the name of a property that is switched on ("destructive") or
+ * "disabled". Among the variants that fit equally well, the one closest to the default is taken.
+ */
 function pickVariant(c: KitComponent, queryWords: string[]): KitVariant {
   const fallback = defaultVariant(c);
   if (c.variants.length < 2) return fallback;
   const nameWords = new Set(words(c.name));
   const extra = queryWords.filter((w) => !nameWords.has(w));
   if (!extra.length) return fallback;
+  const pairs = (v: KitVariant) => v.name.split(", ").map((p) => p.split("=") as [string, string | undefined]);
+  const usual = new Set(fallback.name.split(", "));
   let bestV = fallback;
   let bestN = 0;
+  let bestNear = -1;
   for (const v of c.variants) {
-    const valueWords = words(v.name.split(", ").map((p) => p.split("=")[1] ?? "").join(" "));
-    const n = extra.filter((w) => valueWords.includes(w)).length;
-    if (n > bestN) [bestV, bestN] = [v, n];
+    const has = (w: string) =>
+      pairs(v).some(([prop, value = ""]) => {
+        if (words(value).includes(w)) return true;
+        if (YES.test(value) && words(prop).includes(w)) return true;
+        if (w === "disabled") return NO.test(value) && words(prop).includes("enabled");
+        return w === "off" && NO.test(value) && words(prop).includes("on");
+      });
+    const n = extra.filter(has).length;
+    const near = v.name.split(", ").filter((p) => usual.has(p)).length;
+    if (n > bestN || (n === bestN && n > 0 && near > bestNear)) [bestV, bestN, bestNear] = [v, n, near];
   }
   return bestV;
 }
@@ -293,7 +334,7 @@ export async function searchUiKit(
       const { kit: kitId, hits, q } = findComponents(query, asked);
       const kit = pack.kits.find((k) => k.id === kitId);
       if (!kit || !hits.length) return { query, kitId, kit, hits, q, variant: undefined, svg: null, inline: false };
-      const variant = pickVariant(hits[0].c, [...q.content, ...q.devices]);
+      const variant = pickVariant(hits[0].c, [...q.content, ...q.devices, ...q.states]);
       const svg = variant.node ? await loadDrawing(kit.id, drawingFile(variant.node)) : null;
       return { query, kitId, kit, hits, q, variant, svg: svg?.trim() || null, inline: false };
     }),
