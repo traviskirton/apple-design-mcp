@@ -27,6 +27,14 @@ function describe(title: string, frame: Frame, screen?: Screen): string {
     `Frame: ${num(frame.width)} × ${num(frame.height)} points` + (frame.corner_radius ? `, body corner radius ${num(frame.corner_radius)}.` : "."),
     `Screen: ${num(s.width)} × ${num(s.height)} points at x ${num(s.x)}, y ${num(s.y)} from the frame's top-left corner${radius(screen?.corner_radius_pt)}.`,
   ];
+  // iPhone 12 mini and 13 mini: apps are laid out larger than the frame's screen area.
+  if (screen?.downsampled && Math.abs(screen.width_pt - s.width) >= 1) {
+    const percent = num((s.width / screen.width_pt) * 100);
+    facts.push(
+      `Layout: this device lays apps out at ${num(screen.width_pt)} × ${num(screen.height_pt)} points. ` +
+        `Design at that size and scale the design to ${percent}% to fit the screen area.`,
+    );
+  }
   if (frame.buttons?.length) {
     facts.push("Buttons: " + frame.buttons.map((b) => `${b.name} at x ${num(b.x)}, y ${num(b.y)}, ${num(b.width)} × ${num(b.height)}`).join("; ") + ".");
   }
