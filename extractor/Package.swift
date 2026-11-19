@@ -10,5 +10,6 @@ let package = Package(
         .target(name: "PDFVector", path: "Sources/PDFVector"),
         .executableTarget(name: "extract-symbols", dependencies: ["PDFVector"], path: "Sources/extract-symbols"),
         .executableTarget(name: "extract-frames", dependencies: ["PDFVector"], path: "Sources/extract-frames"),
+        .executableTarget(name: "pdf-to-svg", dependencies: ["PDFVector"], path: "Sources/pdf-to-svg"),
     ]
 )
