@@ -1,5 +1,6 @@
 // Search over the SF Symbols pack. Names and search data are loaded with the Worker;
-// shapes are read one file per symbol through `loadShape`.
+// shapes are read through `loadShape`: the regular weight one file per symbol, the other weights
+// from shards that each hold many symbols (the Worker may hold at most 20,000 static files).
 import prebuilt from "./pack/symbol-index.js";
 import pack from "./pack/symbols.js";
 import type { SymbolEntry } from "./pack/symbols.js";
@@ -7,8 +8,42 @@ import { buildIndex, decodeIndex, singular, stem, tokens } from "./symbol-words.
 
 export const symbolPack = pack;
 
-/** Reads a symbol's SVG, or null when the shape is not deployed. */
-export type ShapeLoader = (name: string) => Promise<string | null>;
+/** The weights of SF Symbols, lightest first. */
+export const WEIGHTS = ["ultralight", "thin", "light", "regular", "medium", "semibold", "bold", "heavy", "black"] as const;
+export type Weight = (typeof WEIGHTS)[number];
+
+/** Reads a symbol's SVG in a weight, or null when that shape is not deployed. */
+export type ShapeLoader = (name: string, weight: Weight) => Promise<string | null>;
+
+/** Shards per weight. The extractor (extract-symbols --weights) and scripts/symbol-shapes.mjs use the same. */
+const SHARDS = 256;
+
+/** The shard that holds a symbol's other weights: FNV-1a of its name's UTF-8 bytes, as two hex digits. */
+export function shardOf(name: string): string {
+  let h = 0x811c9dc5;
+  for (const b of new TextEncoder().encode(name)) {
+    h ^= b;
+    h = Math.imul(h, 0x01000193) >>> 0;
+  }
+  return (h % SHARDS).toString(16).padStart(2, "0");
+}
+
+/** The SVG of `name` in a shard's text, which holds one symbol per line: name, a tab, its SVG. */
+export function fromShard(text: string, name: string): string | null {
+  const key = name + "\t";
+  const found = text.startsWith(key) ? 0 : text.indexOf("\n" + key) + 1;
+  if (found === 0 && !text.startsWith(key)) return null;
+  const at = found;
+  const end = text.indexOf("\n", at);
+  return text.slice(at + key.length, end < 0 ? undefined : end);
+}
+
+/** A symbol's shape in `weight`, or in the regular weight when that one is not deployed. */
+async function shapeIn(load: ShapeLoader, name: string, weight: Weight): Promise<{ svg: string | null; weight: Weight }> {
+  const svg = await load(name, weight);
+  if (svg || weight === "regular") return { svg, weight };
+  return { svg: await load(name, "regular"), weight: "regular" };
+}
 
 // Words people use for an icon that SF Symbols names differently. Each word also finds symbols
 // whose name holds all the parts of one of these names.
@@ -126,16 +161,18 @@ function since(entry: SymbolEntry): string {
     .join(", ");
 }
 
-const USE =
-  "Each SVG is the regular weight, drawn with `fill=\"currentColor\"`: set the CSS `color` to tint it and set " +
-  "`width` or `height` to size it (keep the viewBox). In SwiftUI use `Image(systemName:)` with the name instead.";
+const use = (weight: Weight) =>
+  `Each SVG is the ${weight} weight, drawn with \`fill="currentColor"\`: set the CSS \`color\` to tint it and set ` +
+  "`width` or `height` to size it (keep the viewBox). Match the weight of the text beside an icon (pass `weight`). " +
+  "In SwiftUI use `Image(systemName:)` with the name" + (weight === "regular" ? " instead." : ` and \`.fontWeight(.${weight === "ultralight" ? "ultraLight" : weight})\` instead.`);
 
-function describe(entry: SymbolEntry, svg: string | null | undefined, origin: string): string {
+function describe(entry: SymbolEntry, svg: string | null | undefined, origin: string, got: Weight = "regular", asked: Weight = got): string {
   const lines = [`### ${entry.name}`];
   const facts = [since(entry) && `Available from ${since(entry)}.`, entry.restriction && `Apple's restriction: ${entry.restriction}`];
   const text = facts.filter(Boolean).join(" ");
   if (text) lines.push(text);
-  if (svg) lines.push("```svg\n" + svg.trim() + "\n```", `Also at ${origin}/symbols/${entry.name}.svg`);
+  if (svg && got !== asked) lines.push(`The ${asked} weight of this symbol is not on this server; this is the regular weight.`);
+  if (svg) lines.push("```svg\n" + svg.trim() + "\n```", `Also at ${origin}/symbols/${got === "regular" ? "" : got + "/"}${entry.name}.svg`);
   else if (svg === null) lines.push("Its shape is not loaded on this server; use the name only.");
   return lines.join("\n\n");
 }
@@ -143,9 +180,10 @@ function describe(entry: SymbolEntry, svg: string | null | undefined, origin: st
 /**
  * For each query, the matching symbol names, with the SVG of the first `withSvg` matches.
  */
-export async function lookupSymbols(queries: string[], limit: number, withSvg: number, load: ShapeLoader, origin: string): Promise<string> {
+export async function lookupSymbols(queries: string[], limit: number, withSvg: number, load: ShapeLoader, origin: string, weight: Weight = "regular"): Promise<string> {
   const parts: string[] = [];
   let shapes = 0;
+  let inWeight = false;
   for (const query of queries) {
     const hits = searchSymbols(query, limit);
     if (!hits.length) {
@@ -153,28 +191,29 @@ export async function lookupSymbols(queries: string[], limit: number, withSvg: n
       continue;
     }
     const top = hits.slice(0, withSvg);
-    const svgs = await Promise.all(top.map((e) => load(e.name)));
-    shapes += svgs.filter(Boolean).length;
+    const svgs = await Promise.all(top.map((e) => shapeIn(load, e.name, weight)));
+    shapes += svgs.filter((s) => s.svg).length;
+    inWeight ||= svgs.some((s) => s.svg && s.weight === weight);
     const rest = hits.slice(top.length).map((e) => `\`${e.name}\``);
     parts.push(
       [
         `## "${query}"`,
-        ...top.map((e, i) => describe(e, svgs[i], origin)),
+        ...top.map((e, i) => describe(e, svgs[i].svg, origin, svgs[i].weight, weight)),
         ...(rest.length ? [`Other matches (get their shapes with get_symbol): ${rest.join(", ")}`] : []),
       ].join("\n\n"),
     );
   }
-  if (shapes) parts.push(USE);
+  if (shapes) parts.push(use(inWeight ? weight : "regular"));
   parts.push(`Source: ${pack.source.name} ${pack.source.version}, ${pack.source.symbols} symbols.`);
   return parts.join("\n\n");
 }
 
 /** The SVG of each named symbol. */
-export async function readSymbols(names: string[], load: ShapeLoader, origin: string): Promise<{ text: string; ok: boolean }> {
+export async function readSymbols(names: string[], load: ShapeLoader, origin: string, weight: Weight = "regular"): Promise<{ text: string; ok: boolean }> {
   const parts: string[] = [];
   let found = 0;
   const entries = names.map((n) => findSymbol(n));
-  const svgs = await Promise.all(entries.map((e) => (e ? load(e.name) : null)));
+  const svgs = await Promise.all(entries.map((e) => (e ? shapeIn(load, e.name, weight) : null)));
   names.forEach((name, i) => {
     const entry = entries[i];
     if (!entry) {
@@ -184,9 +223,9 @@ export async function readSymbols(names: string[], load: ShapeLoader, origin: st
     }
     found++;
     const renamed = entry.name !== name.trim().toLowerCase() ? `\n\n"${name}" is now named \`${entry.name}\`.` : "";
-    parts.push(describe(entry, svgs[i], origin) + renamed);
+    parts.push(describe(entry, svgs[i]!.svg, origin, svgs[i]!.weight, weight) + renamed);
   });
-  if (svgs.some(Boolean)) parts.push(USE);
+  if (svgs.some((s) => s?.svg)) parts.push(use(svgs.some((s) => s?.svg && s.weight === weight) ? weight : "regular"));
   parts.push(`Source: ${pack.source.name} ${pack.source.version}.`);
   return { text: parts.join("\n\n"), ok: found > 0 };
 }

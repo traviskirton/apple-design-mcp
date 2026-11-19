@@ -14,7 +14,8 @@
 // its layers as groups with the layers' names as ids, text
 // as <text> (so a label can be changed), and SF Symbols as shapes. Figma writes a symbol as a
 // private-use character, which shows only where Apple's fonts are installed, so each one is
-// replaced by its outline from a second export with outlined text, and tagged data-symbol="name".
+// replaced by its outline from a second export with outlined text, and tagged data-symbol="name"
+// (and data-symbol-weight="semibold" and so on when its text is not regular).
 // Liquid Glass is written by Figma with blends that browsers do not draw; scripts/svg-for-browsers.mjs
 // rewrites those so that a browser shows the component as Figma does. Pictures inside an SVG go
 // into assets/ui-kit-svg/img/ (scripts/svg-images.mjs), addressed at --origin, the deployed Worker.
@@ -24,6 +25,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { forBrowsers, leftovers } from "./svg-for-browsers.mjs";
 import { DEFAULT_ORIGIN, moveImages } from "./svg-images.mjs";
+import { weightName } from "./symbol-shapes.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const API = "https://api.figma.com/v1";
@@ -67,7 +69,10 @@ export function mergeSymbols(text, outlined, nameOf) {
     if (!paths) { missed++; continue; }
     symbols++;
     const names = [...chars].map((ch) => nameOf(ch.codePointAt(0))).join(" ");
-    out += text.slice(last, m.index) + paths.replace(/<path /g, `<path data-symbol="${names}" `);
+    // The symbol's weight is the text's, on the text element or its group.
+    const w = /\bfont-weight="(\d+)"/.exec(m[1]) ?? /<g\b[^>]*\bfont-weight="(\d+)"[^>]*>\s*$/.exec(text.slice(Math.max(0, m.index - 600), m.index));
+    const weight = weightName(w?.[1]);
+    out += text.slice(last, m.index) + paths.replace(/<path /g, `<path data-symbol="${names}" ` + (weight !== "regular" ? `data-symbol-weight="${weight}" ` : ""));
     last = m.index + m[0].length;
   }
   return { svg: out + text.slice(last), symbols, missed };
