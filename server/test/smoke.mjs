@@ -5,7 +5,7 @@ import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StreamableHTTPClientTransport } from "@modelcontextprotocol/sdk/client/streamableHttp.js";
 
 const url = process.argv[2] ?? "http://127.0.0.1:8787/mcp";
-const client = new Client({ name: "smoke-test", version: "0.6.0" });
+const client = new Client({ name: "smoke-test", version: "0.7.0" });
 
 function check(ok, what) {
   if (!ok) throw new Error(what);
@@ -29,7 +29,7 @@ try {
 
   const { tools } = await client.listTools();
   console.log("tools:", tools.map((t) => t.name).join(", "));
-  for (const name of ["get_pack_info", "search_hig", "get_hig_page", "get_device_metrics", "get_device_frame", "search_symbols", "get_symbol"]) {
+  for (const name of ["get_pack_info", "search_hig", "get_hig_page", "get_device_metrics", "get_device_frame", "search_symbols", "get_symbol", "get_technology_assets"]) {
     check(tools.some((t) => t.name === name), `${name} is missing`);
   }
 
@@ -112,6 +112,17 @@ try {
   const named = await call("get_symbol", { names: ["heart.fill", "no.such.symbol"] });
   check(!named.isError && named.text.includes("### heart.fill"), "get_symbol did not return heart.fill");
   check(named.text.includes("There is no symbol with this name"), "get_symbol should say when a name does not exist");
+
+  const art = await call("get_technology_assets", { technologies: ["Sign in with Apple", "AirPlay", "nokia"] });
+  console.log(art.text.split("\n").filter((line) => /^#{2,3} /.test(line)).join("\n"));
+  check(!art.isError && art.text.includes("## Sign in with Apple"), "get_technology_assets did not return Sign in with Apple");
+  check(art.text.includes("## AirPlay"), "get_technology_assets did not return AirPlay");
+  check(/```svg\n<svg [^>]*viewBox="0 0 [\d.]+ [\d.]+"/.test(art.text), "technology artwork should come as SVG with a viewBox");
+  check(art.text.includes('No artwork matches "nokia"'), "get_technology_assets should say what it could not find");
+
+  const everyArt = await call("get_technology_assets");
+  check(!everyArt.isError && everyArt.text.includes("| Technology | Artwork |"), "get_technology_assets should list everything without `technologies`");
+  check(!everyArt.text.includes("<svg"), "the list of all artwork should not hold SVG");
 
   console.log("\nOK");
   await client.close();

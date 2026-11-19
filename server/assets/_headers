@@ -1,3 +1,7 @@
 /symbols/*
   Access-Control-Allow-Origin: *
   Cache-Control: public, max-age=86400
+
+/technologies/*
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=86400
