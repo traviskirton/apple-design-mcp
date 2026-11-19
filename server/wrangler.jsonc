@@ -3,5 +3,7 @@
   "name": "apple-design-mcp",
   "main": "src/index.ts",
   "compatibility_date": "2026-11-01",
+  // Downloads Apple's guidelines into src/pack/hig.js the first time. `npm run pack` refreshes them.
+  "build": { "command": "node scripts/build-hig-pack.mjs --if-missing" },
   "observability": { "enabled": true }
 }

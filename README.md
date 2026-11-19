@@ -2,7 +2,7 @@
 
 An MCP server that gives AI apps Apple's design assets and guidance: SF Symbols, design values, the Human Interface Guidelines, UI kits and device bezels.
 
-Status: planning. Nothing here is usable yet.
+Status: early. The server in `server/` answers Human Interface Guidelines lookups. SF Symbols, UI kits and other assets are not loaded yet.
 
 ## Scripts
 
