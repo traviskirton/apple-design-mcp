@@ -7,3 +7,6 @@ assets/symbols/
 
 # Apple's technology artwork (SVG and PNG), written by scripts/build-technology-pack.mjs on a Mac
 assets/technologies/
+
+# One text file per UI kit component, written by scripts/build-ui-kit-pack.mjs from the kits' .fig files
+assets/ui-kit/

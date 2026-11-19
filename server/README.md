@@ -2,7 +2,7 @@
 
 The MCP server, written in TypeScript for Cloudflare Workers.
 
-It serves Apple's Human Interface Guidelines, the screen sizes and frames of Apple devices, SF Symbols as SVG, Apple's artwork for its technologies, and the colors, text styles and sizes from Apple's UI kits. UI kit components are not loaded yet.
+It serves Apple's Human Interface Guidelines, the screen sizes and frames of Apple devices, SF Symbols as SVG, Apple's artwork for its technologies, and Apple's UI kits: their colors, text styles and sizes, and the construction of every component.
 
 | Tool | What it does |
 | --- | --- |
@@ -14,6 +14,7 @@ It serves Apple's Human Interface Guidelines, the screen sizes and frames of App
 | `get_symbol` | Returns the SVG of symbols by exact name. |
 | `get_technology_assets` | Returns Apple's own artwork for its technologies (the Sign in with Apple logo, AirPlay glyphs, Game Center icons and others): SVG for vector artwork, a PNG address for pictures. Without names it lists everything it holds. |
 | `get_design_values` | Returns the values Apple defines in its UI kits for iOS and iPadOS 27 and for macOS 27: system colors as hex (light, dark, increased contrast), text styles, standard sizes, materials and Liquid Glass settings. With `topics: ["layout"]` it returns Apple's layout guides for iPhone Duo. |
+| `search_ui_kit` | Takes a list of components (plain words such as "tab bar" or "iPad sidebar") and returns, for each, the best-matching component of Apple's UI kit for iOS and iPadOS 27, macOS 27 or watchOS 26: its variants and properties, an outline of its layers with sizes, auto layout, corner radii, colors and text styles, and the outlines of the parts it is built from. Without queries it lists a kit's components. |
 | `get_pack_info` | Reports what material is loaded, its date, and when the server answered. |
 
 `search_hig` answers a whole brief in one call because each tool call costs the app a full turn of the model, which is slow. Its reply is limited to about 40,000 characters (roughly 10,000 tokens) by default, leaves out link lists, change logs and sections written for other platforms, and lists by id whatever did not fit. Pictures are replaced by Apple's own description of each one.
@@ -70,6 +71,17 @@ Apple's UI kits for Figma define the system colors, text styles and standard siz
 - `src/pack/design-values.js`: per platform, the colors (light, dark, increased contrast, and the UIKit or AppKit name where the color is a system color), the text styles at the default size, the sizes table, the material paints, the Liquid Glass settings and the iPhone Duo layout templates. Committed, and compiled into the Worker.
 
 - `npm run pack:values` rebuilds it; it needs no Mac. The build stops if the kit's accent colors, grays or default text styles disagree with the guidelines pack. The kit's Dynamic Type table is left out because it disagrees with the guidelines at some accessibility sizes; `search_hig` holds the published table.
+
+## The UI kit pack
+
+Apple's UI kits for Figma hold its standard components: toolbars, tab bars, lists, alerts, sheets, keyboards, windows and whole example screens. A kit saved from Figma as a local copy (File, Save local copy) is a `.fig` file. `scripts/fig-dump.mjs` reads that format without any dependency, and `scripts/build-ui-kit-pack.mjs` reads every `.fig` file in `../apple-resources/` (not committed) and turns the kits into:
+
+- `src/pack/ui-kit.js`: every component of every kit with its page, variants, properties, sizes, guidelines page and the components it uses. Committed, and compiled into the Worker (about 490 KB).
+- `assets/ui-kit/KIT/ID.txt`: one text file per component with the outline of each variant's layers. Not committed; a deploy from a machine without this folder leaves `search_ui_kit` with names, properties and sizes only.
+
+- `npm run pack:ui-kit` rebuilds both. It needs the `.fig` files and Node 22.15 or later, and no Mac.
+
+A component with light and dark variants is stored once, in light; `get_design_values` gives the dark value of each color. Variants with the same layers share one outline. An outline stops at 90 lines and 9 levels and does not go into instances; the reply adds the outlines of the instances' components as "Parts". Not read yet: the names of SF Symbols (an outline gives the symbol's code point) and vector shapes. The kit's "Internal Only Canvas", "Product Bezels" and "App Icons" pages are left out.
 
 ## Deploy
 
@@ -139,6 +151,8 @@ npm test           # in a second terminal
 - `src/symbols.ts`: symbol search. `src/pack/symbols.js` is the symbol pack and `src/pack/symbols.d.ts` its shape.
 - `src/technologies.ts`: technology artwork lookup. `src/pack/technologies.js` is the pack (written on a Mac, committed) and `src/pack/technologies.d.ts` its shape.
 - `src/values.ts`: the design value tables. `src/pack/design-values.js` is the pack (built from `scripts/figma/`, committed) and `src/pack/design-values.d.ts` its shape.
-- `assets/`: static files deployed with the Worker; `assets/symbols/` holds the symbol shapes and `assets/technologies/` Apple's technology artwork.
+- `src/uikit.ts`: UI kit component search. `src/pack/ui-kit.js` is the pack (committed) and `src/pack/ui-kit.d.ts` its shape.
+- `scripts/fig-dump.mjs`: reads a Figma local copy (.fig). `scripts/build-ui-kit-pack.mjs` builds the UI kit pack with it.
+- `assets/`: static files deployed with the Worker; `assets/symbols/` holds the symbol shapes, `assets/technologies/` Apple's technology artwork and `assets/ui-kit/` the component outlines.
 - `test/smoke.mjs`: connects as a real MCP client and tries every tool.
 - `wrangler.jsonc`: Cloudflare settings. `name` sets the first part of the URL.

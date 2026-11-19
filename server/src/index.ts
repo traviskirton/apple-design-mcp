@@ -14,16 +14,18 @@ import { higPack, lookupHig, platformsIn, readPage } from "./hig.js";
 import { lookupSymbols, readSymbols, symbolPack } from "./symbols.js";
 import type { ShapeLoader } from "./symbols.js";
 import { technologyAssets, technologyPack } from "./technologies.js";
+import { KIT_IDS, searchUiKit, uiKitPack } from "./uikit.js";
+import type { OutlineLoader } from "./uikit.js";
 import { designValues, valuesPack, VALUE_PLATFORMS, VALUE_TOPICS } from "./values.js";
 
 const SERVER_NAME = "apple-design";
-const SERVER_VERSION = "0.8.0";
+const SERVER_VERSION = "0.9.0";
 
 const HIG_DATE = higPack.pack_version;
 
 const PACK = {
   status: "partial",
-  note: "Human Interface Guidelines text, device screen sizes, device frames, SF Symbols (names and regular-weight shapes) and technology artwork (Sign in with Apple, AirPlay and others) and design values from Apple's UI kits (colors, text styles, sizes, materials, iPhone Duo layout guides) are loaded. UI kit components are not loaded yet.",
+  note: "Human Interface Guidelines text, device screen sizes, device frames, SF Symbols (names and regular-weight shapes), technology artwork (Sign in with Apple, AirPlay and others), design values from Apple's UI kits (colors, text styles, sizes, materials, iPhone Duo layout guides) and the kits' components (layers, sizes, layout and colors of every component) are loaded.",
   pack_version: higPack.pack_version,
   sources: [
     {
@@ -60,9 +62,15 @@ const PACK = {
       version: `${valuesPack.source.kits.join(" and ")}, read at ${valuesPack.generated_at}`,
       values: valuesPack.source.values,
     },
+    {
+      name: `${uiKitPack.source.name}, components`,
+      version: `${uiKitPack.source.kits.join(", ")}, read at ${uiKitPack.generated_at}`,
+      components: uiKitPack.source.components,
+      variants: uiKitPack.source.variants,
+    },
   ],
-  tools: ["get_pack_info", "search_hig", "get_hig_page", "get_device_metrics", "get_device_frame", "search_symbols", "get_symbol", "get_technology_assets", "get_design_values"],
-  planned_tools: ["make_asset_catalog", "make_app_icon", "search_ui_kit", "frame_screenshot"],
+  tools: ["get_pack_info", "search_hig", "get_hig_page", "get_device_metrics", "get_device_frame", "search_symbols", "get_symbol", "get_technology_assets", "get_design_values", "search_ui_kit"],
+  planned_tools: ["make_asset_catalog", "make_app_icon", "frame_screenshot"],
 };
 
 const READ_ONLY = { readOnlyHint: true, idempotentHint: true, openWorldHint: false };
@@ -88,6 +96,12 @@ function buildServer(app: string, env: Env, origin: string): McpServer {
     return res.ok ? res.text() : null;
   };
 
+  const loadOutlines: OutlineLoader = async (kit, id) => {
+    if (!env.ASSETS) return null;
+    const res = await env.ASSETS.fetch(`https://assets.local/ui-kit/${kit}/${id}.txt`);
+    return res.ok ? res.text() : null;
+  };
+
   const server = new McpServer(
     { name: SERVER_NAME, version: SERVER_VERSION },
     {
@@ -100,7 +114,9 @@ function buildServer(app: string, env: Env, origin: string): McpServer {
         "device's screen, call get_device_metrics instead of estimating. For icons, call search_symbols once with " +
         "every icon the design needs; it returns real SF Symbols as SVG, so do not substitute another icon set. For " +
         "an Apple technology's own logo or badge, such as Sign in with Apple or AirPlay, call get_technology_assets. " +
-        "For system colors, text styles and standard sizes, call get_design_values instead of recalling them.",
+        "For system colors, text styles and standard sizes, call get_design_values instead of recalling them. " +
+        "Before drawing a standard component such as a toolbar, tab bar, list row, alert, sheet or button, call " +
+        "search_ui_kit once with every component the design needs; it returns Apple's own construction of each one.",
     },
   );
 
@@ -350,6 +366,46 @@ function buildServer(app: string, env: Env, origin: string): McpServer {
     async (args) => {
       const result = designValues(args.platform ?? "ios", args.topics ?? []);
       return reply(app, "get_design_values", args, result.text, !result.ok);
+    },
+  );
+
+  server.registerTool(
+    "search_ui_kit",
+    {
+      title: "Look up Apple's UI kit components",
+      description:
+        `Look up how Apple builds its standard components, from Apple's UI kits for ${uiKitPack.source.kits.join(", ")} ` +
+        `(${uiKitPack.source.components} components, ${uiKitPack.source.variants} variants): toolbars, tab bars, sidebars, lists, ` +
+        "alerts, sheets, menus, buttons, toggles, sliders, text fields, keyboards, widgets, notifications, windows and " +
+        "whole example screens. For each query it returns the best-matching component with its variants and " +
+        "properties, and an outline of its layers: exact sizes, auto layout (direction, gap, padding), corner radii, " +
+        "colors and text styles by Apple's names, and the parts it is built from. Pass every component of the design " +
+        "in one call as `queries`, such as [\"tab bar\", \"large title toolbar\", \"list row\"]. Add a device or a " +
+        "variant's words to narrow a query, such as \"iPad sidebar\" or \"destructive button\". Use it before drawing " +
+        "or coding a standard Apple component, instead of estimating its metrics. Without `queries` it lists every component.",
+      inputSchema: {
+        queries: z
+          .array(z.string().min(1).max(120))
+          .max(12)
+          .optional()
+          .describe("One entry per component: plain words such as \"segmented control\", or a component's exact name from an earlier reply."),
+        platform: z
+          .enum(KIT_IDS)
+          .optional()
+          .describe("\"ios\" (iPhone and iPad, the default), \"macos\" or \"watchos\". A query that says \"mac\" or \"watch\" chooses its own kit."),
+        max_chars: z
+          .number()
+          .int()
+          .min(2000)
+          .max(100000)
+          .optional()
+          .describe("Approximate size limit for the whole reply, shared between the queries. Default 40000."),
+      },
+      annotations: READ_ONLY,
+    },
+    async (args) => {
+      const result = await searchUiKit(args.queries ?? [], args.platform, args.max_chars ?? 40000, loadOutlines);
+      return reply(app, "search_ui_kit", args, result.text, !result.ok);
     },
   );
 
