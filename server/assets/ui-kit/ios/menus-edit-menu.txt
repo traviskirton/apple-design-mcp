@@ -1,0 +1,8 @@
+=== 0
+- component; 232 × 44; row; padding 0 4 0 20; main center; cross center; hugs width; capsule
+  - BG: instance of Liquid Glass - Regular - Medium; 232 × 44; absolute at (0, 0)
+  - Items: frame; 172 × 18; row; cross center; hugs content; slot Items
+    - Action 1: instance of _Edit Menu Item [State=Default]; 46 × 18
+    - Action 2: instance of _Edit Menu Item [State=Default]; 63 × 18
+    - Action 3: instance of _Edit Menu Item [State=Default]; 63 × 18
+  - Menu Indicator: instance of _Menu Indicator; 36 × 36; blend linear burn

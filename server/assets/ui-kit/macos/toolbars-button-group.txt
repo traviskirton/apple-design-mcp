@@ -1,0 +1,28 @@
+=== 0
+- component; 72 × 24; row; gap 4; padding 2; cross center; hugs width
+  - BG: instance of Liquid Glass - Small [Active=False, State=Default]; 72 × 24; absolute at (0, 0)
+  - Buttons: frame; 68 × 20; row; gap 4; cross center; hugs content; slot Buttons
+    - Button: instance of _Buttons/Medium [State=Idle]; 20 × 20; blend linear burn
+    - Button: instance of _Buttons/Medium [State=Idle]; 20 × 20; blend linear burn
+    - Button: instance of _Buttons/Medium [State=Idle]; 20 × 20; blend linear burn
+=== 1
+- component; 100 × 36; row; gap 4; padding 4; cross center; hugs width
+  - BG: instance of Liquid Glass - Small [Active=False, State=Default]; 100 × 36; absolute at (0, 0)
+  - Buttons: frame; 92 × 28; row; gap 4; cross center; hugs content; slot Buttons
+    - Button: instance of _Buttons/XL [State=Idle]; 28 × 28; blend linear burn
+    - Button: instance of _Buttons/XL [State=Idle]; 28 × 28; blend linear burn
+    - Button: instance of _Buttons/XL [State=Idle]; 28 × 28; blend linear burn
+=== 2
+- component; 72 × 24; row; gap 4; padding 2; cross center; hugs width
+  - BG: instance of Liquid Glass - Small [Active=True, State=Default]; 72 × 24; absolute at (0, 0)
+  - Buttons: frame; 68 × 20; row; gap 4; cross center; hugs content; slot Buttons
+    - Button: instance of _Buttons/Medium [State=Idle]; 20 × 20; blend linear burn
+    - Button: instance of _Buttons/Medium [State=Idle]; 20 × 20; blend linear burn
+    - Button: instance of _Buttons/Medium [State=Idle]; 20 × 20; blend linear burn
+=== 3
+- component; 100 × 36; row; gap 4; padding 4; cross center; hugs width
+  - BG: instance of Liquid Glass - Small [Active=True, State=Default]; 100 × 36; absolute at (0, 0)
+  - Buttons: frame; 92 × 28; row; gap 4; cross center; hugs content; slot Buttons
+    - Button: instance of _Buttons/XL [State=Idle]; 28 × 28; blend linear burn
+    - Button: instance of _Buttons/XL [State=Idle]; 28 × 28; blend linear burn
+    - Button: instance of _Buttons/XL [State=Idle]; 28 × 28; blend linear burn

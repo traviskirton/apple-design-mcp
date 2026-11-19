@@ -1,0 +1,8 @@
+=== 0
+- component; 200 × 52; row; space between; padding 0 8 0 12; cross center
+  - Window Controls: instance of Window Controls/Standard [Active=True]; 68 × 14
+  - Button: instance of Button [Active=True, Size=Medium, State=Idle]; 24 × 24
+=== 1
+- component; 200 × 52; row; space between; padding 0 8 0 19; cross center
+  - Window Controls: instance of Window Controls/Standard [Active=True]; 68 × 14
+  - Button: instance of Button [Active=True, Size=XL, State=Idle]; 36 × 36

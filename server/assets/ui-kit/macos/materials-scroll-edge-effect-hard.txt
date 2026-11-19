@@ -1,0 +1,2 @@
+=== 0
+- component; 200 × 200; fill #ffffff at 85%; stroke #000000 at 5% 1; background blur 6

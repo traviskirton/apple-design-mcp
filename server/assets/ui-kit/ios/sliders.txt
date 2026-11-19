@@ -1,0 +1,177 @@
+=== 0
+- component; 400 × 52; column; padding 0 16 1 16; cross center
+  - Separator: instance of _Separator; 368 × 1; fills width; blend linear burn
+  - Frame: frame; 368 × 50; fills height; fills width; row; gap 12; main center; opacity 50%
+    - text SF Symbol tortoise.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Min; shown while Show Symbols
+    - Stack: frame; 280 × 50; fills width; fills height
+      - Track: instance of _Track; 280 × 6; at (0, 22)
+      - Fill: instance of _Fill; 280 × 6; at (0, 22)
+      - Ticks and Knob: frame; 248 × 24; at (16, 13)
+        - Ticks: instance of _Ticks; 248 × 4; at (0, 19); shown while Show Ticks
+        - Knob: instance of _Knob - Idle; 1.11 × 24; at (246, 0); rotated -180°
+    - text SF Symbol hare.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Max; shown while Show Symbols
+=== 1
+- component; 400 × 52; column; padding 0 16 1 16; cross center
+  - Separator: instance of _Separator; 368 × 1; fills width; blend linear burn
+  - Frame: frame; 368 × 50; fills height; fills width; row; gap 12; main center; opacity 50%
+    - text SF Symbol tortoise.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Min; shown while Show Symbols
+    - Stack: frame; 280 × 50; fills width; fills height
+      - Track: instance of _Track; 280 × 6; at (0, 22)
+      - Fill: instance of _Fill; 211.12 × 6; at (0, 22)
+      - Ticks and Knob: frame; 248 × 24; at (16, 13)
+        - Ticks: instance of _Ticks; 248 × 4; at (0, 19); shown while Show Ticks
+        - Knob: instance of _Knob - Idle; 1.1 × 24; at (185.62, 0); rotated -180°
+    - text SF Symbol hare.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Max; shown while Show Symbols
+=== 2
+- component; 400 × 52; column; padding 0 16 1 16; cross center
+  - Separator: instance of _Separator; 368 × 1; fills width; blend linear burn
+  - Frame: frame; 368 × 50; fills height; fills width; row; gap 12; cross center; opacity 50%
+    - text SF Symbol tortoise.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Min; shown while Show Symbols
+    - Stack: frame; 280 × 50; fills width; fills height
+      - Track: instance of _Track; 280 × 6; at (0, 22)
+      - Fill: instance of _Fill; 142.24 × 6; at (0, 22)
+      - Ticks and Knob: frame; 248 × 24; at (16, 13)
+        - Ticks: instance of _Ticks; 248 × 4; at (0, 19); shown while Show Ticks
+        - Knob: instance of _Knob - Idle; 1.11 × 24; at (124.56, 0); rotated -180°
+    - text SF Symbol hare.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Max; shown while Show Symbols
+=== 3
+- component; 400 × 52; column; padding 0 16 1 16; cross center
+  - Separator: instance of _Separator; 368 × 1; fills width; blend linear burn
+  - Frame: frame; 368 × 50; fills height; fills width; row; gap 12; main center; opacity 50%
+    - text SF Symbol tortoise.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Min; shown while Show Symbols
+    - Stack: frame; 280 × 50; fills width; fills height
+      - Track: instance of _Track; 280 × 6; at (0, 22)
+      - Fill: instance of _Fill; 73.92 × 6; at (0, 22)
+      - Ticks and Knob: frame; 248 × 24; at (16, 13)
+        - Ticks: instance of _Ticks; 248 × 4; at (0, 19); shown while Show Ticks
+        - Knob: instance of _Knob - Idle; 1.1 × 24; at (63.6, 0); rotated -180°
+    - text SF Symbol hare.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Max; shown while Show Symbols
+=== 4
+- component; 400 × 52; column; padding 0 16 1 16; main center
+  - Separator: instance of _Separator; 368 × 1; fills width; blend linear burn
+  - Frame: frame; 368 × 50; fills height; fills width; row; gap 12; main center; radius 0 0 1 0; opacity 50%
+    - text SF Symbol tortoise.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Min; shown while Show Symbols
+    - Stack: frame; 280 × 50; fills width; fills height
+      - Track: instance of _Track; 280 × 6; at (0, 22)
+      - Ticks and Knob: frame; 248 × 24; at (16, 13)
+        - Ticks: instance of _Ticks; 248 × 4; at (0, 19); shown while Show Ticks
+        - Knob: instance of _Knob - Idle; 1.11 × 24; at (4, 0); rotated -180°
+    - text SF Symbol hare.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Max; shown while Show Symbols
+=== 5
+- component; 400 × 52; column; padding 0 16 1 16; cross center
+  - Separator: instance of _Separator; 368 × 1; fills width; blend linear burn
+  - Frame: frame; 368 × 50; fills height; fills width; row; gap 12; main center
+    - text SF Symbol tortoise.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Min; shown while Show Symbols
+    - Stack: frame; 280 × 50; fills width; fills height
+      - Track: instance of _Track; 280 × 6; at (0, 22)
+      - Fill: instance of _Fill; 280 × 6; at (0, 22)
+      - Ticks and Knob: frame; 248 × 24; at (16, 13)
+        - Ticks: instance of _Ticks; 248 × 4; at (0, 19); shown while Show Ticks
+        - Knob: instance of _Knob - Idle; 1.11 × 24; at (246, 0); rotated -180°
+    - text SF Symbol hare.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Max; shown while Show Symbols
+=== 6
+- component; 400 × 52; column; padding 0 16 1 16; cross center
+  - Separator: instance of _Separator; 368 × 1; fills width; blend linear burn
+  - Frame: frame; 368 × 50; fills height; fills width; row; gap 12; main center
+    - text SF Symbol tortoise.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Min; shown while Show Symbols
+    - Stack: frame; 280 × 50; fills width; fills height
+      - Track: instance of _Track; 280 × 6; at (0, 22)
+      - Fill: instance of _Fill; 280 × 6; at (0, 22)
+      - Ticks and Knob: frame; 248 × 24; at (16, 13)
+        - Ticks: instance of _Ticks; 248 × 4; at (0, 19); shown while Show Ticks
+        - Knob: instance of _Knob - Pressed; 1.11 × 24; at (246, 0); rotated -180°
+    - text SF Symbol hare.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Max; shown while Show Symbols
+=== 7
+- component; 400 × 52; column; padding 0 16 1 16; cross center
+  - Separator: instance of _Separator; 368 × 1; fills width; blend linear burn
+  - Frame: frame; 368 × 50; fills height; fills width; row; gap 12; main center
+    - text SF Symbol tortoise.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Min; shown while Show Symbols
+    - Stack: frame; 280 × 50; fills width; fills height
+      - Track: instance of _Track; 280 × 6; at (0, 22)
+      - Fill: instance of _Fill; 211.12 × 6; at (0, 22)
+      - Ticks and Knob: frame; 248 × 24; at (16, 13)
+        - Ticks: instance of _Ticks; 248 × 4; at (0, 19); shown while Show Ticks
+        - Knob: instance of _Knob - Idle; 1.1 × 24; at (185.62, 0); rotated -180°
+    - text SF Symbol hare.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Max; shown while Show Symbols
+=== 8
+- component; 400 × 52; column; padding 0 16 1 16; cross center
+  - Separator: instance of _Separator; 368 × 1; fills width; blend linear burn
+  - Frame: frame; 368 × 50; fills height; fills width; row; gap 12; main center
+    - text SF Symbol tortoise.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Min; shown while Show Symbols
+    - Stack: frame; 280 × 50; fills width; fills height
+      - Track: instance of _Track; 280 × 6; at (0, 22)
+      - Fill: instance of _Fill; 211.12 × 6; at (0, 22)
+      - Ticks and Knob: frame; 248 × 24; at (16, 13)
+        - Ticks: instance of _Ticks; 248 × 4; at (0, 19); shown while Show Ticks
+        - Knob: instance of _Knob - Pressed; 1.1 × 24; at (185.62, 0); rotated -180°
+    - text SF Symbol hare.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Max; shown while Show Symbols
+=== 9
+- component; 400 × 52; column; padding 0 16 1 16; cross center
+  - Separator: instance of _Separator; 368 × 1; fills width; blend linear burn
+  - Frame: frame; 368 × 50; fills height; fills width; row; gap 12; cross center
+    - text SF Symbol tortoise.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Min; shown while Show Symbols
+    - Stack: frame; 280 × 50; fills width; fills height
+      - Track: instance of _Track; 280 × 6; at (0, 22)
+      - Fill: instance of _Fill; 142.24 × 6; at (0, 22)
+      - Ticks and Knob: frame; 248 × 24; at (16, 13)
+        - Ticks: instance of _Ticks; 248 × 4; at (0, 19); shown while Show Ticks
+        - Knob: instance of _Knob - Idle; 1.11 × 24; at (124.56, 0); rotated -180°
+    - text SF Symbol hare.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Max; shown while Show Symbols
+=== 10
+- component; 400 × 52; column; padding 0 16 1 16; cross center
+  - Separator: instance of _Separator; 368 × 1; fills width; blend linear burn
+  - Frame: frame; 368 × 50; fills height; fills width; row; gap 12; cross center
+    - text SF Symbol tortoise.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Min; shown while Show Symbols
+    - Stack: frame; 280 × 50; fills width; fills height
+      - Track: instance of _Track; 280 × 6; at (0, 22)
+      - Fill: instance of _Fill; 142.24 × 6; at (0, 22)
+      - Ticks and Knob: frame; 248 × 24; at (16, 13)
+        - Ticks: instance of _Ticks; 248 × 4; at (0, 19); shown while Show Ticks
+        - Knob: instance of _Knob - Pressed; 1.11 × 24; at (124.56, 0); rotated -180°
+    - text SF Symbol hare.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Max; shown while Show Symbols
+=== 11
+- component; 400 × 52; column; padding 0 16 1 16; cross center
+  - Separator: instance of _Separator; 368 × 1; fills width; blend linear burn
+  - Frame: frame; 368 × 50; fills height; fills width; row; gap 12; main center
+    - text SF Symbol tortoise.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Min; shown while Show Symbols
+    - Stack: frame; 280 × 50; fills width; fills height
+      - Track: instance of _Track; 280 × 6; at (0, 22)
+      - Fill: instance of _Fill; 73.92 × 6; at (0, 22)
+      - Ticks and Knob: frame; 248 × 24; at (16, 13)
+        - Ticks: instance of _Ticks; 248 × 4; at (0, 19); shown while Show Ticks
+        - Knob: instance of _Knob - Idle; 1.1 × 24; at (63.6, 0); rotated -180°
+    - text SF Symbol hare.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Max; shown while Show Symbols
+=== 12
+- component; 400 × 52; column; padding 0 16 1 16; cross center
+  - Separator: instance of _Separator; 368 × 1; fills width; blend linear burn
+  - Frame: frame; 368 × 50; fills height; fills width; row; gap 12; main center
+    - text SF Symbol tortoise.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Min; shown while Show Symbols
+    - Stack: frame; 280 × 50; fills width; fills height
+      - Track: instance of _Track; 280 × 6; at (0, 22)
+      - Fill: instance of _Fill; 73.92 × 6; at (0, 22)
+      - Ticks and Knob: frame; 248 × 24; at (16, 13)
+        - Ticks: instance of _Ticks; 248 × 4; at (0, 19); shown while Show Ticks
+        - Knob: instance of _Knob - Pressed; 1.1 × 24; at (63.6, 0); rotated -180°
+    - text SF Symbol hare.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Max; shown while Show Symbols
+=== 13
+- component; 400 × 52; column; padding 0 16 1 16; main center
+  - Separator: instance of _Separator; 368 × 1; fills width; blend linear burn
+  - Frame: frame; 368 × 50; fills height; fills width; row; gap 12; main center; radius 0 0 1 0
+    - text SF Symbol tortoise.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Min; shown while Show Symbols
+    - Stack: frame; 280 × 50; fills width; fills height
+      - Track: instance of _Track; 280 × 6; at (0, 22)
+      - Ticks and Knob: frame; 248 × 24; at (16, 13)
+        - Ticks: instance of _Ticks; 248 × 4; at (0, 19); shown while Show Ticks
+        - Knob: instance of _Knob - Idle; 1.11 × 24; at (4, 0); rotated -180°
+    - text SF Symbol hare.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Max; shown while Show Symbols
+=== 14
+- component; 400 × 52; column; padding 0 16 1 16; main center
+  - Separator: instance of _Separator; 368 × 1; fills width; blend linear burn
+  - Frame: frame; 368 × 50; fills height; fills width; row; gap 12; main center; radius 0 0 1 0
+    - text SF Symbol tortoise.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Min; shown while Show Symbols
+    - Stack: frame; 280 × 50; fills width; fills height
+      - Track: instance of _Track; 280 × 6; at (0, 22)
+      - Ticks and Knob: frame; 248 × 24; at (16, 13)
+        - Ticks: instance of _Ticks; 248 × 4; at (0, 19); shown while Show Ticks
+        - Knob: instance of _Knob - Pressed; 1.11 × 24; at (4, 0); rotated -180°
+    - text SF Symbol hare.fill; SF Pro Semibold 17/22; centered; 32 × 50; fills height; color Labels/Secondary at 60%; property Symbol - Max; shown while Show Symbols

@@ -1,0 +1,16 @@
+=== 0
+- component; 402 × 874; radius 48
+  - Home Screen: instance of Home Screen - iPhone [Widgets=Small]; 402 × 874; at (0, 0)
+  - Bezel: instance of iPhone 17 Pro [Color=Silver]; 402 × 874; at (0, 0)
+=== 1
+- component; 402 × 874; radius 48
+  - Home Screen: instance of Home Screen - iPhone [Widgets=Medium]; 402 × 874; at (0, 0)
+  - Bezel: instance of iPhone 17 Pro [Color=Silver]; 402 × 874; at (0, 0)
+=== 2
+- component; 402 × 874; radius 48
+  - Home Screen: instance of Home Screen - iPhone [Widgets=Large]; 402 × 874; at (0, 0)
+  - Bezel: instance of iPhone 17 Pro [Color=Silver]; 402 × 874; at (0, 0)
+=== 3
+- component; 402 × 874; radius 48
+  - Home Screen: instance of Home Screen - iPhone [Widgets=XL]; 402 × 874; at (0, 0)
+  - Bezel: instance of iPhone 17 Pro [Color=Silver]; 402 × 874; at (0, 0)

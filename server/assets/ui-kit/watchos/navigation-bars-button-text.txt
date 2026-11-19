@@ -1,0 +1,3 @@
+=== 0
+- component; 53 × 30; row; gap 10; padding 13 6 13 6; main center; cross center; capsule; fill #ffffff at 5%; Liquid Glass effect; uses Button/Margin - T, Button/Margin - B, Nav Bar/Button - Height
+  - text "Done"; SF Compact Medium 16/19.5; centered; 39 × 20; color Labels/Primary; property Label

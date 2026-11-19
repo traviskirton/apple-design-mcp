@@ -1,0 +1,6 @@
+=== 0
+- component; 108 × 34; row; gap 4; padding 6 10 6 14; main center; cross center; hugs width; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 108 × 34; absolute at (0, 0)
+  - text SF Symbol person.2.fill; SF Pro Medium 15/18; centered; 24 × 18; color Labels - Vibrant/Primary; blend linear burn; property Symbol; shown while Show Symbol
+  - text "Label"; SF Pro Medium 15/18; centered; 40 × 18; color Labels - Vibrant/Primary; blend linear burn; property Label
+  - text SF Symbol chevron.right; SF Pro Semibold 15/18; centered; 12 × 18; color Labels - Vibrant/Secondary; blend linear burn

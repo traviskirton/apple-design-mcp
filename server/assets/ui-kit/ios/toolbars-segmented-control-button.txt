@@ -1,0 +1,7 @@
+=== 0
+- component; 126 × 36
+  - text "Label"; SF Pro Medium 15/20; centered; 78.55 × 36; at (22.91, 0); color Labels - Vibrant/Secondary; blend linear burn
+=== 1
+- component; 126 × 36; capsule
+  - Selection: rectangle; 134 × 36; at (-4, 0); capsule; fill Fills/Tertiary at 12%; blend linear burn
+  - text "Label"; SF Pro Medium 15/20; centered; 78.55 × 36; at (22.91, 0); color Labels - Vibrant/Primary; blend linear burn

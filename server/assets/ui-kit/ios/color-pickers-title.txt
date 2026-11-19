@@ -1,0 +1,3 @@
+=== 0
+- component; 52 × 22; row; gap 10; main center; cross center; hugs content
+  - text "Colors"; style Body/Emphasized; centered; 52 × 22; color Labels - Vibrant/Primary; blend linear burn

@@ -1,0 +1,35 @@
+=== 0
+- component; 200 × 22; row; gap 6; main end; hugs height
+  - Search Menu: frame; 29 × 22; row; gap -4; padding 0 2 0 0; main center; cross center; hugs content
+    - text SF Symbol magnifyingglass; SF Pro Regular 17/22; right-aligned; 21 × 22; color Labels - Vibrant/Primary; blend linear burn
+    - text SF Symbol chevron.down; SF Pro Bold 11/22; right-aligned; 10 × 22; color Labels - Vibrant/Primary; blend linear burn
+  - Text Input: frame; 87 × 22; fills width; row; cross center; hugs height
+    - text "Find"; SF Pro Regular 17/22; 35 × 22; color Labels - Vibrant/Primary; blend linear burn; property Value
+  - Count: frame; 46 × 22; row; gap 3.5; main end; hugs content
+    - text "3"; SF Pro Regular 17/22; right-aligned; 11 × 22; color Labels - Vibrant/Secondary; blend linear burn; property Current
+    - text "of"; SF Pro Regular 17/22; right-aligned; 17 × 22; color Labels - Vibrant/Secondary; blend linear burn
+    - text "6"; SF Pro Regular 17/22; right-aligned; 11 × 22; color Labels - Vibrant/Secondary; blend linear burn; property Total
+  - text SF Symbol multiply.circle.fill; SF Pro Regular 17/22; centered; 20 × 22; color Labels - Vibrant/Secondary; blend linear burn
+=== 1
+- component; 200 × 23; row; gap 6; main center; cross center; hugs height
+  - Search Menu: frame; 29 × 22; row; gap -4; padding 0 2 0 0; main center; cross center; hugs content
+    - text SF Symbol magnifyingglass; SF Pro Regular 17/22; right-aligned; 21 × 22; color Labels - Vibrant/Primary; blend linear burn
+    - text SF Symbol chevron.down; SF Pro Bold 11/22; right-aligned; 10 × 22; color Labels - Vibrant/Primary; blend linear burn
+  - Text Input: frame; 139 × 23; fills width; row; cross center; hugs height
+    - text "Find"; SF Pro Regular 17/22; 35 × 22; color Labels - Vibrant/Primary; blend linear burn; property Value
+    - Cursor: rectangle; 2 × 23; capsule; fill Accents/Blue
+  - text SF Symbol multiply.circle.fill; SF Pro Regular 17/22; centered; 20 × 22; color Labels - Vibrant/Secondary; blend linear burn
+=== 2
+- component; 200 × 23; row; gap 6; main center; cross center; hugs height
+  - Search Menu: frame; 29 × 22; row; gap -4; padding 0 2 0 0; main center; cross center; hugs content
+    - text SF Symbol magnifyingglass; SF Pro Regular 17/22; right-aligned; 21 × 22; color Labels - Vibrant/Primary; blend linear burn
+    - text SF Symbol chevron.down; SF Pro Bold 11/22; right-aligned; 10 × 22; color Labels - Vibrant/Primary; blend linear burn
+  - Text Input: frame; 165 × 23; fills width; row; cross center; hugs height
+    - Cursor: rectangle; 2 × 23; capsule; fill Accents/Blue
+=== 3
+- component; 200 × 22; row; gap 6; main center; cross center; hugs height
+  - Search Menu: frame; 29 × 22; row; gap -4; padding 0 2 0 0; main center; cross center; hugs content
+    - text SF Symbol magnifyingglass; SF Pro Regular 17/22; right-aligned; 21 × 22; color Labels - Vibrant/Primary; blend linear burn
+    - text SF Symbol chevron.down; SF Pro Bold 11/22; right-aligned; 10 × 22; color Labels - Vibrant/Primary; blend linear burn
+  - Text Input: frame; 165 × 22; fills width; row; cross center; hugs height
+    - text "Find"; SF Pro Regular 17/22; 35 × 22; color Labels - Vibrant/Tertiary; blend linear burn

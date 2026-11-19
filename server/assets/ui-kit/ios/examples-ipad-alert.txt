@@ -1,0 +1,19 @@
+=== 0
+- component; 1210 × 834; fill Backgrounds/Primary
+  - Screen: frame; 1210 × 780; at (0, 54)
+    - Content Area: frame; 1210 × 763; at (0, 0)
+  - Toolbar - Top - iPad: instance of Toolbar - Top - iPad [Style=Title 2 Line, Tab Bar=False]; with Title "Alert", Show Subtitle off; 1210 × 54; at (0, 32)
+  - instance of Overlay - Alerts; 1210 × 834; at (0, 0)
+  - Alert: instance of Alert [Button Layout=Side-by-Side]; 300 × 307; at (455, 88)
+  - Keyboard: instance of Keyboard [Type=Default]; 1210 × 428; at (0, 406)
+  - Status bar and Menu bar- iPad: instance of Status bar and Menu bar- iPad [Full Screen=True, Menu Expanded=False, Background=Light]; 1210 × 32; at (0, 0)
+  - Bezel: instance of iPad Pro M4 11" [Color=Silver]; 1210 × 834; at (0, 0)
+=== 1
+- component; 1210 × 834; fill Backgrounds/Primary
+  - Screen: frame; 1210 × 780; at (0, 54)
+    - Content Area: frame; 1210 × 763; at (0, 0)
+  - Toolbar - Top - iPad: instance of Toolbar - Top - iPad [Style=Title 2 Line, Tab Bar=False]; with Title "Alert", Show Subtitle off; 1210 × 54; at (0, 32)
+  - instance of Overlay - Alerts; 1210 × 834; at (0, 0)
+  - Alert: instance of Alert [Button Layout=Side-by-Side]; 300 × 307; at (455, 264)
+  - Status bar and Menu bar- iPad: instance of Status bar and Menu bar- iPad [Full Screen=True, Menu Expanded=False, Background=Light]; 1210 × 32; at (0, 0)
+  - Bezel: instance of iPad Pro M4 11" [Color=Silver]; 1210 × 834; at (0, 0)

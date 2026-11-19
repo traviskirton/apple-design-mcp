@@ -1,0 +1,12 @@
+=== 0
+- component; 50 × 50; row; gap 4; main center; cross center; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 50 × 50; absolute at (0, 0)
+  - Text: instance of _Label - Symbol - Destructive Default [Is Enabled=True]; 28 × 36
+=== 1
+- component; 50 × 50; row; gap 4; main center; cross center; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 50 × 50; absolute at (0, 0)
+  - Text: instance of _Label - Symbol - Default [Is Enabled=True]; 28 × 36
+=== 2
+- component; 50 × 50; row; gap 4; main center; cross center; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=True]; 50 × 50; absolute at (0, 0)
+  - Text: instance of _Label - Symbol - Preferred [Is Enabled=True]; 28 × 36

@@ -1,0 +1,9 @@
+=== 0
+- component; 338 × 38; row; space between; cross center; hugs height
+  - Day: instance of _Day [State=Default]; 38 × 38
+  - Day: instance of _Day [State=Default]; 38 × 38
+  - Day: instance of _Day [State=Default]; 38 × 38
+  - Day: instance of _Day [State=Default]; 38 × 38
+  - Day: instance of _Day [State=Default]; 38 × 38
+  - Day: instance of _Day [State=Default]; 38 × 38
+  - Day: instance of _Day [State=Default]; 38 × 38

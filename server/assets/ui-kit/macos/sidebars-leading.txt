@@ -1,0 +1,138 @@
+=== 0
+- component; 80 × 20; row; gap 4; cross center; hugs height; radius 8
+  - Icon: frame; 28 × 16; row; main center; cross center
+    - Image Placeholder: frame; 20 × 20; radius 4; fill image
+  - text "Label"; SF Pro Medium 15/20; 48 × 20; fills width; color Miscellaneous/Sidebar/Label - Inactive; blend linear burn; property Label
+=== 1
+- component; 80 × 20; row; gap 4; cross center; hugs height; radius 8
+  - Icon: frame; 28 × 16; row; main center; cross center
+    - Image Placeholder: frame; 18 × 18; radius 4; fill image
+  - text "Label"; SF Pro Medium 15/20; 48 × 20; fills width; color Miscellaneous/Sidebar/Label - Inactive; blend linear burn; property Label
+=== 2
+- component; 80 × 16; row; gap 4; cross center; hugs height; capsule
+  - Icon: frame; 24 × 16; row; main center; cross center
+    - Image Placeholder: frame; 18 × 18; radius 4; fill image
+  - text "Label"; SF Pro Medium 13/16; 52 × 16; fills width; color Miscellaneous/Sidebar/Label - Inactive; blend linear burn; property Label
+=== 3
+- component; 80 × 16; row; gap 4; cross center; hugs height; capsule
+  - Icon: frame; 24 × 16; row; main center; cross center
+    - Image Placeholder: frame; 16 × 16; radius 4; fill image
+  - text "Label"; SF Pro Medium 13/16; 52 × 16; fills width; color Miscellaneous/Sidebar/Label - Inactive; blend linear burn; property Label
+=== 4
+- component; 80 × 16; row; gap 4; cross center; hugs height; capsule
+  - Icon: frame; 24 × 16; row; main center; cross center
+    - Image Placeholder: frame; 14 × 14; radius 3; fill image
+  - text "Label"; SF Pro Medium 11/16; 52 × 16; fills width; color Miscellaneous/Sidebar/Label - Inactive; blend linear burn; property Label
+=== 5
+- component; 80 × 16; row; gap 4; cross center; hugs height; capsule
+  - Icon: frame; 24 × 16; row; main center; cross center
+    - Image Placeholder: frame; 12 × 12; radius 3; fill image
+  - text "Label"; SF Pro Medium 11/16; 52 × 16; fills width; color Miscellaneous/Sidebar/Label - Inactive; blend linear burn; property Label
+=== 6
+- component; 80 × 20; row; gap 4; cross center; hugs height; radius 8
+  - text SF Symbol folder; SF Pro Medium 15/20; centered; 28 × 20; color Miscellaneous/Sidebar/Label - Inactive; opacity 50%; blend linear burn; property Symbol
+  - text "Label"; SF Pro Medium 15/20; 48 × 20; fills width; color Miscellaneous/Sidebar/Label - Inactive; blend linear burn; property Label
+=== 7
+- component; 80 × 16; row; gap 4; cross center; hugs height; capsule
+  - text SF Symbol folder; SF Pro Medium 13/16; centered; 24 × 16; color Miscellaneous/Sidebar/Label - Inactive; opacity 50%; blend linear burn; property Symbol
+  - text "Label"; SF Pro Medium 13/16; 52 × 16; fills width; color Miscellaneous/Sidebar/Label - Inactive; blend linear burn; property Label
+=== 8
+- component; 80 × 16; row; gap 4; cross center; hugs height; capsule
+  - text SF Symbol folder; SF Pro Medium 11/16; centered; 24 × 16; color Miscellaneous/Sidebar/Label - Inactive; opacity 50%; blend linear burn; property Symbol
+  - text "Label"; SF Pro Medium 11/16; 52 × 16; fills width; color Miscellaneous/Sidebar/Label - Inactive; blend linear burn; property Label
+=== 9
+- component; 80 × 20; row; gap 4; cross center; hugs height; radius 8
+  - text SF Symbol folder; SF Pro Medium 15/20; centered; 28 × 20; color Miscellaneous/Sidebar/Label - Inactive; blend linear burn; property Symbol
+  - text "Label"; SF Pro Medium 15/20; 48 × 20; fills width; color Miscellaneous/Sidebar/Label - Inactive; blend linear burn; property Label
+=== 10
+- component; 80 × 16; row; gap 4; cross center; hugs height; capsule
+  - text SF Symbol folder; SF Pro Medium 13/16; centered; 24 × 16; color Miscellaneous/Sidebar/Label - Inactive; blend linear burn; property Symbol
+  - text "Label"; SF Pro Medium 13/16; 52 × 16; fills width; color Miscellaneous/Sidebar/Label - Inactive; blend linear burn; property Label
+=== 11
+- component; 80 × 16; row; gap 4; cross center; hugs height; capsule
+  - text SF Symbol folder; SF Pro Medium 11/16; centered; 24 × 16; color Miscellaneous/Sidebar/Label - Inactive; blend linear burn; property Symbol
+  - text "Label"; SF Pro Medium 11/16; 52 × 16; fills width; color Miscellaneous/Sidebar/Label - Inactive; blend linear burn; property Label
+=== 12
+- component; 80 × 20; row; gap 4; cross center; hugs height; radius 8
+  - Icon: frame; 28 × 16; row; main center; cross center
+    - Image Placeholder: frame; 20 × 20; radius 4; fill image
+  - text "Label"; SF Pro Medium 15/20; 48 × 20; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Label
+=== 13
+- component; 80 × 20; row; gap 4; cross center; hugs height; radius 8
+  - Icon: frame; 28 × 16; row; main center; cross center
+    - Image Placeholder: frame; 18 × 18; radius 4; fill image
+  - text "Label"; SF Pro Medium 15/20; 48 × 20; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Label
+=== 14
+- component; 80 × 16; row; gap 4; cross center; hugs height; capsule
+  - Icon: frame; 24 × 16; row; main center; cross center
+    - Image Placeholder: frame; 18 × 18; radius 4; fill image
+  - text "Label"; SF Pro Medium 13/16; 52 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Label
+=== 15
+- component; 80 × 16; row; gap 4; cross center; hugs height; capsule
+  - Icon: frame; 24 × 16; row; main center; cross center
+    - Image Placeholder: frame; 16 × 16; radius 4; fill image
+  - text "Label"; SF Pro Medium 13/16; 52 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Label
+=== 16
+- component; 80 × 16; row; gap 4; cross center; hugs height; capsule
+  - Icon: frame; 24 × 16; row; main center; cross center
+    - Image Placeholder: frame; 14 × 14; radius 3; fill image
+  - text "Label"; SF Pro Medium 11/16; 52 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Label
+=== 17
+- component; 80 × 16; row; gap 4; cross center; hugs height; capsule
+  - Icon: frame; 24 × 16; row; main center; cross center
+    - Image Placeholder: frame; 12 × 12; radius 3; fill image
+  - text "Label"; SF Pro Medium 11/16; 52 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Label
+=== 18
+- component; 80 × 20; row; gap 4; cross center; hugs height; radius 8
+  - text SF Symbol folder; SF Pro Medium 15/20; centered; 28 × 20; color Accents - Vibrant/Blue; opacity 50%; blend linear burn; property Symbol
+  - text "Label"; SF Pro Medium 15/20; 48 × 20; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Label
+=== 19
+- component; 80 × 16; row; gap 4; cross center; hugs height; capsule
+  - text SF Symbol folder; SF Pro Medium 13/16; centered; 24 × 16; color Accents - Vibrant/Blue; opacity 50%; blend linear burn; property Symbol
+  - text "Label"; SF Pro Medium 13/16; 52 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Label
+=== 20
+- component; 80 × 16; row; gap 4; cross center; hugs height; capsule
+  - text SF Symbol folder; SF Pro Medium 11/16; centered; 24 × 16; color Accents - Vibrant/Blue; opacity 50%; blend linear burn; property Symbol
+  - text "Label"; SF Pro Medium 11/16; 52 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Label
+=== 21
+- component; 80 × 20; row; gap 4; cross center; hugs height; radius 8
+  - Icon: frame; 28 × 16; row; main center; cross center
+    - Image Placeholder: frame; 20 × 20; radius 4; fill image
+  - text "Label"; SF Pro Medium 15/20; 48 × 20; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Label
+=== 22
+- component; 80 × 20; row; gap 4; cross center; hugs height; radius 8
+  - Icon: frame; 28 × 16; row; main center; cross center
+    - Image Placeholder: frame; 18 × 18; radius 4; fill image
+  - text "Label"; SF Pro Medium 15/20; 48 × 20; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Label
+=== 23
+- component; 80 × 16; row; gap 4; cross center; hugs height; capsule
+  - Icon: frame; 24 × 16; row; main center; cross center
+    - Image Placeholder: frame; 18 × 18; radius 4; fill image
+  - text "Label"; SF Pro Medium 13/16; 52 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Label
+=== 24
+- component; 80 × 16; row; gap 4; cross center; hugs height; capsule
+  - Icon: frame; 24 × 16; row; main center; cross center
+    - Image Placeholder: frame; 16 × 16; radius 4; fill image
+  - text "Label"; SF Pro Medium 13/16; 52 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Label
+=== 25
+- component; 80 × 16; row; gap 4; cross center; hugs height; capsule
+  - Icon: frame; 24 × 16; row; main center; cross center
+    - Image Placeholder: frame; 14 × 14; radius 3; fill image
+  - text "Label"; SF Pro Medium 11/16; 52 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Label
+=== 26
+- component; 80 × 16; row; gap 4; cross center; hugs height; capsule
+  - Icon: frame; 24 × 16; row; main center; cross center
+    - Image Placeholder: frame; 12 × 12; radius 3; fill image
+  - text "Label"; SF Pro Medium 11/16; 52 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Label
+=== 27
+- component; 80 × 20; row; gap 4; cross center; hugs height; radius 8
+  - text SF Symbol folder; SF Pro Medium 15/20; centered; 28 × 20; color Accents - Vibrant/Blue; blend linear burn; property Symbol
+  - text "Label"; SF Pro Medium 15/20; 48 × 20; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Label
+=== 28
+- component; 80 × 16; row; gap 4; cross center; hugs height; capsule
+  - text SF Symbol folder; SF Pro Medium 13/16; centered; 24 × 16; color Accents - Vibrant/Blue; blend linear burn; property Symbol
+  - text "Label"; SF Pro Medium 13/16; 52 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Label
+=== 29
+- component; 80 × 16; row; gap 4; cross center; hugs height; capsule
+  - text SF Symbol folder; SF Pro Medium 11/16; centered; 24 × 16; color Accents - Vibrant/Blue; blend linear burn; property Symbol
+  - text "Label"; SF Pro Medium 11/16; 52 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Label

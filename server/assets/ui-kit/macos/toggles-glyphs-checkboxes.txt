@@ -1,0 +1,24 @@
+=== 0
+- component; 16 × 16; row; padding 7 5 7 5; main center; cross center; radius 5.5; uses Checkboxes/Width, Checkboxes/Radius
+  - Dash: rectangle; 6.5 × 2; capsule; fill #000000 at 70%; uses Radio Button/Width - Dash, Radio Button/Height - Dash; blend linear burn
+=== 1
+- component; 16 × 16; row; padding 7 5 7 5; main center; cross center; radius 5.5; uses Checkboxes/Width, Checkboxes/Radius
+  - Dash: rectangle; 6.5 × 2; capsule; fill #000000 at 22%; uses Radio Button/Width - Dash, Radio Button/Height - Dash; blend linear burn
+=== 2
+- component; 16 × 16; row; padding 6; main center; cross center; radius 5.5; uses Checkboxes/Width, Checkboxes/Radius
+  - Checkmark: vector shape; 9.31 × 8.93; fill #000000 at 70%; uses Checkboxes/Width - Checkmark, Checkboxes/Height - Checkmark; blend linear burn
+=== 3
+- component; 16 × 16; row; padding 6; main center; cross center; radius 5.5; uses Checkboxes/Width, Checkboxes/Radius
+  - Checkmark: vector shape; 9.31 × 8.93; fill #000000 at 22%; uses Checkboxes/Width - Checkmark, Checkboxes/Height - Checkmark; blend linear burn
+=== 4
+- component; 16 × 16; row; padding 7 5 7 5; main center; cross center; radius 5.5; uses Checkboxes/Width, Checkboxes/Radius
+  - Dash: rectangle; 6.5 × 2; capsule; fill #ffffff; uses Radio Button/Width - Dash, Radio Button/Height - Dash
+=== 5
+- component; 16 × 16; row; padding 7 5 7 5; main center; cross center; radius 5.5; uses Checkboxes/Width, Checkboxes/Radius
+  - Dash: rectangle; 6.5 × 2; capsule; fill #ffffff at 50%; uses Radio Button/Width - Dash, Radio Button/Height - Dash
+=== 6
+- component; 16 × 16; row; padding 6; main center; cross center; radius 5.5; uses Checkboxes/Width, Checkboxes/Radius
+  - Checkmark: vector shape; 9.31 × 8.93; fill #ffffff; uses Checkboxes/Width - Checkmark, Checkboxes/Height - Checkmark
+=== 7
+- component; 16 × 16; row; padding 6; main center; cross center; radius 5.5; uses Checkboxes/Width, Checkboxes/Radius
+  - Checkmark: vector shape; 9.31 × 8.93; fill #ffffff at 50%; uses Checkboxes/Width - Checkmark, Checkboxes/Height - Checkmark

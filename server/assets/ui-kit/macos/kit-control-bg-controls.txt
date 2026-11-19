@@ -1,0 +1,37 @@
+=== 0
+- component; 20 × 20; fill Fills - Opaque/Tertiary at 5%; blend linear burn
+=== 1
+- component; 20 × 20; fill #f0f0f0 (linear burn) + #000000 at 13%
+=== 2
+- component; 20 × 20; fill #d9d9d9; blend linear burn
+=== 3
+- component; 20 × 20; fill Fills - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+=== 4
+- component; 20 × 20; fill #cfcfcf; blend linear burn
+=== 5
+- component; 20 × 20; fill Fills - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn
+=== 6
+- component; 20 × 20; fill Fills - Opaque/Tertiary at 5%
+=== 7
+- component; 20 × 20; fill #000000 at 6% (linear burn) + #000000 at 13%
+=== 8
+- component; 20 × 20; fill #000000 at 14%
+=== 9
+- component; 20 × 20; fill #000000 at 19%
+=== 10
+- component; 20 × 20; fill Fills - Opaque/Primary at 10%
+=== 11
+- component; 20 × 20; opacity 45%
+  - Tint: rectangle; 20 × 20; at (0, 0); fill Accents/Blue
+  - Fill: rectangle; 20 × 20; at (0, 0); fill Fills - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+=== 12
+- component; 20 × 20
+  - Tint: rectangle; 20 × 20; at (0, 0); fill Accents/Blue
+  - Fill: rectangle; 20 × 20; at (0, 0); fill Fills - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn
+=== 13
+- component; 20 × 20
+  - Tint: rectangle; 20 × 20; at (0, 0); fill Accents/Blue
+  - Fill: rectangle; 20 × 20; at (0, 0); fill Fills - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+=== 14
+- component; 20 × 20
+  - Tint: rectangle; 20 × 20; at (0, 0); fill Accents/Blue

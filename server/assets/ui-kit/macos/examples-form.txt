@@ -1,0 +1,4 @@
+=== 0
+- component; 1512 × 993
+  - Desktop Template: instance of Desktop Template [Color Mode=Dark]; 1512 × 993; at (0, 0)
+  - Windows - Composed: instance of Windows - Composed [Window Type=Default + Title, Active=True]; 750 × 600; at (381, 197)

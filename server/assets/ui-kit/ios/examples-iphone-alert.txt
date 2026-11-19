@@ -1,0 +1,9 @@
+=== 0
+- component; 402 × 874
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 62 16 10 16; main center; cross center; radius 50; fill Backgrounds/Primary
+    - Toolbar - Top: instance of Toolbar - Top - iPhone [Style=Large Title]; with Show Subtitle off; 370 × 105; fills width
+    - Content Area: frame; 370 × 697; fills height; fills width; column; gap 10; padding 10 0 10 0
+  - Status bar: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - instance of Overlay - Alerts; 402 × 874; at (0, 0)
+  - Alert: instance of Alert [Button Layout=Side-by-Side]; with Show text field off; 300 × 307; at (61, 222)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 874; at (0, 0)

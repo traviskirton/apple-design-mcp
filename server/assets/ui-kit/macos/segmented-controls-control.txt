@@ -1,0 +1,39 @@
+=== 0
+- component; 267 × 24; row; gap -1; main center; cross center; radius 6; fill Fills - Opaque/Quinary at 2%; uses Global/Height, Button/Radius
+  - BG: instance of _Control BG/Bordered [Context=Content Area, State=Idle, On=False]; 267 × 24; absolute at (0, 0)
+  - Frame: frame; 267 × 24; fills width; fills height; row; gap -1; cross center; slot Frame
+    - Segment 1: instance of _Segment - Not selectable [Active=False, State=Idle]; 54.2 × 24; fills width; fills height
+    - Separator: instance of _Separator [Show=True]; 1 × 14
+    - Segment 2: instance of _Segment - Not selectable [Active=False, State=Idle]; 54.2 × 24; fills width; fills height
+    - Separator: instance of _Separator [Show=True]; 1 × 14
+    - Segment 3: instance of _Segment - Not selectable [Active=False, State=Idle]; 54.2 × 24; fills width; fills height
+    - Separator: instance of _Separator [Show=True]; 1 × 14
+    - Segment 4: instance of _Segment - Not selectable [Active=False, State=Idle]; 54.2 × 24; fills width; fills height
+    - Separator: instance of _Separator [Show=True]; 1 × 14
+    - Segment 5: instance of _Segment - Not selectable [Active=False, State=Idle]; 54.2 × 24; fills width; fills height
+=== 1
+- component; 267 × 24; row; gap -1; main center; cross center; radius 6; fill Fills - Opaque/Quinary at 2%; uses Global/Height, Button/Radius
+  - BG: instance of _Control BG/Bordered [Context=Content Area, State=Idle, On=False]; 267 × 24; absolute at (0, 0)
+  - Frame: frame; 267 × 24; fills width; fills height; row; gap -1; cross center; slot Frame
+    - Segment 1: instance of _Segment - Selectable [Active=True, State=Idle, Selected=False]; 54.2 × 24; fills width; fills height
+    - Separator: instance of _Separator [Show=True]; 1 × 14
+    - Segment 2: instance of _Segment - Selectable [Active=True, State=Idle, Selected=False]; 54.2 × 24; fills width; fills height
+    - Separator: instance of _Separator [Show=False]; 1 × 14
+    - Segment 3: instance of _Segment - Selectable [Active=False, State=Idle, Selected=True]; 54.2 × 24; fills width; fills height
+    - Separator: instance of _Separator [Show=False]; 1 × 14
+    - Segment 4: instance of _Segment - Selectable [Active=True, State=Idle, Selected=False]; 54.2 × 24; fills width; fills height
+    - Separator: instance of _Separator [Show=True]; 1 × 14
+    - Segment 5: instance of _Segment - Selectable [Active=True, State=Idle, Selected=False]; 54.2 × 24; fills width; fills height
+=== 2
+- component; 267 × 24; row; gap -1; main center; cross center; radius 6; fill Fills - Opaque/Quinary at 2%; uses Global/Height, Button/Radius
+  - BG: instance of _Control BG/Bordered [Context=Content Area, State=Idle, On=False]; 267 × 24; absolute at (0, 0)
+  - Frame: frame; 267 × 24; fills width; fills height; row; gap -1; cross center; slot Frame
+    - Segment 1: instance of _Segment - Selectable [Active=True, State=Idle, Selected=False]; 54.2 × 24; fills width; fills height
+    - Separator: instance of _Separator [Show=True]; 1 × 14
+    - Segment 2: instance of _Segment - Selectable [Active=True, State=Idle, Selected=False]; 54.2 × 24; fills width; fills height
+    - Separator: instance of _Separator [Show=False]; 1 × 14
+    - Segment 3: instance of _Segment - Selectable [Active=True, State=Idle, Selected=True]; 54.2 × 24; fills width; fills height
+    - Separator: instance of _Separator [Show=False]; 1 × 14
+    - Segment 4: instance of _Segment - Selectable [Active=True, State=Idle, Selected=False]; 54.2 × 24; fills width; fills height
+    - Separator: instance of _Separator [Show=True]; 1 × 14
+    - Segment 5: instance of _Segment - Selectable [Active=True, State=Idle, Selected=False]; 54.2 × 24; fills width; fills height

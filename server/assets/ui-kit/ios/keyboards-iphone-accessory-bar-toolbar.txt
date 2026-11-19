@@ -1,0 +1,11 @@
+=== 0
+- component; 168 × 48; row; padding 0 18 0 18; main center; cross center; hugs width; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 144 × 48; absolute at (12, 0)
+  - Buttons: frame; 132 × 36; row; gap 12; cross center; hugs content; slot Buttons
+    - Symbol 1: instance of _Button - Symbol Keyboard [Disabled=True]; 36 × 36; blend linear burn
+    - Symbol 2: instance of _Button - Symbol Keyboard [Disabled=True]; 36 × 36; blend linear burn
+    - Symbol 3: instance of _Button - Symbol Keyboard [Disabled=True]; 36 × 36; blend linear burn
+=== 1
+- component; 72 × 48; row; gap 12; padding 0 18 0 18; main center; cross center; hugs width; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 48; absolute at (12, 0)
+  - Symbol 1: instance of _Button - Symbol Keyboard [Disabled=True]; 36 × 36; blend linear burn

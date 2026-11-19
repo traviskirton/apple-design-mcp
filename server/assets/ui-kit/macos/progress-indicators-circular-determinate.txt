@@ -1,0 +1,36 @@
+=== 0
+- component; 32 × 32
+  - Track: frame; 32 × 32; at (0, 0)
+    - Track: vector shape; 32 × 32; at (0, 0); fill #d9d9d9; mask
+    - Unfilled: instance of _Tracks - Unfilled [Active=True, Context=Content Area, State=Idle]; 32 × 32; at (0, 0); opacity 10%
+    - Track - Outline: vector shape; 32 × 32; at (0, 0); capsule; stroke Miscellaneous/Progress Bars/Track - Stroke at 7% 0.5
+  - Fill: frame; 22 × 22; at (5, 5)
+    - Mask: ellipse; 22 × 22; at (0, 0); radius 10; fill #d9d9d9; stroke #000000 5; mask
+    - Fill: instance of _Tracks - Filled [Active=False, Context=Content Area, State=Idle]; 32 × 32; at (-5, -5); opacity 17%
+=== 1
+- component; 16 × 16
+  - Track: frame; 16 × 16; at (0, 0)
+    - Track: vector shape; 16 × 16; at (0, 0); fill #d9d9d9; mask
+    - Unfilled: instance of _Tracks - Unfilled [Active=True, Context=Content Area, State=Idle]; 16 × 16; at (0, 0); opacity 10%
+    - Track - Outline: vector shape; 16 × 16; at (0, 0); capsule; stroke Miscellaneous/Progress Bars/Track - Stroke at 7% 0.5
+  - Fill: frame; 16 × 16; at (0, 0)
+    - Mask: ellipse; 6 × 6; at (5, 5); capsule; stroke #000000 5; mask
+    - Fill: instance of _Tracks - Filled [Active=False, Context=Content Area, State=Idle]; 16 × 16; at (0, 0); opacity 17%
+=== 2
+- component; 32 × 32
+  - Track: frame; 32 × 32; at (0, 0)
+    - Track: vector shape; 32 × 32; at (0, 0); fill #d9d9d9; mask
+    - Unfilled: instance of _Tracks - Unfilled [Active=True, Context=Content Area, State=Idle]; 32 × 32; at (0, 0); opacity 10%
+    - Track - Outline: vector shape; 32 × 32; at (0, 0); capsule; stroke Miscellaneous/Progress Bars/Track - Stroke at 7% 0.5
+  - Fill: frame; 22 × 22; at (5, 5)
+    - Mask: ellipse; 22 × 22; at (0, 0); radius 10; fill #d9d9d9; stroke #000000 5; mask
+    - Fill: instance of _Tracks - Filled [Active=True, Context=Content Area, State=Idle]; 32 × 32; at (-5, -5)
+=== 3
+- component; 16 × 16
+  - Track: frame; 16 × 16; at (0, 0)
+    - Track: vector shape; 16 × 16; at (0, 0); fill #d9d9d9; mask
+    - Unfilled: instance of _Tracks - Unfilled [Active=True, Context=Content Area, State=Idle]; 16 × 16; at (0, 0); opacity 10%
+    - Track - Outline: vector shape; 16 × 16; at (0, 0); capsule; stroke Miscellaneous/Progress Bars/Track - Stroke at 7% 0.5
+  - Fill: frame; 16 × 16; at (0, 0)
+    - Mask: ellipse; 6 × 6; at (5, 5); capsule; stroke #000000 5; mask
+    - Fill: instance of _Tracks - Filled [Active=True, Context=Content Area, State=Idle]; 16 × 16; at (0, 0)

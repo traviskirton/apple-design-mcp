@@ -1,0 +1,6 @@
+=== 0
+- component; 89.84 × 16; row; gap 5; cross center; hugs content
+  - Wifi: frame; 13.51 × 10
+    - Wifi: vector shape; 13.5 × 10; at (0, 0); fill Labels/Primary
+  - text "100%"; SF Pro Medium 14/16; right-aligned; 39 × 16; color Labels/Primary
+  - Battery: vector shape; 27.33 × 13; fill Labels/Primary

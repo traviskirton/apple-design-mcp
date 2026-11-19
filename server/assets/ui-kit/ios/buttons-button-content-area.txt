@@ -1,0 +1,240 @@
+=== 0
+- component; 50 × 50; capsule
+  - text SF Symbol play.fill; style Body/Regular; centered; 50 × 50; at (0, 0); color Labels/Tertiary at 30%; property Symbol
+=== 1
+- component; 34 × 34; capsule
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 34 × 34; at (0, 0); color Labels/Tertiary at 30%; property Symbol
+=== 2
+- component; 28 × 28; capsule
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 28 × 28; at (0, 0); color Labels/Tertiary at 30%; property Symbol
+=== 3
+- component; 50 × 50; capsule; fill Fills/Tertiary at 12%
+  - text SF Symbol play.fill; style Body/Regular; centered; 50 × 50; at (0, 0); color Labels/Tertiary at 30%; property Symbol
+=== 4
+- component; 34 × 34; capsule; fill Fills/Tertiary at 12%
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 34 × 34; at (0, 0); color Labels/Tertiary at 30%; property Symbol
+=== 5
+- component; 28 × 28; capsule; fill Fills/Tertiary at 12%
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 28 × 28; at (0, 0); color Labels/Tertiary at 30%; property Symbol
+=== 6
+- component; 50 × 50; capsule
+  - text SF Symbol play.fill; style Body/Regular; centered; 50 × 50; at (0, 0); color Accents/Red; property Symbol
+=== 7
+- component; 34 × 34; capsule
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 34 × 34; at (0, 0); color Accents/Red; property Symbol
+=== 8
+- component; 28 × 28; capsule
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 28 × 28; at (0, 0); color Accents/Red; property Symbol
+=== 9
+- component; 50 × 50; capsule; fill Miscellaneous/Buttons/BG - Destructive at 14%
+  - text SF Symbol play.fill; style Body/Regular; centered; 50 × 50; at (0, 0); color Accents/Red; property Symbol
+=== 10
+- component; 34 × 34; capsule; fill Miscellaneous/Buttons/BG - Destructive at 14%
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 34 × 34; at (0, 0); color Accents/Red; property Symbol
+=== 11
+- component; 28 × 28; capsule; fill Miscellaneous/Buttons/BG - Destructive at 14%
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 28 × 28; at (0, 0); color Accents/Red; property Symbol
+=== 12
+- component; 50 × 50; capsule; fill Accents/Red
+  - text SF Symbol play.fill; style Body/Regular; centered; 50 × 50; at (0, 0); color Grays/White; property Symbol
+=== 13
+- component; 34 × 34; capsule; fill Accents/Red
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 34 × 34; at (0, 0); color Grays/White; property Symbol
+=== 14
+- component; 28 × 28; capsule; fill Accents/Red
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 28 × 28; at (0, 0); color Grays/White; property Symbol
+=== 15
+- component; 73 × 50; row; gap 4; padding 14 20 14 20; main center; cross center; hugs content; radius 12
+  - text "Play"; style Body/Regular; 33 × 22; color Labels/Tertiary at 30%; property Label
+=== 16
+- component; 57 × 34; row; gap 4; padding 7 14 7 14; main center; cross center; hugs content; capsule
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Labels/Tertiary at 30%; property Label
+=== 17
+- component; 49 × 28; row; gap 3; padding 4 10 4 10; main center; cross center; hugs content; capsule
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Labels/Tertiary at 30%; property Label
+=== 18
+- component; 73 × 50; row; gap 4; padding 14 20 14 20; main center; cross center; hugs content; capsule; fill Fills/Tertiary at 12%
+  - text "Play"; style Body/Regular; 33 × 22; color Labels/Tertiary at 30%; property Label
+=== 19
+- component; 57 × 34; row; gap 4; padding 7 14 7 14; main center; cross center; hugs content; capsule; fill Fills/Tertiary at 12%
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Labels/Tertiary at 30%; property Label
+=== 20
+- component; 49 × 28; row; gap 3; padding 4 10 4 10; main center; cross center; hugs content; capsule; fill Fills/Tertiary at 12%
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Labels/Tertiary at 30%; property Label
+=== 21
+- component; 73 × 50; row; gap 4; padding 14 20 14 20; main center; cross center; hugs content; radius 12
+  - text "Play"; style Body/Regular; 33 × 22; color Accents/Red; property Label
+=== 22
+- component; 57 × 34; row; gap 4; padding 7 14 7 14; main center; cross center; hugs content; capsule
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Accents/Red; property Label
+=== 23
+- component; 49 × 28; row; gap 3; padding 4 10 4 10; main center; cross center; hugs content; capsule
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Accents/Red; property Label
+=== 24
+- component; 73 × 50; row; gap 4; padding 14 20 14 20; main center; cross center; hugs content; capsule; fill Miscellaneous/Buttons/BG - Destructive at 14%
+  - text "Play"; style Body/Regular; 33 × 22; color Accents/Red; property Label
+=== 25
+- component; 57 × 34; row; gap 4; padding 7 14 7 14; main center; cross center; hugs content; capsule; fill Miscellaneous/Buttons/BG - Destructive at 14%
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Accents/Red; property Label
+=== 26
+- component; 49 × 28; row; gap 3; padding 4 10 4 10; main center; cross center; hugs content; capsule; fill Miscellaneous/Buttons/BG - Destructive at 14%
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Accents/Red; property Label
+=== 27
+- component; 73 × 50; row; gap 4; padding 14 20 14 20; main center; cross center; hugs content; capsule; fill Accents/Red
+  - text "Play"; style Body/Regular; 33 × 22; color Grays/White; property Label
+=== 28
+- component; 57 × 34; row; gap 4; padding 7 14 7 14; main center; cross center; hugs content; capsule; fill Accents/Red
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Grays/White; property Label
+=== 29
+- component; 49 × 28; row; gap 3; padding 4 10 4 10; main center; cross center; hugs content; capsule; fill Accents/Red
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Grays/White; property Label
+=== 30
+- component; 92 × 50; row; gap 4; padding 14 20 14 20; main center; cross center; hugs content; radius 12
+  - text SF Symbol play.fill; style Body/Regular; centered; 15 × 22; color Labels/Tertiary at 30%; property Symbol
+  - text "Play"; style Body/Regular; 33 × 22; color Labels/Tertiary at 30%; property Label
+=== 31
+- component; 75 × 34; row; gap 4; padding 7 14 7 14; main center; cross center; hugs content; capsule
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 14 × 20; color Labels/Tertiary at 30%; property Symbol
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Labels/Tertiary at 30%; property Label
+=== 32
+- component; 66 × 28; row; gap 3; padding 4 10 4 10; main center; cross center; hugs content; capsule
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 14 × 20; color Labels/Tertiary at 30%; property Symbol
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Labels/Tertiary at 30%; property Label
+=== 33
+- component; 92 × 50; row; gap 4; padding 14 20 14 20; main center; cross center; hugs content; capsule; fill Fills/Tertiary at 12%
+  - text SF Symbol play.fill; style Body/Regular; centered; 15 × 22; color Labels/Tertiary at 30%; property Symbol
+  - text "Play"; style Body/Regular; 33 × 22; color Labels/Tertiary at 30%; property Label
+=== 34
+- component; 75 × 34; row; gap 4; padding 7 14 7 14; main center; cross center; hugs content; capsule; fill Fills/Tertiary at 12%
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 14 × 20; color Labels/Tertiary at 30%; property Symbol
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Labels/Tertiary at 30%; property Label
+=== 35
+- component; 66 × 28; row; gap 3; padding 4 10 4 10; main center; cross center; hugs content; capsule; fill Fills/Tertiary at 12%
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 14 × 20; color Labels/Tertiary at 30%; property Symbol
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Labels/Tertiary at 30%; property Label
+=== 36
+- component; 92 × 50; row; gap 4; padding 14 20 14 20; main center; cross center; hugs content; radius 12
+  - text SF Symbol play.fill; style Body/Regular; centered; 15 × 22; color Accents/Red; property Symbol
+  - text "Play"; style Body/Regular; 33 × 22; color Accents/Red; property Label
+=== 37
+- component; 75 × 34; row; gap 4; padding 7 14 7 14; main center; cross center; hugs content; capsule
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 14 × 20; color Accents/Red; property Symbol
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Accents/Red; property Label
+=== 38
+- component; 66 × 28; row; gap 3; padding 4 10 4 10; main center; cross center; hugs content; capsule
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 14 × 20; color Accents/Red; property Symbol
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Accents/Red; property Label
+=== 39
+- component; 92 × 50; row; gap 4; padding 14 20 14 20; main center; cross center; hugs content; capsule; fill Miscellaneous/Buttons/BG - Destructive at 14%
+  - text SF Symbol play.fill; style Body/Regular; centered; 15 × 22; color Accents/Red; property Symbol
+  - text "Play"; style Body/Regular; 33 × 22; color Accents/Red; property Label
+=== 40
+- component; 75 × 34; row; gap 4; padding 7 14 7 14; main center; cross center; hugs content; capsule; fill Miscellaneous/Buttons/BG - Destructive at 14%
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 14 × 20; color Accents/Red; property Symbol
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Accents/Red; property Label
+=== 41
+- component; 66 × 28; row; gap 3; padding 4 10 4 10; main center; cross center; hugs content; capsule; fill Miscellaneous/Buttons/BG - Destructive at 14%
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 14 × 20; color Accents/Red; property Symbol
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Accents/Red; property Label
+=== 42
+- component; 92 × 50; row; gap 4; padding 14 20 14 20; main center; cross center; hugs content; capsule; fill Accents/Red
+  - text SF Symbol play.fill; style Body/Regular; centered; 15 × 22; color Grays/White; property Symbol
+  - text "Play"; style Body/Regular; 33 × 22; color Grays/White; property Label
+=== 43
+- component; 75 × 34; row; gap 4; padding 7 14 7 14; main center; cross center; hugs content; capsule; fill Accents/Red
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 14 × 20; color Grays/White; property Symbol
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Grays/White; property Label
+=== 44
+- component; 66 × 28; row; gap 3; padding 4 10 4 10; main center; cross center; hugs content; capsule; fill Accents/Red
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 14 × 20; color Grays/White; property Symbol
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Grays/White; property Label
+=== 45
+- component; 50 × 50; capsule
+  - text SF Symbol play.fill; style Body/Regular; centered; 50 × 50; at (0, 0); color Accents/Blue; property Symbol
+=== 46
+- component; 34 × 34; capsule
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 34 × 34; at (0, 0); color Accents/Blue; property Symbol
+=== 47
+- component; 28 × 28; capsule
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 28 × 28; at (0, 0); color Accents/Blue; property Symbol
+=== 48
+- component; 50 × 50; capsule; fill Fills/Tertiary at 12%
+  - text SF Symbol play.fill; style Body/Regular; centered; 50 × 50; at (0, 0); color Accents/Blue; property Symbol
+=== 49
+- component; 34 × 34; capsule; fill Fills/Tertiary at 12%
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 34 × 34; at (0, 0); color Accents/Blue; property Symbol
+=== 50
+- component; 28 × 28; capsule; fill Fills/Tertiary at 12%
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 28 × 28; at (0, 0); color Accents/Blue; property Symbol
+=== 51
+- component; 50 × 50; capsule; fill Accents/Blue
+  - text SF Symbol play.fill; style Body/Regular; centered; 50 × 50; at (0, 0); color Grays/White; property Symbol
+=== 52
+- component; 34 × 34; capsule; fill Accents/Blue
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 34 × 34; at (0, 0); color Grays/White; property Symbol
+=== 53
+- component; 28 × 28; capsule; fill Accents/Blue
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 28 × 28; at (0, 0); color Grays/White; property Symbol
+=== 54
+- component; 73 × 50; row; gap 4; padding 14 20 14 20; main center; cross center; hugs content; radius 12
+  - text "Play"; style Body/Regular; 33 × 22; color Accents/Blue; property Label
+=== 55
+- component; 57 × 34; row; gap 4; padding 7 14 7 14; main center; cross center; hugs content; capsule
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Accents/Blue; property Label
+=== 56
+- component; 49 × 28; row; gap 3; padding 4 10 4 10; main center; cross center; hugs content; capsule
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Accents/Blue; property Label
+=== 57
+- component; 73 × 50; row; gap 4; padding 14 20 14 20; main center; cross center; hugs content; capsule; fill Fills/Tertiary at 12%
+  - text "Play"; style Body/Regular; 33 × 22; color Accents/Blue; property Label
+=== 58
+- component; 57 × 34; row; gap 4; padding 7 14 7 14; main center; cross center; hugs content; capsule; fill Fills/Tertiary at 12%
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Accents/Blue; property Label
+=== 59
+- component; 49 × 28; row; gap 3; padding 4 10 4 10; main center; cross center; hugs content; capsule; fill Fills/Tertiary at 12%
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Accents/Blue; property Label
+=== 60
+- component; 73 × 50; row; gap 4; padding 14 20 14 20; main center; cross center; hugs content; capsule; fill Accents/Blue
+  - text "Play"; style Body/Regular; 33 × 22; color Grays/White; property Label
+=== 61
+- component; 57 × 34; row; gap 4; padding 7 14 7 14; main center; cross center; hugs content; capsule; fill Accents/Blue
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Grays/White; property Label
+=== 62
+- component; 49 × 28; row; gap 3; padding 4 10 4 10; main center; cross center; hugs content; capsule; fill Accents/Blue
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Grays/White; property Label
+=== 63
+- component; 92 × 50; row; gap 4; padding 14 20 14 20; main center; cross center; hugs content; radius 12
+  - text SF Symbol play.fill; style Body/Regular; centered; 15 × 22; color Accents/Blue; property Symbol
+  - text "Play"; style Body/Regular; 33 × 22; color Accents/Blue; property Label
+=== 64
+- component; 75 × 34; row; gap 4; padding 7 14 7 14; main center; cross center; hugs content; capsule
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 14 × 20; color Accents/Blue; property Symbol
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Accents/Blue; property Label
+=== 65
+- component; 66 × 28; row; gap 3; padding 4 10 4 10; main center; cross center; hugs content; capsule
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 14 × 20; color Accents/Blue; property Symbol
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Accents/Blue; property Label
+=== 66
+- component; 92 × 50; row; gap 4; padding 14 20 14 20; main center; cross center; hugs content; capsule; fill Fills/Tertiary at 12%
+  - text SF Symbol play.fill; style Body/Regular; centered; 15 × 22; color Accents/Blue; property Symbol
+  - text "Play"; style Body/Regular; 33 × 22; color Accents/Blue; property Label
+=== 67
+- component; 75 × 34; row; gap 4; padding 7 14 7 14; main center; cross center; hugs content; capsule; fill Fills/Tertiary at 12%
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 14 × 20; color Accents/Blue; property Symbol
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Accents/Blue; property Label
+=== 68
+- component; 66 × 28; row; gap 3; padding 4 10 4 10; main center; cross center; hugs content; capsule; fill Fills/Tertiary at 12%
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 14 × 20; color Accents/Blue; property Symbol
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Accents/Blue; property Label
+=== 69
+- component; 92 × 50; row; gap 4; padding 14 20 14 20; main center; cross center; hugs content; capsule; fill Accents/Blue
+  - text SF Symbol play.fill; style Body/Regular; centered; 15 × 22; color Grays/White; property Symbol
+  - text "Play"; style Body/Regular; 33 × 22; color Grays/White; property Label
+=== 70
+- component; 75 × 34; row; gap 4; padding 7 14 7 14; main center; cross center; hugs content; capsule; fill Accents/Blue
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 14 × 20; color Grays/White; property Symbol
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Grays/White; property Label
+=== 71
+- component; 66 × 28; row; gap 3; padding 4 10 4 10; main center; cross center; hugs content; capsule; fill Accents/Blue
+  - text SF Symbol play.fill; style Subheadline/Regular; centered; 14 × 20; color Grays/White; property Symbol
+  - text "Play"; style Subheadline/Regular; 29 × 20; color Grays/White; property Label

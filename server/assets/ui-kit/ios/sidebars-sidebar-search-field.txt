@@ -1,0 +1,3 @@
+=== 0
+- component; 200 × 64; row; padding 0 0 20 0; cross center; hugs height
+  - Search Field: instance of _Search Field [State=Placeholder]; 200 × 44; fills width; blend linear burn

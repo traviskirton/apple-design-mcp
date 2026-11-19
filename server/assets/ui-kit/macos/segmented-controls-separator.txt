@@ -1,0 +1,4 @@
+=== 0
+- component; 1 × 14; uses Segmented Control/Height - Separator
+=== 1
+- component; 1 × 14; fill Labels/Tertiary at 25%; uses Segmented Control/Height - Separator

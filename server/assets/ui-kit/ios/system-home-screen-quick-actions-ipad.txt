@@ -1,0 +1,6 @@
+=== 0
+- component; 1210 × 834
+  - Home Screen - iPad: instance of Home Screen - iPad [Widgets=None]; 1210 × 834; at (0, 0)
+  - Overlay: instance of Context Menu - Dimming Overlay; 1210 × 834; at (0, 0)
+  - Icon: instance of _Custom Icon; 78 × 78; at (975, 321)
+  - Home Screen Quick Actions: instance of _Home Screen Quick Actions; 250 × 350; at (805, 412)

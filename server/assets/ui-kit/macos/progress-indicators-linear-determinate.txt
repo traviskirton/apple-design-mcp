@@ -1,0 +1,80 @@
+=== 0
+- component; 100 × 10; capsule; stroke Miscellaneous/Progress Bars/Track - Stroke at 7% 0.5
+  - Unfilled: instance of _Tracks - Unfilled [Active=False, Context=Content Area, State=Idle]; 100 × 10; at (0, 0); opacity 6%
+  - Fill: instance of _Tracks - Filled [Active=False, Context=Content Area, State=Idle]; 10 × 10; at (0, 0); opacity 17%
+=== 1
+- component; 100 × 10; capsule; stroke Miscellaneous/Progress Bars/Track - Stroke at 7% 0.5
+  - Unfilled: instance of _Tracks - Unfilled [Active=False, Context=Content Area, State=Idle]; 100 × 10; at (0, 0); opacity 6%
+  - Fill: instance of _Tracks - Filled [Active=False, Context=Content Area, State=Idle]; 25 × 10; at (0, 0); opacity 17%
+=== 2
+- component; 100 × 10; capsule; stroke Miscellaneous/Progress Bars/Track - Stroke at 7% 0.5
+  - Unfilled: instance of _Tracks - Unfilled [Active=False, Context=Content Area, State=Idle]; 100 × 10; at (0, 0); opacity 6%
+  - Fill: instance of _Tracks - Filled [Active=False, Context=Content Area, State=Idle]; 55 × 10; at (0, 0); opacity 17%
+=== 3
+- component; 100 × 10; capsule; stroke Miscellaneous/Progress Bars/Track - Stroke at 7% 0.5
+  - Unfilled: instance of _Tracks - Unfilled [Active=False, Context=Content Area, State=Idle]; 100 × 10; at (0, 0); opacity 6%
+  - Fill: instance of _Tracks - Filled [Active=False, Context=Content Area, State=Idle]; 75 × 10; at (0, 0); opacity 17%
+=== 4
+- component; 100 × 10; capsule; stroke Miscellaneous/Progress Bars/Track - Stroke at 7% 0.5
+  - Unfilled: instance of _Tracks - Unfilled [Active=False, Context=Content Area, State=Idle]; 100 × 10; at (0, 0); opacity 6%
+  - Fill: instance of _Tracks - Filled [Active=False, Context=Content Area, State=Idle]; 100 × 10; at (0, 0); opacity 17%
+=== 5
+- component; 100 × 6; capsule; stroke Miscellaneous/Progress Bars/Track - Stroke at 7% 0.5
+  - Unfilled: instance of _Tracks - Unfilled [Active=False, Context=Content Area, State=Idle]; 100 × 6; at (0, 0); opacity 6%
+  - Fill: instance of _Tracks - Filled [Active=False, Context=Content Area, State=Idle]; 6 × 6; at (0, 0); opacity 17%
+=== 6
+- component; 100 × 6; capsule; stroke Miscellaneous/Progress Bars/Track - Stroke at 7% 0.5
+  - Unfilled: instance of _Tracks - Unfilled [Active=False, Context=Content Area, State=Idle]; 100 × 6; at (0, 0); opacity 6%
+  - Fill: instance of _Tracks - Filled [Active=False, Context=Content Area, State=Idle]; 25 × 6; at (0, 0); opacity 17%
+=== 7
+- component; 100 × 6; capsule; stroke Miscellaneous/Progress Bars/Track - Stroke at 7% 0.5
+  - Unfilled: instance of _Tracks - Unfilled [Active=False, Context=Content Area, State=Idle]; 100 × 6; at (0, 0); opacity 6%
+  - Fill: instance of _Tracks - Filled [Active=False, Context=Content Area, State=Idle]; 54 × 6; at (0, 0); opacity 17%
+=== 8
+- component; 100 × 6; capsule; stroke Miscellaneous/Progress Bars/Track - Stroke at 7% 0.5
+  - Unfilled: instance of _Tracks - Unfilled [Active=False, Context=Content Area, State=Idle]; 100 × 6; at (0, 0); opacity 6%
+  - Fill: instance of _Tracks - Filled [Active=False, Context=Content Area, State=Idle]; 75 × 6; at (0, 0); opacity 17%
+=== 9
+- component; 100 × 6; capsule; stroke Miscellaneous/Progress Bars/Track - Stroke at 7% 0.5
+  - Unfilled: instance of _Tracks - Unfilled [Active=False, Context=Content Area, State=Idle]; 100 × 6; at (0, 0); opacity 6%
+  - Fill: instance of _Tracks - Filled [Active=False, Context=Content Area, State=Idle]; 100 × 6; at (0, 0); opacity 17%
+=== 10
+- component; 100 × 10; capsule; stroke Miscellaneous/Progress Bars/Track - Stroke at 7% 0.5
+  - Unfilled: instance of _Tracks - Unfilled [Active=True, Context=Content Area, State=Idle]; 100 × 10; at (0, 0); opacity 10%
+  - Fill: instance of _Tracks - Filled [Active=True, Context=Content Area, State=Idle]; 10 × 10; at (0, 0)
+=== 11
+- component; 100 × 10; capsule; stroke Miscellaneous/Progress Bars/Track - Stroke at 7% 0.5
+  - Unfilled: instance of _Tracks - Unfilled [Active=True, Context=Content Area, State=Idle]; 100 × 10; at (0, 0); opacity 10%
+  - Fill: instance of _Tracks - Filled [Active=True, Context=Content Area, State=Idle]; 25 × 10; at (0, 0)
+=== 12
+- component; 100 × 10; capsule; stroke Miscellaneous/Progress Bars/Track - Stroke at 7% 0.5
+  - Unfilled: instance of _Tracks - Unfilled [Active=True, Context=Content Area, State=Idle]; 100 × 10; at (0, 0); opacity 10%
+  - Fill: instance of _Tracks - Filled [Active=True, Context=Content Area, State=Idle]; 55 × 10; at (0, 0)
+=== 13
+- component; 100 × 10; capsule; stroke Miscellaneous/Progress Bars/Track - Stroke at 7% 0.5
+  - Unfilled: instance of _Tracks - Unfilled [Active=True, Context=Content Area, State=Idle]; 100 × 10; at (0, 0); opacity 10%
+  - Fill: instance of _Tracks - Filled [Active=True, Context=Content Area, State=Idle]; 75 × 10; at (0, 0)
+=== 14
+- component; 100 × 10; capsule; stroke Miscellaneous/Progress Bars/Track - Stroke at 7% 0.5
+  - Unfilled: instance of _Tracks - Unfilled [Active=True, Context=Content Area, State=Idle]; 100 × 10; at (0, 0); opacity 10%
+  - Fill: instance of _Tracks - Filled [Active=True, Context=Content Area, State=Idle]; 100 × 10; at (0, 0)
+=== 15
+- component; 100 × 6; capsule; stroke Miscellaneous/Progress Bars/Track - Stroke at 7% 0.5
+  - Unfilled: instance of _Tracks - Unfilled [Active=True, Context=Content Area, State=Idle]; 100 × 6; at (0, 0); opacity 10%
+  - Fill: instance of _Tracks - Filled [Active=True, Context=Content Area, State=Idle]; 6 × 6; at (0, 0)
+=== 16
+- component; 100 × 6; capsule; stroke Miscellaneous/Progress Bars/Track - Stroke at 7% 0.5
+  - Unfilled: instance of _Tracks - Unfilled [Active=True, Context=Content Area, State=Idle]; 100 × 6; at (0, 0); opacity 10%
+  - Fill: instance of _Tracks - Filled [Active=True, Context=Content Area, State=Idle]; 25 × 6; at (0, 0)
+=== 17
+- component; 100 × 6; capsule; stroke Miscellaneous/Progress Bars/Track - Stroke at 7% 0.5
+  - Unfilled: instance of _Tracks - Unfilled [Active=True, Context=Content Area, State=Idle]; 100 × 6; at (0, 0); opacity 10%
+  - Fill: instance of _Tracks - Filled [Active=True, Context=Content Area, State=Idle]; 54 × 6; at (0, 0)
+=== 18
+- component; 100 × 6; capsule; stroke Miscellaneous/Progress Bars/Track - Stroke at 7% 0.5
+  - Unfilled: instance of _Tracks - Unfilled [Active=True, Context=Content Area, State=Idle]; 100 × 6; at (0, 0); opacity 10%
+  - Fill: instance of _Tracks - Filled [Active=True, Context=Content Area, State=Idle]; 75 × 6; at (0, 0)
+=== 19
+- component; 100 × 6; capsule; stroke Miscellaneous/Progress Bars/Track - Stroke at 7% 0.5
+  - Unfilled: instance of _Tracks - Unfilled [Active=True, Context=Content Area, State=Idle]; 100 × 6; at (0, 0); opacity 10%
+  - Fill: instance of _Tracks - Filled [Active=True, Context=Content Area, State=Idle]; 100 × 6; at (0, 0)

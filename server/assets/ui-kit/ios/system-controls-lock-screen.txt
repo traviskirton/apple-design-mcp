@@ -1,0 +1,4 @@
+=== 0
+- component; 58 × 58; capsule
+  - Clear Glass: instance of Liquid Glass - Clear; 58 × 58; at (0, 0)
+  - text SF Symbol flashlight.off.fill; SF Pro Bold 21; centered; 58 × 58; at (0, 0); color #d9d9d9 (linear dodge); opacity 90%; blend linear dodge; property Symbol

@@ -1,0 +1,12 @@
+=== 0
+- component; 100 × 100; column; space between; padding 0 5 0 5; cross center; radius 13; stroke #808080 1
+  - Gradient: rectangle; 100 × 100; absolute at (0, 0); radius 13; fill linear gradient #000000 0% to #000000 to #000000 to #000000 0%; mask
+  - text "1"; SF Pro Regular 24/15; 11 × 15; color Labels/Primary; property Before
+  - text "2"; SF Pro Regular 24/15; 14 × 15; color Labels/Primary; property Current
+  - text "3"; SF Pro Regular 24/15; 15 × 15; color Labels/Primary; property Next
+=== 1
+- component; 100 × 100; column; space between; padding 0 5 0 5; cross center; radius 13; stroke #04de71 1.5
+  - Gradient: rectangle; 100 × 100; absolute at (0, 0); radius 13; fill linear gradient #000000 0% to #000000 to #000000 to #000000 0%; mask
+  - text "1"; SF Pro Regular 24/15; 11 × 15; color Labels/Primary; property Before
+  - text "2"; SF Pro Regular 24/15; 14 × 15; color Labels/Primary; property Current
+  - text "3"; SF Pro Regular 24/15; 15 × 15; color Labels/Primary; property Next

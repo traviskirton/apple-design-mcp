@@ -1,0 +1,6 @@
+=== 0
+- component; 57 × 36; row; padding 0 6 0 6; main center; cross center; hugs width; capsule; blend linear dodge
+  - text "Label"; SF Pro Medium 17; centered; 45 × 20; color Labels - Vibrant/Tertiary; property Label
+=== 1
+- component; 57 × 36; row; padding 0 6 0 6; main center; cross center; hugs width; capsule; blend linear dodge
+  - text "Label"; SF Pro Medium 17; centered; 45 × 20; color Labels - Vibrant/Primary; property Label

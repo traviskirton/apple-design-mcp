@@ -1,0 +1,13 @@
+=== 0
+- component; 39.5 × 39.5; row; gap 10; main center; cross center; capsule; fill #ff4245; uses Button/Height - Circular
+  - Glass Effect: frame; 40 × 40; absolute at (0, 0); capsule; Liquid Glass effect
+  - text SF Symbol plus; SF Compact Semibold 21/23.5; centered; 40 × 40; color Vibrant Labels/Dark/Primary; property Label
+=== 1
+- component; 39.5 × 39.5; row; gap 10; main center; cross center; capsule; fill Colors/Red; uses Button/Height - Circular
+  - text SF Symbol plus; SF Compact Semibold 21/23.5; centered; 40 × 40; color Vibrant Labels/Dark/Primary; property Label
+=== 2
+- component; 39.5 × 39.5; row; gap 10; padding 13 6 13 6; main center; cross center; capsule; fill #ffffff at 10%; Liquid Glass effect; uses Button/Margin - T, Button/Margin - B, Button/Height - Circular
+  - text SF Symbol plus; SF Compact Semibold 21/23.5; centered; 40 × 40; color Labels/Primary; property Label
+=== 3
+- component; 39.5 × 39.5; row; gap 10; main center; cross center; capsule; fill Vibrant Fills/Dark/Secondary; uses Button/Height - Circular
+  - text SF Symbol plus; SF Compact Semibold 21/23.5; centered; 40 × 40; color Labels/Primary; property Label

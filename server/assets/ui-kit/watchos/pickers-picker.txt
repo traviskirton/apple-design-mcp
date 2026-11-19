@@ -1,0 +1,100 @@
+=== 0
+- component; 158 × 97; row; gap 4; cross end; hugs height; uses Width - Safe Area
+  - Value 1: frame; 43 × 75; column; gap 2; padding 0 1 0 1; hugs content; uses Picker/Value Min Width
+    - Value 1: instance of _Wheels [State=Default]; 41 × 75; fills width
+  - Value 2: frame; 43 × 75; column; gap 2; padding 0 1 0 1; cross center; hugs content; uses Picker/Value Min Width
+    - Value 2: instance of _Wheels [State=Default]; with Before "20", Current "21", Next "22"; 41 × 75; fills width
+  - Value 3: frame; 64 × 97; fills width; column; gap 2; cross end; hugs height
+    - Edit Label: instance of _Edit Label; 50 × 20; shown while Show Label
+    - Value 3: instance of _Wheels [State=Focused]; with Before "2024", Current "2025", Next "2026"; 64 × 75; fills width
+=== 1
+- component; 158 × 97; row; gap 4; cross end; hugs height; uses Width - Safe Area
+  - Value 1: frame; 43 × 75; column; gap 2; padding 0 1 0 1; hugs content; uses Picker/Value Min Width
+    - Value 1: instance of _Wheels [State=Default]; 41 × 75; fills width
+  - Value 2: frame; 52 × 97; column; gap 2; padding 0 1 0 1; cross center; hugs content; uses Picker/Value Min Width
+    - Edit Label: instance of _Edit Label; 50 × 20; shown while Show Label
+    - Value 2: instance of _Wheels [State=Focused]; with Before "20", Current "21", Next "22"; 50 × 75; fills width
+  - Value 3: frame; 55 × 75; fills width; column; gap 2; cross end; hugs height
+    - Value 3: instance of _Wheels [State=Default]; with Before "2024", Current "2025", Next "2026"; 55 × 75; fills width
+=== 2
+- component; 158 × 97; row; gap 4; cross end; hugs height; uses Width - Safe Area
+  - Value 1: frame; 52 × 97; column; gap 2; padding 0 1 0 1; hugs content; uses Picker/Value Min Width
+    - Edit Label: instance of _Edit Label; 50 × 20; shown while Show Label
+    - Value 1: instance of _Wheels [State=Focused]; 50 × 75; fills width
+  - Value 2: frame; 43 × 75; column; gap 2; padding 0 1 0 1; cross center; hugs content; uses Picker/Value Min Width
+    - Value 2: instance of _Wheels [State=Default]; with Before "20", Current "21", Next "22"; 41 × 75; fills width
+  - Value 3: frame; 55 × 75; fills width; column; gap 2; cross end; hugs height
+    - Value 3: instance of _Wheels [State=Default]; with Before "2024", Current "2025", Next "2026"; 55 × 75; fills width
+=== 3
+- component; 158 × 75; row; gap 4; uses Width - Safe Area, Picker/Height
+  - Value 1: instance of _Wheels [State=Default]; 43 × 75
+  - Value 2: instance of _Wheels [State=Default]; with Before "20", Current "21", Next "22"; 43 × 75
+  - Value 3: instance of _Wheels [State=Default]; with Before "2024", Current "2025", Next "2026"; 64 × 75; fills width
+=== 4
+- component; 158 × 97; row; cross end; hugs height; uses Width - Safe Area
+  - Value 1: frame; 43.33 × 75; fills width; column; gap 2; padding 0 1 0 1; hugs height
+    - Value 1: instance of _Wheels [State=Default]; 41.33 × 75; fills width
+  - text ":"; SF Pro Regular 24; centered; 14 × 97; fills height; color #ffffff
+  - Value 2: frame; 43.33 × 97; fills width; column; gap 2; cross center; hugs height
+    - Edit Label: instance of _Edit Label; 50 × 20; shown while Show Label
+    - Value 2: instance of _Wheels [State=Focused]; 43.33 × 75; fills width
+  - text ":"; SF Pro Regular 24; centered; 14 × 97; fills height; color #ffffff
+  - Value 3: frame; 43.33 × 75; fills width; column; gap 2; padding 0 1 0 1; cross end; hugs height
+    - Value 3: instance of _Wheels [State=Default]; 41.33 × 75; fills width
+=== 5
+- component; 158 × 97; row; cross end; hugs height; uses Width - Safe Area
+  - Value 1: frame; 43.33 × 97; fills width; column; gap 2; padding 0 1 0 1; hugs height
+    - Edit Label: instance of _Edit Label; 50 × 20; shown while Show Label
+    - Value 1: instance of _Wheels [State=Focused]; 41.33 × 75; fills width
+  - text ":"; SF Pro Regular 24; centered; 14 × 97; fills height; color #ffffff
+  - Value 2: frame; 43.33 × 75; fills width; column; gap 2; cross center; hugs height
+    - Value 2: instance of _Wheels [State=Default]; 43.33 × 75; fills width
+  - text ":"; SF Pro Regular 24; centered; 14 × 97; fills height; color #ffffff
+  - Value 3: frame; 43.33 × 75; fills width; column; gap 2; padding 0 1 0 1; cross end; hugs height
+    - Value 3: instance of _Wheels [State=Default]; 41.33 × 75; fills width
+=== 6
+- component; 158 × 97; row; cross end; hugs height; uses Width - Safe Area
+  - Value 1: frame; 43.33 × 75; fills width; column; gap 2; padding 0 1 0 1; hugs height
+    - Value 1: instance of _Wheels [State=Default]; 41.33 × 75; fills width
+  - text ":"; SF Pro Regular 24; centered; 14 × 97; fills height; color #ffffff
+  - Value 2: frame; 43.33 × 75; fills width; column; gap 2; cross center; hugs height
+    - Value 2: instance of _Wheels [State=Default]; 43.33 × 75; fills width
+  - text ":"; SF Pro Regular 24; centered; 14 × 97; fills height; color #ffffff
+  - Value 3: frame; 43.33 × 97; fills width; column; gap 2; padding 0 1 0 1; cross end; hugs height
+    - Edit Label: instance of _Edit Label; 50 × 20; shown while Show Label
+    - Value 3: instance of _Wheels [State=Focused]; 41.33 × 75; fills width
+=== 7
+- component; 158 × 75; row; uses Width - Safe Area, Picker/Height
+  - Value 1: instance of _Wheels [State=Default]; 43.33 × 75; fills width; fills height
+  - text ":"; SF Pro Regular 24; centered; 14 × 75; fills height; color #ffffff
+  - Value 2: instance of _Wheels [State=Default]; 43.33 × 75; fills width; fills height
+  - text ":"; SF Pro Regular 24; centered; 14 × 75; fills height; color #ffffff
+  - Value 3: instance of _Wheels [State=Default]; 43.33 × 75; fills width; fills height
+=== 8
+- component; 143 × 97; row; cross end; hugs height; uses Width - Copy Safe Area
+  - Value 1: frame; 64.5 × 75; fills width; column; gap 2; hugs height
+    - Value 1: instance of _Wheels [State=Default]; 64.5 × 75; fills width
+  - text ":"; SF Pro Regular 24; centered; 14 × 97; fills height; color #ffffff
+  - Value 2: frame; 64.5 × 97; fills width; column; gap 2; cross end; hugs height
+    - Edit Label: instance of _Edit Label; 50 × 20; shown while Show Label
+    - Value 2: instance of _Wheels [State=Focused]; 64.5 × 75; fills width
+=== 9
+- component; 143 × 97; row; cross end; hugs height; uses Width - Copy Safe Area
+  - Value 1: frame; 64.5 × 97; fills width; column; gap 2; hugs height
+    - Edit Label: instance of _Edit Label; 50 × 20; shown while Show Label
+    - Value 1: instance of _Wheels [State=Focused]; 64.5 × 75; fills width
+  - text ":"; SF Pro Regular 24; centered; 14 × 97; fills height; color #ffffff
+  - Value 2: frame; 64.5 × 75; fills width; column; gap 2; cross end; hugs height
+    - Value 2: instance of _Wheels [State=Default]; 64.5 × 75; fills width
+=== 10
+- component; 143 × 75; row; uses Width - Copy Safe Area, Picker/Height
+  - Value 1: instance of _Wheels [State=Default]; 64.5 × 75; fills width; fills height
+  - text ":"; SF Pro Regular 24; centered; 14 × 75; fills height; color #ffffff
+  - Value 2: instance of _Wheels [State=Default]; 64.5 × 75; fills width; fills height
+=== 11
+- component; 143 × 97; column; gap 2; cross center; hugs height; uses Width - Copy Safe Area
+  - Edit Label: instance of _Edit Label; 50 × 20; shown while Show Label
+  - Value 1: instance of _Wheels [State=Focused]; 143 × 75; fills width
+=== 12
+- component; 143 × 75; column; gap 2; cross center; uses Width - Copy Safe Area, Picker/Height
+  - Value 1: instance of _Wheels [State=Default]; 143 × 75; fills height; fills width

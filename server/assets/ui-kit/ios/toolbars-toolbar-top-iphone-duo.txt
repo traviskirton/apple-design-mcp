@@ -1,0 +1,91 @@
+=== 0
+- component; 600 × 74; row; gap 12; padding 16 16 10 16; cross center; hugs height
+  - Leading: frame; 48 × 48; row; gap 10; cross center; hugs content; slot Leading
+    - Button: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+  - Title and Subtitle: frame; 390 × 38; fills width; column; gap -2; main center
+    - Title: instance of _Title - iPhone - Subheadline; 32 × 20
+    - Subtitle: instance of _Subtitle - iPhone - Caption; 46 × 16; shown while Show Subtitle
+  - Trailing: frame; 106 × 48; row; gap 10; main end; cross center; hugs content; slot Trailing
+    - Button: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+    - Done: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+  - Grabber: instance of Grabber; 60 × 4; absolute at (270, 10); blend linear burn
+=== 1
+- component; 600 × 76; row; gap 12; padding 16 16 10 16; cross center; hugs height
+  - Leading: frame; 48 × 48; row; gap 10; cross center; hugs content; slot Leading
+    - Button: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+  - Title and Subtitle: frame; 390 × 50; fills width; fills height; column; main center
+    - Title: instance of _Title - iPhone Duo - Large Title; 390 × 34; fills width
+    - Subtitle: instance of _Subtitle - iPhone - Caption; 46 × 16; shown while Show Subtitle
+  - Trailing: frame; 106 × 48; row; gap 10; main end; cross center; hugs content
+    - Button: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+    - Done: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+  - Grabber: instance of Grabber; 60 × 4; absolute at (270, 10); blend linear burn
+=== 2
+- component; 600 × 138; column; gap 10; padding 16 16 10 16; cross center; hugs height
+  - Controls: frame; 568 × 48; fills width; row; gap 12; cross center; hugs height
+    - Leading: frame; 106 × 48; row; gap 10; cross center; hugs content; slot Leading
+      - Button: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+      - Button: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+    - Spacer: frame; 332 × 48; fills width; fills height
+    - Trailing: frame; 106 × 48; row; gap 10; main end; cross center; hugs content; slot Trailing
+      - Button: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+      - Done: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+  - Title and Subtitle: frame; 568 × 54; fills width; column; hugs height
+    - Title: instance of _Title - iPhone Duo - Large Title; 568 × 34; fills width
+    - Subtitle: instance of _Subtitle - iPhone - Subheadline; 55 × 20; shown while Show Subtitle
+  - Grabber: instance of Grabber; 60 × 4; absolute at (270, 10); blend linear burn
+=== 3
+- component; 600 × 76; row; gap 12; padding 16 16 12 16; cross center; hugs height
+  - Leading: frame; 48 × 48; row; gap 10; cross center; hugs content; slot Leading
+    - Button: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+  - Title: frame; 388 × 22; fills width; row; cross center; hugs height
+    - Title: instance of _Title - iPhone - Body; 36 × 22
+  - Trailing: frame; 108 × 48; row; gap 12; main end; cross center; hugs content; slot Trailing
+    - Button: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+    - Done: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+  - Grabber: instance of Grabber; 60 × 4; absolute at (270, 10); blend linear burn
+=== 4
+- component; 600 × 82; row; gap 12; padding 24 24 10 20; cross center; hugs height
+  - Leading: frame; 48 × 48; row; gap 10; cross center; hugs content; slot Leading
+    - Button: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+  - Title and Subtitle: frame; 154 × 38; fills width; column; gap -2; main center
+    - Title: instance of _Title - iPhone - Subheadline; 32 × 20; fills width
+    - Subtitle: instance of _Subtitle - iPhone - Caption; 46 × 16; fills width; shown while Show Subtitle
+  - Trailing: frame; 164 × 48; row; gap 10; main end; cross center; hugs content; slot Trailing
+    - Button Group: instance of _Buttons - 48pt [Type=Button Group, Preferred Axis=Horizontal]; 164 × 48
+  - Status bar - iPhone Duo: instance of Status bar - iPhone Duo [Type=Horizontal]; 98 × 48
+  - Reserved Region - Camera - Right: rectangle; 44 × 48
+=== 5
+- component; 600 × 84; row; gap 12; padding 24 24 10 20; cross center; hugs height
+  - Leading: frame; 48 × 48; row; gap 10; cross center; hugs content; slot Leading
+    - Button: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+  - Title and Subtitle: frame; 154 × 50; fills width; fills height; column; main center
+    - Title: instance of _Title - iPhone Duo - Large Title; 154 × 34; fills width
+    - Subtitle: instance of _Subtitle - iPhone - Caption; 46 × 16; shown while Show Subtitle
+  - Trailing: frame; 164 × 48; row; gap 10; main end; cross center; hugs content
+    - Button Group: instance of _Buttons - 48pt [Type=Button Group, Preferred Axis=Horizontal]; 164 × 48
+  - Status bar - iPhone Duo: instance of Status bar - iPhone Duo [Type=Horizontal]; 98 × 48
+  - Reserved Region - Camera - Right: rectangle; 44 × 48
+=== 6
+- component; 600 × 146; column; gap 10; padding 24 24 10 20; cross center; hugs height
+  - Controls: frame; 556 × 48; fills width; row; gap 12; cross center; hugs height
+    - Leading: frame; 48 × 48; row; gap 10; cross center; hugs content; slot Leading
+      - Button: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+    - Spacer: frame; 154 × 48; fills width; fills height
+    - Trailing: frame; 164 × 48; row; gap 10; main end; cross center; hugs content; slot Trailing
+      - Button Group: instance of _Buttons - 48pt [Type=Button Group, Preferred Axis=Horizontal]; 164 × 48
+    - Status bar - iPhone Duo: instance of Status bar - iPhone Duo [Type=Horizontal]; 98 × 48
+    - Reserved Region - Camera - Right: rectangle; 44 × 48
+  - Title and Subtitle: frame; 556 × 54; fills width; column; hugs height
+    - Title: instance of _Title - iPhone Duo - Large Title; 556 × 34; fills width
+    - Subtitle: instance of _Subtitle - iPhone - Subheadline; 55 × 20; fills width; shown while Show Subtitle
+=== 7
+- component; 600 × 84; row; gap 12; padding 24 24 12 20; cross center; hugs height
+  - Leading: frame; 48 × 48; row; gap 10; cross center; hugs content; slot Leading
+    - Button: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+  - Title: frame; 154 × 22; fills width; row; cross center; hugs height
+    - Title: instance of _Title - iPhone - Body; 36 × 22
+  - Trailing: frame; 164 × 48; row; gap 12; main end; cross center; hugs content; slot Trailing
+    - Button: instance of _Buttons - 48pt [Type=Button Group, Preferred Axis=Horizontal]; 164 × 48
+  - Status bar - iPhone Duo: instance of Status bar - iPhone Duo [Type=Horizontal]; 98 × 48
+  - Reserved Region - Camera - Right: rectangle; 44 × 48

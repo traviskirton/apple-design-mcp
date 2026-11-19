@@ -1,0 +1,6 @@
+=== 0
+- component; 260 × 54; row; padding 21 12 11 12; cross center; hugs height
+  - text "Section Heading"; SF Pro Regular 17/22; 166 × 22; fills width; color Labels/Secondary at 60%; blend linear burn
+  - Trailing: frame; 70 × 22; row; gap 8; cross center; hugs content
+    - text "Detail"; style Body/Regular; right-aligned; 44 × 22; color Labels/Secondary at 60%; blend linear burn; shown while Show Detail
+    - Disclosure: instance of _Trailing - Disclosure [Open=True]; 18 × 18; shown while Show Disclosure

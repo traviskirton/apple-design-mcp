@@ -1,0 +1,6 @@
+=== 0
+- component; 132 × 16; row; gap 8; cross center; hugs height
+  - Time: frame; 55 × 16; row; gap 2; cross center; hugs content
+    - text "9:41"; SF Pro Medium 14/16; 30 × 16; color Labels/Primary
+    - text "AM"; SF Pro Medium 14/16; 23 × 16; color Labels/Primary
+  - text "Wed Apr 1"; SF Pro Medium 14/16; 69 × 16; color Labels/Primary

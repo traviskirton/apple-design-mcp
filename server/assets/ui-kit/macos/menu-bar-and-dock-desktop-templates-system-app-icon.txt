@@ -1,0 +1,4 @@
+=== 0
+- component; 72 × 72; row; hugs width; fill image
+=== 1
+- component; 72 × 72; row; hugs content; fill image

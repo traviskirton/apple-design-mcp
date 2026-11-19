@@ -48,7 +48,7 @@ Nothing holds the position of the Dynamic Island or cameras, or fold and hinge p
 Apple publishes product bezels on its design resources page: photographic pictures of each device with an empty screen, as PNG and Photoshop files. `../scripts/fetch_apple_design_resources.py --only bezel --extract` downloads and unpacks them on a Mac (1.9 GB, of which the PNGs are 134 MB), and `scripts/build-bezel-pack.mjs` turns the PNGs into:
 
 - `src/pack/bezels.js`: every picture's model, finish, pose, size in pixels and the position of its screen. Committed, and compiled into the Worker.
-- `assets/bezels/ID.png`: the pictures, public at `/bezels/ID.png`. Not committed, so a deploy from a machine without this folder leaves their addresses broken.
+- `assets/bezels/ID.png`: the pictures, public at `/bezels/ID.png`. Committed with the rest of `assets/`.
 
 - `npm run pack:bezels` rebuilds both. The downloads do not say where the screen is, so the builder measures it: the screen is the see-through area that the device encloses (`scripts/png-alpha.mjs`, a PNG reader without dependencies).
 
@@ -60,16 +60,16 @@ SF Symbols come in two parts, both written by the extractor on a Mac (see `../ex
 
 - `src/pack/symbols.js`: every symbol's name, release year, categories, Apple's search keywords and usage restriction. Committed, and compiled into the Worker.
 - `src/pack/symbol-index.js`: the search index over symbols.js, written by `npm run pack:symbol-index` (the extractor runs it). Committed; prebuilt so the Worker starts faster.
-- `assets/symbols/NAME.svg`: one file per symbol with its regular-weight shape. Not committed. Wrangler uploads the `assets` folder with each deploy, the server reads a file when a tool asks for that symbol, and each file is also public at `/symbols/NAME.svg`.
+- `assets/symbols/NAME.svg`: one file per symbol with its regular-weight shape. Wrangler uploads the `assets` folder with each deploy, the server reads a file when a tool asks for that symbol, and each file is also public at `/symbols/NAME.svg`.
 
-A deploy from a machine where `assets/symbols` is empty removes the shapes from the live server; the tools then return names only. Deploy from the Mac that ran the extractor.
+A deploy replaces every file the live server holds with the contents of `assets/`, so a deploy without these files would remove them there. `assets/` is committed, and `npm run check` (run by the build step before every deploy) stops a deploy when it holds fewer files than the packs describe.
 
 ## The technology pack
 
 Apple publishes artwork for showing its technologies in an app (Sign in with Apple, AirPlay, ARKit, Game Center, HomeKit, Apple Health, Siri, Add Apple Watch Face) as disk images on its design resources page. `../scripts/fetch_apple_design_resources.py --only Technologies --extract` downloads and unpacks them on a Mac, and `scripts/build-technology-pack.mjs` turns them into:
 
 - `src/pack/technologies.js`: every artwork's id, name and size, with the SVG itself for vector artwork. Committed, and compiled into the Worker. Where Apple gives only a PDF, or an SVG that needs one of Apple's fonts, the SVG is converted from the PDF by the extractor.
-- `assets/technologies/ID.svg` and `ID.png`: the same artwork as static files, public at `/technologies/ID.svg`. Not committed. Pictures (app icons, the Siri icons) exist only here, so a deploy from a machine without this folder leaves their addresses broken.
+- `assets/technologies/ID.svg` and `ID.png`: the same artwork as static files, public at `/technologies/ID.svg`.
 
 - `npm run pack:technologies` rebuilds both after `fetch_apple_design_resources.py` reports a change.
 
@@ -88,10 +88,10 @@ Apple's UI kits for Figma define the system colors, text styles and standard siz
 Apple's UI kits for Figma hold its standard components: toolbars, tab bars, lists, alerts, sheets, keyboards, windows and whole example screens. A kit saved from Figma as a local copy (File, Save local copy) is a `.fig` file. `scripts/fig-dump.mjs` reads that format without any dependency, and `scripts/build-ui-kit-pack.mjs` reads every `.fig` file in `../apple-resources/` (not committed) and turns the kits into:
 
 - `src/pack/ui-kit.js`: every component of every kit with its page, variants, properties, sizes, guidelines page and the components it uses. Committed, and compiled into the Worker (about 490 KB).
-- `assets/ui-kit/KIT/ID.txt`: one text file per component with the outline of each variant's layers. Not committed; a deploy from a machine without this folder leaves `search_ui_kit` with names, properties and sizes only.
+- `assets/ui-kit/KIT/ID.txt`: one text file per component with the outline of each variant's layers.
 
 - `npm run pack:ui-kit` rebuilds both. It needs the `.fig` files and Node 22.15 or later, and no Mac.
-- `assets/ui-kit-svg/KIT/NODE.svg`: Apple's drawing of every variant, which is what `search_ui_kit` hands over as the component. Not committed; without this folder the tool returns outlines only. `node scripts/export-ui-kit-svg.mjs` writes it, and `npm run pack:ui-kit` afterwards counts the drawings into the pack.
+- `assets/ui-kit-svg/KIT/NODE.svg`: Apple's drawing of every variant, which is what `search_ui_kit` hands over as the component. `node scripts/export-ui-kit-svg.mjs` writes it, and `npm run pack:ui-kit` afterwards counts the drawings into the pack.
 
 The drawings come from Figma itself, through its REST API, because only Figma renders a kit's components exactly. The export needs a Figma personal access token with "File content: Read-only" in `~/.config/apple-mcp/figma-token` or in `FIGMA_TOKEN` (the file is tried first, and the script says which one Figma accepted), and `scripts/figma/kit-files.json` with the file key of a copy of each kit in the token owner's Figma account. It asks for 40 variants at a time, skips the ones already on disk, and can be stopped and started again. Each SVG has the component's own size (a shadow reaches past its box), the layers' names as ids and labels as text. Figma writes an SF Symbol as a private-use character that shows only where Apple's fonts are installed, so the script exports those variants a second time with outlined text and puts each symbol's outline in place of its character, marked `data-symbol` with the symbol's name. The watchOS kit has no drawings until a copy of it is in Figma.
 

@@ -1,0 +1,7 @@
+=== 0
+- component; 162 × 72; column; gap 1; padding 8 8 6 8; main center
+  - Header: frame; 78 × 13; row; gap 2; cross center; hugs width
+    - text SF Symbol app.dashed; SF Pro Semibold 13/13; 16 × 13; color Vibrant Labels/Dark/Vibrant Secondary; background blur 40; property Symbol
+    - Separator: rectangle; 1 × 13; fills height; capsule; fill Vibrant Labels/Dark/Vibrant Secondary; background blur 40
+    - text "Header"; SF Pro Heavy 13/13; uppercase; 57 × 13; color Vibrant Labels/Dark/Vibrant Secondary; background blur 40; property Header
+  - text "Preview of body. Lorem ipsum dolor sit amet, consectetur ad…"; SF Pro Medium 12/16; 144 × 48; color Vibrant Labels/Dark/Vibrant Primary; background blur 135.91; property Body

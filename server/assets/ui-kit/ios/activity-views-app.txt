@@ -1,0 +1,4 @@
+=== 0
+- component; 66 × 85
+  - text "App Name"; style Caption1/Regular; centered; 82 × 16; at (-8, 73); color Labels - Vibrant/Primary; blend linear burn
+  - Icon: instance of _System Icons [Icon=Airdrop]; 66 × 66; at (0, 0)

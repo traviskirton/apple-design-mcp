@@ -1,0 +1,12 @@
+=== 0
+- component; 20 × 20; fill #0088ff; stroke #000000 at 18% 10; opacity 30%; blend linear burn
+=== 1
+- component; 20 × 20; fill #0088ff; stroke #000000 at 18% 10; blend linear burn
+=== 2
+- component; 20 × 20; fill #000000 at 22%; blend linear burn
+=== 3
+- component; 20 × 20; fill #000000 at 70%; blend linear burn
+=== 4
+- component; 20 × 20; fill #ffffff; opacity 50%
+=== 5
+- component; 20 × 20; fill #ffffff

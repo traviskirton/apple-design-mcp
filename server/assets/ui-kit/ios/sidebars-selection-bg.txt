@@ -1,0 +1,3 @@
+=== 0
+- component; 100 × 44
+  - BG: rectangle; 100 × 44; at (0, 0); capsule; fill Fills - Vibrant/Tertiary (linear dodge); blend linear burn

@@ -1,0 +1,9 @@
+=== 0
+- component; 10 × 10; row; gap 4; main center; cross center; uses Progress Indicator/Height - Small
+  - Spinner: instance of _Spinner; 10 × 10; fills width; fills height
+=== 1
+- component; 15 × 15; row; gap 4; main center; cross center; uses Progress Indicator/Height - Medium
+  - Spinner: instance of _Spinner; 15 × 15; fills width; fills height
+=== 2
+- component; 29 × 29; row; gap 8; main center; cross center; uses Progress Indicator/Height - Large
+  - Spinner: instance of _Spinner; 29 × 29; fills width; fills height

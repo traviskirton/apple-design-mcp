@@ -1,0 +1,13 @@
+=== 0
+- component; 300 × 25
+  - Frame: frame; 283 × 25; at (8.5, -14); row; gap 6; cross center
+    - Autocomplete Suggestion: frame; 83 × 25; fills width; fills height; radius 4.6
+      - text "“Design”"; SF Pro Regular 18/22; centered; 83 × 25; at (0, 0); color Labels - Vibrant/Primary; blend linear burn; property Option 1
+    - Separator: frame; 5 × 25; row; padding 0 2 0 2; main center; cross center; hugs width
+      - Separator: rectangle; 1 × 25; fills height; capsule; fill Fills - Vibrant/Primary; opacity 10%; blend linear burn
+    - Autocomplete Suggestion: frame; 83 × 25; fills width; fills height; radius 4.6
+      - text "Designs"; SF Pro Regular 18/22; centered; 83 × 25; at (0, 0); color Labels - Vibrant/Primary; blend linear burn; property Option 2
+    - Separator: frame; 5 × 25; row; padding 0 2 0 2; main center; cross center; hugs width
+      - Separator: rectangle; 1 × 25; fills height; capsule; fill Fills - Vibrant/Primary; opacity 10%; blend linear burn
+    - Autocomplete Suggestion: frame; 83 × 25; fills width; fills height; radius 4.6
+      - text "Designed"; SF Pro Regular 18/22; centered; 83 × 25; at (0, 0); color Labels - Vibrant/Primary; blend linear burn; property Option 3

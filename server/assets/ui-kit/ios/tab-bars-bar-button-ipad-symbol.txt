@@ -1,0 +1,10 @@
+=== 0
+- component; 54 × 36; row; padding 8 16 8 16; main center; cross center; hugs content
+  - text SF Symbol sidebar.left; SF Pro Medium 15/20; centered; 22 × 20; color Labels - Vibrant/Primary; blend linear burn; property Symbol
+=== 1
+- component; 54 × 36; column; padding 8 16 8 16; hugs content; capsule
+  - Selection: rectangle; 54 × 36; absolute at (0, 0); capsule; fill Fills - Vibrant/Tertiary; blend linear burn
+  - Frame: frame; 22 × 20; row; gap 10; main center; cross center; hugs content
+    - text SF Symbol sidebar.left; SF Pro Bold 15/20; centered; 22 × 20; color Miscellaneous/Tab Bar Selection; mask; property Symbol
+    - FFFFFF @50%: rectangle; 54 × 36; absolute at (-16, -8); fill #ffffff at 50%
+    - Tint (Plus D): rectangle; 54 × 36; absolute at (-16, -8); fill Accents/Blue (linear burn); blend linear burn

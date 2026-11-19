@@ -1,0 +1,696 @@
+=== 0
+- component; 951 × 275.33; column; gap -2; padding 24 0 20 0; cross end; hugs height
+  - Background: instance of _Background - Keyboard; 951 × 275; absolute at (0, 0)
+  - Autocorrection: instance of _Autocorrection; 951 × 25; fills width; shown while Show suggestions
+  - Frame: frame; 951 × 208.33; fills width; row; gap 5; padding 0 12 0 12; hugs height
+    - Emoji: instance of _Bottom Buttons [Type=Emoji, Display=Inner, Orientation=Landscape]; 68 × 208.33; fills height
+    - Keys: frame; 781 × 208.33; fills width; column; gap 13; hugs height
+      - Row 1: frame; 781 × 42.33; fills width; row; gap 10; main center; cross center
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "["; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "]"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "{"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "}"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Punctuation, Display=Inner, Orientation=Landscape]; with Punctuation "#"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "%"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "^"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "*"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "+"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "="; 69.1 × 42.33; fills width; fills height
+      - Row 2: frame; 781 × 42.33; fills width; row; gap 10; main center; cross center
+        - Key: instance of _Keys - iPhone Duo [Type=Special Charaters (not capitalized), Display=Inner, Orientation=Landscape]; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "\\"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "|"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "~"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "<"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter ">"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "€"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "£"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "¥"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "·"; 69.1 × 42.33; fills width; fills height
+      - Row 3: frame; 781 × 42.33; fills width; row; gap 26; cross center
+        - Keyboard Switch: instance of _Keys - iPhone Duo [Type=Number and Punctuation Switch - 123, Display=Inner, Orientation=Landscape]; 92.67 × 42.33; fills height
+        - Middle: frame; 543.67 × 42.33; fills width; fills height; row; gap 10
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "."; 100.73 × 42.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter ","; 100.73 × 42.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "?"; 100.73 × 42.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "!"; 100.73 × 42.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "‘"; 100.73 × 42.33; fills width; fills height
+        - Return: instance of _Keys - iPhone Duo [Type=Delete, Display=Inner, Orientation=Landscape]; with Letter SF Symbol delete.backward; 92.67 × 42.33; fills height
+      - Row 4: frame; 781 × 42.33; fills width; row; gap 10; padding 0 23.67 0 23.67; cross center
+        - Keyboard Switch: instance of _Keys - iPhone Duo [Type=Keyboard Switch - ABC, Display=Inner, Orientation=Landscape]; 148.33 × 42.33; fills height
+        - Space: instance of _Keys - iPhone Duo [Type=Space, Display=Inner, Orientation=Landscape]; 417 × 42.33; fills width; fills height
+        - Return: instance of _Keys - iPhone Duo [Type=Return - Default, Display=Inner, Orientation=Landscape]; 148.33 × 42.33; fills height
+    - Mike: instance of _Bottom Buttons [Type=Mike, Display=Inner, Orientation=Landscape]; 68 × 208.33; fills height
+=== 1
+- component; 669 × 360.68; column; gap -2; padding 24 0 16 0; cross end; hugs height
+  - Background: instance of _Background - Keyboard; 669 × 361; absolute at (0, 0)
+  - Autocorrection: instance of _Autocorrection; 669 × 25; fills width; shown while Show suggestions
+  - Keys: frame; 669 × 240.68; fills width; column; gap 14; padding 0 17.67 0 17.67; hugs height
+    - Row 1: frame; 633.66 × 49.67; fills width; row; gap 9; main center; cross center
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "["; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "]"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "{"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "}"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Punctuation, Display=Inner, Orientation=Portrait]; with Punctuation "#"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "%"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "^"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "*"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "+"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "="; 55.27 × 49.67; fills width; fills height
+    - Row 2: frame; 633.66 × 49.67; fills width; row; gap 9; main center; cross center
+      - Key: instance of _Keys - iPhone Duo [Type=Special Charaters (not capitalized), Display=Inner, Orientation=Portrait]; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "\\"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "|"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "~"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "<"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter ">"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "€"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "£"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "¥"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "·"; 55.27 × 49.67; fills width; fills height
+    - Row 3: frame; 633.66 × 49.67; fills width; row; gap 22; cross center
+      - Keyboard Switch: instance of _Keys - iPhone Duo [Type=Number and Punctuation Switch - 123, Display=Inner, Orientation=Portrait]; 74.33 × 49.67; fills height
+      - Middle: frame; 440.99 × 49.67; fills width; fills height; row; gap 9
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "."; 81 × 49.67; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter ","; 81 × 49.67; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "?"; 81 × 49.67; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "!"; 81 × 49.67; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "‘"; 81 × 49.67; fills width; fills height
+      - Return: instance of _Keys - iPhone Duo [Type=Delete, Display=Inner, Orientation=Portrait]; with Letter SF Symbol delete.backward; 74.33 × 49.67; fills height
+    - Row 4: frame; 633.66 × 49.67; fills width; row; gap 9; cross center
+      - Keyboard Switch: instance of _Keys - iPhone Duo [Type=Keyboard Switch - ABC, Display=Inner, Orientation=Portrait]; 151.67 × 49.67; fills height
+      - Space: instance of _Keys - iPhone Duo [Type=Space, Display=Inner, Orientation=Portrait]; 312.33 × 49.67; fills width; fills height
+      - Return: instance of _Keys - iPhone Duo [Type=Return - Default, Display=Inner, Orientation=Portrait]; 151.67 × 49.67; fills height
+  - Emoji and Mike: frame; 669 × 59; fills width; row; space between; padding 17 63 0 63; cross center; hugs height
+    - Emoji: instance of _Bottom Buttons [Type=Emoji, Display=Inner, Orientation=Portrait]; 62 × 28
+    - Mike: instance of _Bottom Buttons [Type=Mike, Display=Inner, Orientation=Portrait]; 62 × 42
+=== 2
+- component; 678 × 229.33; column; padding 24 0 20 0; cross end; hugs height
+  - Background: instance of _Background - Keyboard; 678 × 229; absolute at (0, 0)
+  - Autocorrection: instance of _Autocorrection; 678 × 25; fills width; shown while Show suggestions
+  - Frame: frame; 678 × 160.33; fills width; row; gap 4; padding 0 10 0 10; hugs height
+    - Emoji: instance of _Bottom Buttons [Type=Emoji, Display=Outer, Orientation=Landscape]; 68 × 160.33; fills height
+    - Keys: frame; 514 × 160.33; fills width; column; gap 9; hugs height
+      - Row 1: frame; 514 × 33.33; fills width; row; gap 6.67; main center; cross center
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "["; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "]"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "{"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "}"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Punctuation, Display=Outer, Orientation=Landscape]; with Punctuation "#"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "%"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "^"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "*"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "+"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "="; 45.4 × 33.33; fills width; fills height
+      - Row 2: frame; 514 × 33.33; fills width; row; gap 6.67; main center; cross center
+        - Key: instance of _Keys - iPhone Duo [Type=Special Charaters (not capitalized), Display=Outer, Orientation=Landscape]; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "\\"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "|"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "~"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "<"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter ">"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "€"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "£"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "¥"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "·"; 45.4 × 33.33; fills width; fills height
+      - Row 3: frame; 514 × 33.33; fills width; row; gap 17.67; cross center
+        - Keyboard Switch: instance of _Keys - iPhone Duo [Type=Number and Punctuation Switch - 123, Display=Outer, Orientation=Landscape]; 60.33 × 33.33; fills height
+        - Middle: frame; 357.99 × 33.33; fills width; fills height; row; gap 6
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "."; 66.8 × 33.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter ","; 66.8 × 33.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "?"; 66.8 × 33.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "!"; 66.8 × 33.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "‘"; 66.8 × 33.33; fills width; fills height
+        - Return: instance of _Keys - iPhone Duo [Type=Delete, Display=Outer, Orientation=Landscape]; with Letter SF Symbol delete.backward; 60.33 × 33.33; fills height
+      - Row 4: frame; 514 × 33.33; fills width; row; gap 7; cross center
+        - Keyboard Switch: instance of _Keys - iPhone Duo [Type=Keyboard Switch - ABC, Display=Outer, Orientation=Landscape]; 98 × 33.33; fills height
+        - Space: instance of _Keys - iPhone Duo [Type=Space, Display=Outer, Orientation=Landscape]; 304 × 33.33; fills width; fills height
+        - Return: instance of _Keys - iPhone Duo [Type=Return - Default, Display=Outer, Orientation=Landscape]; 98 × 33.33; fills height
+    - Mike: frame; 68 × 160.33; fills height; column; gap 10; main center; cross center; hugs width
+      - Mike: instance of _Bottom Buttons [Type=Mike, Display=Outer, Orientation=Landscape]; 68 × 160.33; fills height
+=== 3
+- component; 466 × 286.01; column; gap -2; padding 24 0 39 0; cross end; hugs height
+  - Background: instance of _Background - Keyboard; 466 × 286; absolute at (0, 0)
+  - Autocorrection: instance of _Autocorrection; 466 × 25; fills width; shown while Show suggestions
+  - Keys: frame; 466 × 200.01; fills width; column; gap 10.67; padding 0 17.67 0 17.67; hugs height
+    - Row 1: frame; 430.66 × 42; fills width; row; gap 6; main center; cross center
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "["; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "]"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "{"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "}"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Punctuation, Display=Outer, Orientation=Portrait]; with Punctuation "#"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "%"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "^"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "*"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "+"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "="; 37.67 × 42; fills width; fills height
+    - Row 2: frame; 430.66 × 42; fills width; row; gap 6; main center; cross center
+      - Key: instance of _Keys - iPhone Duo [Type=Special Charaters (not capitalized), Display=Outer, Orientation=Portrait]; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "\\"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "|"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "~"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "<"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter ">"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "€"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "£"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "¥"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "·"; 37.67 × 42; fills width; fills height
+    - Row 3: frame; 430.66 × 42; fills width; row; gap 13.67; cross center
+      - Keyboard Switch: instance of _Keys - iPhone Duo [Type=Number and Punctuation Switch - 123, Display=Outer, Orientation=Portrait]; 50.67 × 42; fills height
+      - Middle: frame; 301.99 × 42; fills width; fills height; row; gap 6
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "."; 55.6 × 42; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter ","; 55.6 × 42; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "?"; 55.6 × 42; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "!"; 55.6 × 42; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "‘"; 55.6 × 42; fills width; fills height
+      - Return: instance of _Keys - iPhone Duo [Type=Delete, Display=Outer, Orientation=Portrait]; with Letter SF Symbol delete.backward; 50.67 × 42; fills height
+    - Row 4: frame; 430.66 × 42; fills width; row; gap 6; cross center
+      - Emoji: instance of _Bottom Buttons [Type=Emoji, Display=Outer, Orientation=Portrait]; 42 × 42
+      - Keyboard Switch: instance of _Keys - iPhone Duo [Type=Keyboard Switch - ABC, Display=Outer, Orientation=Portrait]; 81 × 42; fills height
+      - Space: instance of _Keys - iPhone Duo [Type=Space, Display=Outer, Orientation=Portrait]; 160.66 × 42; fills width; fills height
+      - Return: instance of _Keys - iPhone Duo [Type=Return - Default, Display=Outer, Orientation=Portrait]; 81 × 42; fills height
+      - Mike: instance of _Bottom Buttons [Type=Mike, Display=Outer, Orientation=Portrait]; 42 × 42
+=== 4
+- component; 951 × 275.33; column; gap -2; padding 24 0 20 0; cross end; hugs height
+  - Background: instance of _Background - Keyboard; 951 × 275; absolute at (0, 0)
+  - Autocorrection: instance of _Autocorrection; 951 × 25; fills width; shown while Show suggestions
+  - Frame: frame; 951 × 208.33; fills width; row; gap 5; padding 0 12 0 12; hugs height
+    - Emoji: instance of _Bottom Buttons [Type=Emoji, Display=Inner, Orientation=Landscape]; 68 × 208.33; fills height
+    - Keys: frame; 781 × 208.33; fills width; column; gap 13; hugs height
+      - Row 1: frame; 781 × 42.33; fills width; row; gap 10; main center; cross center
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "1"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "2"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "3"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "4"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "5"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "6"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "7"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "8"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "9"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "0"; 69.1 × 42.33; fills width; fills height
+      - Row 2: frame; 781 × 42.33; fills width; row; gap 10; main center; cross center
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "-"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "/"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Special Charaters (not capitalized), Display=Inner, Orientation=Landscape]; with Character ":"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter ";"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "("; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter ")"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "$"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "&"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "@"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "“"; 69.1 × 42.33; fills width; fills height
+      - Row 3: frame; 781 × 42.33; fills width; row; gap 26; cross center
+        - #+=: instance of _Keys - iPhone Duo [Type=Number and Punctuation Switch - #+, Display=Inner, Orientation=Landscape]; 92.67 × 42.33; fills height
+        - Middle: frame; 543.67 × 42.33; fills width; fills height; row; gap 10
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "."; 100.73 × 42.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter ","; 100.73 × 42.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "?"; 100.73 × 42.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "!"; 100.73 × 42.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "‘"; 100.73 × 42.33; fills width; fills height
+        - Delete Key: instance of _Keys - iPhone Duo [Type=Delete, Display=Inner, Orientation=Landscape]; with Letter SF Symbol delete.backward; 92.67 × 42.33; fills height
+      - Row 4: frame; 781 × 42.33; fills width; row; gap 10; padding 0 23.67 0 23.67; cross center
+        - Keyboard Switch: instance of _Keys - iPhone Duo [Type=Keyboard Switch - ABC, Display=Inner, Orientation=Landscape]; 148.33 × 42.33; fills height
+        - Space: instance of _Keys - iPhone Duo [Type=Space, Display=Inner, Orientation=Landscape]; 417 × 42.33; fills width; fills height
+        - Return: instance of _Keys - iPhone Duo [Type=Return - Default, Display=Inner, Orientation=Landscape]; 148.33 × 42.33; fills height
+    - Mike: instance of _Bottom Buttons [Type=Mike, Display=Inner, Orientation=Landscape]; 68 × 208.33; fills height
+=== 5
+- component; 669 × 360.68; column; gap -2; padding 24 0 16 0; cross end; hugs height
+  - Background: instance of _Background - Keyboard; 669 × 361; absolute at (0, 0)
+  - Autocorrection: instance of _Autocorrection; 669 × 25; fills width; shown while Show suggestions
+  - Keys: frame; 669 × 240.68; column; gap 14; padding 0 17.67 0 17.67; hugs height
+    - Row 1: frame; 633.66 × 49.67; fills width; row; gap 9; main center; cross center
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "1"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "2"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "3"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "4"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "5"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "6"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "7"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "8"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "9"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "0"; 55.27 × 49.67; fills width; fills height
+    - Row 2: frame; 633.66 × 49.67; fills width; row; gap 9; main center; cross center
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "-"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "/"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Special Charaters (not capitalized), Display=Inner, Orientation=Portrait]; with Character ":"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter ";"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "("; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter ")"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "$"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "&"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "@"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "“"; 55.27 × 49.67; fills width; fills height
+    - Row 3: frame; 633.66 × 49.67; fills width; row; gap 22; cross center
+      - #+=: instance of _Keys - iPhone Duo [Type=Number and Punctuation Switch - #+, Display=Inner, Orientation=Portrait]; 74.33 × 49.67; fills height
+      - Middle: frame; 440.99 × 49.67; fills width; fills height; row; gap 9
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "."; 81 × 49.67; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter ","; 81 × 49.67; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "?"; 81 × 49.67; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "!"; 81 × 49.67; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "‘"; 81 × 49.67; fills width; fills height
+      - Delete Key: instance of _Keys - iPhone Duo [Type=Delete, Display=Inner, Orientation=Portrait]; with Letter SF Symbol delete.backward; 74.33 × 49.67; fills height
+    - Row 5: frame; 633.66 × 49.67; fills width; row; gap 9; cross center
+      - Keyboard Switch: instance of _Keys - iPhone Duo [Type=Keyboard Switch - ABC, Display=Inner, Orientation=Portrait]; 151.67 × 49.67; fills height
+      - Space: instance of _Keys - iPhone Duo [Type=Space, Display=Inner, Orientation=Portrait]; 312.33 × 49.67; fills width; fills height
+      - Return: instance of _Keys - iPhone Duo [Type=Return - Default, Display=Inner, Orientation=Portrait]; 151.67 × 49.67; fills height
+  - Emoji and Mike: frame; 669 × 59; fills width; row; space between; padding 17 63 0 63; cross center; hugs height
+    - Emoji: instance of _Bottom Buttons [Type=Emoji, Display=Inner, Orientation=Portrait]; 62 × 28
+    - Mike: instance of _Bottom Buttons [Type=Mike, Display=Inner, Orientation=Portrait]; 62 × 42
+=== 6
+- component; 678 × 229.33; column; padding 24 0 20 0; cross end; hugs height
+  - Background: instance of _Background - Keyboard; 678 × 229; absolute at (0, 0)
+  - Autocorrection: instance of _Autocorrection; 678 × 25; fills width; shown while Show suggestions
+  - Frame: frame; 678 × 160.33; fills width; row; gap 4; padding 0 10 0 10; hugs height
+    - Emoji: instance of _Bottom Buttons [Type=Emoji, Display=Outer, Orientation=Landscape]; 68 × 160.33; fills height
+    - Keys: frame; 514 × 160.33; fills width; column; gap 9; hugs height
+      - Row 1: frame; 514 × 33.33; fills width; row; gap 6.67; main center; cross center
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "1"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "2"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "3"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "4"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "5"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "6"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "7"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "8"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "9"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "0"; 45.4 × 33.33; fills width; fills height
+      - Row 2: frame; 514 × 33.33; fills width; row; gap 6.67; main center; cross center
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "-"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "/"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Special Charaters (not capitalized), Display=Outer, Orientation=Landscape]; with Character ":"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter ";"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "("; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter ")"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "$"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "&"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "@"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "“"; 45.4 × 33.33; fills width; fills height
+      - Row 3: frame; 514 × 33.33; fills width; row; gap 17.67; cross center
+        - #+=: instance of _Keys - iPhone Duo [Type=Number and Punctuation Switch - #+, Display=Outer, Orientation=Landscape]; 60.33 × 33.33; fills height
+        - Middle: frame; 357.99 × 33.33; fills width; fills height; row; gap 6
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "."; 66.8 × 33.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter ","; 66.8 × 33.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "?"; 66.8 × 33.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "!"; 66.8 × 33.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "‘"; 66.8 × 33.33; fills width; fills height
+        - Delete Key: instance of _Keys - iPhone Duo [Type=Delete, Display=Outer, Orientation=Landscape]; with Letter SF Symbol delete.backward; 60.33 × 33.33; fills height
+      - Row 4: frame; 514 × 33.33; fills width; row; gap 7; cross center
+        - Keyboard Switch: instance of _Keys - iPhone Duo [Type=Keyboard Switch - ABC, Display=Outer, Orientation=Landscape]; 98 × 33.33; fills height
+        - Space: instance of _Keys - iPhone Duo [Type=Space, Display=Outer, Orientation=Landscape]; 304 × 33.33; fills width; fills height
+        - Return: instance of _Keys - iPhone Duo [Type=Return - Default, Display=Outer, Orientation=Landscape]; 98 × 33.33; fills height
+    - Mike: frame; 68 × 160.33; fills height; column; gap 10; main center; cross center; hugs width
+      - Mike: instance of _Bottom Buttons [Type=Mike, Display=Outer, Orientation=Landscape]; 68 × 160.33; fills height
+=== 7
+- component; 466 × 286.01; column; gap -2; padding 24 0 39 0; cross end; hugs height
+  - Background: instance of _Background - Keyboard; 466 × 286; absolute at (0, 0)
+  - Autocorrection: instance of _Autocorrection; 466 × 25; fills width; shown while Show suggestions
+  - Keys: frame; 466 × 200.01; fills width; column; gap 10.67; padding 0 17.67 0 17.67; hugs height
+    - Row 1: frame; 430.66 × 42; fills width; row; gap 6; main center; cross center
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "1"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "2"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "3"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "4"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "5"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "6"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "7"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "8"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "9"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "0"; 37.67 × 42; fills width; fills height
+    - Row 2: frame; 430.66 × 42; fills width; row; gap 6; main center; cross center
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "-"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "/"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Special Charaters (not capitalized), Display=Outer, Orientation=Portrait]; with Character ":"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter ";"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "("; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter ")"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "$"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "&"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "@"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "“"; 37.67 × 42; fills width; fills height
+    - Row 3: frame; 430.66 × 42; fills width; row; gap 13.67; cross center
+      - #+=: instance of _Keys - iPhone Duo [Type=Number and Punctuation Switch - #+, Display=Outer, Orientation=Portrait]; 50.67 × 42; fills height
+      - Middle: frame; 301.99 × 42; fills width; fills height; row; gap 6
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "."; 55.6 × 42; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter ","; 55.6 × 42; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "?"; 55.6 × 42; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "!"; 55.6 × 42; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "‘"; 55.6 × 42; fills width; fills height
+      - Delete Key: instance of _Keys - iPhone Duo [Type=Delete, Display=Outer, Orientation=Portrait]; with Letter SF Symbol delete.backward; 50.67 × 42; fills height
+    - Row 4: frame; 430.66 × 42; fills width; row; gap 6; cross center
+      - Emoji: instance of _Bottom Buttons [Type=Emoji, Display=Outer, Orientation=Portrait]; 42 × 42
+      - Keyboard Switch: instance of _Keys - iPhone Duo [Type=Keyboard Switch - ABC, Display=Outer, Orientation=Portrait]; 81 × 42; fills height
+      - Space: instance of _Keys - iPhone Duo [Type=Space, Display=Outer, Orientation=Portrait]; 160.66 × 42; fills width; fills height
+      - Return: instance of _Keys - iPhone Duo [Type=Return - Default, Display=Outer, Orientation=Portrait]; 81 × 42; fills height
+      - Mike: instance of _Bottom Buttons [Type=Mike, Display=Outer, Orientation=Portrait]; 42 × 42
+=== 8
+- component; 951 × 275.33; column; gap -2; padding 24 0 20 0; cross end; hugs height
+  - Background: instance of _Background - Keyboard; 951 × 275; absolute at (0, 0)
+  - Autocorrection: instance of _Autocorrection; 951 × 25; fills width; shown while Show suggestions
+  - Frame: frame; 951 × 208.33; fills width; row; gap 5; padding 0 12 0 12; hugs height
+    - Emoji: instance of _Bottom Buttons [Type=Emoji, Display=Inner, Orientation=Landscape]; 68 × 208.33; fills height
+    - Keys: frame; 781 × 208.33; fills width; column; gap 13; cross center; hugs height
+      - Row 1: frame; 781 × 42.33; fills width; row; gap 10; main center; cross center
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Landscape]; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Landscape]; with Letter "w"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Landscape]; with Letter "e"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Landscape]; with Letter "r"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Landscape]; with Letter "t"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Landscape]; with Letter "y"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Landscape]; with Letter "u"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Landscape]; with Letter "i"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Landscape]; with Letter "o"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Landscape]; with Letter "p"; 69.1 × 42.33; fills width; fills height
+      - Row 2: frame; 781 × 42.33; fills width; row; gap 10; padding 0 39.67 0 39.67; main center; cross center
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Landscape]; 69.07 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Landscape]; 69.07 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Landscape]; 69.07 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Landscape]; 69.07 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Landscape]; 69.07 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Landscape]; 69.07 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Landscape]; 69.07 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Landscape]; 69.07 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Landscape]; 69.07 × 42.33; fills width; fills height
+      - Row 3: frame; 781 × 42.33; fills width; row; gap 26; cross center
+        - Shift Key: instance of _Keys - iPhone Duo [Type=Shift - Off, Display=Inner, Orientation=Landscape]; with Letter SF Symbol shift; 92.67 × 42.33; fills height
+        - Row 3: frame; 543.67 × 42.33; fills width; fills height; row; gap 10
+          - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Landscape]; 69.1 × 42.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Landscape]; 69.1 × 42.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Landscape]; 69.1 × 42.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Landscape]; 69.1 × 42.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Landscape]; 69.1 × 42.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Landscape]; 69.1 × 42.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Landscape]; 69.1 × 42.33; fills width; fills height
+        - Delete Key: instance of _Keys - iPhone Duo [Type=Delete, Display=Inner, Orientation=Landscape]; with Letter SF Symbol delete.backward; 92.67 × 42.33; fills height
+      - Row 4: frame; 781 × 42.33; fills width; row; gap 10; padding 0 23.67 0 23.67; cross center
+        - Keyboard Switch: instance of _Keys - iPhone Duo [Type=Keyboard Switch - 123, Display=Inner, Orientation=Landscape]; 148.33 × 42.33; fills height
+        - Space: instance of _Keys - iPhone Duo [Type=Space, Display=Inner, Orientation=Landscape]; 417 × 42.33; fills width; fills height
+        - Return: instance of _Keys - iPhone Duo [Type=Return - Default, Display=Inner, Orientation=Landscape]; 148.33 × 42.33; fills height
+    - Mike: instance of _Bottom Buttons [Type=Mike, Display=Inner, Orientation=Landscape]; 68 × 208.33; fills height
+=== 9
+- component; 669 × 360.68; column; gap -2; padding 24 0 16 0; cross end; hugs height
+  - Background: instance of _Background - Keyboard; 669 × 361; absolute at (0, 0)
+  - Autocorrection: instance of _Autocorrection; 669 × 25; fills width; shown while Show suggestions
+  - Keys: frame; 669 × 240.68; fills width; column; gap 14; padding 0 17.67 0 17.67; cross center; hugs height
+    - Row 1: frame; 633.66 × 49.67; fills width; row; gap 9; main center; cross center
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Portrait]; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Portrait]; with Letter "w"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Portrait]; with Letter "e"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Portrait]; with Letter "r"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Portrait]; with Letter "t"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Portrait]; with Letter "y"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Portrait]; with Letter "u"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Portrait]; with Letter "i"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Portrait]; with Letter "o"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Portrait]; with Letter "p"; 55.27 × 49.67; fills width; fills height
+    - Row 2: frame; 633.66 × 49.67; fills width; row; gap 9; padding 0 33 0 33; main center; cross center
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Portrait]; 55.07 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Portrait]; 55.07 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Portrait]; 55.07 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Portrait]; 55.07 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Portrait]; 55.07 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Portrait]; 55.07 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Portrait]; 55.07 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Portrait]; 55.07 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Portrait]; 55.07 × 49.67; fills width; fills height
+    - Row 3: frame; 633.66 × 49.67; fills width; row; gap 22; cross center
+      - Shift Key: instance of _Keys - iPhone Duo [Type=Shift - Off, Display=Inner, Orientation=Portrait]; with Letter SF Symbol shift; 74.33 × 49.67; fills height
+      - Row 3: frame; 440.99 × 49.67; fills width; fills height; row; gap 9
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Portrait]; 55.28 × 49.67; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Portrait]; 55.28 × 49.67; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Portrait]; 55.28 × 49.67; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Portrait]; 55.28 × 49.67; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Portrait]; 55.28 × 49.67; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Portrait]; 55.28 × 49.67; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Inner, Orientation=Portrait]; 55.28 × 49.67; fills width; fills height
+      - Delete Key: instance of _Keys - iPhone Duo [Type=Delete, Display=Inner, Orientation=Portrait]; with Letter SF Symbol delete.backward; 74.33 × 49.67; fills height
+    - Row 4: frame; 633.66 × 49.67; fills width; row; gap 9; cross center
+      - Keyboard Switch: instance of _Keys - iPhone Duo [Type=Keyboard Switch - 123, Display=Inner, Orientation=Portrait]; 151.67 × 49.67; fills height
+      - Space: instance of _Keys - iPhone Duo [Type=Space, Display=Inner, Orientation=Portrait]; 312.33 × 49.67; fills width; fills height
+      - Return: instance of _Keys - iPhone Duo [Type=Return - Default, Display=Inner, Orientation=Portrait]; 151.67 × 49.67; fills height
+  - Emoji and Mike: frame; 669 × 59; fills width; row; space between; padding 17 63 0 63; cross center; hugs height
+    - Emoji: instance of _Bottom Buttons [Type=Emoji, Display=Inner, Orientation=Portrait]; 62 × 28
+    - Mike: instance of _Bottom Buttons [Type=Mike, Display=Inner, Orientation=Portrait]; 62 × 42
+=== 10
+- component; 678 × 229.33; column; padding 24 0 20 0; cross end; hugs height
+  - Background: instance of _Background - Keyboard; 678 × 229; absolute at (0, 0)
+  - Autocorrection: instance of _Autocorrection; 678 × 25; fills width; shown while Show suggestions
+  - Frame: frame; 678 × 160.33; fills width; row; gap 4; padding 0 10 0 10; hugs height
+    - Emoji: instance of _Bottom Buttons [Type=Emoji, Display=Outer, Orientation=Landscape]; 68 × 160.33; fills height
+    - Keys: frame; 514 × 160.33; fills width; column; gap 9; cross center; hugs height
+      - Row 1: frame; 514 × 33.33; fills width; row; gap 6.67; main center; cross center
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Landscape]; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Landscape]; with Letter "w"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Landscape]; with Letter "e"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Landscape]; with Letter "r"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Landscape]; with Letter "t"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Landscape]; with Letter "y"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Landscape]; with Letter "u"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Landscape]; with Letter "i"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Landscape]; with Letter "o"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Landscape]; with Letter "p"; 45.4 × 33.33; fills width; fills height
+      - Row 2: frame; 514 × 33.33; fills width; row; gap 7; padding 0 26 0 26; main center; cross center
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Landscape]; 45.11 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Landscape]; 45.11 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Landscape]; 45.11 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Landscape]; 45.11 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Landscape]; 45.11 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Landscape]; 45.11 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Landscape]; 45.11 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Landscape]; 45.11 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Landscape]; 45.11 × 33.33; fills width; fills height
+      - Row 3: frame; 514 × 33.33; fills width; row; gap 17.67; cross center
+        - Shift Key: instance of _Keys - iPhone Duo [Type=Shift - Off, Display=Outer, Orientation=Landscape]; with Letter SF Symbol shift; 60.33 × 33.33; fills height
+        - Row 3: frame; 357.99 × 33.33; fills width; fills height; row; gap 6
+          - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Landscape]; 46 × 33.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Landscape]; 46 × 33.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Landscape]; 46 × 33.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Landscape]; 46 × 33.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Landscape]; 46 × 33.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Landscape]; 46 × 33.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Landscape]; 46 × 33.33; fills width; fills height
+        - Delete Key: instance of _Keys - iPhone Duo [Type=Delete, Display=Outer, Orientation=Landscape]; with Letter SF Symbol delete.backward; 60.33 × 33.33; fills height
+      - Row 4: frame; 514 × 33.33; fills width; row; gap 7; cross center
+        - Keyboard Switch: instance of _Keys - iPhone Duo [Type=Keyboard Switch - 123, Display=Outer, Orientation=Landscape]; 98 × 33.33; fills height
+        - Space: instance of _Keys - iPhone Duo [Type=Space, Display=Outer, Orientation=Landscape]; 304 × 33.33; fills width; fills height
+        - Return: instance of _Keys - iPhone Duo [Type=Return - Default, Display=Outer, Orientation=Landscape]; 98 × 33.33; fills height
+    - Mike: frame; 68 × 160.33; fills height; column; gap 10; main center; cross center; hugs width
+      - Mike: instance of _Bottom Buttons [Type=Mike, Display=Outer, Orientation=Landscape]; 68 × 160.33; fills height
+=== 11
+- component; 466 × 286.01; column; gap -2; padding 24 0 39 0; cross end; hugs height
+  - Background: instance of _Background - Keyboard; 466 × 286; absolute at (0, 0)
+  - Autocorrection: instance of _Autocorrection; 466 × 25; fills width; shown while Show suggestions
+  - Keys: frame; 466 × 200.01; fills width; column; gap 10.67; padding 0 17.67 0 17.67; cross center; hugs height
+    - Row 1: frame; 430.66 × 42; fills width; row; gap 6; main center; cross center
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Portrait]; with Letter "q"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Portrait]; with Letter "w"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Portrait]; with Letter "e"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Portrait]; with Letter "r"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Portrait]; with Letter "t"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Portrait]; with Letter "y"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Portrait]; with Letter "u"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Portrait]; with Letter "i"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Portrait]; with Letter "o"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Portrait]; with Letter "p"; 37.67 × 42; fills width; fills height
+    - Row 2: frame; 430.66 × 42; fills width; row; gap 6; padding 0 21.33 0 21.33; main center; cross center
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Portrait]; 37.78 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Portrait]; 37.78 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Portrait]; 37.78 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Portrait]; 37.78 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Portrait]; 37.78 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Portrait]; 37.78 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Portrait]; 37.78 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Portrait]; 37.78 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Portrait]; 37.78 × 42; fills width; fills height
+    - Row 3: frame; 430.66 × 42; fills width; row; gap 14.67; cross center
+      - Shift Key: instance of _Keys - iPhone Duo [Type=Shift - Off, Display=Outer, Orientation=Portrait]; with Letter SF Symbol shift; 50.67 × 42; fills height
+      - Row 3: frame; 299.99 × 42; fills width; fills height; row; gap 6
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Portrait]; 37.71 × 42; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Portrait]; 37.71 × 42; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Portrait]; 37.71 × 42; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Portrait]; 37.71 × 42; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Portrait]; 37.71 × 42; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Portrait]; 37.71 × 42; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Lower Case, Display=Outer, Orientation=Portrait]; 37.71 × 42; fills width; fills height
+      - Delete Key: instance of _Keys - iPhone Duo [Type=Delete, Display=Outer, Orientation=Portrait]; with Letter SF Symbol delete.backward; 50.67 × 42; fills height
+    - Row 4: frame; 430.66 × 42; fills width; row; gap 6; cross center
+      - Emoji: instance of _Bottom Buttons [Type=Emoji, Display=Outer, Orientation=Portrait]; 42 × 42
+      - Keyboard Switch: instance of _Keys - iPhone Duo [Type=Keyboard Switch - 123, Display=Outer, Orientation=Portrait]; 81 × 42; fills height
+      - Space: instance of _Keys - iPhone Duo [Type=Space, Display=Outer, Orientation=Portrait]; 160.66 × 42; fills width; fills height
+      - Return: instance of _Keys - iPhone Duo [Type=Return - Default, Display=Outer, Orientation=Portrait]; 81 × 42; fills height
+      - Mike: instance of _Bottom Buttons [Type=Mike, Display=Outer, Orientation=Portrait]; 42 × 42
+=== 12
+- component; 951 × 275.33; column; gap -2; padding 24 0 20 0; cross end; hugs height
+  - Background: instance of _Background - Keyboard; 951 × 275; absolute at (0, 0)
+  - Autocorrection: instance of _Autocorrection; 951 × 25; fills width; shown while Show suggestions
+  - Frame: frame; 951 × 208.33; fills width; row; gap 5; padding 0 12 0 12; hugs height
+    - Emoji: instance of _Bottom Buttons [Type=Emoji, Display=Inner, Orientation=Landscape]; 68 × 208.33; fills height
+    - Keys: frame; 781 × 208.33; fills width; column; gap 13; hugs height
+      - Row 1: frame; 781 × 42.33; fills width; row; gap 10; main center; cross center
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "W"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "E"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "R"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "T"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "Y"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "U"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "I"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "O"; 69.1 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "P"; 69.1 × 42.33; fills width; fills height
+      - Row 2: frame; 781 × 42.33; fills width; row; gap 10; padding 0 39.67 0 39.67; main center; cross center
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "A"; 69.07 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "S"; 69.07 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "D"; 69.07 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "F"; 69.07 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "G"; 69.07 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "H"; 69.07 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "J"; 69.07 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "K"; 69.07 × 42.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "L"; 69.07 × 42.33; fills width; fills height
+      - Row 3: frame; 781 × 42.33; fills width; row; gap 26; cross center
+        - Shift Key: instance of _Keys - iPhone Duo [Type=Shift - On, Display=Inner, Orientation=Landscape]; 92.67 × 42.33; fills height
+        - Row 3: frame; 543.67 × 42.33; fills width; fills height; row; gap 10
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "Z"; 69.1 × 42.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "X"; 69.1 × 42.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "C"; 69.1 × 42.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "V"; 69.1 × 42.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "B"; 69.1 × 42.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "N"; 69.1 × 42.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Landscape]; with Letter "M"; 69.1 × 42.33; fills width; fills height
+        - Delete Key: instance of _Keys - iPhone Duo [Type=Delete, Display=Inner, Orientation=Landscape]; with Letter SF Symbol delete.backward; 92.67 × 42.33; fills height
+      - Row 4: frame; 781 × 42.33; fills width; row; gap 10; padding 0 23.67 0 23.67; cross center
+        - Keyboard Switch: instance of _Keys - iPhone Duo [Type=Keyboard Switch - 123, Display=Inner, Orientation=Landscape]; 148.33 × 42.33; fills height
+        - Space: instance of _Keys - iPhone Duo [Type=Space, Display=Inner, Orientation=Landscape]; 417 × 42.33; fills width; fills height
+        - Return: instance of _Keys - iPhone Duo [Type=Return - Default, Display=Inner, Orientation=Landscape]; 148.33 × 42.33; fills height
+    - Mike: instance of _Bottom Buttons [Type=Mike, Display=Inner, Orientation=Landscape]; 68 × 208.33; fills height
+=== 13
+- component; 669 × 360.68; column; gap -2; padding 24 0 16 0; cross end; hugs height
+  - Background: instance of _Background - Keyboard; 669 × 361; absolute at (0, 0)
+  - Autocorrection: instance of _Autocorrection; 669 × 25; fills width; shown while Show suggestions
+  - Keys: frame; 669 × 240.68; fills width; column; gap 14; padding 0 17.67 0 17.67; hugs height
+    - Row 1: frame; 633.66 × 49.67; fills width; row; gap 9; main center; cross center
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "W"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "E"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "R"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "T"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "Y"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "U"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "I"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "O"; 55.27 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "P"; 55.27 × 49.67; fills width; fills height
+    - Row 2: frame; 633.66 × 49.67; fills width; row; gap 9; padding 0 33 0 33; main center; cross center
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "A"; 55.07 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "S"; 55.07 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "D"; 55.07 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "F"; 55.07 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "G"; 55.07 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "H"; 55.07 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "J"; 55.07 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "K"; 55.07 × 49.67; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "L"; 55.07 × 49.67; fills width; fills height
+    - Row 3: frame; 633.66 × 49.67; fills width; row; gap 22; cross center
+      - Shift Key: instance of _Keys - iPhone Duo [Type=Shift - On, Display=Inner, Orientation=Portrait]; 74.33 × 49.67; fills height
+      - Row 3: frame; 440.99 × 49.67; fills width; fills height; row; gap 9
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "Z"; 55.28 × 49.67; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "X"; 55.28 × 49.67; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "C"; 55.28 × 49.67; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "V"; 55.28 × 49.67; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "B"; 55.28 × 49.67; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "N"; 55.28 × 49.67; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Inner, Orientation=Portrait]; with Letter "M"; 55.28 × 49.67; fills width; fills height
+      - Delete Key: instance of _Keys - iPhone Duo [Type=Delete, Display=Inner, Orientation=Portrait]; with Letter SF Symbol delete.backward; 74.33 × 49.67; fills height
+    - Row 5: frame; 633.66 × 49.67; fills width; row; gap 9; cross center
+      - Keyboard Switch: instance of _Keys - iPhone Duo [Type=Keyboard Switch - ABC, Display=Inner, Orientation=Portrait]; 151.67 × 49.67; fills height
+      - Space: instance of _Keys - iPhone Duo [Type=Space, Display=Inner, Orientation=Portrait]; 312.33 × 49.67; fills width; fills height
+      - Return: instance of _Keys - iPhone Duo [Type=Return - Default, Display=Inner, Orientation=Portrait]; 151.67 × 49.67; fills height
+  - Emoji and Mike: frame; 669 × 59; fills width; row; space between; padding 17 63 0 63; cross center; hugs height
+    - Emoji: instance of _Bottom Buttons [Type=Emoji, Display=Inner, Orientation=Portrait]; 62 × 28
+    - Mike: instance of _Bottom Buttons [Type=Mike, Display=Inner, Orientation=Portrait]; 62 × 42
+=== 14
+- component; 678 × 229.33; column; padding 24 0 20 0; cross end; hugs height
+  - Background: instance of _Background - Keyboard; 678 × 229; absolute at (0, 0)
+  - Autocorrection: instance of _Autocorrection; 678 × 25; fills width; shown while Show suggestions
+  - Frame: frame; 678 × 160.33; fills width; row; gap 4; padding 0 10 0 10; hugs height
+    - Emoji: instance of _Bottom Buttons [Type=Emoji, Display=Outer, Orientation=Landscape]; 68 × 160.33; fills height
+    - Keys: frame; 514 × 160.33; fills width; column; gap 9; hugs height
+      - Row 1: frame; 514 × 33.33; fills width; row; gap 6.67; main center; cross center
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "W"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "E"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "R"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "T"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "Y"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "U"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "I"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "O"; 45.4 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "P"; 45.4 × 33.33; fills width; fills height
+      - Row 2: frame; 514 × 33.33; fills width; row; gap 7; padding 0 26 0 26; main center; cross center
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "A"; 45.11 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "S"; 45.11 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "D"; 45.11 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "F"; 45.11 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "G"; 45.11 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "H"; 45.11 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "J"; 45.11 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "K"; 45.11 × 33.33; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "L"; 45.11 × 33.33; fills width; fills height
+      - Row 3: frame; 514 × 33.33; fills width; row; gap 17.67; cross center
+        - Shift Key: instance of _Keys - iPhone Duo [Type=Shift - On, Display=Outer, Orientation=Landscape]; 60.33 × 33.33; fills height
+        - Row 3: frame; 357.99 × 33.33; fills width; fills height; row; gap 6
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "Z"; 46 × 33.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "X"; 46 × 33.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "C"; 46 × 33.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "V"; 46 × 33.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "B"; 46 × 33.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "N"; 46 × 33.33; fills width; fills height
+          - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Landscape]; with Letter "M"; 46 × 33.33; fills width; fills height
+        - Delete Key: instance of _Keys - iPhone Duo [Type=Delete, Display=Outer, Orientation=Landscape]; with Letter SF Symbol delete.backward; 60.33 × 33.33; fills height
+      - Row 4: frame; 514 × 33.33; fills width; row; gap 7; cross center
+        - Keyboard Switch: instance of _Keys - iPhone Duo [Type=Keyboard Switch - 123, Display=Outer, Orientation=Landscape]; 98 × 33.33; fills height
+        - Space: instance of _Keys - iPhone Duo [Type=Space, Display=Outer, Orientation=Landscape]; 304 × 33.33; fills width; fills height
+        - Return: instance of _Keys - iPhone Duo [Type=Return - Default, Display=Outer, Orientation=Landscape]; 98 × 33.33; fills height
+    - Mike: frame; 68 × 160.33; fills height; column; gap 10; main center; cross center; hugs width
+      - Mike: instance of _Bottom Buttons [Type=Mike, Display=Outer, Orientation=Landscape]; 68 × 160.33; fills height
+=== 15
+- component; 466 × 286.01; column; gap -2; padding 24 0 39 0; cross end; hugs height
+  - Background: instance of _Background - Keyboard; 466 × 286; absolute at (0, 0)
+  - Autocorrection: instance of _Autocorrection; 466 × 25; fills width; shown while Show suggestions
+  - Keys: frame; 466 × 200.01; fills width; column; gap 10.67; padding 0 17.67 0 17.67; hugs height
+    - Row 1: frame; 430.66 × 42; fills width; row; gap 6; main center; cross center
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "W"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "E"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "R"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "T"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "Y"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "U"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "I"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "O"; 37.67 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "P"; 37.67 × 42; fills width; fills height
+    - Row 2: frame; 430.66 × 42; fills width; row; gap 6; padding 0 21.33 0 21.33; main center; cross center
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "A"; 37.78 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "S"; 37.78 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "D"; 37.78 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "F"; 37.78 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "G"; 37.78 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "H"; 37.78 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "J"; 37.78 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "K"; 37.78 × 42; fills width; fills height
+      - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "L"; 37.78 × 42; fills width; fills height
+    - Row 3: frame; 430.66 × 42; fills width; row; gap 13.67; cross center
+      - Shift Key: instance of _Keys - iPhone Duo [Type=Shift - On, Display=Outer, Orientation=Portrait]; 50.67 × 42; fills height
+      - Row 3: frame; 301.99 × 42; fills width; fills height; row; gap 6
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "Z"; 38 × 42; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "X"; 38 × 42; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "C"; 38 × 42; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "V"; 38 × 42; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "B"; 38 × 42; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "N"; 38 × 42; fills width; fills height
+        - Key: instance of _Keys - iPhone Duo [Type=Upper Case, Display=Outer, Orientation=Portrait]; with Letter "M"; 38 × 42; fills width; fills height
+      - Delete Key: instance of _Keys - iPhone Duo [Type=Delete, Display=Outer, Orientation=Portrait]; with Letter SF Symbol delete.backward; 50.67 × 42; fills height
+    - Row 4: frame; 430.66 × 42; fills width; row; gap 6; cross center
+      - Emoji: instance of _Bottom Buttons [Type=Emoji, Display=Outer, Orientation=Portrait]; 42 × 42
+      - Keyboard Switch: instance of _Keys - iPhone Duo [Type=Keyboard Switch - 123, Display=Outer, Orientation=Portrait]; 81 × 42; fills height
+      - Space: instance of _Keys - iPhone Duo [Type=Space, Display=Outer, Orientation=Portrait]; 160.66 × 42; fills width; fills height
+      - Return: instance of _Keys - iPhone Duo [Type=Return - Default, Display=Outer, Orientation=Portrait]; 81 × 42; fills height
+      - Mike: instance of _Bottom Buttons [Type=Mike, Display=Outer, Orientation=Portrait]; 42 × 42

@@ -1,0 +1,22 @@
+=== 0
+- component; 1210 × 834; fill Backgrounds – Grouped/Primary
+  - Screen: frame; 1208 × 834; at (0, 0); column; padding 134 20 10 20; main center; cross center; fill Backgrounds – Grouped/Primary
+    - Scroll Edge Effect: instance of Scroll Edge Effect - Soft [Edge=Top]; 1208 × 134; absolute at (0, 0)
+    - Content Area: frame; 1168 × 690; fills height; fills width; column; gap 10; padding 10 260 10 260; uses Readable Content Margin
+      - Header: instance of Header [Type=Extra Prominent]; with Show Disclosure on; 648 × 48; fills width
+      - Grouped Table View: frame; 648 × 656; fills width; column; hugs height; radius 26; fill Backgrounds – Grouped/Secondary
+        - Row: instance of Row [Height=Regular]; 648 × 52; fills width
+        - Row: instance of Row [Height=Tall]; 648 × 68; fills width
+        - Row: instance of Row [Height=Tall]; with Show Image on; 648 × 68; fills width
+        - Row: instance of Row [Height=Regular]; 648 × 52; fills width
+        - Row: instance of Row [Height=Regular]; 648 × 52; fills width
+        - Row: instance of Row [Height=Regular]; 648 × 52; fills width
+        - Row: instance of Row [Height=Regular]; 648 × 52; fills width
+        - Row: instance of Row [Height=Regular]; with Show Grabber on; 648 × 52; fills width
+        - Row: instance of Row [Height=Regular]; 648 × 52; fills width
+        - Row: instance of Row [Height=Regular]; 648 × 52; fills width
+        - Row: instance of Row [Height=Regular]; 648 × 52; fills width
+        - Row - Button: instance of Row - Button [Value=Default]; 648 × 52; fills width
+  - Toolbar - Top - iPad: instance of Toolbar - Top - iPad [Style=Large Title, Tab Bar=False]; with Show Subtitle off; 1210 × 109; at (0, 32)
+  - Status bar and Menu bar- iPad: instance of Status bar and Menu bar- iPad [Full Screen=True, Menu Expanded=False, Background=Light]; 1210 × 32; at (-1, 0)
+  - Bezel: instance of iPad Pro M4 11" [Color=Silver]; 1210 × 834; at (0, 0)

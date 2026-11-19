@@ -1,0 +1,132 @@
+=== 0
+- component; 160 × 24; row; gap 8; padding 0 0 0 12; main center; cross center; uses Menu/Height
+  - Frame: frame; 4 × 24; fills height
+  - Symbol and Title: frame; 116 × 24; fills width; fills height; row; gap 8; cross center
+    - Symbol: frame; 12 × 24; fills height; uses Menu/Width - Symbol; blend linear burn; shown while Preserve Symbol Space
+      - text SF Symbol doc.on.doc; SF Pro Medium 13; centered; 18 × 16; at (-3, 4); color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; property Symbol; shown while Show Symbol
+    - text "Label"; SF Pro Medium 13; 96 × 24; fills width; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Label
+  - text SF Symbol chevron.right; SF Pro Bold 13; centered; 12 × 24; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+=== 1
+- component; 160 × 24; row; gap 8; padding 0 0 0 12; main center; cross center; radius 8; uses Menu/Height
+  - BG: rectangle; 174 × 24; absolute at (-7, 0); radius 8; fill Fills - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn
+  - Frame: frame; 4 × 24; fills height
+  - Symbol and Title: frame; 116 × 24; fills width; fills height; row; gap 8; cross center
+    - Symbol: frame; 12 × 24; fills height; uses Menu/Width - Symbol; blend linear burn; shown while Preserve Symbol Space
+      - text SF Symbol doc.on.doc; SF Pro Medium 13; centered; 18 × 16; at (-3, 4); color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; property Symbol; shown while Show Symbol
+    - text "Label"; SF Pro Medium 13; 96 × 24; fills width; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Label
+  - text SF Symbol chevron.right; SF Pro Bold 13; centered; 12 × 24; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn
+=== 2
+- component; 160 × 24; row; gap 8; padding 0 0 0 12; main center; cross center; radius 8; uses Menu/Height
+  - BG: rectangle; 174 × 24; absolute at (-7, 0); radius 8; fill #0069f9
+  - Frame: frame; 4 × 24; fills height
+  - Symbol and Title: frame; 116 × 24; fills width; fills height; row; gap 8; cross center
+    - Symbol: frame; 12 × 24; fills height; uses Menu/Width - Symbol; shown while Preserve Symbol Space
+      - text SF Symbol doc.on.doc; SF Pro Medium 13; centered; 18 × 16; at (-3, 4); color Labels/White; property Symbol; shown while Show Symbol
+    - text "Label"; SF Pro Medium 13; 96 × 24; fills width; fills height; color Labels/White; property Label
+  - text SF Symbol chevron.right; SF Pro Bold 13; centered; 12 × 24; fills height; color Labels/White
+=== 3
+- component; 160 × 24; row; gap 8; padding 0 0 0 12; main center; cross center; uses Menu/Height
+  - Frame: frame; 4 × 24; fills height
+  - Symbol and Title: frame; 116 × 24; fills width; fills height; row; gap 8; cross center
+    - Symbol: frame; 12 × 24; fills height; uses Menu/Width - Symbol; blend linear burn; shown while Preserve Symbol Space
+      - text SF Symbol doc.on.doc; SF Pro Medium 13; centered; 18 × 16; at (-3, 4); color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; property Symbol; shown while Show Symbol
+    - text "Label"; SF Pro Medium 13; 96 × 24; fills width; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Label
+  - text SF Symbol chevron.right; SF Pro Bold 13; centered; 12 × 24; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn
+=== 4
+- component; 160 × 24; row; gap 8; main center; cross center; uses Menu/Height
+  - Symbol and Title: frame; 140 × 24; fills width; fills height; row; gap 8; cross center
+    - Symbol: frame; 12 × 24; fills height; uses Menu/Width - Symbol; blend linear burn; shown while Preserve Symbol Space
+      - text SF Symbol doc.on.doc; SF Pro Medium 13; centered; 18 × 16; at (-3, 4); color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; property Symbol; shown while Show Symbol
+    - text "Label"; SF Pro Medium 13; 120 × 24; fills width; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Label
+  - text SF Symbol chevron.right; SF Pro Bold 13; centered; 12 × 24; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+=== 5
+- component; 160 × 24; row; gap 8; main center; cross center; radius 8; uses Menu/Height
+  - BG: rectangle; 174 × 24; absolute at (-7, 0); radius 8; fill Fills - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn
+  - Symbol and Title: frame; 140 × 24; fills width; fills height; row; gap 8; cross center
+    - Symbol: frame; 12 × 24; fills height; uses Menu/Width - Symbol; blend linear burn; shown while Preserve Symbol Space
+      - text SF Symbol doc.on.doc; SF Pro Medium 13; centered; 18 × 16; at (-3, 4); color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; property Symbol; shown while Show Symbol
+    - text "Label"; SF Pro Medium 13; 120 × 24; fills width; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Label
+  - text SF Symbol chevron.right; SF Pro Bold 13; centered; 12 × 24; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn
+=== 6
+- component; 160 × 24; row; gap 8; main center; cross center; radius 8; uses Menu/Height
+  - BG: rectangle; 174 × 24; absolute at (-7, 0); radius 8; fill #0069f9
+  - Symbol and Title: frame; 140 × 24; fills width; fills height; row; gap 8; cross center
+    - Symbol: frame; 12 × 24; fills height; uses Menu/Width - Symbol; shown while Preserve Symbol Space
+      - text SF Symbol doc.on.doc; SF Pro Medium 13; centered; 18 × 16; at (-3, 4); color Labels/White; property Symbol; shown while Show Symbol
+    - text "Label"; SF Pro Medium 13; 120 × 24; fills width; fills height; color Labels/White; property Label
+  - text SF Symbol chevron.right; SF Pro Bold 13; centered; 12 × 24; fills height; color Labels/White
+=== 7
+- component; 160 × 24; row; gap 8; main center; cross center; uses Menu/Height
+  - Symbol and Title: frame; 140 × 24; fills width; fills height; row; gap 8; cross center
+    - Symbol: frame; 12 × 24; fills height; uses Menu/Width - Symbol; blend linear burn; shown while Preserve Symbol Space
+      - text SF Symbol doc.on.doc; SF Pro Medium 13; centered; 18 × 16; at (-3, 4); color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; property Symbol; shown while Show Symbol
+    - text "Label"; SF Pro Medium 13; 120 × 24; fills width; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Label
+  - text SF Symbol chevron.right; SF Pro Bold 13; centered; 12 × 24; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn
+=== 8
+- component; 160 × 24; row; gap 8; padding 0 0 0 12; main center; cross center; uses Menu/Height
+  - Frame: frame; 4 × 24; fills height
+    - text SF Symbol checkmark; SF Pro Bold 10/16; 12 × 24; at (-6, 0); color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; shown while Show Checkmark
+  - Symbol and Title: frame; 103 × 24; fills width; fills height; row; gap 8; cross center
+    - Symbol: frame; 12 × 24; fills height; uses Menu/Width - Symbol; blend linear burn; shown while Preserve Symbol Space
+      - text SF Symbol doc.on.doc; SF Pro Medium 13; centered; 18 × 16; at (-3, 4); color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; property Symbol; shown while Show Symbol
+    - text "Label"; SF Pro Medium 13; 83 × 24; fills width; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Label
+  - Shortcuts: instance of _Shortcuts [Hover + Key=False]; 25 × 16; blend linear burn; shown while Show Shortcuts
+=== 9
+- component; 160 × 24; row; gap 8; padding 0 0 0 12; main center; cross center; radius 8; uses Menu/Height
+  - BG: rectangle; 174 × 24; absolute at (-7, 0); radius 8; fill #0069f9
+  - Frame: frame; 4 × 24; fills height
+    - text SF Symbol checkmark; SF Pro Bold 10/16; 12 × 24; at (-6, 0); color Labels/White; shown while Show Checkmark
+  - Symbol and Title: frame; 103 × 24; fills width; fills height; row; gap 8; cross center
+    - Symbol: frame; 12 × 24; fills height; uses Menu/Width - Symbol; shown while Preserve Symbol Space
+      - text SF Symbol doc.on.doc; SF Pro Medium 13; centered; 18 × 16; at (-3, 4); color Labels/White; property Symbol; shown while Show Symbol
+    - text "Label"; SF Pro Medium 13; 83 × 24; fills width; fills height; color Labels/White; property Label
+  - Shortcuts: instance of _Shortcuts [Hover + Key=True]; 25 × 16; shown while Show Shortcuts
+=== 10
+- component; 160 × 24; row; gap 8; padding 0 0 0 12; main center; cross center; radius 8; uses Menu/Height
+  - BG: rectangle; 174 × 24; absolute at (-7, 0); radius 8; fill Fills - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn
+  - Frame: frame; 4 × 24; fills height
+    - text SF Symbol checkmark; SF Pro Bold 10/16; 12 × 24; at (-6, 0); color Labels/White; shown while Show Checkmark
+  - Symbol and Title: frame; 103 × 24; fills width; fills height; row; gap 8; cross center
+    - Symbol: frame; 12 × 24; fills height; uses Menu/Width - Symbol; shown while Preserve Symbol Space
+      - text SF Symbol doc.on.doc; SF Pro Medium 13; centered; 18 × 16; at (-3, 4); color Labels/White; property Symbol; shown while Show Symbol
+    - text "Label"; SF Pro Medium 13; 83 × 24; fills width; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Label
+  - Shortcuts: instance of _Shortcuts [Hover + Key=False]; 25 × 16; blend linear burn; shown while Show Shortcuts
+=== 11
+- component; 160 × 24; row; gap 8; padding 0 0 0 12; main center; cross center; uses Menu/Height
+  - Frame: frame; 4 × 24; fills height
+    - text SF Symbol checkmark; SF Pro Bold 10/16; 12 × 24; at (-6, 0); color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; shown while Show Checkmark
+  - Symbol and Title: frame; 103 × 24; fills width; fills height; row; gap 8; cross center
+    - Symbol: frame; 12 × 24; fills height; uses Menu/Width - Symbol; blend linear burn; shown while Preserve Symbol Space
+      - text SF Symbol doc.on.doc; SF Pro Medium 13; centered; 18 × 16; at (-3, 4); color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; property Symbol; shown while Show Symbol
+    - text "Label"; SF Pro Medium 13; 83 × 24; fills width; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Label
+  - Shortcuts: instance of _Shortcuts [Hover + Key=False]; 25 × 16; blend linear burn; shown while Show Shortcuts
+=== 12
+- component; 160 × 24; row; gap 8; main center; cross center; uses Menu/Height
+  - Symbol and Title: frame; 127 × 24; fills width; fills height; row; gap 8; cross center
+    - Symbol: frame; 12 × 24; fills height; uses Menu/Width - Symbol; blend linear burn; shown while Preserve Symbol Space
+      - text SF Symbol doc.on.doc; SF Pro Medium 13; centered; 18 × 16; at (-3, 4); color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; property Symbol; shown while Show Symbol
+    - text "Label"; SF Pro Medium 13; 107 × 24; fills width; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Label
+  - Shortcuts: instance of _Shortcuts [Hover + Key=False]; 25 × 16; blend linear burn; shown while Show Shortcuts
+=== 13
+- component; 160 × 24; row; gap 8; main center; cross center; radius 8; uses Menu/Height
+  - BG: rectangle; 174 × 24; absolute at (-7, 0); radius 8; fill #0069f9
+  - Symbol and Title: frame; 127 × 24; fills width; fills height; row; gap 8; cross center
+    - Symbol: frame; 12 × 24; fills height; uses Menu/Width - Symbol; shown while Preserve Symbol Space
+      - text SF Symbol doc.on.doc; SF Pro Medium 13; centered; 18 × 16; at (-3, 4); color Labels/White; property Symbol; shown while Show Symbol
+    - text "Label"; SF Pro Medium 13; 107 × 24; fills width; fills height; color Labels/White; property Label
+  - Shortcuts: instance of _Shortcuts [Hover + Key=True]; 25 × 16; shown while Show Shortcuts
+=== 14
+- component; 160 × 24; row; gap 8; main center; cross center; radius 8; uses Menu/Height
+  - BG: rectangle; 174 × 24; absolute at (-7, 0); radius 8; fill Fills - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn
+  - Symbol and Title: frame; 127 × 24; fills width; fills height; row; gap 8; cross center
+    - Symbol: frame; 12 × 24; fills height; uses Menu/Width - Symbol; shown while Preserve Symbol Space
+      - text SF Symbol doc.on.doc; SF Pro Medium 13; centered; 18 × 16; at (-3, 4); color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; property Symbol; shown while Show Symbol
+    - text "Label"; SF Pro Medium 13; 107 × 24; fills width; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Label
+  - Shortcuts: instance of _Shortcuts [Hover + Key=False]; 25 × 16; blend linear burn; shown while Show Shortcuts
+=== 15
+- component; 160 × 24; row; gap 8; main center; cross center; uses Menu/Height
+  - Symbol and Title: frame; 127 × 24; fills width; fills height; row; gap 8; cross center; blend linear burn
+    - Symbol: frame; 12 × 24; fills height; uses Menu/Width - Symbol; blend linear burn; shown while Preserve Symbol Space
+      - text SF Symbol doc.on.doc; SF Pro Medium 13; centered; 18 × 16; at (-3, 4); color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; property Symbol; shown while Show Symbol
+    - text "Label"; SF Pro Medium 13; 107 × 24; fills width; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Label
+  - Shortcuts: instance of _Shortcuts [Hover + Key=False]; 25 × 16; blend linear burn; shown while Show Shortcuts

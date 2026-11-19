@@ -1,0 +1,14 @@
+=== 0
+- component; 150 × 19; row; padding 0 6 0 8; cross center; stroke Miscellaneous/Tables/Column Separator at 10% 1
+  - text "Label"; SF Pro Medium 11/14; 136 × 19; fills width; fills height; color Labels/Secondary at 50%; property Label
+=== 1
+- component; 150 × 19; row; padding 0 6 0 8; cross center; stroke Miscellaneous/Tables/Column Separator at 10% 1
+  - text "Label"; SF Pro Bold 11/14; 123 × 19; fills width; fills height; color Labels/Primary at 85%; property Label
+  - Sort Order Indicator: instance of Sort Order Indicator [Order=Descending]; 13 × 19
+=== 2
+- component; 150 × 19; row; padding 0 6 0 50; cross center
+  - text "Label"; SF Pro Medium 11/14; 94 × 19; fills width; fills height; color Labels/Secondary at 50%; property Label
+=== 3
+- component; 150 × 19; row; padding 0 6 0 50; cross center
+  - text "Label"; SF Pro Bold 11/14; 81 × 19; fills width; fills height; color Labels/Primary at 85%; property Label
+  - Sort Order Indicator: instance of Sort Order Indicator [Order=Descending]; 13 × 19

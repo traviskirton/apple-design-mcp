@@ -1,0 +1,23 @@
+=== 0
+- component; 1512 × 993
+  - Desktop Template: instance of Desktop Template [Color Mode=Light]; with Show Dock off; 1512 × 993; at (0, 0)
+  - Windows - Composed: frame; 1200 × 600; at (156, 196); row; radius 16; fill Window Background; shadow x 0 y 36 blur 100 #000000 at 40%; shadow x 0 y 0 blur 1 #000000 at 80%
+    - Left Pane: frame; 240 × 600; fills height; column; gap 10; cross center
+      - BG: instance of BG [Active=True]; 240 × 600; absolute at (0, 0)
+      - Sidebar: instance of Sidebars - Composed [Size=Small]; 240 × 560
+    - Right Pane: frame; 960 × 600; fills width; fills height; column; gap 3; fill Window Background
+      - Scroll Edge Effect - Hard: instance of Scroll Edge Effect - Hard [Edge=Top]; 960 × 80; absolute at (0, 0)
+      - Toolbar: frame; 960 × 83; fills width; column; gap 3; hugs height
+        - Title and Controls: frame; 960 × 52; fills width; row; gap 8; padding 8 8 8 18; cross center; hugs height
+          - Segmented Control: instance of Segmented Control [Size=XL, Active=True]; 145 × 36
+          - Title: instance of Window Titles/Window [With Sidebar=False]; with Show Symbol off; 91 × 30
+          - Spacer: rectangle; 392 × 8; fills width
+          - Button Group: instance of Button Group [Size=XL, Active=True]; 100 × 36
+          - Button: instance of Button [Active=True, Size=XL, State=Idle]; 36 × 36
+          - Search: instance of Search [Size=XL, State=Placeholder, Active=True]; 130 × 36
+        - Table Column Headers: frame; 960 × 28; fills width; row; gap 10; padding 0 12 0 0; hugs height
+          - instance of Column Header; 948 × 28; fills width
+      - Content Area: frame; 960 × 514; fills height; fills width; row
+        - Content Area: frame; 948 × 514; fills width; fills height; column; cross center
+          - instance of Outline View; 948 × 514; fills height; fills width
+        - Scrollbar - Vertical: instance of Scrollbar - Vertical [Page Height=x 2, Position=Top]; 12 × 319

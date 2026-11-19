@@ -1,0 +1,39 @@
+=== 0
+- component; 386 × 77.33; row; gap 10; padding 12 14 27 14; main center; cross center; hugs height; radius 24
+  - Banner: frame; 386 × 8; absolute at (0, 71); column; gap 10; padding 0 20 0 20; main end; cross center; capsule
+    - Clear Glass: instance of Liquid Glass - Clear; 346 × 64; fills width
+  - Banner: frame; 386 × 8; absolute at (0, 63); column; gap 10; padding 0 10 0 10; main end; cross center; capsule
+    - Clear Glass: instance of Liquid Glass - Clear; 366 × 64; fills width
+  - Clear Glass: instance of Liquid Glass - Clear; 386 × 63; absolute at (0, 0)
+  - Icon: instance of _Custom Icon; 38.33 × 38.33
+  - Frame: frame; 309.67 × 38.33; fills width; fills height; row; main center
+    - Title and Description: frame; 251.67 × 38.33; fills width; fills height; column; main center
+      - text "Title"; SF Pro Semibold 15/17; 235.67 × 17; color Grays/White; property Title
+      - text "Message"; SF Pro Regular 15/18; 251.67 × 18; fills width; color Grays/White; property Message
+    - Time and Image: frame; 58 × 17; column; gap 5.5; cross end; hugs content
+      - Time: instance of _Time; 58 × 17; blend linear dodge
+      - Image: rectangle; 32 × 32; radius 6; fill #ff0000; hidden unless Show Image
+=== 1
+- component; 386 × 71.33; row; gap 10; padding 12 14 21 14; main center; cross center; hugs height; radius 24
+  - Banner: frame; 386 × 8; absolute at (0, 63); column; gap 10; padding 0 10 0 10; main end; cross center; capsule
+    - Clear Glass: instance of Liquid Glass - Clear; 366 × 64; fills width
+  - Clear Glass: instance of Liquid Glass - Clear; 386 × 63; absolute at (0, 0)
+  - Icon: instance of _Custom Icon; 38.33 × 38.33
+  - Frame: frame; 309.67 × 38.33; fills width; fills height; row; main center
+    - Title and Description: frame; 251.67 × 38.33; fills width; fills height; column; main center
+      - text "Title"; SF Pro Semibold 15/17; 235.67 × 17; color Grays/White; property Title
+      - text "Message"; SF Pro Regular 15/18; 251.67 × 18; fills width; color Grays/White; property Message
+    - Time and Image: frame; 58 × 17; column; gap 5.5; cross end; hugs content
+      - Time: instance of _Time; 58 × 17; fills width; blend linear dodge
+      - Image: rectangle; 32 × 32; radius 6; fill #ff0000; hidden unless Show Image
+=== 2
+- component; 386 × 66.33; row; gap 10; padding 14; main center; cross center; hugs height; radius 24
+  - Clear Glass: instance of Liquid Glass - Clear; 386 × 66; absolute at (0, 0)
+  - Icon: instance of _Custom Icon; 38.33 × 38.33
+  - Frame: frame; 309.67 × 35; fills width; row; gap 10; main center; hugs height
+    - Title and Description: frame; 241.67 × 35; fills width; fills height; column; main center
+      - text "Title"; SF Pro Semibold 15/17; 235.67 × 17.5; color Grays/White; property Title
+      - text "Message"; SF Pro Regular 15/18; 309.67 × 17.5; color Grays/White; property Message
+    - Time and Image: frame; 58 × 17; column; gap 5.5; cross end; hugs content
+      - Time: instance of _Time; 58 × 17; blend linear dodge
+      - Image: rectangle; 32 × 32; radius 6; fill #ff0000; hidden unless Show Image

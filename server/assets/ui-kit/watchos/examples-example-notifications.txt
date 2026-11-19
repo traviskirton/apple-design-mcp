@@ -1,0 +1,22 @@
+=== 0
+- component; 205 × 251; radius 20; fill #000000; uses Screen Width, Screen Height
+  - Watch Faces: instance of Watch Faces [Face=Activity Analog, Size=49mm]; 205 × 251; at (0, 0)
+  - Long Look: instance of Notifications - Long Look; 205 × 251; at (0, 0)
+  - Bezel: instance of Bezels [Bezel Size=49mm]; 205 × 251; at (0, 0)
+=== 1
+- component; 205 × 251; radius 20; fill #000000; uses Screen Width, Screen Height
+  - Watch Faces: instance of Watch Faces [Face=Activity Analog, Size=49mm]; 205 × 251; at (0, 0)
+  - Short Look: instance of Notifications - Short Look; 205 × 251; at (0, 0)
+  - Bezel: instance of Bezels [Bezel Size=49mm]; 205 × 251; at (0, 0)
+=== 2
+- component; 205 × 251; radius 20; fill #000000; uses Screen Width, Screen Height
+  - Rounded Corners: frame; 205 × 251; at (0, 0); column; gap 4; padding 0 0 10 0; cross center; radius 20; uses Screen Width, Screen Height
+    - Navigation Bar: instance of Navigation Bar [Type=Status + Title]; 205 × 64; fills width
+    - Content Area: frame; 205 × 336.5; fills width; column; gap 4; cross center; hugs height; uses Screen Width
+      - Item - Source List: instance of Item - Source List [Scroll State=Full View]; with Show Subtitle on; 205 × 92.5; fills width
+      - Item - Source List: instance of Item - Source List [Scroll State=Full View]; with Show Symbol off; 205 × 90.5; fills width
+      - Item - Source List: instance of Item - Source List [Scroll State=Full View]; with Label "Label", Subtitle "Secondary Text", Show Subtitle on, Show Symbol off; 205 × 90.5; fills width
+      - Spacing: frame; 205 × 0
+      - Button - Circular: instance of Button - Circular [Type=Default]; with Label SF Symbol plus; 47 × 47
+  - Banner: instance of Notifications - Banner; 205 × 55; at (0, 0)
+  - Bezel: instance of Bezels [Bezel Size=49mm]; 205 × 251; at (0, 0)

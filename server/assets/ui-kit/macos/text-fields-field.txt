@@ -1,0 +1,24 @@
+=== 0
+- component; 120 × 24; row; padding 0 8 0 8; cross center; uses Fields/Inset - Left, Fields/Inset - Right, Global/Height
+  - BG: instance of _Input Fields [State=Disabled]; 120 × 24; absolute at (0, 0)
+  - text "Value"; SF Pro Medium 13/16; 104 × 16; fills width; color Labels/Primary at 85%; property Value
+=== 1
+- component; 120 × 24; row; padding 0 8 0 8; cross center; uses Fields/Inset - Left, Fields/Inset - Right, Global/Height
+  - BG: instance of _Input Fields [State=Focused]; 120 × 24; absolute at (0, 0)
+  - Text + Cursor: frame; 37 × 18; row; cross center; hugs content
+    - text "Value"; SF Pro Medium 13/16; 35 × 16; color Labels/Primary at 85%; property Value
+    - Cursor: rectangle; 2 × 18; capsule; fill Accents/Blue; uses Cursor/Height
+=== 2
+- component; 120 × 24; row; padding 0 8 0 8; cross center; uses Fields/Inset - Left, Fields/Inset - Right, Global/Height
+  - BG: instance of _Input Fields [State=Idle]; 120 × 24; absolute at (0, 0)
+  - text "Value"; SF Pro Medium 13/16; 104 × 16; fills width; color Labels/Primary at 85%; property Value
+=== 3
+- component; 120 × 24; row; padding 0 8 0 8; cross center; uses Fields/Inset - Left, Fields/Inset - Right, Global/Height
+  - BG: instance of _Input Fields [State=Disabled]; 120 × 24; absolute at (0, 0)
+=== 4
+- component; 120 × 24; row; padding 0 8 0 8; cross center; uses Fields/Inset - Left, Fields/Inset - Right, Global/Height
+  - BG: instance of _Input Fields [State=Focused]; 120 × 24; absolute at (0, 0)
+  - Cursor: rectangle; 2 × 18; capsule; fill Accents/Blue; uses Cursor/Height
+=== 5
+- component; 120 × 24; row; padding 0 8 0 8; cross center; uses Fields/Inset - Left, Fields/Inset - Right, Global/Height
+  - BG: instance of _Input Fields [State=Idle]; 120 × 24; absolute at (0, 0)

@@ -1,0 +1,7 @@
+=== 0
+- component; 282 × 4; row; space between; cross center; hugs height
+  - Tick: ellipse; 4 × 4; fill Labels/Quaternary at 18%
+  - Tick: ellipse; 4 × 4; fill Labels/Quaternary at 18%
+  - Tick: ellipse; 4 × 4; fill Labels/Quaternary at 18%
+  - Tick: ellipse; 4 × 4; fill Labels/Quaternary at 18%
+  - Tick: ellipse; 4 × 4; fill Labels/Quaternary at 18%

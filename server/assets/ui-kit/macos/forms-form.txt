@@ -1,0 +1,15 @@
+=== 0
+- component; 400 × 504; column; padding 0 10 0 10; hugs height; radius 12; fill Fills - Opaque/Quaternary at 3%
+  - Rows: frame; 380 × 504; fills width; column; hugs height; slot Rows
+    - instance of Form Row; 380 × 42; fills width
+    - instance of Form Row; 380 × 42; fills width
+    - instance of Form Row; 380 × 42; fills width
+    - instance of Form Row; 380 × 42; fills width
+    - instance of Form Row; 380 × 42; fills width
+    - instance of Form Row; 380 × 42; fills width
+    - instance of Form Row; 380 × 42; fills width
+    - instance of Form Row; 380 × 42; fills width
+    - instance of Form Row; 380 × 42; fills width
+    - instance of Form Row; 380 × 42; fills width
+    - instance of Form Row; 380 × 42; fills width
+    - instance of Form Row; 380 × 42; fills width

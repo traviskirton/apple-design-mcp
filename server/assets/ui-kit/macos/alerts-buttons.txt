@@ -1,0 +1,10 @@
+=== 0
+- component; 160 × 28; row; padding 0 8 0 8; main center; cross center; capsule; blend linear burn
+  - BG: rectangle; 160 × 28; absolute at (0, 0); capsule; fill Accents - Vibrant/Red; opacity 23%
+  - text "Label"; SF Pro Medium 13/16; centered; 35 × 16; color Accents - Vibrant/Red; property Label
+=== 1
+- component; 160 × 28; row; padding 0 8 0 8; main center; cross center; capsule; fill Fills - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn
+  - text "Label"; SF Pro Medium 13/16; centered; 35 × 16; color Labels/Primary at 85%; property Label
+=== 2
+- component; 160 × 28; row; padding 0 8 0 8; main center; cross center; capsule; fill Accents/Blue
+  - text "Label"; SF Pro Medium 13/16; centered; 35 × 16; color Labels/White; property Label

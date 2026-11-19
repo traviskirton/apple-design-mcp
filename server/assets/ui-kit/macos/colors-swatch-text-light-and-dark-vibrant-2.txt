@@ -1,0 +1,7 @@
+=== 0
+- component; 160 × 160
+  - Dark: frame; 160 × 80; at (0, 80); fill #111111 (linear burn) + image at 20%
+    - Swatch: vector shape; 56 × 60; at (52, 10); fill Labels/Primary at 85%
+  - Light: frame; 160 × 80; at (0, 0); fill #dddddd + image at 20%
+    - Swatch: vector shape; 56 × 60; at (52, 10); fill Labels/Primary at 85%
+  - text "Label"; style Footnote/Regular; 26 × 13; at (0, -30); color #000000

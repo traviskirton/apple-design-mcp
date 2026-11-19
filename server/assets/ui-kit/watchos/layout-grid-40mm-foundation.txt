@@ -1,0 +1,7 @@
+=== 0
+- component; 162 × 197; radius 29; stroke #ff3b30 2; blend screen
+  - Copy Safe Area: vector shape; 143 × 178; at (9.5, 9.5); stroke #04de71 0.5; uses Width - Copy Safe Area
+  - Safe Area: rectangle; 162 × 197; at (0, 0); radius 28; stroke #04de71 3
+  - Crown Line: vector shape; 162 × 0; at (0, 48.25); stroke #ffffff 0.5; uses Screen Width; opacity 50%
+  - Center Line: vector shape; 162 × 0; at (0, 98.5); stroke #04de71 0.5; uses Screen Width
+  - Center Line: vector shape; 0 × 197; at (81, 0); stroke #04de71 0.5

@@ -1,0 +1,5 @@
+=== 0
+- component; 66 × 104
+  - text "Action"; style Caption1/Regular; centered; 82 × 16; at (-8, 73); color Labels - Vibrant/Primary; blend linear burn; property Label
+  - Button: frame; 66 × 66; at (0, 0); column; gap 10; main center; cross center; capsule; fill Fills - Vibrant/Tertiary; blend linear burn
+    - text SF Symbol square.dashed; SF Pro Regular 27/13; centered; 66 × 13; fills width; color Labels - Vibrant/Primary; blend linear burn; property Label

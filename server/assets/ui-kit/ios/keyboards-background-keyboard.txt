@@ -1,0 +1,2 @@
+=== 0
+- component; 200 × 200; column; main center; cross center; radius 27; fill #d4d4d4 at 74% (luminosity) + #1b1b1b (linear dodge) + #e6e9ed (linear burn); Liquid Glass effect; inner shadow x 0 y 0 blur 8 #000000 at 5%

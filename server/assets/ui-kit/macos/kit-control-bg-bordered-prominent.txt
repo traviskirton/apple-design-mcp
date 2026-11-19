@@ -1,0 +1,21 @@
+=== 0
+- component; 20 × 20; opacity 40%
+  - Tint: frame; 20 × 20; at (0, 0); fill Accents/Blue
+=== 1
+- component; 20 × 20
+  - Tint: frame; 20 × 20; at (0, 0); fill Accents/Blue
+  - Fill: frame; 20 × 20; at (0, 0); fill #e6e6e6; blend linear burn
+=== 2
+- component; 20 × 20
+  - Tint: frame; 20 × 20; at (0, 0); fill Accents/Blue
+  - Fill: frame; 20 × 20; at (0, 0); fill Fills - Vibrant (Use Plus Lighter | Darker)/Quaternary; blend linear burn
+=== 3
+- component; 20 × 20; opacity 40%; blend linear burn
+  - Tint: frame; 20 × 20; at (0, 0); fill Accents/Blue
+=== 4
+- component; 20 × 20; blend linear burn
+  - Tint: frame; 20 × 20; at (0, 0); fill Accents/Blue
+  - Fill: frame; 20 × 20; at (0, 0); fill Fills - Opaque/Primary at 10%
+=== 5
+- component; 20 × 20; blend linear burn
+  - Tint: frame; 20 × 20; at (0, 0); fill Accents/Blue

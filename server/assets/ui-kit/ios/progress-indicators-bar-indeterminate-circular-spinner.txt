@@ -1,0 +1,36 @@
+=== 0
+- component; 14 × 14; row; gap 4; main center; cross center; hugs content
+  - Spinner: frame; 14 × 14
+    - 315: rectangle; 2 × 4; at (1.34, 2.76); rotated -45°; capsule; fill Labels/Secondary at 60%; opacity 87%
+    - 270: rectangle; 2 × 4; at (4, 6); rotated 90°; capsule; fill Labels/Secondary at 60%; opacity 75%
+    - 225: rectangle; 2 × 4; at (4.17, 8.41); rotated 45°; capsule; fill Labels/Secondary at 60%; opacity 63%
+    - 180: rectangle; 2 × 4; at (6, 10); capsule; fill Labels/Secondary at 60%; opacity 51%
+    - 135: rectangle; 2 × 4; at (8.41, 9.83); rotated -45°; capsule; fill Labels/Secondary at 60%; opacity 39%
+    - 90: rectangle; 2 × 4; at (14, 6); rotated 90°; capsule; fill Labels/Secondary at 60%; opacity 27%
+    - 45: rectangle; 2 × 4; at (11.24, 1.34); rotated 45°; capsule; fill Labels/Secondary at 60%; opacity 15%
+    - 0: rectangle; 2 × 4; at (6, 0); capsule; fill Labels/Secondary at 60%
+  - text "Status..."; SF Pro Regular 17/22; 67 × 22; color Labels/Secondary at 60%; property Label; hidden unless Show Label
+=== 1
+- component; 20 × 20; row; gap 8; main center; cross center; hugs content
+  - Spinner: frame; 20 × 20
+    - 315: rectangle; 2.67 × 6.67; at (1.99, 3.87); rotated -45°; capsule; fill Labels/Secondary at 60%; opacity 87%
+    - 270: rectangle; 2.67 × 6.67; at (6.67, 8.67); rotated 90°; capsule; fill Labels/Secondary at 60%; opacity 75%
+    - 225: rectangle; 2.67 × 6.67; at (6.7, 11.41); rotated 45°; capsule; fill Labels/Secondary at 60%; opacity 63%
+    - 180: rectangle; 2.67 × 6.67; at (8.67, 13.33); capsule; fill Labels/Secondary at 60%; opacity 51%
+    - 135: rectangle; 2.67 × 6.67; at (11.41, 13.3); rotated -45°; capsule; fill Labels/Secondary at 60%; opacity 39%
+    - 90: rectangle; 2.67 × 6.67; at (20, 8.67); rotated 90°; capsule; fill Labels/Secondary at 60%; opacity 27%
+    - 45: rectangle; 2.67 × 6.67; at (16.13, 1.99); rotated 45°; capsule; fill Labels/Secondary at 60%; opacity 15%
+    - 0: rectangle; 2.67 × 6.67; at (8.67, 0); capsule; fill Labels/Secondary at 60%
+  - text "Status..."; style Body/Regular; 64 × 22; color Labels/Secondary at 60%; property Label; hidden unless Show Label
+=== 2
+- component; 35 × 35; row; gap 8; main center; cross center; hugs content
+  - Spinner: frame; 35 × 35
+    - 315: rectangle; 5 × 13; at (3.36, 6.89); rotated -45°; capsule; fill Labels/Secondary at 60%; opacity 87%
+    - 270: rectangle; 5 × 13; at (13, 15); rotated 90°; capsule; fill Labels/Secondary at 60%; opacity 75%
+    - 225: rectangle; 5 × 13; at (12.55, 18.91); rotated 45°; capsule; fill Labels/Secondary at 60%; opacity 63%
+    - 180: rectangle; 5 × 13; at (15, 22); capsule; fill Labels/Secondary at 60%; opacity 51%
+    - 135: rectangle; 5 × 13; at (18.91, 22.45); rotated -45°; capsule; fill Labels/Secondary at 60%; opacity 39%
+    - 90: rectangle; 5 × 13; at (35, 15); rotated 90°; capsule; fill Labels/Secondary at 60%; opacity 27%
+    - 45: rectangle; 5 × 13; at (28.11, 3.36); rotated 45°; capsule; fill Labels/Secondary at 60%; opacity 15%
+    - 0: rectangle; 5 × 13; at (15, 0); capsule; fill Labels/Secondary at 60%
+  - text "Status..."; style Body/Regular; 64 × 22; color Labels/Secondary at 60%; property Label; hidden unless Show Label

@@ -1,0 +1,15 @@
+=== 0
+- component; 100 × 100
+  - Chrome: instance of _Materials/Mode Options [Style=Chrome]; 100 × 100; at (0, 0)
+=== 1
+- component; 100 × 100
+  - Thick: instance of _Materials/Mode Options [Style=Thick]; 100 × 100; at (0, 0)
+=== 2
+- component; 100 × 100
+  - Regular: instance of _Materials/Mode Options [Style=Regular]; 100 × 100; at (0, 0)
+=== 3
+- component; 100 × 100
+  - Thin: instance of _Materials/Mode Options [Style=Thin]; 100 × 100; at (0, 0)
+=== 4
+- component; 100 × 100
+  - Ultrathin: instance of _Materials/Mode Options [Style=Ultrathin]; 100 × 100; at (0, 0)

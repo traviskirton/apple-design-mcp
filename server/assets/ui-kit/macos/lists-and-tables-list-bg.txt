@@ -1,0 +1,6 @@
+=== 0
+- component; 60 × 20; row; gap 4; cross center; radius 8; fill Miscellaneous/Tables/BG - Selected + Inactive at 14%
+=== 1
+- component; 60 × 20; row; gap 4; cross center; radius 8; fill Miscellaneous/Tables/Alternating Row Color at 5%
+=== 2
+- component; 60 × 20; row; gap 4; cross center; radius 8; fill Miscellaneous/Tables/BG - Selected + Active

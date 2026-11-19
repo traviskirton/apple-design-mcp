@@ -1,0 +1,6 @@
+=== 0
+- component; 24 × 22
+  - text SF Symbol chevron.up; SF Pro Regular 17/22; centered; 22 × 36; at (1, -7); color Labels - Vibrant/Tertiary; blend linear burn
+=== 1
+- component; 24 × 22
+  - text SF Symbol chevron.up; SF Pro Regular 17/22; centered; 22 × 36; at (1, -7); color Labels - Vibrant/Primary; blend linear burn

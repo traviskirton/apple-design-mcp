@@ -1,0 +1,10 @@
+=== 0
+- component; 1512 × 993
+  - Desktop Wallpaper: instance of Desktop Wallpaper [Color Mode=Dark]; 1512 × 993; at (0, 0)
+  - Dock: instance of Dock; 1152 × 55; at (180, 934); shown while Show Dock
+  - Menu Bar: instance of Menu Bar [Color Mode=Over Dark]; 1512 × 45; at (0, 0)
+=== 1
+- component; 1512 × 993
+  - Desktop Wallpaper: instance of Desktop Wallpaper [Color Mode=Light]; 1512 × 993; at (0, 0)
+  - Dock: instance of Dock; 1152 × 55; at (180, 934); shown while Show Dock
+  - Menu Bar: instance of Menu Bar [Color Mode=Over Dark]; 1512 × 45; at (0, 0)

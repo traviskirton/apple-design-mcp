@@ -1,0 +1,15 @@
+=== 0
+- component; 82 × 74; column; padding 6.5 0 0 0; radius 13; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "1"; SF Compact Regular 18/21; centered; 82 × 21; fills width; color Labels/Secondary at 60%; property Alt
+  - text "q"; SF Compact Regular 33/39; centered; 82 × 39; fills width; color Labels/Primary; property Key
+=== 1
+- component; 82 × 74; column; gap 4; padding 6.5 0 0 0; radius 13; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "1"; SF Compact Regular 18/21; centered; 82 × 21; fills width; color Labels/Secondary at 60%; property Alt
+  - text "q"; SF Compact Regular 30/36; centered; uppercase; 82 × 36; fills width; color Labels/Primary; property Key
+=== 2
+- component; 82 × 74; column; padding 4.5 0 0 0; radius 13; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "?"; SF Compact Regular 29/36; centered; 82 × 36; fills width; color Labels/Primary; property Punctuation - Top
+  - text "."; SF Compact Regular 29/14; centered; 82 × 14; fills width; color Labels/Primary; property Punctuation - Bottom
+=== 3
+- component; 82 × 74; row; padding 0.5 0 0 0; radius 13; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "!"; SF Compact Regular 34/40; centered; 82 × 72; color Labels/Primary; property Punctuation

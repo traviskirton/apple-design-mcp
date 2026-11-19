@@ -1,0 +1,30 @@
+=== 0
+- component; 162 × 44; row; padding 0 9.5 0 9.5; main center; cross center; hugs height; capsule; uses Margin - LR - Copy Safe Area, Screen Width
+  - Frame: frame; 143 × 44; fills width; fills height; row; gap 10; padding 13 6 13 6; main center; cross center; capsule; fill #ffffff at 10%; Liquid Glass effect; uses Button/Margin - T, Button/Margin - B
+    - text "Action"; SF Compact Medium 16/17.5; centered; 131 × 18; fills width; color Colors/Red; property Label
+=== 1
+- component; 162 × 44; row; padding 0 9.5 0 9.5; main center; cross center; hugs height; background blur 25; uses Margin - LR - Copy Safe Area, Screen Width
+  - Frame: frame; 143 × 44; fills width; fills height; row; gap 10; padding 13 6 13 6; main center; cross center; capsule; fill #ff3b30 at 15%; uses Button/Margin - T, Button/Margin - B
+    - text "Action"; SF Compact Medium 16/17.5; centered; 131 × 18; fills width; color Colors/Red; property Label
+=== 2
+- component; 162 × 44; row; padding 0 9.5 0 9.5; main center; cross center; hugs height; capsule; uses Margin - LR - Copy Safe Area, Screen Width
+  - Frame: frame; 143 × 44; fills width; fills height; row; gap 10; padding 13 6 13 6; main center; cross center; capsule; fill Vibrant Fills/Dark/Tertiary; uses Button/Margin - T, Button/Margin - B
+    - text "Action"; SF Compact Medium 16/17.5; centered; 131 × 18; fills width; color Labels/Primary; property Label
+=== 3
+- component; 162 × 44; row; padding 0 9.5 0 9.5; main center; cross center; hugs height; capsule; uses Margin - LR - Copy Safe Area, Screen Width
+  - Frame: frame; 143 × 44; fills width; fills height; row; gap 10; padding 13 6 13 6; main center; cross center; capsule; fill Vibrant Fills/Dark/Secondary; uses Button/Margin - T, Button/Margin - B
+    - text "Action"; SF Compact Medium 16/17.5; centered; 131 × 18; fills width; color Labels/Primary; property Label
+=== 4
+- component; 162 × 44; row; padding 0 9.5 0 9.5; main center; cross center; hugs height; capsule; uses Margin - LR - Copy Safe Area, Screen Width
+  - Frame: frame; 143 × 44; fills width; fills height; row; gap 10; padding 13 6 13 6; main center; cross center; capsule; uses Button/Margin - T, Button/Margin - B
+    - Tint: frame; 143 × 44; absolute at (0, 0); capsule; fill #ffffff at 50% + #ffffff (saturation) + #cecece (overlay) + #30d158 (linear burn)
+    - Glass Effect: frame; 143 × 44; absolute at (0, 0); row; gap 10; padding 13 6 13 6; main center; cross center; capsule; Liquid Glass effect; uses Button/Margin - T, Button/Margin - B
+    - text "Action"; SF Compact Medium 16/17.5; centered; 131 × 18; fills width; color Grays/Black; property Label
+=== 5
+- component; 162 × 44; row; padding 0 9.5 0 9.5; main center; cross center; hugs height; capsule; uses Margin - LR - Copy Safe Area, Screen Width
+  - Frame: frame; 143 × 44; fills width; fills height; row; gap 10; padding 13 6 13 6; main center; cross center; capsule; fill Colors/Green; uses Button/Margin - T, Button/Margin - B
+    - text "Action"; SF Compact Medium 16/17.5; centered; 131 × 18; fills width; color Grays/Black; property Label
+=== 6
+- component; 162 × 44; row; padding 0 9.5 0 9.5; main center; cross center; hugs height; capsule; uses Margin - LR - Copy Safe Area, Screen Width
+  - Frame: frame; 143 × 44; fills width; fills height; row; gap 10; padding 13 6 13 6; main center; cross center; capsule; fill #ffffff at 10%; Liquid Glass effect; uses Button/Margin - T, Button/Margin - B
+    - text "Action"; SF Compact Medium 16/17.5; centered; 131 × 18; fills width; color Labels/Primary; property Label

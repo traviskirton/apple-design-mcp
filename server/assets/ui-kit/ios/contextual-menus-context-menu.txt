@@ -1,0 +1,20 @@
+=== 0
+- component; 351 × 161
+  - Content Area: frame; 351 × 161; at (0, 0); column; gap 10; padding 165 125 165 125; main center; cross center; radius 30; fill Backgrounds/Primary - Elevated; shadow x 0 y 0 blur 32 #000000 at 20%
+    - text "Content Area"; style Body/Regular; centered; 101 × 22; color #000000 at 60%
+  - Menu: instance of Menu; 250 × 278; at (367, 0)
+=== 1
+- component; 351 × 161
+  - Menu: instance of Menu; 250 × 278; at (-266, 0)
+  - Content Area: frame; 351 × 161; at (0, 0); column; gap 10; padding 165 125 165 125; main center; cross center; radius 30; fill Backgrounds/Primary - Elevated; shadow x 0 y 0 blur 32 #000000 at 20%
+    - text "Content Area"; style Body/Regular; centered; 101 × 22; color #000000 at 60%
+=== 2
+- component; 351 × 160
+  - Content Area: frame; 351 × 161; at (0, -0.5); column; gap 10; padding 165 125 165 125; main center; cross center; radius 30; fill Backgrounds/Primary - Elevated; shadow x 0 y 0 blur 32 #000000 at 20%
+    - text "Content Area"; style Body/Regular; centered; 101 × 22; color #000000 at 60%
+  - Menu: instance of Menu; 250 × 278; at (101, 176.5)
+=== 3
+- component; 351 × 160
+  - Content Area: frame; 351 × 160; at (0, -0.5); column; gap 10; padding 165 125 165 125; main center; cross center; radius 30; fill Backgrounds/Primary - Elevated; shadow x 0 y 0 blur 32 #000000 at 20%
+    - text "Content Area"; style Body/Regular; centered; 101 × 22; color #000000 at 60%
+  - Menu: instance of Menu; 250 × 278; at (0, 175.5)

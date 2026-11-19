@@ -1,0 +1,5 @@
+=== 0
+- component; 936 × 852; column; cross center; radius 32; fill Backgrounds/Primary - Elevated; shadow x 0 y 15 blur 75 #000000 at 18%; uses Sheet Top Radius, Sheet Bottom Radius
+  - Grabber: frame; 936 × 10; fills width; column; padding 6 0 0 0; cross center; hugs height; shown while Show Grabber
+    - Grabber: instance of Grabber; 60 × 4; blend linear burn
+  - Toolbar - Top - iPad: instance of Toolbar - Top - iPad [Style=Title 2 Line, Tab Bar=False]; 936 × 54; fills width

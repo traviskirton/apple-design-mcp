@@ -1,0 +1,12 @@
+=== 0
+- component; 1210 × 834; fill Backgrounds/Primary
+  - Wallpaper: instance of Wallpapers - iPad; 1210 × 834; at (0, 0)
+  - Split View: frame; 1210 × 834; at (0, 0); row; cross center; hugs height
+    - Sidebar: frame; 320 × 834; row; cross center; hugs content
+      - Sidebar BG: instance of BG [Active=True]; 320 × 834; absolute at (0, 0)
+      - Sidebar: instance of Sidebar [Floating Window=False]; 320 × 834
+    - Content View: frame; 890 × 834; fills width; fills height; column; padding 32 0 0 0; fill Backgrounds/Primary
+      - Toolbar - Top - iPad: instance of Toolbar - Top - iPad [Style=Large Title, Tab Bar=True]; with Title "Sidebar", Show Search off; 878 × 131
+      - Resize: instance of _Window Resize [Window=Floating]; 32 × 32; absolute at (858, 802)
+  - Status Bar: instance of Status bar and Menu bar- iPad [Full Screen=True, Menu Expanded=False, Background=Light]; 1210 × 32; at (-1, 0)
+  - Bezel: instance of iPad Pro M4 11" [Color=Silver]; 1210 × 834; at (0, 0)

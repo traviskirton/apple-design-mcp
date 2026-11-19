@@ -1,0 +1,10 @@
+=== 0
+- component; 3 × 16; row; gap 10; padding 0 1 0 1; cross center; hugs height
+=== 1
+- component; 3 × 16; row; gap 10; padding 0 1 0 1; cross center; hugs height
+  - Separator: rectangle; 1 × 16; fill Labels - Vibrant (Use Plus Lighter | Darker)/Quaternary; blend linear burn
+=== 2
+- component; 3 × 20; row; gap 10; padding 0 1 0 1; cross center; hugs height
+=== 3
+- component; 3 × 20; row; gap 10; padding 0 1 0 1; cross center; hugs height
+  - Separator: rectangle; 1 × 20; fill Labels - Vibrant (Use Plus Lighter | Darker)/Quaternary; blend linear burn

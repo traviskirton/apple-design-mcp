@@ -1,0 +1,2 @@
+=== 0
+- component; 100 × 100; radius 30; fill Overlays/Default at 20%

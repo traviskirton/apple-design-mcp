@@ -3,8 +3,10 @@
   "name": "apple-design-mcp",
   "main": "src/index.ts",
   "compatibility_date": "2026-11-01",
-  // Downloads Apple's guidelines into src/pack/hig.js the first time. `npm run pack` refreshes them.
-  "build": { "command": "node scripts/build-hig-pack.mjs --if-missing" },
+  // Before every deploy (and `wrangler dev`): `npm run check` stops when assets/ lacks the files the
+  // packs describe (a deploy replaces every live file), when the types do not check or when the SVG
+  // tests fail. Then Apple's guidelines are downloaded into src/pack/hig.js the first time; `npm run pack` refreshes them.
+  "build": { "command": "npm run check && node scripts/build-hig-pack.mjs --if-missing" },
   // One SVG per SF Symbol, written by the extractor on a Mac. Served at /symbols/NAME.svg and read by the symbol tools.
   "assets": { "directory": "./assets", "binding": "ASSETS" },
   "observability": { "enabled": true }

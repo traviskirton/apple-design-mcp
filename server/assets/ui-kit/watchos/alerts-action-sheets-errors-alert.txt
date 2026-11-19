@@ -1,0 +1,9 @@
+=== 0
+- component; 162 × 227; column; gap 5; padding 0 0 9.5 0; hugs height; fill Vibrant Backgrounds/Dark/Ultrathin; background blur 32; uses Margin - LR - Copy Safe Area, Screen Width
+  - Navigation Bar: instance of Navigation Bar [Type=Status Bar]; 162 × 32.5; fills width
+  - Frame: frame; 162 × 75; fills width; column; gap 0.5; padding 0 9.5 0 9.5; cross center; hugs height; uses Margin - LR - Copy Safe Area
+    - text "Title"; SF Compact Semibold 16/18.5; centered; 143 × 18.5; fills width; color Labels/Primary; property Title
+    - text "The content of the notification goes here."; SF Compact Regular 16/18.5; centered; 143 × 56; fills width; color Labels/Primary; property Messages
+  - Buttons: frame; 162 × 100; fills width; column; gap 4; padding 8 0 0 0; cross center; hugs height
+    - Primary Action: instance of Button - Pill [Type=Primary]; 162 × 44
+    - Secondary Action: instance of Button - Pill [Type=Secondary]; 162 × 44

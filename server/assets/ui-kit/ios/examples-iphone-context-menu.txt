@@ -1,0 +1,7 @@
+=== 0
+- component; 402 × 874
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 62 16 10 16; main center; cross center; radius 44; fill Backgrounds/Primary
+    - Content Area: frame; 370 × 802; fills height; fills width; column; gap 10; padding 10 0 10 0
+      - Context Menu: instance of Context Menu [Alignment=Vertical, Side=Leading]; 370 × 160; fills width
+  - Status bar: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 874; at (0, 0)

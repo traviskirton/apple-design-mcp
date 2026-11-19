@@ -1,0 +1,32 @@
+=== 0
+- component; 370 × 32; row; main center; cross center; capsule; fill Fills/Tertiary at 12%; opacity 50%
+  - Segments: frame; 370 × 32; fills width; row; gap 4; padding 2; cross center; hugs height; slot Segments
+    - Option: instance of _Option [Is Selected=True]; 70 × 28; fills width
+    - Option: instance of _Option [Is Selected=False]; 70 × 28; fills width
+    - Option: instance of _Option [Is Selected=False]; 70 × 28; fills width
+    - Option: instance of _Option [Is Selected=False]; 70 × 28; fills width
+    - Option: instance of _Option [Is Selected=False]; 70 × 28; fills width
+=== 1
+- component; 370 × 50; row; main center; cross center; capsule; fill Fills/Tertiary at 12%; opacity 50%
+  - Segments: frame; 370 × 50; fills width; fills height; row; gap 4; padding 2; cross center; slot Segments
+    - Option: instance of _Option [Is Selected=True]; 70 × 46; fills width; fills height
+    - Option: instance of _Option [Is Selected=False]; 70 × 46; fills width; fills height
+    - Option: instance of _Option [Is Selected=False]; 70 × 46; fills width; fills height
+    - Option: instance of _Option [Is Selected=False]; 70 × 46; fills width; fills height
+    - Option: instance of _Option [Is Selected=False]; 70 × 46; fills width; fills height
+=== 2
+- component; 370 × 32; row; main center; cross center; capsule; fill Fills/Tertiary at 12%
+  - Segments: frame; 370 × 32; fills width; row; gap 4; padding 2; cross center; hugs height; slot Segments
+    - Option: instance of _Option [Is Selected=True]; 70 × 28; fills width
+    - Option: instance of _Option [Is Selected=False]; 70 × 28; fills width
+    - Option: instance of _Option [Is Selected=False]; 70 × 28; fills width
+    - Option: instance of _Option [Is Selected=False]; 70 × 28; fills width
+    - Option: instance of _Option [Is Selected=False]; 70 × 28; fills width
+=== 3
+- component; 370 × 50; row; main center; cross center; capsule; fill Fills/Tertiary at 12%
+  - Segments: frame; 370 × 50; fills width; fills height; row; gap 4; padding 2; cross center; slot Segments
+    - Option: instance of _Option [Is Selected=True]; 70 × 46; fills width; fills height
+    - Option: instance of _Option [Is Selected=False]; 70 × 46; fills width; fills height
+    - Option: instance of _Option [Is Selected=False]; 70 × 46; fills width; fills height
+    - Option: instance of _Option [Is Selected=False]; 70 × 46; fills width; fills height
+    - Option: instance of _Option [Is Selected=False]; 70 × 46; fills width; fills height

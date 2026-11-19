@@ -1,0 +1,8 @@
+=== 0
+- component; 63 × 18; row; gap 16; padding 0 16 0 0; main center; cross center; hugs content
+  - Separator: rectangle; 1 × 18; fill Fills - Vibrant/Primary; blend linear burn; shown while Show Separator
+  - text "Item"; SF Pro Regular 15; 30 × 18; color Accents/Red; property Item
+=== 1
+- component; 63 × 18; row; gap 16; padding 0 16 0 0; main center; cross center; hugs content
+  - Separator: rectangle; 1 × 18; fill Fills - Vibrant/Primary; blend linear burn; shown while Show Separator
+  - text "Item"; SF Pro Regular 15; 30 × 18; color Labels - Vibrant/Primary; blend linear burn; property Item

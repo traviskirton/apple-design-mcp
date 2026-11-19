@@ -1,0 +1,18 @@
+=== 0
+- component; 1210 × 834; fill #ffffff
+  - Screen: frame; 1208 × 834; at (0, 0); column; padding 134 20 10 20; main center; cross center; fill Backgrounds/Primary
+    - Scroll Edge Effect: instance of Scroll Edge Effect - Soft [Edge=Top]; 1208 × 134; absolute at (0, 0)
+    - Content Area: frame; 1168 × 690; fills height; fills width; column; gap 10; padding 10 0 10 0
+  - Toolbar - Top - iPad: instance of Toolbar - Top - iPad [Style=Large Title, Tab Bar=False]; 1210 × 131; at (0, 32)
+  - Keyboard: instance of Keyboard [Type=Shift]; 1210 × 428; at (0, 406)
+  - Status Bar: instance of Status bar and Menu bar- iPad [Full Screen=True, Menu Expanded=False, Background=Light]; 1210 × 32; at (0, 0)
+  - Bezel: instance of iPad Pro M4 11" [Color=Silver]; 1210 × 834; at (0, 0)
+=== 1
+- component; 1210 × 834; fill #ffffff
+  - Screen: frame; 1208 × 834; at (0, 0); column; padding 134 20 10 20; main center; cross center; fill Backgrounds/Primary
+    - Scroll Edge Effect: instance of Scroll Edge Effect - Soft [Edge=Top]; 1208 × 134; absolute at (0, 0)
+    - Content Area: frame; 1168 × 690; fills height; fills width; column; gap 10; padding 10 0 10 0
+  - Toolbar - Top - iPad: instance of Toolbar - Top - iPad [Style=Large Title, Tab Bar=False]; 1210 × 131; at (0, 32)
+  - Keyboard: instance of Keyboard [Type=Default]; 1210 × 428; at (0, 406)
+  - Status Bar: instance of Status bar and Menu bar- iPad [Full Screen=True, Menu Expanded=False, Background=Light]; 1210 × 32; at (0, 0)
+  - Bezel: instance of iPad Pro M4 11" [Color=Silver]; 1210 × 834; at (0, 0)

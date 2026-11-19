@@ -1,0 +1,48 @@
+=== 0
+- component; 50 × 43; radius 8.5; fill #191919 (linear dodge) + #ffffff at 67%
+  - text ".com"; SF Pro Regular 18/19; centered; 50 × 38; at (0, 0); color Labels/Primary
+=== 1
+- component; 50 × 43; radius 8.5; fill #191919 (linear dodge) + #ffffff at 67%
+  - text SF Symbol delete.left; SF Compact Regular 20/28; centered; uppercase; 50 × 43; at (0, 0); color Labels/Primary
+=== 2
+- component; 50 × 43; radius 8.5; fill #191919 (linear dodge) + #ffffff at 67%
+  - text SF Symbol shift; SF Pro Regular 22/28; centered; uppercase; 50 × 43; at (0, 0); color Labels/Primary
+=== 3
+- component; 50 × 43; radius 8.5; fill #191919 (linear dodge) + #ffffff at 67%
+  - text SF Symbol shift.fill; SF Pro Regular 22/28; centered; uppercase; 50 × 43; at (0, 0); color Labels/Primary
+=== 4
+- component; 50 × 43; radius 8.5; fill #191919 (linear dodge) + #ffffff at 67%
+=== 5
+- component; 50 × 43; radius 8.5; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "123"; SF Compact Rounded Regular 16/19; centered; 50 × 42; at (0, 0); color Labels/Primary
+=== 6
+- component; 50 × 43; radius 8.5; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "#+="; SF Pro Regular 15; centered; 50 × 41; at (0, 0); color Labels/Primary
+=== 7
+- component; 50 × 43; radius 8.5; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "ABC"; SF Pro Regular 18/28; centered; 50 × 41; at (0, 0); color Labels/Primary
+=== 8
+- component; 50 × 43; radius 8.5; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "123"; SF Pro Regular 18/28; centered; 50 × 41; at (0, 0); color Labels/Primary
+=== 9
+- component; 50 × 43; radius 8.5
+  - BG: rectangle; 50 × 43; at (0, 0); radius 8.5; fill Accents/Blue
+  - text SF Symbol return; SF Pro Regular 19/28; centered; 50 × 43; at (0, 0); color #ffffff
+=== 10
+- component; 50 × 43; radius 8.5; fill #191919 (linear dodge) + #ffffff at 67%
+  - text SF Symbol return; SF Pro Regular 19/28; centered; 50 × 43; at (0, 0); color Labels/Primary
+=== 11
+- component; 50 × 43; radius 8.5; fill #191919 (linear dodge) + #ffffff at 67%
+  - text SF Symbol arrow.forward; SF Pro Regular 19/28; centered; 50 × 43; at (0, 0); color Labels/Primary; property Symbol
+=== 12
+- component; 50 × 43; radius 8.5; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "_"; SF Compact Regular 23/28; centered; 50 × 42; at (0, 1); color Labels/Primary; property Character
+=== 13
+- component; 50 × 43; radius 8.5; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "."; SF Compact Regular 27/33; centered; 50 × 40; at (0, 0); color Labels/Primary; property Punctuation
+=== 14
+- component; 50 × 43; radius 8.5; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "q"; SF Compact Regular 25/30; centered; 50 × 39; at (0, 0); color Labels/Primary; property Letter
+=== 15
+- component; 50 × 43; radius 8.5; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "q"; SF Compact Regular 23/28; centered; uppercase; 50 × 40; at (0, 0); color Labels/Primary; property Letter

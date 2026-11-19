@@ -1,0 +1,93 @@
+=== 0
+- component; 820 × 54; column; gap 10; padding 0 10 10 10; hugs height
+  - Controls: frame; 800 × 44; fills width; row; hugs height
+    - Leading: frame; 400 × 44; fills width; row; gap 12; cross center; hugs height; slot Leading
+      - Button Group: instance of _Buttons - 44pt [Type=Back]; 44 × 44
+    - Trailing: frame; 400 × 44; fills width; row; gap 12; main end; cross center; hugs height; slot Trailing
+      - Button Group: instance of _Buttons - 44pt [Type=Symbol]; 44 × 44
+      - Button Group: instance of _Buttons - 44pt [Type=Symbol]; 44 × 44
+  - Tab Bar: instance of Tab Bar - iPad; 491 × 44; absolute at (170, 0)
+  - Frame: frame; 800 × 64; fills width; row; gap 8; padding 20 0 0 0; main center; hugs height; hidden unless Show Search
+=== 1
+- component; 820 × 131; column; gap 10; padding 0 10 10 10; hugs height
+  - Controls: frame; 800 × 44; fills width; row; hugs height
+    - Leading: frame; 400 × 44; fills width; row; gap 12; cross center; hugs height; slot Leading
+      - Button Group: instance of _Buttons - 44pt [Type=Back]; 44 × 44
+    - Trailing: frame; 400 × 44; fills width; row; gap 12; main end; cross center; hugs height; slot Trailing
+      - Button Group: instance of _Buttons - 44pt [Type=Symbol]; 44 × 44
+      - Button Group: instance of _Buttons - 44pt [Type=Symbol]; 44 × 44
+  - Title and Subtitle: frame; 800 × 67; fills width; column; gap 2; padding 4 10 0 10; hugs height
+    - Title: instance of _Title - iPhone - Large Title; 780 × 41; fills width
+    - Subtitle: instance of _Subtitle - iPhone - Subheadline; 55 × 20; shown while Show Subtitle
+  - Tab Bar: instance of Tab Bar - iPad; 491 × 44; absolute at (170, 0)
+  - Frame: frame; 800 × 64; fills width; row; gap 8; padding 20 0 0 0; main center; hugs height; hidden unless Show Search
+=== 2
+- component; 820 × 98; column; gap 6; padding 0 10 10 10; hugs height
+  - Controls: frame; 800 × 44; fills width; row; hugs height
+    - Leading: frame; 400 × 44; fills width; row; gap 12; cross center; hugs height; slot Leading
+      - Button Group: instance of _Buttons - 44pt [Type=Back]; 44 × 44
+    - Trailing: frame; 400 × 44; fills width; row; gap 12; main end; cross center; hugs height; slot Trailing
+      - Button Group: instance of _Buttons - 44pt [Type=Symbol]; 44 × 44
+      - Button Group: instance of _Buttons - 44pt [Type=Symbol]; 44 × 44
+  - Title and Subtitle: frame; 800 × 38; fills width; column; gap 2; padding 7.5 10 0 10; main center
+    - Title: instance of _Title - iPhone - Body; 36 × 22
+    - Subtitle: instance of _Subtitle - iPhone - Caption; 46 × 16
+  - Tab Bar: instance of Tab Bar - iPad; 491 × 44; absolute at (170, 0)
+  - Frame: frame; 800 × 64; fills width; row; gap 8; padding 20 0 0 0; main center; hugs height; hidden unless Show Search
+=== 3
+- component; 820 × 103; column; gap 11; padding 0 10 10 10; hugs height
+  - Controls: frame; 800 × 44; fills width; row; hugs height
+    - Leading: frame; 400 × 44; fills width; row; gap 12; cross center; hugs height; slot Leading
+      - Button Group 1: instance of _Buttons - 44pt [Type=Back]; 44 × 44
+    - Trailing: frame; 400 × 44; fills width; row; gap 12; main end; cross center; hugs height; slot Trailing
+      - Button Group 1: instance of _Buttons - 44pt [Type=Symbol]; 44 × 44
+      - Button Group 2: instance of _Buttons - 44pt [Type=Symbol]; 44 × 44
+  - Title and Subtitle: frame; 800 × 38; fills width; column; gap 2; padding 6 0 0 0; main center; cross center
+    - Title: instance of _Title - iPhone - Body; 36 × 22
+    - Subtitle: instance of _Subtitle - iPhone - Caption; 46 × 16
+  - Tab Bar: instance of Tab Bar - iPad; 491 × 44; absolute at (170, 0)
+  - Frame: frame; 800 × 64; fills width; row; gap 8; padding 16 0 4 0; main center; hugs height; hidden unless Show Search
+=== 4
+- component; 820 × 54; row; space between; padding 0 10 10 10; hugs height
+  - Leading: frame; 44 × 44; row; gap 12; cross center; hugs content; slot Leading
+    - Button Group: instance of _Buttons - 44pt [Type=Back]; 44 × 44
+  - Title: frame; 656 × 38; column; padding 5 0 0 12; main center; hugs width
+    - Title: instance of _Title - iPhone - Large Title; 644 × 41
+  - Trailing: frame; 100 × 44; fills width; row; gap 12; main end; cross center; hugs height; slot Trailing
+    - Button Group: instance of _Buttons - 44pt [Type=Symbol]; 44 × 44
+    - Search Field: instance of _Search - 44pt [State=Placeholder]; 180 × 44
+=== 5
+- component; 820 × 131; column; gap 10; padding 0 10 10 10; cross center; hugs height
+  - Controls: frame; 800 × 44; fills width; row; space between; cross center; hugs height
+    - Leading: frame; 400 × 44; fills width; row; gap 12; cross center; hugs height; slot Leading
+      - Button Group 1: instance of _Buttons - 44pt [Type=Back]; 44 × 44
+      - Button Group 2: instance of _Buttons - 44pt [Type=Symbol]; 44 × 44
+      - Button Group 3: instance of _Buttons - 44pt [Type=Symbol]; 44 × 44
+    - Trailing: frame; 400 × 44; fills width; row; gap 12; main end; cross center; hugs height; slot Trailing
+      - Button Group 1: instance of _Buttons - 44pt [Type=Symbol]; 44 × 44
+      - Button Group 2: instance of _Buttons - 44pt [Type=Symbol]; 44 × 44
+  - Title and Subtitle: frame; 800 × 67; fills width; column; gap 2; padding 4 10 0 10; hugs height
+    - Title: instance of _Title - iPhone - Large Title; 780 × 41; fills width
+    - Subtitle: instance of _Subtitle - iPhone - Subheadline; 55 × 20; shown while Show Subtitle
+=== 6
+- component; 820 × 54; row; space between; padding 0 10 10 10; hugs height
+  - Leading: frame; 44 × 44; row; gap 12; cross center; hugs content; slot Leading
+    - Button Group: instance of _Buttons - 44pt [Type=Back]; 44 × 44
+  - Title and Subtitle: frame; 520 × 38; fills width; column; gap 2; padding 7 0 0 12; main center
+    - Title: instance of _Title - iPhone - Subheadline; 32 × 20
+    - Subtitle: instance of _Subtitle - iPhone - Caption; 46 × 16
+  - Trailing: frame; 236 × 44; row; gap 12; main end; cross center; hugs content; slot Trailing
+    - Button Group: instance of _Buttons - 44pt [Type=Symbol]; 44 × 44
+    - Search Field: instance of _Search - 44pt [State=Placeholder]; 180 × 44
+=== 7
+- component; 820 × 54; row; space between; padding 0 10 10 10; hugs height
+  - Leading: frame; 400 × 44; fills width; row; gap 12; cross center; hugs height; slot Leading
+    - Button Group: instance of _Buttons - 44pt [Type=Back]; 44 × 44
+    - Button Group: instance of _Buttons - 44pt [Type=Symbol]; 44 × 44
+    - Button Group: instance of _Buttons - 44pt [Type=Symbol]; 44 × 44
+  - Trailing: frame; 400 × 44; fills width; row; gap 12; main end; cross center; hugs height; slot Trailing
+    - Button Group: instance of _Buttons - 44pt [Type=Symbol]; 44 × 44
+    - Search Field: instance of _Search - 44pt [State=Placeholder]; 180 × 44
+  - Title and Subtitle: frame; 780 × 36; absolute at (20, 5); column; gap 2; main center; cross center
+    - Title: instance of _Title - iPhone - Subheadline; 32 × 20
+    - Subtitle: instance of _Subtitle - iPhone - Caption; 46 × 16

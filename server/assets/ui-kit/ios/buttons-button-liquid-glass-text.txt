@@ -1,0 +1,72 @@
+=== 0
+- component; 60 × 28; row; gap 4; padding 5 10 5 10; main center; cross center; hugs content; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 60 × 28; absolute at (0, 0)
+  - Text: instance of _Label - Text [Size=Small, Type=Destructive, Is Enabled=False]; 40 × 18
+=== 1
+- component; 69 × 34; row; gap 4; padding 8 12 8 12; main center; cross center; hugs content; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 69 × 34; absolute at (0, 0)
+  - Text: instance of _Label - Text [Size=Large, Type=Destructive, Is Enabled=False]; 45 × 18
+=== 2
+- component; 85 × 50; row; gap 4; padding 16 20 16 20; main center; cross center; hugs content; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 85 × 50; absolute at (0, 0)
+  - Text: instance of _Label - Text [Size=Large, Type=Destructive, Is Enabled=False]; 45 × 18
+=== 3
+- component; 60 × 28; row; gap 4; padding 5 10 5 10; main center; cross center; hugs content; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 60 × 28; absolute at (0, 0)
+  - Text: instance of _Label - Text [Size=Small, Type=Destructive, Is Enabled=True]; 40 × 18
+=== 4
+- component; 69 × 34; row; gap 4; padding 8 12 8 12; main center; cross center; hugs content; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 69 × 34; absolute at (0, 0)
+  - Text: instance of _Label - Text [Size=Large, Type=Destructive, Is Enabled=True]; 45 × 18
+=== 5
+- component; 85 × 50; row; gap 4; padding 16 20 16 20; main center; cross center; hugs content; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 85 × 50; absolute at (0, 0)
+  - Text: instance of _Label - Text [Size=Large, Type=Destructive, Is Enabled=True]; 45 × 18
+=== 6
+- component; 60 × 28; row; gap 4; padding 5 10 5 10; main center; cross center; hugs content; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 60 × 28; absolute at (0, 0)
+  - Text: instance of _Label - Text [Size=Small, Type=Default, Is Enabled=False]; 40 × 18
+=== 7
+- component; 69 × 34; row; gap 4; padding 8 12 8 12; main center; cross center; hugs content; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 69 × 34; absolute at (0, 0)
+  - Text: instance of _Label - Text [Size=Large, Type=Default, Is Enabled=False]; 45 × 18
+=== 8
+- component; 85 × 50; row; gap 4; padding 16 20 16 20; main center; cross center; hugs content; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 85 × 50; absolute at (0, 0)
+  - Text: instance of _Label - Text [Size=Large, Type=Default, Is Enabled=False]; 45 × 18
+=== 9
+- component; 60 × 28; row; gap 4; padding 5 10 5 10; main center; cross center; hugs content; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 60 × 28; absolute at (0, 0)
+  - Text: instance of _Label - Text [Size=Small, Type=Default, Is Enabled=True]; 40 × 18
+=== 10
+- component; 69 × 34; row; gap 4; padding 8 12 8 12; main center; cross center; hugs content; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 69 × 34; absolute at (0, 0)
+  - Text: instance of _Label - Text [Size=Large, Type=Default, Is Enabled=True]; 45 × 18
+=== 11
+- component; 85 × 50; row; gap 4; padding 16 20 16 20; main center; cross center; hugs content; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 85 × 50; absolute at (0, 0)
+  - Text: instance of _Label - Text [Size=Large, Type=Default, Is Enabled=True]; 45 × 18
+=== 12
+- component; 60 × 28; row; gap 4; padding 5 10 5 10; main center; cross center; hugs content; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 60 × 28; absolute at (0, 0)
+  - Text: instance of _Label - Text [Size=Small, Type=Preferred, Is Enabled=False]; 40 × 18; opacity 50%
+=== 13
+- component; 69 × 34; row; gap 4; padding 8 12 8 12; main center; cross center; hugs content; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 69 × 34; absolute at (0, 0)
+  - Text: instance of _Label - Text [Size=Large, Type=Preferred, Is Enabled=False]; 45 × 18; opacity 50%
+=== 14
+- component; 85 × 50; row; gap 4; padding 16 20 16 20; main center; cross center; hugs content; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 85 × 50; absolute at (0, 0)
+  - Text: instance of _Label - Text [Size=Large, Type=Preferred, Is Enabled=False]; 45 × 18; opacity 50%
+=== 15
+- component; 60 × 28; row; gap 4; padding 5 10 5 10; main center; cross center; hugs content; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=True]; 60 × 28; absolute at (0, 0)
+  - Text: instance of _Label - Text [Size=Small, Type=Preferred, Is Enabled=True]; 40 × 18
+=== 16
+- component; 69 × 34; row; gap 4; padding 8 12 8 12; main center; cross center; hugs content; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=True]; 69 × 34; absolute at (0, 0)
+  - Text: instance of _Label - Text [Size=Large, Type=Preferred, Is Enabled=True]; 45 × 18
+=== 17
+- component; 85 × 50; row; gap 4; padding 16 20 16 20; main center; cross center; hugs content; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=True]; 85 × 50; absolute at (0, 0)
+  - Text: instance of _Label - Text [Size=Large, Type=Preferred, Is Enabled=True]; 45 × 18

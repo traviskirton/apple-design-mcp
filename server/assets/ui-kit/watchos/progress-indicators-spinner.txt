@@ -1,0 +1,8 @@
+=== 0
+- component; 122 × 122
+  - Vector: vector shape; 36 × 36; at (43, 0); fill #ffffff; opacity 50%
+  - Vector: vector shape; 36 × 36; at (43, 86); fill #ffffff; opacity 50%
+  - Vector: vector shape; 36 × 36; at (80.24, 21.5); fill #ffffff; opacity 20%
+  - Vector: vector shape; 36 × 36; at (5.76, 64.5); fill #ffffff; opacity 70%
+  - Vector: vector shape; 36 × 36; at (5.76, 21.5); fill #ffffff
+  - Vector: vector shape; 36 × 36; at (80.24, 64.5); fill #ffffff; opacity 30%

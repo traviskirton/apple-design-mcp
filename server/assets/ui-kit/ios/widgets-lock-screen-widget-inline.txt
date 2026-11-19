@@ -1,0 +1,3 @@
+=== 0
+- component; 327 × 26; column; cross center; hugs height; background blur 20
+  - text "Apr 1 􀇕 Cupertino"; SF Pro Medium 22; centered; 327 × 26; fills width; color Vibrant Labels/Dark/Vibrant Primary; background blur 40; property Text

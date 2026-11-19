@@ -1,0 +1,44 @@
+=== 0
+- component; 1008 × 45; row; space between; padding 10 20 11 10; cross center; hugs height
+  - Group - Leading: frame; 421 × 24; row; cross center; hugs content
+    - Apple Logo: instance of _Menu Bar/Apple Menu/Dark [Selected=False]; 33 × 24
+    - App Name: instance of _Menu Bar/App Name / Dark [Selected=False]; 90 × 24
+    - Menu Items: frame; 298 × 24; row; cross center; hugs content; slot Menu Items
+      - File: instance of _Menu Bar/Menu Item / Dark [Selected=False]; with Menu Item "File"; 41 × 24
+      - Edit: instance of _Menu Bar/Menu Item / Dark [Selected=False]; with Menu Item "Edit"; 43 × 24
+      - View: instance of _Menu Bar/Menu Item / Dark [Selected=False]; with Menu Item "View"; 49 × 24
+      - Menu Item: instance of _Menu Bar/Menu Item / Dark [Selected=False]; 47 × 24
+      - Window: instance of _Menu Bar/Menu Item / Dark [Selected=False]; with Menu Item "Window"; 70 × 24
+      - Help: instance of _Menu Bar/Menu Item / Dark [Selected=False]; with Menu Item "Help"; 48 × 24
+  - Frame - Trailing: frame; 234.65 × 24; row; main end; cross center; hugs content
+    - Wifi: frame; 34.5 × 20; row; gap 10; padding 4 9 4 9; hugs content; radius 4
+      - Vector: vector shape; 16.5 × 12; fill #ffffff
+    - Spotlight: frame; 34 × 24; row; gap 10; padding 4 9 4 9; hugs content; radius 4
+      - text SF Symbol magnifyingglass; style Body/Emphasized; centered; 16 × 16; color #ffffff
+    - Control Center: frame; 31.15 × 21.41; row; gap 10; padding 4 9 4 9; hugs content; radius 4
+      - Union: vector shape; 13.15 × 13.41; fill #ffffff
+    - Date and Time: frame; 135 × 16; row; gap 8; padding 0 0 0 9; hugs content; radius 4
+      - text "Wed Apr 1"; SF Pro Semibold 13.1/16; centered; 65 × 16; color #ffffff; property Date
+      - text "9:41 AM"; SF Pro Semibold 13.1/16; centered; 53 × 16; color #ffffff; property Time
+=== 1
+- component; 1008 × 45; row; space between; padding 10 20 11 10; cross center; hugs height
+  - Group - Leading: frame; 421 × 24; row; cross center; hugs content
+    - Apple Logo: instance of _Menu Bar/Apple Menu/Light [Selected=False]; 33 × 24
+    - App Name: instance of _Menu Bar/App Name / Light [Selected=False]; 90 × 24
+    - Menu Items: frame; 298 × 24; row; cross center; hugs content; slot Menu Items
+      - File: instance of _Menu Bar/Menu Item / Light [Selected=False]; with Menu Item "File"; 41 × 24
+      - Edit: instance of _Menu Bar/Menu Item / Light [Selected=False]; with Menu Item "Edit"; 43 × 24
+      - View: instance of _Menu Bar/Menu Item / Light [Selected=False]; with Menu Item "View"; 49 × 24
+      - Menu Item: instance of _Menu Bar/Menu Item / Light [Selected=False]; 47 × 24
+      - Window: instance of _Menu Bar/Menu Item / Light [Selected=False]; with Menu Item "Window"; 70 × 24
+      - Help: instance of _Menu Bar/Menu Item / Light [Selected=False]; with Menu Item "Help"; 48 × 24
+  - Frame - Trailing: frame; 234.65 × 24; row; main end; cross center; hugs content
+    - Wifi: frame; 34.5 × 20; row; gap 10; padding 4 9 4 9; hugs content; radius 4
+      - Vector: vector shape; 16.5 × 12; fill #000000; opacity 85%
+    - Spotlight: frame; 34 × 24; row; gap 10; padding 4 9 4 9; hugs content; radius 4
+      - text SF Symbol magnifyingglass; style Body/Emphasized; centered; 16 × 16; color #000000 + #000000 at 20%
+    - Control Center: frame; 31.15 × 21.41; row; gap 10; padding 4 9 4 9; hugs content; radius 4
+      - Union: vector shape; 13.15 × 13.41; fill #000000; opacity 85%
+    - Date and Time: frame; 135 × 16; row; gap 8; padding 0 0 0 9; hugs content; radius 4
+      - text "Wed Apr 1"; SF Pro Semibold 13.1/16; centered; 65 × 16; color #000000 + #000000 at 20%; property Date
+      - text "9:41 AM"; SF Pro Semibold 13.1/16; centered; 53 × 16; color #000000 + #000000 at 20%; property Time

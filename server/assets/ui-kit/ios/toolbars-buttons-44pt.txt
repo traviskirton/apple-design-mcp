@@ -1,0 +1,27 @@
+=== 0
+- component; 44 × 44; row; gap 12; padding 0 2 0 2; main center; cross center; hugs width; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 44 × 44; absolute at (0, 0)
+  - Text: instance of _Back Bar Button Item [State=Default]; 36 × 36; blend linear burn
+=== 1
+- component; 73 × 44; row; gap 12; padding 0 8 0 8; main center; cross center; hugs width; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 73 × 44; absolute at (0, 0)
+  - Text: instance of _Button - Text [State=Default]; 57 × 36; blend linear burn
+=== 2
+- component; 73 × 44; row; gap 12; padding 0 8 0 8; main center; cross center; hugs width; capsule; fill #ffffff (multiply)
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=True]; 73 × 44; absolute at (0, 0)
+  - Text: instance of _Button - Text - Prominent [State=Default]; 57 × 36; blend linear dodge
+=== 3
+- component; 160 × 44; row; padding 0 6 0 6; cross center; hugs width; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 160 × 44; absolute at (0, 0)
+  - Buttons: frame; 148 × 36; row; gap 20; cross center; hugs content; slot Buttons
+    - Symbol 1: instance of _Button - Symbol [State=Default]; 36 × 36; blend linear burn
+    - Symbol 2: instance of _Button - Symbol [State=Default]; 36 × 36; blend linear burn
+    - Symbol 3: instance of _Button - Symbol [State=Default]; 36 × 36; blend linear burn
+=== 4
+- component; 44 × 44; row; gap 20; padding 0 4 0 4; cross center; hugs width; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 44 × 44; absolute at (0, 0)
+  - Symbol 1: instance of _Button - Symbol [State=Default]; 36 × 36; blend linear burn
+=== 5
+- component; 44 × 44; row; gap 20; padding 0 4 0 4; main center; cross center; hugs width; capsule; fill #ffffff (multiply)
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=True]; 44 × 44; absolute at (0, 0)
+  - Symbol: instance of _Button - Symbol - Prominent [State=Default]; 36 × 36; blend linear dodge

@@ -1,0 +1,23 @@
+=== 0
+- component; 200 × 22; row; gap 6; cross center; capsule
+  - text SF Symbol pencil; SF Pro Regular 17/22; centered; 29 × 22; color Labels - Vibrant/Secondary; blend linear burn
+  - Text Input: frame; 139 × 22; fills width; row; cross center; hugs height
+    - text "Replace"; SF Pro Regular 17/22; 64 × 22; color Labels - Vibrant/Primary; blend linear burn; property Value
+  - text SF Symbol multiply.circle.fill; SF Pro Regular 17/22; centered; 20 × 22; color Labels - Vibrant/Secondary; blend linear burn
+=== 1
+- component; 200 × 23; row; gap 6; cross center; capsule
+  - text SF Symbol pencil; SF Pro Regular 17/22; centered; 29 × 22; color Labels - Vibrant/Secondary; blend linear burn
+  - Text Input: frame; 139 × 23; fills width; row; cross center; hugs height
+    - text "Replace"; SF Pro Regular 17/22; 64 × 22; color Labels - Vibrant/Primary; blend linear burn; property Value
+    - Cursor: rectangle; 2 × 23; capsule; fill Accents/Blue
+  - text SF Symbol multiply.circle.fill; SF Pro Regular 17/22; centered; 20 × 22; color Labels - Vibrant/Secondary; blend linear burn
+=== 2
+- component; 200 × 23; row; gap 6; cross center; capsule
+  - text SF Symbol pencil; SF Pro Regular 17/22; centered; 29 × 22; color Labels - Vibrant/Secondary; blend linear burn
+  - Text Input: frame; 165 × 23; fills width; row; cross center; hugs height
+    - Cursor: rectangle; 2 × 23; capsule; fill Accents/Blue
+=== 3
+- component; 200 × 22; row; gap 6; cross center; capsule
+  - text SF Symbol pencil; SF Pro Regular 17/22; centered; 29 × 22; color Labels - Vibrant/Secondary; blend linear burn
+  - Text Input: frame; 165 × 22; fills width; row; cross center; hugs height
+    - text "Replace"; SF Pro Regular 17/22; 64 × 22; color Labels - Vibrant/Tertiary; blend linear burn

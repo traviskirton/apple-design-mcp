@@ -1,0 +1,515 @@
+=== 0
+- component; 191 × 81.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 191 × 82; at (0, 0)
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 18; centered; 50 × 50; at (125.5, 15.5); color Grays/White; property Symbol
+  - text "Line 2"; SF Compact Rounded Medium 26/18.5; 99.5 × 19; at (16, 41); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Medium 15/18.5; 99.5 × 19; at (16, 15.5); color Grays/White; property Line 1
+=== 1
+- component; 194 × 80.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 194 × 81; at (0, 0)
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 17; centered; 49 × 49; at (129, 16); color Grays/White; property Symbol
+  - text "Line 2"; SF Compact Rounded Medium 26/18.5; 103 × 19; at (16, 40.5); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Medium 15/18.5; 103 × 19; at (16, 15); color Grays/White; property Line 1
+=== 2
+- component; 173 × 76.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 173 × 77; at (0, 0)
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 17; centered; 48 × 48; at (110.5, 15); color Grays/White; property Symbol
+  - text "Line 2"; SF Compact Rounded Medium 26/18.5; 86.5 × 19; at (14, 38.5); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Medium 15/18.5; 86.5 × 19; at (14, 13); color Grays/White; property Line 1
+=== 3
+- component; 176 × 72.5; radius 12.5
+  - Background: instance of Background [Style=Over Dark Background]; 176 × 73; at (0, 0)
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 16; centered; 45 × 45; at (117, 13.5); color Grays/White; property Symbol
+  - text "Line 2"; SF Compact Rounded Medium 24/18.5; 93 × 19; at (14, 35); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Medium 14/18.5; 93 × 19; at (14, 12.5); color Grays/White; property Line 1
+=== 4
+- component; 152 × 69.5; radius 12.5
+  - Background: instance of Background [Style=Over Dark Background]; 152 × 69.5; at (0, 0)
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 16; centered; 41 × 41; at (96, 14); color Grays/White; property Symbol
+  - text "Line 2"; SF Compact Rounded Medium 24/18.5; 72.5 × 19; at (12, 34); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Medium 14/18.5; 72.5 × 19; at (12, 11.5); color Grays/White; property Line 1
+=== 5
+- component; 191 × 81.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 191 × 82; at (0, 0)
+  - Ellipse: ellipse; 50 × 50; at (125.5, 15.5); stroke #2094fa 4.5; opacity 20%
+  - Ellipse: ellipse; 50 × 50; at (125.5, 15.5); stroke #2094fa 4.5
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 18; centered; 50 × 50; at (125.5, 15.5); color Grays/White; property Symbol
+  - text "Line 3"; SF Compact Rounded Medium 17/19.5; 99.5 × 20; at (16, 50); color Grays/White; property Line 3
+  - text "Line 2"; SF Compact Rounded Medium 17/19.5; 99.5 × 20; at (16, 31); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Medium 17/19.5; 99.5 × 20; at (16, 12); color Grays/White; property Line 1
+=== 6
+- component; 194 × 80.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 194 × 81; at (0, 0)
+  - Ellipse: ellipse; 49 × 49; at (129, 16); stroke #2094fa 4.5; opacity 20%
+  - Ellipse: ellipse; 49 × 49; at (129, 16); stroke #2094fa 4.5
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 17; centered; 49 × 49; at (129, 16); color Grays/White; property Symbol
+  - text "Line 3"; SF Compact Rounded Medium 17/19.5; 103 × 20; at (16, 49.5); color Grays/White; property Line 3
+  - text "Line 2"; SF Compact Rounded Medium 17/19.5; 103 × 20; at (16, 30.5); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Medium 17/19.5; 103 × 20; at (16, 11.5); color Grays/White; property Line 1
+=== 7
+- component; 173 × 76.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 173 × 77; at (0, 0)
+  - Ellipse: ellipse; 49 × 49; at (110.5, 14); stroke #2094fa 4.5; opacity 20%
+  - Ellipse: ellipse; 49 × 49; at (110.5, 14); stroke #2094fa 4.5
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 17; centered; 49 × 49; at (110.5, 14); color Grays/White; property Symbol
+  - text "Line 3"; SF Compact Rounded Medium 17/19.5; 86.5 × 20; at (14, 47.5); color Grays/White; property Line 3
+  - text "Line 2"; SF Compact Rounded Medium 17/19.5; 86.5 × 20; at (14, 29); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Medium 17/19.5; 86.5 × 20; at (14, 9.5); color Grays/White; property Line 1
+=== 8
+- component; 176 × 72.5; radius 12.5
+  - Background: instance of Background [Style=Over Dark Background]; 176 × 73; at (0, 0)
+  - Ellipse: ellipse; 45.5 × 45.5; at (117, 13.5); stroke #2094fa 4.5; opacity 20%
+  - Ellipse: ellipse; 45.5 × 45.5; at (117, 13.5); stroke #2094fa 4.5
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 16; centered; 45.5 × 45.5; at (117, 13.5); color Grays/White; property Symbol
+  - text "Line 3"; SF Compact Rounded Medium 16/18.5; 93 × 19; at (14, 45); color Grays/White; property Line 3
+  - text "Line 2"; SF Compact Rounded Medium 16/18.5; 93 × 19; at (14, 27.5); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Medium 16/18.5; 93 × 19; at (14, 10); color Grays/White; property Line 1
+=== 9
+- component; 152 × 69.5; radius 12.5
+  - Background: instance of Background [Style=Over Dark Background]; 152 × 69.5; at (0, 0)
+  - Ellipse: ellipse; 45.5 × 45.5; at (94.5, 12); stroke #2094fa 4.5; opacity 20%
+  - Ellipse: ellipse; 45.5 × 45.5; at (94.5, 12); stroke #2094fa 4.5
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 16; centered; 45.5 × 45.5; at (94.5, 12); color Grays/White; property Symbol
+  - text "Line 3"; SF Compact Rounded Medium 16/18.5; 72.5 × 19; at (12, 43); color Grays/White; property Line 3
+  - text "Line 2"; SF Compact Rounded Medium 16/18.5; 72.5 × 19; at (12, 26); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Medium 16/18.5; 72.5 × 19; at (12, 8); color Grays/White; property Line 1
+=== 10
+- component; 191 × 81.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 191 × 82; at (0, 0)
+  - Progress Bar Track: rectangle; 171 × 12; at (10, 54); capsule; fill Colors/Blue; opacity 20%
+  - Progress Bar: rectangle; 114 × 12; at (10, 54); capsule; fill Colors/Blue
+  - text "Line 2"; SF Compact Rounded Medium 17/19.5; 171 × 20; at (10, 30); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Semibold 17/19.5; 171 × 20; at (10, 10.5); color Grays/White; property Line 1
+=== 11
+- component; 194 × 80.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 194 × 81; at (0, 0)
+  - Progress Bar Track: rectangle; 175 × 12; at (9.5, 54); capsule; fill Colors/Blue; opacity 20%
+  - Progress Bar: rectangle; 117 × 12; at (9.5, 54); capsule; fill Colors/Blue
+  - text "Line 2"; SF Compact Rounded Medium 17/19.5; 175 × 20; at (9.5, 30); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Semibold 17/19.5; 175 × 20; at (9.5, 10.5); color Grays/White; property Line 1
+=== 12
+- component; 173 × 76.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 173 × 77; at (0, 0)
+  - Progress Bar Track: rectangle; 158 × 12; at (7.5, 51.5); capsule; fill Colors/Blue; opacity 20%
+  - Progress Bar: rectangle; 106 × 12; at (7.5, 51.5); capsule; fill Colors/Blue
+  - text "Line 2"; SF Compact Rounded Medium 17/19.5; 158 × 20; at (7.5, 28); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Semibold 17/19.5; 158 × 20; at (7.5, 8.5); color Grays/White; property Line 1
+=== 13
+- component; 176 × 72.5; radius 12.5
+  - Background: instance of Background [Style=Over Dark Background]; 176 × 73; at (0, 0)
+  - Progress Bar Track: rectangle; 162 × 11; at (7, 47.5); capsule; fill Colors/Blue; opacity 20%
+  - Progress Bar: rectangle; 92 × 11; at (7, 47.5); capsule; fill Colors/Blue
+  - text "Line 2"; SF Compact Rounded Medium 16/18.5; 162 × 19; at (7, 26.5); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Semibold 16/18.5; 162 × 19; at (7, 8); color Grays/White; property Line 1
+=== 14
+- component; 152 × 69.5; radius 12.5
+  - Background: instance of Background [Style=Over Dark Background]; 152 × 69.5; at (0, 0)
+  - Progress Bar Track: rectangle; 138 × 11; at (7, 47.5); capsule; fill Colors/Blue; opacity 20%
+  - Progress Bar: rectangle; 92 × 11; at (7, 47.5); capsule; fill Colors/Blue
+  - text "Line 2"; SF Compact Rounded Medium 16/18; 138 × 18; at (7, 25); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Semibold 16/18.5; 138 × 19; at (7, 6.5); color Grays/White; property Line 1
+=== 15
+- component; 191 × 81.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 191 × 82; at (0, 0)
+  - Bar: rectangle; 5 × 55; at (10, 13.5); capsule; fill Colors/Blue
+  - text "Line 3"; SF Compact Rounded Medium 17/19.5; 161 × 20; at (20, 49.5); color Grays/White; property Line 3
+  - text "Line 2"; SF Compact Rounded Medium 17/19.5; 161 × 20; at (20, 30); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Semibold 17/19.5; 161 × 20; at (20, 10.5); color Grays/White; property Line 1
+=== 16
+- component; 194 × 80.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 194 × 81; at (0, 0)
+  - Bar: rectangle; 5 × 55; at (9.5, 13); capsule; fill Colors/Blue
+  - text "Line 3"; SF Compact Rounded Medium 17/19.5; 165 × 20; at (19.5, 49.5); color Grays/White; property Line 3
+  - text "Line 2"; SF Compact Rounded Medium 17/19.5; 165 × 20; at (19.5, 30); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Semibold 17/19.5; 165 × 20; at (19.5, 10.5); color Grays/White; property Line 1
+=== 17
+- component; 173 × 76.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 173 × 77; at (0, 0)
+  - Bar: rectangle; 5 × 55; at (7.5, 11); capsule; fill Colors/Blue
+  - text "Line 3"; SF Compact Rounded Medium 17/19.5; 147.5 × 20; at (18, 47.5); color Grays/White; property Line 3
+  - text "Line 2"; SF Compact Rounded Medium 17/19.5; 147.5 × 20; at (18, 28); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Semibold 17/19.5; 147.5 × 20; at (18, 8.5); color Grays/White; property Line 1
+=== 18
+- component; 176 × 72.5; radius 12.5
+  - Background: instance of Background [Style=Over Dark Background]; 176 × 73; at (0, 0)
+  - Bar: rectangle; 5 × 55; at (7, 9); capsule; fill Colors/Blue
+  - text "Line 3"; SF Compact Rounded Medium 16/18.5; 152 × 19; at (17, 45); color Grays/White; property Line 3
+  - text "Line 2"; SF Compact Rounded Medium 16/18.5; 152 × 19; at (17, 26.5); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Semibold 16/18.5; 152 × 19; at (17, 8); color Grays/White; property Line 1
+=== 19
+- component; 152 × 69.5; radius 12.5
+  - Background: instance of Background [Style=Over Dark Background]; 152 × 69.5; at (0, 0)
+  - Bar: rectangle; 5 × 51.5; at (7, 9); capsule; fill Colors/Blue
+  - text "Line 3"; SF Compact Rounded Medium 16/18.5; 128 × 19; at (17, 43.5); color Grays/White; property Line 3
+  - text "Line 2"; SF Compact Rounded Medium 16/18; 128 × 18; at (17, 25); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Semibold 16/18.5; 128 × 19; at (17, 6.5); color Grays/White; property Line 1
+=== 20
+- component; 191 × 81.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 191 × 82; at (0, 0)
+  - Ellipse: ellipse; 52 × 52; at (10, 14.5); stroke #2094fa 4.5; opacity 20%
+  - Ellipse: ellipse; 52 × 52; at (10, 14.5); stroke #2094fa 4.5
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 16; centered; 52 × 52; at (10, 14.5); color Grays/White; property Symbol
+  - text "Line 3"; SF Compact Rounded Medium 17/19.5; 109 × 20; at (72, 49.5); color Grays/White; property Line 3
+  - text "Line 2"; SF Compact Rounded Medium 17/19.5; 109 × 20; at (72, 30); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Medium 17/19.5; 109 × 20; at (72, 10.5); color Grays/White; property Line 1
+=== 21
+- component; 194 × 80.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 194 × 81; at (0, 0)
+  - Ellipse: ellipse; 50 × 50; at (9.5, 15); stroke #2094fa 4.5; opacity 20%
+  - Ellipse: ellipse; 50 × 50; at (9.5, 15); stroke #2094fa 4.5
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 16; centered; 50 × 50; at (9.5, 15); color Grays/White; property Symbol
+  - text "Line 3"; SF Compact Rounded Medium 17/19.5; 115.5 × 20; at (69, 49.5); color Grays/White; property Line 3
+  - text "Line 2"; SF Compact Rounded Medium 17/19.5; 115.5 × 20; at (69, 30); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Medium 17/19.5; 115.5 × 20; at (69, 10.5); color Grays/White; property Line 1
+=== 22
+- component; 173 × 76.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 173 × 77; at (0, 0)
+  - Ellipse: ellipse; 48 × 48; at (7.5, 14); stroke #2094fa 4.5; opacity 20%
+  - Ellipse: ellipse; 48 × 48; at (7.5, 14); stroke #2094fa 4.5
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 16; centered; 48 × 48; at (7.5, 14); color Grays/White; property Symbol
+  - text "Line 3"; SF Compact Rounded Medium 17/19.5; 102.5 × 20; at (63, 47.5); color Grays/White; property Line 3
+  - text "Line 2"; SF Compact Rounded Medium 17/19.5; 102.5 × 20; at (63, 28); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Medium 17/19.5; 102.5 × 20; at (63, 8.5); color Grays/White; property Line 1
+=== 23
+- component; 176 × 72.5; radius 12.5
+  - Background: instance of Background [Style=Over Dark Background]; 176 × 73; at (0, 0)
+  - Ellipse: ellipse; 45 × 45; at (7, 13.5); stroke #2094fa 4.5; opacity 20%
+  - Ellipse: ellipse; 45 × 45; at (7, 13.5); stroke #2094fa 4.5
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 16; centered; 45 × 45; at (7, 13.5); color Grays/White; property Symbol
+  - text "Line 3"; SF Compact Rounded Medium 16/18.5; 110 × 19; at (59, 45); color Grays/White; property Line 3
+  - text "Line 2"; SF Compact Rounded Medium 16/18.5; 110 × 19; at (59, 26.5); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Medium 16/18.5; 110 × 19; at (59, 8); color Grays/White; property Line 1
+=== 24
+- component; 152 × 69.5; radius 12.5
+  - Background: instance of Background [Style=Over Dark Background]; 152 × 69.5; at (0, 0)
+  - Ellipse: ellipse; 41 × 41; at (7, 14); stroke #2094fa 4.5; opacity 20%
+  - Ellipse: ellipse; 41 × 41; at (7, 14); stroke #2094fa 4.5
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 16; centered; 41 × 41; at (7, 14); color Grays/White; property Symbol
+  - text "Line 3"; SF Compact Rounded Medium 16/18.5; 90 × 19; at (55, 43.5); color Grays/White; property Line 3
+  - text "Line 2"; SF Compact Rounded Medium 16/18.5; 90 × 19; at (55, 25); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Medium 16/18.5; 90 × 19; at (55, 6.5); color Grays/White; property Line 1
+=== 25
+- component; 191 × 81.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 191 × 82; at (0, 0)
+  - text "Line 6"; SF Compact Rounded Medium 17/19.5; 80.5 × 20; at (100.5, 49.5); color Grays/White; property Line 6
+  - text "Line 5"; SF Compact Rounded Medium 17/19.5; 80.5 × 20; at (100.5, 30); color Grays/White; property Line 5
+  - text "Line 4"; SF Compact Rounded Medium 17/19.5; 80.5 × 20; at (100.5, 10.5); color Grays/White; property Line 4
+  - text "Line 3"; SF Compact Rounded Medium 17/19.5; 80.5 × 20; at (10, 49.5); color Grays/White; property Line 3
+  - text "Line 2"; SF Compact Rounded Medium 17/19.5; 80.5 × 20; at (10, 30); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Medium 17/19.5; 80.5 × 20; at (10, 10.5); color Grays/White; property Line 1
+=== 26
+- component; 194 × 80.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 194 × 81; at (0, 0)
+  - text "Line 6"; SF Compact Rounded Medium 17/19.5; 82.75 × 20; at (101.75, 49.5); color Grays/White; property Line 6
+  - text "Line 5"; SF Compact Rounded Medium 17/19.5; 82.75 × 20; at (101.75, 30); color Grays/White; property Line 5
+  - text "Line 4"; SF Compact Rounded Medium 17/19.5; 82.75 × 20; at (101.75, 10.5); color Grays/White; property Line 4
+  - text "Line 3"; SF Compact Rounded Medium 17/19.5; 82.75 × 20; at (9.5, 49.5); color Grays/White; property Line 3
+  - text "Line 2"; SF Compact Rounded Medium 17/19.5; 82.75 × 20; at (9.5, 30); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Medium 17/19.5; 82.75 × 20; at (9.5, 10.5); color Grays/White; property Line 1
+=== 27
+- component; 173 × 76.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 173 × 77; at (0, 0)
+  - text "Line 6"; SF Compact Rounded Medium 17/19.5; 75.5 × 20; at (90.5, 47.5); color Grays/White; property Line 6
+  - text "Line 5"; SF Compact Rounded Medium 17/19.5; 75.5 × 20; at (90.5, 28); color Grays/White; property Line 5
+  - text "Line 4"; SF Compact Rounded Medium 17/19.5; 75.5 × 20; at (90.5, 8.5); color Grays/White; property Line 4
+  - text "Line 3"; SF Compact Rounded Medium 17/19.5; 75.5 × 20; at (7.5, 47.5); color Grays/White; property Line 3
+  - text "Line 2"; SF Compact Rounded Medium 17/19.5; 75.5 × 20; at (7.5, 28); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Medium 17/19.5; 75.5 × 20; at (7.5, 8.5); color Grays/White; property Line 1
+=== 28
+- component; 176 × 72.5; radius 12.5
+  - Background: instance of Background [Style=Over Dark Background]; 176 × 73; at (0, 0)
+  - text "Line 6"; SF Compact Rounded Medium 16/18.5; 77.5 × 19; at (91.5, 45); color Grays/White; property Line 6
+  - text "Line 5"; SF Compact Rounded Medium 16/18.5; 77.5 × 19; at (91.5, 26.5); color Grays/White; property Line 5
+  - text "Line 4"; SF Compact Rounded Medium 16/18.5; 77.5 × 19; at (91.5, 8); color Grays/White; property Line 4
+  - text "Line 3"; SF Compact Rounded Medium 16/18.5; 77.5 × 19; at (7, 45); color Grays/White; property Line 3
+  - text "Line 2"; SF Compact Rounded Medium 16/18.5; 77.5 × 19; at (7, 26.5); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Medium 16/18.5; 77.5 × 19; at (7, 8); color Grays/White; property Line 1
+=== 29
+- component; 152 × 69.5; radius 12.5
+  - Background: instance of Background [Style=Over Dark Background]; 152 × 69.5; at (0, 0)
+  - text "Line 6"; SF Compact Rounded Medium 16/18.5; 65.5 × 19; at (79.5, 43.5); color Grays/White; property Line 6
+  - text "Line 5"; SF Compact Rounded Medium 16/18; 65.5 × 18; at (79.5, 25); color Grays/White; property Line 5
+  - text "Line 4"; SF Compact Rounded Medium 16/18; 65.5 × 18; at (79.5, 6.5); color Grays/White; property Line 4
+  - text "Line 3"; SF Compact Rounded Medium 16/18.5; 65.5 × 19; at (7, 43.5); color Grays/White; property Line 3
+  - text "Line 2"; SF Compact Rounded Medium 16/18; 65.5 × 18; at (7, 25); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Medium 16/18; 65.5 × 18; at (7, 6.5); color Grays/White; property Line 1
+=== 30
+- component; 191 × 81.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 191 × 82; at (0, 0)
+  - text "Line 3"; SF Compact Rounded Medium 17/19.5; 171 × 20; at (10, 49.5); color Grays/White; property Line 3
+  - text "Line 2"; SF Compact Rounded Medium 17/19.5; 171 × 20; at (10, 30); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Semibold 17/19.5; 171 × 20; at (10, 10.5); color Grays/White; property Line 1
+=== 31
+- component; 194 × 80.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 194 × 81; at (0, 0)
+  - text "Line 3"; SF Compact Rounded Medium 17/19.5; 175 × 20; at (9.5, 49.5); color Grays/White; property Line 3
+  - text "Line 2"; SF Compact Rounded Medium 17/19.5; 175 × 20; at (9.5, 30); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Semibold 17/19.5; 175 × 20; at (9.5, 10.5); color Grays/White; property Line 1
+=== 32
+- component; 173 × 76.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 173 × 77; at (0, 0)
+  - text "Line 3"; SF Compact Rounded Medium 17/19.5; 158 × 20; at (7.5, 47.5); color Grays/White; property Line 3
+  - text "Line 2"; SF Compact Rounded Medium 17/19.5; 158 × 20; at (7.5, 28); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Semibold 17/19.5; 158 × 20; at (7.5, 8.5); color Grays/White; property Line 1
+=== 33
+- component; 176 × 72.5; radius 12.5
+  - Background: instance of Background [Style=Over Dark Background]; 176 × 73; at (0, 0)
+  - text "Line 3"; SF Compact Rounded Medium 16/18.5; 162 × 19; at (7, 45); color Grays/White; property Line 3
+  - text "Line 2"; SF Compact Rounded Medium 16/18.5; 162 × 19; at (7, 26.5); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Semibold 16/18.5; 162 × 19; at (7, 8); color Grays/White; property Line 1
+=== 34
+- component; 152 × 69.5; radius 12.5
+  - Background: instance of Background [Style=Over Dark Background]; 152 × 69.5; at (0, 0)
+  - text "Line 3"; SF Compact Rounded Medium 16/18.5; 138 × 19; at (7, 43.5); color Grays/White; property Line 3
+  - text "Line 2"; SF Compact Rounded Medium 16/18; 138 × 18; at (7, 25); color Grays/White; property Line 2
+  - text "Line 1"; SF Compact Rounded Semibold 16/18.5; 138 × 19; at (7, 6.5); color Grays/White; property Line 1
+=== 35
+- component; 191 × 81.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 191 × 82; at (0, 0)
+  - text "Metric"; SF Compact Rounded Regular 41.5; 171 × 50; at (10, 25); color Grays/White; property Metric
+  - text "Line 1"; SF Compact Rounded Semibold 17/19.5; 171 × 20; at (10, 10.5); color Grays/White; property Line 1
+=== 36
+- component; 194 × 80.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 194 × 81; at (0, 0)
+  - text "Metric"; SF Compact Rounded Regular 41.5; 175 × 50; at (9.5, 25); color Grays/White; property Metric
+  - text "Line 1"; SF Compact Rounded Semibold 17/19.5; 175 × 20; at (9.5, 10.5); color Grays/White; property Line 1
+=== 37
+- component; 173 × 76.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 173 × 77; at (0, 0)
+  - text "Metric"; SF Compact Rounded Regular 41.5; 158 × 50; at (7.5, 23.5); color Grays/White; property Metric
+  - text "Line 1"; SF Compact Rounded Semibold 17/19.5; 158 × 20; at (7.5, 8.5); color Grays/White; property Line 1
+=== 38
+- component; 176 × 72.5; radius 12.5
+  - Background: instance of Background [Style=Over Dark Background]; 176 × 73; at (0, 0)
+  - text "Metric"; SF Compact Rounded Regular 40.5; 162 × 48; at (7, 22); color Grays/White; property Metric
+  - text "Line 1"; SF Compact Rounded Semibold 16/18.5; 162 × 19; at (7, 8); color Grays/White; property Line 1
+=== 39
+- component; 152 × 69.5; radius 12.5
+  - Background: instance of Background [Style=Over Dark Background]; 152 × 69.5; at (0, 0)
+  - text "Metric"; SF Compact Rounded Regular 38; 138 × 45; at (7, 22); color Grays/White; property Metric
+  - text "Line 1"; SF Compact Rounded Semibold 16/18.5; 138 × 19; at (7, 6.5); color Grays/White; property Line 1
+=== 40
+- component; 191 × 81.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 191 × 82; at (0, 0)
+  - text "Line 3"; SF Compact Rounded Medium 17/19.5; 38.5 × 19.5; at (142.5, 52.5); color Grays/White; property Line 3
+  - text "Line 1"; SF Compact Rounded Medium 17/19.5; 38.5 × 19.5; at (142.5, 34.5); color #ffffff; property Line 1
+  - text "Metric"; SF Compact Rounded Regular 41.5; 122.5 × 52.5; at (10, 29); color Grays/White; property Metric
+  - text "Line 1"; SF Compact Rounded Semibold 17/19.5; 171 × 20; at (10, 10); color Grays/White; property Line 1
+=== 41
+- component; 194 × 80.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 194 × 81; at (0, 0)
+  - text "Line 3"; SF Compact Rounded Medium 17/19.5; 38.5 × 19.5; at (146, 52); color Grays/White; property Line 3
+  - text "Line 1"; SF Compact Rounded Medium 17/19.5; 38.5 × 19.5; at (146, 34); color #ffffff; property Line 1
+  - text "Metric"; SF Compact Rounded Regular 41.5; 127 × 52; at (9.5, 28.5); color Grays/White; property Metric
+  - text "Line 1"; SF Compact Rounded Semibold 17/19.5; 175 × 20; at (9.5, 9.5); color Grays/White; property Line 1
+=== 42
+- component; 173 × 76.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 173 × 77; at (0, 0)
+  - text "Line 3"; SF Compact Rounded Medium 17/19.5; 38.5 × 19.5; at (127, 49.5); color Grays/White; property Line 3
+  - text "Line 1"; SF Compact Rounded Medium 17/19.5; 38.5 × 19.5; at (127, 31.5); color #ffffff; property Line 1
+  - text "Metric"; SF Compact Rounded Regular 41.5; 112 × 50; at (7.5, 26.5); color Grays/White; property Metric
+  - text "Line 1"; SF Compact Rounded Semibold 17/19.5; 158 × 20; at (7.5, 7.5); color Grays/White; property Line 1
+=== 43
+- component; 176 × 72.5; radius 12.5
+  - Background: instance of Background [Style=Over Dark Background]; 176 × 73; at (0, 0)
+  - text "Line 3"; SF Compact Rounded Medium 16/18.5; 36.5 × 18.5; at (132.5, 47.5); color Grays/White; property Line 3
+  - text "Line 1"; SF Compact Rounded Medium 16/18.5; 36.5 × 18.5; at (132.5, 30.5); color #ffffff; property Line 1
+  - text "Metric"; SF Compact Rounded Regular 40.5; 118.5 × 47; at (7, 25.5); color Grays/White; property Metric
+  - text "Line 1"; SF Compact Rounded Semibold 16/18.5; 162 × 19; at (7, 6.5); color Grays/White; property Line 1
+=== 44
+- component; 152 × 69.5; radius 12.5
+  - Background: instance of Background [Style=Over Dark Background]; 152 × 69.5; at (0, 0)
+  - text "Line 3"; SF Compact Rounded Medium 16/18.5; 36.5 × 18.5; at (108.5, 45); color Grays/White; property Line 3
+  - text "Line 1"; SF Compact Rounded Medium 16/18.5; 36.5 × 18.5; at (108.5, 28); color #ffffff; property Line 1
+  - text "Metric"; SF Compact Rounded Regular 38; 94.5 × 45; at (7, 24.5); color Grays/White; property Metric
+  - text "Line 1"; SF Compact Rounded Semibold 16/18.5; 138 × 19; at (7, 6); color Grays/White; property Line 1
+=== 45
+- component; 191 × 81.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 191 × 82; at (0, 0)
+  - Gauge 3 Track: ellipse; 52 × 52; at (129, 15); radius 4; fill image
+  - Gauge 2 Track: ellipse; 52 × 52; at (69.5, 15); radius 4; fill image
+  - Gauge 1 Track: ellipse; 52 × 52; at (10, 15); radius 4; fill image
+=== 46
+- component; 194 × 80.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 194 × 81; at (0, 0)
+  - Gauge 3 Track: ellipse; 50 × 50; at (134.5, 15); radius 4; fill image
+  - Gauge 2 Track: ellipse; 50 × 50; at (72, 15); radius 4; fill image
+  - Gauge 1 Track: ellipse; 50 × 50; at (9.5, 15); radius 4; fill image
+=== 47
+- component; 173 × 76.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 173 × 77; at (0, 0)
+  - Gauge 3 Track: ellipse; 48 × 48; at (117.5, 14); radius 4; fill image
+  - Gauge 2 Track: ellipse; 48 × 48; at (62.5, 14); radius 4; fill image
+  - Gauge 1 Track: ellipse; 48 × 48; at (7.5, 14); radius 4; fill image
+=== 48
+- component; 176 × 72.5; radius 12.5
+  - Background: instance of Background [Style=Over Dark Background]; 176 × 73; at (0, 0)
+  - Gauge 3 Track: ellipse; 45 × 45; at (124, 14); radius 4; fill image
+  - Gauge 2 Track: ellipse; 45 × 45; at (65.5, 14); radius 4; fill image
+  - Gauge 1 Track: ellipse; 45 × 45; at (7, 14); radius 4; fill image
+=== 49
+- component; 152 × 69.5; radius 12.5
+  - Background: instance of Background [Style=Over Dark Background]; 152 × 69.5; at (0, 0)
+  - Gauge 3 Track: ellipse; 41 × 41; at (104, 14); radius 4; fill image
+  - Gauge 2 Track: ellipse; 41 × 41; at (55.5, 14); radius 4; fill image
+  - Gauge 1 Track: ellipse; 41 × 41; at (7, 14); radius 4; fill image
+=== 50
+- component; 191 × 81.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 191 × 82; at (0, 0)
+  - Chart: frame; 156.5 × 50; at (17, 24)
+    - Line: rectangle; 0.5 × 46.5; at (129.5, 0); fill #ff3b30 at 30%
+    - Line: rectangle; 0.5 × 46.5; at (95, 0); fill #ff3b30 at 30%
+    - Line: rectangle; 0.5 × 46.5; at (60.5, 0); fill #ff3b30 at 30%
+    - Line: rectangle; 0.5 × 46.5; at (26.5, 0); fill #ff3b30 at 30%
+    - text "C5L"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 18 × 14; at (137.5, 36); color #ffffff; property Column 5 - Low
+    - text "C4L"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 18 × 14; at (103, 36); color #ffffff; property Column 4 - Low
+    - text "C3L"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 18 × 14; at (68.5, 36); color #ffffff; property Column 3 - Low
+    - text "C2L"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 18 × 14; at (34, 36); color #ffffff; property Column 2 - Low
+    - text "C1L"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 16 × 14; at (1, 36); color #ffffff; property Column 1 - Low
+    - text "C5H"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 20 × 14; at (136.5, 0.5); color #ffffff; property Column 5 - High
+    - text "C4H"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 20 × 14; at (102, 0.5); color #ffffff; property Column 4 - High
+    - text "C3H"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 20 × 14; at (67.5, 0.5); color #ffffff; property Column 3 - High
+    - text "C2H"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 20 × 14; at (33, 0.5); color #ffffff; property Column 2 - High
+    - text "C1H"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 18 × 14; at (0, 0.5); color #ffffff; property Column 1 - High
+  - text "Line 1"; SF Compact Rounded Medium 14/15.5; 35 × 16; at (11, 8.5); color Grays/White; property Line 1
+=== 51
+- component; 194 × 80.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 194 × 81; at (0, 0)
+  - Chart: frame; 162 × 56; at (16, 20)
+    - Line: rectangle; 0.5 × 52.5; at (134.5, 0.5); fill #ff3b30 at 30%
+    - Line: rectangle; 0.5 × 52.5; at (98.5, 0.5); fill #ff3b30 at 30%
+    - Line: rectangle; 0.5 × 52.5; at (62.5, 0.5); fill #ff3b30 at 30%
+    - Line: rectangle; 0.5 × 52.5; at (27, 0.5); fill #ff3b30 at 30%
+    - text "C5L"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 18 × 14; at (143, 42); color #ffffff; property Column 5 - Low
+    - text "C4L"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 18 × 14; at (107, 42); color #ffffff; property Column 4 - Low
+    - text "C3L"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 18 × 14; at (72, 42); color #ffffff; property Column 3 - Low
+    - text "C2L"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 18 × 14; at (35, 42); color #ffffff; property Column 2 - Low
+    - text "C1L"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 16 × 14; at (1, 42); color #ffffff; property Column 1 - Low
+    - text "C5H"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 20 × 14; at (142, 0); color #ffffff; property Column 5 - High
+    - text "C4H"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 20 × 14; at (106, 0); color #ffffff; property Column 4 - High
+    - text "C3H"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 20 × 14; at (71, 0); color #ffffff; property Column 3 - High
+    - text "C2H"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 20 × 14; at (34, 0); color #ffffff; property Column 2 - High
+    - text "C1H"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 18 × 14; at (0, 0); color #ffffff; property Column 1 - High
+  - text "Line 1"; SF Compact Rounded Medium 14/15.5; 35 × 16; at (8, 5); color Grays/White; property Line 1
+=== 52
+- component; 173 × 76.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 173 × 77; at (0, 0)
+  - Chart: frame; 145 × 52; at (15, 20)
+    - Line: rectangle; 0.5 × 49.5; at (119, 0); fill #ff3b30 at 30%
+    - Line: rectangle; 0.5 × 49.5; at (87, 0); fill #ff3b30 at 30%
+    - Line: rectangle; 0.5 × 49.5; at (55, 0); fill #ff3b30 at 30%
+    - Line: rectangle; 0.5 × 49.5; at (23.5, 0); fill #ff3b30 at 30%
+    - text "C5L"; SF Compact Rounded Medium 10/13; centered; uppercase; 17 × 13; at (127, 39); color #ffffff; property Column 5 - Low
+    - text "C4L"; SF Compact Rounded Medium 10/13; centered; uppercase; 17 × 13; at (95, 39); color #ffffff; property Column 4 - Low
+    - text "C3L"; SF Compact Rounded Medium 10/13; centered; uppercase; 17 × 13; at (64, 39); color #ffffff; property Column 3 - Low
+    - text "C2L"; SF Compact Rounded Medium 10/13; centered; uppercase; 17 × 13; at (32, 39); color #ffffff; property Column 2 - Low
+    - text "C1L"; SF Compact Rounded Medium 10/13; centered; uppercase; 16 × 13; at (0, 39); color #ffffff; property Column 1 - Low
+    - text "C5H"; SF Compact Rounded Medium 10/13; centered; uppercase; 19 × 13; at (126, 0); color #ffffff; property Column 5 - High
+    - text "C4H"; SF Compact Rounded Medium 10/13; centered; uppercase; 19 × 13; at (94, 0); color #ffffff; property Column 4 - High
+    - text "C3H"; SF Compact Rounded Medium 10/13; centered; uppercase; 19 × 13; at (63, 0); color #ffffff; property Column 3 - High
+    - text "C2H"; SF Compact Rounded Medium 10/13; centered; uppercase; 19 × 13; at (31, 0); color #ffffff; property Column 2 - High
+    - text "C1H"; SF Compact Rounded Medium 10/13; centered; uppercase; 17 × 13; at (0, 0); color #ffffff; property Column 1 - High
+  - text "Line 1"; SF Compact Rounded Medium 14/15.5; 35 × 16; at (7.5, 4.5); color Grays/White; property Line 1
+=== 53
+- component; 176 × 72.5; radius 12.5
+  - Background: instance of Background [Style=Over Dark Background]; 176 × 73; at (0, 0)
+  - Chart: frame; 148 × 51; at (15, 18)
+    - Line: rectangle; 0.5 × 47.5; at (121.5, 0.5); fill #ff3b30 at 30%
+    - Line: rectangle; 0.5 × 47.5; at (89, 0.5); fill #ff3b30 at 30%
+    - Line: rectangle; 0.5 × 47.5; at (56.5, 0.5); fill #ff3b30 at 30%
+    - Line: rectangle; 0.5 × 47.5; at (24, 0.5); fill #ff3b30 at 30%
+    - text "C5L"; SF Compact Rounded Medium 9.5/12.5; centered; uppercase; 17 × 13; at (131, 38); color #ffffff; property Column 5 - Low
+    - text "C4L"; SF Compact Rounded Medium 9.5/12.5; centered; uppercase; 17 × 13; at (98, 38); color #ffffff; property Column 4 - Low
+    - text "C3L"; SF Compact Rounded Medium 9.5/12.5; centered; uppercase; 16 × 13; at (65, 38); color #ffffff; property Column 3 - Low
+    - text "C2L"; SF Compact Rounded Medium 9.5/12.5; centered; uppercase; 16 × 13; at (33, 38); color #ffffff; property Column 2 - Low
+    - text "C1L"; SF Compact Rounded Medium 9.5/12.5; centered; uppercase; 15 × 13; at (1, 38); color #ffffff; property Column 1 - Low
+    - text "C5H"; SF Compact Rounded Medium 9.5/12.5; centered; uppercase; 18 × 13; at (130, 0); color #ffffff; property Column 5 - High
+    - text "C4H"; SF Compact Rounded Medium 9.5/12.5; centered; uppercase; 18 × 13; at (97, 0); color #ffffff; property Column 4 - High
+    - text "C3H"; SF Compact Rounded Medium 9.5/12.5; centered; uppercase; 18 × 13; at (64, 0); color #ffffff; property Column 3 - High
+    - text "C2H"; SF Compact Rounded Medium 9.5/12.5; centered; uppercase; 18 × 13; at (32, 0); color #ffffff; property Column 2 - High
+    - text "C1H"; SF Compact Rounded Medium 9.5/12.5; centered; uppercase; 17 × 13; at (0, 0); color #ffffff; property Column 1 - High
+  - text "Line 1"; SF Compact Rounded Medium 13/14.5; 33 × 15; at (7, 4); color Grays/White; property Line 1
+=== 54
+- component; 152 × 69.5; radius 12.5
+  - Background: instance of Background [Style=Over Dark Background]; 152 × 69.5; at (0, 0)
+  - Chart: frame; 126 × 47; at (13, 18)
+    - Line: rectangle; 0.5 × 44; at (105, 1); fill #ff3b30 at 30%
+    - Line: rectangle; 0.5 × 44; at (77, 1); fill #ff3b30 at 30%
+    - Line: rectangle; 0.5 × 44; at (49, 1); fill #ff3b30 at 30%
+    - Line: rectangle; 0.5 × 44; at (21, 1); fill #ff3b30 at 30%
+    - text "C5L"; SF Compact Rounded Medium 8.5/11.5; centered; uppercase; 15 × 12; at (111, 35); color #ffffff; property Column 5 - Low
+    - text "C4L"; SF Compact Rounded Medium 8.5/11.5; centered; uppercase; 15 × 12; at (84, 35); color #ffffff; property Column 4 - Low
+    - text "C3L"; SF Compact Rounded Medium 8.5/11.5; centered; uppercase; 15 × 12; at (56, 35); color #ffffff; property Column 3 - Low
+    - text "C2L"; SF Compact Rounded Medium 8.5/11.5; centered; uppercase; 15 × 12; at (28, 35); color #ffffff; property Column 2 - Low
+    - text "C1L"; SF Compact Rounded Medium 8.5/11.5; centered; uppercase; 13 × 12; at (1, 35); color #ffffff; property Column 1 - Low
+    - text "C5H"; SF Compact Rounded Medium 8.5/11.5; centered; uppercase; 16 × 12; at (110, 0); color #ffffff; property Column 5 - High
+    - text "C4H"; SF Compact Rounded Medium 8.5/11.5; centered; uppercase; 16 × 12; at (83, 0); color #ffffff; property Column 4 - High
+    - text "C3H"; SF Compact Rounded Medium 8.5/11.5; centered; uppercase; 16 × 12; at (55, 0); color #ffffff; property Column 3 - High
+    - text "C2H"; SF Compact Rounded Medium 8.5/11.5; centered; uppercase; 16 × 12; at (27, 0); color #ffffff; property Column 2 - High
+    - text "C1H"; SF Compact Rounded Medium 8.5/11.5; centered; uppercase; 15 × 12; at (0, 0); color #ffffff; property Column 1 - High
+  - text "Line 1"; SF Compact Rounded Medium 13/14.5; 33 × 15; at (7, 4); color Grays/White; property Line 1
+=== 55
+- component; 191 × 81.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 191 × 82; at (0, 0)
+  - Widget: frame; 46 × 46; at (133, 23.5)
+    - Rectangle: rectangle; 46 × 46; at (0, 0); radius 4; fill image; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 46 × 46; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - Widget: frame; 46 × 46; at (72.5, 23.5)
+    - Rectangle: rectangle; 46 × 46; at (0, 0); radius 4; fill image; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 46 × 46; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - Widget: frame; 46 × 46; at (12, 23.5)
+    - Rectangle: rectangle; 46 × 46; at (0, 0); radius 4; fill image; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 46 × 46; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - text "Line 1"; SF Compact Rounded Medium 15/18; 37 × 18; at (12, 4.5); color Grays/White; property Line 1
+=== 56
+- component; 194 × 80.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 194 × 81; at (0, 0)
+  - Widget: frame; 45 × 45; at (137.5, 24)
+    - Rectangle: rectangle; 45 × 45; at (0, 0); radius 4; fill image; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 45 × 45; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - Widget: frame; 45 × 45; at (74.5, 24)
+    - Rectangle: rectangle; 45 × 45; at (0, 0); radius 4; fill image; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 45 × 45; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - Widget: frame; 45 × 45; at (11.5, 24)
+    - Rectangle: rectangle; 45 × 45; at (0, 0); radius 4; fill image; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 45 × 45; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - text "Line 1"; SF Compact Rounded Medium 15/18; 37 × 18; at (11, 4); color Grays/White; property Line 1
+=== 57
+- component; 173 × 76.5; radius 14.5
+  - Background: instance of Background [Style=Over Dark Background]; 173 × 77; at (0, 0)
+  - Widget: frame; 42 × 42; at (119.5, 23)
+    - Rectangle: rectangle; 42 × 42; at (0, 0); radius 4; fill image; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 42 × 42; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - Widget: frame; 42 × 42; at (65.5, 23)
+    - Rectangle: rectangle; 42 × 42; at (0, 0); radius 4; fill image; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 42 × 42; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - Widget: frame; 42 × 42; at (11.5, 23)
+    - Rectangle: rectangle; 42 × 42; at (0, 0); radius 4; fill image; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 42 × 42; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - text "Line 1"; SF Compact Rounded Medium 15/18; 37 × 18; at (11, 3); color Grays/White; property Line 1
+=== 58
+- component; 176 × 72.5; radius 12.5
+  - Background: instance of Background [Style=Over Dark Background]; 176 × 73; at (0, 0)
+  - Widget: frame; 41 × 41; at (125, 21.5)
+    - Rectangle: rectangle; 41 × 41; at (0, 0); radius 4; fill image; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 41 × 41; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - Widget: frame; 41 × 41; at (67.5, 21.5)
+    - Rectangle: rectangle; 41 × 41; at (0, 0); radius 4; fill image; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 41 × 41; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - Widget: frame; 41 × 41; at (10, 21.5)
+    - Rectangle: rectangle; 41 × 41; at (0, 0); radius 4; fill image; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 41 × 41; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - text "Line 1"; SF Compact Rounded Medium 14/16; 35 × 16; at (10, 3); color Grays/White; property Line 1
+=== 59
+- component; 152 × 69.5; radius 12.5
+  - Background: instance of Background [Style=Over Dark Background]; 152 × 69.5; at (0, 0)
+  - Widget: frame; 37 × 37; at (105, 22.5)
+    - Rectangle: rectangle; 37 × 37; at (0, 0); radius 4; fill image; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 37 × 37; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - Widget: frame; 37 × 37; at (57.5, 22.5)
+    - Rectangle: rectangle; 37 × 37; at (0, 0); radius 4; fill image; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 37 × 37; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - Widget: frame; 37 × 37; at (10, 22.5)
+    - Rectangle: rectangle; 37 × 37; at (0, 0); radius 4; fill image; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 37 × 37; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - text "Line 1"; SF Compact Rounded Medium 14/16; 35 × 16; at (10, 2.5); color Grays/White; property Line 1

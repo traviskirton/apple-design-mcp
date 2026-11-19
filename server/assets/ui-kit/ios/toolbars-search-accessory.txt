@@ -1,0 +1,10 @@
+=== 0
+- component; 820 × 44; row; gap 8; main center; cross center; hugs height
+  - Search Field: instance of _Search - 44pt [State=Value]; showing SF Symbol mic.fill; 554 × 44; fills width
+  - Segmented Control: frame; 258 × 44; row; padding 4 8 4 8; hugs width
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 258 × 44; absolute at (0, 0)
+    - Button 1: instance of _Segmented Control Button [Selected=True]; 121 × 36
+    - Button 2: instance of _Segmented Control Button [Selected=False]; 121 × 36
+=== 1
+- component; 820 × 44; column; gap 10; cross center; hugs height
+  - Search Field: instance of _Search - 44pt [State=Value]; showing SF Symbol mic.fill; 500 × 44

@@ -1,0 +1,64 @@
+=== 0
+- component; 34 × 44; row; gap 8; cross center; hugs width
+  - Edit Button: instance of _Sidebar - Edit Button [Type=Selectable]; 21 × 21; blend linear burn; hidden unless Show Edit Button
+  - Title and Subtitle: frame; 34 × 22; column; gap -2; main center; hugs content
+    - text "Title"; style Body/Regular; 34 × 22; color Labels/Primary; property Title
+    - text "Subtitle"; style Footnote/Regular; 47 × 18; color Labels/Secondary at 60%; blend linear burn; property Subtitle; hidden unless Show Subtitle
+=== 1
+- component; 85 × 44; row; gap 8; cross center; hugs width
+  - Edit Button: instance of _Sidebar - Edit Button [Type=Selectable]; 21 × 21; blend linear burn; hidden unless Show Edit Button
+  - Frame: frame; 85 × 28; row; gap 4; cross center; hugs height
+    - Image: frame; 34 × 28; blend linear burn
+      - Collection: vector shape; 28 × 28; at (3, 0); fill Fills - Vibrant/Tertiary
+    - Title and Subtitle: frame; 34 × 22; column; gap -2; main center; hugs content
+      - text "Title"; style Body/Regular; 34 × 22; color Labels/Primary; property Title
+      - text "Subtitle"; style Footnote/Regular; 47 × 18; color Labels/Secondary at 60%; blend linear burn; property Subtitle; hidden unless Show Subtitle
+=== 2
+- component; 85 × 44; row; gap 8; cross center; hugs width
+  - Edit Button: instance of _Sidebar - Edit Button [Type=Selectable]; 21 × 21; blend linear burn; hidden unless Show Edit Button
+  - Frame: frame; 85 × 28; row; gap 4; cross center; hugs height
+    - Bitmap: frame; 34 × 28; column; gap 10; main center; cross center; hugs height; radius 6
+      - Bitmap: rectangle; 28 × 28; radius 6; fill image; stroke #000000 at 6% 0.5
+    - Title and Subtitle: frame; 34 × 22; column; gap -2; main center; hugs content
+      - text "Title"; style Body/Regular; 34 × 22; color Labels/Primary; property Title
+      - text "Subtitle"; style Footnote/Regular; 47 × 18; color Labels/Secondary at 60%; blend linear burn; property Subtitle; hidden unless Show Subtitle
+=== 3
+- component; 85 × 44; row; gap 8; cross center; hugs width
+  - Edit Button: instance of _Sidebar - Edit Button [Type=Selectable]; 21 × 21; blend linear burn; hidden unless Show Edit Button
+  - Frame: frame; 85 × 44; fills height; row; gap 4; cross center
+    - text SF Symbol square.dashed; SF Pro Regular 17/22; centered; 34 × 44; fills height; color Accents/Blue; property Symbol
+    - Title and Subtitle: frame; 34 × 22; column; gap -2; main center; hugs content
+      - text "Title"; style Body/Regular; 34 × 22; color Labels/Primary; property Title
+      - text "Subtitle"; style Footnote/Regular; 47 × 18; color Labels/Secondary at 60%; blend linear burn; property Subtitle; hidden unless Show Subtitle
+=== 4
+- component; 34 × 44; row; gap 8; cross center; hugs width
+  - Edit Button: instance of _Sidebar - Edit Button [Type=Selectable]; 21 × 21; blend linear burn; hidden unless Show Edit Button
+  - Title and Subtitle: frame; 34 × 22; column; gap -2; main center; hugs content
+    - text "Title"; style Body/Regular; 34 × 22; color Labels/Primary; blend linear burn; property Title
+    - text "Subtitle"; style Footnote/Regular; 47 × 18; color Labels/Secondary at 60%; blend linear burn; property Subtitle; hidden unless Show Subtitle
+=== 5
+- component; 85 × 44; row; gap 8; cross center; hugs width
+  - Edit Button: instance of _Sidebar - Edit Button [Type=Selectable]; 21 × 21; blend linear burn; hidden unless Show Edit Button
+  - Frame: frame; 85 × 28; row; gap 4; cross center; hugs height
+    - Image: frame; 34 × 28; blend linear burn
+      - Collection: vector shape; 28 × 28; at (3, 0); fill Fills - Vibrant/Tertiary
+    - Title and Subtitle: frame; 34 × 22; column; gap -2; main center; hugs content
+      - text "Title"; style Body/Regular; 34 × 22; color Labels/Primary; blend linear burn; property Title
+      - text "Subtitle"; style Footnote/Regular; 47 × 18; color Labels/Secondary at 60%; blend linear burn; property Subtitle; hidden unless Show Subtitle
+=== 6
+- component; 85 × 44; row; gap 8; cross center; hugs width
+  - Edit Button: instance of _Sidebar - Edit Button [Type=Selectable]; 21 × 21; blend linear burn; hidden unless Show Edit Button
+  - Frame: frame; 85 × 28; row; gap 4; cross center; hugs height
+    - Bitmap: frame; 34 × 28; column; gap 10; main center; cross center; hugs height; radius 6
+      - Bitmap: rectangle; 28 × 28; radius 6; fill image; stroke #000000 at 6% 0.5
+    - Title and Subtitle: frame; 34 × 22; column; gap -2; main center; hugs content
+      - text "Title"; style Body/Regular; 34 × 22; color Labels/Primary; blend linear burn; property Title
+      - text "Subtitle"; style Footnote/Regular; 47 × 18; color Labels/Secondary at 60%; blend linear burn; property Subtitle; hidden unless Show Subtitle
+=== 7
+- component; 85 × 44; row; gap 8; cross center; hugs width
+  - Edit Button: instance of _Sidebar - Edit Button [Type=Selectable]; 21 × 21; blend linear burn; hidden unless Show Edit Button
+  - Frame: frame; 85 × 44; fills height; row; gap 4; cross center
+    - text SF Symbol square.dashed; SF Pro Regular 17/22; centered; 34 × 44; fills height; color Accents/Blue; property Symbol
+    - Title and Subtitle: frame; 34 × 22; column; gap -2; main center; hugs content
+      - text "Title"; style Body/Regular; 34 × 22; color Labels/Primary; blend linear burn; property Title
+      - text "Subtitle"; style Footnote/Regular; 47 × 18; color Labels/Secondary at 60%; blend linear burn; property Subtitle; hidden unless Show Subtitle

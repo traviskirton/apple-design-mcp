@@ -1,0 +1,48 @@
+=== 0
+- component; 205 × 251; radius 20; fill #000000; uses Screen Width, Screen Height
+  - Rounded Corners: frame; 205 × 251; at (0, 0); column; gap 4; padding 0 0 10 0; cross center; radius 20; uses Screen Width, Screen Height
+    - Navigation Bar: instance of Navigation Bar [Type=Status + Large Title]; with Title "Workout"; 205 × 64; fills width
+    - Content Area: frame; 205 × 215; fills width; column; gap 4; cross center; hugs height
+      - Item - Carousel: instance of Item - Carousel [Scroll State=Full View, Tinted=True]; with Label "Outdoor Cycle", Subtitle "Open Goal"; 205 × 105.5
+      - Item - Carousel: instance of Item - Carousel [Scroll State=Partially Clipped, Tinted=True]; with Label "Pilates", Subtitle "Open Goal", Symbol SF Symbol figure.pilates; 205 × 105.5; opacity 60%
+    - Button - Floating: instance of Button - Floating/Default; with Label "Add Workout"; 205 × 73
+  - Bezel: instance of Bezels [Bezel Size=49mm]; 205 × 251; at (0, 0)
+=== 1
+- component; 205 × 251; radius 20; fill #000000; uses Screen Width, Screen Height
+  - Rounded Corners: frame; 205 × 251; at (0, 0); column; gap 4; padding 0 0 10 0; cross center; radius 20; uses Screen Width, Screen Height
+    - Navigation Bar: instance of Navigation Bar [Type=Status + Title]; 205 × 64; fills width
+    - Linked Tableview: frame; 205 × 291.5; fills width; row; gap 10; padding 0 2 0 2; cross center; hugs height
+      - Linked Tableview: frame; 201 × 291.5; fills width; column; gap 1; hugs height; radius 14.5; uses List/Radius
+        - instance of Item - Linked Tableview; 201 × 57.5; fills width
+        - instance of Item - Linked Tableview; with Show Checkmark off; 201 × 57.5; fills width
+        - instance of Item - Linked Tableview; with Show Checkmark off; 201 × 57.5; fills width
+        - instance of Item - Linked Tableview; with Show Checkmark off; 201 × 57.5; fills width
+        - instance of Item - Linked Tableview; with Show Checkmark off; 201 × 57.5; fills width
+  - Bezel: instance of Bezels [Bezel Size=49mm]; 205 × 251; at (0, 0)
+=== 2
+- component; 205 × 251; radius 20; fill #000000; uses Screen Width, Screen Height
+  - Rounded Corners: frame; 205 × 251; at (0, 0); column; gap 4; padding 0 0 10 0; cross center; radius 20; uses Screen Width, Screen Height
+    - Navigation Bar: instance of Navigation Bar [Type=Status + Title]; 205 × 64; fills width
+    - Content Area: frame; 205 × 336.5; fills width; column; gap 4; cross center; hugs height; uses Screen Width
+      - Item - Source List: instance of Item - Source List [Scroll State=Full View]; with Show Subtitle on; 205 × 92.5; fills width
+      - Item - Source List: instance of Item - Source List [Scroll State=Full View]; with Show Symbol off; 205 × 90.5; fills width
+      - Item - Source List: instance of Item - Source List [Scroll State=Full View]; with Label "Label", Subtitle "Secondary Text", Show Subtitle on, Show Symbol off; 205 × 90.5; fills width
+      - Spacing: frame; 205 × 0
+      - Button - Circular: instance of Button - Circular [Type=Default]; with Label SF Symbol plus; 47 × 47
+  - Bezel: instance of Bezels [Bezel Size=49mm]; 205 × 251; at (0, 0)
+=== 3
+- component; 205 × 251; radius 20; fill #000000; uses Screen Width, Screen Height
+  - Rounded Corners: frame; 205 × 251; at (0, 0); column; gap 4; padding 0 0 10 0; cross center; radius 20; uses Screen Width, Screen Height
+    - Navigation Bar: instance of Navigation Bar [Type=Child - Status + Title]; 205 × 64; fills width
+    - Content Area: frame; 205 × 463.5; fills width; column; gap 66; hugs height
+      - List: frame; 205 × 177; fills width; column; gap 4; padding 0 0 18 0; hugs height
+        - instance of Header; 205 × 17; fills width
+        - Item: instance of Item [Text=Default]; with Show Symbol - Leading off, Show Symbol - Trailing off; 205 × 57.5; fills width
+        - Item: instance of Item [Text=Default]; 205 × 57.5; fills width
+        - instance of Footer; 205 × 15; fills width
+      - List: frame; 205 × 220.5; fills width; column; gap 4; hugs height
+        - Item: instance of Item [Text=Default]; with Label "Primary Text Primary Text"; 205 × 57.5; fills width
+        - Item: instance of Item [Text=Subtitle + Title]; 205 × 58.5; fills width
+        - Item: instance of Item [Text=3-Line Label + Symbol]; 205 × 77.5; fills width
+        - instance of Footer; 205 × 15; fills width
+  - Bezel: instance of Bezels [Bezel Size=49mm]; 205 × 251; at (0, 0)

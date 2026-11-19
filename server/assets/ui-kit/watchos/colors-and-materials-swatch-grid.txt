@@ -1,0 +1,19 @@
+=== 0
+- component; 659 × 250
+  - Light: frame; 459 × 100; at (200, 150); row; gap 20
+    - Swatch: instance of _Swatch [Type=Color]; 100 × 100
+    - Swatch: instance of _Swatch [Type=Color]; 100 × 100
+    - Swatch: instance of _Swatch [Type=Color]; 100 × 100
+    - Swatch: instance of _Swatch [Type=Color]; 100 × 100
+  - Dark: frame; 459 × 100; at (200, 30); row; gap 20
+    - Swatch: instance of _Swatch [Type=Color]; 100 × 100
+    - Swatch: instance of _Swatch [Type=Color]; 100 × 100
+    - Swatch: instance of _Swatch [Type=Color]; 100 × 100
+    - Swatch: instance of _Swatch [Type=Color]; 100 × 100
+  - text "Dark"; SF Pro Regular 13/18; 94 × 18; at (0, 70); color #ffffff
+  - text "Light"; SF Pro Regular 13/18; 31 × 18; at (0, 190); color #ffffff
+  - text "Quaternary"; SF Pro Regular 13/18; 69 × 18; at (560, 0); color #ffffff
+  - text "Tertiary"; SF Pro Regular 13/18; 47 × 18; at (440, 0); color #ffffff
+  - text "Secondary"; SF Pro Regular 13/18; 65 × 18; at (320, 0); color #ffffff
+  - text "Primary"; SF Pro Regular 13/18; 47 × 18; at (200, 0); color #ffffff
+  - text "Backgrounds"; SF Pro Semibold 13/18; 83 × 18; at (0, 0); color #ffffff; property Group

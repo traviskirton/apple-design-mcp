@@ -1,0 +1,9 @@
+=== 0
+- component; 66 × 66; capsule; fill #000000
+  - Tracks: frame; 57 × 57; at (4.5, 4.5)
+    - Exercise: ellipse; 57 × 57; at (0, 0); stroke #e10115 at 14% 7
+    - Move: ellipse; 41 × 41; at (8, 8); stroke #3add00 at 14% 7
+    - Stand: ellipse; 25 × 25; at (16, 16); stroke #00bbe1 at 14% 7
+  - Exercise: ellipse; 57 × 57; at (4.5, 4.5); fill #000000; stroke angular gradient #ff3287 to #e10115 7
+  - Move: ellipse; 41 × 41; at (12.5, 12.5); fill #000000; stroke angular gradient #3add01 to #b3fe01 7
+  - Stand: ellipse; 25 × 25; at (20.5, 20.5); fill #000000; stroke angular gradient #00bbe1 to #00f9d0 7

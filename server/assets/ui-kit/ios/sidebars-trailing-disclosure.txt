@@ -1,0 +1,6 @@
+=== 0
+- component; 18 × 18
+  - text SF Symbol chevron.down; SF Pro Semibold 17/22; centered; 18 × 18; at (0, 2); color Labels - Vibrant/Primary
+=== 1
+- component; 18 × 18
+  - text SF Symbol chevron.right; SF Pro Semibold 17/22; centered; 18 × 18; at (0, 0); color Labels - Vibrant/Primary

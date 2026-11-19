@@ -1,0 +1,15 @@
+=== 0
+- component; 72 × 54
+  - Selection: rectangle; 76 × 54; at (-2, 0); capsule; fill Fills - Vibrant/Tertiary; blend linear burn
+  - Symbol: frame; 72 × 54; at (0, 0); column; gap 1; padding 6 8 7 8; main center; cross center; hugs height
+    - Symbol and Label: frame; 68 × 41; column; gap 1; hugs height; mask
+      - Tab image: frame; 68 × 28; fills width; row; gap 10; main center; cross center; hugs height
+        - text SF Symbol star.fill; SF Pro Semibold 18/28; centered; 68 × 28; fills width; color #ff0000; property Symbol
+      - text "Label"; SF Pro Semibold 10/12; centered; 68 × 12; fills width; color #ffffff; property Label
+    - FFFFFF @50%: rectangle; 72 × 54; absolute at (0, 0); fill #ffffff at 50%
+    - Tint (Plus D): rectangle; 72 × 54; absolute at (0, 0); fill Accents/Blue (linear burn); blend linear burn
+=== 1
+- component; 72 × 53.5; column; gap 0.5; padding 6 8 7 8; main center; cross center; hugs height
+  - Tab image: frame; 56 × 28; fills width; row; gap 10; main center; cross center; hugs height
+    - text SF Symbol star.fill; SF Pro Semibold 18/28; centered; 56 × 28; fills width; color Labels - Vibrant/Primary; blend linear burn; property Symbol
+  - text "Label"; SF Pro Semibold 10/12; centered; 56 × 12; fills width; color Labels - Vibrant/Primary; blend linear burn; property Label

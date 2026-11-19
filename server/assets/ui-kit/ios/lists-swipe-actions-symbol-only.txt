@@ -1,0 +1,3 @@
+=== 0
+- component; 60 × 44; row; gap 10; padding 12 8 12 8; main center; cross center; hugs content; capsule; fill Accents/Blue
+  - text SF Symbol circle.dashed; SF Pro Regular 17/22; centered; 44 × 20; color Grays/White; property Symbol

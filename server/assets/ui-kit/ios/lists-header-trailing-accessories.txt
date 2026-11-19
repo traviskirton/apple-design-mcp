@@ -1,0 +1,13 @@
+=== 0
+- component; 63 × 22; row; space between; cross center; hugs height
+  - text "Detail"; SF Pro Regular 17/22; centered; 47 × 22; color Labels/Secondary at 60%
+  - text SF Symbol chevron.right; SF Pro Semibold 19/22; centered; 12 × 22; color Accents/Blue
+=== 1
+- component; 45 × 20; row; gap 4; main end; hugs content
+  - text "Action"; SF Pro Regular 15/20; centered; 45 × 20; color Accents/Blue
+=== 2
+- component; 42 × 42; row; radius 10; fill image
+=== 3
+- component; 44 × 44
+  - Fill: ellipse; 44 × 44; at (0, 0); fill Accents/Blue; opacity 5%
+  - text SF Symbol square.and.pencil; SF Pro Regular 17/20; centered; 44 × 44; at (0, 0); color Accents/Blue

@@ -1,0 +1,10 @@
+=== 0
+- component; 28 × 20; column; main center; cross center; hugs content
+  - text SF Symbol star; SF Pro Regular 17/20; centered; 28 × 20; color Accents/Blue
+=== 1
+- component; 30 × 30; column; main center; cross center; hugs content
+  - Rounded: rectangle; 30 × 30; radius 7; fill Accents/Blue
+=== 2
+- component; 42 × 42; column; main center; cross center; capsule; fill image
+=== 3
+- component; 52 × 52; column; main center; cross center; fill image

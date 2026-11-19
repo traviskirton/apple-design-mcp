@@ -1,0 +1,5 @@
+=== 0
+- component; 2 × 24; capsule
+  - Shadow: frame; 58 × 38; at (-29, 0); capsule; stroke #000000 1; layer blur 6; opacity 40%
+  - Glass Effect: frame; 60 × 40; at (-30, -8); capsule; fill #ffffff at 9%; stroke #cccccc (linear burn) 0.5; Liquid Glass effect; inner shadow x 0 y 15 blur 25 spread -10 #e5e5e5 at 100% (linear burn); inner shadow x 0 y -40 blur 10 spread -40 #282828 at 100% (linear dodge); inner shadow x 0 y 40 blur 10 spread -40 #404040 at 100% (linear dodge)
+  - Specular Light: frame; 58 × 38; at (-29, -7); capsule; fill #ffffff (multiply); inner shadow x 0 y -3 blur 0.5 spread -2.25 #282828 at 100% (linear dodge); inner shadow x 0 y 3 blur 0.5 spread -2.25 #282828 at 100% (linear dodge)

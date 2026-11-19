@@ -1,0 +1,104 @@
+=== 0
+- component; 1210 × 332; column; gap 12; hugs height
+  - Row 1: frame; 1210 × 74; fills width; row; gap 14; main center; cross center
+    - tab: instance of _Keys - iPad - Command [Align=Left]; with Label SF Symbol arrow.right.to.line; 105 × 74; fills height
+    - Middle: frame; 972 × 74; fills width; fills height; row; gap 14; cross center
+      - q: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; showing "q", "1"; 84.6 × 74; fills width; fills height
+      - w: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; showing "w", "2"; 84.6 × 74; fills width; fills height
+      - e: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; showing "e", "3"; 84.6 × 74; fills width; fills height
+      - r: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; showing "r", "4"; 84.6 × 74; fills width; fills height
+      - t: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; showing "t", "5"; 84.6 × 74; fills width; fills height
+      - y: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; showing "y", "6"; 84.6 × 74; fills width; fills height
+      - u: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; showing "u", "7"; 84.6 × 74; fills width; fills height
+      - i: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; showing "i", "8"; 84.6 × 74; fills width; fills height
+      - o: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; showing "o", "9"; 84.6 × 74; fills width; fills height
+      - p: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; showing "p", "0"; 84.6 × 74; fills width; fills height
+    - delete: instance of _Keys - iPad - Command [Align=Right]; with Label SF Symbol delete.left; 105 × 74; fills height
+  - Row 2: frame; 1210 × 74; fills width; row; gap 14; main center; cross center
+    - caps lock: instance of _Keys - iPad - Command [Align=Left]; with Label SF Symbol capslock; 138 × 74; fills height
+    - Middle: frame; 877 × 74; fills width; fills height; row; gap 13.5; main center
+      - a: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; showing "a", "@"; 85.44 × 74; fills width; fills height
+      - s: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; showing "s", "#"; 85.44 × 74; fills width; fills height
+      - d: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; showing "d", "$"; 85.44 × 74; fills width; fills height
+      - f: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; showing "f", "&"; 85.44 × 74; fills width; fills height
+      - g: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; showing "g", "*"; 85.44 × 74; fills width; fills height
+      - h: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; showing "h", "("; 85.44 × 74; fills width; fills height
+      - j: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; showing "j", ")"; 85.44 × 74; fills width; fills height
+      - k: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; showing "k", "’"; 85.44 × 74; fills width; fills height
+      - l: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; showing "l", "”"; 85.44 × 74; fills width; fills height
+    - Enter: instance of _Keys - iPad - Return [Prominent=False]; with Label SF Symbol return; 167 × 74; fills height
+  - Row 3: frame; 1210 × 74; fills width; row; gap 14; main center; cross center
+    - shift: instance of _Keys - iPad - Command [Align=Left]; with Label SF Symbol shift.fill; 182 × 74; fills height
+    - Middle: frame; 875 × 74; fills width; fills height; row; gap 13.5
+      - z: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; showing "z", "%"; 85.22 × 74; fills width; fills height
+      - x: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; showing "x", "-"; 85.22 × 74; fills width; fills height
+      - c: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; showing "c", "+"; 85.22 × 74; fills width; fills height
+      - v: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; showing "v", "="; 85.22 × 74; fills width; fills height
+      - b: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; showing "b", "/"; 85.22 × 74; fills width; fills height
+      - n: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; showing "n", ";"; 85.22 × 74; fills width; fills height
+      - m: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; showing "m", ":"; 85.22 × 74; fills width; fills height
+      - !,: instance of _Keys - iPad - Lowercase [Type=2 Storey Punctuation]; showing ",", "!"; 85.22 × 74; fills width; fills height
+      - ?.: instance of _Keys - iPad - Lowercase [Type=2 Storey Punctuation]; showing ".", "?"; 85.22 × 74; fills width; fills height
+    - shift: instance of _Keys - iPad - Command [Align=Right]; with Label SF Symbol shift.fill; 125 × 74; fills height
+  - Row 4: frame; 1210 × 74; fills width; row; gap 14; main center; cross center
+    - Emoji and Numbers: frame; 182 × 74; fills height; row; gap 14; main center; cross center
+      - Emoji: instance of _Keys - iPad - Command [Align=Left]; with Label SF Symbol smiley; 84 × 74; fills width; fills height
+      - .?123: instance of _Keys - iPad - Command [Align=Left]; with Label ".?123"; 84 × 74; fills width; fills height
+    - Dictation + Space + Numbers: frame; 875 × 74; fills width; fills height; row; main center; cross center
+      - Dictation: instance of _Keys - iPad - Command [Align=Left]; with Label SF Symbol mic; 82 × 74; fills height
+      - Space: frame; 673.75 × 74; fills width; fills height; row; padding 0 13.5 0 13.5; main center; cross center
+        - space: instance of _Keys - iPad - Lowercase [Type=2 Storey Lower]; with Alt "", Key ""; 646.75 × 74; fills width; fills height
+      - .?123: instance of _Keys - iPad - Command [Align=Right]; with Label ".?123"; 119.25 × 74; fills height
+    - Keyboard Close: instance of _Keys - iPad - Command [Align=Right]; with Label SF Symbol keyboard.chevron.compact.down; 125 × 74; fills height
+=== 1
+- component; 1210 × 332; column; gap 12; hugs height
+  - Row 1: frame; 1210 × 74; fills width; row; gap 14; main center; cross center
+    - tab: instance of _Keys - iPad - Command [Align=Left]; 105 × 74; fills height
+    - Middle: frame; 972 × 74; fills width; fills height; row; gap 14; cross center
+      - q: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; showing "1", "q"; 84.6 × 74; fills width; fills height
+      - w: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; with Alt "2", Key "w"; 84.6 × 74; fills width; fills height
+      - e: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; with Alt "3", Key "e"; 84.6 × 74; fills width; fills height
+      - r: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; with Alt "4", Key "r"; 84.6 × 74; fills width; fills height
+      - t: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; with Alt "5", Key "t"; 84.6 × 74; fills width; fills height
+      - y: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; with Alt "6", Key "y"; 84.6 × 74; fills width; fills height
+      - u: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; with Alt "7", Key "u"; 84.6 × 74; fills width; fills height
+      - i: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; with Alt "8", Key "i"; 84.6 × 74; fills width; fills height
+      - o: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; with Alt "9", Key "o"; 84.6 × 74; fills width; fills height
+      - p: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; with Alt "0", Key "p"; 84.6 × 74; fills width; fills height
+    - delete: instance of _Keys - iPad - Command [Align=Right]; with Label SF Symbol delete.left; 105 × 74; fills height
+  - Row 2: frame; 1210 × 74; fills width; row; gap 14; main center; cross center
+    - caps lock: instance of _Keys - iPad - Command [Align=Left]; with Label SF Symbol capslock; 138 × 74; fills height
+    - Middle: frame; 877 × 74; fills width; fills height; row; gap 13.5; main center
+      - a: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; with Alt "@", Key "a"; 85.44 × 74; fills width; fills height
+      - s: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; with Alt "#", Key "s"; 85.44 × 74; fills width; fills height
+      - d: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; with Alt "$", Key "d"; 85.44 × 74; fills width; fills height
+      - f: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; with Alt "&", Key "f"; 85.44 × 74; fills width; fills height
+      - g: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; with Alt "*", Key "g"; 85.44 × 74; fills width; fills height
+      - h: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; with Alt "(", Key "h"; 85.44 × 74; fills width; fills height
+      - j: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; with Alt ")", Key "j"; 85.44 × 74; fills width; fills height
+      - k: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; with Alt "’", Key "k"; 85.44 × 74; fills width; fills height
+      - l: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; with Alt "”", Key "l"; 85.44 × 74; fills width; fills height
+    - Enter: instance of _Keys - iPad - Return [Prominent=False]; with Label SF Symbol return; 167 × 74; fills height
+  - Row 3: frame; 1210 × 74; fills width; row; gap 14; main center; cross center
+    - shift: instance of _Keys - iPad - Command [Align=Left]; with Label SF Symbol shift.fill; 182 × 74; fills height
+    - Middle: frame; 875 × 74; fills width; fills height; row; gap 13.5
+      - z: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; with Alt "%", Key "z"; 85.22 × 74; fills width; fills height
+      - x: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; with Alt "-", Key "x"; 85.22 × 74; fills width; fills height
+      - c: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; with Alt "+", Key "c"; 85.22 × 74; fills width; fills height
+      - v: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; with Alt "=", Key "v"; 85.22 × 74; fills width; fills height
+      - b: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; with Alt "/", Key "b"; 85.22 × 74; fills width; fills height
+      - n: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; with Alt ";", Key "n"; 85.22 × 74; fills width; fills height
+      - m: instance of _Keys - iPad - Lowercase [Type=2 Storey Upper]; with Alt ":", Key "m"; 85.22 × 74; fills width; fills height
+      - !,: instance of _Keys - iPad - Lowercase [Type=2 Storey Punctuation]; with Punctuation - Top "!", Punctuation - Bottom ","; 85.22 × 74; fills width; fills height
+      - ?.: instance of _Keys - iPad - Lowercase [Type=2 Storey Punctuation]; showing "?", "."; 85.22 × 74; fills width; fills height
+    - shift: instance of _Keys - iPad - Command [Align=Right]; with Label SF Symbol shift.fill; 125 × 74; fills height
+  - Row 4: frame; 1210 × 74; fills width; row; gap 14; main center; cross center
+    - Emoji and Numbers: frame; 182 × 74; fills height; row; gap 14; main center; cross center
+      - Emoji: instance of _Keys - iPad - Command [Align=Left]; with Label SF Symbol smiley; 84 × 74; fills width; fills height
+      - .?123: instance of _Keys - iPad - Command [Align=Left]; with Label ".?123"; 84 × 74; fills width; fills height
+    - Dictation + Space + Numbers: frame; 875 × 74; fills width; fills height; row; main center; cross center
+      - Dictation: instance of _Keys - iPad - Command [Align=Left]; with Label SF Symbol mic; 84 × 74; fills height
+      - Space: frame; 671.75 × 74; fills width; fills height; row; padding 0 13.5 0 13.5; main center; cross center
+        - space: instance of _Keys - iPad - Lowercase [Type=2 Storey Lower]; with Alt "", Key ""; 644.75 × 74; fills width; fills height
+      - .?123: instance of _Keys - iPad - Command [Align=Right]; with Label ".?123"; 119.25 × 74; fills height
+    - Keyboard Close: instance of _Keys - iPad - Command [Align=Right]; with Label SF Symbol keyboard.chevron.compact.down; 125 × 74; fills height

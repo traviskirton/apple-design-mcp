@@ -1,0 +1,48 @@
+=== 0
+- component; 402 × 68; row; gap 10; padding 0 0 0 16; cross center; hugs height; fill Backgrounds/Secondary
+  - Swipe Actions Symbol and Label Tall: frame; 200 × 68; fills height; row; gap 10; cross center; hugs width; slot Swipe Actions Symbol and Label Tall
+    - Action: instance of _Swipe Actions/Symbol and Label Stacked; with Label "Action"; 60 × 68
+    - Action: instance of _Swipe Actions/Symbol and Label Stacked; with Label "Action"; 60 × 68
+    - Action: instance of _Swipe Actions/Symbol and Label Stacked; with Label "Action"; 60 × 68
+  - Contents: frame; 300 × 68; row; gap 4; cross center; hugs width; capsule; fill Backgrounds/Primary
+    - Row: instance of Row [Height=Tall]; 300 × 68
+=== 1
+- component; 402 × 52; row; gap 10; padding 0 0 0 16; cross center; hugs height; fill Backgrounds/Secondary
+  - Swipe Actions Symbol and Label: frame; 272 × 44; row; gap 10; cross center; hugs content; slot Swipe Actions Symbol and Label
+    - Action: instance of _Swipe Actions/Symbol and Label; 84 × 44
+    - Action: instance of _Swipe Actions/Symbol and Label; 84 × 44
+    - Action: instance of _Swipe Actions/Symbol and Label; 84 × 44
+  - Contents: frame; 300 × 52; row; cross center; hugs width; capsule; fill Backgrounds/Primary
+    - Row: instance of Row [Height=Regular]; 300 × 52
+=== 2
+- component; 402 × 52; row; gap 10; padding 0 0 0 16; cross center; hugs height; fill Backgrounds/Secondary
+  - Swipe Actions Symbol Only: frame; 200 × 44; row; gap 10; cross center; hugs content; slot Swipe Actions Symbol Only
+    - Action: instance of _Swipe Actions/Symbol only; 60 × 44
+    - Action: instance of _Swipe Actions/Symbol only; 60 × 44
+    - Action: instance of _Swipe Actions/Symbol only; 60 × 44
+  - Contents: frame; 300 × 52; row; cross center; hugs width; capsule; fill Backgrounds/Primary
+    - Row: instance of Row [Height=Regular]; 300 × 52
+=== 3
+- component; 402 × 68; row; gap 10; padding 0 16 0 0; main end; cross center; hugs height; fill Backgrounds/Secondary
+  - Contents: frame; 300 × 68; row; gap 4; cross center; hugs width; capsule; fill Backgrounds/Primary
+    - Row: instance of Row [Height=Tall]; 300 × 68
+  - Swipe Actions Symbol and Label Tall: frame; 200 × 68; fills height; row; gap 10; cross center; hugs width; slot Swipe Actions Symbol and Label Tall
+    - Action: instance of _Swipe Actions/Symbol and Label Stacked; with Label "Action"; 60 × 68
+    - Action: instance of _Swipe Actions/Symbol and Label Stacked; with Label "Action"; 60 × 68
+    - Action: instance of _Swipe Actions/Symbol and Label Stacked; with Label "Action"; 60 × 68
+=== 4
+- component; 402 × 52; row; gap 10; padding 0 16 0 0; main end; cross center; hugs height; fill Backgrounds/Secondary
+  - Contents: frame; 300 × 52; row; cross center; hugs width; capsule; fill Backgrounds/Primary
+    - Row: instance of Row [Height=Regular]; 300 × 52
+  - Swipe Actions Symbol and Label: frame; 272 × 44; row; gap 10; cross center; hugs content; slot Swipe Actions Symbol and Label
+    - Action: instance of _Swipe Actions/Symbol and Label; 84 × 44
+    - Action: instance of _Swipe Actions/Symbol and Label; 84 × 44
+    - Action: instance of _Swipe Actions/Symbol and Label; 84 × 44
+=== 5
+- component; 402 × 52; row; gap 10; padding 0 16 0 0; main end; cross center; hugs height; fill Backgrounds/Secondary
+  - Contents: frame; 300 × 52; row; cross center; hugs width; capsule; fill Backgrounds/Primary
+    - Row: instance of Row [Height=Regular]; 300 × 52
+  - Swipe Actions Symbol Only: frame; 200 × 44; row; gap 10; cross center; hugs content; slot Swipe Actions Symbol Only
+    - Action: instance of _Swipe Actions/Symbol only; 60 × 44
+    - Action: instance of _Swipe Actions/Symbol only; 60 × 44
+    - Action: instance of _Swipe Actions/Symbol only; 60 × 44

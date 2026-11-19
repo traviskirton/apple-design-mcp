@@ -1,0 +1,2 @@
+=== 0
+- component; 60 × 4; capsule; fill Fills - Vibrant/Primary; uses Grabber Width, Grabber Height; blend linear burn

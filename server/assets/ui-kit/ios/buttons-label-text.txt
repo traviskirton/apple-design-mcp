@@ -1,0 +1,30 @@
+=== 0
+- component; 45 × 18; row; main center; cross center; hugs content; capsule; opacity 50%
+  - text "Label"; SF Pro Medium 17/18; centered; 45 × 18; color #262626 (linear dodge); blend linear burn; property Label
+=== 1
+- component; 40 × 18; row; main center; cross center; hugs content; capsule; opacity 50%
+  - text "Label"; SF Pro Medium 15/18; centered; 40 × 18; color #262626 (linear dodge); blend linear burn; property Label
+=== 2
+- component; 45 × 18; row; main center; cross center; hugs content; capsule
+  - text "Label"; SF Pro Medium 17/18; centered; 45 × 18; color #ffffff (linear dodge); property Label
+=== 3
+- component; 40 × 18; row; main center; cross center; hugs content; capsule
+  - text "Label"; SF Pro Medium 15/18; centered; 40 × 18; color #ffffff (linear dodge); property Label
+=== 4
+- component; 45 × 18; row; main center; cross center; hugs content; capsule
+  - text "Label"; SF Pro Medium 17/18; centered; 45 × 18; color Labels - Vibrant/Tertiary; blend linear burn; property Label
+=== 5
+- component; 40 × 18; row; main center; cross center; hugs content; capsule
+  - text "Label"; SF Pro Medium 15/18; centered; 40 × 18; color Labels - Vibrant/Tertiary; blend linear burn; property Label
+=== 6
+- component; 45 × 18; row; main center; cross center; hugs content; capsule
+  - text "Label"; SF Pro Medium 17/18; centered; 45 × 18; color Labels - Vibrant/Primary; blend linear burn; property Label
+=== 7
+- component; 40 × 18; row; main center; cross center; hugs content; capsule
+  - text "Label"; SF Pro Medium 15/18; centered; 40 × 18; color Labels - Vibrant/Primary; blend linear burn; property Label
+=== 8
+- component; 45 × 18; row; main center; cross center; hugs content; capsule
+  - text "Label"; SF Pro Medium 17/18; centered; 45 × 18; color Accents/Red (linear burn); property Label
+=== 9
+- component; 40 × 18; row; main center; cross center; hugs content; capsule
+  - text "Label"; SF Pro Medium 15/18; centered; 40 × 18; color Accents/Red (linear burn); property Label

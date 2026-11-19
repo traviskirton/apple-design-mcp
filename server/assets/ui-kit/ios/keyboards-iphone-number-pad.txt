@@ -1,0 +1,10 @@
+=== 0
+- component; 125 × 47; radius 8.5
+  - text SF Symbol delete.left; SF Compact Regular 23/28; centered; 125 × 65; at (0, -9); color Labels/Primary
+=== 1
+- component; 125 × 47; radius 8.5; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "3"; SF Compact Regular 23/28; centered; 13 × 28; at (56, 9); color Labels/Primary; property Line 1
+=== 2
+- component; 125 × 47; column; space between; padding 3 0 4 0; cross center; radius 8.5; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "3"; SF Compact Regular 23/28; centered; 13 × 28; color Labels/Primary; property Line 1
+  - text "DEF"; SF Compact Medium 13/15; centered; 28 × 15; color Labels/Primary; property Line 2

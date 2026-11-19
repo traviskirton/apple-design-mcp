@@ -1,0 +1,12 @@
+=== 0
+- component; 402 × 48; row; gap 8; padding 0 8 0 8; main center; cross center; hugs height
+  - Field: frame; 330 × 48; fills width; fills height; row; gap 6; padding 0 16 0 12; cross center; capsule
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 330 × 48; absolute at (0, 0)
+    - text SF Symbol magnifyingglass; SF Pro Regular 17/22; centered; 21 × 22; color Labels - Vibrant/Primary; blend linear burn
+    - Text Input: frame; 252 × 23; fills width; row; cross center; hugs height
+      - Cursor: rectangle; 2 × 23; capsule; fill Accents/Blue
+      - text "Search"; SF Pro Regular 17/22; 56 × 22; color Labels - Vibrant/Tertiary; blend linear burn; property Placeholder
+    - text SF Symbol mic; SF Pro Regular 17/22; centered; 17 × 22; color Labels - Vibrant/Primary; blend linear burn
+  - Done: frame; 48 × 48; row; gap 4; main center; cross center; capsule
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 48; absolute at (0, 0)
+    - Checkmark: instance of _Symbol; showing SF Symbol xmark; 28 × 22

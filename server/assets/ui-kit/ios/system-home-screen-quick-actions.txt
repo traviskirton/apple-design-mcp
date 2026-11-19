@@ -1,0 +1,12 @@
+=== 0
+- component; 250 × 350; column; padding 10 0 8 0; hugs height; radius 12
+  - BG: instance of Liquid Glass - Regular - Medium; 250 × 350; absolute at (0, 0)
+  - Actions: frame; 250 × 332; fills width; column; hugs height; slot Actions
+    - Remove App: instance of _HSQA - Actions [State=Destructive]; with Symbol SF Symbol minus.circle, Label "Remove App"; 250 × 42; fills width
+    - Require Face ID: instance of _HSQA - Actions [State=Default]; with Symbol SF Symbol faceid, Label "Require Face ID"; 250 × 42; fills width; blend linear burn
+    - Edit Home Screen: instance of _HSQA - Actions [State=Default]; with Symbol SF Symbol apps.iphone, Label "Edit Home Screen"; 250 × 42; fills width; blend linear burn
+    - Action 3: instance of _HSQA - Actions [State=Default]; 250 × 42; fills width; blend linear burn
+    - Action 4: instance of _HSQA - Actions [State=Default]; 250 × 42; fills width; blend linear burn
+    - Action 5: instance of _HSQA - Actions [State=Default]; 250 × 42; fills width; blend linear burn
+    - Action 6: instance of _HSQA - Actions [State=Default]; 250 × 42; fills width; blend linear burn
+    - Widgets: instance of _HSQA - Widget Row; 250 × 38; fills width

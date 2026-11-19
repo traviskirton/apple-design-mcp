@@ -1,0 +1,4 @@
+=== 0
+- component; 300 × 39; row; gap 10; padding 0 16 0 16; cross end; hugs height; background blur 100
+  - Title: frame; 268 × 39; fills width; row; padding 0 0 9 0; cross end
+    - text "A"; style Body/Emphasized; 13 × 22; color Labels/Secondary at 60%; property Text

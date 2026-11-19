@@ -1,0 +1,21 @@
+=== 0
+- component; 260 × 216; column; gap 14; padding 20 16 16 16; cross center; hugs height; radius 10
+  - BG: instance of Liquid Glass - Large; 260 × 216; absolute at (0, 0)
+  - Icon: frame; 228 × 64; fills width; row; gap 10; padding 0 6 0 6; cross center; hugs height; hidden unless Show Icon
+  - Title + Description: frame; 228 × 70; fills width; column; gap 10; padding 0 6 2 6; hugs height
+    - text "Save this message as a draft?"; style Headline/Regular; 216 × 16; fills width; color Labels/Primary at 85%; property Title
+    - text "This message has not been sent and contains unsaved changes…"; style Subheadline/Regular; 216 × 42; fills width; color Labels/Primary at 85%; property Description; shown while Show Message
+  - Buttons: frame; 228 × 96; column; gap 6; hugs height; slot Buttons
+    - Button 1: instance of _Buttons [Type=Primary]; with Label "Save"; 228 × 28; fills width
+    - Button 2: instance of _Buttons [Type=Destructive]; with Label "Delete"; 228 × 28; fills width; blend linear burn
+    - Button 3: instance of _Buttons [Type=Secondary]; with Label "Cancel"; 228 × 28; fills width; blend linear burn
+=== 1
+- component; 260 × 152; column; gap 14; padding 20 16 16 16; cross center; hugs height; radius 10
+  - BG: instance of Liquid Glass - Large; 260 × 152; absolute at (0, 0)
+  - Icon: frame; 228 × 64; fills width; row; gap 10; padding 0 6 0 6; cross center; hugs height; hidden unless Show Icon
+  - Title + Description: frame; 228 × 70; fills width; column; gap 10; padding 0 6 2 6; hugs height
+    - text "Save this message as a draft?"; style Headline/Regular; 216 × 16; fills width; color Labels/Primary at 85%; property Title
+    - text "This message has not been sent and contains unsaved changes…"; style Subheadline/Regular; 216 × 42; fills width; color Labels/Primary at 85%; property Description; shown while Show Message
+  - Buttons: frame; 228 × 32; fills width; row; gap 8; cross center; hugs height
+    - Secondary: instance of _Buttons [Type=Secondary]; with Label "Cancel"; 110 × 32; fills width; blend linear burn
+    - Primary: instance of _Buttons [Type=Primary]; with Label "OK"; 110 × 32; fills width
