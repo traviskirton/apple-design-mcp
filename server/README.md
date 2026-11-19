@@ -81,7 +81,7 @@ Apple's UI kits for Figma hold its standard components: toolbars, tab bars, list
 
 - `npm run pack:ui-kit` rebuilds both. It needs the `.fig` files and Node 22.15 or later, and no Mac.
 
-A component with light and dark variants is stored once, in light; `get_design_values` gives the dark value of each color. Variants with the same layers share one outline. An outline stops at 90 lines and 9 levels and does not go into instances; the reply adds the outlines of the instances' components as "Parts". Not read yet: the names of SF Symbols (an outline gives the symbol's code point) and vector shapes. The kit's "Internal Only Canvas", "Product Bezels" and "App Icons" pages are left out.
+A component with light and dark variants is stored once, in light; `get_design_values` gives the dark value of each color. Variants with the same layers share one outline. An outline stops at 90 lines and 9 levels and does not go into instances; the reply adds the outlines of the instances' components as "Parts". An icon in an outline is given by its SF Symbols name. Apple publishes no table of the symbols' code points, so `scripts/figma/symbol-codepoints.txt` holds the names of the ones the kits use, found by comparing shapes (`scripts/symbol-glyphs/`, Mac only); the build lists any code point the table lacks. Not read yet: vector shapes. The kit's "Internal Only Canvas", "Product Bezels" and "App Icons" pages are left out.
 
 ## Deploy
 

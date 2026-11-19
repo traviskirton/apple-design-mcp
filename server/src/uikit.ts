@@ -230,8 +230,8 @@ const LEGEND =
   "Reading an outline: every line is one layer, indented under the layer that holds it. It gives the layer's name, kind, width × height in points, " +
   "then its layout (row or column is a flex container with that gap and padding; \"hugs\" means sized by its content, \"fills\" means stretched to its parent), " +
   "corner radius, fill, stroke and effects. A position \"at (x, y)\" is measured from the parent's top-left corner. Colors such as Labels/Primary and " +
-  "text styles such as Body/Regular are Apple's names: get_design_values has their values. \"SF Symbol U+…\" is an icon from SF Symbols; choose it with " +
-  "search_symbols. \"instance of\" points to another component of the kit, outlined under \"Parts\" or available by passing its name as a query. " +
+  "text styles such as Body/Regular are Apple's names: get_design_values has their values. \"SF Symbol house.fill\" is an icon from SF Symbols by name: get_symbol returns it. A \"U+…\" in its place is one whose name is not known; " +
+  "choose one with search_symbols. \"instance of\" points to another component of the kit, outlined under \"Parts\" or available by passing its name as a query. " +
   "Vector shapes are named, not drawn.";
 
 class Budget {
