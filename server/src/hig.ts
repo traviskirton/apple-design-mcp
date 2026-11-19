@@ -14,6 +14,8 @@ interface Entry {
   sectionWords: Set<string>;
 }
 
+const NOT_SEARCHED = new Set(["resources", "change-log"]); // link lists and edit history; the pack leaves them out of the index too
+
 const pagesById = new Map<string, HigPage>(pack.pages.map((p) => [p.id, p]));
 
 // One entry per section, in page order: the numbering the pack's search index uses.
@@ -31,38 +33,11 @@ const slug = (s: string) =>
     .replace(/[^a-z0-9/]+/g, "-")
     .replace(/^-|-$/g, "");
 
-const isWordChar = (code: number) => (code >= 97 && code <= 122) || (code >= 48 && code <= 57);
-
-/** Position of the first query word in the text, for choosing what part to quote. */
-function firstMatch(text: string, needles: string[]): number {
-  const lower = text.toLowerCase();
-  let best = -1;
-  for (const needle of needles) {
-    for (let at = lower.indexOf(needle); at !== -1; at = lower.indexOf(needle, at + 1)) {
-      if (at === 0 || !isWordChar(lower.charCodeAt(at - 1))) {
-        if (best === -1 || at < best) best = at;
-        break;
-      }
-    }
-  }
-  return best;
-}
-
-function snippet(text: string, at: number, length = 220): string {
-  const start = Math.max(0, at - 70);
-  let cut = text.slice(start, start + length).replace(/\s+/g, " ").trim();
-  if (start > 0) cut = "…" + cut.slice(cut.indexOf(" ") + 1);
-  if (start + length < text.length) cut = cut.slice(0, cut.lastIndexOf(" ")) + "…";
-  return cut;
-}
-
 export interface Hit {
   page: string;
-  page_title: string;
   section: string;
-  section_title: string;
-  chars: number;
-  snippet: string;
+  /** Relative to the other hits of the same search; higher is a better match. */
+  score: number;
 }
 
 const subset = (small: Set<string>, big: Set<string>) => small.size > 0 && [...small].every((w) => big.has(w));
@@ -111,7 +86,6 @@ export function searchHig(query: string, limit = 8): Hit[] {
   });
   ranked.sort((a, b) => score[b] - score[a]);
 
-  const needles = terms.map((t) => t.replace(/y$/, ""));
   const perPage = new Map<string, number>();
   const hits: Hit[] = [];
   for (const n of ranked) {
@@ -119,28 +93,163 @@ export function searchHig(query: string, limit = 8): Hit[] {
     const used = perPage.get(page.id) ?? 0;
     if (used >= 3) continue; // keep one long page from filling the list
     perPage.set(page.id, used + 1);
-    hits.push({
-      page: page.id,
-      page_title: page.title,
-      section: section.id,
-      section_title: section.title,
-      chars: section.text.length,
-      snippet: snippet(section.text, Math.max(firstMatch(section.text, needles), 0)),
-    });
+    hits.push({ page: page.id, section: section.id, score: score[n] });
     if (hits.length >= limit) break;
   }
   return hits;
 }
 
-export function formatHits(query: string, hits: Hit[]): string {
-  if (!hits.length) {
-    return `No guideline sections match "${query}". Try fewer or more general words, such as a component name ("toolbar", "sheet") or a topic ("color", "layout").`;
+const NO_MATCH = (query: string) =>
+  `No guideline sections match "${query}". Try fewer or more general words, such as a component name ("toolbar", "sheet") or a topic ("color", "layout").`;
+
+/** Cuts text at the last paragraph break before `limit`. */
+function cutAtParagraph(text: string, limit: number): string {
+  const at = text.lastIndexOf("\n\n", limit);
+  return text.slice(0, at > limit / 2 ? at : limit).trimEnd();
+}
+
+const PLATFORM_OF: Record<string, string> = {
+  iphone: "ios", ios: "ios", ipad: "ipados", ipados: "ipados", mac: "macos", macos: "macos",
+  watch: "watchos", watchos: "watchos", tv: "tvos", tvos: "tvos", vision: "visionos", visionos: "visionos",
+};
+const PLATFORMS = new Set(Object.values(PLATFORM_OF));
+
+/** The platforms a "Platform considerations" subsection is about, or none for any other section. */
+function sectionPlatforms(section: HigSection): string[] {
+  if (!section.id.startsWith("platform-considerations/")) return [];
+  return section.id.split("/")[1].split("-").filter((part) => PLATFORMS.has(part));
+}
+
+/** Platforms named in the queries, such as "iPhone" or "macOS". */
+export function platformsIn(queries: string[]): string[] {
+  const found = new Set<string>();
+  for (const w of queries.flatMap((q) => q.toLowerCase().split(/[^a-z0-9]+/))) {
+    if (PLATFORM_OF[w]) found.add(PLATFORM_OF[w]);
   }
-  const lines = hits.map(
-    (h, i) =>
-      `${i + 1}. ${h.page_title} › ${h.section_title}\n   page: "${h.page}", section: "${h.section}" (${h.chars} characters)\n   ${h.snippet}`,
+  return [...found];
+}
+
+const pageWords = new Map<string, Set<string>>(pack.pages.map((p) => [p.id, new Set(words(p.title))]));
+const sectionOrder = new Map<HigSection, number>(entries.map((e, n) => [e.section, n]));
+
+/**
+ * Pages a query asks for by name: every page whose whole title is in the query ("settings toggles"
+ * names two), or else the one page whose title contains the whole query ("iPhone Duo").
+ */
+function namedPages(query: string, hits: Hit[]): HigPage[] {
+  const asked = new Set(words(query));
+  if (!asked.size) return [];
+  const inQuery = pack.pages.filter((p) => subset(pageWords.get(p.id)!, asked));
+  if (inQuery.length) return inQuery.sort((x, y) => pageWords.get(y.id)!.size - pageWords.get(x.id)!.size).slice(0, 2);
+  const containing = pack.pages.filter((p) => subset(asked, pageWords.get(p.id)!));
+  if (!containing.length) return [];
+  const best = hits.find((h) => containing.some((p) => p.id === h.page));
+  return [best ? pagesById.get(best.page)! : containing[0]];
+}
+
+interface Item {
+  page: HigPage;
+  section: HigSection;
+}
+
+/** What one query should return, best first: named pages in Apple's own order, then strong search hits. */
+function candidates(query: string, platforms: string[], taken: Set<HigSection>): Item[] {
+  const hits = searchHig(query, 12);
+  const wanted = (s: HigSection) => {
+    if (NOT_SEARCHED.has(s.id) || !s.text || taken.has(s)) return false;
+    const about = sectionPlatforms(s);
+    return !platforms.length || !about.length || about.some((p) => platforms.includes(p));
+  };
+  const items: Item[] = [];
+  const named = namedPages(query, hits);
+  for (const page of named) {
+    for (const section of page.sections) if (wanted(section)) items.push({ page, section });
+  }
+  let extra = 0;
+  for (const h of hits) {
+    if (named.some((p) => p.id === h.page)) continue;
+    if (h.score < hits[0].score * 0.5 || extra >= (named.length ? 2 : 4)) break;
+    const page = pagesById.get(h.page)!;
+    const section = page.sections.find((s) => s.id === h.section)!;
+    if (wanted(section)) {
+      items.push({ page, section });
+      extra++;
+    }
+  }
+  for (const item of items) taken.add(item.section);
+  return items;
+}
+
+/** Splits `total` between needs: nobody gets more than they need, and what is spare goes to the rest. */
+function share(needs: number[], total: number): number[] {
+  const given = needs.map(() => 0);
+  let open = needs.map((_, i) => i).filter((i) => needs[i] > 0);
+  let left = total;
+  while (open.length && left >= open.length) {
+    const each = Math.floor(left / open.length);
+    for (const i of open) {
+      const add = Math.min(each, needs[i] - given[i]);
+      given[i] += add;
+      left -= add;
+    }
+    open = open.filter((i) => given[i] < needs[i]);
+  }
+  return given;
+}
+
+/**
+ * Answers several topics in one reply with the text of the sections that apply, so that one tool
+ * call is usually enough. `maxChars` is shared between the topics. A section that does not fit is
+ * listed with its id so it can be read with get_hig_page.
+ */
+export function lookupHig(queries: string[], maxChars = 40000, platforms: string[] = platformsIn(queries)): string {
+  const taken = new Set<HigSection>();
+  const plans = queries.map((query) => ({ query, items: candidates(query, platforms, taken) }));
+  const budgets = share(
+    plans.map((p) => p.items.reduce((n, it) => n + it.section.text.length, 0)),
+    maxChars,
   );
-  return `${hits.length} sections of Apple's Human Interface Guidelines match "${query}". Read one with get_hig_page.\n\n${lines.join("\n\n")}`;
+
+  const parts = plans.map(({ query, items }, i) => {
+    if (!items.length) return `# "${query}"\n\n${NO_MATCH(query)}`;
+    let left = budgets[i];
+    const kept: { item: Item; text: string }[] = [];
+    const omitted: Item[] = [];
+    items.forEach((item, n) => {
+      const text = item.section.text;
+      if (text.length <= left) {
+        kept.push({ item, text });
+        left -= text.length;
+      } else if (n === 0) {
+        const cut = cutAtParagraph(text, Math.max(left, 1500));
+        kept.push({ item, text: `${cut}\n\n(Cut here: ${cut.length} of ${text.length} characters.)` });
+        left = 0;
+      } else {
+        omitted.push(item);
+      }
+    });
+
+    // Group by page, each page's sections in Apple's order.
+    const out: string[] = [`# "${query}"`];
+    const pages = [...new Set(kept.map((k) => k.item.page))];
+    for (const page of pages) {
+      out.push(`## ${page.title} (page "${page.id}")\n\n${page.abstract}`);
+      kept
+        .filter((k) => k.item.page === page)
+        .sort((x, y) => sectionOrder.get(x.item.section)! - sectionOrder.get(y.item.section)!)
+        .forEach(({ item, text }) => out.push(`${"#".repeat(item.section.level + 1)} ${item.section.title}\n\n${text}`));
+    }
+    if (omitted.length) {
+      const list = omitted.map(
+        ({ page, section }) => `- page "${page.id}", section "${section.id}": ${section.title} (${section.text.length} characters)`,
+      );
+      out.push(`Not included for size. Read one with get_hig_page:\n${list.join("\n")}`);
+    }
+    return out.join("\n\n");
+  });
+
+  const scope = platforms.length ? ` Platform-specific sections are limited to: ${platforms.join(", ")}.` : "";
+  return `From Apple's Human Interface Guidelines, as published on ${pack.pack_version}.${scope}\n\n${parts.join("\n\n")}`;
 }
 
 /** Finds a page by id, by title, or by a URL that ends with its id. */
