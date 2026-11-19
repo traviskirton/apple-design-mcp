@@ -10,6 +10,8 @@ export interface KitVariant {
   height: number;
   /** Index of this variant's outline in the component's file. Variants with the same layers share one. */
   outline: number;
+  /** The variant's node id in the kit's Figma file, such as "3:72207". Its picture is "ui-kit/<kit id>/svg/3-72207.svg". */
+  node: string;
 }
 
 export interface KitProperty {
