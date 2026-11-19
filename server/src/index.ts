@@ -20,7 +20,7 @@ import type { DrawingLoader, OutlineLoader } from "./uikit.js";
 import { designValues, valuesPack, VALUE_PLATFORMS, VALUE_TOPICS } from "./values.js";
 
 const SERVER_NAME = "apple-design";
-const SERVER_VERSION = "0.11.1";
+const SERVER_VERSION = "0.11.2";
 
 const HIG_DATE = higPack.pack_version;
 
@@ -131,7 +131,8 @@ function buildServer(app: string, env: Env, origin: string): McpServer {
         "For system colors, text styles and standard sizes, call get_design_values instead of recalling them. " +
         "For a standard component such as a toolbar, tab bar, list row, alert, sheet or button, call search_ui_kit " +
         "once with every component the design needs; it returns Apple's own drawing of each one as SVG with its " +
-        "measurements, so use that and do not draw the component yourself.",
+        "measurements. Place those SVGs as they are and only change their icons and labels; do not rebuild a component in " +
+        "HTML or CSS, even for tap states (lay clickable areas over the SVG instead).",
     },
   );
 
@@ -400,8 +401,8 @@ function buildServer(app: string, env: Env, origin: string): McpServer {
         "Beside it come the component's variants and properties and an outline of its layers: exact sizes, auto layout " +
         "(direction, gap, padding), corner radii, colors and text styles by Apple's names, for building it in code. Pass " +
         "every component of the design in one call as `queries`, such as [\"tab bar\", \"large title toolbar\", \"list row\"]. " +
-        "Add a device or a variant's words to narrow a query, such as \"iPad sidebar\", \"destructive button\" or \"tab bar 4 tabs\"; the variant a query names is the drawing it returns. Use it " +
-        "for every standard Apple component in a design, instead of drawing the component yourself. Without `queries` it lists every component.",
+        "Add a device or a variant's words to narrow a query, such as \"iPad sidebar\", \"destructive button\" or \"tab bar 4 tabs\"; the variant a query names is the drawing it returns. Place " +
+        "the SVG as it is for every standard Apple component in a design and only change its icons and labels; do not rebuild it in HTML or CSS. Without `queries` it lists every component.",
       inputSchema: {
         queries: z
           .array(z.string().min(1).max(120))

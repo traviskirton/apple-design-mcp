@@ -183,7 +183,7 @@ try {
   // Apple's drawings: one SVG per variant, exported from Figma by scripts/export-ui-kit-svg.mjs.
   const drawn = await call("search_ui_kit", { queries: ["tab bar", "toggle"] });
   if (drawn.text.includes("```svg")) {
-    check(/Apple's drawing of it, also at \S+\/ui-kit-svg\/ios\/3-72207\.svg:\n\n```svg\n<svg overflow="visible" width="402" height="95"/.test(drawn.text), "the tab bar's drawing should be in the reply, at the component's own size");
+    check(/Apple's drawing of it, also at \S+\/ui-kit-svg\/ios\/3-72207\.svg\. Place it as it is; only change its icons and labels:\n\n```svg\n<svg overflow="visible" width="402" height="95"/.test(drawn.text), "the tab bar's drawing should be in the reply, at the component's own size");
     check(drawn.text.includes('data-symbol="diamond.fill"'), "an icon in a drawing should be a shape marked with its SF Symbols name");
     check(/<text id="Label"[^>]*font-family="SF Pro, -apple-system, system-ui, sans-serif"[^>]*><tspan[^>]*>Tab 1<\/tspan><\/text>/.test(drawn.text), "a label in a drawing should stay text, with fallback fonts");
     check(drawn.text.includes("Using a drawing:") && drawn.text.includes("27-68922.svg"), "the reply should say how to use a drawing and name the other variants' files");
@@ -193,7 +193,7 @@ try {
     // A query that names a variant gets its drawing into the reply before one that names none.
     const named = await call("search_ui_kit", { queries: ["stepper", "tab bar 5 tabs search role"], max_chars: 16000 });
 if (named.text.includes("```svg")) {
-          check(/Shown: Minimized=False, Tabs=5, Type=Search Role, 402 × 95 points\.\n\nApple's drawing of it, also at \S+:\n\n```svg/.test(named.text), "the variant a query names should be in the reply as SVG");
+          check(/Shown: Minimized=False, Tabs=5, Type=Search Role, 402 × 95 points\.\n\nApple's drawing of it, also at \S+\. Place it as it is; only change its icons and labels:\n\n```svg/.test(named.text), "the variant a query names should be in the reply as SVG");
       check(/### Stepper\n[\s\S]*?more than this reply has room for/.test(named.text), "the drawing no query word chose should give way and come by its address");
     } else console.log("search_ui_kit: the drawings for the named-variant check are not on this server");
     const small = await call("search_ui_kit", { queries: ["tab bar", "alert"], max_chars: 6000 });
