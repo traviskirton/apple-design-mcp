@@ -2,7 +2,7 @@
 
 The MCP server, written in TypeScript for Cloudflare Workers.
 
-It serves Apple's Human Interface Guidelines, the screen sizes of Apple devices, and SF Symbols as SVG. UI kits, device frames and design values are not loaded yet.
+It serves Apple's Human Interface Guidelines, the screen sizes and frames of Apple devices, SF Symbols as SVG, and Apple's artwork for its technologies. UI kits and design values are not loaded yet.
 
 | Tool | What it does |
 | --- | --- |
@@ -12,6 +12,7 @@ It serves Apple's Human Interface Guidelines, the screen sizes of Apple devices,
 | `get_device_frame` | Returns the drawing of a device's body as SVG, with the position of the screen inside it. A folding device returns one frame per screen. |
 | `search_symbols` | Takes a list of icons to find (names or plain words such as "share") and returns, for each, the best-matching SF Symbol with its SVG and the names of other matches. |
 | `get_symbol` | Returns the SVG of symbols by exact name. |
+| `get_technology_assets` | Returns Apple's own artwork for its technologies (the Sign in with Apple logo, AirPlay glyphs, Game Center icons and others): SVG for vector artwork, a PNG address for pictures. Without names it lists everything it holds. |
 | `get_pack_info` | Reports what material is loaded, its date, and when the server answered. |
 
 `search_hig` answers a whole brief in one call because each tool call costs the app a full turn of the model, which is slow. Its reply is limited to about 40,000 characters (roughly 10,000 tokens) by default, leaves out link lists, change logs and sections written for other platforms, and lists by id whatever did not fit. Pictures are replaced by Apple's own description of each one.
@@ -49,6 +50,17 @@ SF Symbols come in two parts, both written by the extractor on a Mac (see `../ex
 - `assets/symbols/NAME.svg`: one file per symbol with its regular-weight shape. Not committed. Wrangler uploads the `assets` folder with each deploy, the server reads a file when a tool asks for that symbol, and each file is also public at `/symbols/NAME.svg`.
 
 A deploy from a machine where `assets/symbols` is empty removes the shapes from the live server; the tools then return names only. Deploy from the Mac that ran the extractor.
+
+## The technology pack
+
+Apple publishes artwork for showing its technologies in an app (Sign in with Apple, AirPlay, ARKit, Game Center, HomeKit, Apple Health, Siri, Add Apple Watch Face) as disk images on its design resources page. `../scripts/fetch_apple_design_resources.py --only Technologies --extract` downloads and unpacks them on a Mac, and `scripts/build-technology-pack.mjs` turns them into:
+
+- `src/pack/technologies.js`: every artwork's id, name and size, with the SVG itself for vector artwork. Committed, and compiled into the Worker. Where Apple gives only a PDF, or an SVG that needs one of Apple's fonts, the SVG is converted from the PDF by the extractor.
+- `assets/technologies/ID.svg` and `ID.png`: the same artwork as static files, public at `/technologies/ID.svg`. Not committed. Pictures (app icons, the Siri icons) exist only here, so a deploy from a machine without this folder leaves their addresses broken.
+
+- `npm run pack:technologies` rebuilds both after `fetch_apple_design_resources.py` reports a change.
+
+Apple Pay, Wallet and the other technologies that Apple publishes as Figma and Sketch templates only are not loaded.
 
 ## Deploy
 
@@ -116,6 +128,7 @@ npm test           # in a second terminal
 - `scripts/build-device-pack.mjs`: builds the device pack from Xcode's simulator files (Mac only).
 - `src/frames.ts`: device frames. `src/pack/frames.js` is the frame pack (written by the extractor on a Mac, committed) and `src/pack/frames.d.ts` its shape.
 - `src/symbols.ts`: symbol search. `src/pack/symbols.js` is the symbol pack and `src/pack/symbols.d.ts` its shape.
-- `assets/`: static files deployed with the Worker; `assets/symbols/` holds the symbol shapes.
+- `src/technologies.ts`: technology artwork lookup. `src/pack/technologies.js` is the pack (written on a Mac, committed) and `src/pack/technologies.d.ts` its shape.
+- `assets/`: static files deployed with the Worker; `assets/symbols/` holds the symbol shapes and `assets/technologies/` Apple's technology artwork.
 - `test/smoke.mjs`: connects as a real MCP client and tries every tool.
 - `wrangler.jsonc`: Cloudflare settings. `name` sets the first part of the URL.

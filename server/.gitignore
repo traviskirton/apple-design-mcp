@@ -4,3 +4,6 @@ src/pack/hig.js
 
 # One SVG per SF Symbol, written by the extractor on a Mac
 assets/symbols/
+
+# Apple's technology artwork (SVG and PNG), written by scripts/build-technology-pack.mjs on a Mac
+assets/technologies/
