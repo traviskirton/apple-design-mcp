@@ -5,7 +5,7 @@ import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StreamableHTTPClientTransport } from "@modelcontextprotocol/sdk/client/streamableHttp.js";
 
 const url = process.argv[2] ?? "http://127.0.0.1:8787/mcp";
-const client = new Client({ name: "smoke-test", version: "0.4.0" });
+const client = new Client({ name: "smoke-test", version: "0.5.0" });
 
 function check(ok, what) {
   if (!ok) throw new Error(what);
@@ -29,7 +29,7 @@ try {
 
   const { tools } = await client.listTools();
   console.log("tools:", tools.map((t) => t.name).join(", "));
-  for (const name of ["get_pack_info", "search_hig", "get_hig_page", "get_device_metrics", "search_symbols", "get_symbol"]) {
+  for (const name of ["get_pack_info", "search_hig", "get_hig_page", "get_device_metrics", "get_device_frame", "search_symbols", "get_symbol"]) {
     check(tools.some((t) => t.name === name), `${name} is missing`);
   }
 
@@ -78,6 +78,16 @@ try {
 
   const noDevice = await call("get_device_metrics", { devices: ["nokia"] });
   check(noDevice.text.includes("No device matches"), "get_device_metrics should say when no device matches");
+
+  const frames = await call("get_device_frame", { devices: ["iPhone Duo"] });
+  console.log(frames.text.split("\n").filter((line) => /^(###|Frame:|Screen:)/.test(line)).join("\n"));
+  check(!frames.isError && frames.text.includes("### iPhone Duo, outer screen (closed)"), "get_device_frame did not return the iPhone Duo outer frame");
+  check(frames.text.includes("### iPhone Duo, inner screen (open)"), "get_device_frame did not return the iPhone Duo inner frame");
+  check(frames.text.includes("Screen: 466 × 678 points"), "the outer frame's screen should be 466 × 678 points");
+  check(/<svg [^>]*viewBox="0 0 [\d.]+ [\d.]+"/.test(frames.text), "a frame should come as an SVG with a viewBox");
+
+  const noFrame = await call("get_device_frame", { devices: ["nokia"] });
+  check(noFrame.isError && noFrame.text.includes("No frame is loaded"), "get_device_frame should say when it has no frame");
 
   const icons = await call("search_symbols", { queries: ["heart", "settings", "share"] });
   console.log(icons.text.split("\n").filter((line) => /^#{2,3} /.test(line)).join("\n"));
