@@ -1,7 +1,7 @@
 // Written by scripts/build-ui-kit-pack.mjs from Apple's UI kits for Figma. Do not edit.
 export default {
  "pack_version": "2026-11-19",
- "generated_at": "2026-11-19T14:55:10.597Z",
+ "generated_at": "2026-11-19T14:57:31.191Z",
  "source": {
   "name": "Apple Design Resources, UI kits for Figma",
   "url": "https://developer.apple.com/design/resources/",
@@ -1704,7 +1704,7 @@ export default {
       {
        "name": "Symbol",
        "type": "text",
-       "default": "SF Symbol U+1001F7"
+       "default": "SF Symbol square.grid.2x2"
       }
      ],
      "variants": [
