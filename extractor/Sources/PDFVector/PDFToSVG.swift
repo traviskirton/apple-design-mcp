@@ -9,8 +9,12 @@
 // soft masks: a luminosity mask on a white backdrop with the cut-out shape filled in black. Those
 // become path subtraction.
 //
-// Not supported, reported in `unsupported`: text, images, shadings and patterns, dashes.
+// Text in simple fonts (Type 1, CFF, TrueType) whose program is embedded in the PDF is turned into
+// glyph outlines, so a symbol set as text in a font becomes paths.
+//
+// Not supported, reported in `unsupported`: other text, images, shadings and patterns, dashes.
 import CoreGraphics
+import CoreText
 import Foundation
 
 public struct RGB: Hashable {
@@ -71,6 +75,19 @@ private final class Interpreter {
     var fills: [Fill] = []
     var unsupported = Set<String>()
     let contentStream: CGPDFContentStreamRef
+    // Text state (PDF 1.7, 9.3 and 9.4).
+    var textMatrix = CGAffineTransform.identity
+    var lineMatrix = CGAffineTransform.identity
+    var fontName: String?
+    var fontSize: CGFloat = 1
+    var charSpacing: CGFloat = 0
+    var wordSpacing: CGFloat = 0
+    var horizontalScale: CGFloat = 1
+    var leading: CGFloat = 0
+    var rise: CGFloat = 0
+    var fonts: [String: EmbeddedFont?] = [:]
+    /// When false, text is not drawn and is reported in `unsupported` as "text".
+    var drawText = true
 
     init(contentStream: CGPDFContentStreamRef, state: GState) {
         self.contentStream = contentStream
@@ -143,7 +160,40 @@ private final class Interpreter {
 
         on("gs") { sc, i in if let n = popName(sc) { me(i).applyExtGState(n) } }
         on("Do") { sc, i in if let n = popName(sc) { me(i).drawXObject(n) } }
-        on("BT") { _, i in me(i).unsupported.insert("text") }
+        on("BT") { _, i in let s = me(i); s.textMatrix = .identity; s.lineMatrix = .identity }
+        on("Tf") { sc, i in let s = me(i); s.fontSize = popNumbers(sc, 1)[0]; s.fontName = popName(sc) }
+        on("Tm") { sc, i in
+            let s = me(i); let n = popNumbers(sc, 6)
+            s.textMatrix = CGAffineTransform(a: n[0], b: n[1], c: n[2], d: n[3], tx: n[4], ty: n[5]); s.lineMatrix = s.textMatrix
+        }
+        on("Td") { sc, i in let s = me(i); let n = popNumbers(sc, 2); s.nextLine(n[0], n[1]) }
+        on("TD") { sc, i in let s = me(i); let n = popNumbers(sc, 2); s.leading = -n[1]; s.nextLine(n[0], n[1]) }
+        on("T*") { _, i in let s = me(i); s.nextLine(0, -s.leading) }
+        on("TL") { sc, i in me(i).leading = popNumbers(sc, 1)[0] }
+        on("Tc") { sc, i in me(i).charSpacing = popNumbers(sc, 1)[0] }
+        on("Tw") { sc, i in me(i).wordSpacing = popNumbers(sc, 1)[0] }
+        on("Tz") { sc, i in me(i).horizontalScale = popNumbers(sc, 1)[0] / 100 }
+        on("Ts") { sc, i in me(i).rise = popNumbers(sc, 1)[0] }
+        on("Tj") { sc, i in let s = me(i); if let b = popBytes(sc) { s.show(b) } }
+        on("'") { sc, i in let s = me(i); s.nextLine(0, -s.leading); if let b = popBytes(sc) { s.show(b) } }
+        on("\"") { sc, i in
+            let s = me(i); let b = popBytes(sc); let n = popNumbers(sc, 2)
+            s.wordSpacing = n[0]; s.charSpacing = n[1]; s.nextLine(0, -s.leading); if let b { s.show(b) }
+        }
+        on("TJ") { sc, i in
+            let s = me(i)
+            var array: CGPDFArrayRef?
+            guard CGPDFScannerPopArray(sc, &array), let array else { return }
+            for k in 0..<CGPDFArrayGetCount(array) {
+                var str: CGPDFStringRef?
+                var n: CGPDFReal = 0
+                if CGPDFArrayGetString(array, k, &str), let str, let ptr = CGPDFStringGetBytePtr(str) {
+                    s.show(Array(UnsafeBufferPointer(start: ptr, count: CGPDFStringGetLength(str))))
+                } else if CGPDFArrayGetNumber(array, k, &n) {
+                    s.textMatrix = CGAffineTransform(translationX: -n / 1000 * s.fontSize * s.horizontalScale, y: 0).concatenating(s.textMatrix)
+                }
+            }
+        }
         on("BI") { _, i in me(i).unsupported.insert("images") }
         on("sh") { _, i in me(i).unsupported.insert("shadings") }
 
@@ -151,6 +201,35 @@ private final class Interpreter {
         CGPDFScannerScan(scanner)
         CGPDFScannerRelease(scanner)
         CGPDFOperatorTableRelease(table)
+    }
+
+    func nextLine(_ tx: CGFloat, _ ty: CGFloat) {
+        lineMatrix = CGAffineTransform(translationX: tx, y: ty).concatenating(lineMatrix)
+        textMatrix = lineMatrix
+    }
+
+    func font(_ name: String) -> EmbeddedFont? {
+        if let cached = fonts[name] { return cached }
+        let f = dictionary("Font", name).flatMap(EmbeddedFont.init)
+        fonts[name] = f
+        return f
+    }
+
+    /// Draws a string's glyphs as filled outlines and advances the text position.
+    func show(_ bytes: [UInt8]) {
+        guard drawText, let name = fontName, let font = font(name) else { unsupported.insert("text"); return }
+        for code in bytes {
+            let render = CGAffineTransform(a: fontSize * horizontalScale, b: 0, c: 0, d: fontSize, tx: 0, ty: rise)
+                .concatenating(textMatrix).concatenating(state.ctm)
+            if let glyph = font.path(Int(code)) {
+                var t = render
+                if let outline = glyph.copy(using: &t) { add(outline, evenOdd: false, alpha: state.alpha, color: state.fillColor) }
+            } else {
+                unsupported.insert("text in an unreadable font")
+            }
+            let advance = (font.width(Int(code)) * fontSize + charSpacing + (code == 32 ? wordSpacing : 0)) * horizontalScale
+            textMatrix = CGAffineTransform(translationX: advance, y: 0).concatenating(textMatrix)
+        }
     }
 
     func transformed(_ p: CGPath) -> CGPath {
@@ -293,6 +372,7 @@ private final class Interpreter {
         inner.ctm = formMatrix(stream).concatenating(state.ctm)
         if let bbox = formBBox(stream) { inner.clip = clipped(inner.clip, by: CGPath(rect: bbox, transform: [inner.ctm]), evenOdd: false) }
         let child = Interpreter(contentStream: CGPDFContentStreamCreateWithStream(stream, resources, contentStream), state: inner)
+        child.drawText = drawText
         child.run()
         unsupported.formUnion(child.unsupported)
         return child.fills
@@ -376,6 +456,95 @@ private func popAll(_ scanner: CGPDFScannerRef) -> [CGFloat] {
     return out
 }
 
+private func popBytes(_ scanner: CGPDFScannerRef) -> [UInt8]? {
+    var str: CGPDFStringRef?
+    guard CGPDFScannerPopString(scanner, &str), let str, let ptr = CGPDFStringGetBytePtr(str) else { return nil }
+    return Array(UnsafeBufferPointer(start: ptr, count: CGPDFStringGetLength(str)))
+}
+
+/// A simple font (one byte per character) whose program is embedded in the PDF.
+private final class EmbeddedFont {
+    let ctFont: CTFont
+    let cgFont: CGFont
+    var names: [Int: String] = [:]
+    var widths: [Int: CGFloat] = [:]
+    var cache: [Int: CGPath?] = [:]
+
+    init?(_ dict: CGPDFDictionaryRef) {
+        var subtype: UnsafePointer<CChar>?
+        CGPDFDictionaryGetName(dict, "Subtype", &subtype)
+        guard let subtype, ["Type1", "TrueType", "MMType1"].contains(String(cString: subtype)) else { return nil }
+        var descriptor: CGPDFDictionaryRef?
+        guard CGPDFDictionaryGetDictionary(dict, "FontDescriptor", &descriptor), let descriptor else { return nil }
+        var program: CGPDFStreamRef?
+        for key in ["FontFile3", "FontFile2", "FontFile"] where program == nil { CGPDFDictionaryGetStream(descriptor, key, &program) }
+        var format = CGPDFDataFormat.raw
+        guard let program, let data = CGPDFStreamCopyData(program, &format), let provider = CGDataProvider(data: data),
+              let cg = CGFont(provider) else { return nil }
+        cgFont = cg
+        ctFont = CTFontCreateWithGraphicsFont(cg, 1, nil, nil) // one unit per em: outlines in text space
+        var encoding: CGPDFDictionaryRef?
+        var differences: CGPDFArrayRef?
+        if CGPDFDictionaryGetDictionary(dict, "Encoding", &encoding), let encoding,
+           CGPDFDictionaryGetArray(encoding, "Differences", &differences), let differences {
+            var code = 0
+            for k in 0..<CGPDFArrayGetCount(differences) {
+                var n: CGPDFInteger = 0
+                var name: UnsafePointer<CChar>?
+                if CGPDFArrayGetInteger(differences, k, &n) { code = n }
+                else if CGPDFArrayGetName(differences, k, &name), let name { names[code] = String(cString: name); code += 1 }
+            }
+        }
+        var first: CGPDFInteger = 0
+        var w: CGPDFArrayRef?
+        if CGPDFDictionaryGetInteger(dict, "FirstChar", &first), CGPDFDictionaryGetArray(dict, "Widths", &w), let w {
+            for k in 0..<CGPDFArrayGetCount(w) {
+                var v: CGPDFReal = 0
+                if CGPDFArrayGetNumber(w, k, &v) { widths[first + k] = v / 1000 }
+            }
+        }
+    }
+
+    func width(_ code: Int) -> CGFloat { widths[code] ?? 0 }
+
+    func path(_ code: Int) -> CGPath? {
+        if let cached = cache[code] { return cached }
+        var glyph: CGGlyph = 0
+        if let name = names[code] ?? asciiGlyphName(code) { glyph = cgFont.getGlyphWithGlyphName(name: name as CFString) }
+        if glyph == 0 {
+            var chars: [UniChar] = [UniChar(code)]
+            var g: [CGGlyph] = [0]
+            if CTFontGetGlyphsForCharacters(ctFont, &chars, &g, 1) { glyph = g[0] }
+        }
+        let p: CGPath? = glyph == 0 ? nil : (CTFontCreatePathForGlyph(ctFont, glyph, nil) ?? CGMutablePath())
+        cache[code] = p
+        return p
+    }
+}
+
+/// The glyph name of a printable ASCII code; the same in Standard, MacRoman and WinAnsi encodings
+/// (where they differ, in the quote characters, the Standard name is used).
+private func asciiGlyphName(_ code: Int) -> String? {
+    let names = ["space", "exclam", "quotedbl", "numbersign", "dollar", "percent", "ampersand", "quotesingle", "parenleft",
+                 "parenright", "asterisk", "plus", "comma", "hyphen", "period", "slash", "zero", "one", "two", "three", "four",
+                 "five", "six", "seven", "eight", "nine", "colon", "semicolon", "less", "equal", "greater", "question", "at"]
+    switch code {
+    case 32...64: return names[code - 32]
+    case 65...90, 97...122: return String(UnicodeScalar(UInt8(code)))
+    case 91: return "bracketleft"
+    case 92: return "backslash"
+    case 93: return "bracketright"
+    case 94: return "asciicircum"
+    case 95: return "underscore"
+    case 96: return "grave"
+    case 123: return "braceleft"
+    case 124: return "bar"
+    case 125: return "braceright"
+    case 126: return "asciitilde"
+    default: return nil
+    }
+}
+
 private func popName(_ scanner: CGPDFScannerRef) -> String? {
     var name: UnsafePointer<CChar>?
     guard CGPDFScannerPopName(scanner, &name), let name else { return nil }
@@ -391,11 +560,14 @@ public struct PDFShape {
 
 /// The fills of a page, drawn with `transform` (page space to the caller's space) and clipped to
 /// `clip` (in the caller's space).
-public func readPage(_ page: CGPDFPage, transform: CGAffineTransform = .identity, clip: CGPath? = nil) -> (fills: [Fill], unsupported: Set<String>) {
+/// `drawText: false` leaves text out (reported as "text"), for art where text is a placeholder.
+public func readPage(_ page: CGPDFPage, transform: CGAffineTransform = .identity, clip: CGPath? = nil,
+                     drawText: Bool = true) -> (fills: [Fill], unsupported: Set<String>) {
     var state = GState()
     state.ctm = transform
     state.clip = clip
     let interpreter = Interpreter(contentStream: CGPDFContentStreamCreateWithPage(page), state: state)
+    interpreter.drawText = drawText
     interpreter.run()
     return (interpreter.fills, interpreter.unsupported)
 }
@@ -480,4 +652,66 @@ public func overlapScore(_ a: [Int], _ b: [Int]) -> Double {
     var inter = 0, uni = 0
     for i in 0..<min(a.count, b.count) { inter += min(a[i], b[i]); uni += max(a[i], b[i]) }
     return uni == 0 ? 1 : Double(inter) / Double(uni)
+}
+
+// MARK: - Artwork: colored SVG and its check
+
+/// An SVG of colored artwork: each fill keeps its own color and opacity; runs of fills with the same
+/// paint are merged into one path element. `height` is the page height, for flipping y.
+public func coloredSVG(_ fills: [Fill], width: CGFloat, height: CGFloat, decimals: Int = 2) -> String {
+    var elements: [(style: String, d: String)] = []
+    for fill in fills {
+        let style = " fill=\"\(fill.color.hex)\"" + (fill.opacity < 0.995 ? " fill-opacity=\"\(num(fill.opacity))\"" : "")
+            + (fill.evenOdd ? " fill-rule=\"evenodd\"" : "")
+        let d = svgPathData(fill.path, height: height, decimals: decimals)
+        if let last = elements.last, last.style == style { elements[elements.count - 1].d += d } else { elements.append((style, d)) }
+    }
+    return "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 \(num(width)) \(num(height))\">"
+        + elements.map { "<path\($0.style) d=\"\($0.d)\"/>" }.joined() + "</svg>"
+}
+
+/// RGBA pixels (premultiplied, sRGB) of a drawing.
+public func rgbaPixels(_ w: Int, _ h: Int, _ draw: (CGContext) -> Void) -> [UInt8] {
+    var px = [UInt8](repeating: 0, count: w * h * 4)
+    let ctx = CGContext(data: &px, width: w, height: h, bitsPerComponent: 8, bytesPerRow: w * 4,
+                        space: CGColorSpace(name: CGColorSpace.sRGB)!, bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue)!
+    draw(ctx)
+    return px
+}
+
+/// Draws an SVG written by `coloredSVG` (or `svgDocument`, in black) into a y-up context of its size.
+public func drawColoredSVG(_ svg: String, in ctx: CGContext, height: CGFloat) {
+    ctx.saveGState()
+    ctx.translateBy(x: 0, y: height); ctx.scaleBy(x: 1, y: -1)
+    let re = try! NSRegularExpression(pattern: ##"<path(?: fill="#([0-9a-f]{6})")?(?: fill-opacity="([\d.]+)")?( fill-rule="evenodd")? d="([^"]*)"/>"##)
+    for m in re.matches(in: svg, range: NSRange(svg.startIndex..., in: svg)) {
+        let hex = Range(m.range(at: 1), in: svg).flatMap { Int(svg[$0], radix: 16) } ?? 0
+        let alpha = Range(m.range(at: 2), in: svg).flatMap { Double(svg[$0]) } ?? 1
+        ctx.setFillColor(CGColor(srgbRed: CGFloat(hex >> 16) / 255, green: CGFloat((hex >> 8) & 255) / 255, blue: CGFloat(hex & 255) / 255, alpha: alpha))
+        ctx.addPath(parsePathData(String(svg[Range(m.range(at: 4), in: svg)!])))
+        ctx.fillPath(using: m.range(at: 3).location != NSNotFound ? .evenOdd : .winding)
+    }
+    ctx.restoreGState()
+}
+
+public struct ArtworkCheck {
+    public var overlap: Double      // intersection over union of coverage, 1 is identical
+    public var colorError: Double   // mean RGB difference where both are opaque, 0 to 255
+    public var inkPixels: Int       // pixels the SVG covers at all
+}
+
+/// Compares an SVG with the PDF page it came from, both drawn at `scale`.
+public func compareArtwork(_ svg: String, page: CGPDFPage, scale: CGFloat = 4) -> ArtworkCheck {
+    let box = page.getBoxRect(.mediaBox)
+    let w = Int((box.width * scale).rounded(.up)), h = Int((box.height * scale).rounded(.up))
+    let ref = rgbaPixels(w, h) { ctx in ctx.scaleBy(x: scale, y: scale); ctx.translateBy(x: -box.minX, y: -box.minY); ctx.drawPDFPage(page) }
+    let mine = rgbaPixels(w, h) { ctx in ctx.scaleBy(x: scale, y: scale); drawColoredSVG(svg, in: ctx, height: box.height) }
+    let a = stride(from: 3, to: ref.count, by: 4).map { Int(ref[$0]) }
+    let b = stride(from: 3, to: mine.count, by: 4).map { Int(mine[$0]) }
+    var err = 0.0, n = 0
+    for i in 0..<(w * h) where a[i] > 200 && b[i] > 200 {
+        for c in 0..<3 { err += abs(Double(ref[i * 4 + c]) - Double(mine[i * 4 + c])) }
+        n += 1
+    }
+    return ArtworkCheck(overlap: overlapScore(a, b), colorError: n == 0 ? 0 : err / Double(n * 3), inkPixels: b.filter { $0 > 0 }.count)
 }
