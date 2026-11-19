@@ -21,7 +21,28 @@ interface Indexed {
   categoryParts: Set<string>;
 }
 
-const indexed: Indexed[] = pack.symbols.map((entry, order) => ({
+// Words people use for an icon that SF Symbols names differently. Each word also matches these name parts.
+const SYNONYMS: Record<string, string[]> = {
+  off: ["slash"], disable: ["slash"], disabled: ["slash"], mute: ["speaker.slash", "mic.slash"], muted: ["speaker.slash", "mic.slash"], block: ["slash"], hidden: ["slash"],
+  add: ["plus"], new: ["plus"], create: ["plus"],
+  remove: ["minus", "xmark"], delete: ["trash", "xmark"], close: ["xmark"], cancel: ["xmark"], dismiss: ["xmark"],
+  search: ["magnifyingglass"], find: ["magnifyingglass"], zoom: ["magnifyingglass"],
+  edit: ["pencil"], write: ["pencil"], compose: ["pencil"],
+  setting: ["gear", "gearshape"], preference: ["gear", "gearshape"], option: ["gear", "gearshape", "slider"],
+  done: ["checkmark"], ok: ["checkmark"], confirm: ["checkmark"], complete: ["checkmark"],
+  home: ["house"], user: ["person"], profile: ["person"], account: ["person"], contact: ["person"],
+  image: ["photo"], picture: ["photo"], chat: ["bubble", "message"], comment: ["bubble"],
+  favorite: ["heart", "star"], like: ["heart", "hand.thumbsup"], love: ["heart"],
+  info: ["info"], help: ["questionmark"], warning: ["exclamationmark"], alert: ["exclamationmark", "bell"],
+  notification: ["bell"], email: ["envelope"], mail: ["envelope"], call: ["phone"], download: ["arrow.down"],
+  upload: ["arrow.up"], refresh: ["arrow.clockwise"], reload: ["arrow.clockwise"], menu: ["line.3.horizontal", "ellipsis"],
+  more: ["ellipsis"], filter: ["line.3.horizontal.decrease"], sort: ["arrow.up.arrow.down"], location: ["location", "mappin"],
+};
+const synonymParts = new Map(
+  Object.entries(SYNONYMS).map(([word, alts]) => [stem(word), alts.map((alt) => tokens(alt).map(stem))]),
+);
+
+const indexed: Indexed[] =pack.symbols.map((entry, order) => ({
   entry,
   order,
   nameParts: new Set(tokens(entry.name).map(stem)),
@@ -50,6 +71,7 @@ export function searchSymbols(query: string, limit: number): SymbolEntry[] {
     let matched = 0;
     for (const w of want) {
       if (s.nameParts.has(w)) score += 10;
+      else if (synonymParts.get(w)?.some((alt) => alt.every((p) => s.nameParts.has(p)))) score += 8;
       else if (s.keywordParts.has(w)) score += 4;
       else if (s.categoryParts.has(w)) score += 1;
       else continue;
