@@ -154,6 +154,7 @@ try {
   if (kit.text.includes("```text")) {
     check(kit.text.includes("- Tab Bar Buttons: frame; 180 × 54; fills width; row; gap -8;"), "the tab bar's outline is missing or changed");
     check(kit.text.includes("#### _Tab Bar Button - iPhone [Selected=True], 72 × 54"), "the tab bar's parts are missing");
+    check(kit.text.includes("with Symbol SF Symbol diamond.fill, Label \"Tab 1\""), "an icon in an outline should be given by its SF Symbols name");
   } else {
     check(kit.text.includes("The outline files are not deployed on this server"), "search_ui_kit should say when the outline files are missing");
     console.log("search_ui_kit: no outline files on this server (assets/ui-kit/ is built by npm run pack:ui-kit)");
