@@ -9,18 +9,19 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { WebStandardStreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/webStandardStreamableHttp.js";
 import { z } from "zod";
 import { deviceMetrics, devicePack, FAMILIES } from "./devices.js";
+import { deviceFrames, framePack } from "./frames.js";
 import { higPack, lookupHig, platformsIn, readPage } from "./hig.js";
 import { lookupSymbols, readSymbols, symbolPack } from "./symbols.js";
 import type { ShapeLoader } from "./symbols.js";
 
 const SERVER_NAME = "apple-design";
-const SERVER_VERSION = "0.4.0";
+const SERVER_VERSION = "0.5.0";
 
 const HIG_DATE = higPack.pack_version;
 
 const PACK = {
   status: "partial",
-  note: "Human Interface Guidelines text, device screen sizes and SF Symbols (names and regular-weight shapes) are loaded. UI kits, device frames and design values are not loaded yet.",
+  note: "Human Interface Guidelines text, device screen sizes, device frames and SF Symbols (names and regular-weight shapes) are loaded. UI kits and design values are not loaded yet.",
   pack_version: higPack.pack_version,
   sources: [
     {
@@ -41,8 +42,13 @@ const PACK = {
       symbols: symbolPack.source.symbols,
       shapes: symbolPack.source.with_shapes,
     },
+    {
+      name: framePack.source.name,
+      version: `${framePack.source.version}, read at ${framePack.generated_at}`,
+      frames: framePack.source.frames,
+    },
   ],
-  tools: ["get_pack_info", "search_hig", "get_hig_page", "get_device_metrics", "search_symbols", "get_symbol"],
+  tools: ["get_pack_info", "search_hig", "get_hig_page", "get_device_metrics", "get_device_frame", "search_symbols", "get_symbol"],
   planned_tools: ["get_design_values", "make_asset_catalog", "make_app_icon", "search_ui_kit", "frame_screenshot"],
 };
 
@@ -204,6 +210,25 @@ function buildServer(app: string, env: Env, origin: string): McpServer {
     async (args) => {
       const text = deviceMetrics(args.devices ?? [], args.families ?? [], args.include_older ?? false);
       return reply(app, "get_device_metrics", args, text);
+    },
+  );
+
+  server.registerTool(
+    "get_device_frame",
+    {
+      title: "Get device frames",
+      description:
+        "Get the drawing of an Apple device's body (its bezel) as SVG, with the exact position of the screen inside " +
+        "it, to show a design inside a device. Name every device in one call as `devices`, such as [\"iPhone Duo\"]. " +
+        "A folding device returns one frame per screen. Use it instead of drawing a device outline by hand.",
+      inputSchema: {
+        devices: z.array(z.string().min(1).max(100)).min(1).max(4).describe("Device names, such as [\"iPhone 18 Pro\", \"iPad Pro 13\"]."),
+      },
+      annotations: READ_ONLY,
+    },
+    async (args) => {
+      const result = deviceFrames(args.devices);
+      return reply(app, "get_device_frame", args, result.text, !result.ok);
     },
   );
 
