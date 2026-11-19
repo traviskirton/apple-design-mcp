@@ -125,17 +125,17 @@ rmSync(temp, { recursive: true, force: true });
     { id: "lab", type: "TEXT", blendMode: "LINEAR_BURN", characters: "Tab 2", style: { fontWeight: 590 }, absoluteBoundingBox: bb(210, 51, 68, 12), absoluteRenderBounds: bb(231, 53.6, 23, 7.2) },
     { id: "plain", type: "TEXT", characters: "Title", absoluteBoundingBox: bb(231, 53, 20, 7) },
   ] };
-  const flat = `<svg><image x="145.975" y="22.6289" width="26.042" height="26.2" preserveAspectRatio="none" xlink:href="data:image/png;base64,AAAA"/><image x="230.139" y="53" width="25.5" height="8.4" preserveAspectRatio="none" xlink:href="data:image/png;base64,BBBB"/><image id="p" width="4" height="4" xlink:href="data:image/png;base64,CCCC"/></svg>`;
+  const flat = `<svg><image x="145.975" y="22.6289" width="26.042" height="26.2" preserveAspectRatio="none" xlink:href="data:image/png;base64,AAAA"/><image x="230.139" y="53" width="25.5" height="8.4" preserveAspectRatio="none" style="mix-blend-mode:multiply" href="https://example.test/ui-kit-svg/img/00ff.png"/><image id="p" width="4" height="4" xlink:href="data:image/png;base64,CCCC"/></svg>`;
   const pics = flattened(flat);
   const under = match(pics, flatLayers(root));
   check(pics.length === 2 && under[0].map((l) => l.id).join() === "sym" && under[1].map((l) => l.id).join() === "lab", "each picture should get the layers under it, and only layers with the blend mode or in a mask");
   const exports = {
     sym: `<svg width="68" height="28">\n<path id="&#244;&#128;" d="M2 1Z" fill="#FF0000"/>\n</svg>`,
-    lab: `<svg width="68" height="12">\n<text id="Label" fill="#1A1A1A" font-family="SF Pro" font-size="10"><tspan x="21" y="9">Tab 2</tspan></text>\n</svg>`,
+    lab: `<svg width="68" height="12">\n<g id="Label" style="mix-blend-mode:plus-darker">\n<text fill="#1A1A1A" font-family="SF Pro" font-size="10"><tspan x="21" y="9">Tab 2</tspan></text>\n</g>\n</svg>`,
   };
   const out = redraw(flat, pics, under.map((u, i) => u.map((l) => asMarkup(l, exports[l.id], i, () => "diamond.fill"))));
   check(out.includes('<g transform="translate(125 22)"><path data-symbol="diamond.fill" d="M2 1Z" fill="#0088FF"/></g>'), "a masked symbol should be a marked path in the tint color: " + out);
-  check(out.includes('<g transform="translate(210 51)" style="mix-blend-mode:multiply"><text id="Label" fill="#1A1A1A" font-family="SF Pro, -apple-system, system-ui, sans-serif" font-size="10" font-weight="590"><tspan x="21" y="9">Tab 2</tspan></text></g>'), "a label with the blend mode should be text in a multiply group: " + out);
+  check(out.includes('<g transform="translate(210 51)"><g id="Label" style="mix-blend-mode:multiply"><text fill="#1A1A1A" font-family="SF Pro, -apple-system, system-ui, sans-serif" font-size="10" font-weight="590"><tspan x="21" y="9">Tab 2</tspan></text></g></g>'), "a label with the blend mode should be text in a multiply group: " + out);
   check(out.includes('<image id="p"') && flattened(out).length === 0, "a picture that is a real picture should stay, and the others be gone");
   check(asMarkup(under[0][0], `<svg><image href="data:image/png;base64,AA"/></svg>`, 9, () => "x") === null, "a layer that exports as a picture should not be used");
 }

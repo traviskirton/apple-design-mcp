@@ -24,10 +24,13 @@ const here = dirname(fileURLToPath(import.meta.url));
 const NODES = 6; // drawings per request for their layers
 const BATCH = 40; // layers per render request
 const PARALLEL = 8;
+const COVER = 3; // points the layers together may fall short of the picture's edges
 const SLACK = 1.5; // points a layer may reach past the picture's box
 
 /** The pictures Figma wrote in place of layers: an image element with a place and its data inside the SVG. */
-const FLAT = /<image x="([-\d.e]+)" y="([-\d.e]+)" width="([\d.e]+)" height="([\d.e]+)" preserveAspectRatio="none" (?:xlink:)?href="data:image\/[a-z]+;base64,[^"]+"\/>/g;
+// Small ones are still inside the SVG; scripts/svg-images.mjs has moved the larger ones to files. (A photo that fills a
+// shape is written differently, as a pattern, and is not matched.)
+const FLAT = /<image x="([-\d.e]+)" y="([-\d.e]+)" width="([\d.e]+)" height="([\d.e]+)" preserveAspectRatio="none"(?: style="[^"]*")? (?:xlink:)?href="(?:data:image\/[a-z]+;base64,[^"]+|https?:[^"]+\/ui-kit-svg\/img\/[^"]+)"\/>/g;
 export const flattened = (svg) => [...svg.matchAll(FLAT)].map((m) => ({ all: m[0], x: +m[1], y: +m[2], w: +m[3], h: +m[4] }));
 
 const isPrivateUse = (s) => s.length > 0 && [...s].every((ch) => { const c = ch.codePointAt(0); return (c >= 0xe000 && c <= 0xf8ff) || c >= 0xf0000; });
@@ -37,8 +40,8 @@ const LEAVES = new Set(["TEXT", "RECTANGLE", "VECTOR", "ELLIPSE", "LINE", "STAR"
 
 /**
  * The layers of a drawing that Figma may have flattened, back to front: `{ id, type, box, shown,
- * characters, weight, burn, tint }`, with boxes relative to the drawing's own box. `burn` when the
- * layer or a group around it has the blend mode; `tint` (`{ color, opacity }`) when it is inside a mask.
+ * characters, weight, burn, tint }`, with boxes relative to the drawing's own box. `burn` when a
+ * group around the layer has the blend mode (its own blend mode comes with its export); `tint` (`{ color, opacity }`) when it is inside a mask.
  */
 export function flatLayers(root) {
   const origin = root.absoluteBoundingBox;
@@ -49,15 +52,12 @@ export function flatLayers(root) {
     const burns = burn || node.blendMode === "LINEAR_BURN";
     if (LEAVES.has(node.type)) {
       const box = rel(node.absoluteBoundingBox), shown = rel(node.absoluteRenderBounds) ?? box;
-      if (box && (burns || tint)) out.push({ id: node.id, type: node.type, name: node.name, box, shown, characters: node.characters ?? "", weight: node.style?.fontWeight, opacity: node.opacity ?? 1, burn: burns, tint });
+      if (box && (burns || tint)) out.push({ id: node.id, type: node.type, name: node.name, box, shown, characters: node.characters ?? "", weight: node.style?.fontWeight, burn: burns && node.blendMode !== "LINEAR_BURN", tint });
       return;
     }
     const children = node.children ?? [];
-    let masked = false;
     children.forEach((child, i) => {
-      if (masked) return; // drawn only through the mask before them
       if (child.isMask) {
-        masked = true;
         // What the mask shows is the layers after it; its own layers only give the shape.
         const over = children.slice(i + 1).filter((s) => s.visible !== false && solid(s));
         const by = over.filter((s) => s.blendMode === "LINEAR_BURN").at(-1) ?? over.at(-1);
@@ -72,7 +72,11 @@ export function flatLayers(root) {
 
 const inside = (l, p) => l.x >= p.x - SLACK && l.y >= p.y - SLACK && l.x + l.w <= p.x + p.w + SLACK && l.y + l.h <= p.y + p.h + SLACK;
 
-/** For each picture, the layers that lie under it. A layer goes to the smallest picture that holds it. */
+/**
+ * For each picture, the layers that lie under it. A layer goes to the smallest picture that holds
+ * it. A picture whose layers do not reach its edges (within `COVER` points) gets none: something
+ * else is in it.
+ */
 export function match(pictures, layers) {
   const found = pictures.map(() => []);
   for (const layer of layers) {
@@ -80,7 +84,14 @@ export function match(pictures, layers) {
     pictures.forEach((p, i) => { if (inside(layer.shown, p) && (best < 0 || p.w * p.h < pictures[best].w * pictures[best].h)) best = i; });
     if (best >= 0) found[best].push(layer);
   }
-  return found;
+  return found.map((list, i) => {
+    if (!list.length) return list;
+    const p = pictures[i];
+    const x0 = Math.min(...list.map((l) => l.shown.x)), y0 = Math.min(...list.map((l) => l.shown.y));
+    const x1 = Math.max(...list.map((l) => l.shown.x + l.shown.w)), y1 = Math.max(...list.map((l) => l.shown.y + l.shown.h));
+    const covers = x0 - p.x <= COVER && y0 - p.y <= COVER && p.x + p.w - x1 <= COVER && p.y + p.h - y1 <= COVER;
+    return covers ? list : Object.assign([], { short: true });
+  });
 }
 
 /**
@@ -109,10 +120,11 @@ export function asMarkup(layer, svg, n, nameOf) {
     const paint = `fill="${layer.tint.color}"` + (layer.tint.opacity < 0.995 ? ` fill-opacity="${+layer.tint.opacity.toFixed(3)}"` : "");
     inner = inner.replace(/ fill-opacity="[^"]*"/g, "").replace(/ fill="(?!none)[^"]*"/g, " " + paint);
   }
-  inner = inner.replace(/>\s*\n\s*</g, "><").trim();
+  // The export brings the layer's own opacity and blend mode; browsers know plus-darker as multiply at best.
+  inner = inner.replace(/>\s*\n\s*</g, "><").replace(/ id="(?:&#\d+;)+(?:_\d+)?"/g, "").replace(/mix-blend-mode:plus-darker/g, "mix-blend-mode:multiply").trim();
+  if (layer.tint) inner = inner.replace(/ style="mix-blend-mode:[a-z-]+"/g, "");
   const attrs = [
     `transform="translate(${+layer.box.x.toFixed(3)} ${+layer.box.y.toFixed(3)})"`,
-    layer.opacity < 0.995 ? `opacity="${+layer.opacity.toFixed(3)}"` : "",
     layer.burn && !layer.tint ? 'style="mix-blend-mode:multiply"' : "",
   ].filter(Boolean).join(" ");
   return { body: `<g ${attrs}>${inner}</g>`, defs: defs.replace(/>\s*\n\s*</g, "><").trim() };
@@ -187,12 +199,13 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
       console.log(`  ${list.length} ${outline ? "symbols" : "other layers"} exported`);
     }
 
-    let fixed = 0, redrawn = 0, kept = 0, noLayer = 0, noExport = 0, rewritten = 0;
+    let fixed = 0, redrawn = 0, kept = 0, noLayer = 0, noExport = 0, short = 0, rewritten = 0;
     const keptIn = [];
     for (const t of todo) {
       const parts = t.under.map((list) => {
         const made = list.map((l) => (exported.has(l.id) ? asMarkup(l, exported.get(l.id), ++n, nameOf) : null));
         // All of a picture's layers or none: half a label is worse than a picture of it.
+        if (list.short) { short++; return null; }
         if (!list.length) { noLayer++; return null; }
         if (made.some((m) => !m)) { noExport++; return null; }
         redrawn += made.length;
@@ -208,7 +221,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
       rewritten++;
       if (only) console.log(`  ${t.id}: ${done} of ${t.pictures.length} pictures redrawn, ${Buffer.byteLength(t.svg)} bytes before, ${Buffer.byteLength(svg)} now`);
     }
-    console.log(`${kit}: ${fixed} pictures redrawn from ${redrawn} layers in ${rewritten} drawings${dry ? " (dry run, nothing written)" : ""}; ${kept} pictures kept (${noLayer} with no layer found under them, ${noExport} with a layer Figma would not export as shapes).`);
+    console.log(`${kit}: ${fixed} pictures redrawn from ${redrawn} layers in ${rewritten} drawings${dry ? " (dry run, nothing written)" : ""}; ${kept} pictures kept (${noLayer} with no layer found under them, ${short} with layers that do not fill them, ${noExport} with a layer Figma would not export as shapes).`);
     if (keptIn.length) console.log(`  drawings that still hold such a picture: ${keptIn.length}, such as ${keptIn.slice(0, 12).join(", ")}`);
   }
 }
