@@ -16,7 +16,9 @@
     "pack:bezels": "node scripts/build-bezel-pack.mjs",
     "typecheck": "tsc --noEmit",
     "test": "node test/smoke.mjs",
-    "test:svg": "node test/svg.mjs"
+    "test:svg": "node test/svg.mjs",
+    "export:ui-kit-svg": "node scripts/export-ui-kit-svg.mjs",
+    "gallery": "node scripts/build-ui-kit-gallery.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.32.2",
