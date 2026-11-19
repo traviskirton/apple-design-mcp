@@ -5,6 +5,10 @@ Reads SF Symbols from this Mac and writes the server's symbol data:
 - `server/src/pack/symbols.js`: every symbol's name, release year, categories, Apple's search keywords,
   usage restriction, the year-to-OS table, the category list and renamed symbols, in the shape of
   `server/src/pack/symbols.d.ts`. This file is committed.
+- `server/src/pack/symbol-index.js`: the search index over those names and keywords, written by
+  `server/scripts/build-symbol-index.mjs` (the extractor runs it; Node 23.6 or later). Committed. The
+  Worker reads it instead of building the index at startup, and builds it itself only if the index
+  was made from another copy of symbols.js.
 - `server/assets/symbols/NAME.svg`: one SVG per symbol, regular weight, medium scale, monochrome.
   These are deployed with the Worker as static files and are not committed (`assets/symbols/` is ignored).
 
@@ -69,7 +73,9 @@ Run it after `server/src/pack/devices.js` is rebuilt (it reads the device list f
 - The drawing is read with the same PDF reader as the symbols (`PDFVector`), which here also keeps fill
   and stroke colors, line widths and opacity; strokes become filled outlines. Paint below 6% opacity is
   dropped, a transparency group's opacity is applied to each path in it, and buttons drawn as bitmaps in
-  older chromes become flat dark bars. The screen, with the corner radii from the device pack, is cut
+  older chromes become flat dark bars. The slices draw the same layers, each clipped to its own
+  rectangle, so the n-th layer of all slices is united into one shape; that leaves no seams where
+  pieces meet when a browser draws the SVG. The screen, with the corner radii from the device pack, is cut
   out of everything, so it is empty. Runs of paths with the same paint are merged into one element.
 - Coordinates have 2 decimals, or 1 where that keeps an SVG near 15 KB.
 
