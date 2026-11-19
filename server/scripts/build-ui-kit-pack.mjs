@@ -368,7 +368,7 @@ function readKit(kit, path) {
         const text = outline(s);
         let index = texts.indexOf(text);
         if (index < 0) index = texts.push(text) - 1;
-        return { name: isSet ? variantLabel(s.name) : "", width: Math.round(s.size.x * 100) / 100, height: Math.round(s.size.y * 100) / 100, outline: index };
+        return { name: isSet ? variantLabel(s.name) : "", width: Math.round(s.size.x * 100) / 100, height: Math.round(s.size.y * 100) / 100, outline: index, node: guidKey(s.guid) };
       });
       const refs = new Set();
       symbols.forEach((s) => references(s).forEach((r) => refs.add(r)));
@@ -451,7 +451,7 @@ const pack = {
   kits: packKits,
 };
 const outPath = join(here, "..", "src", "pack", "ui-kit.js");
-const body = JSON.stringify(pack, null, 1).replace(/\{\n\s+"name": ("[^"\n]*"),\n\s+"width": ([\d.]+),\n\s+"height": ([\d.]+),\n\s+"outline": (\d+)\n\s+\}/g, '{"name":$1,"width":$2,"height":$3,"outline":$4}');
+const body = JSON.stringify(pack, null, 1).replace(/\{\n\s+"name": ("[^"\n]*"),\n\s+"width": ([\d.]+),\n\s+"height": ([\d.]+),\n\s+"outline": (\d+),\n\s+"node": ("[\d:]+")\n\s+\}/g, '{"name":$1,"width":$2,"height":$3,"outline":$4,"node":$5}');
 writeFileSync(outPath, `// Written by scripts/build-ui-kit-pack.mjs from Apple's UI kits for Figma. Do not edit.\nexport default ${body};\n`);
 console.log(`Wrote ${outPath} (${(Buffer.byteLength(body) / 1024).toFixed(0)} KB) and ${assetRoot}.`);
 if (unnamedSymbols.size) {
