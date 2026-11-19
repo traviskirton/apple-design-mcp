@@ -4,8 +4,9 @@
 //
 //   node scripts/export-ui-kit-svg.mjs [--kit ios] [--limit 20] [--force]
 //
-// Needs a Figma personal access token with "File content: Read-only", in the environment variable
-// FIGMA_TOKEN or in the file ~/.config/apple-mcp/figma-token. The token is never printed.
+// Needs a Figma personal access token with "File content: Read-only", in
+// the file ~/.config/apple-mcp/figma-token or in the environment variable FIGMA_TOKEN. The file is
+// tried first; the script says which one Figma accepted. The token is never printed.
 // scripts/figma/kit-files.json maps each kit to the key of a copy of the kit in the token
 // owner's Figma account (the part of the file's address after /design/).
 //
@@ -87,14 +88,39 @@ export const tidy = (svg) =>
 
 // ---------- Figma ----------
 
-function readToken() {
-  if (process.env.FIGMA_TOKEN) return process.env.FIGMA_TOKEN.trim();
+/**
+ * The tokens to try, in order: the saved file first, then the environment variable. A shell
+ * profile can hold a FIGMA_TOKEN from long ago, and an expired one there must not hide the file.
+ */
+function readTokens() {
+  const found = [];
   const path = join(homedir(), ".config", "apple-mcp", "figma-token");
-  if (!existsSync(path)) throw new Error(`No Figma token: set FIGMA_TOKEN or save one in ${path}.`);
-  const token = readFileSync(path, "utf8").trim();
-  if (!token) throw new Error(`${path} is empty.`);
-  if (/\s/.test(token) || token.length < 20) throw new Error(`${path} does not look like a Figma token (it is ${token.length} characters${/\s/.test(token) ? " with spaces" : ""}). Copy the token again and save it.`);
-  return token;
+  if (existsSync(path)) {
+    const token = readFileSync(path, "utf8").trim();
+    if (!token) throw new Error(`${path} is empty.`);
+    if (/\s/.test(token) || token.length < 20) throw new Error(`${path} does not look like a Figma token (it is ${token.length} characters${/\s/.test(token) ? " with spaces" : ""}). Copy the token again and save it.`);
+    found.push({ token, from: `the file ${path}` });
+  }
+  const env = process.env.FIGMA_TOKEN?.trim();
+  if (env && !found.some((f) => f.token === env)) found.push({ token: env, from: "the environment variable FIGMA_TOKEN" });
+  if (!found.length) throw new Error(`No Figma token: save one in ${path} or set FIGMA_TOKEN.`);
+  return found;
+}
+
+/** The first token that can read the file `key`. Says where it came from, never the token. */
+async function workingToken(key) {
+  const refused = [];
+  for (const { token, from } of readTokens()) {
+    try {
+      await figma(token, `/files/${key}?depth=1`);
+      console.log(`Using the Figma token from ${from}.`);
+      return token;
+    } catch (e) {
+      if (e.status !== 401 && e.status !== 403) throw e;
+      refused.push(`Figma refused the token from ${from}: ${e.message}`);
+    }
+  }
+  throw new Error(refused.join("\n"));
 }
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -163,8 +189,10 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const limit = Number(option("--limit")) || Infinity;
   const force = args.includes("--force");
 
-  const token = readToken();
   const files = JSON.parse(readFileSync(join(here, "figma", "kit-files.json"), "utf8"));
+  const firstKey = onlyKit ? files[onlyKit] : Object.values(files)[0];
+  if (!firstKey) throw new Error(`No file key for ${onlyKit ?? "any kit"} in scripts/figma/kit-files.json.`);
+  const token = await workingToken(firstKey);
   const { default: pack } = await import(new URL("../src/pack/ui-kit.js", import.meta.url));
   const symbolNames = new Map();
   for (const line of readFileSync(join(here, "figma", "symbol-codepoints.txt"), "utf8").split("\n")) {
@@ -185,8 +213,9 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     mkdirSync(outDir, { recursive: true });
     const pathOf = (id) => join(outDir, id.replace(":", "-") + ".svg");
     const all = [...new Set(kit.components.flatMap((c) => c.variants.map((v) => v.node)).filter(Boolean))];
-    const todo = all.filter((id) => force || !existsSync(pathOf(id))).slice(0, limit);
-    console.log(`  ${all.length} variants, ${all.length - todo.length} already exported, ${todo.length} to export`);
+    const missing = all.filter((id) => force || !existsSync(pathOf(id)));
+    const todo = missing.slice(0, limit);
+    console.log(`  ${all.length} variants, ${all.length - missing.length} already exported, ${todo.length} to export${todo.length < missing.length ? ` now (${missing.length - todo.length} more after this)` : ""}`);
 
     let written = 0, bytes = 0, symbols = 0, missed = 0, large = 0, largest = { id: "", size: 0 };
     const unfixed = new Map();
