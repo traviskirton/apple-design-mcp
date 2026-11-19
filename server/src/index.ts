@@ -8,16 +8,17 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { WebStandardStreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/webStandardStreamableHttp.js";
 import { z } from "zod";
+import { deviceMetrics, devicePack, FAMILIES } from "./devices.js";
 import { higPack, lookupHig, platformsIn, readPage } from "./hig.js";
 
 const SERVER_NAME = "apple-design";
-const SERVER_VERSION = "0.2.1";
+const SERVER_VERSION = "0.3.0";
 
 const HIG_DATE = higPack.pack_version;
 
 const PACK = {
   status: "partial",
-  note: "Human Interface Guidelines text is loaded. SF Symbols, UI kits, device frames and design values are not loaded yet.",
+  note: "Human Interface Guidelines text and device screen sizes are loaded. SF Symbols, UI kits, device frames and design values are not loaded yet.",
   pack_version: higPack.pack_version,
   sources: [
     {
@@ -27,11 +28,16 @@ const PACK = {
       sections: higPack.source.sections,
       sha256: higPack.source.sha256,
     },
+    {
+      name: devicePack.source.name,
+      version: `${devicePack.source.version}, read at ${devicePack.generated_at}`,
+      devices: devicePack.source.devices,
+    },
   ],
-  tools: ["get_pack_info", "search_hig", "get_hig_page"],
+  tools: ["get_pack_info", "search_hig", "get_hig_page", "get_device_metrics"],
   planned_tools: [
     "search_symbols", "get_symbol", "get_design_values",
-    "get_device_metrics", "make_asset_catalog", "make_app_icon",
+    "make_asset_catalog", "make_app_icon",
     "search_ui_kit", "frame_screenshot",
   ],
 };
@@ -56,7 +62,8 @@ function buildServer(app: string): McpServer {
         `Apple Vision Pro. It holds Apple's Human Interface Guidelines as published on ${HIG_DATE}, which may be ` +
         "newer than what you remember. Before designing a screen or component, make one search_hig call that lists " +
         "every component, device and topic involved. It returns the guideline text itself, so one call is usually " +
-        "enough; use get_hig_page only for a section that search_hig lists but does not include.",
+        "enough; use get_hig_page only for a section that search_hig lists but does not include. For the size of a " +
+        "device's screen, call get_device_metrics instead of estimating.",
     },
   );
 
@@ -149,6 +156,38 @@ function buildServer(app: string): McpServer {
     async (args) => {
       const result = readPage(args.page, args.section);
       return reply(app, "get_hig_page", args, result.text, !result.ok);
+    },
+  );
+
+  server.registerTool(
+    "get_device_metrics",
+    {
+      title: "Get device screen sizes",
+      description:
+        "Get the screen size of Apple devices in points and pixels, with the scale factor, as defined by " +
+        `${devicePack.source.version}. Call it before drawing a screen, frame or mockup at a device's real size, ` +
+        "and for devices newer than you remember. Name every device of the task in one call as `devices`, such as " +
+        "[\"iPhone Duo\", \"iPad Pro 13\"]. Without `devices` it lists every current device.",
+      inputSchema: {
+        devices: z
+          .array(z.string().min(1).max(100))
+          .max(20)
+          .optional()
+          .describe("Device names or parts of names. \"iPhone 18\" returns every iPhone 18 model."),
+        families: z
+          .array(z.enum(FAMILIES))
+          .optional()
+          .describe("When `devices` is omitted, list only these kinds of device."),
+        include_older: z
+          .boolean()
+          .optional()
+          .describe("When `devices` is omitted, also list devices the newest OS version no longer supports."),
+      },
+      annotations: READ_ONLY,
+    },
+    async (args) => {
+      const text = deviceMetrics(args.devices ?? [], args.families ?? [], args.include_older ?? false);
+      return reply(app, "get_device_metrics", args, text);
     },
   );
 

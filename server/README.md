@@ -2,12 +2,13 @@
 
 The MCP server, written in TypeScript for Cloudflare Workers.
 
-It serves Apple's Human Interface Guidelines through three tools. SF Symbols, UI kits, device frames and design values are not loaded yet.
+It serves Apple's Human Interface Guidelines and the screen sizes of Apple devices. SF Symbols, UI kits, device frames and design values are not loaded yet.
 
 | Tool | What it does |
 | --- | --- |
 | `search_hig` | Takes a list of topics (components, patterns, devices) and returns the guideline text for all of them in one reply. A topic that names a page returns that page; other topics return the best-matching sections. |
 | `get_hig_page` | Reads one page or section by id, for anything `search_hig` listed but left out for size. |
+| `get_device_metrics` | Returns the screen size of the named devices in points and pixels, with scale, pixels per inch, corner radius and whether the device has a Dynamic Island. Without names it lists every current device. A folding device has one row per screen. |
 | `get_pack_info` | Reports what material is loaded, its date, and when the server answered. |
 
 `search_hig` answers a whole brief in one call because each tool call costs the app a full turn of the model, which is slow. Its reply is limited to about 40,000 characters (roughly 10,000 tokens) by default, leaves out link lists, change logs and sections written for other platforms, and lists by id whatever did not fit. Pictures are replaced by Apple's own description of each one.
@@ -22,6 +23,15 @@ The server is stateless. Each request builds a fresh server and gets a plain JSO
 - `npm run pack` rebuilds it. Do that before a deploy to pick up Apple's changes.
 
 `get_pack_info` shows the date the pack was built, so you can tell what the live server holds.
+
+## The device pack
+
+`scripts/build-device-pack.mjs` reads the device types that Xcode's simulators define (`xcrun simctl list devicetypes`, then each type's `capabilities.plist` and `profile.plist`) and writes `src/pack/devices.js`. It needs a Mac with Xcode, so unlike the guidelines pack the result is committed, and the server can be deployed from any machine.
+
+- `npm run pack:devices` rebuilds it. Do that after installing a new Xcode, then commit the file.
+- `node scripts/build-device-pack.mjs --dump Duo` prints everything Xcode holds for the device types whose name contains "Duo".
+
+Xcode's files hold no safe-area insets, no position for the Dynamic Island or cameras, and no fold or hinge positions. The tool's reply says so, and sends the model to the guidelines for those.
 
 ## Deploy
 
@@ -85,5 +95,7 @@ npm test           # in a second terminal
 - `src/terms.js`: how text is cut into search words; shared by the pack builder and the search.
 - `src/pack/hig.d.ts`: the shape of the generated pack. `src/pack/hig.js` is the pack itself.
 - `scripts/build-hig-pack.mjs`: builds the pack from Apple's site.
+- `src/devices.ts`: device lookup. `src/pack/devices.js` is the device pack and `src/pack/devices.d.ts` its shape.
+- `scripts/build-device-pack.mjs`: builds the device pack from Xcode's simulator files (Mac only).
 - `test/smoke.mjs`: connects as a real MCP client and tries every tool.
 - `wrangler.jsonc`: Cloudflare settings. `name` sets the first part of the URL.
