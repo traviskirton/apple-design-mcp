@@ -40,8 +40,9 @@ const LEAVES = new Set(["TEXT", "RECTANGLE", "VECTOR", "ELLIPSE", "LINE", "STAR"
 
 /**
  * The layers of a drawing that Figma may have flattened, back to front: `{ id, type, box, shown,
- * characters, weight, burn, tint }`, with boxes relative to the drawing's own box. `burn` when a
- * group around the layer has the blend mode (its own blend mode comes with its export); `tint` (`{ color, opacity }`) when it is inside a mask.
+ * characters, weight, burn, tint, flat, photo }`, with boxes relative to the drawing's own box. `burn` when a
+ * group around the layer has the blend mode (its own blend mode comes with its export); `tint` (`{ color, opacity }`) when it is inside a mask;
+ * `flat` when either holds; `photo` when it is filled with a picture.
  */
 export function flatLayers(root) {
   const origin = root.absoluteBoundingBox;
@@ -50,11 +51,16 @@ export function flatLayers(root) {
   const walk = (node, burn, tint) => {
     if (node.visible === false) return;
     const burns = burn || node.blendMode === "LINEAR_BURN";
+    const box = rel(node.absoluteBoundingBox);
     if (LEAVES.has(node.type)) {
-      const box = rel(node.absoluteBoundingBox), shown = rel(node.absoluteRenderBounds) ?? box;
-      if (box && (burns || tint)) out.push({ id: node.id, type: node.type, name: node.name, box, shown, characters: node.characters ?? "", weight: node.style?.fontWeight, burn: burns && node.blendMode !== "LINEAR_BURN", tint });
+      const shown = rel(node.absoluteRenderBounds) ?? box;
+      const photo = (node.fills ?? []).some((f) => f.type === "IMAGE" && f.visible !== false);
+      if (box) out.push({ id: node.id, type: node.type, name: node.name, box, shown, characters: node.characters ?? "", weight: node.style?.fontWeight, burn: burns && node.blendMode !== "LINEAR_BURN", tint, flat: Boolean(burns || tint), photo });
       return;
     }
+    // A group with the blend mode and a fill of its own (a search field's capsule): the fill is in the picture too.
+    const own = node.blendMode === "LINEAR_BURN" && node !== root && box ? solid(node) : null;
+    if (own) out.push({ id: node.id, type: "FILL", name: node.name, box, shown: box, characters: "", burn: true, tint: null, flat: true, photo: false, fill: { color: hex(own.color), opacity: (own.opacity ?? 1) * (own.color.a ?? 1) * (node.opacity ?? 1) }, radius: node.cornerRadius ?? 0 });
     const children = node.children ?? [];
     children.forEach((child, i) => {
       if (child.isMask) {
@@ -84,13 +90,20 @@ export function match(pictures, layers) {
     pictures.forEach((p, i) => { if (inside(layer.shown, p) && (best < 0 || p.w * p.h < pictures[best].w * pictures[best].h)) best = i; });
     if (best >= 0) found[best].push(layer);
   }
-  return found.map((list, i) => {
-    if (!list.length) return list;
-    const p = pictures[i];
+  const covers = (list, p) => {
+    if (!list.length) return false;
     const x0 = Math.min(...list.map((l) => l.shown.x)), y0 = Math.min(...list.map((l) => l.shown.y));
     const x1 = Math.max(...list.map((l) => l.shown.x + l.shown.w)), y1 = Math.max(...list.map((l) => l.shown.y + l.shown.h));
-    const covers = x0 - p.x <= COVER && y0 - p.y <= COVER && p.x + p.w - x1 <= COVER && p.y + p.h - y1 <= COVER;
-    return covers ? list : Object.assign([], { short: true });
+    return x0 - p.x <= COVER && y0 - p.y <= COVER && p.x + p.w - x1 <= COVER && p.y + p.h - y1 <= COVER;
+  };
+  return found.map((list, i) => {
+    if (!list.length) return list;
+    // First the layers with the blend mode or in a mask. Figma also takes plain layers that lie
+    // over or beside one into the same picture, so if those do not fill it, every layer in the box.
+    const flat = list.filter((l) => l.flat);
+    const use = covers(flat, pictures[i]) ? flat : list;
+    if (use.some((l) => l.photo)) return Object.assign([], { short: true }); // a real picture is in it
+    return covers(use, pictures[i]) ? use : Object.assign([], { short: true });
   });
 }
 
@@ -99,6 +112,11 @@ export function match(pictures, layers) {
  * gradients and clips its own.
  */
 export function asMarkup(layer, svg, n, nameOf) {
+  if (layer.type === "FILL") {
+    const { x, y, w, h } = layer.box, r = Math.min(layer.radius, w / 2, h / 2);
+    const paint = `fill="${layer.fill.color}"` + (layer.fill.opacity < 0.995 ? ` fill-opacity="${+layer.fill.opacity.toFixed(3)}"` : "");
+    return { body: `<rect x="${+x.toFixed(3)}" y="${+y.toFixed(3)}" width="${+w.toFixed(3)}" height="${+h.toFixed(3)}"${r ? ` rx="${+r.toFixed(3)}"` : ""} ${paint} style="mix-blend-mode:multiply"/>`, defs: "" };
+  }
   let inner = /^<svg\b[^>]*>([\s\S]*)<\/svg>\s*$/.exec(svg.trim())?.[1];
   if (inner == null || /<image\b/.test(inner)) return null;
   let defs = "";
@@ -182,7 +200,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
       }
     }
     // Each layer exported alone: symbols as outlines, everything else with text kept as text.
-    const layers = todo.flatMap((t) => t.under.flat());
+    const layers = todo.flatMap((t) => t.under.flat()).filter((l) => l.type !== "FILL");
     const symbols = layers.filter((l) => l.type === "TEXT" && isPrivateUse(l.characters.trim()));
     const others = layers.filter((l) => !symbols.includes(l));
     const exported = new Map();
@@ -203,7 +221,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     const keptIn = [];
     for (const t of todo) {
       const parts = t.under.map((list) => {
-        const made = list.map((l) => (exported.has(l.id) ? asMarkup(l, exported.get(l.id), ++n, nameOf) : null));
+        const made = list.map((l) => (l.type === "FILL" || exported.has(l.id) ? asMarkup(l, exported.get(l.id), ++n, nameOf) : null));
         // All of a picture's layers or none: half a label is worse than a picture of it.
         if (list.short) { short++; return null; }
         if (!list.length) { noLayer++; return null; }

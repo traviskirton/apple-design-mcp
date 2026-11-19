@@ -128,7 +128,22 @@ rmSync(temp, { recursive: true, force: true });
   const flat = `<svg><image x="145.975" y="22.6289" width="26.042" height="26.2" preserveAspectRatio="none" xlink:href="data:image/png;base64,AAAA"/><image x="230.139" y="53" width="25.5" height="8.4" preserveAspectRatio="none" style="mix-blend-mode:multiply" href="https://example.test/ui-kit-svg/img/00ff.png"/><image id="p" width="4" height="4" xlink:href="data:image/png;base64,CCCC"/></svg>`;
   const pics = flattened(flat);
   const under = match(pics, flatLayers(root));
-  check(pics.length === 2 && under[0].map((l) => l.id).join() === "sym" && under[1].map((l) => l.id).join() === "lab", "each picture should get the layers under it, and only layers with the blend mode or in a mask");
+  check(pics.length === 2 && under[0].map((l) => l.id).join() === "sym" && under[1].map((l) => l.id).join() === "lab", "each picture should get the layers under it, and not a plain layer when those with the blend mode fill it");
+  {
+    const field = { id: "1:2", type: "COMPONENT", absoluteBoundingBox: bb(0, 0, 320, 200), children: [
+      { id: "F", type: "INSTANCE", blendMode: "LINEAR_BURN", cornerRadius: 100, fills: [{ type: "SOLID", color: { r: 0.5, g: 0.5, b: 0.5, a: 1 }, opacity: 0.2 }], absoluteBoundingBox: bb(10, 64, 300, 44), children: [
+        { id: "s", type: "TEXT", characters: "Search", absoluteBoundingBox: bb(50, 78, 60, 16), absoluteRenderBounds: bb(51, 79.5, 53, 12.8) } ] },
+      { id: "e", type: "VECTOR", absoluteBoundingBox: bb(32, 150, 26, 26) },
+      { id: "m", type: "TEXT", blendMode: "LINEAR_BURN", characters: "\u{1002B0}", absoluteBoundingBox: bb(340, 150, 26, 26) },
+      { id: "ph", type: "RECTANGLE", fills: [{ type: "IMAGE" }], absoluteBoundingBox: bb(0, 180, 20, 20) },
+    ] };
+    const boxes = [{ x: 10, y: 64, w: 300, h: 44 }, { x: 32, y: 150, w: 334, h: 26 }, { x: 0, y: 180, w: 20, h: 20 }];
+    const got = match(boxes, flatLayers(field));
+    check(got[0].map((l) => l.type).join() === "FILL,TEXT" && got[0][1].burn, "a group with the blend mode should bring its own fill and mark its layers");
+    check(asMarkup(got[0][0], undefined, 1, () => "x").body === '<rect x="10" y="64" width="300" height="44" rx="22" fill="#808080" fill-opacity="0.2" style="mix-blend-mode:multiply"/>', "a group's fill should be drawn as a rectangle: " + asMarkup(got[0][0], undefined, 1, () => "x").body);
+    check(got[1].map((l) => l.id).join() === "e,m", "a plain layer taken into the same picture should be found");
+    check(got[2].length === 0 && got[2].short, "a real picture should be left alone");
+  }
   const exports = {
     sym: `<svg width="68" height="28">\n<path id="&#244;&#128;" d="M2 1Z" fill="#FF0000"/>\n</svg>`,
     lab: `<svg width="68" height="12">\n<g id="Label" style="mix-blend-mode:plus-darker">\n<text fill="#1A1A1A" font-family="SF Pro" font-size="10"><tspan x="21" y="9">Tab 2</tspan></text>\n</g>\n</svg>`,
