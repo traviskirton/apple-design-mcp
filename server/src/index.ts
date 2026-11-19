@@ -11,7 +11,7 @@ import { z } from "zod";
 import { higPack, lookupHig, platformsIn, readPage } from "./hig.js";
 
 const SERVER_NAME = "apple-design";
-const SERVER_VERSION = "0.2.0";
+const SERVER_VERSION = "0.2.1";
 
 const HIG_DATE = higPack.pack_version;
 
@@ -38,7 +38,16 @@ const PACK = {
 
 const READ_ONLY = { readOnlyHint: true, idempotentHint: true, openWorldHint: false };
 
-function buildServer(): McpServer {
+/**
+ * Builds a tool reply and writes one log line for it: the tool, its inputs, the reply's size and
+ * the calling app. Read the lines with `npx wrangler tail` or in the Cloudflare dashboard.
+ */
+function reply(app: string, tool: string, args: unknown, text: string, isError = false) {
+  console.log(JSON.stringify({ tool, args, reply_chars: text.length, error: isError, app }));
+  return { content: [{ type: "text" as const, text }], isError };
+}
+
+function buildServer(app: string): McpServer {
   const server = new McpServer(
     { name: SERVER_NAME, version: SERVER_VERSION },
     {
@@ -67,7 +76,7 @@ function buildServer(): McpServer {
         answered_at: new Date().toISOString(),
         ...PACK,
       };
-      return { content: [{ type: "text", text: JSON.stringify(info, null, 2) }] };
+      return reply(app, "get_pack_info", {}, JSON.stringify(info, null, 2));
     },
   );
 
@@ -105,13 +114,12 @@ function buildServer(): McpServer {
       },
       annotations: READ_ONLY,
     },
-    async ({ queries, query, platforms, max_chars }) => {
+    async (args) => {
+      const { queries, query, platforms, max_chars } = args;
       const all = [...(queries ?? []), ...(query ? [query] : [])].slice(0, 8);
-      if (!all.length) {
-        return { content: [{ type: "text", text: "Pass `queries`: a list with one entry per topic." }], isError: true };
-      }
+      if (!all.length) return reply(app, "search_hig", args, "Pass `queries`: a list with one entry per topic.", true);
       const text = lookupHig(all, max_chars ?? 40000, platforms?.length ? platforms : platformsIn(all));
-      return { content: [{ type: "text", text }] };
+      return reply(app, "search_hig", args, text);
     },
   );
 
@@ -138,9 +146,9 @@ function buildServer(): McpServer {
       },
       annotations: READ_ONLY,
     },
-    async ({ page, section }) => {
-      const result = readPage(page, section);
-      return { content: [{ type: "text", text: result.text }], isError: !result.ok };
+    async (args) => {
+      const result = readPage(args.page, args.section);
+      return reply(app, "get_hig_page", args, result.text, !result.ok);
     },
   );
 
@@ -177,7 +185,7 @@ export default {
       // Stateless server: there is no stream to open (GET) or session to end (DELETE).
       if (request.method !== "POST") return rpcError(405, "Method not allowed. Send POST.", { Allow: "POST, OPTIONS" });
 
-      const server = buildServer();
+      const server = buildServer((request.headers.get("User-Agent") ?? "unknown").slice(0, 80));
       const transport = new WebStandardStreamableHTTPServerTransport({
         sessionIdGenerator: undefined, // stateless
         enableJsonResponse: true,

@@ -25,7 +25,7 @@ if (process.argv.includes("--if-missing") && existsSync(OUT)) process.exit(0);
 
 const CORRECT = /^(a checkmark in a circle|correct usage)/i;
 const INCORRECT = /^(an x in a circle|incorrect usage)/i;
-const DECORATIVE = /^a stylized representation\b.*six-color apple logo/i; // the banner at the top of each page
+const DECORATIVE = /six-color apple logo/i; // the banner at the top of each page
 
 function inline(nodes, refs) {
   let out = "";
