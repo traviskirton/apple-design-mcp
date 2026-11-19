@@ -139,7 +139,10 @@ function note(devices: Device[]): string {
       "and the system scales the picture down to the screen's pixels, so points times scale is larger than the pixel size. "
     : "";
   return `${SIZES_NOTE} ${downsampled}${insets}the position or size of the Dynamic Island and cameras, or fold and hinge positions; ` +
-    "take those from the guidelines (search_hig) and say so if you estimate them.";
+    "take those from the guidelines (search_hig) and say so if you estimate them." +
+    (devices.some((d) => d.name.includes("iPhone Duo"))
+      ? " For iPhone Duo, Apple's layout guides (layout margins, reserved regions and the fold avoidance region) are in get_design_values with topics [\"layout\"]."
+      : "");
 }
 
 /**

@@ -1,0 +1,421 @@
+## Color Scheme | Light | Dark
+Labels/Secondary | @Light/Labels/Secondary | @Dark/Labels/Secondary
+Accents/Blue | @Light/Accents/Blue | @Dark/Accents/Blue
+Labels/Primary | @Light/Labels/Primary | @Dark/Labels/Primary
+Backgrounds/Primary | @Light/Backgrounds/Primary | @Dark/Backgrounds/Primary
+Fills/Primary | @Light/Fills/Primary | @Dark/Fills/Primary
+Separators/Opaque | @Light/Separators/Opaque | @Dark/Separators/Opaque
+Labels/Tertiary | @Light/Labels/Tertiary | @Dark/Labels/Tertiary
+Labels/Quaternary | @Light/Labels/Quaternary | @Dark/Labels/Quaternary
+Backgrounds/Tertiary | @Light/Backgrounds/Tertiary | @Dark/Backgrounds/Tertiary
+Backgrounds/Secondary | @Light/Backgrounds/Secondary | @Dark/Backgrounds/Secondary
+Backgrounds – Grouped/Primary | @Light/Backgrounds – Grouped/Primary | @Dark/Backgrounds – Grouped/Primary
+Backgrounds – Grouped/Secondary | @Light/Backgrounds – Grouped/Secondary | @Dark/Backgrounds – Grouped/Secondary
+Backgrounds – Grouped/Tertiary | @Light/Backgrounds – Grouped/Tertiary | @Dark/Backgrounds – Grouped/Tertiary
+Accents/Red | @Light/Accents/Red | @Dark/Accents/Red
+Accents/Orange | @Light/Accents/Orange | @Dark/Accents/Orange
+Accents/Yellow | @Light/Accents/Yellow | @Dark/Accents/Yellow
+Accents/Green | @Light/Accents/Green | @Dark/Accents/Green
+Accents/Mint | @Light/Accents/Mint | @Dark/Accents/Mint
+Accents/Teal | @Light/Accents/Teal | @Dark/Accents/Teal
+Accents/Cyan | @Light/Accents/Cyan | @Dark/Accents/Cyan
+Accents/Brown | @Light/Accents/Brown | @Dark/Accents/Brown
+Accents/Indigo | @Light/Accents/Indigo | @Dark/Accents/Indigo
+Accents/Purple | @Light/Accents/Purple | @Dark/Accents/Purple
+Accents/Pink | @Light/Accents/Pink | @Dark/Accents/Pink
+Grays/Black | @Light/Grays/Black | @Dark/Grays/Black
+Grays/White | @Light/Grays/White | @Dark/Grays/White
+Grays/Gray | @Light/Grays/Gray | @Dark/Grays/Gray
+Grays/Gray 2 | @Light/Grays/Gray 2 | @Dark/Grays/Gray 2
+Grays/Gray 3 | @Light/Grays/Gray 3 | @Dark/Grays/Gray 3
+Grays/Gray 4 | @Light/Grays/Gray 4 | @Dark/Grays/Gray 4
+Grays/Gray 5 | @Light/Grays/Gray 5 | @Dark/Grays/Gray 5
+Grays/Gray 6 | @Light/Grays/Gray 6 | @Dark/Grays/Gray 6
+Fills/Secondary | @Light/Fills/Secondary | @Dark/Fills/Secondary
+Fills/Quaternary | @Light/Fills/Quaternary | @Dark/Fills/Quaternary
+Fills/Tertiary | @Light/Fills/Tertiary | @Dark/Fills/Tertiary
+Separators/Non-opaque | @Light/Separators/Non-opaque | @Dark/Separators/Non-opaque
+Mode | Light | Dark
+Overlays/Default | @Light/Overlays/Default | @Dark/Overlays/Default
+Overlays/Activity View Controller | @Light/Overlays/Activity View Controller | @Dark/Overlays/Activity View Controller
+Separators/Vibrant | @Light/Separators/Vibrant | @Dark/Separators/Vibrant
+Miscellaneous/Buttons/BG - Destructive | @Light/Miscellaneous/Buttons/BG - Destructive | @Dark/Miscellaneous/Buttons/BG - Destructive
+Labels - Vibrant/Primary | @Light/Labels - Vibrant/Primary | @Dark/Labels - Vibrant/Primary
+Labels - Vibrant/Secondary | @Light/Labels - Vibrant/Secondary | @Dark/Labels - Vibrant/Secondary
+Labels - Vibrant/Tertiary | @Light/Labels - Vibrant/Tertiary | @Dark/Labels - Vibrant/Tertiary
+Fills - Vibrant/Primary | @Light/Fills - Vibrant/Primary | @Dark/Fills - Vibrant/Primary
+Fills - Vibrant/Secondary | @Light/Fills - Vibrant/Secondary | @Dark/Fills - Vibrant/Secondary
+Fills - Vibrant/Tertiary | @Light/Fills - Vibrant/Tertiary | @Dark/Fills - Vibrant/Tertiary
+Labels - Vibrant/Quaternary | @Light/Labels - Vibrant/Quaternary | @Dark/Labels - Vibrant/Quaternary
+Miscellaneous/Segmented Control - Selected Fill | @Light/Miscellaneous/Segmented Control - Selected Fill | @Dark/Miscellaneous/Segmented Control - Selected Fill
+Backgrounds/Primary - Elevated | @Light/Backgrounds/Primary - Elevated | @Dark/Backgrounds/Primary - Elevated
+Backgrounds/Secondary - Elevated | @Light/Backgrounds/Secondary - Elevated | @Dark/Backgrounds/Secondary - Elevated
+Backgrounds/Tertiary - Elevated | @Light/Backgrounds/Tertiary - Elevated | @Dark/Backgrounds/Tertiary - Elevated
+Backgrounds – Grouped/Primary - Elevated | @Light/Backgrounds – Grouped/Primary - Elevated | @Dark/Backgrounds – Grouped/Primary - Elevated
+Backgrounds – Grouped/Secondary - Elevated | @Light/Backgrounds – Grouped/Secondary - Elevated | @Dark/Backgrounds – Grouped/Secondary - Elevated
+Backgrounds – Grouped/Tertiary - Elevated | @Light/Backgrounds – Grouped/Tertiary - Elevated | @Dark/Backgrounds – Grouped/Tertiary - Elevated
+Miscellaneous/Tab Bar Selection | @Light/Miscellaneous/Tab Bar Selection | @Dark/Miscellaneous/Tab Bar Selection
+Miscellaneous/Toggle/AX Label - Off | @Light/Miscellaneous/Toggle/AX Label - Off | @Dark/Miscellaneous/Toggle/AX Label - Off
+Miscellaneous/Sidebar/Sidebar - BG - Active | @Light/Miscellaneous/Sidebar/Sidebar - BG - Active | @Dark/Miscellaneous/Sidebar/Sidebar - BG - Active
+Miscellaneous/Sidebar/Sidebar - BG - Inactive | @Light/Miscellaneous/Sidebar/Sidebar - BG - Inactive | @Dark/Miscellaneous/Sidebar/Sidebar - BG - Inactive
+## Icons | Light | Dark | Clear Light
+Mode | Light | Dark | Clear Light
+## Kit | Mode
+Component Fill | #0000001a
+Component Stroke | #c399ff
+Subcomponent Stroke | #00000066
+Subcomponent Fill | #0000001a
+Section Fill | #0000001a
+Section Stroke | #00000066
+Scroll Edge Effect/Blur Radius | 10
+Liquid Glass/Light Angle | 0
+Liquid Glass/Refraction | 70
+Liquid Glass/Frost - Regular | 6
+Liquid Glass/Depth - Regular | 30
+Liquid Glass/Dispersion | 20
+Liquid Glass/Splay - Regular | 20
+Liquid Glass/Splay - Medium and Large | 20
+Liquid Glass/Depth - Medium and Large | 30
+Liquid Glass/Frost - Large | 16
+Liquid Glass/Frost - Medium | 16
+Top | 27
+Bottom | 62
+Liquid Glass/Opacity | 25
+Link | #98ccff
+Typography/Font family/SF Pro | SF Pro
+Typography/Font Weight/Medium | Medium
+Typography/Font Weight/Regular | Regular
+Typography/Font Weight/Regular-italic | Regular Italic
+Typography/Font Weight/Semibold | Semibold
+Typography/Font Weight/Bold | Bold
+Typography/Font Weight/Medium-italic | Medium Italic
+Typography/Font Weight/Semibold-italic | Semibold Italic
+Typography/Letter spacing/Footnote | -0.08
+Typography/Letter spacing/Subheadline | -0.23
+Typography/Letter spacing/Callout | -0.31
+Typography/Letter spacing/Title-3 | -0.45
+Typography/Letter spacing/Title-2 | -0.26
+Typography/Letter spacing/Title-1 | 0.38
+Typography/Letter spacing/Body | -0.43
+Typography/Letter spacing/Headline | -0.43
+Typography/Letter spacing/Caption-2 | 0.06
+Typography/Letter spacing/Caption-1 | 0
+Typography/Letter spacing/Large-title | 0.4
+## Dimensions | iPhone | iPad | iPhone Duo Inner Landscape | iPhone Duo Inner Portrait | iPhone Duo Outer Landscape | iPhone Duo Outer Portrait
+Sheet Top Radius | 38 | 32 | 38 | 38 | 38 | 38
+Sheet Bottom Radius | 58 | 32 | 58 | 58 | 58 | 58
+Grabber Width | 60 | 60 | 60 | 60 | 60 | 60
+Grabber Height | 4 | 4 | 4 | 4 | 4 | 4
+Margin | 16 | 20 | 20 | 20 | 20 | 20
+Menus/Section Titles/Font Size | 13 | 12 | 13 | 13 | 13 | 13
+Menus/Section Titles/Top Padding | 4 | 5 | 4 | 4 | 4 | 4
+Menus/Section Titles/Bottom Padding | 10 | 7 | 10 | 10 | 10 | 10
+Menus/Control Group/Padding Top | 6 | 9 | 6 | 6 | 6 | 6
+Menus/Control Group/Item Spacing | 5 | 1 | 5 | 5 | 5 | 5
+Menus/Control Group/Symbol Height | 22 | 19 | 22 | 22 | 22 | 22
+Menus/Menu Items/Subtitle Line Height | 18 | 16 | 18 | 18 | 18 | 18
+Menus/Menu Items/Title Font Size | @Size/Body | 15 | @Size/Body | @Size/Body | @Size/Body | @Size/Body
+Menus/Menu Items/Padding Top + Bottom | 10 | 11 | 10 | 10 | 10 | 10
+Menus/Menu Items/Label and Subtitle Padding Left | 0 | 4 | 0 | 0 | 0 | 0
+Menus/Menu Items/Padding Sides | 16 | 8 | 16 | 16 | 16 | 16
+Menus/Menu Items/Title Line Height | 20 | 18 | 20 | 20 | 20 | 20
+Menus/Menu Items/Separator Padding Top | 10 | 8 | 10 | 10 | 10 | 10
+Menus/Menu Items/Separator Padding Bottom | 10 | 9 | 10 | 10 | 10 | 10
+Status Bar/Height | 62 | 32 | 62 | 62 | 62 | 62
+Readable Content Margin | 260 | 260 | 260 | 260 | 260 | 260
+Home Indicator/Portrait Width | 144 | 273 | 144 | 144 | 144 | 144
+Home Indicator/Landscape Width | 226 | 315 | 226 | 226 | 226 | 226
+Home Indicator/Height | 5 | 5.5 | 5 | 5 | 5 | 5
+Popover Corner Radius | 38 | 38 | 38 | 38 | 38 | 38
+Other/Cut Corners TL | 30 | 2 | 20 | 20 | 0 | 0
+Other/Cut Corners TR | 30 | 2 | 20 | 20 | 0 | 20
+Other/Cut Corners BL | 30 | 2 | 20 | 20 | 20 | 0
+Other/Cut Corners BR | 30 | 2 | 20 | 20 | 20 | 20
+Activity View/Icon Spacing | 25.333 | 23 | 34 | 34.667 | 36 | 34
+Activity View/Row Margin Sides | 15 | 14 | 26 | 24 | 28 | 22
+Activity View/Row Margin Top | 16 | 18 | 16 | 16 | 16 | 16
+Activity View/Corner Radius Top | 38 | 38 | 38 | 38 | 42 | 40
+Activity View/Corner Radius Bottom | 0 | 0 | 38 | 38 | 0 | 0
+Activity View/Padding Top | @Status Bar/Height | 62 | 246 | 528 | 90 | 90
+Activity View/Padding Bottom | 0 | 0 | 30 | 30 | 0 | 0
+Activity View/Width | 402 | 402 | 541 | 541 | 402 | 402
+Activity View/Close Button WxH | 44 | 44 | 48 | 48 | 48 | 48
+Activity View/Margin Top | 16 | 16 | 16 | 16 | 16 | 16
+Activity View/Padding Sides | 0 | 0 | 250 | 109 | 8 | 8
+Activity View/Thumbnail Inset | 16 | 16 | 24 | 24 | 28 | 22
+Dock Radius | 38 | 38 | 24 | 32 | 24 | 24
+App Icon W+D | 64 | 68 | 60 | 60 | 60 | 60
+App Icon Title Offset | 0 | 0 | 0 | 0 | 0 | 0
+## Text Leading | Default | Loose | Tight
+Large (Default)/Large Title | 41 | 43 | 39
+Large (Default)/Title 1 | 34 | 36 | 32
+Large (Default)/Title 2 | 28 | 30 | 26
+Large (Default)/Title 3 | 25 | 27 | 23
+Large (Default)/Headline | 22 | 24 | 20
+Large (Default)/Body | 22 | 24 | 20
+Large (Default)/Callout | 21 | 23 | 19
+Large (Default)/Subheadline | 20 | 22 | 18
+Large (Default)/Footnote | 18 | 20 | 16
+Large (Default)/Caption 1 | 16 | 18 | 14
+Large (Default)/Caption 2 | 13 | 15 | 11
+xSmall/Large Title | 38 | 40 | 36
+xSmall/Title 1 | 31 | 33 | 29
+xSmall/Title 2 | 23 | 25 | 21
+xSmall/Title 3 | 22 | 24 | 20
+xSmall/Headline | 19 | 21 | 17
+xSmall/Body | 19 | 21 | 17
+xSmall/Callout | 18 | 20 | 16
+xSmall/Subheadline | 16 | 18 | 14
+xSmall/Footnote | 16 | 18 | 14
+xSmall/Caption 1 | 13 | 15 | 11
+xSmall/Caption 2 | 13 | 15 | 11
+Small/Large Title | 39 | 41 | 37
+Small/Title 1 | 32 | 34 | 30
+Small/Title 2 | 24 | 26 | 22
+Small/Title 3 | 23 | 25 | 21
+Small/Headline | 20 | 22 | 18
+Small/Body | 20 | 22 | 18
+Small/Callout | 19 | 21 | 17
+Small/Subheadline | 18 | 20 | 16
+Small/Footnote | 16 | 18 | 14
+Small/Caption 1 | 13 | 15 | 11
+Small/Caption 2 | 13 | 15 | 11
+Medium/Large Title | 40 | 42 | 38
+Medium/Title 1 | 33 | 35 | 31
+Medium/Title 2 | 28 | 30 | 26
+Medium/Title 3 | 24 | 26 | 22
+Medium/Headline | 21 | 23 | 19
+Medium/Body | 21 | 23 | 19
+Medium/Callout | 20 | 22 | 18
+Medium/Subheadline | 19 | 21 | 17
+Medium/Footnote | 16 | 18 | 14
+Medium/Caption 1 | 13 | 15 | 11
+Medium/Caption 2 | 13 | 15 | 11
+xLarge/Large Title | 43 | 45 | 41
+xLarge/Title 1 | 36 | 38 | 34
+xLarge/Title 2 | 30 | 32 | 28
+xLarge/Title 3 | 28 | 30 | 26
+xLarge/Headline | 24 | 26 | 22
+xLarge/Body | 24 | 26 | 22
+xLarge/Callout | 23 | 25 | 21
+xLarge/Subheadline | 22 | 24 | 20
+xLarge/Footnote | 20 | 22 | 18
+xLarge/Caption 1 | 19 | 21 | 17
+xLarge/Caption 2 | 18 | 20 | 16
+xxLarge/Large Title | 46 | 48 | 44
+xxLarge/Title 1 | 39 | 41 | 37
+xxLarge/Title 2 | 32 | 34 | 30
+xxLarge/Title 3 | 30 | 32 | 28
+xxLarge/Headline | 26 | 28 | 24
+xxLarge/Body | 26 | 28 | 24
+xxLarge/Callout | 24 | 26 | 22
+xxLarge/Subheadline | 24 | 26 | 22
+xxLarge/Footnote | 22 | 24 | 20
+xxLarge/Caption 1 | 21 | 23 | 19
+xxLarge/Caption 2 | 20 | 22 | 18
+xxxLarge/Large Title | 48 | 50 | 46
+xxxLarge/Title 1 | 41 | 43 | 39
+xxxLarge/Title 2 | 34 | 36 | 32
+xxxLarge/Title 3 | 32 | 34 | 30
+xxxLarge/Headline | 29 | 31 | 27
+xxxLarge/Body | 29 | 31 | 27
+xxxLarge/Callout | 28 | 30 | 26
+xxxLarge/Subheadline | 28 | 30 | 26
+xxxLarge/Footnote | 24 | 26 | 22
+xxxLarge/Caption 1 | 23 | 25 | 21
+xxxLarge/Caption 2 | 22 | 24 | 20
+AX1/Large Title | 52 | 54 | 50
+AX1/Title 1 | 46 | 48 | 44
+AX1/Title 2 | 41 | 43 | 39
+AX1/Title 3 | 38 | 40 | 36
+AX1/Headline | 34 | 36 | 32
+AX1/Body | 34 | 36 | 32
+AX1/Callout | 32 | 34 | 30
+AX1/Subheadline | 31 | 33 | 29
+AX1/Footnote | 29 | 31 | 27
+AX1/Caption 1 | 28 | 30 | 26
+AX1/Caption 2 | 25 | 27 | 23
+AX2/Large Title | 57 | 59 | 55
+AX2/Title 1 | 51 | 53 | 49
+AX2/Title 2 | 51 | 53 | 49
+AX2/Title 3 | 44 | 46 | 42
+AX2/Headline | 40 | 42 | 38
+AX2/Body | 40 | 42 | 38
+AX2/Callout | 39 | 41 | 37
+AX2/Subheadline | 37 | 39 | 35
+AX2/Footnote | 33 | 35 | 31
+AX2/Caption 1 | 32 | 34 | 30
+AX2/Caption 2 | 30 | 32 | 28
+AX3/Large Title | 61 | 63 | 59
+AX3/Title 1 | 57 | 59 | 55
+AX3/Title 2 | 52 | 54 | 50
+AX3/Title 3 | 51 | 53 | 49
+AX3/Headline | 48 | 50 | 46
+AX3/Body | 48 | 50 | 46
+AX3/Callout | 46 | 48 | 44
+AX3/Subheadline | 43 | 45 | 41
+AX3/Footnote | 40 | 42 | 38
+AX3/Caption 1 | 39 | 41 | 37
+AX3/Caption 2 | 35 | 37 | 33
+AX4/Large Title | 66 | 68 | 64
+AX4/Title 1 | 62 | 64 | 60
+AX4/Title 2 | 59 | 61 | 57
+AX4/Title 3 | 51 | 53 | 49
+AX4/Headline | 56 | 58 | 54
+AX4/Body | 56 | 58 | 54
+AX4/Callout | 52 | 54 | 50
+AX4/Subheadline | 50 | 52 | 48
+AX4/Footnote | 46 | 48 | 44
+AX4/Caption 1 | 44 | 46 | 42
+AX4/Caption 2 | 41 | 43 | 39
+AX5/Large Title | 70 | 72 | 68
+AX5/Title 1 | 68 | 70 | 66
+AX5/Title 2 | 66 | 68 | 64
+AX5/Title 3 | 65 | 67 | 63
+AX5/Headline | 62 | 64 | 60
+AX5/Body | 62 | 64 | 60
+AX5/Callout | 60 | 62 | 58
+AX5/Subheadline | 58 | 60 | 56
+AX5/Footnote | 52 | 54 | 50
+AX5/Caption 1 | 51 | 53 | 49
+AX5/Caption 2 | 48 | 50 | 46
+## Dynamic Type | Large (Default) | xSmall | Small | Medium | xLarge | xxLarge | xxxLarge | AX1 | AX2 | AX3 | AX4 | AX5
+Size/Large Title | 34 | 31 | 32 | 33 | 36 | 38 | 40 | 44 | 48 | 52 | 56 | 60
+Size/Title 1 | 28 | 25 | 26 | 27 | 30 | 32 | 34 | 38 | 43 | 48 | 53 | 58
+Size/Title 2 | 22 | 19 | 20 | 21 | 24 | 26 | 28 | 34 | 43 | 44 | 50 | 56
+Size/Title 3 | 20 | 17 | 18 | 19 | 22 | 24 | 26 | 31 | 37 | 43 | 43 | 55
+Size/Headline | 17 | 14 | 15 | 16 | 19 | 21 | 23 | 28 | 33 | 40 | 47 | 53
+Size/Body | 17 | 14 | 15 | 16 | 19 | 21 | 23 | 28 | 33 | 40 | 47 | 53
+Size/Callout | 16 | 13 | 14 | 15 | 18 | 20 | 22 | 26 | 32 | 38 | 44 | 51
+Size/Subheadline | 15 | 12 | 13 | 14 | 17 | 19 | 21 | 25 | 30 | 36 | 42 | 49
+Size/Footnote | 13 | 12 | 12 | 12 | 15 | 17 | 19 | 23 | 27 | 33 | 38 | 44
+Size/Caption 1 | 12 | 11 | 11 | 11 | 14 | 16 | 18 | 22 | 26 | 32 | 37 | 43
+Size/Caption 2 | 11 | 11 | 11 | 11 | 13 | 15 | 17 | 20 | 24 | 29 | 34 | 40
+Leading/Large Title | @Large (Default)/Large Title | @xSmall/Large Title | @xSmall/Large Title | @Medium/Large Title | @xLarge/Large Title | @xxLarge/Large Title | @xxxLarge/Large Title | @AX1/Large Title | @AX2/Large Title | @AX3/Large Title | @AX4/Large Title | @AX5/Large Title
+Leading/Title 1 | @Large (Default)/Title 1 | @xSmall/Title 1 | @xSmall/Title 1 | @Medium/Title 1 | @xLarge/Title 1 | @xxLarge/Title 1 | @xxxLarge/Title 1 | @AX1/Title 1 | @AX2/Title 1 | @AX3/Title 1 | @AX4/Title 1 | @AX5/Title 1
+Leading/Title 2 | @Large (Default)/Title 2 | @xSmall/Title 2 | @xSmall/Title 2 | @Medium/Title 2 | @xLarge/Title 2 | @xxLarge/Title 2 | @xxxLarge/Title 2 | @AX1/Title 2 | @AX2/Title 2 | @AX3/Title 2 | @AX4/Title 2 | @AX5/Title 2
+Leading/Title 3 | @Large (Default)/Title 3 | @xSmall/Title 3 | @xSmall/Title 3 | @Medium/Title 3 | @xLarge/Title 3 | @xxLarge/Title 3 | @xxxLarge/Title 3 | @AX1/Title 3 | @AX2/Title 3 | @AX3/Title 3 | @AX4/Title 3 | @AX5/Title 3
+Leading/Headline | @Large (Default)/Headline | @xSmall/Headline | @xSmall/Headline | @Medium/Headline | @xLarge/Headline | @xxLarge/Headline | @xxxLarge/Headline | @AX1/Headline | @AX2/Headline | @AX3/Headline | @AX4/Headline | @AX5/Headline
+Leading/Body | @Large (Default)/Body | @xSmall/Body | @xSmall/Body | @Medium/Body | @xLarge/Body | @xxLarge/Body | @xxxLarge/Body | @AX1/Body | @AX2/Body | @AX3/Body | @AX4/Body | @AX5/Body
+Leading/Callout | @Large (Default)/Callout | @xSmall/Callout | @xSmall/Callout | @Medium/Callout | @xLarge/Callout | @xxLarge/Callout | @xxxLarge/Callout | @AX1/Callout | @AX2/Callout | @AX3/Callout | @AX4/Callout | @AX5/Callout
+Leading/Subheadline | @Large (Default)/Subheadline | @xSmall/Subheadline | @xSmall/Subheadline | @Medium/Subheadline | @xLarge/Subheadline | @xxLarge/Subheadline | @xxxLarge/Subheadline | @AX1/Subheadline | @AX2/Subheadline | @AX3/Subheadline | @AX4/Subheadline | @AX5/Subheadline
+Leading/Footnote | @Large (Default)/Footnote | @xSmall/Footnote | @xSmall/Footnote | @Medium/Footnote | @xLarge/Footnote | @xxLarge/Footnote | @xxxLarge/Footnote | @AX1/Footnote | @AX2/Footnote | @AX3/Footnote | @AX4/Footnote | @AX5/Footnote
+Leading/Caption 1 | @Large (Default)/Caption 1 | @xSmall/Caption 1 | @xSmall/Caption 1 | @Medium/Caption 1 | @xLarge/Caption 1 | @xxLarge/Caption 1 | @xxxLarge/Caption 1 | @AX1/Caption 1 | @AX2/Caption 1 | @AX3/Caption 1 | @AX4/Caption 1 | @AX5/Caption 1
+Leading/Caption 2 | @Large (Default)/Caption 2 | @xSmall/Caption 2 | @xSmall/Caption 2 | @Medium/Caption 2 | @xLarge/Caption 2 | @xxLarge/Caption 2 | @xxxLarge/Caption 2 | @AX1/Caption 2 | @AX2/Caption 2 | @AX3/Caption 2 | @AX4/Caption 2 | @AX5/Caption 2
+## Color Contrast | Default | Increased Contrast
+Light/Labels/Secondary | #3c3c4399 | #3c3c43cc
+Light/Accents/Blue | #0088ff | #1e6ef4
+Light/Labels/Primary | #000000 | #000000
+Light/Backgrounds/Primary | #ffffff | #ffffff
+Light/Fills/Primary | #78787833 | #78787833
+Light/Separators/Opaque | #c6c6c8 | #c6c6c8
+Light/Labels/Tertiary | #3c3c434d | #3c3c43b2
+Light/Labels/Quaternary | #3c3c432e | #3c3c438c
+Light/Backgrounds/Tertiary | #ffffff | #ffffff
+Light/Backgrounds/Secondary | #f2f2f7 | #ebebf0
+Light/Backgrounds – Grouped/Primary | #f2f2f7 | #ebebf0
+Light/Backgrounds – Grouped/Secondary | #ffffff | #ffffff
+Light/Backgrounds – Grouped/Tertiary | #f2f2f7 | #ebebf0
+Light/Accents/Red | #ff383c | #e9152d
+Light/Accents/Orange | #ff8d28 | #c55300
+Light/Accents/Yellow | #ffcc00 | #a16a00
+Light/Accents/Green | #34c759 | #008932
+Light/Accents/Mint | #00c8b3 | #008575
+Light/Accents/Teal | #00c3d0 | #008198
+Light/Accents/Cyan | #00c0e8 | #007eae
+Light/Accents/Brown | #ac7f5e | #956d51
+Light/Accents/Indigo | #6155f5 | #564ade
+Light/Accents/Purple | #cb30e0 | #b02fc2
+Light/Accents/Pink | #ff2d55 | #e7124d
+Light/Grays/Black | #000000 | #000000
+Light/Grays/White | #ffffff | #ffffff
+Light/Grays/Gray | #8e8e93 | #6c6c70
+Light/Grays/Gray 2 | #aeaeb2 | #8e8e93
+Light/Grays/Gray 3 | #c7c7cc | #aeaeb2
+Light/Grays/Gray 4 | #d1d1d6 | #bcbcc0
+Light/Grays/Gray 5 | #e5e5ea | #d8d8dc
+Light/Grays/Gray 6 | #f2f2f7 | #ebebf0
+Light/Fills/Secondary | #78788029 | #78788029
+Light/Fills/Quaternary | #74748014 | #74748014
+Light/Fills/Tertiary | #7676801f | #7676801f
+Light/Separators/Non-opaque | #0000001f | #0000001f
+Light/Overlays/Default | #00000033 | #00000033
+Light/Overlays/Activity View Controller | #00000033 | #00000033
+Light/Separators/Vibrant | #e6e6e6 | #e6e6e6
+Light/Miscellaneous/Buttons/BG - Destructive | #ff383c24 | #ff383c24
+Light/Labels - Vibrant/Primary | #1a1a1a | #1a1a1a
+Light/Labels - Vibrant/Secondary | #727272 | #727272
+Light/Labels - Vibrant/Tertiary | #bfbfbf | #bfbfbf
+Light/Fills - Vibrant/Primary | #cccccc | #cccccc
+Light/Fills - Vibrant/Secondary | #e0e0e0 | #e0e0e0
+Light/Fills - Vibrant/Tertiary | #ededed | #ededed
+Light/Labels - Vibrant/Quaternary | #d9d9d9 | #d9d9d9
+Light/Miscellaneous/Segmented Control - Selected Fill | #ffffff | #ffffff
+Light/Backgrounds/Primary - Elevated | #ffffff | #ffffff
+Light/Backgrounds/Secondary - Elevated | #f2f2f7 | #ebebf0
+Light/Backgrounds/Tertiary - Elevated | #ffffff | #ffffff
+Light/Backgrounds – Grouped/Primary - Elevated | #f2f2f7 | #ebebf0
+Light/Backgrounds – Grouped/Secondary - Elevated | #ffffff | #ffffff
+Light/Backgrounds – Grouped/Tertiary - Elevated | #f2f2f7 | #ebebf0
+Light/Miscellaneous/Tab Bar Selection | @Light/Accents/Blue | @Light/Accents/Blue
+Light/Miscellaneous/Toggle/AX Label - Off | #b3b3b3 | #b3b3b3
+Light/Miscellaneous/Sidebar/Sidebar - BG - Active | #dae6f2 | #dae6f2
+Light/Miscellaneous/Sidebar/Sidebar - BG - Inactive | #edf4fa | #edf4fa
+Dark/Labels/Secondary | #ebebf5b2 | #ebebf5b2
+Dark/Accents/Blue | #0091ff | #5cb8ff
+Dark/Labels/Primary | #ffffff | #ffffff
+Dark/Backgrounds/Primary | #000000 | #000000
+Dark/Fills/Primary | #7878805c | #7878805c
+Dark/Separators/Opaque | #38383a | #38383a
+Dark/Labels/Tertiary | #ebebf54d | #ebebf58c
+Dark/Labels/Quaternary | #ebebf529 | #ebebf566
+Dark/Backgrounds/Tertiary | #2c2c2e | #2c2c2e
+Dark/Backgrounds/Secondary | #1c1c1e | #242426
+Dark/Backgrounds – Grouped/Primary | #000000 | #000000
+Dark/Backgrounds – Grouped/Secondary | #1c1c1e | #242426
+Dark/Backgrounds – Grouped/Tertiary | #2c2c2e | #363638
+Dark/Accents/Red | #ff4245 | #ff6165
+Dark/Accents/Orange | #ff9230 | #ffa056
+Dark/Accents/Yellow | #ffd600 | #fedf43
+Dark/Accents/Green | #30d158 | #4ad968
+Dark/Accents/Mint | #00dac3 | #54dfcb
+Dark/Accents/Teal | #00d2e0 | #3bddec
+Dark/Accents/Cyan | #3cd3fe | #6dd9ff
+Dark/Accents/Brown | #b78a66 | #dba679
+Dark/Accents/Indigo | #6d7cff | #a7aaff
+Dark/Accents/Purple | #db34f2 | #ea8dff
+Dark/Accents/Pink | #ff375f | #ff8ac4
+Dark/Grays/Black | #000000 | #000000
+Dark/Grays/White | #ffffff | #ffffff
+Dark/Grays/Gray | #8e8e93 | #aeaeb2
+Dark/Grays/Gray 2 | #636366 | #7c7c80
+Dark/Grays/Gray 3 | #48484a | #545456
+Dark/Grays/Gray 4 | #3a3a3c | #444446
+Dark/Grays/Gray 5 | #2c2c2e | #363638
+Dark/Grays/Gray 6 | #1c1c1e | #242426
+Dark/Fills/Secondary | #78788052 | #78788052
+Dark/Fills/Quaternary | #7676802e | #7676802e
+Dark/Fills/Tertiary | #7676803d | #7676803d
+Dark/Separators/Non-opaque | #ffffff2b | #ffffff2b
+Dark/Overlays/Default | #0000007a | #0000007a
+Dark/Overlays/Activity View Controller | #0000004a | #0000004a
+Dark/Separators/Vibrant | #1a1a1a | #1a1a1a
+Dark/Miscellaneous/Buttons/BG - Destructive | #ff424524 | #ff424524
+Dark/Labels - Vibrant/Primary | #f5f5f5 | #f5f5f5
+Dark/Labels - Vibrant/Secondary | #8a8a8a | #8a8a8a
+Dark/Labels - Vibrant/Tertiary | #404040 | #404040
+Dark/Fills - Vibrant/Primary | #333333 | #333333
+Dark/Fills - Vibrant/Secondary | #1f1f1f | #1f1f1f
+Dark/Fills - Vibrant/Tertiary | #121212 | #121212
+Dark/Labels - Vibrant/Quaternary | #262626 | #262626
+Dark/Miscellaneous/Segmented Control - Selected Fill | #ffffff45 | #ffffff45
+Dark/Backgrounds/Primary - Elevated | #1c1c1e | #1c1c1e
+Dark/Backgrounds/Secondary - Elevated | #2c2c2e | #2c2c2e
+Dark/Backgrounds/Tertiary - Elevated | #3a3a3c | #3a3a3c
+Dark/Backgrounds – Grouped/Primary - Elevated | #1c1c1e | #242426
+Dark/Backgrounds – Grouped/Secondary - Elevated | #2c2c2e | #363638
+Dark/Backgrounds – Grouped/Tertiary - Elevated | #3a3a3c | #3a3a3c
+Dark/Miscellaneous/Tab Bar Selection | #ffffff | #ffffff
+Dark/Miscellaneous/Toggle/AX Label - Off | #a6a6a6 | #a6a6a6
+Dark/Miscellaneous/Sidebar/Sidebar - BG - Active | #141517 | #141517
+Dark/Miscellaneous/Sidebar/Sidebar - BG - Inactive | #131414 | #131414

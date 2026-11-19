@@ -14,15 +14,16 @@ import { higPack, lookupHig, platformsIn, readPage } from "./hig.js";
 import { lookupSymbols, readSymbols, symbolPack } from "./symbols.js";
 import type { ShapeLoader } from "./symbols.js";
 import { technologyAssets, technologyPack } from "./technologies.js";
+import { designValues, valuesPack, VALUE_PLATFORMS, VALUE_TOPICS } from "./values.js";
 
 const SERVER_NAME = "apple-design";
-const SERVER_VERSION = "0.7.0";
+const SERVER_VERSION = "0.8.0";
 
 const HIG_DATE = higPack.pack_version;
 
 const PACK = {
   status: "partial",
-  note: "Human Interface Guidelines text, device screen sizes, device frames, SF Symbols (names and regular-weight shapes) and technology artwork (Sign in with Apple, AirPlay and others) are loaded. UI kits and design values are not loaded yet.",
+  note: "Human Interface Guidelines text, device screen sizes, device frames, SF Symbols (names and regular-weight shapes) and technology artwork (Sign in with Apple, AirPlay and others) and design values from Apple's UI kits (colors, text styles, sizes, materials, iPhone Duo layout guides) are loaded. UI kit components are not loaded yet.",
   pack_version: higPack.pack_version,
   sources: [
     {
@@ -54,9 +55,14 @@ const PACK = {
       technologies: technologyPack.source.technologies,
       assets: technologyPack.source.assets,
     },
+    {
+      name: valuesPack.source.name,
+      version: `${valuesPack.source.kits.join(" and ")}, read at ${valuesPack.generated_at}`,
+      values: valuesPack.source.values,
+    },
   ],
-  tools: ["get_pack_info", "search_hig", "get_hig_page", "get_device_metrics", "get_device_frame", "search_symbols", "get_symbol", "get_technology_assets"],
-  planned_tools: ["get_design_values", "make_asset_catalog", "make_app_icon", "search_ui_kit", "frame_screenshot"],
+  tools: ["get_pack_info", "search_hig", "get_hig_page", "get_device_metrics", "get_device_frame", "search_symbols", "get_symbol", "get_technology_assets", "get_design_values"],
+  planned_tools: ["make_asset_catalog", "make_app_icon", "search_ui_kit", "frame_screenshot"],
 };
 
 const READ_ONLY = { readOnlyHint: true, idempotentHint: true, openWorldHint: false };
@@ -93,7 +99,8 @@ function buildServer(app: string, env: Env, origin: string): McpServer {
         "enough; use get_hig_page only for a section that search_hig lists but does not include. For the size of a " +
         "device's screen, call get_device_metrics instead of estimating. For icons, call search_symbols once with " +
         "every icon the design needs; it returns real SF Symbols as SVG, so do not substitute another icon set. For " +
-        "an Apple technology's own logo or badge, such as Sign in with Apple or AirPlay, call get_technology_assets.",
+        "an Apple technology's own logo or badge, such as Sign in with Apple or AirPlay, call get_technology_assets. " +
+        "For system colors, text styles and standard sizes, call get_design_values instead of recalling them.",
     },
   );
 
@@ -316,6 +323,33 @@ function buildServer(app: string, env: Env, origin: string): McpServer {
     async (args) => {
       const result = technologyAssets(args.technologies ?? [], origin);
       return reply(app, "get_technology_assets", args, result.text, !result.ok);
+    },
+  );
+
+  server.registerTool(
+    "get_design_values",
+    {
+      title: "Get system colors, text styles and sizes",
+      description:
+        "Get the exact values Apple defines in its UI kits for iOS and iPadOS 27 and for macOS 27: system colors as hex " +
+        "for light and dark mode and increased contrast (labels, fills, backgrounds, separators, accents, grays), " +
+        "text styles (size, leading, tracking, weight), standard sizes (sheet and popover corner radii, margins, " +
+        "home indicator, menus; on macOS the metrics of buttons, toggles, sliders and other controls at each control " +
+        "size), materials and Liquid Glass settings. Call it once before choosing colors, type or spacing for an " +
+        "Apple-platform design, instead of recalling values. With topics [\"layout\"] it returns Apple's layout " +
+        "guides for iPhone Duo: layout margins, safe areas, reserved regions and the fold avoidance region.",
+      inputSchema: {
+        platform: z.enum(VALUE_PLATFORMS).optional().describe("\"ios\" (iPhone and iPad, the default) or \"macos\"."),
+        topics: z
+          .array(z.enum(VALUE_TOPICS))
+          .optional()
+          .describe("Which tables to return. Default: colors, text, sizes and materials. \"layout\" is returned only when named."),
+      },
+      annotations: READ_ONLY,
+    },
+    async (args) => {
+      const result = designValues(args.platform ?? "ios", args.topics ?? []);
+      return reply(app, "get_design_values", args, result.text, !result.ok);
     },
   );
 
