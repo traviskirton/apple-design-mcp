@@ -5,7 +5,7 @@ import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StreamableHTTPClientTransport } from "@modelcontextprotocol/sdk/client/streamableHttp.js";
 
 const url = process.argv[2] ?? "http://127.0.0.1:8787/mcp";
-const client = new Client({ name: "smoke-test", version: "0.2.0" });
+const client = new Client({ name: "smoke-test", version: "0.3.0" });
 
 function check(ok, what) {
   if (!ok) throw new Error(what);
@@ -29,7 +29,7 @@ try {
 
   const { tools } = await client.listTools();
   console.log("tools:", tools.map((t) => t.name).join(", "));
-  for (const name of ["get_pack_info", "search_hig", "get_hig_page"]) {
+  for (const name of ["get_pack_info", "search_hig", "get_hig_page", "get_device_metrics"]) {
     check(tools.some((t) => t.name === name), `${name} is missing`);
   }
 
@@ -65,6 +65,19 @@ try {
 
   const missing = await call("get_hig_page", { page: "no-such-page" });
   check(missing.isError && missing.text.includes("There is no guidelines page"), "a missing page should be an error");
+
+  const sizes = await call("get_device_metrics", { devices: ["iPhone Duo", "iPad Pro 13"] });
+  console.log(sizes.text.split("\n").filter((line) => /^\| i/.test(line)).join("\n"));
+  check(!sizes.isError && sizes.text.includes("iPhone Duo, outer screen (closed) | 466 × 678"), "get_device_metrics did not return the iPhone Duo outer screen");
+  check(sizes.text.includes("iPhone Duo, inner screen (open)"), "get_device_metrics did not return the iPhone Duo inner screen");
+  check(/\| iPad Pro 13-inch [^|]*\| 1032 × 1376 \|/.test(sizes.text), "get_device_metrics did not return the 13-inch iPad Pro");
+
+  const everyDevice = await call("get_device_metrics");
+  check(everyDevice.text.includes("## iPhone") && everyDevice.text.includes("## iPad"), "get_device_metrics should list devices by kind");
+  check(!everyDevice.text.includes("| iPhone 8 |"), "the default list should leave out devices the newest OS no longer supports");
+
+  const noDevice = await call("get_device_metrics", { devices: ["nokia"] });
+  check(noDevice.text.includes("No device matches"), "get_device_metrics should say when no device matches");
 
   console.log("\nOK");
   await client.close();
