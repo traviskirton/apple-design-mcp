@@ -128,6 +128,18 @@ try {
   check(!named.isError && named.text.includes("### heart.fill"), "get_symbol did not return heart.fill");
   check(named.text.includes("There is no symbol with this name"), "get_symbol should say when a name does not exist");
 
+  const weighted = await call("get_symbol", { names: ["heart.fill"], weight: "semibold" });
+  check(!weighted.isError && weighted.text.includes("### heart.fill"), "get_symbol with a weight did not return heart.fill");
+  if (weighted.text.includes("this is the regular weight")) console.log("WARNING: no other weights on this server (assets/symbol-weights is empty); regular only.");
+  else if (weighted.text.includes("<svg")) {
+    check(weighted.text.includes("/symbols/semibold/heart.fill.svg") && weighted.text.includes("Each SVG is the semibold weight"), "a semibold symbol should say so and give its address");
+    const regular = /```svg\n([\s\S]*?)\n```/.exec(named.text)?.[1];
+    const semibold = /```svg\n([\s\S]*?)\n```/.exec(weighted.text)?.[1];
+    check(regular && semibold && regular !== semibold, "the semibold shape should differ from the regular one");
+    const res = await fetch(new URL("/symbols/semibold/heart.fill.svg", url));
+    check(res.ok && (await res.text()).trim() === semibold.trim(), "the semibold address should serve the same SVG");
+  }
+
   const art = await call("get_technology_assets", { technologies: ["Sign in with Apple", "AirPlay", "nokia"] });
   console.log(art.text.split("\n").filter((line) => /^#{2,3} /.test(line)).join("\n"));
   check(!art.isError && art.text.includes("## Sign in with Apple"), "get_technology_assets did not return Sign in with Apple");

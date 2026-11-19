@@ -9,7 +9,9 @@
 //
 // - a layer with the blend mode goes into a group with mix-blend-mode: multiply;
 // - layers inside a mask take the color of the tint layer the mask showed (the selected tab);
-// - an SF Symbol becomes its outline, marked data-symbol="name"; other text stays text.
+// - an SF Symbol becomes its outline, marked data-symbol="name" (and data-symbol-weight unless regular);
+//   other text stays text. A symbol that is itself the mask (the iPhone Duo tab) does not export
+//   alone, so it is drawn from the extractor's shapes in server/assets, in the layer's weight.
 //
 //   node scripts/redraw-flattened.mjs [--kit ios] [--only 3:72207,10462:23337] [--dry]
 //
@@ -19,6 +21,7 @@ import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { download, figma, inParallel, render, workingToken } from "./export-ui-kit-svg.mjs";
+import { placeSymbol, readShape, weightName } from "./symbol-shapes.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const NODES = 6; // drawings per request for their layers
@@ -62,19 +65,38 @@ export function flatLayers(root) {
     const own = node.blendMode === "LINEAR_BURN" && node !== root && box ? solid(node) : null;
     if (own) out.push({ id: node.id, type: "FILL", name: node.name, box, shown: box, characters: "", burn: true, tint: null, flat: true, photo: false, fill: { color: hex(own.color), opacity: (own.opacity ?? 1) * (own.color.a ?? 1) * (node.opacity ?? 1) }, radius: node.cornerRadius ?? 0 });
     const children = node.children ?? [];
+    let masked = false;
     children.forEach((child, i) => {
       if (child.isMask) {
-        // What the mask shows is the layers after it; its own layers only give the shape.
+        // What the mask shows is the layers after it; its own layers only give the shape. Plain
+        // fills after it only color that shape, so they are not drawn themselves.
+        masked = true;
         const over = children.slice(i + 1).filter((s) => s.visible !== false && solid(s));
         const by = over.filter((s) => s.blendMode === "LINEAR_BURN").at(-1) ?? over.at(-1);
         const fill = by ? solid(by) : null;
-        walk(child, false, fill ? { color: hex(fill.color), opacity: (fill.opacity ?? 1) * (fill.color.a ?? 1) * (by.opacity ?? 1) } : { color: "#000000", opacity: 1 });
+        const paint = fill ? { color: hex(fill.color), opacity: (fill.opacity ?? 1) * (fill.color.a ?? 1) * (by.opacity ?? 1) } : { color: "#000000", opacity: 1 };
+        if (child.type === "TEXT" && child.visible !== false && isPrivateUse((child.characters ?? "").trim())) {
+          // The symbol is the mask itself, which Figma does not export: it is drawn from our own
+          // shapes, where the fills it shows lie (Figma reports them already cut to the glyph).
+          const cut = over.map((s) => rel(s.absoluteRenderBounds)).filter(Boolean);
+          const shown = cut.length ? union(cut) : rel(child.absoluteRenderBounds) ?? rel(child.absoluteBoundingBox);
+          if (shown) out.push({ id: child.id, type: "SYMBOL", name: child.name, box: shown, shown, characters: child.characters, weight: child.style?.fontWeight, burn: false, tint: paint, flat: true, photo: false });
+          return;
+        }
+        walk(child, false, paint);
+      } else if (masked && LEAVES.has(child.type) && child.type !== "TEXT" && solid(child)) {
+        // A fill shown through the mask above: its color is in the masked layers already.
       } else walk(child, tint ? false : burns, tint);
     });
   };
   walk(root, false, null);
   return out;
 }
+
+const union = (boxes) => {
+  const x0 = Math.min(...boxes.map((b) => b.x)), y0 = Math.min(...boxes.map((b) => b.y));
+  return { x: x0, y: y0, w: Math.max(...boxes.map((b) => b.x + b.w)) - x0, h: Math.max(...boxes.map((b) => b.y + b.h)) - y0 };
+};
 
 const inside = (l, p) => l.x >= p.x - SLACK && l.y >= p.y - SLACK && l.x + l.w <= p.x + p.w + SLACK && l.y + l.h <= p.y + p.h + SLACK;
 
@@ -112,6 +134,13 @@ export function match(pictures, layers) {
  * gradients and clips its own.
  */
 export function asMarkup(layer, svg, n, nameOf) {
+  if (layer.type === "SYMBOL") {
+    // `svg` is our own shape of the symbol in the layer's weight.
+    const chars = [...layer.characters.trim()];
+    if (!svg || chars.length !== 1) return null;
+    const body = placeSymbol(svg, layer.box, layer.tint, nameOf(chars[0].codePointAt(0)), weightName(layer.weight));
+    return body ? { body, defs: "" } : null;
+  }
   if (layer.type === "FILL") {
     const { x, y, w, h } = layer.box, r = Math.min(layer.radius, w / 2, h / 2);
     const paint = `fill="${layer.fill.color}"` + (layer.fill.opacity < 0.995 ? ` fill-opacity="${+layer.fill.opacity.toFixed(3)}"` : "");
@@ -129,7 +158,8 @@ export function asMarkup(layer, svg, n, nameOf) {
   }
   if (layer.type === "TEXT" && isPrivateUse(layer.characters.trim())) {
     const names = [...layer.characters.trim()].map((ch) => nameOf(ch.codePointAt(0))).join(" ");
-    inner = inner.replace(/<path id="[^"]*"/g, "<path").replace(/<path /g, `<path data-symbol="${names}" `);
+    const weight = weightName(layer.weight);
+    inner = inner.replace(/<path id="[^"]*"/g, "<path").replace(/<path /g, `<path data-symbol="${names}" ` + (weight !== "regular" ? `data-symbol-weight="${weight}" ` : ""));
   } else if (layer.type === "TEXT") {
     inner = inner.replace(/font-family="(SF [^",]*|New York[^",]*)"/g, 'font-family="$1, -apple-system, system-ui, sans-serif"');
     if (layer.weight && layer.weight !== 400 && !/font-weight=/.test(inner)) inner = inner.replace(/<text\b([^>]*)>/g, `<text$1 font-weight="${layer.weight}">`);
@@ -171,6 +201,15 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     if (m) symbolNames.set(parseInt(m[1], 16), m[2]);
   }
   const nameOf = (code) => symbolNames.get(code) ?? "U+" + code.toString(16).toUpperCase();
+  // A symbol that is itself a mask is drawn from the extractor's shapes, in the layer's weight when that is there.
+  const assets = join(here, "..", "assets");
+  const ownShape = (l) => {
+    const name = nameOf([...l.characters.trim()][0].codePointAt(0));
+    const svg = readShape(assets, name, weightName(l.weight));
+    if (svg) return svg;
+    l.weight = 400; // the weight is not extracted yet: the regular shape, marked as such
+    return readShape(assets, name);
+  };
   let token = null, n = 0;
 
   for (const [kit, key] of Object.entries(files)) {
@@ -200,7 +239,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
       }
     }
     // Each layer exported alone: symbols as outlines, everything else with text kept as text.
-    const layers = todo.flatMap((t) => t.under.flat()).filter((l) => l.type !== "FILL");
+    const layers = todo.flatMap((t) => t.under.flat()).filter((l) => l.type !== "FILL" && l.type !== "SYMBOL");
     const symbols = layers.filter((l) => l.type === "TEXT" && isPrivateUse(l.characters.trim()));
     const others = layers.filter((l) => !symbols.includes(l));
     const exported = new Map();
@@ -221,7 +260,10 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     const keptIn = [];
     for (const t of todo) {
       const parts = t.under.map((list) => {
-        const made = list.map((l) => (l.type === "FILL" || exported.has(l.id) ? asMarkup(l, exported.get(l.id), ++n, nameOf) : null));
+        const made = list.map((l) =>
+          l.type === "SYMBOL" ? asMarkup(l, ownShape(l), ++n, nameOf)
+          : l.type === "FILL" || exported.has(l.id) ? asMarkup(l, exported.get(l.id), ++n, nameOf)
+          : null);
         // All of a picture's layers or none: half a label is worse than a picture of it.
         if (list.short) { short++; return null; }
         if (!list.length) { noLayer++; return null; }

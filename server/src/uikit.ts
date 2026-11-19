@@ -286,7 +286,8 @@ const DRAWING =
   "Its width and height are the component's own size in points; a shadow reaches past that box. In HTML, put the SVG into the page, where its " +
   "shadow shows around it and its labels and icons can be changed, or show it unchanged by its address in an img, which cuts the shadow off at the box. " +
   "Layers are groups and shapes with the layer's name as id. Labels are text elements: change a label by editing its text, and keep its position and font. " +
-  "Icons are paths marked data-symbol with the SF Symbol's name: to change an icon, replace those paths with the shape get_symbol returns, at the same place and size. " +
+  "Icons are paths marked data-symbol with the SF Symbol's name and data-symbol-weight with its weight (regular when it has none): to change an icon, " +
+  "replace those paths with the shape get_symbol returns for that weight, at the same place and size. " +
   "Text is set in SF Pro and falls back to the system font. Liquid Glass is drawn as a translucent fill with its shadow: on a light background its colors match Apple's kit, " +
   "and the live material's refraction and bright edge are not in it. " +
   "Ids can repeat between two SVGs, so give each one's ids a prefix (also inside url(#…)) when several go into one page.";
