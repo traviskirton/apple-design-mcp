@@ -1,5 +1,6 @@
 // UI kit lookup: the components of Apple's UI kits for Figma (iOS and iPadOS, macOS, watchOS),
-// each as an outline of its layers with sizes, layout, colours and text styles.
+// each as Apple's own drawing (an SVG that Figma exported from the kit) and as an outline of its
+// layers with sizes, layout, colours and text styles.
 import pack from "./pack/ui-kit.js";
 import type { Kit, KitComponent, KitVariant } from "./pack/ui-kit.js";
 
@@ -9,6 +10,12 @@ export type KitId = (typeof KIT_IDS)[number];
 
 /** Loads the outlines of one component: the blocks of "ui-kit/<kit>/<id>.txt", or null when the file is missing. */
 export type OutlineLoader = (kit: string, id: string) => Promise<string | null>;
+
+/** Loads Apple's drawing of one variant, "ui-kit-svg/<kit>/<file>", or null when the file is missing. */
+export type DrawingLoader = (kit: string, file: string) => Promise<string | null>;
+
+/** The file name of a variant's drawing: its Figma node id "3:72207" as "3-72207.svg". */
+export const drawingFile = (node: string) => node.replace(/:/g, "-") + ".svg";
 
 // ---------- words ----------
 
@@ -226,6 +233,16 @@ function header(kit: Kit, c: KitComponent): string[] {
   return lines;
 }
 
+const DRAWING =
+  "Using a drawing: the SVG is Apple's own component, exported from Apple's UI kit by Figma. Use it as the component; do not redraw it. " +
+  "Its width and height are the component's own size in points; a shadow reaches past that box. In HTML, put the SVG into the page, where its " +
+  "shadow shows around it and its labels and icons can be changed, or show it unchanged by its address in an img, which cuts the shadow off at the box. " +
+  "Layers are groups and shapes with the layer's name as id. Labels are text elements: change a label by editing its text, and keep its position and font. " +
+  "Icons are paths marked data-symbol with the SF Symbol's name: to change an icon, replace those paths with the shape get_symbol returns, at the same place and size. " +
+  "Text is set in SF Pro and falls back to the system font. Liquid Glass is drawn as a translucent fill with its shadow: on a light background its colors match Apple's kit, " +
+  "and the live material's refraction and bright edge are not in it. " +
+  "Ids can repeat between two SVGs, so give each one's ids a prefix (also inside url(#…)) when several go into one page.";
+
 const LEGEND =
   "Reading an outline: every line is one layer, indented under the layer that holds it. It gives the layer's name, kind, width × height in points, " +
   "then its layout (row or column is a flex container with that gap and padding; \"hugs\" means sized by its content, \"fills\" means stretched to its parent), " +
@@ -243,15 +260,21 @@ class Budget {
   }
 }
 
+/** Room kept for each query's heading, properties and notes when the drawings are given their share of the reply. */
+const HEADER_ROOM = 1500;
+
 /**
- * The components that best match each query, with the outline of the variant asked for and of
- * the parts it is built from. Without queries: the list of every published component of the kit.
+ * The components that best match each query: Apple's drawing of the variant asked for, the outline
+ * of its layers and of the parts it is built from. Without queries: the list of every published
+ * component of the kit.
  */
 export async function searchUiKit(
   queries: string[],
   asked: KitId | undefined,
   maxChars: number,
   load: OutlineLoader,
+  loadDrawing: DrawingLoader,
+  origin: string,
 ): Promise<{ text: string; ok: boolean }> {
   if (!pack.kits.length) return { text: "No UI kit is loaded on this server yet.", ok: false };
   const source = `Source: ${pack.source.name} (${pack.source.kits.join(", ")}), ${pack.source.url}, read ${pack.pack_version}.`;
@@ -264,56 +287,123 @@ export async function searchUiKit(
     return cache.get(key)!;
   };
 
+  // First what every query found, with the drawing of the variant it will show.
+  const found = await Promise.all(
+    queries.map(async (query) => {
+      const { kit: kitId, hits, q } = findComponents(query, asked);
+      const kit = pack.kits.find((k) => k.id === kitId);
+      if (!kit || !hits.length) return { query, kitId, kit, hits, q, variant: undefined, svg: null, inline: false };
+      const variant = pickVariant(hits[0].c, [...q.content, ...q.devices]);
+      const svg = variant.node ? await loadDrawing(kit.id, drawingFile(variant.node)) : null;
+      return { query, kitId, kit, hits, q, variant, svg: svg?.trim() || null, inline: false };
+    }),
+  );
+
+  // The drawings that go into the reply itself: as many as fit, smallest first. The others are given by address.
+  let pool = maxChars - HEADER_ROOM * queries.length;
+  const inReply = new Set<string>();
+  for (const f of found.filter((x) => x.svg).sort((a, b) => a.svg!.length - b.svg!.length)) {
+    const key = `${f.kit!.id}/${f.variant!.node}`;
+    if (inReply.has(key)) continue;
+    if (f.svg!.length > pool) break;
+    pool -= f.svg!.length;
+    inReply.add(key);
+    f.inline = true;
+  }
+
   const parts: string[] = [];
   const shown = new Set<string>();
-  let found = 0;
+  let matched = 0;
+  let drawings = 0;
   let missingFiles = false;
+  const undrawn: string[] = [];
   // What one query does not use is left for the ones after it.
-  let left = maxChars;
+  let left = maxChars - found.reduce((n, f) => n + (f.inline ? f.svg!.length : 0), 0);
 
-  for (const [n, query] of queries.entries()) {
-    const { kit: kitId, hits, q } = findComponents(query, asked);
-    const kit = pack.kits.find((k) => k.id === kitId);
+  for (const [n, f] of found.entries()) {
+    const { query, kit, hits, q } = f;
     parts.push(`## "${query}"`);
     if (!kit) {
-      parts.push(`The ${kitId} kit is not loaded. Loaded: ${pack.kits.map((k) => `${k.id} (${k.name})`).join(", ")}.`);
+      parts.push(`The ${f.kitId} kit is not loaded. Loaded: ${pack.kits.map((k) => `${k.id} (${k.name})`).join(", ")}.`);
       continue;
     }
-    if (!hits.length) {
+    if (!hits.length || !f.variant) {
       parts.push(
         `No component of the ${kit.name} kit matches. Its pages: ${kit.pages.filter((p) => !p.startsWith("_")).join(", ")}. ` +
           "Call search_ui_kit without `queries` to list every component.",
       );
       continue;
     }
-    found++;
+    matched++;
     const budget = new Budget(Math.floor(left / (queries.length - n)));
     const before = budget.left;
-    const queryWords = [...q.content, ...q.devices];
     const { c } = hits[0];
-    const variant = pickVariant(c, queryWords);
+    const variant = f.variant;
     const all = await outlines(kit.id, c.id);
-    const block: string[] = [`### ${c.name}`, ...header(kit, c)];
+    const folder = `${origin}/ui-kit-svg/${kit.id}/`;
+    const block: string[] = [`### ${c.name}`, ...header(kit, c), `Shown: ${variant.name || "the component"}, ${size(variant)} points.`];
+
+    // Apple's drawing first: it is the component. A second query that shows the same variant points to the first.
+    const drawingKey = `drawing/${kit.id}/${variant.node}`;
+    let inlined = 0;
+    if (f.svg) {
+      drawings++;
+      const address = folder + drawingFile(variant.node);
+      if (shown.has(drawingKey)) block.push(`Apple's drawing of it is the one above, at ${address}.`);
+      else if (f.inline) {
+        block.push(`Apple's drawing of it, also at ${address}:`, "```svg\n" + f.svg + "\n```");
+        inlined = f.svg.length;
+      } else {
+        const wanted = Math.ceil((f.svg.length + 2 * HEADER_ROOM) / 5000) * 5000;
+        block.push(
+          `Apple's drawing of it is at ${address}: ${Math.ceil(f.svg.length / 1000)} KB of SVG, more than this reply has room for. ` +
+            "Show it by that address in an img" +
+            (wanted <= 100000 ? `, or call again with this query alone and max_chars ${wanted} to get the SVG itself.` : "."),
+        );
+      }
+      shown.add(drawingKey);
+    } else undrawn.push(c.name);
+
+    const others = c.variants.filter((v) => v !== variant);
+    const otherVariants = !others.length
+      ? null
+      : `Other variants: ${others
+          .slice(0, 8)
+          .map((v) => `${v.name} (${size(v)}${f.svg && v.node ? `, ${drawingFile(v.node)}` : ""})`)
+          .join("; ")}${others.length > 8 ? `; and ${others.length - 8} more` : ""}. ` +
+        (f.svg ? `Their drawings are in ${folder} under these file names. ` : "") +
+        "Add a variant's words to the query to get it in full.";
+
     if (!all) {
       missingFiles = true;
       block.push(`Variant sizes: ${c.variants.slice(0, 12).map((v) => `${v.name || "default"} ${size(v)}`).join("; ")}.`);
-    } else {
-      const text = all[variant.outline] ?? "";
-      block.push(`Shown: ${variant.name || "the component"}, ${size(variant)}.`, "```text\n" + text + "\n```");
-      shown.add(`${kit.id}/${c.id}/${variant.outline}`);
-      const others = c.variants.filter((v) => v !== variant);
-      if (others.length) {
-        block.push(
-          `Other variants: ${others.slice(0, 8).map((v) => `${v.name} (${size(v)})`).join("; ")}` +
-            `${others.length > 8 ? `; and ${others.length - 8} more` : ""}. Add a variant's words to the query to get its outline.`,
-        );
-      }
     }
-    budget.left -= block.join("\n\n").length;
+    if (otherVariants) block.push(otherVariants);
+    // The drawing has its room already; the rest of the block comes out of the query's share.
+    budget.left -= block.join("\n\n").length - inlined;
+
+    // The outline of its layers: always without a drawing in the reply, else while there is room.
+    let outlineShown = false;
+    if (all) {
+      const text = all[variant.outline] ?? "";
+      const fenced = "```text\n" + text + "\n```";
+      const at = otherVariants ? block.length - 1 : block.length;
+      if (!inlined) {
+        budget.left -= fenced.length;
+        block.splice(at, 0, f.svg ? "Its layers:" : "Its layers (no drawing of it is on this server):", fenced);
+        outlineShown = true;
+      } else if (budget.take(fenced)) {
+        block.splice(at, 0, "Its layers, with the spacing, sizes, colors and text styles by Apple's names:", fenced);
+        outlineShown = true;
+      } else {
+        block.splice(at, 0, "The outline of its layers is left out for size. Call again with this query alone to get it.");
+      }
+      if (outlineShown) shown.add(`${kit.id}/${c.id}/${variant.outline}`);
+    }
     parts.push(...block);
 
     // The parts the shown variant is built from, two levels deep, while the reply has room.
-    if (all) {
+    if (all && outlineShown) {
       const partBlocks: string[] = [];
       const queue: { text: string; owner: KitComponent; depth: number }[] = [{ text: all[variant.outline] ?? "", owner: c, depth: 0 }];
       const skipped: string[] = [];
@@ -340,7 +430,7 @@ export async function searchUiKit(
           if (item.depth < 1) queue.push({ text, owner: target, depth: item.depth + 1 });
         }
       }
-      if (partBlocks.length) parts.push("Parts:", ...partBlocks);
+      if (partBlocks.length) parts.push(f.svg ? "Parts (already drawn inside the drawing above):" : "Parts:", ...partBlocks);
       if (skipped.length) parts.push(`Parts left out for size: ${[...new Set(skipped)].map((n) => `"${n}"`).join(", ")}. Pass a name as a query to get it.`);
     }
 
@@ -352,10 +442,13 @@ export async function searchUiKit(
     left -= before - budget.left;
   }
 
-  if (found) parts.push(LEGEND);
+  if (drawings) parts.push(DRAWING);
+  if (matched) parts.push(LEGEND);
+  if (undrawn.length && drawings) parts.push(`No drawing is on this server for ${[...new Set(undrawn)].map((n) => `"${n}"`).join(", ")}; build ${undrawn.length > 1 ? "them" : "it"} from the outline.`);
+  else if (undrawn.length) parts.push("Apple's drawings of these components are not on this server, so each is given as an outline of its layers to build from.");
   if (missingFiles) parts.push("The outline files are not deployed on this server, so only names, properties and sizes are given.");
   parts.push(source);
-  return { text: parts.join("\n\n"), ok: found > 0 };
+  return { text: parts.join("\n\n"), ok: matched > 0 };
 }
 
 /** The components an outline's instance layers point to, with the variant each one uses. */
@@ -385,7 +478,7 @@ function listing(kitId: KitId): string {
   const others = pack.kits.filter((k) => k.id !== kit.id).map((k) => `"${k.id}" (${k.name})`);
   lines.push(
     "",
-    "Call search_ui_kit with `queries`, such as [\"tab bar\", \"alert\"], to get a component's layers, sizes, layout and colors. " +
+    "Call search_ui_kit with `queries`, such as [\"tab bar\", \"alert\"], to get Apple's drawing of a component with its layers, sizes, layout and colors. " +
       "The \"Examples\" page holds whole screens built from the components." +
       (others.length ? ` Other kits: ${others.join(", ")}.` : ""),
   );
