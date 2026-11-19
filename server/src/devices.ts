@@ -6,13 +6,19 @@ export const devicePack = pack;
 
 export const FAMILIES = ["iphone", "ipad", "watch", "tv", "vision"] as const;
 
+const aboutVision = (q: string) => /vision/i.test(q);
+
 const FAMILY_TITLE: Record<string, string> = {
   iphone: "iPhone",
   ipad: "iPad",
   watch: "Apple Watch",
   tv: "Apple TV",
-  vision: "Apple Vision Pro",
 };
+
+const VISION =
+  "Apple Vision Pro has no screen size to design to: apps appear in resizable windows in the person's space. " +
+  "A window is 1280 × 720 points by default (see the \"windows\" page with search_hig).";
+const TV = "tvOS lays out every Apple TV screen at 1920 × 1080 points, always landscape; 4K models draw it at @2x.";
 
 // "iPhone 18 Pro Max" -> ["iphone", "18", "pro", "max"]; "13-inch" and "13 inch" read the same.
 const tokens = (s: string) =>
@@ -23,7 +29,19 @@ const tokens = (s: string) =>
     .split(/[^a-z0-9.]+/)
     .filter(Boolean);
 
-const named = pack.devices.map((device) => ({ device, words: new Set(tokens(device.name)) }));
+// Left out of every reply:
+// - Apple Vision Pro, which has no screen to design to; Xcode's entry is the simulator's window.
+// - Output modes of another device, such as "Apple TV 4K (3rd generation) (at 1080p)".
+// - Variants with the same screens as the device they are named after, such as "iPad Pro 13-inch (M5) (16GB)".
+const screensOf = new Map(pack.devices.map((d) => [d.name, JSON.stringify(d.screens)]));
+const devices: Device[] = pack.devices
+  .filter((d) => d.family !== "vision" && !/\(at [^)]+\)$/.test(d.name))
+  .filter((d) => {
+    const base = d.name.replace(/ \([^)]*\)$/, "");
+    return base === d.name || screensOf.get(base) !== JSON.stringify(d.screens);
+  });
+
+const named = devices.map((device) => ({ device, words: new Set(tokens(device.name)) }));
 
 /** Devices whose name holds every word of the query. An exact name wins over longer names. */
 function find(query: string): Device[] {
@@ -52,12 +70,12 @@ function table(devices: Device[]): string {
     d.screens.map((s) => {
       const name = s.role ? `${d.name}, ${ROLE[s.role]}` : d.name;
       const island = d.dynamic_island && s.role !== "inner" ? "yes" : "";
-      const natural = s.natural_orientation ?? "portrait";
+      const natural = d.family === "tv" ? "landscape" : (s.natural_orientation ?? "portrait");
       return `| ${name} | ${num(s.width_pt)} × ${num(s.height_pt)} | @${num(s.scale)}x | ${s.width_px} × ${s.height_px} | ${s.ppi ?? ""} | ${radius(s.corner_radius_pt)} | ${natural} | ${island} |`;
     }),
   );
   return [
-    "| Device | Screen in portrait (points) | Scale | Screen (pixels) | Pixels per inch | Corner radius (points) | Natural orientation | Dynamic Island |",
+    "| Device | Screen (points) | Scale | Screen (pixels) | Pixels per inch | Corner radius (points) | Natural orientation | Dynamic Island |",
     "| --- | --- | --- | --- | --- | --- | --- | --- |",
     ...rows,
   ].join("\n");
@@ -68,13 +86,13 @@ function byFamily(devices: Device[]): string {
   const order = (f: string) => (FAMILIES as readonly string[]).indexOf(f);
   families.sort((a, b) => order(a) - order(b));
   return families
-    .map((f) => `## ${FAMILY_TITLE[f] ?? f}\n\n${table(devices.filter((d) => d.family === f))}`)
+    .map((f) => `## ${FAMILY_TITLE[f] ?? f}\n\n${table(devices.filter((d) => d.family === f))}` + (f === "tv" ? `\n\n${TV}` : ""))
     .join("\n\n");
 }
 
 const NOTE =
-  "Every size is given with the screen in portrait; swap width and height for landscape. Corner radii are listed " +
-  "for that same portrait position. Design at the size in points; the scale gives the pixel size for exported " +
+  "iPhone, iPad and Apple Watch sizes are given with the screen in portrait; swap width and height for landscape. " +
+  "Corner radii are listed for that same portrait position. Design at the size in points; the scale gives the pixel size for exported " +
   "images. This data does not hold safe-area insets, the position or size of the Dynamic Island and cameras, or " +
   "fold and hinge positions; take those from the guidelines (search_hig) and say so if you estimate them.";
 
@@ -88,13 +106,16 @@ export function deviceMetrics(queries: string[], families: string[], all: boolea
   if (queries.length) {
     const found = new Map<string, Device>();
     const missing: string[] = [];
+    let vision = false;
     for (const q of queries) {
       const hits = find(q);
-      if (!hits.length) missing.push(q);
+      if (!hits.length && aboutVision(q)) vision = true;
+      else if (!hits.length) missing.push(q);
       for (const d of hits) found.set(d.id, d);
     }
     const parts: string[] = [];
     if (found.size) parts.push(byFamily([...found.values()]), NOTE);
+    if (vision) parts.push(VISION);
     if (missing.length) {
       parts.push(
         `No device matches ${missing.map((q) => `"${q}"`).join(", ")}. ` +
@@ -105,8 +126,9 @@ export function deviceMetrics(queries: string[], families: string[], all: boolea
     return parts.join("\n\n");
   }
 
-  let list = pack.devices.filter((d) => all || d.current);
+  let list = devices.filter((d) => all || d.current);
   if (families.length) list = list.filter((d) => families.includes(d.family));
-  if (!list.length) return `No devices match. ${source}`;
-  return [byFamily(list), NOTE, source].join("\n\n");
+  const vision = !families.length || families.includes("vision");
+  if (!list.length) return [vision ? VISION : "No devices match.", source].join("\n\n");
+  return [byFamily(list), NOTE, ...(vision ? [VISION] : []), source].join("\n\n");
 }
