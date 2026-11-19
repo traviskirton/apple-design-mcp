@@ -1,0 +1,6 @@
+=== 0
+- component; 162 × 162
+  - 1: vector shape; 38.98 × 89; at (58, 54); fill Vibrant Labels/Dark/Vibrant Secondary; background blur 70
+  - Frame: frame; 162 × 48; at (0, 0); row; gap 8; padding 5 0 5 0; main center; cross center; hugs height
+    - text "Wed"; SF Pro Semibold 32; centered; 65 × 38; color Vibrant Labels/Dark/Vibrant Secondary; background blur 70
+    - text "Apr"; SF Pro Semibold 32; centered; 51 × 38; color Vibrant Labels/Dark/Vibrant Tertiary; background blur 70

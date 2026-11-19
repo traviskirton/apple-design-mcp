@@ -1,0 +1,6 @@
+=== 0
+- component; 28 × 28
+  - text SF Symbol arrow.uturn.left; SF Pro Regular 21; centered; 44 × 44; at (-8, -8); color Labels - Vibrant/Tertiary; opacity 35%; blend linear burn
+=== 1
+- component; 28 × 28
+  - text SF Symbol arrow.uturn.left; SF Pro Regular 21; centered; 44 × 44; at (-8, -8); color Labels - Vibrant/Secondary; blend linear burn; property Symbol

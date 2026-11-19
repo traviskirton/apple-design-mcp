@@ -1,0 +1,20 @@
+=== 0
+- component; 200 × 44; row; padding 11; cross center; hugs height; capsule; fill Fills/Secondary at 16%; blend linear burn
+  - Frame: frame; 161 × 22; fills width; row; gap 8; cross center; hugs height
+    - text SF Symbol magnifyingglass; SF Pro Regular 17/22; 21 × 22; color Labels - Vibrant/Secondary; blend linear burn
+    - Frame: frame; 58 × 22; row; cross center; hugs content
+      - text "Search"; SF Pro Regular 17/22; 56 × 22; color Labels - Vibrant/Primary; blend linear burn; property Search Term
+      - Cursor: rectangle; 2 × 22; capsule; fill Accents/Blue
+  - text SF Symbol mic.fill; SF Pro Regular 17/22; 17 × 22; color Labels - Vibrant/Secondary; blend linear burn
+=== 1
+- component; 200 × 44; row; padding 11; cross center; hugs height; capsule; fill Fills/Secondary at 16%; blend linear burn
+  - Frame: frame; 161 × 22; fills width; row; gap 8; cross center; hugs height
+    - text SF Symbol magnifyingglass; SF Pro Regular 17/22; 21 × 22; color Labels - Vibrant/Secondary; blend linear burn
+    - text "Search"; SF Pro Regular 17/22; 56 × 22; color Labels - Vibrant/Primary; blend linear burn; property Search Term
+  - text SF Symbol mic.fill; SF Pro Regular 17/22; 17 × 22; color Labels - Vibrant/Secondary; blend linear burn
+=== 2
+- component; 200 × 44; row; padding 11; cross center; hugs height; capsule; fill Fills/Secondary at 16%; blend linear burn
+  - Frame: frame; 161 × 22; fills width; row; gap 8; cross center; hugs height
+    - text SF Symbol magnifyingglass; SF Pro Regular 17/22; 21 × 22; color Labels - Vibrant/Secondary; blend linear burn
+    - text "Search"; SF Pro Regular 17/22; 56 × 22; color Labels - Vibrant/Secondary; blend linear burn; property Search Term
+  - text SF Symbol mic.fill; SF Pro Regular 17/22; 17 × 22; color Labels - Vibrant/Secondary; blend linear burn

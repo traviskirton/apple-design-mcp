@@ -1,0 +1,13 @@
+=== 0
+- component; 162 × 72; column; gap 12; padding 7 8 7 8; hugs height
+  - Header: frame; 146 × 20; fills width; row; space between; cross center; hugs height
+    - Symbol and Title: frame; 63 × 20; row; gap 3; cross center; hugs content
+      - text SF Symbol app.dashed; SF Pro Regular 12/16; 11 × 16; color Vibrant Labels/Dark/Vibrant Primary; background blur 135.91; property Symbol
+      - text "Label"; SF Pro Bold 15/20; uppercase; 49 × 20; color Vibrant Labels/Dark/Vibrant Primary; background blur 135.91; property Label
+    - text "Label"; SF Pro Medium 15/20; 40 × 20; color Vibrant Labels/Dark/Vibrant Primary; background blur 135.91; property Secondary Label
+  - Chart: frame; 146 × 26
+    - Fill: frame; 162 × 33; at (-8, 0)
+      - Line: vector shape; 162 × 33; at (0, 0); opacity 75%; mask
+      - Gradient: rectangle; 162 × 33; at (0, 0); fill linear gradient #ffffff to #ffffff 0%; opacity 35%
+    - Line: vector shape; 146 × 0; at (0, 24); stroke #000000 2
+    - Graph: vector shape; 162 × 32; at (-8, 1); fill linear gradient #595959 to #000000 (linear dodge); stroke #000000 2

@@ -1,0 +1,17 @@
+=== 0
+- component; 402 × 101; column; gap 10; padding 10 12 10 12; cross center
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 378 × 101; absolute at (12, 0)
+  - Find: frame; 378 × 36; fills width; row; gap 8; padding 0 12 0 12; cross center
+    - Previous and Next: frame; 62 × 36; row; gap 12; main center; cross center
+      - Previous: instance of _Previous [Enabled=True]; 22 × 36
+      - Next: instance of _Next [Enabled=True]; 22 × 36
+    - Field: frame; 233 × 36; fills width; fills height; row; gap 6; padding 0 7 0 12; cross center; capsule
+      - Field: instance of _Field - BG; 233 × 36; absolute at (0, 0); blend linear burn
+      - Find Field: instance of _Field - Find [State=Text Entered]; 214 × 22; fills width
+    - text "Done"; SF Pro Semibold 17/22; centered; 43 × 22; color Accents/Blue
+  - Repace: frame; 378 × 36; fills width; row; gap 8; padding 0 12 0 12; cross center
+    - Replace Button: instance of _Replace Button [State=Disabled]; 62 × 22
+    - Field: frame; 233 × 36; fills width; fills height; row; gap 6; padding 0 7 0 12; cross center; capsule
+      - Field: instance of _Field - BG; 233 × 36; absolute at (0, 0); blend linear burn
+      - Replace: instance of _Field - Replace [State=Default]; 214 × 22; fills width
+    - Space: frame; 43 × 36

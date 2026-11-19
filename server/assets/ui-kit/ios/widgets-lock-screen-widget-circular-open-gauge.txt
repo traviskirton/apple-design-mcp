@@ -1,0 +1,7 @@
+=== 0
+- component; 72 × 72; row; padding 7; main center; cross center; background blur 40
+  - Frame: frame; 58 × 59
+    - Gauge: vector shape; 58 × 50.11; at (0, 0.08); fill Vibrant Fills/Dark/Vibrant Tertiary
+    - Current Value Indicator: ellipse; 5.67 × 5.67; at (26, 5.67); fill Vibrant Labels/Dark/Vibrant Secondary
+    - text SF Symbol umbrella.fill; SF Pro Medium 15; centered; 30 × 18; at (14, 41); color Vibrant Labels/Dark/Vibrant Secondary; property Symbol
+    - text "50%"; SF Pro Medium 17; centered; 46 × 20; at (6, 18); color Vibrant Labels/Dark/Vibrant Secondary; property Value

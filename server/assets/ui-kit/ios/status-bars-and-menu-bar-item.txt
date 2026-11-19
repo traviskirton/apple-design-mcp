@@ -1,0 +1,12 @@
+=== 0
+- component; 59 × 32; row; padding 0 10.5 0 10.5; main center; cross center; hugs width; capsule; fill #767680 at 12% (linear dodge); shadow x 0 y 2 blur 16 #000000 at 8%
+  - text "Menu"; SF Pro Medium 14/16; 38 × 16; color #000000; property Menu Name
+=== 1
+- component; 59 × 32; row; padding 0 10 0 10; main center; cross center; hugs width; capsule; fill #767680 at 12% (linear dodge); shadow x 0 y 2 blur 16 #000000 at 8%
+  - text "Menu"; SF Pro Bold 14/16; 39 × 16; color #000000; property Menu Name
+=== 2
+- component; 59 × 32; row; padding 0 10.5 0 10.5; main center; cross center; hugs width; capsule
+  - text "Menu"; SF Pro Medium 14/16; 38 × 16; color Labels/Primary; property Menu Name
+=== 3
+- component; 59 × 32; row; padding 0 10 0 10; main center; cross center; hugs width; capsule
+  - text "Menu"; SF Pro Bold 14/16; 39 × 16; color Labels/Primary; property Menu Name

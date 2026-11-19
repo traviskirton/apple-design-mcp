@@ -1,0 +1,8 @@
+=== 0
+- component; 402 × 337.33; column; gap 8; padding 16 14 16 14; hugs height; radius 5
+  - Shadow: rectangle; 402 × 364; absolute at (0, -10); fill #000000 at 5% (linear burn); layer blur 100
+  - List: frame; 374 × 305.33; fills width; column; gap 8; cross center; hugs height; slot List
+    - Notification - Collapsed: instance of Notification - Collapsed [Stack=1]; 374 × 66.33; fills width
+    - Notification - Collapsed: instance of Notification - Collapsed [Stack=1]; 374 × 66.33; fills width
+    - Notification - Collapsed: instance of Notification - Collapsed [Stack=2]; 374 × 71.33; fills width
+    - Notification - Collapsed: instance of Notification - Collapsed [Stack=3]; 374 × 77.33; fills width

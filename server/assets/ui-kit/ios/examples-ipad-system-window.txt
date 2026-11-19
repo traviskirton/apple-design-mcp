@@ -1,0 +1,21 @@
+=== 0
+- component; 1210 × 834
+  - Wallpaper: instance of Wallpapers - iPad; 1210 × 834; at (0, 0)
+  - Split View: frame; 880 × 580; at (60, 60); row; radius 34; shadow x 0 y 30 blur 140 #000000 at 30%
+    - Sidebar: frame; 320 × 580; fills height; column; gap 10
+      - BG: instance of BG [Active=False]; 320 × 580; absolute at (0, 0)
+      - Sidebar: instance of Sidebar [Floating Window=True]; 320 × 802
+    - Content View: frame; 560 × 580; fills width; fills height; column; padding 10 0 0 0; fill Backgrounds/Primary
+      - Resize: instance of _Window Resize [Window=Floating]; 32 × 32; absolute at (528, 548)
+      - Scroll Edge Effect - Hard: instance of Scroll Edge Effect - Hard [Edge=Top]; 560 × 64; absolute at (0, 0)
+      - Toolbar: instance of Toolbar - Top - iPad [Style=Title 2 Line, Tab Bar=False]; with Show Subtitle off; 560 × 54; fills width
+  - Split View: frame; 880 × 580; at (270, 194); row; radius 34; shadow x 0 y 30 blur 140 #000000 at 30%
+    - Sidebar: frame; 320 × 580; fills height; column; gap 10
+      - BG: instance of BG [Active=True]; 320 × 580; absolute at (0, 0)
+      - Sidebar: instance of Sidebar [Floating Window=True]; 320 × 802
+    - Content View: frame; 560 × 580; fills width; fills height; column; padding 10 0 0 0; fill Backgrounds/Primary
+      - Resize: instance of _Window Resize [Window=Floating]; 32 × 32; absolute at (528, 548)
+      - Scroll Edge Effect - Hard: instance of Scroll Edge Effect - Hard [Edge=Top]; 560 × 64; absolute at (0, 0)
+      - Toolbar: instance of Toolbar - Top - iPad [Style=Title 2 Line, Tab Bar=False]; with Show Subtitle off; 560 × 54; fills width
+  - Status Bar and Menubar: instance of Status bar and Menu bar- iPad [Full Screen=True, Menu Expanded=False, Background=Light]; with Date "Tue Apr 1"; 1210 × 24; at (0, 0)
+  - Bezel: instance of iPad Pro M4 11" [Color=Silver]; 1210 × 834; at (0, 0)

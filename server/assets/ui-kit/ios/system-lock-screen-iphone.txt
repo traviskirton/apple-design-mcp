@@ -1,0 +1,24 @@
+=== 0
+- component; 402 × 874
+  - Wallpaper: instance of Wallpapers - iPhone; 402 × 874; at (0, 0)
+  - Home Indicator: instance of Home Indicator [Device=iPhone, Orientation=Portrait]; 144 × 34; at (129, 840)
+  - Controls: frame; 310 × 58; at (46, 766); row; space between; cross center; hugs height
+    - Leading: instance of _Controls - Lock Screen; 58 × 58
+    - Trailing: instance of _Controls - Lock Screen; with Symbol SF Symbol camera.fill; 58 × 58
+  - Lock Screen Widgets: frame; 402 × 72; at (0, 214); row; padding 0 32 0 32; cross center; hugs height
+    - instance of Lock Screen Widget - Modular Table; with Symbol SF Symbol cloud.sun.fill, Line 1 "72º", Line 2 "Partly Cloudy", Line 3 "H:88º L:64º"; 169 × 72; fills width
+    - Frame: frame; 169 × 72; fills width; row; gap 16; main end; cross center; hugs height
+      - instance of Lock Screen Widget / Circular / Open Gauge 2; 72 × 72
+      - instance of Lock Screen Widget / Circular / Stack 3 Rows; 72 × 72
+  - 9:41 - Fill: vector shape; 205.06 × 87.4; at (98, 115); fill #404040 (linear dodge); background blur 80; shadow x -0.5 y 0 blur 0 spread -0.75 #d0d0d0 at 100% (linear burn); shadow x 0.5 y 0 blur 0 spread -0.75 #d0d0d0 at 100% (linear burn)
+  - 9:41 - Glass Effect: vector shape; 205.06 × 87.4; at (98, 115); Liquid Glass effect; inner shadow x 0 y -1 blur 3 spread -40 #282828 at 100% (linear dodge); inner shadow x 0 y 1 blur 3 spread -40 #282828 at 100% (linear dodge)
+  - instance of Lock Screen Widget - Inline; with Text "Apr 1 􀆪 SFO 9:41 AM"; 402 × 26; at (0, 82)
+  - Swipe down indicator: rectangle; 48 × 2.33; at (300.2, 45.8); capsule; fill #ffffff; background blur 29.9; opacity 35%
+  - Status bar - iPhone: frame; 402 × 62; at (0, 0); row; padding 2.33 9 0 9; main end; cross center
+    - Spacer: frame; 128 × 13; fills width; row; padding 0 6 0 0; main center; cross center
+    - Spacer: frame; 128 × 13; fills width; row; padding 0 6 0 0; main center; cross center
+    - Levels: frame; 128 × 13; fills width; row; padding 0 1 0 0; main center; cross center
+      - Frame: frame; 85.33 × 13; row; gap 7; padding 0 8 0 0; cross center; hugs content
+        - Cellular Connection: vector shape; 19.33 × 12.33; fill #ffffff
+        - Wifi: vector shape; 16.67 × 12.33; fill #ffffff
+        - Battery: vector shape; 27.33 × 13; fill #ffffff

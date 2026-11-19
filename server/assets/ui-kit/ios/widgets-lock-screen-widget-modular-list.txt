@@ -1,0 +1,11 @@
+=== 0
+- component; 162 × 72; column; padding 0 8 0 8; main center
+  - Item 1: frame; 142 × 20; row; gap 3; cross center; hugs content; blend linear dodge
+    - text SF Symbol circle; SF Pro Medium 12/16; 15 × 16; color Vibrant Labels/Dark/Vibrant Tertiary; background blur 40; property Bullet 1
+    - text "Item 1"; SF Pro Semibold 15/20; uppercase; 124 × 20; color Vibrant Labels/Dark/Vibrant Primary; background blur 135.91; property Line 1
+  - Item 2: frame; 142 × 20; row; gap 3; cross center; hugs content; blend linear dodge
+    - text SF Symbol circle; SF Pro Medium 12/16; 15 × 16; color Vibrant Labels/Dark/Vibrant Tertiary; background blur 40; property Bullet 2
+    - text "Item 2"; SF Pro Semibold 15/20; uppercase; 124 × 20; color Vibrant Labels/Dark/Vibrant Primary; background blur 135.91; property Line 2
+  - Item 3: frame; 142 × 20; row; gap 3; cross center; hugs content; blend linear dodge
+    - text SF Symbol circle; SF Pro Medium 12/16; 15 × 16; color Vibrant Labels/Dark/Vibrant Tertiary; background blur 40; property Bullet 3
+    - text "Item 3"; SF Pro Semibold 15/20; uppercase; 124 × 20; color Vibrant Labels/Dark/Vibrant Primary; background blur 135.91; property Line 3

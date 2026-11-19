@@ -1,0 +1,4 @@
+=== 0
+- component; 205 × 251; uses Screen Width, Screen Height
+  - Smart-Stack: instance of Smart-Stack [Size=49mm]; 205 × 251; at (0, 0)
+  - Bezel: instance of Bezels [Bezel Size=49mm]; 205 × 251; at (0, 0)

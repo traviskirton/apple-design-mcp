@@ -1,0 +1,2 @@
+=== 0
+- component; 160 × 52; column; capsule; fill Fills/Secondary at 16%; blend linear burn

@@ -1,0 +1,3 @@
+=== 0
+- component; 200 × 100; column; gap 10; padding 4; cross end; radius 8; fill #000000
+  - Mode: instance of _Mode; 55 × 19

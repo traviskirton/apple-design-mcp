@@ -1,0 +1,6 @@
+=== 0
+- component; 72 × 72; row; padding 7; main center; cross center; background blur 40
+  - Circle: frame; 58 × 58; column; padding 7 0 7 0; main center; cross center; capsule; fill Vibrant Fills/Dark/Vibrant Tertiary; background blur 40
+    - text SF Symbol sunset.fill; SF Pro Medium 11; centered; 58 × 13; fills width; color Vibrant Labels/Dark/Vibrant Secondary; property Symbol
+    - text "8:29"; SF Pro Medium 15; centered; 58 × 18; fills width; color Vibrant Labels/Dark/Vibrant Secondary; property Value
+    - text "PM"; SF Pro Medium 9/13; centered; 58 × 11; fills width; color Vibrant Labels/Dark/Vibrant Secondary; property Secondary Value

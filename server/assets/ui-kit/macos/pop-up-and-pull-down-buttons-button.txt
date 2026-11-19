@@ -1,0 +1,27 @@
+=== 0
+- component; 24 × 24; row; gap 8; cross center; hugs content; capsule; uses Global/Height
+  - BG: instance of _Control BG/Bordered [Context=Content Area, State=Disabled, On=False]; 24 × 24; absolute at (0, 0)
+  - text SF Symbol chevron.up.chevron.down; SF Pro Bold 11/8; centered; 24 × 24; color Labels/Tertiary at 25%; uses Global/Height
+=== 1
+- component; 24 × 24; row; gap 8; cross center; hugs content; capsule; uses Global/Height
+  - BG: instance of _Control BG/Bordered [Context=Content Area, State=Clicked, On=False]; 24 × 24; absolute at (0, 0)
+  - text SF Symbol chevron.up.chevron.down; SF Pro Bold 11/8; centered; 24 × 24; color Labels/Primary at 85%; uses Global/Height
+=== 2
+- component; 24 × 24; row; gap 8; cross center; hugs content; capsule; uses Global/Height
+  - BG: instance of _Control BG/Bordered [Context=Content Area, State=Idle, On=False]; 24 × 24; absolute at (0, 0)
+  - text SF Symbol chevron.up.chevron.down; SF Pro Bold 11/8; centered; 24 × 24; color Labels/Primary at 85%; uses Global/Height
+=== 3
+- component; 100 × 24; row; gap 8; padding 0 0 0 12; cross center; radius 6; uses Popup/Inset - Left, Global/Height, Button/Radius
+  - BG: instance of _Control BG/Bordered [Context=Content Area, State=Disabled, On=False]; 100 × 24; absolute at (0, 0)
+  - text "Label"; SF Pro Medium 13; 56 × 24; fills width; fills height; color Labels/Tertiary at 25%; property Label
+  - text SF Symbol chevron.up.chevron.down; SF Pro Bold 11/8; centered; 24 × 24; color Labels/Tertiary at 25%; uses Global/Height
+=== 4
+- component; 100 × 24; row; gap 8; padding 0 0 0 12; cross center; radius 6; uses Popup/Inset - Left, Global/Height, Button/Radius
+  - BG: instance of _Control BG/Bordered [Context=Content Area, State=Clicked, On=False]; 100 × 24; absolute at (0, 0)
+  - text "Label"; SF Pro Medium 13; 56 × 24; fills width; fills height; color Labels/Primary at 85%; property Label
+  - text SF Symbol chevron.up.chevron.down; SF Pro Bold 11/8; centered; 24 × 24; color Labels/Primary at 85%; uses Global/Height
+=== 5
+- component; 100 × 24; row; gap 8; padding 0 0 0 12; cross center; radius 6; uses Popup/Inset - Left, Global/Height, Button/Radius
+  - BG: instance of _Control BG/Bordered [Context=Content Area, State=Idle, On=False]; 100 × 24; absolute at (0, 0)
+  - text "Label"; SF Pro Medium 13; 56 × 24; fills width; fills height; color Labels/Primary at 85%; property Label
+  - text SF Symbol chevron.up.chevron.down; SF Pro Bold 11/8; centered; 24 × 24; color Labels/Primary at 85%; uses Global/Height

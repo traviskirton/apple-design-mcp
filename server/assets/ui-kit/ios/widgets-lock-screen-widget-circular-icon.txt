@@ -1,0 +1,4 @@
+=== 0
+- component; 72 × 72; row; padding 7; main center; cross center; capsule; background blur 50
+  - Circle: frame; 58 × 58; fills height; column; padding 7 0 7 0; main center; cross center; capsule; fill Vibrant Fills/Dark/Vibrant Tertiary; background blur 40
+    - text SF Symbol app.dashed; SF Pro Medium 24; centered; 58 × 44; fills width; color Vibrant Labels/Dark/Vibrant Secondary; property Symbol

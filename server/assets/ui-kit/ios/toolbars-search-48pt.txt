@@ -1,0 +1,21 @@
+=== 0
+- component; 190 × 48; row; gap 4; padding 0 10 0 11; main center; cross center; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 190 × 48; absolute at (0, 0)
+  - text SF Symbol magnifyingglass; SF Pro Medium 17; centered; 26 × 20; color Labels - Vibrant/Primary
+  - Field: frame; 117 × 22; fills width; row; cross center; hugs height
+    - text "Search Term"; SF Pro Medium 17; centered; 104 × 20; color Labels - Vibrant/Primary; property Value
+    - Cursor: rectangle; 2 × 22; capsule; fill Accents/Blue
+  - text SF Symbol mic; SF Pro Medium 17; centered; 18 × 20; color Labels - Vibrant/Secondary
+=== 1
+- component; 190 × 48; row; gap 4; padding 0 10 0 11; main center; cross center; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 190 × 48; absolute at (0, 0)
+  - text SF Symbol magnifyingglass; SF Pro Medium 17; centered; 26 × 20; color Labels - Vibrant/Primary
+  - text "Placeholder"; SF Pro Medium 17; 117 × 20; fills width; color Labels - Vibrant/Tertiary; blend linear burn; property Placeholder
+  - text SF Symbol mic; SF Pro Medium 17; centered; 18 × 20; color Labels - Vibrant/Secondary
+=== 2
+- component; 190 × 48; row; gap 4; padding 0 10 0 11; main center; cross center; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 190 × 48; absolute at (0, 0)
+  - text SF Symbol magnifyingglass; SF Pro Medium 17; centered; 26 × 20; color Labels - Vibrant/Primary
+  - Field: frame; 117 × 20; fills width; row; cross center; hugs height; blend linear burn
+    - text "Search Term"; SF Pro Medium 17; centered; 104 × 20; color Labels - Vibrant/Primary; property Value
+  - text SF Symbol mic; SF Pro Medium 17; centered; 18 × 20; color Labels - Vibrant/Secondary

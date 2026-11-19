@@ -1,0 +1,72 @@
+=== 0
+- component; 210 × 25; row; gap 4; padding 0 0 9 4; hugs height
+  - Hierarchical Spacer: frame; 12 × 16; fills height; row; gap 10; cross center; shown while Hierarchical
+  - text "Section Title"; SF Pro Bold 13/16; 121 × 16; fills width; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn; property Section Title
+  - text "Detail"; SF Pro Medium 13/16; 37 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn; property Detail; shown while Show Detail
+  - Disclosure: instance of _Disclosure - Header [Expanded=True]; 24 × 16; fills height; shown while Show Disclosure
+=== 1
+- component; 210 × 25; row; gap 4; padding 0 0 9 4; hugs height
+  - Hierarchical Spacer: frame; 12 × 16; fills height; row; gap 10; cross center; shown while Hierarchical
+  - text "Section Title"; SF Pro Bold 13/16; 121 × 16; fills width; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Section Title
+  - text "Detail"; SF Pro Medium 13/16; 37 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Detail; shown while Show Detail
+  - Disclosure: instance of _Disclosure - Header [Expanded=True]; 24 × 16; fills height; shown while Show Disclosure
+=== 2
+- component; 210 × 43; row; gap 4; padding 18 0 9 4; hugs height
+  - Hierarchical Spacer: frame; 12 × 16; fills height; row; gap 10; cross center; shown while Hierarchical
+  - text "Section Title"; SF Pro Bold 13/16; 121 × 16; fills width; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn; property Section Title
+  - text "Detail"; SF Pro Medium 13/16; 37 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn; property Detail; shown while Show Detail
+  - Disclosure: instance of _Disclosure - Header [Expanded=True]; 24 × 16; fills height; shown while Show Disclosure
+=== 3
+- component; 210 × 43; row; gap 4; padding 18 0 9 4; hugs height
+  - Hierarchical Spacer: frame; 12 × 16; fills height; row; gap 10; cross center; shown while Hierarchical
+  - text "Section Title"; SF Pro Bold 13/16; 121 × 16; fills width; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Section Title
+  - text "Detail"; SF Pro Medium 13/16; 37 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Detail; shown while Show Detail
+  - Disclosure: instance of _Disclosure - Header [Expanded=True]; 24 × 16; fills height; shown while Show Disclosure
+=== 4
+- component; 210 × 22; row; gap 4; padding 0 0 8 4; hugs height
+  - Hierarchical Spacer: frame; 12 × 14; fills height; row; gap 10; cross center; shown while Hierarchical
+  - text "Section Title"; SF Pro Bold 11/14; 127 × 14; fills width; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn; property Section Title
+  - text "Detail"; SF Pro Medium 11/14; 31 × 14; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn; property Detail; shown while Show Detail
+  - Disclosure: instance of _Disclosure - Header [Expanded=True]; 24 × 14; fills height; shown while Show Disclosure
+=== 5
+- component; 210 × 22; row; gap 4; padding 0 0 8 4; hugs height
+  - Hierarchical Spacer: frame; 12 × 14; fills height; row; gap 10; cross center; shown while Hierarchical
+  - text "Section Title"; SF Pro Bold 11/14; 127 × 14; fills width; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Section Title
+  - text "Detail"; SF Pro Medium 11/14; 31 × 14; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Detail; shown while Show Detail
+  - Disclosure: instance of _Disclosure - Header [Expanded=True]; 24 × 14; fills height; shown while Show Disclosure
+=== 6
+- component; 210 × 39; row; gap 4; padding 17 0 8 4; hugs height
+  - Hierarchical Spacer: frame; 12 × 14; fills height; row; gap 10; cross center; shown while Hierarchical
+  - text "Section Title"; SF Pro Bold 11/14; 127 × 14; fills width; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn; property Section Title
+  - text "Detail"; SF Pro Medium 11/14; 31 × 14; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn; property Detail; shown while Show Detail
+  - Disclosure: instance of _Disclosure - Header [Expanded=True]; 24 × 14; fills height; shown while Show Disclosure
+=== 7
+- component; 210 × 39; row; gap 4; padding 17 0 8 4; hugs height
+  - Hierarchical Spacer: frame; 12 × 14; fills height; row; gap 10; cross center; shown while Hierarchical
+  - text "Section Title"; SF Pro Bold 11/14; 127 × 14; fills width; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Section Title
+  - text "Detail"; SF Pro Medium 11/14; 31 × 14; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Detail; shown while Show Detail
+  - Disclosure: instance of _Disclosure - Header [Expanded=True]; 24 × 14; fills height; shown while Show Disclosure
+=== 8
+- component; 210 × 19; row; gap 4; padding 0 0 5 4; hugs height
+  - Hierarchical Spacer: frame; 12 × 14; fills height; row; gap 10; cross center; shown while Hierarchical
+  - text "Section Title"; SF Pro Bold 11/14; 127 × 14; fills width; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn; property Section Title
+  - text "Detail"; SF Pro Medium 11/14; 31 × 14; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn; property Detail; shown while Show Detail
+  - Disclosure: instance of _Disclosure - Header [Expanded=True]; 24 × 14; fills height; shown while Show Disclosure
+=== 9
+- component; 210 × 19; row; gap 4; padding 0 0 5 4; hugs height
+  - Hierarchical Spacer: frame; 12 × 14; fills height; row; gap 10; cross center; shown while Hierarchical
+  - text "Section Title"; SF Pro Bold 11/14; 127 × 14; fills width; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Section Title
+  - text "Detail"; SF Pro Medium 11/14; 31 × 14; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Detail; shown while Show Detail
+  - Disclosure: instance of _Disclosure - Header [Expanded=True]; 24 × 14; fills height; shown while Show Disclosure
+=== 10
+- component; 210 × 34; row; gap 4; padding 15 0 5 4; hugs height
+  - Hierarchical Spacer: frame; 12 × 14; fills height; row; gap 10; cross center; shown while Hierarchical
+  - text "Section Title"; SF Pro Bold 11/14; 127 × 14; fills width; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn; property Section Title
+  - text "Detail"; SF Pro Medium 11/14; 31 × 14; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn; property Detail; shown while Show Detail
+  - Disclosure: instance of _Disclosure - Header [Expanded=True]; 24 × 14; fills height; shown while Show Disclosure
+=== 11
+- component; 210 × 34; row; gap 4; padding 15 0 5 4; hugs height
+  - Hierarchical Spacer: frame; 12 × 14; fills height; row; gap 10; cross center; shown while Hierarchical
+  - text "Section Title"; SF Pro Bold 11/14; 127 × 14; fills width; fills height; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Section Title
+  - text "Detail"; SF Pro Medium 11/14; 31 × 14; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Detail; shown while Show Detail
+  - Disclosure: instance of _Disclosure - Header [Expanded=True]; 24 × 14; fills height; shown while Show Disclosure

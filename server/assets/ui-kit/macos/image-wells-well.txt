@@ -1,0 +1,6 @@
+=== 0
+- component; 30 × 30; radius 3; fill Fills - Opaque/Quinary at 2%; shadow x 0 y 0 blur 0 spread 0.5 #000000 at 5%; inner shadow x 0 y 0 blur 0 spread 1.5 #000000 at 5%; inner shadow x 0 y 0 blur 0 spread 1 #ffffff at 100%; opacity 50%
+  - Image: rectangle; 24 × 24; at (3, 3); fill image
+=== 1
+- component; 30 × 30; radius 3; fill Fills - Opaque/Quinary at 2%; shadow x 0 y 0 blur 0 spread 0.5 #000000 at 5%; inner shadow x 0 y 0 blur 0 spread 1.5 #000000 at 5%; inner shadow x 0 y 0 blur 0 spread 1 #ffffff at 100%
+  - Image: rectangle; 24 × 24; at (3, 3); fill image

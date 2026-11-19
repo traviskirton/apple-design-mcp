@@ -1,0 +1,6 @@
+=== 0
+- component; 28 × 28; capsule
+  - Button: rectangle; 28 × 28; at (0, 0); capsule; stroke angular gradient #ff0000 to #fb00ff to #00a1ff to #44ff00 to #fff700 to #ff0000 3
+  - Color: rectangle; 18 × 18; at (5, 5); capsule; fill #ff0000
+=== 1
+- component; 28 × 28; capsule; fill angular gradient #ff0000 to #fb00ff to #00a1ff to #44ff00 to #fff700 to #ff0000 + radial gradient #ffffff to #ffffff 66% to #ffffff 33% to #ffffff 0%

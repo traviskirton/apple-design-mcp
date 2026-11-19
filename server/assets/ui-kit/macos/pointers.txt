@@ -1,0 +1,100 @@
+=== 0
+- component; 28 × 28
+  - Path: vector shape; 8.43 × 20.86; at (9.77, 3.58); fill #ffffff
+  - Path: vector shape; 6.43 × 18.86; at (10.77, 4.58); fill #000000
+=== 1
+- component; 28 × 28
+  - Path: vector shape; 20.86 × 8.43; at (3.87, 10); fill #ffffff
+  - Path: vector shape; 18.86 × 6.43; at (4.87, 11); fill #000000
+=== 2
+- component; 28 × 28
+  - Path: vector shape; 15.6 × 15.6; at (6.2, 6.2); fill #ffffff
+  - Path: vector shape; 13.61 × 13.61; at (7.2, 7.2); fill #000000
+=== 3
+- component; 28 × 28
+  - Path: vector shape; 15.6 × 15.6; at (6.2, 6.2); fill #ffffff
+  - Path: vector shape; 13.6 × 13.6; at (7.2, 7.2); fill #000000
+=== 4
+- component; 28 × 28
+  - Path: vector shape; 14 × 23; at (7, 2.5); fill #ffffff
+  - Path: vector shape; 12 × 21; at (8, 3.5); fill #000000
+=== 5
+- component; 28 × 28
+  - Path: frame; 23 × 14; at (2.5, 7)
+    - Combined-Shape: vector shape; 23 × 14; at (0, 0); fill #ffffff
+    - Combined-Shape: vector shape; 21 × 12; at (1, 1); fill #000000
+=== 6
+- component; 28 × 28
+  - Path: vector shape; 14 × 13.5; at (7, 2.5); fill #ffffff
+  - Path: vector shape; 12 × 11.5; at (8, 3.5); fill #000000
+=== 7
+- component; 28 × 28
+  - Path: vector shape; 13.5 × 14; at (12, 7); fill #ffffff
+  - Path: vector shape; 11.5 × 12; at (13, 8); fill #000000
+=== 8
+- component; 28 × 28
+  - Path: vector shape; 14 × 13.5; at (7, 12); fill #ffffff
+  - Path: vector shape; 12 × 11.5; at (8, 13); fill #000000
+=== 9
+- component; 28 × 28
+  - Path: vector shape; 13.5 × 14; at (2.5, 7); fill #ffffff
+  - Path: vector shape; 11.5 × 12; at (3.5, 8); fill #000000
+=== 10
+- component; 28 × 28
+  - Path: vector shape; 17.75 × 17.75; at (6.13, 6.13); fill #ffffff
+  - Path: vector shape; 15.52 × 15.52; at (7.24, 7.24); fill #000000
+=== 11
+- component; 28 × 28
+  - Path: vector shape; 13.49 × 12.59; at (8.75, 9.41); fill #000000
+  - Path: vector shape; 11.45 × 10.52; at (9.81, 10.38); fill #ffffff
+=== 12
+- component; 28 × 28
+  - Path: vector shape; 15 × 17; at (7.5, 4.42); fill #ffffff
+  - Path: vector shape; 15.99 × 18.11; at (7, 3.89); fill #000000
+=== 13
+- component; 28 × 28
+  - Path: vector shape; 14.54 × 18.76; at (9, 12.24); fill #000000
+  - Path: vector shape; 12.49 × 16.71; at (10.02, 13.23); fill #ffffff
+=== 14
+- component; 28 × 28
+  - Path: vector shape; 14 × 14; at (8, 8); fill #000000
+  - Path: vector shape; 10.51 × 10.51; at (9.75, 9.75); fill #ffffff
+  - Path: vector shape; 13.72 × 11.22; at (11.5, 14); fill #000000
+=== 15
+- component; 28 × 28
+  - Path: vector shape; 14 × 14; at (8, 8); fill #000000
+  - Path: vector shape; 10.51 × 10.51; at (9.75, 9.75); fill #ffffff
+  - Path: vector shape; 2 × 7; at (14, 11.5); fill #000000
+  - Path: vector shape; 7 × 2; at (11.5, 14); fill #000000
+  - Path: vector shape; 6.45 × 6.45; at (18.78, 18.78); fill #000000
+=== 16
+- component; 28 × 28
+  - Path: vector shape; 7.67 × 18.62; at (10.65, 4); fill #ffffff
+  - Path: vector shape; 5.67 × 16.62; at (11.65, 5); fill #000000
+=== 17
+- component; 28 × 28
+  - Path: vector shape; 15 × 15; at (7, 7); fill #ffffff
+  - Path: vector shape; 13 × 13; at (8, 8); fill #232020
+=== 18
+- component; 28 × 28
+  - Beachball: frame; 20 × 20; at (4.5, 4.5); shadow x 0 y 1 blur 2 #000000 at 40%
+    - Segment-(Yellow): vector shape; 10.79 × 8.96; at (0.02, 1.04); fill linear gradient #ffd305 to #fdcf01
+    - Segment-(Green): vector shape; 10 × 11.33; at (0, 7); fill linear gradient #52cf30 to #3bbd1c
+    - Segment-(Blue): vector shape; 10.45 × 10; at (4, 10); fill linear gradient #14adf6 to #1191f4
+    - Segment-(Purple): vector shape; 10.79 × 8.96; at (9.2, 10); fill linear gradient #ca70e1 to #b452cb
+    - Segment-(Red): vector shape; 10 × 11.33; at (10, 1.67); fill linear gradient #ff645d to #ff4332
+    - Segment-(Orange): vector shape; 10.45 × 10; at (5.55, 0); fill linear gradient #fbb114 to #ff9508
+=== 19
+- component; 28 × 28
+  - Path: vector shape; 10.38 × 14.13; at (13, 11.6); fill #ffffff
+  - Path: vector shape; 8.36 × 11.73; at (14, 12.98); fill #000000
+  - Path: vector shape; 12 × 15; at (18, 25.12); fill #ffffff
+  - Path: vector shape; 10 × 13; at (19, 26.12); fill #000000
+  - Path: vector shape; 6 × 1; at (21, 28.12); fill #ffffff
+  - Path: vector shape; 6 × 1; at (21, 36.12); fill #ffffff
+  - Path: vector shape; 8 × 3; at (20, 31.12); fill #ffffff
+  - Path: vector shape; 4 × 1; at (21, 32.12); fill #000000
+=== 20
+- component; 28 × 28
+  - Path: vector shape; 10.38 × 17.26; at (13, 11.6); fill #ffffff
+  - Path: vector shape; 8.36 × 14.88; at (14, 12.98); fill #000000

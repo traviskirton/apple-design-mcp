@@ -1,0 +1,24 @@
+=== 0
+- component; 48 × 83; column; gap 6; padding 11 0 1 0; main center; cross center; hugs content
+  - Blur: frame; 54 × 86; absolute at (-3, 0); capsule; fill #000000 (screen); background blur 16
+  - text "9:41"; SF Pro Rounded Bold 16/19; centered; 48 × 19; color Labels/Primary
+  - Levels: frame; 46 × 46
+    - Cellular Connection: frame; 11 × 2; at (11.67, 36.33)
+      - Dot: ellipse; 4 × 4; at (18.67, 0); fill Labels/Primary
+      - Dot: ellipse; 4 × 4; at (12.67, 2.67); fill Labels/Primary
+      - Dot: ellipse; 4 × 4; at (6, 2.67); fill Labels/Primary
+      - Dot: ellipse; 4 × 4; at (0, 0); fill Labels/Primary
+    - Battery: ellipse; 40.67 × 40.67; at (2.67, 2.33); capsule; fill #ffffff; stroke Labels/Primary 3
+    - Wifi: vector shape; 18 × 13.33; at (14, 16); fill Labels/Primary
+=== 1
+- component; 98 × 48; row; gap 3; padding 1 1 1 2; main center; cross center; hugs content
+  - Blur: frame; 95.67 × 55; absolute at (6, -4); capsule; fill #000000 (screen); background blur 16
+  - text "9:41"; SF Pro Rounded Bold 16/19; right-aligned; 46 × 19; color Labels/Primary
+  - Levels: frame; 46 × 46
+    - Cellular Connection: frame; 11 × 2; at (11.67, 36.33)
+      - Dot: ellipse; 4 × 4; at (18.67, 0); fill Labels/Primary
+      - Dot: ellipse; 4 × 4; at (12.67, 2.67); fill Labels/Primary
+      - Dot: ellipse; 4 × 4; at (6, 2.67); fill Labels/Primary
+      - Dot: ellipse; 4 × 4; at (0, 0); fill Labels/Primary
+    - Battery: ellipse; 40.67 × 40.67; at (2.67, 2.33); capsule; fill #ffffff; stroke Labels/Primary 3
+    - Wifi: vector shape; 18 × 13.33; at (14, 16); fill Labels/Primary

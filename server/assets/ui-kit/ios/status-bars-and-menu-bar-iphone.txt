@@ -1,0 +1,48 @@
+=== 0
+- component; 402 × 62; row; padding 3 0 0 0; main center; cross center
+  - Time: frame; 138.5 × 13; fills width; row; padding 0 0 0 10; main center; cross center
+    - text "9:41"; SF Pro Semibold 17.67/22; centered; 38 × 22; color Labels/Primary; property Time
+  - Frame: frame; 125 × 37.17; row; gap 10; padding 0.17 0 0 0; hugs height
+    - Dynamic Island: rectangle; 125 × 37; fills width; capsule; fill #000000
+  - Levels: frame; 138.5 × 15; fills width; row; gap 8; padding 0 10 0 0; main center; cross center; hugs height
+    - Cellular Connection: frame; 20.33 × 15; row; gap 2.33; padding 1.33 0 0 0; cross end; hugs content
+      - Bar: rectangle; 3.33 × 6.33; capsule; fill Labels/Primary
+      - Bar: rectangle; 3.33 × 8.67; capsule; fill Labels/Primary
+      - Bar: rectangle; 3.33 × 11; capsule; fill Labels/Primary
+      - Bar: rectangle; 3.33 × 13.67; capsule; fill Labels/Primary
+    - Wifi: vector shape; 19.33 × 14.33; fill Labels/Primary
+    - Battery: frame; 29.33 × 13.67; row; gap 1; cross center; hugs content
+      - Body: rectangle; 26.33 × 13.67; radius 4; fill Labels/Primary
+      - Contact: vector shape; 2 × 5; fill Labels/Primary
+=== 1
+- component; 402 × 62; row; padding 3 8 0 8; main center; cross center
+  - Time: frame; 145.5 × 13; fills width; row; main center; cross center
+    - text "9:41"; SF Pro Semibold 18.67/22; centered; 40 × 22; color Labels/Primary; property Time
+  - Frame: frame; 95 × 59; fills height; row; gap 10; padding 11 0 0 0; hugs width
+    - Dynamic Island: rectangle; 95 × 36.67; capsule; fill #000000
+  - Levels: frame; 145.5 × 16.33; fills width; row; gap 8.67; main center; cross center; hugs height
+    - Cellular Connection: frame; 20.33 × 16.33; row; gap 2.33; padding 1.33 0 0 0; cross end; hugs content
+      - Bar: rectangle; 3.33 × 7; capsule; fill Labels/Primary
+      - Bar: rectangle; 3.33 × 9.67; capsule; fill Labels/Primary
+      - Bar: rectangle; 3.33 × 12.33; capsule; fill Labels/Primary
+      - Bar: rectangle; 3.33 × 15; capsule; fill Labels/Primary
+    - Wifi: vector shape; 20.67 × 15.33; fill Labels/Primary
+    - Battery: frame; 32 × 15; row; gap 1; cross center; hugs content
+      - Body: rectangle; 29 × 15; radius 4; fill Labels/Primary
+      - Contact: vector shape; 2 × 5; fill Labels/Primary
+=== 2
+- component; 402 × 62; row; padding 3 8 0 8; main center; cross center
+  - Time: frame; 145.5 × 13; fills width; row; main center; cross center
+    - text "9:41"; SF Pro Semibold 17.67/22; centered; 38 × 22; color Labels/Primary; property Time
+  - Frame: frame; 95 × 59; fills height; row; gap 10; padding 11 0 0 0; hugs width
+    - Dynamic Island: rectangle; 95 × 36.67; capsule; fill #000000
+  - Levels: frame; 145.5 × 15; fills width; row; gap 8; main center; cross center; hugs height
+    - Cellular Connection: frame; 20.33 × 15; row; gap 2.33; padding 1.33 0 0 0; cross end; hugs content
+      - Bar: rectangle; 3.33 × 6.33; capsule; fill Labels/Primary
+      - Bar: rectangle; 3.33 × 8.67; capsule; fill Labels/Primary
+      - Bar: rectangle; 3.33 × 11; capsule; fill Labels/Primary
+      - Bar: rectangle; 3.33 × 13.67; capsule; fill Labels/Primary
+    - Wifi: vector shape; 19.33 × 14.33; fill Labels/Primary
+    - Battery: frame; 29.33 × 13.67; row; gap 1; cross center; hugs content
+      - Body: rectangle; 26.33 × 13.67; radius 4; fill Labels/Primary
+      - Contact: vector shape; 2 × 5; fill Labels/Primary

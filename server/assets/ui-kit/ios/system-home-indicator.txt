@@ -1,0 +1,12 @@
+=== 0
+- component; 402 × 34; column; padding 0 0 8 0; main end; cross center
+  - Home Indicator: rectangle; 144 × 5; rotated -180°; capsule; fill Labels/Primary; uses Home Indicator/Portrait Width, Home Indicator/Height; shown while Show Home Indicator
+=== 1
+- component; 402 × 21; column; padding 0 0 8 0; main end; cross center
+  - Home Indicator: rectangle; 226 × 5; rotated -180°; capsule; fill Labels/Primary; uses Home Indicator/Landscape Width, Home Indicator/Height; shown while Show Home Indicator
+=== 2
+- component; 402 × 21; column; padding 0 0 7.75 0; main end; cross center
+  - Home Indicator: rectangle; 273 × 5.5; rotated -180°; capsule; fill Labels/Primary; uses Home Indicator/Portrait Width, Home Indicator/Height; shown while Show Home Indicator
+=== 3
+- component; 402 × 21; column; padding 0 0 8 0; main end; cross center
+  - Home Indicator: rectangle; 315 × 5.5; rotated -180°; capsule; fill Labels/Primary; uses Home Indicator/Landscape Width, Home Indicator/Height; shown while Show Home Indicator

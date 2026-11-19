@@ -1,0 +1,8 @@
+=== 0
+- component; 152 × 69.5; row; gap 10; padding 13 6 13 6; main center; cross center; radius 12.5; fill #ffffff at 10%; Liquid Glass effect; uses Button/Margin - T, Button/Margin - B
+=== 1
+- component; 152 × 69.5; radius 12.5; shadow x 0 y 10 blur 10 #000000 at 25%
+  - BG: frame; 152 × 69.5; at (0, 0); radius 12.5; fill #575757
+    - Glass Effect: frame; 152 × 70; at (0, 0); radius 12.5; Liquid Glass effect
+=== 2
+- component; 152 × 69.5; radius 12.5; fill linear gradient #3e7ebc to #53a5d9 (linear dodge); stroke #ffffff at 3% 2; shadow x 0 y 10 blur 10 #000000 at 25%; Liquid Glass effect

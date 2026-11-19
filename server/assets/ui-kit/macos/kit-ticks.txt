@@ -1,0 +1,12 @@
+=== 0
+- component; 20 × 20; fill Labels/Primary at 85%
+=== 1
+- component; 20 × 20; fill Labels/Primary at 85%; opacity 10%
+=== 2
+- component; 20 × 20; fill Labels/Primary at 85%; opacity 25%
+=== 3
+- component; 20 × 20; fill Labels/Primary at 85%; blend linear burn
+=== 4
+- component; 20 × 20; fill Labels/Primary at 85%; opacity 10%; blend linear burn
+=== 5
+- component; 20 × 20; fill Labels/Primary at 85%; opacity 25%; blend linear burn

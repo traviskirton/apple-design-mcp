@@ -1,0 +1,10 @@
+=== 0
+- component; 70 × 57; column; gap 5; padding 6 4 6 4; main center; cross center; hugs height; radius 20; uses Menus/Control Group/Item Spacing, Menus/Control Group/Padding Top
+  - BG: frame; 70 × 57; absolute at (0, 0); radius 20; fill Fills - Vibrant/Tertiary; blend linear burn; hidden unless Show Selection
+  - text SF Symbol star; SF Pro Regular 13/15; centered; 62 × 22; fills width; color Accents/Red; uses Menus/Control Group/Symbol Height; property Symbol
+  - text "Label"; SF Pro Medium 12/18; centered; 62 × 18; fills width; color Accents/Red; property Label
+=== 1
+- component; 70 × 57; column; gap 5; padding 6 4 6 4; main center; cross center; hugs height; radius 20; uses Menus/Control Group/Item Spacing, Menus/Control Group/Padding Top
+  - BG: frame; 70 × 57; absolute at (0, 0); radius 20; fill Fills - Vibrant/Tertiary; blend linear burn; hidden unless Show Selection
+  - text SF Symbol star; SF Pro Regular 13/15; centered; 62 × 22; fills width; color Labels - Vibrant/Primary; uses Menus/Control Group/Symbol Height; blend linear burn; property Symbol
+  - text "Label"; SF Pro Medium 12/18; centered; 62 × 18; fills width; color Labels - Vibrant/Primary; blend linear burn; property Label

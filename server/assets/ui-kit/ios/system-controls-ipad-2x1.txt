@@ -1,0 +1,32 @@
+=== 0
+- component; 142 × 66; row; gap 8; padding 0 14 0 14; cross center
+  - BG: instance of _Controls - BG - iPad [On=False]; 142 × 66; absolute at (0, 0)
+  - Symbol: frame; 40 × 40; capsule; fill #111111 at 60% (luminosity) + #808080 (color dodge) + #222222 (linear dodge)
+    - text SF Symbol lock.rotation.open; SF Pro Bold 15; centered; 40 × 40; at (0, 0); color Grays/White; property Symbol
+  - Title and Detail: frame; 66 × 19; fills width; row; gap 1; padding 1 0 0 0; cross center; hugs height
+    - text "Title"; SF Pro Medium 15; 32 × 18; color #ffffff; property Title
+    - text SF Symbol chevron.up.chevron.down; SF Pro Regular 14/18; 13 × 18; color #ffffff at 33% (linear dodge)
+=== 1
+- component; 142 × 66; row; gap 8; padding 0 14 0 14; cross center
+  - BG: instance of _Controls - BG - iPad [On=False]; 142 × 66; absolute at (0, 0)
+  - Symbol: frame; 40 × 40; capsule; fill #111111 at 60% (luminosity) + #777777 (color dodge) + #222222 (linear dodge)
+    - text SF Symbol lock.rotation.open; SF Pro Bold 15; centered; 40 × 40; at (0, 0); color Accents/Red; opacity 90%; property Symbol
+  - Title and Detail: frame; 66 × 19; fills width; row; gap 1; padding 1 0 0 0; cross center; hugs height
+    - text "Title"; SF Pro Medium 15; 32 × 18; color #ffffff; property Title
+    - text SF Symbol chevron.up.chevron.down; SF Pro Regular 14/18; 13 × 18; color #ffffff at 33% (linear dodge)
+=== 2
+- component; 142 × 66; row; gap 8; padding 0 14 0 14; cross center
+  - BG: instance of _Controls - BG - iPad [On=False]; 142 × 66; absolute at (0, 0)
+  - Symbol: frame; 40 × 40; capsule; fill #111111 at 60% (luminosity) + #777777 (color dodge) + #222222 (linear dodge)
+    - text SF Symbol lock.rotation.open; SF Pro Bold 15; centered; 40 × 40; at (0, 0); color Grays/White; property Symbol
+  - Title and Detail: frame; 66 × 36; fills width; column; main center; hugs height
+    - text "Title"; SF Pro Medium 15; 66 × 18; fills width; color #ffffff; property Title
+    - text "Detail"; SF Pro Medium 14/18; 66 × 18; fills width; color #ffffff at 33% (linear dodge); property Detail; shown while Show Detail
+=== 3
+- component; 142 × 66; row; gap 8; padding 0 14 0 14; cross center
+  - BG: instance of _Controls - BG - iPad [On=True]; 142 × 66; absolute at (0, 0)
+  - Symbol: frame; 40 × 40; capsule; fill #ffffff at 30% + #333333 at 40% (linear dodge)
+    - text SF Symbol lock.rotation.open; SF Pro Bold 15; centered; 40 × 40; at (0, 0); color Accents/Red; opacity 90%; property Symbol
+  - Title and Detail: frame; 66 × 36; fills width; column; main center; hugs height
+    - text "Title"; SF Pro Medium 15; 66 × 18; fills width; color #000000; property Title
+    - text "Detail"; SF Pro Medium 14/18; 66 × 18; fills width; color #000000 at 40% (multiply); property Detail; shown while Show Detail

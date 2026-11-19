@@ -1,0 +1,9 @@
+=== 0
+- component; 162 × 45; row; main center; cross center; hugs height; uses Screen Width
+  - Frame: frame; 88 × 45; row; gap 4; padding 13 6 13 6; main center; cross center; hugs height; radius 10; fill Vibrant Fills/Dark/Secondary; uses Button/Margin - T, Button/Margin - B
+    - Pay: vector shape; 46 × 19; fill Labels/Primary
+=== 1
+- component; 162 × 45; row; padding 0 10 0 10; main center; cross center; hugs height; uses Screen Width
+  - Frame: frame; 142 × 45; fills width; row; gap 4.5; padding 13 6 13 6; main center; cross center; hugs height; radius 10; fill Vibrant Fills/Dark/Secondary; uses Button/Margin - T, Button/Margin - B
+    - text "Buy with"; SF Compact Medium 16/18.5; centered; 65 × 19; color Labels/Primary; property Label
+    - Pay: vector shape; 46 × 19; fill Labels/Primary

@@ -1,0 +1,20 @@
+=== 0
+- component; 402 × 874; radius 32
+  - Lock Screen: frame; 402 × 874; at (0, 0); radius 48
+    - Wallpaper: instance of Wallpapers - iPhone; 402 × 874; at (0, 0)
+    - Overlay: instance of Overlay; 402 × 874; at (0, 0)
+    - Time: vector shape; 171.21 × 72.9; at (107, 119.33); fill #999999 at 80% + #707070 (color dodge); background blur 40
+    - text "Monday, June 6"; SF Pro Medium 22; centered; 215 × 26; at (93, 76); color #999999 at 80% + #707070 (color dodge); background blur 40
+    - Status Bar - iPhone: instance of Status Bar - iPhone [iPhone=iPhone 17 Pro]; 402 × 62; at (0, 0)
+  - instance of Notification - Expanded; 402 × 552; at (0, 268)
+  - Bezel: instance of iPhone 17 Pro [Color=Silver]; 402 × 874; at (0, 0)
+=== 1
+- component; 402 × 874; radius 32
+  - Lock Screen: frame; 402 × 874; at (0, 0); radius 48
+    - Wallpaper: instance of Wallpapers - iPhone; 402 × 874; at (0, 0)
+    - Overlay: instance of Overlay; 402 × 874; at (0, 0)
+    - Time: vector shape; 171.21 × 72.9; at (107, 119.33); fill #999999 at 80% + #707070 (color dodge); background blur 40
+    - text "Monday, June 6"; SF Pro Medium 22; centered; 215 × 26; at (93, 76); color #999999 at 80% + #707070 (color dodge); background blur 40
+    - Status Bar - iPhone: instance of Status Bar - iPhone [iPhone=iPhone 17 Pro]; 402 × 62; at (0, 0)
+  - instance of Notification - Collapsed - List; 402 × 337.33; at (0, 414.67)
+  - Bezel: instance of iPhone 17 Pro [Color=Silver]; 402 × 874; at (0, 0)

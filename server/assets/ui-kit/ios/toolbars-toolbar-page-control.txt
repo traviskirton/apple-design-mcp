@@ -1,0 +1,333 @@
+=== 0
+- component; 168 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 168 × 48; absolute at (0, 0)
+  - Frame: frame; 8 × 8; row; gap 10; main center; cross center
+    - Dot 1: instance of _Page Dots [Selected=False]; 4 × 4; blend linear burn
+  - Frame: frame; 8 × 8; row; gap 10; main center; cross center
+    - Dot 2: instance of _Page Dots [Selected=False]; 6 × 6; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 5: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 6: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 7: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 8: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+=== 1
+- component; 168 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 168 × 48; absolute at (0, 0)
+  - Frame: frame; 8 × 8; row; gap 10; main center; cross center
+    - Dot 1: instance of _Page Dots [Selected=False]; 4 × 4; blend linear burn
+  - Frame: frame; 8 × 8; row; gap 10; main center; cross center
+    - Dot 2: instance of _Page Dots [Selected=False]; 6 × 6; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 5: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 6: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 7: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Dot 8: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+=== 2
+- component; 168 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 168 × 48; absolute at (0, 0)
+  - Frame: frame; 8 × 8; row; gap 10; main center; cross center
+    - Dot 1: instance of _Page Dots [Selected=False]; 4 × 4; blend linear burn
+  - Frame: frame; 8 × 8; row; gap 10; main center; cross center
+    - Dot 2: instance of _Page Dots [Selected=False]; 6 × 6; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 5: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 6: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Dot 7: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 8: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+=== 3
+- component; 168 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 168 × 48; absolute at (0, 0)
+  - Frame: frame; 8 × 8; row; gap 10; main center; cross center
+    - Dot 1: instance of _Page Dots [Selected=False]; 4 × 4; blend linear burn
+  - Frame: frame; 8 × 8; row; gap 10; main center; cross center
+    - Dot 2: instance of _Page Dots [Selected=False]; 6 × 6; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 5: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Dot 6: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Frame: frame; 8 × 8; row; gap 10; main center; cross center
+    - Dot 7: instance of _Page Dots [Selected=False]; 6 × 6; blend linear burn
+  - Frame: frame; 8 × 8; row; gap 10; main center; cross center
+    - Dot 8: instance of _Page Dots [Selected=False]; 4 × 4; blend linear burn
+=== 4
+- component; 168 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 168 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Dot 5: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 6: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Frame: frame; 8 × 8; row; gap 10; main center; cross center
+    - Dot 7: instance of _Page Dots [Selected=False]; 6 × 6; blend linear burn
+  - Frame: frame; 8 × 8; row; gap 10; main center; cross center
+    - Dot 8: instance of _Page Dots [Selected=False]; 4 × 4; blend linear burn
+=== 5
+- component; 168 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 168 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 5: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 6: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Frame: frame; 8 × 8; row; gap 10; main center; cross center
+    - Dot 7: instance of _Page Dots [Selected=False]; 6 × 6; blend linear burn
+  - Frame: frame; 8 × 8; row; gap 10; main center; cross center
+    - Dot 8: instance of _Page Dots [Selected=False]; 4 × 4; blend linear burn
+=== 6
+- component; 168 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 168 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 5: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 6: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Frame: frame; 8 × 8; row; gap 10; main center; cross center
+    - Dot 7: instance of _Page Dots [Selected=False]; 6 × 6; blend linear burn
+  - Frame: frame; 8 × 8; row; gap 10; main center; cross center
+    - Dot 8: instance of _Page Dots [Selected=False]; 4 × 4; blend linear burn
+=== 7
+- component; 168 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 168 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 5: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 6: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Frame: frame; 8 × 8; row; gap 10; main center; cross center
+    - Dot 7: instance of _Page Dots [Selected=False]; 6 × 6; blend linear burn
+  - Frame: frame; 8 × 8; row; gap 10; main center; cross center
+    - Dot 8: instance of _Page Dots [Selected=False]; 4 × 4; blend linear burn
+=== 8
+- component; 152 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 152 × 48; absolute at (0, 0)
+  - Frame: frame; 8 × 8; row; gap 10; main center; cross center
+    - Dot 1: instance of _Page Dots [Selected=False]; 6 × 6; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 5: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 6: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 7: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+=== 9
+- component; 152 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 152 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 5: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 6: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Frame: frame; 8 × 8; row; gap 10; main center; cross center
+    - Dot 7: instance of _Page Dots [Selected=False]; 6 × 6; blend linear burn
+=== 10
+- component; 152 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 152 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 5: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Dot 6: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Frame: frame; 8 × 8; row; gap 10; main center; cross center
+    - Dot 7: instance of _Page Dots [Selected=False]; 6 × 6; blend linear burn
+=== 11
+- component; 152 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 152 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Dot 5: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 6: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Frame: frame; 8 × 8; row; gap 10; main center; cross center
+    - Dot 7: instance of _Page Dots [Selected=False]; 6 × 6; blend linear burn
+=== 12
+- component; 152 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 152 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 5: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 6: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Frame: frame; 8 × 8; row; gap 10; main center; cross center
+    - Dot 7: instance of _Page Dots [Selected=False]; 6 × 6; blend linear burn
+=== 13
+- component; 152 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 152 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 5: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 6: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Frame: frame; 8 × 8; row; gap 10; main center; cross center
+    - Dot 7: instance of _Page Dots [Selected=False]; 6 × 6; blend linear burn
+=== 14
+- component; 152 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 152 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 5: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 6: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Frame: frame; 8 × 8; row; gap 10; main center; cross center
+    - Dot 7: instance of _Page Dots [Selected=False]; 6 × 6; blend linear burn
+=== 15
+- component; 136 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 136 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 5: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 6: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+=== 16
+- component; 136 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 136 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 5: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Dot 6: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+=== 17
+- component; 136 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 136 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Dot 5: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 6: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+=== 18
+- component; 136 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 136 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 5: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 6: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+=== 19
+- component; 136 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 136 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 5: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 6: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+=== 20
+- component; 136 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 136 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 5: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 6: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+=== 21
+- component; 120 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 120 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 5: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+=== 22
+- component; 120 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 120 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Dot 5: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+=== 23
+- component; 120 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 120 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 5: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+=== 24
+- component; 120 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 120 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 5: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+=== 25
+- component; 120 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 120 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 5: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+=== 26
+- component; 104 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 104 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+=== 27
+- component; 104 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 104 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+=== 28
+- component; 104 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 104 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+=== 29
+- component; 104 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 104 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 4: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+=== 30
+- component; 88 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 88 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+=== 31
+- component; 88 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 88 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+=== 32
+- component; 88 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 88 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 3: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+=== 33
+- component; 72 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 72 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+=== 34
+- component; 72 × 48; row; gap 8; padding 20 24 20 24; main center; cross center; hugs content; capsule
+  - Background: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 72 × 48; absolute at (0, 0)
+  - Dot 1: instance of _Page Dots [Selected=True]; 8 × 8; blend linear burn
+  - Dot 2: instance of _Page Dots [Selected=False]; 8 × 8; blend linear burn

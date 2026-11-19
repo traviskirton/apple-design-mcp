@@ -1,0 +1,36 @@
+=== 0
+- component; 1210 × 32; row; space between; padding 0 16 0 16; cross center
+  - Leading Accessories: instance of iPad - Leading Accessories; 132 × 16
+  - Menubar: frame; 956.16 × 16; fills width; row; padding 0 6 0 6; cross center; hugs height; slot Menubar
+    - App Menu: instance of _Menu bar item [Type=App, Selected=False]; with Menu Name "App"; 49 × 16
+    - Menubar Item: instance of _Menu bar item [Type=File, Selected=False]; with Menu Name "File"; 45 × 16
+    - Menubar Item: instance of _Menu bar item [Type=File, Selected=False]; with Menu Name "Edit"; 48 × 16
+    - Menubar Item: instance of _Menu bar item [Type=File, Selected=False]; with Menu Name "Format"; 70 × 16
+    - Menubar Item: instance of _Menu bar item [Type=File, Selected=False]; with Menu Name "View"; 54 × 16
+    - Menubar Item: instance of _Menu bar item [Type=File, Selected=False]; with Menu Name "Window"; 75 × 16
+    - Menubar Item: instance of _Menu bar item [Type=File, Selected=False]; with Menu Name "Help"; 53 × 16
+  - Trailing Accessories: instance of iPad - Trailing Accessories; 89.84 × 16
+=== 1
+- component; 1210 × 32; row; space between; padding 0 16 0 16; cross center
+  - Leading Accessories: instance of iPad - Leading Accessories; 132 × 16
+  - Menubar: frame; 956.16 × 16; fills width; row; padding 0 6 0 6; cross center; hugs height; slot Menubar
+    - App Menu: instance of _Menu bar item [Type=App, Selected=False]; with Menu Name "App"; 49 × 16
+  - Trailing Accessories: instance of iPad - Trailing Accessories; 89.84 × 16
+=== 2
+- component; 1210 × 32; row; space between; padding 0 16 0 16; cross center
+  - Window Controls: frame; 132 × 16; row; gap 12; main end; cross center; hugs height
+    - Close: frame; 16 × 16; row; gap 10; main center; cross center; capsule; fill #ff0b18
+      - Vector: vector shape; 6.1 × 6.1; fill Labels/Primary; opacity 55%
+    - Minimize: frame; 16 × 16; row; gap 10; main center; cross center; capsule; fill #ffc700
+      - Vector: vector shape; 6.5 × 1.5; fill Labels/Primary; opacity 55%
+    - Fullscreen: frame; 16 × 16; row; gap 10; main center; cross center; capsule; fill #00c847
+      - Vector: vector shape; 9 × 9; fill Labels/Primary; opacity 55%
+  - Menubar: frame; 956.16 × 16; fills width; row; padding 0 6 0 6; cross center; hugs height; slot Menubar
+    - App Menu: instance of _Menu bar item [Type=App, Selected=False]; with Menu Name "App"; 49 × 16
+    - Menubar Item: instance of _Menu bar item [Type=File, Selected=False]; with Menu Name "File"; 45 × 16
+    - Menubar Item: instance of _Menu bar item [Type=File, Selected=False]; with Menu Name "Edit"; 48 × 16
+    - Menubar Item: instance of _Menu bar item [Type=File, Selected=False]; with Menu Name "Format"; 70 × 16
+    - Menubar Item: instance of _Menu bar item [Type=File, Selected=False]; with Menu Name "View"; 54 × 16
+    - Menubar Item: instance of _Menu bar item [Type=File, Selected=False]; with Menu Name "Window"; 75 × 16
+    - Menubar Item: instance of _Menu bar item [Type=File, Selected=False]; with Menu Name "Help"; 53 × 16
+  - Trailing Accessories: instance of iPad - Trailing Accessories; 89.84 × 16

@@ -1,0 +1,25 @@
+=== 0
+- component; 402 × 52; row; padding 0 16 0 16; cross center
+  - Contents: frame; 370 × 52; fills width; fills height; column; main center
+    - _Separator: instance of _Separator; 370 × 1; fills width; blend linear burn
+    - text "Value"; SF Pro Medium 17/20; 370 × 51; fills height; fills width; color Labels/Tertiary at 30%; property Value
+=== 1
+- component; 402 × 52; row; padding 0 16 0 16
+  - Contents: frame; 370 × 52; fills width; fills height; column
+    - _Separator: instance of _Separator; 370 × 1; fills width; blend linear burn
+    - Cursor and Value: frame; 370 × 51; fills height; fills width; row; cross center
+      - Cursor: rectangle; 2 × 22; capsule; fill Accents/Blue
+=== 2
+- component; 402 × 52; row; padding 0 16 0 16; cross center
+  - Contents: frame; 370 × 52; fills width; fills height; column; main center
+    - _Separator: instance of _Separator; 370 × 1; fills width; blend linear burn
+    - text "Value"; SF Pro Medium 17/20; 370 × 51; fills height; fills width; color Labels/Primary; property Value
+=== 3
+- component; 402 × 52; row; padding 0 16 0 16; cross center
+  - Contents: frame; 370 × 52; fills width; fills height; column; main center
+    - _Separator: instance of _Separator; 370 × 1; fills width; blend linear burn
+    - Text: frame; 370 × 51; fills height; fills width; row
+      - Cursor and Value: frame; 350 × 51; fills width; fills height; row; gap 1; cross center
+        - text "Value"; SF Pro Medium 17/20; 44 × 20; color Labels/Primary; property Value
+        - Cursor: rectangle; 2 × 22; capsule; fill Accents/Blue
+      - text SF Symbol multiply.circle.fill; SF Pro Regular 17/22; 20 × 51; fills height; color Labels/Tertiary at 30%

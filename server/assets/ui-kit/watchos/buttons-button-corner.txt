@@ -1,0 +1,3 @@
+=== 0
+- component; 30 × 30; row; gap 10; padding 13 6 13 6; main center; cross center; capsule; fill #ffffff at 10%; Liquid Glass effect; uses Button/Margin - T, Button/Margin - B, Button/Height - Corner
+  - text SF Symbol xmark; SF Compact Semibold 15; centered; 15 × 18; color Labels/Primary; property Label

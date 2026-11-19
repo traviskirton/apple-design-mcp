@@ -1,0 +1,17 @@
+=== 0
+- component; 244 × 284; column; padding 5 12 5 12; hugs height
+  - BG: instance of Menu Background; 244 × 284; absolute at (0, 0)
+  - Items: frame; 220 × 274; fills width; column; hugs height; slot Items
+    - Item: instance of Menu Items [State=Idle, Menu has Selection=False, Type=Action]; with Preserve Symbol Space off; 220 × 24; fills width
+    - Item: instance of Menu Items [State=Idle, Menu has Selection=False, Type=Action]; with Preserve Symbol Space off; 220 × 24; fills width
+    - Item: instance of Menu Items [State=Idle, Menu has Selection=False, Type=Action]; with Preserve Symbol Space off; 220 × 24; fills width
+    - Item: instance of Menu Items [State=Idle, Menu has Selection=False, Type=Action]; with Preserve Symbol Space off; 220 × 24; fills width
+    - Separators: instance of Separators; 220 × 11; fills width
+    - Headers: instance of Headers [Inset=False]; 220 × 25; fills width
+    - Item: instance of Menu Items [State=Idle, Menu has Selection=False, Type=Action]; with Show Shortcuts off, Symbol SF Symbol globe; 220 × 24; fills width
+    - Separators: instance of Separators; 220 × 11; fills width
+    - Item: instance of Menu Items [State=Idle, Menu has Selection=False, Type=Action]; with Preserve Symbol Space off; 220 × 24; fills width
+    - Submenu: instance of Menu Items [State=Disabled, Menu has Selection=False, Type=Action]; with Preserve Symbol Space off; 220 × 24; fills width
+    - Item: instance of Menu Items [State=Idle, Menu has Selection=False, Type=Action]; with Preserve Symbol Space off; 220 × 24; fills width
+    - Separators: instance of Separators; 220 × 11; fills width
+    - Submenu: instance of Menu Items [State=Hover, Menu has Selection=False, Type=Submenu]; with Show Symbol on, Preserve Symbol Space off; 220 × 24; fills width

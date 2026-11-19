@@ -1,0 +1,12 @@
+=== 0
+- component; 20 × 20; opacity 12%
+  - Tint: rectangle; 20 × 20; at (0, 0); fill Accents/Blue
+  - Fill: rectangle; 20 × 20; at (0, 0); fill Fills - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn
+=== 1
+- component; 20 × 20; opacity 28%
+  - Tint: rectangle; 20 × 20; at (0, 0); fill Accents/Blue
+  - Fill: rectangle; 20 × 20; at (0, 0); fill Fills - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn
+=== 2
+- component; 20 × 20; opacity 20%
+  - Tint: rectangle; 20 × 20; at (0, 0); fill Accents/Blue
+  - Fill: rectangle; 20 × 20; at (0, 0); fill Fills - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn

@@ -1,0 +1,4 @@
+=== 0
+- component; 48 × 16; row; gap 3; main center; cross center; hugs content
+  - text SF Symbol folder; SF Pro Bold 13; centered; 15 × 16; color Labels/Primary at 85%; property Symbol; shown while Show Symbol
+  - text "Title"; SF Pro Bold 13; 30 × 16; color Labels/Primary at 85%; property Title

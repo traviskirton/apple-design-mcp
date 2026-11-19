@@ -1,0 +1,6 @@
+=== 0
+- component; 200 × 52; row; gap 8; padding 0 16 0 16; cross center
+  - text SF Symbol star; SF Pro Regular 17/22; centered; 32 × 52; fills height; color Labels/Primary; property Symbol
+  - Title: frame; 128 × 52; fills width; fills height; column; padding 0 0 1 0; main center
+    - _Separator: instance of _Separator; 128 × 1; fills width; blend linear burn
+    - text "Action"; style Body/Regular; 128 × 50; fills height; fills width; color Labels/Primary; property Action

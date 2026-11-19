@@ -1,0 +1,16 @@
+=== 0
+- component; 20 × 20; fill Labels/Primary at 85%; opacity 6%
+=== 1
+- component; 20 × 20; fill Labels/Primary at 85%; opacity 17%
+=== 2
+- component; 20 × 20; fill Accents/Blue + Fills - Opaque/Secondary at 8%
+=== 3
+- component; 20 × 20; fill Accents/Blue
+=== 4
+- component; 20 × 20; fill Labels/Primary at 85%; opacity 6%; blend linear burn
+=== 5
+- component; 20 × 20; fill Labels/Primary at 85%; opacity 17%; blend linear burn
+=== 6
+- component; 20 × 20; fill Accents - Vibrant/Blue + Fills - Opaque/Secondary at 8%
+=== 7
+- component; 20 × 20; fill Accents - Vibrant/Blue

@@ -1,0 +1,64 @@
+=== 0
+- component; 190 × 40; row; gap 6; padding 0 8 0 36; cross center; hugs height; capsule; fill Fills - Vibrant/Tertiary
+  - Leading: frame; 126 × 40; fills width; row; gap 8; cross center; hugs height
+    - text SF Symbol square.dashed; SF Pro Regular 17/20; centered; 28 × 20; color Labels - Vibrant/Tertiary; blend linear burn; property Symbol; shown while Show Symbol
+    - Label and Subtitle: frame; 90 × 40; fills width; column; gap 2; padding 10 0 10 0; main center; hugs height; uses Menus/Menu Items/Label and Subtitle Padding Left, Menus/Menu Items/Padding Top + Bottom
+      - text "Label"; SF Pro Regular 17/20; 90 × 20; fills width; color Labels - Vibrant/Tertiary; blend linear burn; property Label
+      - text "Subtitle"; SF Pro Regular 13/18; 64 × 18; fills width; color Labels - Vibrant/Quaternary; blend linear burn; property Subtitle; hidden unless Show Subtitle
+  - text SF Symbol chevron.down; SF Pro Bold 15/20; centered; 14 × 20; color Labels - Vibrant/Tertiary; blend linear burn
+=== 1
+- component; 190 × 40; row; gap 6; padding 0 8 0 36; cross center; hugs height; capsule; fill Fills - Vibrant/Tertiary
+  - Leading: frame; 126 × 40; fills width; row; gap 8; cross center; hugs height
+    - text SF Symbol square.dashed; SF Pro Regular 17/20; centered; 28 × 20; color Labels - Vibrant/Primary; blend linear burn; property Symbol; shown while Show Symbol
+    - Label and Subtitle: frame; 90 × 40; fills width; column; gap 2; padding 10 0 10 0; main center; hugs height; uses Menus/Menu Items/Label and Subtitle Padding Left, Menus/Menu Items/Padding Top + Bottom
+      - text "Label"; SF Pro Regular 17/20; 90 × 20; fills width; color Labels - Vibrant/Primary; blend linear burn; property Label
+      - text "Subtitle"; SF Pro Regular 13/18; 64 × 18; fills width; color Labels - Vibrant/Secondary; blend linear burn; property Subtitle; hidden unless Show Subtitle
+  - text SF Symbol chevron.down; SF Pro Bold 15/20; centered; 14 × 20; color Labels - Vibrant/Primary; blend linear burn
+=== 2
+- component; 190 × 40; row; gap 6; padding 0 8 0 36; cross center; hugs height
+  - Leading: frame; 126 × 40; fills width; row; gap 8; cross center; hugs height
+    - text SF Symbol square.dashed; SF Pro Regular 17/20; centered; 28 × 20; color Labels - Vibrant/Tertiary; blend linear burn; property Symbol; shown while Show Symbol
+    - Label and Subtitle: frame; 90 × 40; fills width; column; gap 2; padding 10 0 10 0; main center; hugs height; uses Menus/Menu Items/Label and Subtitle Padding Left, Menus/Menu Items/Padding Top + Bottom
+      - text "Label"; SF Pro Regular 17/20; 90 × 20; fills width; color Labels - Vibrant/Tertiary; blend linear burn; property Label
+      - text "Subtitle"; SF Pro Regular 13/18; 64 × 18; fills width; color Labels - Vibrant/Quaternary; blend linear burn; property Subtitle; hidden unless Show Subtitle
+  - text SF Symbol chevron.right; SF Pro Bold 15/20; centered; 14 × 20; color Labels - Vibrant/Tertiary; blend linear burn
+=== 3
+- component; 190 × 40; row; gap 6; padding 0 8 0 36; cross center; hugs height
+  - Leading: frame; 126 × 40; fills width; row; gap 8; cross center; hugs height
+    - text SF Symbol square.dashed; SF Pro Regular 17/20; centered; 28 × 20; color Labels - Vibrant/Primary; blend linear burn; property Symbol; shown while Show Symbol
+    - Label and Subtitle: frame; 90 × 40; fills width; column; gap 2; padding 10 0 10 0; main center; hugs height; uses Menus/Menu Items/Label and Subtitle Padding Left, Menus/Menu Items/Padding Top + Bottom
+      - text "Label"; SF Pro Regular 17/20; 90 × 20; fills width; color Labels - Vibrant/Primary; blend linear burn; property Label
+      - text "Subtitle"; SF Pro Regular 13/18; 64 × 18; fills width; color Labels - Vibrant/Secondary; blend linear burn; property Subtitle; hidden unless Show Subtitle
+  - text SF Symbol chevron.right; SF Pro Bold 15/20; centered; 14 × 20; color Labels - Vibrant/Primary; blend linear burn
+=== 4
+- component; 190 × 40; row; gap 6; padding 0 8 0 6; cross center; hugs height; capsule; fill Fills - Vibrant/Tertiary
+  - Leading: frame; 156 × 40; fills width; row; gap 8; cross center; hugs height
+    - text SF Symbol square.dashed; SF Pro Regular 17/20; centered; 28 × 20; color Labels - Vibrant/Tertiary; blend linear burn; property Symbol; shown while Show Symbol
+    - Label and Subtitle: frame; 120 × 40; fills width; column; gap 2; padding 10 0 10 0; main center; hugs height; uses Menus/Menu Items/Label and Subtitle Padding Left, Menus/Menu Items/Padding Top + Bottom
+      - text "Label"; SF Pro Regular 17/20; 120 × 20; fills width; color Labels - Vibrant/Tertiary; blend linear burn; property Label
+      - text "Subtitle"; SF Pro Regular 13/18; 64 × 18; fills width; color Labels - Vibrant/Quaternary; blend linear burn; property Subtitle; hidden unless Show Subtitle
+  - Submenu: instance of _Disclosure/Disabled/True; 14 × 20
+=== 5
+- component; 190 × 40; row; gap 6; padding 0 8 0 6; cross center; hugs height; capsule; fill Fills - Vibrant/Tertiary
+  - Leading: frame; 156 × 40; fills width; row; gap 8; cross center; hugs height
+    - text SF Symbol square.dashed; SF Pro Regular 17/20; centered; 28 × 20; color Labels - Vibrant/Primary; blend linear burn; property Symbol; shown while Show Symbol
+    - Label and Subtitle: frame; 120 × 40; fills width; column; gap 2; padding 10 0 10 0; main center; hugs height; uses Menus/Menu Items/Label and Subtitle Padding Left, Menus/Menu Items/Padding Top + Bottom
+      - text "Label"; SF Pro Regular 17/20; 120 × 20; fills width; color Labels - Vibrant/Primary; blend linear burn; property Label
+      - text "Subtitle"; SF Pro Regular 13/18; 64 × 18; fills width; color Labels - Vibrant/Secondary; blend linear burn; property Subtitle; hidden unless Show Subtitle
+  - text SF Symbol chevron.down; SF Pro Bold 15/20; centered; 14 × 20; color Labels - Vibrant/Primary; blend linear burn
+=== 6
+- component; 190 × 40; row; gap 6; padding 0 8 0 6; cross center; hugs height
+  - Leading: frame; 156 × 40; fills width; row; gap 8; cross center; hugs height
+    - text SF Symbol square.dashed; SF Pro Regular 17/20; centered; 28 × 20; color Labels - Vibrant/Tertiary; blend linear burn; property Symbol; shown while Show Symbol
+    - Label and Subtitle: frame; 120 × 40; fills width; column; gap 2; padding 10 0 10 0; main center; hugs height; uses Menus/Menu Items/Label and Subtitle Padding Left, Menus/Menu Items/Padding Top + Bottom
+      - text "Label"; SF Pro Regular 17/20; 120 × 20; fills width; color Labels - Vibrant/Tertiary; blend linear burn; property Label
+      - text "Subtitle"; SF Pro Regular 13/18; 64 × 18; fills width; color Labels - Vibrant/Quaternary; blend linear burn; property Subtitle; hidden unless Show Subtitle
+  - text SF Symbol chevron.right; SF Pro Bold 15/20; centered; 14 × 20; color Labels - Vibrant/Tertiary; blend linear burn
+=== 7
+- component; 190 × 40; row; gap 6; padding 0 8 0 6; cross center; hugs height
+  - Leading: frame; 156 × 40; fills width; row; gap 8; cross center; hugs height
+    - text SF Symbol square.dashed; SF Pro Regular 17/20; centered; 28 × 20; color Labels - Vibrant/Primary; blend linear burn; property Symbol; shown while Show Symbol
+    - Label and Subtitle: frame; 120 × 40; fills width; column; gap 2; padding 10 0 10 0; main center; hugs height; uses Menus/Menu Items/Label and Subtitle Padding Left, Menus/Menu Items/Padding Top + Bottom
+      - text "Label"; SF Pro Regular 17/20; 120 × 20; fills width; color Labels - Vibrant/Primary; blend linear burn; property Label
+      - text "Subtitle"; SF Pro Regular 13/18; 64 × 18; fills width; color Labels - Vibrant/Secondary; blend linear burn; property Subtitle; hidden unless Show Subtitle
+  - text SF Symbol chevron.right; SF Pro Bold 15/20; centered; 14 × 20; color Labels - Vibrant/Primary; blend linear burn

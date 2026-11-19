@@ -1,0 +1,4 @@
+=== 0
+- component; 84 × 44; row; gap 8; padding 12 4 12 4; main center; cross center; hugs height; capsule; fill Accents/Blue
+  - text SF Symbol circle.dashed; SF Pro Regular 16/20; centered; 15 × 20; color Grays/White
+  - text "Label"; SF Pro Regular 13/15; centered; 34 × 15; color Grays/White

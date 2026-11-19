@@ -1,0 +1,7 @@
+=== 0
+- component; 90 × 24; row; gap 10; padding 4 9 4 11; hugs content; radius 4
+  - Selection: frame; 98 × 25; absolute at (-4, -1); capsule; fill #000000 at 8% (linear burn); background blur 60
+  - text "App Name"; SF Pro Heavy 13/16; centered; 70 × 16; color #000000 at 85%; property Menu Item
+=== 1
+- component; 90 × 24; row; gap 10; padding 4 9 4 11; hugs content; radius 4
+  - text "App Name"; SF Pro Heavy 13/16; centered; 70 × 16; color #000000 at 85%; property Menu Item

@@ -1,0 +1,176 @@
+=== 0
+- component; 951 × 669
+  - Wallpaper: instance of Wallpapers - iPhone Duo [Style=Star White, Display=Outer Portrait]; 951 × 669; at (0, 0)
+  - Vertical Bar: frame; 84 × 669; at (867, 0); column; gap 4; padding 20 24 0 12; cross center; hugs width
+    - Status bar - iPhone Duo: frame; 48 × 83; column; gap 6; padding 11 0 1 0; main center; cross center; hugs content
+      - text "9:41"; SF Pro Rounded Bold 16/19; centered; 48 × 19; color #ffffff
+      - Levels: frame; 46 × 46
+        - Cellular Connection: frame; 11 × 2; at (11.67, 36.33)
+          - Dot: ellipse; 4 × 4; at (18.67, 0); fill #ffffff
+          - Dot: ellipse; 4 × 4; at (12.67, 2.67); fill #ffffff
+          - Dot: ellipse; 4 × 4; at (6, 2.67); fill #ffffff
+          - Dot: ellipse; 4 × 4; at (0, 0); fill #ffffff
+        - Battery: ellipse; 40.67 × 40.67; at (2.67, 2.33); capsule; fill #ffffff; stroke #ffffff 3
+        - Wifi: vector shape; 18 × 13.33; at (14, 16); fill #ffffff
+    - Bottom: frame; 48 × 562; fills height; column; gap 12; main end; cross center
+  - Dock: frame; 84 × 669; at (867, 0); column; padding 90 12 0 0; main center; cross center; hugs width
+    - Dock: frame; 72 × 264; fills width; column; gap 16; padding 12; hugs height
+      - Materials: instance of _Dock Material; 72 × 264; absolute at (0, 0)
+      - App Icons: instance of _App Icon/iPhone Duo [Display=Outer, Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 48 × 48
+      - App Icons: instance of _App Icon/iPhone Duo [Display=Outer, Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 48 × 48
+      - App Icons: instance of _App Icon/iPhone Duo [Display=Outer, Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 48 × 48
+      - App Icons: instance of _App Icon/iPhone Duo [Display=Outer, Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 48 × 48
+  - App Icons: frame; 951 × 669; at (0, 0); row; space between; padding 54.33 84 0 73
+    - Leading Side: frame; 397 × 550; fills width; column; gap 38; hugs height
+      - Row 1: frame; 397 × 60; fills width; row; gap 28; hugs height
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "FaceTime"; 60 × 60
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Calendar"; 60 × 60
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Photos"; 60 × 60
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Camera"; 60 × 60
+      - Row 2: frame; 397 × 60; fills width; row; gap 28; hugs height
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Mail"; 60 × 60
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Notes"; 60 × 60
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Clock"; 60 × 60
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Maps"; 60 × 60
+      - Row 3: frame; 397 × 60; fills width; row; gap 28; hugs height
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "TV"; 60 × 60
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "News"; 60 × 60
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Preview"; 60 × 60
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Games"; 60 × 60
+      - Row 4: frame; 397 × 60; fills width; row; gap 28; hugs height
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Health"; 60 × 60
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Wallet"; 60 × 60
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Settings"; 60 × 60
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Weather"; 60 × 60
+      - Row 5: frame; 397 × 60; fills width; row; gap 28; hugs height
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Stocks"; 60 × 60
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Find My"; 60 × 60
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Home"; 60 × 60
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Podcasts"; 60 × 60
+      - Row 6: frame; 397 × 60; fills width; row; gap 28; hugs height
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Books"; 60 × 60
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Fitness"; 60 × 60
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Watch"; 60 × 60
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Reminders"; 60 × 60
+    - Trailing Side: frame; 397 × 256; fills width; column; gap 38; hugs height
+      - Row 2: frame; 397 × 60; fills width; row; gap 28; hugs height
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Files"; 60 × 60
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Preview"; 60 × 60
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Games"; 60 × 60
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Contacts"; 60 × 60
+      - Row 3: frame; 397 × 60; fills width; row; gap 28; hugs height
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "iTunes Store"; 60 × 60
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Translate"; 60 × 60
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Freeform"; 60 × 60
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; 60 × 60
+      - Row 4: frame; 397 × 60; fills width; row; gap 28; hugs height
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; 60 × 60
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; 60 × 60
+        - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=True]; with Show Badge on; 60 × 60
+=== 1
+- component; 669 × 951
+  - Wallpaper: instance of Wallpapers - iPhone Duo [Style=Star White, Display=Outer Portrait]; 669 × 951; at (0, 0)
+  - Vertical Bar: frame; 84 × 951; at (585, 0); column; gap 4; padding 20 24 0 12; cross center; hugs width
+    - Status bar - iPhone Duo: frame; 48 × 83; column; gap 6; padding 11 0 1 0; main center; cross center; hugs content
+      - text "9:41"; SF Pro Rounded Bold 16/19; centered; 48 × 19; color #ffffff
+      - Levels: frame; 46 × 46
+        - Cellular Connection: frame; 11 × 2; at (11.67, 36.33)
+          - Dot: ellipse; 4 × 4; at (18.67, 0); fill #ffffff
+          - Dot: ellipse; 4 × 4; at (12.67, 2.67); fill #ffffff
+          - Dot: ellipse; 4 × 4; at (6, 2.67); fill #ffffff
+          - Dot: ellipse; 4 × 4; at (0, 0); fill #ffffff
+        - Battery: ellipse; 40.67 × 40.67; at (2.67, 2.33); capsule; fill #ffffff; stroke #ffffff 3
+        - Wifi: vector shape; 18 × 13.33; at (14, 16); fill #ffffff
+    - Bottom: frame; 48 × 844; fills height; column; gap 12; main end; cross center
+  - Dock: frame; 669 × 120; at (0, 831); row; padding 20 0 8 0; main center; cross center; hugs height
+    - Dock: frame; 320 × 92; row; gap 16; padding 16; cross center; hugs content
+      - Materials: instance of _Dock Material; 320 × 92; absolute at (0, 0)
+      - App Icons: instance of _App Icon/iPhone Duo [Display=Outer, Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 60 × 60
+      - App Icons: instance of _App Icon/iPhone Duo [Display=Outer, Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 60 × 60
+      - App Icons: instance of _App Icon/iPhone Duo [Display=Outer, Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 60 × 60
+      - App Icons: instance of _App Icon/iPhone Duo [Display=Outer, Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 60 × 60
+  - App Icons: frame; 669 × 951; at (0, 0); column; gap 58; padding 82 145.33 0 145.33; cross center
+    - Row 1: frame; 378.34 × 60; fills width; row; space between; hugs height
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Portrait, Custom Icon=False]; with App Name "FaceTime"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Portrait, Custom Icon=False]; with App Name "Calendar"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Portrait, Custom Icon=False]; with App Name "Photos"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Portrait, Custom Icon=False]; with App Name "Camera"; 60 × 60
+    - Row 2: frame; 378.34 × 60; fills width; row; space between; hugs height
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Portrait, Custom Icon=False]; with App Name "Mail"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Portrait, Custom Icon=False]; with App Name "Notes"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Portrait, Custom Icon=False]; with App Name "Clock"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Portrait, Custom Icon=False]; with App Name "Maps"; 60 × 60
+    - Row 3: frame; 378.34 × 60; fills width; row; space between; hugs height
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Portrait, Custom Icon=False]; with App Name "TV"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Portrait, Custom Icon=False]; with App Name "News"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Portrait, Custom Icon=False]; with App Name "Preview"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Portrait, Custom Icon=False]; with App Name "Games"; 60 × 60
+    - Row 4: frame; 378.34 × 60; fills width; row; space between; hugs height
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Portrait, Custom Icon=False]; with App Name "Health"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Portrait, Custom Icon=False]; with App Name "Wallet"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Portrait, Custom Icon=False]; with App Name "Settings"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Portrait, Custom Icon=False]; with App Name "Weather"; 60 × 60
+    - Row 5: frame; 378.34 × 60; fills width; row; space between; hugs height
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Portrait, Custom Icon=False]; with App Name "Stocks"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Portrait, Custom Icon=False]; with App Name "Find My"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Portrait, Custom Icon=False]; with App Name "Home"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Portrait, Custom Icon=False]; with App Name "Podcasts"; 60 × 60
+    - Row 6: frame; 378.34 × 60; fills width; row; space between; hugs height
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Portrait, Custom Icon=True]; with App Name "My App", Show Badge on; 60 × 60
+      - Frame: frame; 60 × 60
+      - Frame: frame; 60 × 60
+      - Frame: frame; 60 × 60
+=== 2
+- component; 466 × 678
+  - Wallpaper: instance of Wallpapers - iPhone Duo [Style=Star White, Display=Outer Portrait]; 466 × 678; at (0, 0)
+  - Vertical Bar: frame; 84 × 678; at (382, 0); column; gap 4; padding 24 24 0 12; cross center; hugs width
+    - Camera Punchout: frame; 48 × 42; fills width
+    - Status bar - iPhone Duo: frame; 48 × 83; column; gap 6; padding 11 0 1 0; main center; cross center; hugs content
+      - text "9:41"; SF Pro Rounded Bold 16/19; centered; 48 × 19; color #ffffff
+      - Levels: frame; 46 × 46
+        - Cellular Connection: frame; 11 × 2; at (11.67, 36.33)
+          - Dot: ellipse; 4 × 4; at (18.67, 0); fill #ffffff
+          - Dot: ellipse; 4 × 4; at (12.67, 2.67); fill #ffffff
+          - Dot: ellipse; 4 × 4; at (6, 2.67); fill #ffffff
+          - Dot: ellipse; 4 × 4; at (0, 0); fill #ffffff
+        - Battery: ellipse; 40.67 × 40.67; at (2.67, 2.33); capsule; fill #ffffff; stroke #ffffff 3
+        - Wifi: vector shape; 18 × 13.33; at (14, 16); fill #ffffff
+    - Bottom: frame; 48 × 521; fills height; column; gap 12; main end; cross center
+  - Dock: frame; 84 × 678; at (382, 0); column; padding 95 12 0 0; main center; cross center; hugs width
+    - Dock: frame; 72 × 264; fills width; column; gap 16; padding 12; hugs height
+      - Materials: instance of _Dock Material; 72 × 264; absolute at (0, 0)
+      - App Icons: instance of _App Icon/iPhone Duo [Display=Outer, Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 48 × 48
+      - App Icons: instance of _App Icon/iPhone Duo [Display=Outer, Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 48 × 48
+      - App Icons: instance of _App Icon/iPhone Duo [Display=Outer, Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 48 × 48
+      - App Icons: instance of _App Icon/iPhone Duo [Display=Outer, Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 48 × 48
+  - App Icons: frame; 466 × 678; at (0, 0); column; gap 38.67; padding 55.33 114.33 0 27.67
+    - Row 1: frame; 324 × 60; fills width; row; space between; hugs height
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "FaceTime"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Calendar"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Photos"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Camera"; 60 × 60
+    - Row 2: frame; 324 × 60; fills width; row; space between; hugs height
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Mail"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Notes"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Clock"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Maps"; 60 × 60
+    - Row 3: frame; 324 × 60; fills width; row; space between; hugs height
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "TV"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "News"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Preview"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Games"; 60 × 60
+    - Row 4: frame; 324 × 60; fills width; row; space between; hugs height
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Health"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Wallet"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Settings"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Weather"; 60 × 60
+    - Row 5: frame; 324 × 60; fills width; row; space between; hugs height
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Stocks"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Find My"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Home"; 60 × 60
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Inner Landscape, Custom Icon=False]; with App Name "Podcasts"; 60 × 60
+    - Row 6: frame; 324 × 60; fills width; row; space between; hugs height
+      - App Icon: instance of _App Icon/iPhone Duo [Display=Outer, Custom Icon=True]; with App Name "My App", Show Badge on; 60 × 60
+      - Frame: frame; 60 × 60
+      - Frame: frame; 60 × 60
+      - Frame: frame; 60 × 60

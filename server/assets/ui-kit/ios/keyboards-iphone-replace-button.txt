@@ -1,0 +1,6 @@
+=== 0
+- component; 62 × 22; row; gap 6; cross center; hugs width; capsule
+  - text "Replace"; SF Pro Regular 17/22; centered; 62 × 22; color Labels - Vibrant/Tertiary; blend linear burn; property Value
+=== 1
+- component; 62 × 22; row; gap 6; cross center; hugs width; capsule
+  - text "Replace"; SF Pro Regular 17/22; centered; 62 × 22; color Accents/Blue; property Value

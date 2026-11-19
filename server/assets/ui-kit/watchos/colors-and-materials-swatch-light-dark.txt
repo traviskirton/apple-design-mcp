@@ -1,0 +1,7 @@
+=== 0
+- component; 160 × 160
+  - Light: frame; 160 × 80; at (0, 80); fill image
+    - Swatch: frame; 120 × 60; at (20, 0); radius 0 0 100 100; fill Accents/Red
+  - Dark: frame; 160 × 80; at (0, 0); fill image + #000000 at 85% (linear burn)
+    - Swatch: frame; 120 × 60; at (20, 20); radius 100 100 0 0; fill Accents/Red
+  - text "Label"; SF Pro Regular 13/18; 33 × 18; at (0, -30); color #ffffff

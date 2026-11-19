@@ -1,0 +1,8 @@
+=== 0
+- component; 66 × 66
+  - BG: instance of _Controls - BG - iPad [On=True]; 66 × 66; at (0, 0)
+  - text SF Symbol lock.rotation.open; SF Pro Bold 19; centered; 66 × 66; at (0, 0); color Accents/Red; opacity 90%; property Symbol
+=== 1
+- component; 66 × 66
+  - BG: instance of _Controls - BG - iPad [On=False]; 66 × 66; at (0, 0)
+  - text SF Symbol lock.rotation.open; SF Pro Bold 19; centered; 66 × 66; at (0, 0); color Grays/White; property Symbol

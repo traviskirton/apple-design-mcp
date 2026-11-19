@@ -1,0 +1,6 @@
+=== 0
+- component; 24 × 14
+  - text SF Symbol chevron.right; SF Pro Bold 11/14; centered; 24 × 14; at (0, 0); color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+=== 1
+- component; 24 × 14
+  - text SF Symbol chevron.down; SF Pro Bold 11/14; centered; 24 × 14; at (0, 0); color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn

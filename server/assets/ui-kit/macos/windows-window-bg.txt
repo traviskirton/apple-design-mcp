@@ -1,0 +1,4 @@
+=== 0
+- component; 300 × 200; radius 16; fill Window Background; shadow x 0 y 18 blur 54 #000000 at 30%; shadow x 0 y 0 blur 1 #000000 at 80%
+=== 1
+- component; 300 × 200; radius 16; fill Window Background; shadow x 0 y 7 blur 21 #000000 at 20%; shadow x 0 y 0 blur 1 #000000 at 80%

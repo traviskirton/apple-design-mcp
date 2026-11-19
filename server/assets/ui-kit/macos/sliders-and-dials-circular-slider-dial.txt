@@ -1,0 +1,20 @@
+=== 0
+- component; 24 × 24; row; padding 3 0 0 0; main center; capsule; uses Dial/Inset - Knob, Global/Height
+  - BG: instance of _Control BG/Bordered [Context=Over-glass, State=Disabled, On=False]; 24 × 24; absolute at (0, 0)
+  - Knob: frame; 2 × 6; capsule; fill Labels/Tertiary at 25%; uses Dial/Height - Knob
+=== 1
+- component; 24 × 24; row; padding 3 0 0 0; main center; capsule; uses Dial/Inset - Knob, Global/Height
+  - BG: instance of _Control BG/Bordered [Context=Content Area, State=Clicked, On=False]; 24 × 24; absolute at (0, 0)
+  - Knob: frame; 2 × 6; capsule; fill Labels/Primary at 85%; uses Dial/Height - Knob
+=== 2
+- component; 24 × 24; row; padding 3 0 0 0; main center; capsule; uses Dial/Inset - Knob, Global/Height
+  - BG: instance of _Control BG/Bordered [Context=Content Area, State=Idle, On=False]; 24 × 24; absolute at (0, 0)
+  - Knob: frame; 2 × 6; capsule; fill Labels/Primary at 85%; uses Dial/Height - Knob
+=== 3
+- component; 24 × 24; row; padding 3 0 0 0; main center; capsule; uses Dial/Inset - Knob, Global/Height
+  - BG: instance of _Control BG/Bordered [Context=Over-glass, State=Clicked, On=False]; 24 × 24; absolute at (0, 0)
+  - Knob: frame; 2 × 6; capsule; fill Labels/Primary at 85%; uses Dial/Height - Knob
+=== 4
+- component; 24 × 24; row; padding 3 0 0 0; main center; capsule; uses Dial/Inset - Knob, Global/Height
+  - BG: instance of _Control BG/Bordered [Context=Over-glass, State=Idle, On=False]; 24 × 24; absolute at (0, 0)
+  - Knob: frame; 2 × 6; capsule; fill Labels/Primary at 85%; uses Dial/Height - Knob

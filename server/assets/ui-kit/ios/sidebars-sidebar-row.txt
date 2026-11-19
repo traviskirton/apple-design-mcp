@@ -1,0 +1,51 @@
+=== 0
+- component; 320 × 44; row; gap 8; padding 0 8 0 50; cross center; opacity 50%
+  - Leading: instance of _Sidebar - Leading [State=Default, Image=Symbol]; 202 × 44; fills width; shown while Show Image
+  - Trailing: instance of _Sidebar - Trailing [State=Default, Type=Detail]; 52 × 44; shown while Show Trailing
+=== 1
+- component; 320 × 44; row; gap 8; padding 0 8 0 30; cross center; opacity 50%
+  - Leading: instance of _Sidebar - Leading [State=Default, Image=Symbol]; 222 × 44; fills width; shown while Show Image
+  - Trailing: instance of _Sidebar - Trailing [State=Default, Type=Detail]; 52 × 44; shown while Show Trailing
+=== 2
+- component; 320 × 44; row; gap 8; padding 0 8 0 10; cross center; opacity 50%
+  - Leading: instance of _Sidebar - Leading [State=Default, Image=Symbol]; 242 × 44; fills width; shown while Show Image
+  - Trailing: instance of _Sidebar - Trailing [State=Default, Type=Detail]; 52 × 44; shown while Show Trailing
+=== 3
+- component; 320 × 44; row; gap 8; padding 0 8 0 50; cross center; capsule
+  - Leading: instance of _Sidebar - Leading [State=Selected, Image=Symbol]; 184 × 44; fills width; shown while Show Image
+  - Trailing: instance of _Sidebar - Trailing [State=Default, Type=Disclosure]; 70 × 44
+=== 4
+- component; 320 × 44; row; gap 8; padding 0 8 0 30; cross center; capsule
+  - Leading: instance of _Sidebar - Leading [State=Selected, Image=Symbol]; 204 × 44; fills width; shown while Show Image
+  - Trailing: instance of _Sidebar - Trailing [State=Default, Type=Disclosure]; 70 × 44
+=== 5
+- component; 320 × 44; row; gap 8; padding 0 8 0 10; cross center; capsule
+  - Leading: instance of _Sidebar - Leading [State=Selected, Image=Symbol]; 224 × 44; fills width; shown while Show Image
+  - Trailing: instance of _Sidebar - Trailing [State=Default, Type=Disclosure]; 70 × 44
+=== 6
+- component; 320 × 44; row; gap 8; padding 0 8 0 50; cross center; capsule
+  - BG: instance of _Selection BG; 320 × 44; absolute at (0, 0)
+  - Leading: instance of _Sidebar - Leading [State=Selected, Image=Symbol]; 202 × 44; fills width; shown while Show Image
+  - Trailing: instance of _Sidebar - Trailing [State=Default, Type=Detail]; 52 × 44; shown while Show Trailing
+=== 7
+- component; 320 × 44; row; gap 8; padding 0 8 0 30; cross center; capsule
+  - BG: instance of _Selection BG; 320 × 44; absolute at (0, 0)
+  - Leading: instance of _Sidebar - Leading [State=Selected, Image=Symbol]; 222 × 44; fills width; shown while Show Image
+  - Trailing: instance of _Sidebar - Trailing [State=Default, Type=Detail]; 52 × 44; shown while Show Trailing
+=== 8
+- component; 320 × 44; row; gap 8; padding 0 8 0 10; cross center; capsule
+  - BG: instance of _Selection BG; 320 × 44; absolute at (0, 0)
+  - Leading: instance of _Sidebar - Leading [State=Selected, Image=Symbol]; 242 × 44; fills width; shown while Show Image
+  - Trailing: instance of _Sidebar - Trailing [State=Default, Type=Detail]; 52 × 44; shown while Show Trailing
+=== 9
+- component; 320 × 44; row; gap 8; padding 0 8 0 50; cross center
+  - Leading: instance of _Sidebar - Leading [State=Default, Image=Symbol]; 202 × 44; fills width; shown while Show Image
+  - Trailing: instance of _Sidebar - Trailing [State=Default, Type=Detail]; 52 × 44; shown while Show Trailing
+=== 10
+- component; 320 × 44; row; gap 8; padding 0 8 0 30; cross center
+  - Leading: instance of _Sidebar - Leading [State=Default, Image=Symbol]; 222 × 44; fills width; shown while Show Image
+  - Trailing: instance of _Sidebar - Trailing [State=Default, Type=Detail]; 52 × 44; shown while Show Trailing
+=== 11
+- component; 320 × 44; row; gap 8; padding 0 8 0 10; cross center
+  - Leading: instance of _Sidebar - Leading [State=Default, Image=Symbol]; 242 × 44; fills width; shown while Show Image
+  - Trailing: instance of _Sidebar - Trailing [State=Default, Type=Detail]; 52 × 44; shown while Show Trailing

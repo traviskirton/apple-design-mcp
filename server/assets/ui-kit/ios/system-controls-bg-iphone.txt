@@ -1,0 +1,9 @@
+=== 0
+- component; 66 × 66; capsule
+  - Fill + Shadow: frame; 66 × 66; at (0, 0); capsule; fill #101010 (linear dodge) + #ffffff at 4% (luminosity); shadow x 0 y 8 blur 15 #000000 at 2%; shadow x 0 y 0 blur 0 spread 0.5 #cccccc at 100% (linear burn); shadow x -1.25 y 0 blur 0 spread -0.75 #d0d0d0 at 100% (linear burn); shadow x 1.25 y 0 blur 0 spread -0.75 #d0d0d0 at 100% (linear burn)
+  - Glass Effect: frame; 66 × 66; at (0, 0); capsule; Liquid Glass effect; inner shadow x 0 y 40 blur 30 spread -40 #e6e6e6 at 100% (linear burn); inner shadow x 0 y -40 blur 10 spread -40 #282828 at 100% (linear dodge); inner shadow x 0 y 40 blur 10 spread -40 #282828 at 100% (linear dodge)
+=== 1
+- component; 66 × 66; capsule
+  - Fill + Shadow: frame; 66 × 66; at (0, 0); capsule; fill #101010 (linear dodge) + #ffffff at 4% (luminosity); shadow x 0 y 8 blur 15 #000000 at 2%; shadow x 0 y 0 blur 0 spread 0.5 #cccccc at 100% (linear burn); shadow x -1.25 y 0 blur 0 spread -0.75 #d0d0d0 at 100% (linear burn); shadow x 1.25 y 0 blur 0 spread -0.75 #d0d0d0 at 100% (linear burn)
+  - Extra Fill: frame; 66 × 66; at (0, 0); capsule; fill #6f6f6f (color dodge) + #ffffff at 65% (screen)
+  - Glass Effect: frame; 66 × 66; at (0, 0); capsule; Liquid Glass effect; inner shadow x 0 y 40 blur 30 spread -40 #e6e6e6 at 100% (linear burn); inner shadow x 0 y -40 blur 10 spread -40 #282828 at 100% (linear dodge); inner shadow x 0 y 40 blur 10 spread -40 #282828 at 100% (linear dodge)

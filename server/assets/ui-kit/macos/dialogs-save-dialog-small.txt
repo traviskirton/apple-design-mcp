@@ -1,0 +1,29 @@
+=== 0
+- component; 390 × 318; column; hugs height; radius 16; fill Window Background; shadow x 0 y 18 blur 54 #000000 at 30%; shadow x 0 y 0 blur 1 #000000 at 80%
+  - Content View: frame; 390 × 318; fills height; fills width; column; cross center
+    - Top Section: frame; 390 × 262; fills width; row; gap 6; padding 20 40 10 40; main center; hugs height
+      - Left Column: frame; 81 × 232; fills width; fills height; column; gap 12; main end; cross end
+        - text "Save As:"; SF Pro Medium 13/14; right-aligned; 80 × 24; color Labels/Secondary at 50%
+        - text "Tags:"; SF Pro Medium 13/14; right-aligned; 80 × 24; color Labels/Secondary at 50%
+        - text "File Format:"; SF Pro Medium 13/14; right-aligned; 80 × 24; color Labels/Secondary at 50%
+        - text "Where:"; SF Pro Medium 13/14; right-aligned; 80 × 24; color Labels/Secondary at 50%
+      - Right Column: frame; 223 × 232; column; gap 12; hugs height
+        - Frame: frame; 223 × 88; fills width; column; gap 6; padding 0 0 8 0; main center; hugs height
+          - text "Do you want to keep this new document “Untitled”?"; style Headline/Regular; 223 × 32; fills width; color Labels/Primary at 85%
+          - text "You can choose to save your changes, or delete this documen…"; style Subheadline/Regular; 223 × 42; fills width; color Labels/Primary at 85%
+        - Text Field: Save As: instance of Text Field [State=Focused, Show Text=True]; with Value "Untitled", Value "Untitled"; 223 × 24; fills width
+        - Text Field: Tags: instance of Text Field [State=Idle, Show Text=False]; 223 × 24; fills width
+        - Frame: frame; 223 × 24; fills width; row; gap 8; main center; cross center; hugs height
+          - Frame: frame; 223 × 24; fills width; fills height; row; gap 8; cross center
+            - Pop-Up Button: instance of Pop-Up Button [State=Idle, Show Label=True]; with Label "Rich Text Document"; 223 × 24; fills width
+        - Frame: frame; 223 × 24; fills width; row; gap 8; main center; cross center; hugs height
+          - Frame: frame; 223 × 24; fills width; fills height; row; gap 8; cross center
+            - Pop-Up Button: instance of Pop-Up Button [State=Idle, Show Label=True]; with Label "Desktop"; 191 × 24; fills width
+            - Disclosure Button: frame; 24 × 24; column; main end; cross center; radius 6; uses Global/Height, Global/Radius
+              - BG: instance of _Control BG/Bordered [Context=Content Area, State=Idle, On=False]; 24 × 24; absolute at (0, 0)
+              - text SF Symbol chevron.down; SF Pro Bold 13; centered; 24 × 25; fills width; color Labels/Primary at 85%
+    - Buttons: frame; 390 × 56; fills width; row; gap 8; padding 12 20 20 20; cross center; hugs height
+      - Leading Button: instance of Buttons [Active=True, Context=Over-Glass, State=Idle, Style=Bordered - Destructive, On=False]; with Label "Delete"; 73 × 24
+      - Spacing: frame; 105 × 24; fills width; fills height
+      - Trailing Button: instance of Buttons [Active=True, Context=Over-Glass, State=Idle, Style=Bordered, On=False]; with Label "Cancel"; 74 × 24
+      - Trailing Default Button: instance of Buttons [Active=True, Context=Over-Glass, State=Idle, Style=Bordered - Prominent (Default) D, On=False]; with Label "Save"; 74 × 24

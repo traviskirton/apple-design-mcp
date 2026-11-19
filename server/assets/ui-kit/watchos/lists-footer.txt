@@ -1,0 +1,3 @@
+=== 0
+- component; 162 × 15; row; padding 0 9.5 0 9.5; cross center; hugs height; uses Margin - LR - Copy Safe Area
+  - text "Section footer"; SF Pro Regular 12/14.5; 78 × 15; color Vibrant Labels/Dark/Secondary; property Text

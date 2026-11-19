@@ -1,0 +1,36 @@
+=== 0
+- component; 64 × 12
+  - Frame: frame; 58 × 6; at (3, 3)
+    - Thumb: rectangle; 8 × 6; at (50, 0); capsule; fill Miscellaneous/Scrollbar at 50%
+=== 1
+- component; 64 × 12
+  - Frame: frame; 58 × 6; at (3, 3)
+    - Thumb: rectangle; 15 × 6; at (43, 0); capsule; fill Miscellaneous/Scrollbar at 50%
+=== 2
+- component; 64 × 12
+  - Frame: frame; 58 × 6; at (3, 3)
+    - Thumb: rectangle; 29 × 6; at (29, 0); capsule; fill Miscellaneous/Scrollbar at 50%
+=== 3
+- component; 64 × 12
+  - Frame: frame; 58 × 6; at (3, 3)
+    - Thumb: rectangle; 8 × 6; at (25, 0); capsule; fill Miscellaneous/Scrollbar at 50%
+=== 4
+- component; 64 × 12
+  - Frame: frame; 58 × 6; at (3, 3)
+    - Thumb: rectangle; 15 × 6; at (21.5, 0); capsule; fill Miscellaneous/Scrollbar at 50%
+=== 5
+- component; 64 × 12
+  - Frame: frame; 58 × 6; at (3, 3)
+    - Thumb: rectangle; 29 × 6; at (14.5, 0); capsule; fill Miscellaneous/Scrollbar at 50%
+=== 6
+- component; 64 × 12
+  - Frame: frame; 58 × 6; at (3, 3)
+    - Thumb: rectangle; 8 × 6; at (0, 0); capsule; fill Miscellaneous/Scrollbar at 50%
+=== 7
+- component; 64 × 12
+  - Frame: frame; 58 × 6; at (3, 3)
+    - Thumb: rectangle; 15 × 6; at (0, 0); capsule; fill Miscellaneous/Scrollbar at 50%
+=== 8
+- component; 64 × 12
+  - Frame: frame; 58 × 6; at (3, 3)
+    - Thumb: rectangle; 29 × 6; at (0, 0); capsule; fill Miscellaneous/Scrollbar at 50%

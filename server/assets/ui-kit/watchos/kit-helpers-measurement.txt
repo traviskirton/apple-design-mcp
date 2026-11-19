@@ -1,0 +1,7 @@
+=== 0
+- component; 16 × 28
+  - Caliper: frame; 16 × 28; at (0, 0)
+    - Bottom: rectangle; 16 × 2; at (0, 26); fill Colors/Pink
+    - Vertical: rectangle; 2 × 24; at (7, 2); fill Colors/Pink
+    - Top: rectangle; 16 × 2; at (0, 0); fill Colors/Pink
+  - text "N"; SF Pro Semibold 13/16; 10 × 16; at (18, 5); color Colors/Pink; property Measurement

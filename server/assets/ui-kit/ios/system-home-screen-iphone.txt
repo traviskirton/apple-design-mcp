@@ -1,0 +1,169 @@
+=== 0
+- component; 402 × 874; column; cross center
+  - Wallpaper: instance of Wallpapers - iPhone; 402 × 874; absolute at (0, 0)
+  - Status bar: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62
+  - App Icons: frame; 402 × 642; fills height; fills width; column; gap 17.33; padding 28 30 0 30
+    - Row 1: frame; 342 × 83; fills width; row; space between; hugs height
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "FaceTime"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Calendar"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Photos"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Camera"; 64 × 83
+    - Row 2: frame; 342 × 83; fills width; row; space between; hugs height
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Mail"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Clock"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Reminders"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Maps"; 64 × 83
+    - Row 3: frame; 342 × 83; fills width; row; space between; hugs height
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "TV"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "News"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "App Store"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Games"; 64 × 83
+    - Row 4: frame; 342 × 83; fills width; row; space between; hugs height
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Health"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Wallet"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Siri"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Settings"; 64 × 83
+    - Row 5: frame; 342 × 83; fills width; row; space between; hugs height
+      - App Icon: instance of App Icon/iPhone [Custom Icon=True]; with App Name "My App", Show Badge on; 64 × 83
+      - Empty: frame; 64 × 64; column; cross center
+      - Empty: frame; 64 × 64; column; cross center
+      - Empty: frame; 64 × 64; column; cross center
+  - Search Field: frame; 77 × 30; row; gap 2; padding 7 12 7 12; hugs width; capsule
+    - Materials: instance of _Dock Material; 77 × 30; absolute at (0, 0)
+    - text SF Symbol magnifyingglass; SF Pro Semibold 11.5/16; centered; 11 × 16; color Grays/White
+    - text "Search"; SF Pro Semibold 11.5/16; centered; 40 × 16; color Grays/White
+  - Dock: frame; 402 × 140; fills width; row; padding 20 17 17 17; main center; cross center; hugs height
+    - Dock: frame; 368 × 103; fills width; row; space between; padding 20 19 19 19; cross center; hugs height
+      - Materials: instance of _Dock Material; 368 × 103; absolute at (0, 0)
+      - App Icons: instance of App Icon/iPhone [Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 64 × 64
+      - App Icons: instance of App Icon/iPhone [Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 64 × 64
+      - App Icons: instance of App Icon/iPhone [Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 64 × 64
+      - App Icons: instance of App Icon/iPhone [Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 64 × 64
+=== 1
+- component; 402 × 874; column; cross center
+  - Wallpaper: instance of Wallpapers - iPhone; 402 × 874; absolute at (0, 0)
+  - Status bar: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62
+  - App Icons: frame; 402 × 642; fills height; fills width; column; gap 17.33; padding 28 30 0 30
+    - Row 1: frame; 342 × 83; fills width; row; space between; hugs height
+      - Empty: frame; 64 × 64; column; cross center
+      - Empty: frame; 64 × 64; column; cross center
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "FaceTime"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Calendar"; 64 × 83
+    - Row 2: frame; 342 × 83; fills width; row; space between; hugs height
+      - Empty: frame; 64 × 64; column; cross center
+      - Empty: frame; 64 × 64; column; cross center
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Photos"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Camera"; 64 × 83
+    - Row 3: frame; 342 × 83; fills width; row; space between; hugs height
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Mail"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Clock"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Reminders"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Maps"; 64 × 83
+    - Row 4: frame; 342 × 83; fills width; row; space between; hugs height
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "TV"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "News"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "App Store"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Games"; 64 × 83
+    - Row 5: frame; 342 × 83; fills width; row; space between; hugs height
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Health"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Wallet"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Siri"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Settings"; 64 × 83
+    - Row 6: frame; 342 × 83; fills width; row; space between; hugs height
+      - App Icon: instance of App Icon/iPhone [Custom Icon=True]; with App Name "My App", Show Badge on; 64 × 83
+      - Empty: frame; 64 × 64; column; cross center
+      - Empty: frame; 64 × 64; column; cross center
+      - Empty: frame; 64 × 64; column; cross center
+  - Search Field: frame; 77 × 30; row; gap 2; padding 7 12 7 12; hugs width; capsule
+    - Materials: instance of _Dock Material; 77 × 30; absolute at (0, 0)
+    - text SF Symbol magnifyingglass; SF Pro Semibold 11.5/16; centered; 11 × 16; color Grays/White
+    - text "Search"; SF Pro Semibold 11.5/16; centered; 40 × 16; color Grays/White
+  - Dock: frame; 402 × 140; fills width; row; padding 20 17 17 17; main center; cross center; hugs height
+    - Dock: frame; 368 × 103; fills width; row; space between; padding 20 19 19 19; cross center; hugs height
+      - Materials: instance of _Dock Material; 368 × 103; absolute at (0, 0)
+      - App Icons: instance of App Icon/iPhone [Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 64 × 64
+      - App Icons: instance of App Icon/iPhone [Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 64 × 64
+      - App Icons: instance of App Icon/iPhone [Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 64 × 64
+      - App Icons: instance of App Icon/iPhone [Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 64 × 64
+  - Widget: instance of Home Screen Widget - iPhone [Size=Small]; 164 × 164; absolute at (26.67, 90)
+=== 2
+- component; 402 × 874; column; cross center
+  - Wallpaper: instance of Wallpapers - iPhone; 402 × 874; absolute at (0, 0)
+  - Status bar: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62
+  - App Icons: frame; 402 × 642; fills height; fills width; column; gap 17.33; padding 229 30 0 30
+    - Row 1: frame; 342 × 83; fills width; row; space between; hugs height
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "FaceTime"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Calendar"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Photos"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Camera"; 64 × 83
+    - Row 2: frame; 342 × 83; fills width; row; space between; hugs height
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Mail"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Clock"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Reminders"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Maps"; 64 × 83
+    - Row 3: frame; 342 × 83; fills width; row; space between; hugs height
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "TV"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "News"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "App Store"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Games"; 64 × 83
+    - Row 4: frame; 342 × 83; fills width; row; space between; hugs height
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Health"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Wallet"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Siri"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Settings"; 64 × 83
+  - Search Field: frame; 77 × 30; row; gap 2; padding 7 12 7 12; hugs width; capsule
+    - Materials: instance of _Dock Material; 77 × 30; absolute at (0, 0)
+    - text SF Symbol magnifyingglass; SF Pro Semibold 11.5/16; centered; 11 × 16; color Grays/White
+    - text "Search"; SF Pro Semibold 11.5/16; centered; 40 × 16; color Grays/White
+  - Dock: frame; 402 × 140; fills width; row; padding 20 17 17 17; main center; cross center; hugs height
+    - Dock: frame; 368 × 103; fills width; row; space between; padding 20 19 19 19; cross center; hugs height
+      - Materials: instance of _Dock Material; 368 × 103; absolute at (0, 0)
+      - App Icons: instance of App Icon/iPhone [Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 64 × 64
+      - App Icons: instance of App Icon/iPhone [Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 64 × 64
+      - App Icons: instance of App Icon/iPhone [Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 64 × 64
+      - App Icons: instance of App Icon/iPhone [Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 64 × 64
+  - Widget: instance of Home Screen Widget - iPhone [Size=Medium]; 349.67 × 164.33; absolute at (26, 90)
+=== 3
+- component; 402 × 874; column; cross center
+  - Wallpaper: instance of Wallpapers - iPhone; 402 × 874; absolute at (0, 0)
+  - Status bar: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62
+  - App Icons: frame; 402 × 642; fills height; fills width; column; gap 17.33; padding 431 30 0 30
+    - Row 1: frame; 342 × 83; fills width; row; space between; hugs height
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "FaceTime"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Calendar"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Photos"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Camera"; 64 × 83
+    - Row 2: frame; 342 × 83; fills width; row; space between; hugs height
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Mail"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Clock"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Reminders"; 64 × 83
+      - App Icon: instance of App Icon/iPhone [Custom Icon=False]; with App Name "Maps"; 64 × 83
+  - Search Field: frame; 77 × 30; row; gap 2; padding 7 12 7 12; hugs width; capsule
+    - Materials: instance of _Dock Material; 77 × 30; absolute at (0, 0)
+    - text SF Symbol magnifyingglass; SF Pro Semibold 11.5/16; centered; 11 × 16; color Grays/White
+    - text "Search"; SF Pro Semibold 11.5/16; centered; 40 × 16; color Grays/White
+  - Dock: frame; 402 × 140; fills width; row; padding 20 17 17 17; main center; cross center; hugs height
+    - Dock: frame; 368 × 103; fills width; row; space between; padding 20 19 19 19; cross center; hugs height
+      - Materials: instance of _Dock Material; 368 × 103; absolute at (0, 0)
+      - App Icons: instance of App Icon/iPhone [Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 64 × 64
+      - App Icons: instance of App Icon/iPhone [Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 64 × 64
+      - App Icons: instance of App Icon/iPhone [Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 64 × 64
+      - App Icons: instance of App Icon/iPhone [Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 64 × 64
+  - Widget: instance of Home Screen Widget - iPhone [Size=Large]; 349.67 × 365; absolute at (26.17, 90)
+=== 4
+- component; 402 × 874; column; cross center
+  - Wallpaper: instance of Wallpapers - iPhone; 402 × 874; absolute at (0, 0)
+  - Status bar: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62
+  - Spacer: frame; 402 × 642; fills height; column; space between; padding 0 26 0 26; opacity 20%
+  - Search Field: frame; 77 × 30; row; gap 2; padding 7 12 7 12; hugs width; capsule
+    - Materials: instance of _Dock Material; 77 × 30; absolute at (0, 0)
+    - text SF Symbol magnifyingglass; SF Pro Semibold 11.5/16; centered; 11 × 16; color Grays/White
+    - text "Search"; SF Pro Semibold 11.5/16; centered; 40 × 16; color Grays/White
+  - Dock: frame; 402 × 140; fills width; row; padding 20 17 17 17; main center; cross center; hugs height
+    - Dock: frame; 368 × 103; fills width; row; space between; padding 20 19 19 19; cross center; hugs height
+      - Materials: instance of _Dock Material; 368 × 103; absolute at (0, 0)
+      - App Icons: instance of App Icon/iPhone [Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 64 × 64
+      - App Icons: instance of App Icon/iPhone [Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 64 × 64
+      - App Icons: instance of App Icon/iPhone [Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 64 × 64
+      - App Icons: instance of App Icon/iPhone [Custom Icon=False]; with Show App Name off, App Name "FaceTime"; 64 × 64
+  - Widget: instance of Home Screen Widget - iPhone [Size=Extra Large]; 349.67 × 565.67; absolute at (26.17, 90)

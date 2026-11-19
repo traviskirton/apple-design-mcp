@@ -1,0 +1,5 @@
+=== 0
+- component; 116 × 28; row; gap 16; main center; hugs content
+  - Button 1: instance of _Accessory Bar - iPad - Buttons/Light [Enabled=True]; with Symbol SF Symbol arrow.uturn.backward; 28 × 28
+  - Button 2: instance of _Accessory Bar - iPad - Buttons/Light [Enabled=True]; with Symbol SF Symbol arrow.uturn.right; 28 × 28; shown while Show Button 2
+  - Button 3: instance of _Accessory Bar - iPad - Buttons/Light [Enabled=True]; with Symbol SF Symbol doc.on.clipboard; 28 × 28; shown while Show Button 3

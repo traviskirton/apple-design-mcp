@@ -1,0 +1,48 @@
+=== 0
+- component; 240 × 560; column; padding 0 0 10 0
+  - Stoplights and Disclosure: instance of Window Controls [Toolbar Style=Default]; 240 × 52; fills width
+  - Items: frame; 240 × 453; fills width; column; padding 0 14 0 14; hugs height; slot Items
+    - Item: instance of Item [Size=Large, State=Selected, Active=True, Level=0]; with Show Detail off, Hierarchical off; 212 × 36; fills width
+    - Item: instance of Item [Size=Large, State=Idle, Active=True, Level=0]; with Show Detail off, Hierarchical off; 212 × 36; fills width
+    - Section Header: instance of Section Header [Size=Large, Active=True, First Section=False]; with Section Title "Favorites", Show Disclosure off, Show Detail off, Hierarchical off; 212 × 43; fills width
+    - Item: instance of Item [Size=Large, State=Idle, Active=True, Level=0]; 212 × 36; fills width
+    - Item: instance of Item [Size=Large, State=Idle, Active=True, Level=0]; 212 × 36; fills width
+    - Item: instance of Item [Size=Large, State=Idle, Active=True, Level=0]; 212 × 36; fills width
+    - Section Header: instance of Section Header [Size=Large, Active=True, First Section=False]; with Section Title "Locations", Show Disclosure off, Show Detail off, Hierarchical off; 212 × 43; fills width
+    - Item: instance of Item [Size=Large, State=Idle, Active=True, Level=0]; with Show Detail off, Hierarchical off; 212 × 36; fills width
+    - Item: instance of Item [Size=Large, State=Idle, Active=True, Level=0]; with Show Detail off, Hierarchical off; 212 × 36; fills width
+    - Item: instance of Item [Size=Large, State=Idle, Active=True, Level=0]; with Show Detail off, Hierarchical off; 212 × 36; fills width
+    - Item: instance of Item [Size=Large, State=Idle, Active=True, Level=0]; with Show Detail off, Hierarchical off; 212 × 36; fills width
+    - Section Header: instance of Section Header [Size=Large, Active=True, First Section=False]; with Section Title "Tags", Show Disclosure off, Show Detail off, Hierarchical off; 212 × 43; fills width
+=== 1
+- component; 240 × 560; column; padding 0 0 10 0
+  - Stoplights and Disclosure: instance of Window Controls [Toolbar Style=Default]; 240 × 52; fills width
+  - Items: frame; 240 × 417; fills width; column; padding 0 14 0 14; hugs height; slot Items
+    - Item: instance of Item [Size=Medium, State=Selected, Active=True, Level=0]; 212 × 32; fills width
+    - Item: instance of Item [Size=Medium, State=Idle, Active=True, Level=0]; 212 × 32; fills width
+    - Section Header: instance of Section Header [Size=Large, Active=True, First Section=False]; with Section Title "Favorites", Show Disclosure off, Show Detail off, Hierarchical off; 212 × 43; fills width
+    - Item: instance of Item [Size=Medium, State=Idle, Active=True, Level=0]; 212 × 32; fills width
+    - Item: instance of Item [Size=Medium, State=Idle, Active=True, Level=0]; 212 × 32; fills width
+    - Item: instance of Item [Size=Medium, State=Idle, Active=True, Level=0]; 212 × 32; fills width
+    - Section Header: instance of Section Header [Size=Large, Active=True, First Section=False]; with Section Title "Locations", Show Disclosure off, Show Detail off, Hierarchical off; 212 × 43; fills width
+    - Item: instance of Item [Size=Medium, State=Idle, Active=True, Level=0]; 212 × 32; fills width
+    - Item: instance of Item [Size=Medium, State=Idle, Active=True, Level=0]; 212 × 32; fills width
+    - Item: instance of Item [Size=Medium, State=Idle, Active=True, Level=0]; 212 × 32; fills width
+    - Item: instance of Item [Size=Medium, State=Idle, Active=True, Level=0]; 212 × 32; fills width
+    - Section Header: instance of Section Header [Size=Large, Active=True, First Section=False]; with Section Title "Tags", Show Disclosure off, Show Detail off, Hierarchical off; 212 × 43; fills width
+=== 2
+- component; 240 × 560; column; padding 0 0 10 0
+  - Stoplights and Disclosure: instance of Window Controls [Toolbar Style=Default]; 240 × 52; fills width
+  - Items: frame; 240 × 333; fills width; column; padding 0 14 0 14; hugs height; slot Items
+    - Item: instance of Item [Size=Small, State=Selected, Active=True, Level=0]; 212 × 24; fills width
+    - Item: instance of Item [Size=Small, State=Idle, Active=True, Level=0]; 212 × 24; fills width
+    - Section Header: instance of Section Header [Size=Medium, Active=True, First Section=False]; 212 × 39; fills width
+    - Item: instance of Item [Size=Small, State=Idle, Active=True, Level=0]; 212 × 24; fills width
+    - Item: instance of Item [Size=Small, State=Idle, Active=True, Level=0]; 212 × 24; fills width
+    - Item: instance of Item [Size=Small, State=Idle, Active=True, Level=0]; 212 × 24; fills width
+    - Section Header: instance of Section Header [Size=Medium, Active=True, First Section=False]; 212 × 39; fills width
+    - Item: instance of Item [Size=Small, State=Idle, Active=True, Level=0]; 212 × 24; fills width
+    - Item: instance of Item [Size=Small, State=Idle, Active=True, Level=0]; 212 × 24; fills width
+    - Item: instance of Item [Size=Small, State=Idle, Active=True, Level=0]; 212 × 24; fills width
+    - Item: instance of Item [Size=Small, State=Idle, Active=True, Level=0]; 212 × 24; fills width
+    - Section Header: instance of Section Header [Size=Medium, Active=True, First Section=False]; 212 × 39; fills width

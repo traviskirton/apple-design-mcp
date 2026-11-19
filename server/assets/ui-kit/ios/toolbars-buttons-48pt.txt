@@ -1,0 +1,42 @@
+=== 0
+- component; 69 × 48; row; gap 12; padding 0 6 0 6; main center; cross center; hugs width; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 69 × 48; absolute at (0, 0)
+  - Text: instance of _Button - Text [State=Default]; 57 × 36; blend linear burn
+=== 1
+- component; 48 × 48; row; gap 12; padding 0 6 0 6; main center; cross center; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 48; absolute at (0, 0)
+  - Text: instance of _Button - Text [State=Default]; 57 × 36; blend linear burn
+=== 2
+- component; 69 × 48; row; gap 12; padding 0 6 0 6; main center; cross center; hugs width; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=True]; 69 × 48; absolute at (0, 0)
+  - Text: instance of _Button - Text - Prominent [State=Default]; 57 × 36; blend linear dodge
+=== 3
+- component; 48 × 48; row; gap 12; padding 0 6 0 6; main center; cross center; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=True]; 48 × 48; absolute at (0, 0)
+  - Text: instance of _Button - Text - Prominent [State=Default]; 57 × 36; blend linear dodge
+=== 4
+- component; 164 × 48; row; padding 0 10 0 10; cross center; hugs width; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 164 × 48; absolute at (0, 0)
+  - Buttons: frame; 144 × 36; row; gap 18; cross center; hugs content; slot Buttons
+    - Symbol 1: instance of _Button - Symbol [State=Default]; 36 × 36; blend linear burn
+    - Symbol 2: instance of _Button - Symbol [State=Default]; 36 × 36; blend linear burn
+    - Symbol 3: instance of _Button - Symbol [State=Default]; 36 × 36; blend linear burn
+=== 5
+- component; 48 × 164; column; padding 10 6 10 6; main center; cross center; hugs height; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 164; absolute at (0, 0)
+  - Buttons: frame; 36 × 144; column; gap 18; main center; hugs content; slot Buttons
+    - Symbol 1: instance of _Button - Symbol [State=Default]; 36 × 36; blend linear burn
+    - Symbol 2: instance of _Button - Symbol [State=Default]; 36 × 36; blend linear burn
+    - Symbol 3: instance of _Button - Symbol [State=Default]; 36 × 36; blend linear burn
+=== 6
+- component; 48 × 48; row; gap 18; padding 0 6 0 6; main center; cross center; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 48; absolute at (0, 0)
+  - Symbol: instance of _Button - Symbol [State=Default]; 36 × 36; blend linear burn
+=== 7
+- component; 48 × 48; row; gap 18; padding 0 6 0 6; main center; cross center; hugs width; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=True]; 48 × 48; absolute at (0, 0)
+  - Symbol: instance of _Button - Symbol - Prominent [State=Default]; 36 × 36; blend linear dodge
+=== 8
+- component; 48 × 48; row; gap 18; padding 0 6 0 6; main center; cross center; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=True]; 48 × 48; absolute at (0, 0)
+  - Symbol: instance of _Button - Symbol - Prominent [State=Default]; 36 × 36; blend linear dodge

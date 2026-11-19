@@ -1,0 +1,11 @@
+=== 0
+- component; 491 × 44; row; padding 4; hugs content
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 491 × 44; absolute at (0, 0)
+  - Sidebar: instance of _Tab Bar Button - iPad - Symbol [Selected=False]; 54 × 36
+  - Buttons: frame; 375 × 36; row; main center; cross center; hugs width; slot Buttons
+    - Tab: instance of _Tab Bar Button - iPad - Text [Selected=True]; with Label "Tab 1"; 74 × 36
+    - Tab: instance of _Tab Bar Button - iPad - Text [Selected=False]; with Label "Tab 2"; 75 × 36
+    - Tab: instance of _Tab Bar Button - iPad - Text [Selected=False]; with Label "Tab 3"; 75 × 36
+    - Tab: instance of _Tab Bar Button - iPad - Text [Selected=False]; with Label "Tab 4"; 76 × 36
+    - Tab: instance of _Tab Bar Button - iPad - Text [Selected=False]; with Label "Tab 5"; 75 × 36
+  - Search: instance of _Tab Bar Button - iPad - Symbol [Selected=False]; with Symbol SF Symbol magnifyingglass; 54 × 36

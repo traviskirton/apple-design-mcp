@@ -1,0 +1,6 @@
+=== 0
+- component; 36 × 36; column; capsule; blend linear burn
+  - text SF Symbol square.dashed; SF Pro Medium 17; centered; 36 × 36; fills height; fills width; color Labels - Vibrant/Tertiary (linear burn); property Symbol
+=== 1
+- component; 36 × 36; column; capsule; blend linear burn
+  - text SF Symbol square.dashed; SF Pro Medium 17; centered; 36 × 36; fills height; fills width; color Labels - Vibrant/Primary (linear burn); property Symbol

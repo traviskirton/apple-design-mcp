@@ -1,0 +1,271 @@
+=== 0
+- component; 600 × 20; row; cross center; hugs height
+  - BG: instance of _BG [State=Selected + Active]; 580 × 20; absolute at (10, 0)
+  - Primary: frame; 180 × 20; fills width; row; gap 4; padding 0 0 0 16; cross center
+    - Chevron: frame; 9 × 20; row; gap 10; main end; cross center; hugs height; shown while Hierarchical
+      - Disclosure: instance of _Disclosure - Selected [Expanded=False]; 5 × 20; shown while Show Disclosure
+    - Icon: instance of _Icon [Type=Folder]; 18 × 18
+    - text "Label"; SF Pro Medium 13/16; 129 × 20; fills width; fills height; color #ffffff; property Primary
+  - Secondary 1: frame; 140 × 20; column; padding 0 8 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 124 × 20; fills height; fills width; color #ffffff; property Secondary 1
+  - Secondary 2: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color #ffffff; property Secondary 2
+  - Secondary 3: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color #ffffff; property Secondary 3
+=== 1
+- component; 600 × 20; row; padding 0 0 0 15; cross center; hugs height
+  - BG: instance of _BG [State=Selected + Active]; 580 × 20; absolute at (10, 0)
+  - Primary: frame; 165 × 20; fills width; row; gap 4; padding 0 0 0 16; cross center
+    - Chevron: frame; 9 × 20; row; gap 10; main end; cross center; hugs height; shown while Hierarchical
+      - Disclosure: instance of _Disclosure - Selected [Expanded=False]; 5 × 20; shown while Show Disclosure
+    - Icon: instance of _Icon [Type=Folder]; 18 × 18
+    - text "Label"; SF Pro Medium 13/16; 114 × 20; fills width; fills height; color #ffffff; property Primary
+  - Secondary 1: frame; 140 × 20; column; padding 0 8 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 124 × 20; fills height; fills width; color #ffffff; property Secondary 1
+  - Secondary 2: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color #ffffff; property Secondary 2
+  - Secondary 3: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color #ffffff; property Secondary 3
+=== 2
+- component; 600 × 20; row; padding 0 0 0 30; cross center; hugs height
+  - BG: instance of _BG [State=Selected + Active]; 580 × 20; absolute at (10, 0)
+  - Primary: frame; 150 × 20; fills width; row; gap 4; padding 0 0 0 16; cross center
+    - Chevron: frame; 9 × 20; row; gap 10; main end; cross center; hugs height; shown while Hierarchical
+      - Disclosure: instance of _Disclosure - Selected [Expanded=False]; 5 × 20; shown while Show Disclosure
+    - Icon: instance of _Icon [Type=Folder]; 18 × 18
+    - text "Label"; SF Pro Medium 13/16; 99 × 20; fills width; fills height; color #ffffff; property Primary
+  - Secondary 1: frame; 140 × 20; column; padding 0 8 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 124 × 20; fills height; fills width; color #ffffff; property Secondary 1
+  - Secondary 2: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color #ffffff; property Secondary 2
+  - Secondary 3: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color #ffffff; property Secondary 3
+=== 3
+- component; 600 × 20; row; padding 0 0 0 45; cross center; hugs height
+  - BG: instance of _BG [State=Selected + Active]; 580 × 20; absolute at (10, 0)
+  - Primary: frame; 135 × 20; fills width; row; gap 4; padding 0 0 0 16; cross center
+    - Chevron: frame; 9 × 20; row; gap 10; main end; cross center; hugs height; shown while Hierarchical
+      - Disclosure: instance of _Disclosure - Selected [Expanded=False]; 5 × 20; shown while Show Disclosure
+    - Icon: instance of _Icon [Type=Folder]; 18 × 18
+    - text "Label"; SF Pro Medium 13/16; 84 × 20; fills width; fills height; color #ffffff; property Primary
+  - Secondary 1: frame; 140 × 20; column; padding 0 8 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 124 × 20; fills height; fills width; color #ffffff; property Secondary 1
+  - Secondary 2: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color #ffffff; property Secondary 2
+  - Secondary 3: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color #ffffff; property Secondary 3
+=== 4
+- component; 600 × 20; row; padding 0 0 0 60; cross center; hugs height
+  - BG: instance of _BG [State=Selected + Active]; 580 × 20; absolute at (10, 0)
+  - Primary: frame; 120 × 20; fills width; row; gap 4; padding 0 0 0 16; cross center
+    - Chevron: frame; 9 × 20; row; gap 10; main end; cross center; hugs height; shown while Hierarchical
+    - Icon: instance of _Icon [Type=Thumbnail]; 18 × 18
+    - text "Label"; SF Pro Medium 13/16; 69 × 20; fills width; fills height; color #ffffff; property Primary
+  - Secondary 1: frame; 140 × 20; column; padding 0 8 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 124 × 20; fills height; fills width; color #ffffff; property Secondary 1
+  - Secondary 2: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color #ffffff; property Secondary 2
+  - Secondary 3: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color #ffffff; property Secondary 3
+=== 5
+- component; 600 × 20; row; cross center; hugs height
+  - BG: instance of _BG [State=Selected + Inactive]; 580 × 20; absolute at (10, 0)
+  - Primary: frame; 180 × 20; fills width; row; gap 4; padding 0 0 0 16; cross center
+    - Chevron: frame; 9 × 20; row; gap 10; main end; cross center; hugs height; shown while Hierarchical
+      - Disclosure: instance of _Disclosure - Unselected [Expanded=False]; 5 × 20; shown while Show Disclosure
+    - Icon: instance of _Icon [Type=Folder]; 18 × 18
+    - text "Label"; SF Pro Medium 13/16; 129 × 20; fills width; fills height; color Labels/Primary at 85%; property Primary
+  - Secondary 1: frame; 140 × 20; column; padding 0 8 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 124 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 1
+  - Secondary 2: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 2
+  - Secondary 3: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 3
+=== 6
+- component; 600 × 20; row; padding 0 0 0 15; cross center; hugs height
+  - BG: instance of _BG [State=Selected + Inactive]; 580 × 20; absolute at (10, 0)
+  - Primary: frame; 165 × 20; fills width; row; gap 4; padding 0 0 0 16; cross center
+    - Chevron: frame; 9 × 20; row; gap 10; main end; cross center; hugs height; shown while Hierarchical
+      - Disclosure: instance of _Disclosure - Unselected [Expanded=False]; 5 × 20; shown while Show Disclosure
+    - Icon: instance of _Icon [Type=Folder]; 18 × 18
+    - text "Label"; SF Pro Medium 13/16; 114 × 20; fills width; fills height; color Labels/Primary at 85%; property Primary
+  - Secondary 1: frame; 140 × 20; column; padding 0 8 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 124 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 1
+  - Secondary 2: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 2
+  - Secondary 3: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 3
+=== 7
+- component; 600 × 20; row; padding 0 0 0 30; cross center; hugs height
+  - BG: instance of _BG [State=Selected + Inactive]; 580 × 20; absolute at (10, 0)
+  - Primary: frame; 150 × 20; fills width; row; gap 4; padding 0 0 0 16; cross center
+    - Chevron: frame; 9 × 20; row; gap 10; main end; cross center; hugs height; shown while Hierarchical
+      - Disclosure: instance of _Disclosure - Unselected [Expanded=False]; 5 × 20; shown while Show Disclosure
+    - Icon: instance of _Icon [Type=Folder]; 18 × 18
+    - text "Label"; SF Pro Medium 13/16; 99 × 20; fills width; fills height; color Labels/Primary at 85%; property Primary
+  - Secondary 1: frame; 140 × 20; column; padding 0 8 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 124 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 1
+  - Secondary 2: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 2
+  - Secondary 3: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 3
+=== 8
+- component; 600 × 20; row; padding 0 0 0 45; cross center; hugs height
+  - BG: instance of _BG [State=Selected + Inactive]; 580 × 20; absolute at (10, 0)
+  - Primary: frame; 135 × 20; fills width; row; gap 4; padding 0 0 0 16; cross center
+    - Chevron: frame; 9 × 20; row; gap 10; main end; cross center; hugs height; shown while Hierarchical
+      - Disclosure: instance of _Disclosure - Unselected [Expanded=False]; 5 × 20; shown while Show Disclosure
+    - Icon: instance of _Icon [Type=Folder]; 18 × 18
+    - text "Label"; SF Pro Medium 13/16; 84 × 20; fills width; fills height; color Labels/Primary at 85%; property Primary
+  - Secondary 1: frame; 140 × 20; column; padding 0 8 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 124 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 1
+  - Secondary 2: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 2
+  - Secondary 3: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 3
+=== 9
+- component; 600 × 20; row; padding 0 0 0 60; cross center; hugs height
+  - BG: instance of _BG [State=Selected + Inactive]; 580 × 20; absolute at (10, 0)
+  - Primary: frame; 120 × 20; fills width; row; gap 4; padding 0 0 0 16; cross center
+    - Chevron: frame; 9 × 20; row; gap 10; main end; cross center; hugs height; shown while Hierarchical
+    - Icon: instance of _Icon [Type=Thumbnail]; 18 × 18
+    - text "Label"; SF Pro Medium 13/16; 69 × 20; fills width; fills height; color Labels/Primary at 85%; property Primary
+  - Secondary 1: frame; 140 × 20; column; padding 0 8 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 124 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 1
+  - Secondary 2: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 2
+  - Secondary 3: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 3
+=== 10
+- component; 600 × 20; row; cross center; hugs height
+  - BG: instance of _BG [State=Alternating Row Color]; 580 × 20; absolute at (10, 0)
+  - Primary: frame; 180 × 20; fills width; row; gap 4; padding 0 0 0 16; cross center
+    - Chevron: frame; 9 × 20; row; gap 10; main end; cross center; hugs height; shown while Hierarchical
+      - Disclosure: instance of _Disclosure - Unselected [Expanded=False]; 5 × 20; shown while Show Disclosure
+    - Icon: instance of _Icon [Type=Folder]; 18 × 18
+    - text "Label"; SF Pro Medium 13/16; 129 × 20; fills width; fills height; color Labels/Primary at 85%; property Primary
+  - Secondary 1: frame; 140 × 20; column; padding 0 8 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 124 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 1
+  - Secondary 2: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 2
+  - Secondary 3: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 3
+=== 11
+- component; 600 × 20; row; padding 0 0 0 15; cross center; hugs height
+  - BG: instance of _BG [State=Alternating Row Color]; 580 × 20; absolute at (10, 0)
+  - Primary: frame; 165 × 20; fills width; row; gap 4; padding 0 0 0 16; cross center
+    - Chevron: frame; 9 × 20; row; gap 10; main end; cross center; hugs height; shown while Hierarchical
+      - Disclosure: instance of _Disclosure - Unselected [Expanded=False]; 5 × 20; shown while Show Disclosure
+    - Icon: instance of _Icon [Type=Folder]; 18 × 18
+    - text "Label"; SF Pro Medium 13/16; 114 × 20; fills width; fills height; color Labels/Primary at 85%; property Primary
+  - Secondary 1: frame; 140 × 20; column; padding 0 8 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 124 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 1
+  - Secondary 2: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 2
+  - Secondary 3: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 3
+=== 12
+- component; 600 × 20; row; padding 0 0 0 30; cross center; hugs height
+  - BG: instance of _BG [State=Alternating Row Color]; 580 × 20; absolute at (10, 0)
+  - Primary: frame; 150 × 20; fills width; row; gap 4; padding 0 0 0 16; cross center
+    - Chevron: frame; 9 × 20; row; gap 10; main end; cross center; hugs height; shown while Hierarchical
+      - Disclosure: instance of _Disclosure - Unselected [Expanded=False]; 5 × 20; shown while Show Disclosure
+    - Icon: instance of _Icon [Type=Folder]; 18 × 18
+    - text "Label"; SF Pro Medium 13/16; 99 × 20; fills width; fills height; color Labels/Primary at 85%; property Primary
+  - Secondary 1: frame; 140 × 20; column; padding 0 8 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 124 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 1
+  - Secondary 2: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 2
+  - Secondary 3: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 3
+=== 13
+- component; 600 × 20; row; padding 0 0 0 45; cross center; hugs height
+  - BG: instance of _BG [State=Alternating Row Color]; 580 × 20; absolute at (10, 0)
+  - Primary: frame; 135 × 20; fills width; row; gap 4; padding 0 0 0 16; cross center
+    - Chevron: frame; 9 × 20; row; gap 10; main end; cross center; hugs height; shown while Hierarchical
+      - Disclosure: instance of _Disclosure - Unselected [Expanded=False]; 5 × 20; shown while Show Disclosure
+    - Icon: instance of _Icon [Type=Folder]; 18 × 18
+    - text "Label"; SF Pro Medium 13/16; 84 × 20; fills width; fills height; color Labels/Primary at 85%; property Primary
+  - Secondary 1: frame; 140 × 20; column; padding 0 8 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 124 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 1
+  - Secondary 2: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 2
+  - Secondary 3: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 3
+=== 14
+- component; 600 × 20; row; padding 0 0 0 60; cross center; hugs height
+  - BG: instance of _BG [State=Alternating Row Color]; 580 × 20; absolute at (10, 0)
+  - Primary: frame; 120 × 20; fills width; row; gap 4; padding 0 0 0 16; cross center
+    - Chevron: frame; 9 × 20; row; gap 10; main end; cross center; hugs height; shown while Hierarchical
+    - Icon: instance of _Icon [Type=Thumbnail]; 18 × 18
+    - text "Label"; SF Pro Medium 13/16; 69 × 20; fills width; fills height; color Labels/Primary at 85%; property Primary
+  - Secondary 1: frame; 140 × 20; column; padding 0 8 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 124 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 1
+  - Secondary 2: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 2
+  - Secondary 3: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 3
+=== 15
+- component; 600 × 20; row; cross center; hugs height
+  - Primary: frame; 180 × 20; fills width; row; gap 4; padding 0 0 0 16; cross center
+    - Chevron: frame; 9 × 20; row; gap 10; main end; cross center; hugs height; shown while Hierarchical
+      - Disclosure: instance of _Disclosure - Unselected [Expanded=False]; 5 × 20; shown while Show Disclosure
+    - Icon: instance of _Icon [Type=Folder]; 18 × 18
+    - text "Label"; SF Pro Medium 13/16; 129 × 20; fills width; fills height; color Labels/Primary at 85%; property Primary
+  - Secondary 1: frame; 140 × 20; column; padding 0 8 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 124 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 1
+  - Secondary 2: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 2
+  - Secondary 3: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 3
+=== 16
+- component; 600 × 20; row; padding 0 0 0 15; cross center; hugs height
+  - Primary: frame; 165 × 20; fills width; row; gap 4; padding 0 0 0 16; cross center
+    - Chevron: frame; 9 × 20; row; gap 10; main end; cross center; hugs height; shown while Hierarchical
+      - Disclosure: instance of _Disclosure - Unselected [Expanded=False]; 5 × 20; shown while Show Disclosure
+    - Icon: instance of _Icon [Type=Folder]; 18 × 18
+    - text "Label"; SF Pro Medium 13/16; 114 × 20; fills width; fills height; color Labels/Primary at 85%; property Primary
+  - Secondary 1: frame; 140 × 20; column; padding 0 8 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 124 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 1
+  - Secondary 2: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 2
+  - Secondary 3: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 3
+=== 17
+- component; 600 × 20; row; padding 0 0 0 30; cross center; hugs height
+  - Primary: frame; 150 × 20; fills width; row; gap 4; padding 0 0 0 16; cross center
+    - Chevron: frame; 9 × 20; row; gap 10; main end; cross center; hugs height; shown while Hierarchical
+      - Disclosure: instance of _Disclosure - Unselected [Expanded=False]; 5 × 20; shown while Show Disclosure
+    - Icon: instance of _Icon [Type=Folder]; 18 × 18
+    - text "Label"; SF Pro Medium 13/16; 99 × 20; fills width; fills height; color Labels/Primary at 85%; property Primary
+  - Secondary 1: frame; 140 × 20; column; padding 0 8 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 124 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 1
+  - Secondary 2: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 2
+  - Secondary 3: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 3
+=== 18
+- component; 600 × 20; row; padding 0 0 0 45; cross center; hugs height
+  - Primary: frame; 135 × 20; fills width; row; gap 4; padding 0 0 0 16; cross center
+    - Chevron: frame; 9 × 20; row; gap 10; main end; cross center; hugs height; shown while Hierarchical
+      - Disclosure: instance of _Disclosure - Unselected [Expanded=False]; 5 × 20; shown while Show Disclosure
+    - Icon: instance of _Icon [Type=Folder]; 18 × 18
+    - text "Label"; SF Pro Medium 13/16; 84 × 20; fills width; fills height; color Labels/Primary at 85%; property Primary
+  - Secondary 1: frame; 140 × 20; column; padding 0 8 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 124 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 1
+  - Secondary 2: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 2
+  - Secondary 3: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 3
+=== 19
+- component; 600 × 20; row; padding 0 0 0 60; cross center; hugs height
+  - Primary: frame; 120 × 20; fills width; row; gap 4; padding 0 0 0 16; cross center
+    - Chevron: frame; 9 × 20; row; gap 10; main end; cross center; hugs height; shown while Hierarchical
+    - Icon: instance of _Icon [Type=Thumbnail]; 18 × 18
+    - text "Label"; SF Pro Medium 13/16; 69 × 20; fills width; fills height; color Labels/Primary at 85%; property Primary
+  - Secondary 1: frame; 140 × 20; column; padding 0 8 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 124 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 1
+  - Secondary 2: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 2
+  - Secondary 3: frame; 140 × 20; column; padding 0 16 0 8; main center
+    - text "Label"; SF Pro Medium 13/16; 116 × 20; fills height; fills width; color Labels/Secondary at 50%; property Secondary 3

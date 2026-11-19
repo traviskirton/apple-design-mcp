@@ -1,0 +1,6 @@
+=== 0
+- component; 205 × 251; radius 20; uses Screen Width, Screen Height
+  - Round Corners: frame; 205 × 251; at (0, 0); radius 14; uses Screen Width, Screen Height
+    - Watch Face: instance of Watch Faces [Face=Modular, Size=49mm]; 205 × 251; at (0, 0)
+    - instance of Alert; 205 × 251; at (0, 0)
+  - Bezel: instance of Bezels [Bezel Size=49mm]; 205 × 251; at (0, 0)

@@ -1,0 +1,8 @@
+=== 0
+- component; 18 × 18; row; gap 10; padding 2; cross center; hugs content; fill image
+=== 1
+- component; 18 × 18; row; gap 10; padding 2; cross center; hugs content
+  - Image: rectangle; 14 × 14; radius 2; fill image; shadow x 0 y 1 blur 0 #000000 at 25%; inner shadow x 0 y 0 blur 0 spread 1 #ffffff at 25%
+=== 2
+- component; 18 × 18; row; gap 10; padding 2; cross center; hugs content
+  - Folder: rectangle; 14 × 14; fill image

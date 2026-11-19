@@ -1,0 +1,21 @@
+=== 0
+- component; 42 × 42; row; gap 341; main center; cross center
+  - text SF Symbol mic; SF Compact Regular 30; centered; 30 × 36; color Labels/Primary; blend linear burn
+=== 1
+- component; 42 × 42; row; gap 341; padding 0 2 0 0; main center; cross end
+  - text SF Symbol mic; SF Compact Regular 28; centered; 28 × 33; color Labels/Primary; blend linear burn
+=== 2
+- component; 42 × 28; row; gap 341; main center; cross center
+  - Emoji: vector shape; 28 × 28; fill Labels/Primary
+=== 3
+- component; 42 × 32; row; gap 341; padding 0.67 0 3.33 0; main center; cross end; hugs height
+  - Emoji: vector shape; 28 × 28; fill Labels/Primary
+=== 4
+- component; 42 × 42; row; gap 341; main center; cross center
+  - text SF Symbol mic; SF Compact Regular 24; centered; 24 × 29; color Labels/Primary; blend linear burn
+=== 5
+- component; 42 × 35; row; gap 341; padding 1 0 1 0; main center; cross end; hugs height
+  - text SF Symbol mic; SF Compact Regular 28; centered; 28 × 33; color Labels/Primary; blend linear burn
+=== 6
+- component; 42 × 42; row; gap 341; main center; cross center
+  - Emoji: vector shape; 22 × 22; fill Labels/Primary

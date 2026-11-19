@@ -1,0 +1,3 @@
+=== 0
+- component; 200 × 1; row; padding 0 15 0 15; cross center; hugs height
+  - Line: frame; 170 × 1; fills width; stroke Separators/Vibrant 1; blend linear burn

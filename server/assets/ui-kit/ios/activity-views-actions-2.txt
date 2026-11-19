@@ -1,0 +1,10 @@
+=== 0
+- component; 500 × 120; row; gap 25.33; padding 16 0 0 15; hugs height
+  - _Action: instance of _Action; with Label "Action", Symbol SF Symbol square.dashed; 66 × 104
+  - _Action: instance of _Action; with Label "Action", Symbol SF Symbol square.dashed; 66 × 104
+  - _Action: instance of _Action; with Label "Action", Symbol SF Symbol square.dashed; 66 × 104
+  - _Action: instance of _Action; with Label "Action", Symbol SF Symbol square.dashed; 66 × 104
+  - _Action: instance of _Action; with Label "Action", Symbol SF Symbol square.dashed; 66 × 104
+  - _Action: instance of _Action; with Label "Action", Symbol SF Symbol square.dashed; 66 × 104
+  - _Action: instance of _Action; with Label "Action", Symbol SF Symbol square.dashed; 66 × 104
+  - Separator: instance of _Separator; 500 × 1; absolute at (0, 0)

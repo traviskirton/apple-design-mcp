@@ -1,0 +1,3 @@
+=== 0
+- component; 36 × 36; capsule; fill Fills - Vibrant/Tertiary; blend linear burn
+  - text SF Symbol chevron.right; SF Pro Semibold 15; centered; 36 × 18; at (0, 9); color Labels - Vibrant/Primary

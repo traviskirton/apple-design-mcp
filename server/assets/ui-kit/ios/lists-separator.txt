@@ -1,0 +1,2 @@
+=== 0
+- component; 370 × 1; stroke Separators/Vibrant 1; blend linear burn

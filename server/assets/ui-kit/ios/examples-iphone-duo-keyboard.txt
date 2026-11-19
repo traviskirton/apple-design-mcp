@@ -1,0 +1,180 @@
+=== 0
+- component; 951 × 669; radius 20; fill Backgrounds/Primary
+  - Vertical Bar: frame; 84 × 669; at (867, 0); column; gap 8; padding 24 24 24 12; cross center
+    - Top: frame; 48 × 343; fills height; column; gap 6; cross center; hugs width
+      - Frame: frame; 48 × 83; column; gap 12; cross center; hugs content
+        - Status bar - iPhone Duo: instance of Status bar - iPhone Duo [Type=Vertical]; 48 × 83
+    - Bottom: frame; 48 × 270; column; gap 12; main end; cross center; hugs height
+  - Toolbar - Top - iPhone Duo: instance of Toolbar - Top - iPhone Duo [Sheet=False, Style=Title]; 951 × 84; at (0, 0)
+  - Keyboard and Accessory Bar: frame; 951 × 333.33; at (0, 335.67); column; gap 10; main end; cross center; hugs height
+    - Accessory Bar : instance of Accessory Bar - iPhone/Search; 535 × 48
+    - Keyboard: instance of Keyboard [Display=Inner, Orientation=Landscape, Type=Punctuation]; 951 × 275.33; fills width
+  - iPhone Duo: instance of iPhone Duo [Display=Inner, Color=Star White, Orientation=Landscape]; 951 × 669; at (0, 0)
+=== 1
+- component; 669 × 951; radius 20; fill Backgrounds/Primary
+  - Toolbar - Top - iPhone Duo: instance of Toolbar - Top - iPhone Duo [Sheet=False, Style=Title]; 669 × 84; at (0, 0)
+  - Keyboard and Accessory Bar: frame; 669 × 418.68; at (0, 532.32); column; gap 10; main end; cross center; hugs height
+    - Accessory Bar : instance of Accessory Bar - iPhone/Search; 561 × 48
+    - Keyboard: instance of Keyboard [Display=Inner, Orientation=Portrait, Type=Punctuation]; 669 × 360.68; fills width
+  - iPhone Duo: instance of iPhone Duo [Display=Inner, Color=Star White, Orientation=Portrait]; 669 × 951; at (0, 0)
+=== 2
+- component; 678 × 466; radius 0 0 20 20; fill Backgrounds/Primary
+  - Vertical Bar: frame; 84 × 466; at (594, 0); column; gap 8; padding 24 24 24 12; cross center
+    - Top: frame; 48 × 90; fills height; column; gap 6; cross center; hugs width
+    - Bottom: frame; 48 × 270; column; gap 12; main end; cross center; hugs height
+    - Camera Punchout: frame; 48 × 42; fills width
+  - Toolbar - Top - iPhone Duo: instance of Toolbar - Top - iPhone Duo [Sheet=False, Style=Title]; 678 × 84; at (0, 0)
+  - Keyboard and Accessory Bar: frame; 678 × 287.33; at (0, 178.67); column; gap 10; main end; cross center; hugs height
+    - Accessory Bar : instance of Accessory Bar - iPhone/Search; 574 × 48
+    - Keyboard: instance of Keyboard [Display=Outer, Orientation=Landscape, Type=Punctuation]; 678 × 229.33; fills width
+  - Outer Display Lens: instance of iPhone Duo/Outer Display Lens; 95.67 × 95.67; at (582, 370)
+  - iPhone Duo: instance of iPhone Duo [Display=Outer, Color=Star White, Orientation=Landscape]; 678 × 466; at (678, 466); rotated -180°
+=== 3
+- component; 466 × 678; radius 0 20 20 0; fill Backgrounds/Primary
+  - Vertical Bar: frame; 84 × 678; at (382, 0); column; gap 8; padding 24 24 24 12; cross center; hugs width
+    - Camera Punchout: frame; 48 × 42; fills width
+    - Top: frame; 48 × 302; fills height; column; gap 6; cross center; hugs width
+      - Frame: frame; 48 × 83; column; gap 12; cross center; hugs content
+        - Status bar - iPhone Duo: instance of Status bar - iPhone Duo [Type=Vertical]; 48 × 83
+    - Bottom: frame; 48 × 270; column; gap 12; main end; cross center; hugs height
+  - Toolbar - Top - iPhone Duo: instance of Toolbar - Top - iPhone Duo [Sheet=False, Style=Title]; 466 × 84; at (0, 0)
+  - Outer Display Lens: instance of iPhone Duo/Outer Display Lens; 95.67 × 95.67; at (370, 0)
+  - Keyboard and Accessory Bar: frame; 466 × 344.01; at (0, 333.99); column; gap 10; main end; cross center; hugs height
+    - Accessory Bar : instance of Accessory Bar - iPhone/Search; 442 × 48
+    - Keyboard: instance of Keyboard [Display=Outer, Orientation=Portrait, Type=Punctuation]; 466 × 286.01; fills width
+  - iPhone Duo: instance of iPhone Duo [Display=Outer, Color=Star White, Orientation=Portrait]; 466 × 678; at (0, 0)
+=== 4
+- component; 951 × 669; radius 20; fill Backgrounds/Primary
+  - Vertical Bar: frame; 84 × 669; at (867, 0); column; gap 8; padding 24 24 24 12; cross center
+    - Top: frame; 48 × 343; fills height; column; gap 6; cross center; hugs width
+      - Frame: frame; 48 × 83; column; gap 12; cross center; hugs content
+        - Status bar - iPhone Duo: instance of Status bar - iPhone Duo [Type=Vertical]; 48 × 83
+    - Bottom: frame; 48 × 270; column; gap 12; main end; cross center; hugs height
+  - Toolbar - Top - iPhone Duo: instance of Toolbar - Top - iPhone Duo [Sheet=False, Style=Title]; 951 × 84; at (0, 0)
+  - Keyboard and Accessory Bar: frame; 951 × 333.33; at (0, 335.67); column; gap 10; main end; cross center; hugs height
+    - Accessory Bar : instance of Accessory Bar - iPhone/Search; 535 × 48
+    - Keyboard: instance of Keyboard [Display=Inner, Orientation=Landscape, Type=Numeric]; 951 × 275.33; fills width
+  - iPhone Duo: instance of iPhone Duo [Display=Inner, Color=Star White, Orientation=Landscape]; 951 × 669; at (0, 0)
+=== 5
+- component; 669 × 951; radius 20; fill Backgrounds/Primary
+  - Toolbar - Top - iPhone Duo: instance of Toolbar - Top - iPhone Duo [Sheet=False, Style=Title]; 669 × 84; at (0, 0)
+  - Keyboard and Accessory Bar: frame; 669 × 418.68; at (0, 532.32); column; gap 10; main end; cross center; hugs height
+    - Accessory Bar : instance of Accessory Bar - iPhone/Search; 561 × 48
+    - Keyboard: instance of Keyboard [Display=Inner, Orientation=Portrait, Type=Numeric]; 669 × 360.68; fills width
+  - iPhone Duo: instance of iPhone Duo [Display=Inner, Color=Star White, Orientation=Portrait]; 669 × 951; at (0, 0)
+=== 6
+- component; 678 × 466; radius 0 0 20 20; fill Backgrounds/Primary
+  - Vertical Bar: frame; 84 × 466; at (594, 0); column; gap 8; padding 24 24 24 12; cross center
+    - Top: frame; 48 × 90; fills height; column; gap 6; cross center; hugs width
+    - Bottom: frame; 48 × 270; column; gap 12; main end; cross center; hugs height
+    - Camera Punchout: frame; 48 × 42; fills width
+  - Toolbar - Top - iPhone Duo: instance of Toolbar - Top - iPhone Duo [Sheet=False, Style=Title]; 678 × 84; at (0, 0)
+  - Keyboard and Accessory Bar: frame; 678 × 287.33; at (0, 178.67); column; gap 10; main end; cross center; hugs height
+    - Accessory Bar : instance of Accessory Bar - iPhone/Search; 574 × 48
+    - Keyboard: instance of Keyboard [Display=Outer, Orientation=Landscape, Type=Numeric]; 678 × 229.33; fills width
+  - Outer Display Lens: instance of iPhone Duo/Outer Display Lens; 95.67 × 95.67; at (582, 370)
+  - iPhone Duo: instance of iPhone Duo [Display=Outer, Color=Star White, Orientation=Landscape]; 678 × 466; at (678, 466); rotated -180°
+=== 7
+- component; 466 × 678; radius 0 20 20 0; fill Backgrounds/Primary
+  - Vertical Bar: frame; 84 × 678; at (382, 0); column; gap 8; padding 24 24 24 12; cross center; hugs width
+    - Camera Punchout: frame; 48 × 42; fills width
+    - Top: frame; 48 × 302; fills height; column; gap 6; cross center; hugs width
+      - Frame: frame; 48 × 83; column; gap 12; cross center; hugs content
+        - Status bar - iPhone Duo: instance of Status bar - iPhone Duo [Type=Vertical]; 48 × 83
+    - Bottom: frame; 48 × 270; column; gap 12; main end; cross center; hugs height
+  - Toolbar - Top - iPhone Duo: instance of Toolbar - Top - iPhone Duo [Sheet=False, Style=Title]; 466 × 84; at (0, 0)
+  - Outer Display Lens: instance of iPhone Duo/Outer Display Lens; 95.67 × 95.67; at (370, 0)
+  - Keyboard and Accessory Bar: frame; 466 × 344.01; at (0, 333.99); column; gap 10; main end; cross center; hugs height
+    - Accessory Bar : instance of Accessory Bar - iPhone/Search; 442 × 48
+    - Keyboard: instance of Keyboard [Display=Outer, Orientation=Portrait, Type=Numeric]; 466 × 286.01; fills width
+  - iPhone Duo: instance of iPhone Duo [Display=Outer, Color=Star White, Orientation=Portrait]; 466 × 678; at (0, 0)
+=== 8
+- component; 951 × 669; radius 20; fill Backgrounds/Primary
+  - Vertical Bar: frame; 84 × 669; at (867, 0); column; gap 8; padding 24 24 24 12; cross center
+    - Top: frame; 48 × 343; fills height; column; gap 6; cross center; hugs width
+      - Frame: frame; 48 × 83; column; gap 12; cross center; hugs content
+        - Status bar - iPhone Duo: instance of Status bar - iPhone Duo [Type=Vertical]; 48 × 83
+    - Bottom: frame; 48 × 270; column; gap 12; main end; cross center; hugs height
+  - Toolbar - Top - iPhone Duo: instance of Toolbar - Top - iPhone Duo [Sheet=False, Style=Title]; 951 × 84; at (0, 0)
+  - Keyboard and Accessory Bar: frame; 951 × 333.33; at (0, 335.67); column; gap 10; main end; cross center; hugs height
+    - Accessory Bar : instance of Accessory Bar - iPhone/Search; 535 × 48
+    - Keyboard: instance of Keyboard [Display=Inner, Orientation=Landscape, Type=Lower Case]; 951 × 275.33; fills width
+  - iPhone Duo: instance of iPhone Duo [Display=Inner, Color=Star White, Orientation=Landscape]; 951 × 669; at (0, 0)
+=== 9
+- component; 669 × 951; radius 20; fill Backgrounds/Primary
+  - Toolbar - Top - iPhone Duo: instance of Toolbar - Top - iPhone Duo [Sheet=False, Style=Title]; 669 × 84; at (0, 0)
+  - Keyboard and Accessory Bar: frame; 669 × 418.68; at (0, 532.32); column; gap 10; main end; cross center; hugs height
+    - Accessory Bar : instance of Accessory Bar - iPhone/Search; 561 × 48
+    - Keyboard: instance of Keyboard [Display=Inner, Orientation=Portrait, Type=Lower Case]; 669 × 360.68; fills width
+  - iPhone Duo: instance of iPhone Duo [Display=Inner, Color=Star White, Orientation=Portrait]; 669 × 951; at (0, 0)
+=== 10
+- component; 678 × 466; radius 0 0 20 20; fill Backgrounds/Primary
+  - Vertical Bar: frame; 84 × 466; at (594, 0); column; gap 8; padding 24 24 24 12; cross center
+    - Top: frame; 48 × 90; fills height; column; gap 6; cross center; hugs width
+    - Bottom: frame; 48 × 270; column; gap 12; main end; cross center; hugs height
+    - Camera Punchout: frame; 48 × 42; fills width
+  - Toolbar - Top - iPhone Duo: instance of Toolbar - Top - iPhone Duo [Sheet=False, Style=Title]; 678 × 84; at (0, 0)
+  - Keyboard and Accessory Bar: frame; 678 × 287.33; at (0, 178.67); column; gap 10; main end; cross center; hugs height
+    - Accessory Bar : instance of Accessory Bar - iPhone/Search; 574 × 48
+    - Keyboard: instance of Keyboard [Display=Outer, Orientation=Landscape, Type=Lower Case]; 678 × 229.33; fills width
+  - Outer Display Lens: instance of iPhone Duo/Outer Display Lens; 95.67 × 95.67; at (582, 370)
+  - iPhone Duo: instance of iPhone Duo [Display=Outer, Color=Star White, Orientation=Landscape]; 678 × 466; at (678, 466); rotated -180°
+=== 11
+- component; 466 × 678; radius 0 20 20 0; fill Backgrounds/Primary
+  - Vertical Bar: frame; 84 × 678; at (382, 0); column; gap 8; padding 24 24 24 12; cross center; hugs width
+    - Camera Punchout: frame; 48 × 42; fills width
+    - Top: frame; 48 × 302; fills height; column; gap 6; cross center; hugs width
+      - Frame: frame; 48 × 83; column; gap 12; cross center; hugs content
+        - Status bar - iPhone Duo: instance of Status bar - iPhone Duo [Type=Vertical]; 48 × 83
+    - Bottom: frame; 48 × 270; column; gap 12; main end; cross center; hugs height
+  - Toolbar - Top - iPhone Duo: instance of Toolbar - Top - iPhone Duo [Sheet=False, Style=Title]; 466 × 84; at (0, 0)
+  - Outer Display Lens: instance of iPhone Duo/Outer Display Lens; 95.67 × 95.67; at (370, 0)
+  - Keyboard and Accessory Bar: frame; 466 × 344.01; at (0, 333.99); column; gap 10; main end; cross center; hugs height
+    - Accessory Bar : instance of Accessory Bar - iPhone/Search; 442 × 48
+    - Keyboard: instance of Keyboard [Display=Outer, Orientation=Portrait, Type=Lower Case]; 466 × 286.01; fills width
+  - iPhone Duo: instance of iPhone Duo [Display=Outer, Color=Star White, Orientation=Portrait]; 466 × 678; at (0, 0)
+=== 12
+- component; 951 × 669; radius 20; fill Backgrounds/Primary
+  - Vertical Bar: frame; 84 × 669; at (867, 0); column; gap 8; padding 24 24 24 12; cross center
+    - Top: frame; 48 × 343; fills height; column; gap 6; cross center; hugs width
+      - Frame: frame; 48 × 83; column; gap 12; cross center; hugs content
+        - Status bar - iPhone Duo: instance of Status bar - iPhone Duo [Type=Vertical]; 48 × 83
+    - Bottom: frame; 48 × 270; column; gap 12; main end; cross center; hugs height
+  - Toolbar - Top - iPhone Duo: instance of Toolbar - Top - iPhone Duo [Sheet=False, Style=Title]; 951 × 84; at (0, 0)
+  - Keyboard and Accessory Bar: frame; 951 × 333.33; at (0, 335.67); column; gap 10; main end; cross center; hugs height
+    - Accessory Bar : instance of Accessory Bar - iPhone/Search; 535 × 48
+    - Keyboard: instance of Keyboard [Display=Inner, Orientation=Landscape, Type=Upper Case]; 951 × 275.33; fills width
+  - iPhone Duo: instance of iPhone Duo [Display=Inner, Color=Star White, Orientation=Landscape]; 951 × 669; at (0, 0)
+=== 13
+- component; 669 × 951; radius 20; fill Backgrounds/Primary
+  - Toolbar - Top - iPhone Duo: instance of Toolbar - Top - iPhone Duo [Sheet=False, Style=Title]; 669 × 84; at (0, 0)
+  - Keyboard and Accessory Bar: frame; 669 × 418.68; at (0, 532.32); column; gap 10; main end; cross center; hugs height
+    - Accessory Bar : instance of Accessory Bar - iPhone/Search; 561 × 48
+    - Keyboard: instance of Keyboard [Display=Inner, Orientation=Portrait, Type=Upper Case]; 669 × 360.68; fills width
+  - iPhone Duo: instance of iPhone Duo [Display=Inner, Color=Star White, Orientation=Portrait]; 669 × 951; at (0, 0)
+=== 14
+- component; 678 × 466; radius 0 0 20 20; fill Backgrounds/Primary
+  - Vertical Bar: frame; 84 × 466; at (594, 0); column; gap 8; padding 24 24 24 12; cross center
+    - Top: frame; 48 × 90; fills height; column; gap 6; cross center; hugs width
+    - Bottom: frame; 48 × 270; column; gap 12; main end; cross center; hugs height
+    - Camera Punchout: frame; 48 × 42; fills width
+  - Toolbar - Top - iPhone Duo: instance of Toolbar - Top - iPhone Duo [Sheet=False, Style=Title]; 678 × 84; at (0, 0)
+  - Keyboard and Accessory Bar: frame; 678 × 287.33; at (0, 178.67); column; gap 10; main end; cross center; hugs height
+    - Accessory Bar : instance of Accessory Bar - iPhone/Search; 574 × 48
+    - Keyboard: instance of Keyboard [Display=Outer, Orientation=Landscape, Type=Upper Case]; 678 × 229.33; fills width
+  - Outer Display Lens: instance of iPhone Duo/Outer Display Lens; 95.67 × 95.67; at (582, 370)
+  - iPhone Duo: instance of iPhone Duo [Display=Outer, Color=Star White, Orientation=Landscape]; 678 × 466; at (678, 466); rotated -180°
+=== 15
+- component; 466 × 678; radius 0 20 20 0; fill Backgrounds/Primary
+  - Vertical Bar: frame; 84 × 678; at (382, 0); column; gap 8; padding 24 24 24 12; cross center; hugs width
+    - Camera Punchout: frame; 48 × 42; fills width
+    - Top: frame; 48 × 302; fills height; column; gap 6; cross center; hugs width
+      - Frame: frame; 48 × 83; column; gap 12; cross center; hugs content
+        - Status bar - iPhone Duo: instance of Status bar - iPhone Duo [Type=Vertical]; 48 × 83
+    - Bottom: frame; 48 × 270; column; gap 12; main end; cross center; hugs height
+  - Toolbar - Top - iPhone Duo: instance of Toolbar - Top - iPhone Duo [Sheet=False, Style=Title]; 466 × 84; at (0, 0)
+  - Outer Display Lens: instance of iPhone Duo/Outer Display Lens; 95.67 × 95.67; at (370, 0)
+  - Keyboard and Accessory Bar: frame; 466 × 344.01; at (0, 333.99); column; gap 10; main end; cross center; hugs height
+    - Accessory Bar : instance of Accessory Bar - iPhone/Search; 442 × 48
+    - Keyboard: instance of Keyboard [Display=Outer, Orientation=Portrait, Type=Upper Case]; 466 × 286.01; fills width
+  - iPhone Duo: instance of iPhone Duo [Display=Outer, Color=Star White, Orientation=Portrait]; 466 × 678; at (0, 0)

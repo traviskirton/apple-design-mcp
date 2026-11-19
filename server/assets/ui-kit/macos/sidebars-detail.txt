@@ -1,0 +1,18 @@
+=== 0
+- component; 42 × 20; row; gap 10; main center; cross center; hugs content
+  - text "Detail"; SF Pro Medium 15/20; centered; 42 × 20; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Detail
+=== 1
+- component; 42 × 20; row; gap 10; main center; cross center; hugs content
+  - text "Detail"; SF Pro Medium 15/20; centered; 42 × 20; color Labels - Vibrant (Use Plus Lighter | Darker)/Quaternary; blend linear burn; property Detail
+=== 2
+- component; 37 × 16; row; gap 10; main center; cross center; hugs content
+  - text "Detail"; SF Pro Medium 13/16; centered; 37 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Detail
+=== 3
+- component; 37 × 16; row; gap 10; main center; cross center; hugs content
+  - text "Detail"; SF Pro Medium 13/16; centered; 37 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Quaternary; blend linear burn; property Detail
+=== 4
+- component; 31 × 14; row; gap 10; main center; cross center; hugs content
+  - text "Detail"; SF Pro Medium 11/14; centered; 31 × 14; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Detail
+=== 5
+- component; 31 × 14; row; gap 10; main center; cross center; hugs content
+  - text "Detail"; SF Pro Medium 11/14; centered; 31 × 14; color Labels - Vibrant (Use Plus Lighter | Darker)/Quaternary; blend linear burn; property Detail

@@ -1,0 +1,87 @@
+=== 0
+- component; 54 × 16; row; gap 3; cross center; hugs content; uses Radio Button/Spacing
+  - Radio Button: frame; 16 × 16; capsule; uses Radio Button/Width
+    - BG: instance of _Control BG/Controls [Active=True, Context=Content Area, State=Disabled, On=False]; 16 × 16; at (0, 0)
+  - text "Label"; SF Pro Medium 13/16; 35 × 16; color Labels/Tertiary at 25%; property Label
+=== 1
+- component; 54 × 16; row; gap 3; cross center; hugs content; uses Radio Button/Spacing
+  - Radio Button: frame; 16 × 16; row; padding 7 5 7 5; main center; cross center; capsule; uses Radio Button/Width
+    - BG: instance of _Control BG/Controls [Active=True, Context=Content Area, State=Disabled, On=False]; 16 × 16; absolute at (0, 0)
+    - Dot: instance of _Glyphs - Radio Buttons [Active=False, State=Mixed, Is Enabled=False]; 16 × 16
+  - text "Label"; SF Pro Medium 13/16; 35 × 16; color Labels/Tertiary at 25%; property Label
+=== 2
+- component; 54 × 16; row; gap 3; cross center; hugs content; uses Radio Button/Spacing
+  - Radio Button: frame; 16 × 16; row; padding 6; main center; cross center; capsule; uses Radio Button/Width
+    - BG: instance of _Control BG/Controls [Active=True, Context=Content Area, State=Disabled, On=False]; 16 × 16; absolute at (0, 0)
+    - Dot: instance of _Glyphs - Radio Buttons [Active=False, State=Selected, Is Enabled=False]; 16 × 16
+  - text "Label"; SF Pro Medium 13/16; 35 × 16; color Labels/Tertiary at 25%; property Label
+=== 3
+- component; 54 × 16; row; gap 3; cross center; hugs content; uses Radio Button/Spacing
+  - Radio Button: frame; 16 × 16; capsule; uses Radio Button/Width
+    - BG: instance of _Control BG/Controls [Active=True, Context=Content Area, State=Clicked, On=False]; 16 × 16; at (0, 0)
+  - text "Label"; SF Pro Medium 13/16; 35 × 16; color Labels/Primary at 85%; property Label
+=== 4
+- component; 54 × 16; row; gap 3; cross center; hugs content; uses Radio Button/Spacing
+  - Radio Button: frame; 16 × 16; row; padding 7 5 7 5; main center; cross center; capsule; uses Radio Button/Width
+    - BG: instance of _Control BG/Controls [Active=True, Context=Content Area, State=Clicked, On=False]; 16 × 16; absolute at (0, 0)
+    - Dot: instance of _Glyphs - Radio Buttons [Active=False, State=Mixed, Is Enabled=True]; 16 × 16
+  - text "Label"; SF Pro Medium 13/16; 35 × 16; color Labels/Primary at 85%; property Label
+=== 5
+- component; 54 × 16; row; gap 3; cross center; hugs content; uses Radio Button/Spacing
+  - Radio Button: frame; 16 × 16; row; padding 6; main center; cross center; capsule; uses Radio Button/Width
+    - BG: instance of _Control BG/Controls [Active=True, Context=Content Area, State=Clicked, On=False]; 16 × 16; absolute at (0, 0)
+    - Dot: instance of _Glyphs - Radio Buttons [Active=False, State=Selected, Is Enabled=True]; 16 × 16
+  - text "Label"; SF Pro Medium 13/16; 35 × 16; color Labels/Primary at 85%; property Label
+=== 6
+- component; 54 × 16; row; gap 3; cross center; hugs content; uses Radio Button/Spacing
+  - Radio Button: frame; 16 × 16; capsule; uses Radio Button/Width
+    - BG: instance of _Control BG/Controls [Active=True, Context=Content Area, State=Idle, On=False]; 16 × 16; at (0, 0)
+  - text "Label"; SF Pro Medium 13/16; 35 × 16; color Labels/Primary at 85%; property Label
+=== 7
+- component; 54 × 16; row; gap 3; cross center; hugs content; uses Radio Button/Spacing
+  - Radio Button: frame; 16 × 16; row; padding 7 5 7 5; main center; cross center; capsule; uses Radio Button/Width
+    - BG: instance of _Control BG/Controls [Active=True, Context=Content Area, State=Idle, On=False]; 16 × 16; absolute at (0, 0)
+    - Dot: instance of _Glyphs - Radio Buttons [Active=False, State=Mixed, Is Enabled=True]; 16 × 16
+  - text "Label"; SF Pro Medium 13/16; 35 × 16; color Labels/Primary at 85%; property Label
+=== 8
+- component; 54 × 16; row; gap 3; cross center; hugs content; uses Radio Button/Spacing
+  - Radio Button: frame; 16 × 16; row; padding 6; main center; cross center; capsule; uses Radio Button/Width
+    - BG: instance of _Control BG/Controls [Active=True, Context=Content Area, State=Idle, On=False]; 16 × 16; absolute at (0, 0)
+    - Dot: instance of _Glyphs - Radio Buttons [Active=False, State=Selected, Is Enabled=True]; 16 × 16
+  - text "Label"; SF Pro Medium 13/16; 35 × 16; color Labels/Primary at 85%; property Label
+=== 9
+- component; 54 × 16; row; gap 3; cross center; hugs content; uses Radio Button/Spacing
+  - Radio Button: frame; 16 × 16; row; padding 7 5 7 5; main center; cross center; capsule; uses Radio Button/Width
+    - BG: instance of _Control BG/Controls [Active=True, Context=Content Area, State=Disabled, On=True]; 16 × 16; absolute at (0, 0); opacity 45%
+    - Dot: instance of _Glyphs - Radio Buttons [Active=True, State=Mixed, Is Enabled=False]; 16 × 16
+  - text "Label"; SF Pro Medium 13/16; 35 × 16; color Labels/Tertiary at 25%; property Label
+=== 10
+- component; 54 × 16; row; gap 3; cross center; hugs content; uses Radio Button/Spacing
+  - Radio Button: frame; 16 × 16; row; padding 4 5 4 5; main center; cross center; capsule; uses Radio Button/Width
+    - BG: instance of _Control BG/Controls [Active=True, Context=Content Area, State=Disabled, On=True]; 16 × 16; absolute at (0, 0); opacity 45%
+    - Dot: instance of _Glyphs - Radio Buttons [Active=True, State=Selected, Is Enabled=False]; 16 × 16
+  - text "Label"; SF Pro Medium 13/16; 35 × 16; color Labels/Tertiary at 25%; property Label
+=== 11
+- component; 54 × 16; row; gap 3; cross center; hugs content; uses Radio Button/Spacing
+  - Radio Button: frame; 16 × 16; row; padding 7 5 7 5; main center; cross center; capsule; uses Radio Button/Width
+    - BG: instance of _Control BG/Controls [Active=True, Context=Content Area, State=Clicked, On=True]; 16 × 16; absolute at (0, 0)
+    - Dot: instance of _Glyphs - Radio Buttons [Active=True, State=Mixed, Is Enabled=True]; 16 × 16
+  - text "Label"; SF Pro Medium 13/16; 35 × 16; color Labels/Primary at 85%; property Label
+=== 12
+- component; 54 × 16; row; gap 3; cross center; hugs content; uses Radio Button/Spacing
+  - Radio Button: frame; 16 × 16; row; padding 4 5 4 5; main center; cross center; capsule; uses Radio Button/Width
+    - BG: instance of _Control BG/Controls [Active=True, Context=Content Area, State=Clicked, On=True]; 16 × 16; absolute at (0, 0)
+    - Dot: instance of _Glyphs - Radio Buttons [Active=True, State=Selected, Is Enabled=True]; 16 × 16
+  - text "Label"; SF Pro Medium 13/16; 35 × 16; color Labels/Primary at 85%; property Label
+=== 13
+- component; 54 × 16; row; gap 3; cross center; hugs content; uses Radio Button/Spacing
+  - Radio Button: frame; 16 × 16; row; padding 7 5 7 5; main center; cross center; capsule; uses Radio Button/Width
+    - BG: instance of _Control BG/Controls [Active=True, Context=Content Area, State=Idle, On=True]; 16 × 16; absolute at (0, 0)
+    - Dot: instance of _Glyphs - Radio Buttons [Active=True, State=Mixed, Is Enabled=True]; 16 × 16
+  - text "Label"; SF Pro Medium 13/16; 35 × 16; color Labels/Primary at 85%; property Label
+=== 14
+- component; 54 × 16; row; gap 3; cross center; hugs content; uses Radio Button/Spacing
+  - Radio Button: frame; 16 × 16; row; padding 4 5 4 5; main center; cross center; capsule; uses Radio Button/Width
+    - BG: instance of _Control BG/Controls [Active=True, Context=Content Area, State=Idle, On=True]; 16 × 16; absolute at (0, 0)
+    - Dot: instance of _Glyphs - Radio Buttons [Active=True, State=Selected, Is Enabled=True]; 16 × 16
+  - text "Label"; SF Pro Medium 13/16; 35 × 16; color Labels/Primary at 85%; property Label

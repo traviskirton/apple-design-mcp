@@ -1,0 +1,4 @@
+=== 0
+- component; 36 × 47; column; gap 3; padding 0 0 4 0; cross center
+  - Icon: instance of _System App Icon [App Icon=Messages]; 36 × 36; fills width
+  - Dot: ellipse; 4 × 4; fill #707070; blend linear dodge; hidden unless Show Dot

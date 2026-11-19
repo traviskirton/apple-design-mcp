@@ -1,0 +1,7 @@
+=== 0
+- component; 162 × 72; column; padding 0 6 0 6; main center
+  - Header: frame; 150 × 22; fills width; row; gap 3; cross center; hugs height; blend linear dodge
+    - text SF Symbol app.dashed; SF Pro Medium 17/22; 20 × 22; color Vibrant Labels/Dark/Vibrant Secondary; background blur 135.91; property Symbol
+    - text "Label"; SF Pro Medium 15/20; 127 × 20; fills width; color Vibrant Labels/Dark/Vibrant Secondary; background blur 135.91; property Line 1
+  - text "Label"; SF Pro Medium 15/18; 150 × 18; fills width; color Vibrant Labels/Dark/Vibrant Primary; background blur 135.91; property Line 2
+  - text "Label"; SF Pro Medium 15/18; 150 × 18; fills width; color Vibrant Labels/Dark/Vibrant Primary; background blur 135.91; property Line 3

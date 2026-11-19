@@ -1,0 +1,40 @@
+=== 0
+- component; 20 × 24; radius 6; uses Global/Height, Stepper/Radius
+  - Button BG: frame; 20 × 24; at (0, 0); column
+    - BG - Top: instance of _Control BG/Bordered [Context=Content Area, State=Disabled, On=False]; 20 × 12; fills height; fills width
+    - BG - Bottom: instance of _Control BG/Bordered [Context=Content Area, State=Disabled, On=False]; 20 × 12; fills height; fills width
+  - Separator: frame; 20 × 24; at (0, 0); column; gap 10; main center; cross center
+    - Separator: rectangle; 14 × 1; capsule; fill #000000 at 6%; uses Stepper/Width - Separator
+  - Chevrons: frame; 20 × 24; at (0, 0); column
+    - text SF Symbol chevron.up; SF Pro Medium 12; centered; 20 × 12; fills height; fills width; color Labels/Tertiary at 25%
+    - text SF Symbol chevron.down; SF Pro Medium 12; centered; 20 × 12; fills height; fills width; color Labels/Tertiary at 25%
+=== 1
+- component; 20 × 24; radius 6; uses Stepper/Width, Global/Height, Stepper/Radius
+  - Button BG: frame; 20 × 24; at (0, 0); column
+    - BG - Top: instance of _Control BG/Bordered [Context=Content Area, State=Idle, On=False]; 20 × 12; fills height; fills width
+    - BG - Bottom: instance of _Control BG/Bordered [Context=Content Area, State=Clicked, On=False]; 20 × 12; fills height; fills width
+  - Separator: frame; 20 × 24; at (0, 0); column; gap 10; main center; cross center
+    - Separator: rectangle; 14 × 1; capsule; fill #000000 at 12%; uses Stepper/Width - Separator
+  - Chevrons: frame; 20 × 24; at (0, 0); column
+    - text SF Symbol chevron.up; SF Pro Medium 12; centered; 20 × 12; fills height; fills width; color Labels/Primary at 85%
+    - text SF Symbol chevron.down; SF Pro Medium 12; centered; 20 × 12; fills height; fills width; color Labels/Primary at 85%
+=== 2
+- component; 20 × 24; radius 6; uses Stepper/Width, Global/Height, Stepper/Radius
+  - Button BG: frame; 20 × 24; at (0, 0); column
+    - BG - Top: instance of _Control BG/Bordered [Context=Content Area, State=Clicked, On=False]; 20 × 12; fills height; fills width
+    - BG - Bottom: instance of _Control BG/Bordered [Context=Content Area, State=Idle, On=False]; 20 × 12; fills height; fills width
+  - Separator: frame; 20 × 24; at (0, 0); column; gap 10; main center; cross center
+    - Separator: rectangle; 14 × 1; capsule; fill #000000 at 12%; uses Stepper/Width - Separator
+  - Chevrons: frame; 20 × 24; at (0, 0); column
+    - text SF Symbol chevron.up; SF Pro Medium 12; centered; 20 × 12; fills height; fills width; color Labels/Primary at 85%
+    - text SF Symbol chevron.down; SF Pro Medium 12; centered; 20 × 12; fills height; fills width; color Labels/Primary at 85%
+=== 3
+- component; 20 × 24; radius 6; uses Stepper/Width, Global/Height, Stepper/Radius
+  - Button BG: frame; 20 × 24; at (0, 0); column
+    - BG - Top: instance of _Control BG/Bordered [Context=Content Area, State=Idle, On=False]; 20 × 12; fills height; fills width
+    - BG - Bottom: instance of _Control BG/Bordered [Context=Content Area, State=Idle, On=False]; 20 × 12; fills height; fills width
+  - Separator: frame; 20 × 24; at (0, 0); column; gap 10; main center; cross center
+    - Separator: rectangle; 14 × 1; capsule; fill #000000 at 12%; uses Stepper/Width - Separator
+  - Chevrons: frame; 20 × 24; at (0, 0); column
+    - text SF Symbol chevron.up; SF Pro Medium 12; centered; 20 × 12; fills height; fills width; color Labels/Primary at 85%
+    - text SF Symbol chevron.down; SF Pro Medium 12; centered; 20 × 12; fills height; fills width; color Labels/Primary at 85%

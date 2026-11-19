@@ -1,0 +1,6 @@
+=== 0
+- component; 13 × 19
+  - text SF Symbol chevron.down; SF Pro Medium 9/13; centered; 13 × 19; at (0, 0); color Labels/Secondary at 50%
+=== 1
+- component; 13 × 19
+  - text SF Symbol chevron.up; SF Pro Medium 9/13; centered; 13 × 19; at (0, 0); color Labels/Secondary at 50%

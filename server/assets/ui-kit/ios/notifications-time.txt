@@ -1,0 +1,3 @@
+=== 0
+- component; 51 × 20; row; gap 10; main center; cross center; hugs content; blend linear dodge
+  - text "9:41 AM"; SF Pro Regular 13/20; right-aligned; 51 × 20; color #4d4d4d; property Time

@@ -1,0 +1,15 @@
+=== 0
+- component; 38 × 38; capsule; fill Accents/Blue
+  - text "1"; SF Pro Semibold 20/24; centered; 38 × 38; at (0, 0); color Grays/White; property Date
+=== 1
+- component; 38 × 38; capsule; fill Labels/Primary
+  - text "1"; SF Pro Semibold 20/24; centered; 38 × 38; at (0, 0); color Backgrounds/Primary; property Date
+=== 2
+- component; 38 × 38
+  - Ellipse: ellipse; 38 × 38; at (0, 0); fill Accents/Blue; opacity 12%
+  - text "1"; SF Pro Regular 20/24; centered; 38 × 38; at (0, 0); color Accents/Blue; property Date
+=== 3
+- component; 38 × 38
+  - text "1"; SF Pro Regular 20/24; centered; 38 × 38; at (0, 0); color Labels/Primary; property Date
+=== 4
+- component; 38 × 38

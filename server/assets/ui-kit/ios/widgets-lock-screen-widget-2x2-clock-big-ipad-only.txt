@@ -1,0 +1,19 @@
+=== 0
+- component; 162 × 162
+  - Clock: frame; 148 × 148; at (7, 7); capsule; fill #ffffff at 7% + #ffffff at 3% (color dodge); background blur 100
+  - Numerals: frame; 119.37 × 129.41; at (21.31, 17.03)
+    - text "12"; SF Compact Rounded Bold 19; 19 × 23; at (48.74, 0); color Vibrant Labels/Dark/Vibrant Secondary; opacity 85%
+    - text "11"; SF Compact Rounded Bold 19; 16 × 23; at (25.08, 7.74); color Vibrant Labels/Dark/Vibrant Secondary; opacity 85%
+    - text "10"; SF Compact Rounded Bold 19; 20 × 23; at (6.64, 27.08); color Vibrant Labels/Dark/Vibrant Secondary; opacity 85%
+    - text "9"; SF Compact Rounded Bold 19; 12 × 23; at (0, 53.2); color Vibrant Labels/Dark/Vibrant Secondary; opacity 85%
+    - text "8"; SF Compact Rounded Bold 19; 12 × 23; at (7.74, 79.32); color Vibrant Labels/Dark/Vibrant Secondary; opacity 85%
+    - text "7"; SF Compact Rounded Bold 19; 11 × 23; at (26.62, 97.7); color Vibrant Labels/Dark/Vibrant Secondary; opacity 85%
+    - text "6"; SF Compact Rounded Bold 19; 12 × 23; at (54.17, 106.41); color Vibrant Labels/Dark/Vibrant Secondary; opacity 85%
+    - text "5"; SF Compact Rounded Bold 19; 12 × 23; at (78.35, 97.7); color Vibrant Labels/Dark/Vibrant Secondary; opacity 85%
+    - text "4"; SF Compact Rounded Bold 19; 12 × 23; at (98.67, 79.32); color Vibrant Labels/Dark/Vibrant Secondary; opacity 85%
+    - text "3"; SF Compact Rounded Bold 19; 12 × 23; at (107.37, 53.2); color Vibrant Labels/Dark/Vibrant Secondary; opacity 85%
+    - text "2"; SF Compact Rounded Bold 19; 11 × 23; at (100.13, 27.08); color Vibrant Labels/Dark/Vibrant Secondary; opacity 85%
+    - text "1"; SF Compact Rounded Bold 19; 8 × 23; at (82.29, 7.74); color Vibrant Labels/Dark/Vibrant Secondary; opacity 85%
+  - Ticks: vector shape; 140.57 × 140.47; at (10.67, 10.77); capsule; fill #1a1a1a (linear dodge)
+  - Ticks: vector shape; 141.23 × 141.23; at (10.39, 10.39); capsule; fill Vibrant Labels/Dark/Vibrant Secondary
+  - Hands: vector shape; 82.05 × 107.37; at (50.53, 43.76); fill Vibrant Labels/Dark/Vibrant Primary

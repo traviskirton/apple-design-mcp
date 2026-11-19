@@ -1,0 +1,36 @@
+=== 0
+- component; 24 × 24; row; gap 4; padding 2; main center; cross center; hugs width
+  - Liquid Glass: instance of Liquid Glass - Small [Active=False, State=Default]; 24 × 24; absolute at (0, 0)
+  - text SF Symbol square.dashed; SF Pro Semibold 10/20; centered; 20 × 20; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+=== 1
+- component; 36 × 36; row; gap 4; padding 4; cross center; hugs width
+  - Liquid Glass: instance of Liquid Glass - Small [Active=False, State=Default]; 36 × 36; absolute at (0, 0)
+  - Button: frame; 28 × 28; row; padding 0 4 0 4; main center; cross center; hugs width; capsule; blend linear burn
+    - text SF Symbol square.dashed; SF Pro Medium 13/22; centered; 20 × 22; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; property Symbol
+=== 2
+- component; 24 × 24; row; gap 4; padding 2; main center; cross center; hugs width
+  - Liquid Glass: instance of Liquid Glass - Small [Active=False, State=Default]; 24 × 24; absolute at (0, 0)
+  - text SF Symbol square.dashed; SF Pro Semibold 10/20; centered; 20 × 20; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary
+=== 3
+- component; 36 × 36; row; gap 4; padding 4; cross center; hugs width
+  - Liquid Glass: instance of Liquid Glass - Small [Active=False, State=Default]; 36 × 36; absolute at (0, 0)
+  - Button: frame; 28 × 28; row; padding 0 4 0 4; main center; cross center; hugs width; capsule; blend linear burn
+    - text SF Symbol square.dashed; SF Pro Medium 13/22; centered; 20 × 22; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; property Symbol
+=== 4
+- component; 24 × 24; row; gap 4; padding 2; main center; cross center; hugs width
+  - Liquid Glass: instance of Liquid Glass - Small [Active=True, State=Default]; 24 × 24; absolute at (0, 0)
+  - text SF Symbol square.dashed; SF Pro Semibold 10/20; centered; 20 × 20; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+=== 5
+- component; 36 × 36; row; gap 4; padding 4; cross center; hugs width
+  - Liquid Glass: instance of Liquid Glass - Small [Active=True, State=Default]; 36 × 36; absolute at (0, 0)
+  - Button: frame; 28 × 28; row; padding 0 4 0 4; main center; cross center; hugs width; capsule; blend linear burn
+    - text SF Symbol square.dashed; SF Pro Medium 13/22; centered; 20 × 22; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; property Symbol
+=== 6
+- component; 24 × 24; row; gap 4; padding 2; main center; cross center; hugs width
+  - Liquid Glass: instance of Liquid Glass - Small [Active=True, State=Default]; 24 × 24; absolute at (0, 0)
+  - text SF Symbol square.dashed; SF Pro Semibold 10/20; centered; 20 × 20; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary
+=== 7
+- component; 36 × 36; row; gap 4; padding 4; cross center; hugs width
+  - Liquid Glass: instance of Liquid Glass - Small [Active=True, State=Default]; 36 × 36; absolute at (0, 0)
+  - Button: frame; 28 × 28; row; padding 0 4 0 4; main center; cross center; hugs width; capsule; blend linear burn
+    - text SF Symbol square.dashed; SF Pro Medium 13/22; centered; 20 × 22; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; property Symbol

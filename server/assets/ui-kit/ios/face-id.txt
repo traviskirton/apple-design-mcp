@@ -1,0 +1,9 @@
+=== 0
+- component; 402 × 190; background blur 2
+  - Bezel: frame; 151 × 151; at (126.5, 10); radius 40; fill Grays/Black; shadow x 0 y 12 blur 74 #000000 at 22%
+  - Circle: ellipse; 70 × 70; at (166, 51); stroke #87fa89 4.5
+  - text SF Symbol checkmark; SF Pro Medium 42; centered; 38 × 50; at (182, 61); color #87fa89
+=== 1
+- component; 402 × 190; background blur 2
+  - Bezel: frame; 151 × 151; at (126, 10); radius 40; fill Grays/Black; shadow x 0 y 12 blur 74 #000000 at 22%
+  - Face ID Symbol: vector shape; 70 × 70; at (166.5, 50.5); fill #87fa89

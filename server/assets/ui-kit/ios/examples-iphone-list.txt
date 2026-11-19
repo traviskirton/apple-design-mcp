@@ -1,0 +1,65 @@
+=== 0
+- component; 402 × 874
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 167 0 0 0; cross center; radius 44; fill Backgrounds – Grouped/Primary
+    - Content Area: frame; 402 × 722; fills width; column; padding 16 16 50 16; cross center; hugs height
+      - Grouped Table View: frame; 362 × 656; column; radius 26; fill Backgrounds – Grouped/Secondary
+        - Row: instance of Row [Height=Regular]; 362 × 52; fills width
+        - Row: instance of Row [Height=Tall]; 362 × 68; fills width
+        - Row: instance of Row [Height=Tall]; with Show Image on, Show Edit Button off, Show Grabber off; 362 × 68; fills width
+        - Row: instance of Row [Height=Regular]; 362 × 52; fills width
+        - Row: instance of Row [Height=Regular]; 362 × 52; fills width
+        - Row: instance of Row [Height=Regular]; 362 × 52; fills width
+        - Row: instance of Row [Height=Regular]; 362 × 52; fills width
+        - Row: instance of Row [Height=Regular]; 362 × 52; fills width
+        - Row: instance of Row [Height=Regular]; 362 × 52; fills width
+        - Row: instance of Row [Height=Regular]; 362 × 52; fills width
+        - Row: instance of Row [Height=Regular]; 362 × 52; fills width
+        - Row - Button: instance of Row - Button [Value=Default]; 362 × 52; fills width
+    - Scroll Edge Effect - Soft: instance of Scroll Edge Effect - Soft [Edge=Bottom]; 402 × 167; absolute at (0, 0)
+  - Toolbar - Top - iPhone: instance of Toolbar - Top - iPhone [Style=Large Title]; 402 × 125; at (9, 62)
+  - Status Bar - iPhone: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 873; at (0, 0)
+=== 1
+- component; 402 × 874
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 177 0 0 0; cross center; radius 40; fill Backgrounds/Primary
+    - Content Area: frame; 402 × 474; fills width; column; padding 16 0 50 0; cross center; hugs height
+      - List Example: frame; 402 × 408; fills width; column; hugs height; fill Backgrounds/Primary
+        - Row: instance of Row [Height=Tall]; 402 × 68; fills width
+        - Row: instance of Row with Swipe Actions [Type=Symbol and Label Tall, Swipe=Left]; 402 × 68; fills width
+        - Row: instance of Row [Height=Tall]; 402 × 68; fills width
+        - Row: instance of Row [Height=Tall]; 402 × 68; fills width
+        - Row: instance of Row [Height=Tall]; 402 × 68; fills width
+        - Row: instance of Row [Height=Tall]; 402 × 68; fills width
+    - Scroll Edge Effect - Soft: instance of Scroll Edge Effect - Soft [Edge=Top]; 402 × 187; absolute at (0, 0)
+  - Toolbar: instance of Toolbar - Top - iPhone [Style=Large Title]; with Title "Full Width", Subtitle "Swipe actions and subtitles"; 402 × 125; at (0, 62)
+  - Status Bar - iPhone: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 873; at (0, 0)
+=== 2
+- component; 402 × 874
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 177 0 0 0; cross center; radius 44; fill Backgrounds/Primary
+    - Content Area: frame; 402 × 1054; fills width; column; padding 16 0 50 0; cross center; hugs height
+      - instance of Section Title; 402 × 39; fills width
+      - Row: instance of Row [Height=Regular]; with Show Image off, Show Edit Button off, Title "Alexander Valley", Show Trailing off; 402 × 52; fills width
+      - Row: instance of Row [Height=Regular]; with Show Image off, Show Edit Button off, Title "Anderson Valley", Show Trailing off; 402 × 52; fills width
+      - Row: instance of Row [Height=Regular]; with Show Image off, Show Edit Button off, Title "Atlas Peak", Show Trailing off; 402 × 52; fills width
+      - instance of Section Title; with Text "B"; 402 × 39; fills width
+      - Row: instance of Row [Height=Regular]; with Show Image off, Show Edit Button off, Title "Bennett Valley", Show Trailing off; 402 × 52; fills width
+      - instance of Section Title; with Text "C"; 402 × 39; fills width
+      - Row: instance of Row [Height=Regular]; with Show Image off, Show Edit Button off, Title "Carneros", Show Trailing off; 402 × 52; fills width
+      - Row: instance of Row [Height=Regular]; with Show Image off, Show Edit Button off, Title "Calistoga", Show Trailing off; 402 × 52; fills width
+      - Row: instance of Row [Height=Regular]; with Show Image off, Show Edit Button off, Title "Chalk Hill", Show Trailing off; 402 × 52; fills width
+      - instance of Section Title; with Text "D"; 402 × 39; fills width
+      - Row: instance of Row [Height=Regular]; with Show Image off, Show Edit Button off, Title "Diamond Mountain", Show Trailing off; 402 × 52; fills width
+      - Row: instance of Row [Height=Regular]; with Show Image off, Show Edit Button off, Title "Dry Creek", Show Trailing off; 402 × 52; fills width
+      - instance of Section Title; with Text "E"; 402 × 39; fills width
+      - Row: instance of Row [Height=Regular]; with Show Image off, Show Edit Button off, Title "Fort Ross", Show Trailing off; 402 × 52; fills width
+      - instance of Section Title; with Text "F"; 402 × 39; fills width
+      - Row: instance of Row [Height=Regular]; with Show Image off, Show Edit Button off, Title "Green Valley", Show Trailing off; 402 × 52; fills width
+      - instance of Section Title; with Text "G"; 402 × 39; fills width
+      - Row: instance of Row [Height=Regular]; with Show Image off, Show Edit Button off, Title "Howell Mountain", Show Trailing off; 402 × 52; fills width
+      - instance of Section Title; with Text "H"; 402 × 39; fills width
+      - Row: instance of Row [Height=Regular]; with Show Image off, Show Edit Button off, Show Trailing off; 402 × 52; fills width
+    - Scroll Edge Effect - Soft: instance of Scroll Edge Effect - Soft [Edge=Bottom]; 402 × 187; absolute at (0, 0)
+  - Toolbar: instance of Toolbar - Top - iPhone [Style=Large Title]; with Title "Full Width", Subtitle "With Section Headers"; 402 × 125; at (0, 62)
+  - Status Bar - iPhone: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 873; at (0, 0)

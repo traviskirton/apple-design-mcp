@@ -1,0 +1,40 @@
+=== 0
+- component; 57 × 24; row; gap 2; padding 0 6 0 6; cross center; hugs width
+  - Liquid Glass: instance of Liquid Glass - Small [Active=False, State=Default]; 57 × 24; absolute at (0, 0)
+  - text "Label"; SF Pro Medium 13/22; centered; 35 × 22; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Label
+  - text SF Symbol chevron.up.chevron.down; SF Pro Semibold 10/22; centered; 8 × 22; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn
+=== 1
+- component; 63 × 36; row; gap 2; padding 6.5 8 7.5 8; cross center; hugs width
+  - Liquid Glass: instance of Liquid Glass - Small [Active=False, State=Default]; 63 × 36; absolute at (0, 0)
+  - text "Label"; SF Pro Medium 13/22; centered; 35 × 22; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Label
+  - text SF Symbol chevron.up.chevron.down; SF Pro Semibold 13/22; centered; 10 × 22; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn
+=== 2
+- component; 57 × 24; row; gap 2; padding 0 6 0 6; cross center; hugs width
+  - Liquid Glass: instance of Liquid Glass - Small [Active=False, State=Default]; 57 × 24; absolute at (0, 0)
+  - text "Label"; SF Pro Medium 13/22; centered; 35 × 22; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Label
+  - text SF Symbol chevron.up.chevron.down; SF Pro Semibold 10/22; centered; 8 × 22; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+=== 3
+- component; 63 × 36; row; gap 2; padding 6.5 8 7.5 8; cross center; hugs width
+  - Liquid Glass: instance of Liquid Glass - Small [Active=False, State=Default]; 63 × 36; absolute at (0, 0)
+  - text "Label"; SF Pro Medium 13/22; centered; 35 × 22; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Label
+  - text SF Symbol chevron.up.chevron.down; SF Pro Semibold 13/22; centered; 10 × 22; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+=== 4
+- component; 57 × 24; row; gap 2; padding 0 6 0 6; cross center; hugs width
+  - Liquid Glass: instance of Liquid Glass - Small [Active=True, State=Default]; 57 × 24; absolute at (0, 0)
+  - text "Label"; SF Pro Medium 13/22; centered; 35 × 22; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Label
+  - text SF Symbol chevron.up.chevron.down; SF Pro Semibold 10/22; centered; 8 × 22; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn
+=== 5
+- component; 63 × 36; row; gap 2; padding 6.5 8 7.5 8; cross center; hugs width
+  - Liquid Glass: instance of Liquid Glass - Small [Active=True, State=Default]; 63 × 36; absolute at (0, 0)
+  - text "Label"; SF Pro Medium 13/22; centered; 35 × 22; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Label
+  - text SF Symbol chevron.up.chevron.down; SF Pro Semibold 13/22; centered; 10 × 22; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn
+=== 6
+- component; 57 × 24; row; gap 2; padding 0 6 0 6; cross center; hugs width
+  - Liquid Glass: instance of Liquid Glass - Small [Active=True, State=Default]; 57 × 24; absolute at (0, 0)
+  - text "Label"; SF Pro Medium 13/22; centered; 35 × 22; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Label
+  - text SF Symbol chevron.up.chevron.down; SF Pro Semibold 10/22; centered; 8 × 22; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+=== 7
+- component; 63 × 36; row; gap 2; padding 6.5 8 7.5 8; cross center; hugs width
+  - Liquid Glass: instance of Liquid Glass - Small [Active=True, State=Default]; 63 × 36; absolute at (0, 0)
+  - text "Label"; SF Pro Medium 13/22; centered; 35 × 22; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Label
+  - text SF Symbol chevron.up.chevron.down; SF Pro Semibold 13/22; centered; 10 × 22; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn

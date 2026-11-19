@@ -1,0 +1,4 @@
+=== 0
+- component; 160 × 160; fill image + linear gradient #ffd400 to #4060ff at 50% (linear dodge)
+  - Swatch: frame; 120 × 120; at (20, 20); radius 40; fill Vibrant Colors/Red
+  - text "Label"; SF Pro Regular 13/18; 33 × 18; at (0, -30); color #ffffff

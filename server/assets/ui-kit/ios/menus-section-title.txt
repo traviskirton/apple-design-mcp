@@ -1,0 +1,3 @@
+=== 0
+- component; 160 × 29; row; gap 10; padding 4 8 10 8; cross center; hugs height; uses Menus/Section Titles/Top Padding, Menus/Section Titles/Bottom Padding
+  - text "Section Title"; SF Pro Medium 13/15; 78 × 15; color Labels - Vibrant/Tertiary; blend linear burn; property Text

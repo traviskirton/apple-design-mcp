@@ -1,0 +1,8 @@
+=== 0
+- component; 100 × 100; background blur 80
+  - Luminosity: rectangle; 100 × 100; at (0, 0); fill Miscellaneous/Sidebar/Sidebar - BG - Active; background blur 120; opacity 92%; blend luminosity
+  - Saturation: rectangle; 100 × 100; at (0, 0); fill #808080 (saturation); opacity 85%; blend saturation
+=== 1
+- component; 100 × 100; background blur 80
+  - Luminosity: rectangle; 100 × 100; at (0, 0); fill Miscellaneous/Sidebar/Sidebar - BG - Inactive (luminosity); background blur 120; opacity 97%; blend luminosity
+  - Saturation: rectangle; 100 × 100; at (0, 0); fill #808080 (saturation); opacity 85%; blend saturation

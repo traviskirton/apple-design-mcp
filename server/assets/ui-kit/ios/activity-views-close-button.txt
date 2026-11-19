@@ -1,0 +1,3 @@
+=== 0
+- component; 48 × 48; row; gap 10; padding 0 16 10 16; main center
+  - Close: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48

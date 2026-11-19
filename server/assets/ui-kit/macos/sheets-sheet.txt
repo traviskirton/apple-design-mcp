@@ -1,0 +1,4 @@
+=== 0
+- component; 300 × 300; column; hugs height; radius 16; fill Window Background; shadow x 0 y 18 blur 54 #000000 at 30%; shadow x 0 y 0 blur 1 #000000 at 80%
+  - Content View: frame; 300 × 300; fills height; fills width; column; cross center
+    - text "Content View"; SF Pro Regular 24/36; centered; 139 × 300; fills height; color Labels/Primary at 85%

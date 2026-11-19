@@ -1,0 +1,570 @@
+=== 0
+- component; 270 × 36; row; gap 4; padding 0 2 0 48; cross center; radius 8
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Icon=Symbol, Enabled=False, Level=1-4, Active=False]; 158 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=False, Enabled=True]; 42 × 20; shown while Show Detail
+=== 1
+- component; 270 × 36; row; gap 4; padding 0 2 0 48; cross center; radius 8
+  - Selection: instance of _Selection [Active=False]; 278 × 36; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Icon=Symbol, Enabled=True, Level=1-4, Active=False]; 158 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=False, Enabled=True]; 42 × 20; shown while Show Detail
+=== 2
+- component; 270 × 36; row; gap 4; padding 0 2 0 48; cross center; radius 8
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Icon=Symbol, Enabled=True, Level=1-4, Active=False]; 158 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=False, Enabled=True]; 42 × 20; shown while Show Detail
+=== 3
+- component; 270 × 32; row; gap 4; padding 0 2 0 48; cross center; radius 5
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Icon=Symbol, Enabled=False, Level=1-4, Active=False]; 163 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=True]; 37 × 14; shown while Show Detail
+=== 4
+- component; 270 × 32; row; gap 4; padding 0 2 0 48; cross center; radius 5
+  - Selection: instance of _Selection [Active=False]; 278 × 32; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Icon=Symbol, Enabled=True, Level=1-4, Active=False]; 163 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=True]; 37 × 14; shown while Show Detail
+=== 5
+- component; 270 × 32; row; gap 4; padding 0 2 0 48; cross center; radius 5
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Icon=Symbol, Enabled=True, Level=1-4, Active=False]; 163 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=True]; 37 × 14; shown while Show Detail
+=== 6
+- component; 270 × 24; row; gap 4; padding 0 2 0 48; cross center; radius 5
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Icon=Symbol, Enabled=False, Level=1-4, Active=False]; 169 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=False]; 31 × 14; shown while Show Detail
+=== 7
+- component; 270 × 24; row; gap 4; padding 0 2 0 48; cross center; radius 5
+  - Selection: instance of _Selection [Active=False]; 278 × 24; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Icon=Symbol, Enabled=True, Level=1-4, Active=False]; 169 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=True]; 31 × 14; shown while Show Detail
+=== 8
+- component; 270 × 24; row; gap 4; padding 0 2 0 48; cross center; radius 5
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Icon=Symbol, Enabled=True, Level=1-4, Active=False]; 169 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=True]; 31 × 14; shown while Show Detail
+=== 9
+- component; 270 × 36; row; gap 4; padding 0 2 0 36; cross center; radius 8
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Icon=Symbol, Enabled=False, Level=1-4, Active=False]; 170 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=False, Enabled=True]; 42 × 20; shown while Show Detail
+=== 10
+- component; 270 × 36; row; gap 4; padding 0 2 0 36; cross center; radius 8
+  - Selection: instance of _Selection [Active=False]; 278 × 36; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Icon=Symbol, Enabled=True, Level=1-4, Active=False]; 170 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=False, Enabled=True]; 42 × 20; shown while Show Detail
+=== 11
+- component; 270 × 36; row; gap 4; padding 0 2 0 36; cross center; radius 8
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Icon=Symbol, Enabled=True, Level=1-4, Active=False]; 170 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=False, Enabled=True]; 42 × 20; shown while Show Detail
+=== 12
+- component; 270 × 32; row; gap 4; padding 0 2 0 36; cross center; radius 5
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Icon=Symbol, Enabled=False, Level=1-4, Active=False]; 175 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=True]; 37 × 14; shown while Show Detail
+=== 13
+- component; 270 × 32; row; gap 4; padding 0 2 0 36; cross center; radius 5
+  - Selection: instance of _Selection [Active=False]; 278 × 32; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Icon=Symbol, Enabled=True, Level=1-4, Active=False]; 175 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=True]; 37 × 14; shown while Show Detail
+=== 14
+- component; 270 × 32; row; gap 4; padding 0 2 0 36; cross center; radius 5
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Icon=Symbol, Enabled=True, Level=1-4, Active=False]; 175 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=True]; 37 × 14; shown while Show Detail
+=== 15
+- component; 270 × 24; row; gap 4; padding 0 2 0 36; cross center; radius 5
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Icon=Symbol, Enabled=False, Level=1-4, Active=False]; 181 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=False]; 31 × 14; shown while Show Detail
+=== 16
+- component; 270 × 24; row; gap 4; padding 0 2 0 36; cross center; radius 5
+  - Selection: instance of _Selection [Active=False]; 278 × 24; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Icon=Symbol, Enabled=True, Level=1-4, Active=False]; 181 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=True]; 31 × 14; shown while Show Detail
+=== 17
+- component; 270 × 24; row; gap 4; padding 0 2 0 36; cross center; radius 5
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Icon=Symbol, Enabled=True, Level=1-4, Active=False]; 181 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=True]; 31 × 14; shown while Show Detail
+=== 18
+- component; 270 × 36; row; gap 4; padding 0 2 0 24; cross center; radius 8
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Icon=Symbol, Enabled=False, Level=1-4, Active=False]; 182 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=False, Enabled=True]; 42 × 20; shown while Show Detail
+=== 19
+- component; 270 × 36; row; gap 4; padding 0 2 0 24; cross center; radius 8
+  - Selection: instance of _Selection [Active=False]; 278 × 36; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Icon=Symbol, Enabled=True, Level=1-4, Active=False]; 182 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=False, Enabled=True]; 42 × 20; shown while Show Detail
+=== 20
+- component; 270 × 36; row; gap 4; padding 0 2 0 24; cross center; radius 8
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Icon=Symbol, Enabled=True, Level=1-4, Active=False]; 182 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=False, Enabled=True]; 42 × 20; shown while Show Detail
+=== 21
+- component; 270 × 32; row; gap 4; padding 0 2 0 24; cross center; radius 5
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Icon=Symbol, Enabled=False, Level=1-4, Active=False]; 187 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=True]; 37 × 14; shown while Show Detail
+=== 22
+- component; 270 × 32; row; gap 4; padding 0 2 0 24; cross center; radius 5
+  - Selection: instance of _Selection [Active=False]; 278 × 32; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Icon=Symbol, Enabled=True, Level=1-4, Active=False]; 187 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=True]; 37 × 14; shown while Show Detail
+=== 23
+- component; 270 × 32; row; gap 4; padding 0 2 0 24; cross center; radius 5
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Icon=Symbol, Enabled=True, Level=1-4, Active=False]; 187 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=True]; 37 × 14; shown while Show Detail
+=== 24
+- component; 270 × 24; row; gap 4; padding 0 2 0 24; cross center; radius 5
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Icon=Symbol, Enabled=False, Level=1-4, Active=False]; 193 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=False]; 31 × 14; shown while Show Detail
+=== 25
+- component; 270 × 24; row; gap 4; padding 0 2 0 24; cross center; radius 5
+  - Selection: instance of _Selection [Active=False]; 278 × 24; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Icon=Symbol, Enabled=True, Level=1-4, Active=False]; 193 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=True]; 31 × 14; shown while Show Detail
+=== 26
+- component; 270 × 24; row; gap 4; padding 0 2 0 24; cross center; radius 5
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Icon=Symbol, Enabled=True, Level=1-4, Active=False]; 193 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=True]; 31 × 14; shown while Show Detail
+=== 27
+- component; 270 × 36; row; gap 4; padding 0 2 0 12; cross center; radius 8
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Icon=Symbol, Enabled=False, Level=1-4, Active=False]; 194 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=False, Enabled=True]; 42 × 20; shown while Show Detail
+=== 28
+- component; 270 × 36; row; gap 4; padding 0 2 0 12; cross center; radius 8
+  - Selection: instance of _Selection [Active=False]; 278 × 36; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Icon=Symbol, Enabled=True, Level=1-4, Active=False]; 194 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=False, Enabled=True]; 42 × 20; shown while Show Detail
+=== 29
+- component; 270 × 36; row; gap 4; padding 0 2 0 12; cross center; radius 8
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Icon=Symbol, Enabled=True, Level=1-4, Active=False]; 194 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=False, Enabled=True]; 42 × 20; shown while Show Detail
+=== 30
+- component; 270 × 32; row; gap 4; padding 0 2 0 12; cross center; radius 5
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Icon=Symbol, Enabled=False, Level=1-4, Active=False]; 199 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=True]; 37 × 14; shown while Show Detail
+=== 31
+- component; 270 × 32; row; gap 4; padding 0 2 0 12; cross center; radius 5
+  - Selection: instance of _Selection [Active=False]; 278 × 32; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Icon=Symbol, Enabled=True, Level=1-4, Active=False]; 199 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=True]; 37 × 14; shown while Show Detail
+=== 32
+- component; 270 × 32; row; gap 4; padding 0 2 0 12; cross center; radius 5
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Icon=Symbol, Enabled=True, Level=1-4, Active=False]; 199 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=True]; 37 × 14; shown while Show Detail
+=== 33
+- component; 270 × 24; row; gap 4; padding 0 2 0 12; cross center; radius 5
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Icon=Symbol, Enabled=False, Level=1-4, Active=False]; 205 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=False]; 31 × 14; shown while Show Detail
+=== 34
+- component; 270 × 24; row; gap 4; padding 0 2 0 12; cross center; radius 5
+  - Selection: instance of _Selection [Active=False]; 278 × 24; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Icon=Symbol, Enabled=True, Level=1-4, Active=False]; 205 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=True]; 31 × 14; shown while Show Detail
+=== 35
+- component; 270 × 24; row; gap 4; padding 0 2 0 12; cross center; radius 5
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Icon=Symbol, Enabled=True, Level=1-4, Active=False]; 205 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=True]; 31 × 14; shown while Show Detail
+=== 36
+- component; 270 × 36; row; gap 4; padding 0 2 0 0; cross center; radius 8
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Icon=Symbol, Enabled=False, Level=0, Active=False]; 206 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=False, Enabled=True]; 42 × 20; shown while Show Detail
+=== 37
+- component; 270 × 36; row; gap 4; padding 0 2 0 0; cross center; radius 8
+  - Selection: instance of _Selection [Active=False]; 278 × 36; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Icon=Symbol, Enabled=True, Level=0, Active=False]; 206 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=False, Enabled=True]; 42 × 20; shown while Show Detail
+=== 38
+- component; 270 × 36; row; gap 4; padding 0 2 0 0; cross center; radius 8
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Icon=Symbol, Enabled=True, Level=0, Active=False]; 206 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=False, Enabled=True]; 42 × 20; shown while Show Detail
+=== 39
+- component; 270 × 32; row; gap 4; padding 0 2 0 0; cross center; radius 5
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Icon=Symbol, Enabled=False, Level=0, Active=False]; 211 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=True]; 37 × 14; shown while Show Detail
+=== 40
+- component; 270 × 32; row; gap 4; padding 0 2 0 0; cross center; radius 5
+  - Selection: instance of _Selection [Active=False]; 278 × 32; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height
+  - Leading: instance of _Leading [Size=Medium, Icon=Symbol, Enabled=True, Level=0, Active=False]; 211 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=True]; 37 × 14; shown while Show Detail
+=== 41
+- component; 270 × 32; row; gap 4; padding 0 2 0 0; cross center; radius 5
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Icon=Symbol, Enabled=True, Level=0, Active=False]; 211 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=True]; 37 × 14; shown while Show Detail
+=== 42
+- component; 270 × 24; row; gap 4; padding 0 2 0 0; cross center; radius 5
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Icon=Symbol, Enabled=False, Level=0, Active=False]; 217 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=False]; 31 × 14; shown while Show Detail
+=== 43
+- component; 270 × 24; row; gap 4; padding 0 2 0 0; cross center; radius 5
+  - Selection: instance of _Selection [Active=False]; 278 × 24; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Icon=Symbol, Enabled=True, Level=0, Active=False]; 217 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=True]; 31 × 14; shown while Show Detail
+=== 44
+- component; 270 × 24; row; gap 4; padding 0 2 0 0; cross center; radius 5
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Icon=Symbol, Enabled=True, Level=0, Active=False]; 217 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=False, Enabled=True]; 31 × 14; shown while Show Detail
+=== 45
+- component; 270 × 36; row; gap 4; padding 0 2 0 48; cross center; radius 8
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Active=True, Icon=Symbol, Enabled=False, Level=1-4]; 158 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=True, Enabled=True]; 42 × 20; shown while Show Detail
+=== 46
+- component; 270 × 36; row; gap 4; padding 0 2 0 48; cross center; radius 8
+  - Selection: instance of _Selection [Active=True]; 278 × 36; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Active=True, Icon=Symbol, Enabled=True, Level=1-4]; 158 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=True, Enabled=True]; 42 × 20; shown while Show Detail
+=== 47
+- component; 270 × 36; row; gap 4; padding 0 2 0 48; cross center; radius 8
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Active=True, Icon=Symbol, Enabled=True, Level=1-4]; 158 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=True, Enabled=True]; 42 × 20; shown while Show Detail
+=== 48
+- component; 270 × 32; row; gap 4; padding 0 2 0 48; cross center; radius 5
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Active=True, Icon=Symbol, Enabled=False, Level=1-4]; 163 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=True]; 37 × 14; shown while Show Detail
+=== 49
+- component; 270 × 32; row; gap 4; padding 0 2 0 48; cross center; radius 5
+  - Selection: instance of _Selection [Active=True]; 278 × 32; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Active=True, Icon=Symbol, Enabled=True, Level=1-4]; 163 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=True]; 37 × 14; shown while Show Detail
+=== 50
+- component; 270 × 32; row; gap 4; padding 0 2 0 48; cross center; radius 5
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Active=True, Icon=Symbol, Enabled=True, Level=1-4]; 163 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=True]; 37 × 14; shown while Show Detail
+=== 51
+- component; 270 × 24; row; gap 4; padding 0 2 0 48; cross center; radius 5
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Active=True, Icon=Symbol, Enabled=False, Level=1-4]; 169 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=False]; 31 × 14; shown while Show Detail
+=== 52
+- component; 270 × 24; row; gap 4; padding 0 2 0 48; cross center; radius 5
+  - Selection: instance of _Selection [Active=True]; 278 × 24; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Active=True, Icon=Symbol, Enabled=True, Level=1-4]; 169 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=True]; 31 × 14; shown while Show Detail
+=== 53
+- component; 270 × 24; row; gap 4; padding 0 2 0 48; cross center; radius 5
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Active=True, Icon=Symbol, Enabled=True, Level=1-4]; 169 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=True]; 31 × 14; shown while Show Detail
+=== 54
+- component; 270 × 36; row; gap 4; padding 0 2 0 36; cross center; radius 8
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Active=True, Icon=Symbol, Enabled=False, Level=1-4]; 170 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=True, Enabled=True]; 42 × 20; shown while Show Detail
+=== 55
+- component; 270 × 36; row; gap 4; padding 0 2 0 36; cross center; radius 8
+  - Selection: instance of _Selection [Active=True]; 278 × 36; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Active=True, Icon=Symbol, Enabled=True, Level=1-4]; 170 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=True, Enabled=True]; 42 × 20; shown while Show Detail
+=== 56
+- component; 270 × 36; row; gap 4; padding 0 2 0 36; cross center; radius 8
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Active=True, Icon=Symbol, Enabled=True, Level=1-4]; 170 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=True, Enabled=True]; 42 × 20; shown while Show Detail
+=== 57
+- component; 270 × 32; row; gap 4; padding 0 2 0 36; cross center; radius 5
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Active=True, Icon=Symbol, Enabled=False, Level=1-4]; 175 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=True]; 37 × 14; shown while Show Detail
+=== 58
+- component; 270 × 32; row; gap 4; padding 0 2 0 36; cross center; radius 5
+  - Selection: instance of _Selection [Active=True]; 278 × 32; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Active=True, Icon=Symbol, Enabled=True, Level=1-4]; 175 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=True]; 37 × 14; shown while Show Detail
+=== 59
+- component; 270 × 32; row; gap 4; padding 0 2 0 36; cross center; radius 5
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Active=True, Icon=Symbol, Enabled=True, Level=1-4]; 175 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=True]; 37 × 14; shown while Show Detail
+=== 60
+- component; 270 × 24; row; gap 4; padding 0 2 0 36; cross center; radius 5
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Active=True, Icon=Symbol, Enabled=False, Level=1-4]; 181 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=False]; 31 × 14; shown while Show Detail
+=== 61
+- component; 270 × 24; row; gap 4; padding 0 2 0 36; cross center; radius 5
+  - Selection: instance of _Selection [Active=True]; 278 × 24; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Active=True, Icon=Symbol, Enabled=True, Level=1-4]; 181 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=True]; 31 × 14; shown while Show Detail
+=== 62
+- component; 270 × 24; row; gap 4; padding 0 2 0 36; cross center; radius 5
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Active=True, Icon=Symbol, Enabled=True, Level=1-4]; 181 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=True]; 31 × 14; shown while Show Detail
+=== 63
+- component; 270 × 36; row; gap 4; padding 0 2 0 24; cross center; radius 8
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Active=True, Icon=Symbol, Enabled=False, Level=1-4]; 182 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=True, Enabled=True]; 42 × 20; shown while Show Detail
+=== 64
+- component; 270 × 36; row; gap 4; padding 0 2 0 24; cross center; radius 8
+  - Selection: instance of _Selection [Active=True]; 278 × 36; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Active=True, Icon=Symbol, Enabled=True, Level=1-4]; 182 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=True, Enabled=True]; 42 × 20; shown while Show Detail
+=== 65
+- component; 270 × 36; row; gap 4; padding 0 2 0 24; cross center; radius 8
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Active=True, Icon=Symbol, Enabled=True, Level=1-4]; 182 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=True, Enabled=True]; 42 × 20; shown while Show Detail
+=== 66
+- component; 270 × 32; row; gap 4; padding 0 2 0 24; cross center; radius 5
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Active=True, Icon=Symbol, Enabled=False, Level=1-4]; 187 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=True]; 37 × 14; shown while Show Detail
+=== 67
+- component; 270 × 32; row; gap 4; padding 0 2 0 24; cross center; radius 5
+  - Selection: instance of _Selection [Active=True]; 278 × 32; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Active=True, Icon=Symbol, Enabled=True, Level=1-4]; 187 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=True]; 37 × 14; shown while Show Detail
+=== 68
+- component; 270 × 32; row; gap 4; padding 0 2 0 24; cross center; radius 5
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Active=True, Icon=Symbol, Enabled=True, Level=1-4]; 187 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=True]; 37 × 14; shown while Show Detail
+=== 69
+- component; 270 × 24; row; gap 4; padding 0 2 0 24; cross center; radius 5
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Active=True, Icon=Symbol, Enabled=False, Level=1-4]; 193 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=False]; 31 × 14; shown while Show Detail
+=== 70
+- component; 270 × 24; row; gap 4; padding 0 2 0 24; cross center; radius 5
+  - Selection: instance of _Selection [Active=True]; 278 × 24; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Active=True, Icon=Symbol, Enabled=True, Level=1-4]; 193 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=True]; 31 × 14; shown while Show Detail
+=== 71
+- component; 270 × 24; row; gap 4; padding 0 2 0 24; cross center; radius 5
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Active=True, Icon=Symbol, Enabled=True, Level=1-4]; 193 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=True]; 31 × 14; shown while Show Detail
+=== 72
+- component; 270 × 36; row; gap 4; padding 0 2 0 12; cross center; radius 8
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Active=True, Icon=Symbol, Enabled=False, Level=1-4]; 194 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=True, Enabled=True]; 42 × 20; shown while Show Detail
+=== 73
+- component; 270 × 36; row; gap 4; padding 0 2 0 12; cross center; radius 8
+  - Selection: instance of _Selection [Active=True]; 278 × 36; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Active=True, Icon=Symbol, Enabled=True, Level=1-4]; 194 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=True, Enabled=True]; 42 × 20; shown while Show Detail
+=== 74
+- component; 270 × 36; row; gap 4; padding 0 2 0 12; cross center; radius 8
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Active=True, Icon=Symbol, Enabled=True, Level=1-4]; 194 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=True, Enabled=True]; 42 × 20; shown while Show Detail
+=== 75
+- component; 270 × 32; row; gap 4; padding 0 2 0 12; cross center; radius 5
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Active=True, Icon=Symbol, Enabled=False, Level=1-4]; 199 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=True]; 37 × 14; shown while Show Detail
+=== 76
+- component; 270 × 32; row; gap 4; padding 0 2 0 12; cross center; radius 5
+  - Selection: instance of _Selection [Active=True]; 278 × 32; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Active=True, Icon=Symbol, Enabled=True, Level=1-4]; 199 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=True]; 37 × 14; shown while Show Detail
+=== 77
+- component; 270 × 32; row; gap 4; padding 0 2 0 12; cross center; radius 5
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Active=True, Icon=Symbol, Enabled=True, Level=1-4]; 199 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=True]; 37 × 14; shown while Show Detail
+=== 78
+- component; 270 × 24; row; gap 4; padding 0 2 0 12; cross center; radius 5
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Active=True, Icon=Symbol, Enabled=False, Level=1-4]; 205 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=False]; 31 × 14; shown while Show Detail
+=== 79
+- component; 270 × 24; row; gap 4; padding 0 2 0 12; cross center; radius 5
+  - Selection: instance of _Selection [Active=True]; 278 × 24; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Active=True, Icon=Symbol, Enabled=True, Level=1-4]; 205 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=True]; 31 × 14; shown while Show Detail
+=== 80
+- component; 270 × 24; row; gap 4; padding 0 2 0 12; cross center; radius 5
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Active=True, Icon=Symbol, Enabled=True, Level=1-4]; 205 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=True]; 31 × 14; shown while Show Detail
+=== 81
+- component; 270 × 36; row; gap 4; padding 0 2 0 0; cross center; radius 8
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Active=True, Icon=Symbol, Enabled=False, Level=0]; 206 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=True, Enabled=True]; 42 × 20; shown while Show Detail
+=== 82
+- component; 270 × 36; row; gap 4; padding 0 2 0 0; cross center; radius 8
+  - Selection: instance of _Selection [Active=True]; 278 × 36; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Active=True, Icon=Symbol, Enabled=True, Level=0]; 206 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=True, Enabled=True]; 42 × 20; shown while Show Detail
+=== 83
+- component; 270 × 36; row; gap 4; padding 0 2 0 0; cross center; radius 8
+  - Disclosure: frame; 12 × 36; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 12 × 36; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Large, Active=True, Icon=Symbol, Enabled=True, Level=0]; 206 × 20; fills width
+  - Detail: instance of _Detail [Size=Large, Active=True, Enabled=True]; 42 × 20; shown while Show Detail
+=== 84
+- component; 270 × 32; row; gap 4; padding 0 2 0 0; cross center; radius 5
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Active=True, Icon=Symbol, Enabled=False, Level=0]; 211 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=True]; 37 × 14; shown while Show Detail
+=== 85
+- component; 270 × 32; row; gap 4; padding 0 2 0 0; cross center; radius 5
+  - Selection: instance of _Selection [Active=True]; 278 × 32; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height
+  - Leading: instance of _Leading [Size=Medium, Active=True, Icon=Symbol, Enabled=True, Level=0]; 211 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=True]; 37 × 14; shown while Show Detail
+=== 86
+- component; 270 × 32; row; gap 4; padding 0 2 0 0; cross center; radius 5
+  - Disclosure: frame; 12 × 32; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 32; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Medium, Active=True, Icon=Symbol, Enabled=True, Level=0]; 211 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=True]; 37 × 14; shown while Show Detail
+=== 87
+- component; 270 × 24; row; gap 4; padding 0 2 0 0; cross center; radius 5
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Active=True, Icon=Symbol, Enabled=False, Level=0]; 217 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=False]; 31 × 14; shown while Show Detail
+=== 88
+- component; 270 × 24; row; gap 4; padding 0 2 0 0; cross center; radius 5
+  - Selection: instance of _Selection [Active=True]; 278 × 24; absolute at (-4, 0); blend linear burn
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Active=True, Icon=Symbol, Enabled=True, Level=0]; 217 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=True]; 31 × 14; shown while Show Detail
+=== 89
+- component; 270 × 24; row; gap 4; padding 0 2 0 0; cross center; radius 5
+  - Disclosure: frame; 12 × 24; fills height; row; gap 10; cross center; shown while Hierarchical
+    - Disclosure: instance of _Disclosure - Folder [Expanded=True]; 16 × 24; fills height; shown while Show Disclosure
+  - Leading: instance of _Leading [Size=Small, Active=True, Icon=Symbol, Enabled=True, Level=0]; 217 × 16; fills width
+  - Detail: instance of _Detail [Size=Small, Active=True, Enabled=True]; 31 × 14; shown while Show Detail

@@ -1,0 +1,15 @@
+=== 0
+- component; 205 × 251; radius 20; uses Screen Width, Screen Height
+  - Round Corners: frame; 205 × 251; at (0, 0); radius 14; fill #000000; uses Screen Width, Screen Height
+    - Content: frame; 205 × 404.5; at (0, 47); column; gap 10; cross center; hugs height; uses Screen Width
+      - Button - Default: instance of Button - Pill [Type=Default]; 205 × 54; fills width
+      - Button - Primary: instance of Button - Pill [Type=Primary]; 205 × 54; fills width
+      - Button - Secondary: instance of Button - Pill [Type=Secondary]; 205 × 54; fills width
+      - Button - Tertiary: instance of Button - Pill [Type=Tertiary]; 205 × 54; fills width
+      - Button - Destructive: instance of Button - Pill [Type=Destructive]; 205 × 54; fills width
+      - Circular Button: frame; 205 × 47; fills width; row; space between; padding 0 15.5 0 15.5; cross center; hugs height; uses Margin - LR - Copy Safe Area
+        - Button - Circular: instance of Button - Circular [Type=Primary]; 47 × 47
+        - Button - Circular: instance of Button - Circular [Type=Default]; 47 × 47
+      - instance of Button - Petite; 205 × 27.5; fills width
+    - Navigation Bar: instance of Navigation Bar [Type=Status Bar]; 205 × 37; at (0, 0)
+  - Bezel: instance of Bezels [Bezel Size=49mm]; 205 × 251; at (0, 0)

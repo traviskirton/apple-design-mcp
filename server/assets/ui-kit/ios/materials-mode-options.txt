@@ -1,0 +1,10 @@
+=== 0
+- component; 100 × 100; column; cross center; hugs height; fill #ffffff at 75% (hard light); background blur 50
+=== 1
+- component; 100 × 100; fill #ffffff at 34% (linear dodge) + #ffffff at 84% (color dodge); background blur 100
+=== 2
+- component; 100 × 100; fill #ffffff at 25% (linear dodge) + #ffffff at 60% (color dodge); background blur 100
+=== 3
+- component; 100 × 100; fill #ffffff at 5% + #ffffff at 40% (color dodge); background blur 100
+=== 4
+- component; 100 × 100; fill #ffffff at 7% + #ffffff at 3% (color dodge); background blur 100

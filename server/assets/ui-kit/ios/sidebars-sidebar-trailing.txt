@@ -1,0 +1,41 @@
+=== 0
+- component; 54 × 44; row; gap 8; padding 0 8 0 0; main end; cross center; hugs width
+  - text "Detail"; SF Pro Medium 17/22; right-aligned; 46 × 22; color Labels - Vibrant/Secondary; blend linear burn; property Detail
+=== 1
+- component; 84 × 44; row; gap 8; main end; cross center; hugs width
+  - text "Detail"; SF Pro Medium 17/22; right-aligned; 46 × 22; color Labels - Vibrant/Secondary; blend linear burn; property Detail; shown while Show Detail
+  - text SF Symbol checkmark; SF Pro Regular 17/22; centered; 30 × 22; color Labels - Vibrant/Primary; blend linear burn
+=== 2
+- component; 84 × 44; row; gap 6; main end; cross center; hugs width
+  - text "Detail"; SF Pro Medium 17/22; right-aligned; 46 × 22; color Labels - Vibrant/Secondary; blend linear burn; property Detail; shown while Show Detail
+  - text SF Symbol info.circle; SF Pro Regular 17/22; centered; 32 × 22; color Labels - Vibrant/Primary; blend linear burn
+=== 3
+- component; 76 × 44; row; gap 8; padding 0 4 0 0; main end; cross center; hugs width
+  - text "Detail"; SF Pro Medium 17/22; right-aligned; 46 × 22; color Labels - Vibrant/Secondary; blend linear burn; property Detail; shown while Show Detail
+  - Disclosure: instance of _Trailing - Disclosure [Open=False]; 18 × 18; blend linear burn
+=== 4
+- component; 88 × 44; row; gap 8; padding 0 4 0 0; main end; cross center; hugs width
+  - text "Detail"; SF Pro Medium 17/22; right-aligned; 46 × 22; color Labels - Vibrant/Secondary; blend linear burn; property Detail; shown while Show Detail
+  - text SF Symbol square.dashed; SF Pro Regular 17/22; centered; 30 × 22; color Labels - Vibrant/Secondary; blend linear burn; property Symbol
+=== 5
+- component; 64 × 44; row; gap 8; padding 11 0 11 0; main end; cross center; hugs width
+  - Toggle - Switch: instance of Toggle - Switch [State=Idle, Is On=True, Is Enabled=True]; with Show AX Label off; 64 × 28
+=== 6
+- component; 52 × 44; row; gap 8; padding 0 8 0 0; main end; cross center; hugs width
+  - text "Detail"; style Body/Regular; right-aligned; 44 × 22; color Labels - Vibrant/Secondary; blend linear burn; property Detail
+=== 7
+- component; 82 × 44; row; gap 8; main end; cross center; hugs width
+  - text "Detail"; style Body/Regular; right-aligned; 44 × 22; color Labels - Vibrant/Secondary; blend linear burn; property Detail; shown while Show Detail
+  - text SF Symbol checkmark; SF Pro Regular 17/22; centered; 30 × 22; color Labels - Vibrant/Primary; blend linear burn
+=== 8
+- component; 82 × 44; row; gap 6; main end; cross center; hugs width
+  - text "Detail"; style Body/Regular; right-aligned; 44 × 22; color Labels - Vibrant/Secondary; blend linear burn; property Detail; shown while Show Detail
+  - text SF Symbol info; SF Pro Regular 17/22; centered; 32 × 22; color Labels - Vibrant/Primary; blend linear burn
+=== 9
+- component; 70 × 44; row; gap 4; padding 0 4 0 0; main end; cross center; hugs width
+  - text "Detail"; style Body/Regular; right-aligned; 44 × 22; color Labels - Vibrant/Secondary; blend linear burn; property Detail; shown while Show Detail
+  - Disclosure: instance of _Trailing - Disclosure [Open=True]; 18 × 18; blend linear burn
+=== 10
+- component; 86 × 44; row; gap 8; padding 0 4 0 0; main end; cross center; hugs width
+  - text "Detail"; style Body/Regular; right-aligned; 44 × 22; color Labels - Vibrant/Secondary; blend linear burn; property Detail; shown while Show Detail
+  - text SF Symbol square.dashed; SF Pro Regular 17/22; centered; 30 × 22; color Labels - Vibrant/Primary; blend linear burn; property Symbol

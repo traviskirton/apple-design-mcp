@@ -1,0 +1,9 @@
+=== 0
+- component; 94 × 22
+  - _Selection: instance of _Selection; 94 × 28; at (0, -3); opacity 25%; blend multiply
+  - Lollipop - Trailing: frame; 16 × 22; at (85, 0)
+    - Lollipop - Trailing - Stick: rectangle; 2 × 32; at (7, -3); capsule; fill Accents/Blue
+    - Lollipop - Trailing - Pop: ellipse; 16 × 16; at (0, 22); fill Accents/Blue; shadow x 0 y 3 blur 14 spread 6 #000000 at 12%
+  - Lollipop - Leading: frame; 16 × 22; at (-7, 0)
+    - Lollipop - Leading - Stick: rectangle; 2 × 32; at (7, -7); capsule; fill Accents/Blue
+    - Lollipop - Leading - Pop: ellipse; 16 × 16; at (0, -16); fill Accents/Blue; shadow x 0 y 3 blur 14 spread 6 #000000 at 12%

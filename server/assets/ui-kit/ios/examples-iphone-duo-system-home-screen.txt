@@ -1,0 +1,13 @@
+=== 0
+- component; 951 × 669; radius 20; fill Backgrounds/Primary
+  - Home Screen - iPhone Duo: instance of Home Screen - iPhone Duo [Display=Inner Landscape, Widgets=None]; 951 × 669; at (0, 0)
+  - iPhone Duo: instance of iPhone Duo [Display=Inner, Color=Star White, Orientation=Landscape]; 951 × 669; at (0, 0)
+=== 1
+- component; 669 × 951; radius 20; fill Backgrounds/Primary
+  - Home Screen - iPhone Duo: instance of Home Screen - iPhone Duo [Display=Inner Portrait, Widgets=None]; 669 × 951; at (0, 0)
+  - iPhone Duo: instance of iPhone Duo [Display=Inner, Color=Star White, Orientation=Portrait]; 669 × 951; at (0, 0)
+=== 2
+- component; 466 × 678; radius 0 20 20 0; fill Backgrounds/Primary
+  - Home Screen - iPhone Duo: instance of Home Screen - iPhone Duo [Display=Outer Portrait, Widgets=None]; 466 × 678; at (0, 0)
+  - Outer Display Lens: instance of iPhone Duo/Outer Display Lens; 95.67 × 95.67; at (370, 0)
+  - iPhone Duo: instance of iPhone Duo [Display=Outer, Color=Star White, Orientation=Portrait]; 466 × 678; at (0, 0)

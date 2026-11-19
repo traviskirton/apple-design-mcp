@@ -1,0 +1,10 @@
+=== 0
+- component; 500 × 101; row; gap 25.33; padding 16 0 0 15; hugs height
+  - App 1: instance of _App; with App Name "App Name"; 66 × 85
+  - App 2: instance of _App; with App Name "App Name"; 66 × 85
+  - App 3: instance of _App; 66 × 85
+  - App 4: instance of _App; 66 × 85
+  - App 5: instance of _App; 66 × 85
+  - App 6: instance of _App; 66 × 85
+  - App 7: instance of _App; 66 × 85
+  - Separator: instance of _Separator; 500 × 1; absolute at (0, 0)

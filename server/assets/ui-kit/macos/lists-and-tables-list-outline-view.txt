@@ -1,0 +1,29 @@
+=== 0
+- component; 900 × 450; column; gap 3; fill Window Background
+  - instance of Column Header; 900 × 28; fills width
+  - Rows: frame; 900 × 550; fills width; column; hugs height; fill Window Background; slot Rows
+    - Table Rows: instance of Table Rows [Level=0, Type=Alternating Row Color]; 900 × 20; fills width
+    - Table Rows: instance of Table Rows [Level=0, Type=Default]; with Primary "Folder Name", Secondary 1 "3/28/26, 10:41 AM", Secondary 2 "––", Secondary 3 "Folder"; 900 × 20; fills width
+    - Table Rows: instance of Table Rows [Level=0, Type=Alternating Row Color]; 900 × 20; fills width
+    - instance of Group Title; 900 × 45; fills width
+    - Table Rows: instance of Table Rows [Level=0, Type=Default]; with Primary "Folder Name", Secondary 1 "3/28/26, 10:41 AM", Secondary 2 "––", Secondary 3 "Folder"; 900 × 20; fills width
+    - Table Rows: instance of Table Rows [Level=0, Type=Alternating Row Color]; 900 × 20; fills width
+    - Table Rows: instance of Table Rows [Level=0, Type=Default]; with Primary "Folder Name", Secondary 1 "3/28/26, 10:41 AM", Secondary 2 "––", Secondary 3 "Folder"; 900 × 20; fills width
+    - instance of Group Title; 900 × 45; fills width
+    - Table Rows: instance of Table Rows [Level=0, Type=Selected + Active]; with Primary "Folder Name", Secondary 1 "3/28/26, 7:35 AM", Secondary 2 "––", Secondary 3 "Folder"; 900 × 20; fills width
+    - Table Rows: instance of Table Rows [Level=1, Type=Default]; with Secondary 1 "3/29/26, 5:02 PM", Secondary 2 "––", Secondary 3 "Folder"; 900 × 20; fills width
+    - Table Rows: instance of Table Rows [Level=2, Type=Alternating Row Color]; 900 × 20; fills width
+    - Table Rows: instance of Table Rows [Level=3, Type=Default]; with Secondary 1 "3/26/26, 4:03 PM", Secondary 2 "––", Secondary 3 "Folder"; 900 × 20; fills width
+    - Table Rows: instance of Table Rows [Level=4, Type=Alternating Row Color]; with Primary "Wallpaper-260326@2x.png"; 900 × 20; fills width
+    - Table Rows: instance of Table Rows [Level=4, Type=Default]; with Primary "Wallpaper-260325@2x.png", Secondary 1 "3/25/26, 6:58 PM", Secondary 2 "75.1 MB", Secondary 3 "PNG image"; 900 × 20; fills width
+    - Table Rows: instance of Table Rows [Level=4, Type=Alternating Row Color]; with Primary "Wallpaper-260324@2x.png"; 900 × 20; fills width
+    - Table Rows: instance of Table Rows [Level=4, Type=Default]; with Primary "Wallpaper-260323@2x.png", Secondary 1 "3/23/26, 9:00 AM", Secondary 2 "59.9 MB", Secondary 3 "PNG image"; 900 × 20; fills width
+    - Table Rows: instance of Table Rows [Level=4, Type=Alternating Row Color]; with Primary "Wallpaper-260322@2x.png"; 900 × 20; fills width
+    - Table Rows - Blank: instance of Table Rows - Blank [Alternating Row=False]; 900 × 20; fills width
+    - Table Rows - Blank: instance of Table Rows - Blank [Alternating Row=True]; 900 × 20; fills width
+    - Table Rows - Blank: instance of Table Rows - Blank [Alternating Row=False]; 900 × 20; fills width
+    - Table Rows - Blank: instance of Table Rows - Blank [Alternating Row=True]; 900 × 20; fills width
+    - Table Rows - Blank: instance of Table Rows - Blank [Alternating Row=False]; 900 × 20; fills width
+    - Table Rows - Blank: instance of Table Rows - Blank [Alternating Row=True]; 900 × 20; fills width
+    - Table Rows - Blank: instance of Table Rows - Blank [Alternating Row=False]; 900 × 20; fills width
+    - Table Rows - Blank: instance of Table Rows - Blank [Alternating Row=True]; 900 × 20; fills width

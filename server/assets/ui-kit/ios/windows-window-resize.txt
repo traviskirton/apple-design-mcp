@@ -1,0 +1,6 @@
+=== 0
+- component; 32 × 32; row; padding 0 6 6 0; main end; cross end
+  - Resize Grabber: vector shape; 12 × 12; stroke Labels/Primary 3.5
+=== 1
+- component; 32 × 32; row; padding 0 6.67 6.67 0; main end; cross end
+  - Resize Grabber: vector shape; 19.91 × 19.91; stroke Labels/Primary 3.5

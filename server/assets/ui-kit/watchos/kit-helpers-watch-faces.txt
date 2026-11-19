@@ -1,0 +1,40 @@
+=== 0
+- component; 205 × 251; fill image
+  - Modular_49mm: rectangle; 205 × 251; at (0, 0); fill image
+=== 1
+- component; 208 × 248; fill image
+  - Modular_46mm: rectangle; 208 × 248; at (0, 0); fill image
+=== 2
+- component; 184 × 224; fill image
+  - Modular_44mm: rectangle; 184 × 224; at (0, 0); fill image
+=== 3
+- component; 187 × 223; fill image
+  - Modular_42mm: rectangle; 187 × 223; at (0, 0); fill image
+=== 4
+- component; 162 × 197; fill image
+  - Modular_40mm: rectangle; 162 × 197; at (0, 0); fill image
+=== 5
+- component; 205 × 251; fill image
+  - Flux_49mm: rectangle; 205 × 251; at (0, 0); fill image
+=== 6
+- component; 208 × 248; fill image
+  - Flux_46mm: rectangle; 208 × 248; at (0, 0); fill image
+=== 7
+- component; 184 × 224; fill image
+  - Flux_44mm: rectangle; 184 × 224; at (0, 0); fill image
+=== 8
+- component; 187 × 223; fill image
+  - Flux_42mm: rectangle; 187 × 223; at (0, 0); fill image
+=== 9
+- component; 162 × 197; fill image
+  - Flux_40mm: rectangle; 162 × 197; at (0, 0); fill image
+=== 10
+- component; 205 × 251; fill image
+=== 11
+- component; 208 × 248; fill image
+=== 12
+- component; 184 × 224; fill image
+=== 13
+- component; 187 × 223; fill image
+=== 14
+- component; 162 × 197; fill image
