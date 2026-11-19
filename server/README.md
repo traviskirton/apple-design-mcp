@@ -9,7 +9,7 @@ It serves Apple's Human Interface Guidelines, the screen sizes and frames of App
 | `search_hig` | Takes a list of topics (components, patterns, devices) and returns the guideline text for all of them in one reply. A topic that names a page returns that page; other topics return the best-matching sections. |
 | `get_hig_page` | Reads one page or section by id, for anything `search_hig` listed but left out for size. |
 | `get_device_metrics` | Returns the screen size of the named devices in points and pixels, with scale, pixels per inch, corner radius and whether the device has a Dynamic Island. Without names it lists every current device. A folding device has one row per screen. |
-| `get_device_frame` | Returns the drawing of a device's body as SVG, with the position of the screen inside it. A folding device returns one frame per screen. |
+| `get_device_frame` | Returns Apple's pictures of a device, to show a design inside it: Apple's product bezels (photographic PNGs in each finish and orientation, with the position of the see-through screen) and a flat vector frame as SVG from Xcode's Simulator. A folding device returns one picture per pose. |
 | `search_symbols` | Takes a list of icons to find (names or plain words such as "share") and returns, for each, the best-matching SF Symbol with its SVG and the names of other matches. |
 | `get_symbol` | Returns the SVG of symbols by exact name. |
 | `get_technology_assets` | Returns Apple's own artwork for its technologies (the Sign in with Apple logo, AirPlay glyphs, Game Center icons and others): SVG for vector artwork, a PNG address for pictures. Without names it lists everything it holds. |
@@ -42,6 +42,17 @@ The server is stateless. Each request builds a fresh server and gets a plain JSO
 Xcode's files hold no safe-area insets, so they are measured: `extractor/measure-safe-areas.py` runs a small probe app in temporary simulators (named "apple-mcp-temp …", deleted afterwards) and writes `scripts/safe-areas.json`, which the pack builder merges in. iPad landscape insets, the iPhone Duo's inner screen and devices without an installed runtime have no measurement. iPhone 12 mini and 13 mini are listed at the size apps are laid out at (375 × 812 points), which is larger than their pixels ÷ scale.
 
 Nothing holds the position of the Dynamic Island or cameras, or fold and hinge positions. The tool's reply says so, and sends the model to the guidelines for those.
+
+## The bezel pack
+
+Apple publishes product bezels on its design resources page: photographic pictures of each device with an empty screen, as PNG and Photoshop files. `../scripts/fetch_apple_design_resources.py --only bezel --extract` downloads and unpacks them on a Mac (1.9 GB, of which the PNGs are 134 MB), and `scripts/build-bezel-pack.mjs` turns the PNGs into:
+
+- `src/pack/bezels.js`: every picture's model, finish, pose, size in pixels and the position of its screen. Committed, and compiled into the Worker.
+- `assets/bezels/ID.png`: the pictures, public at `/bezels/ID.png`. Not committed, so a deploy from a machine without this folder leaves their addresses broken.
+
+- `npm run pack:bezels` rebuilds both. The downloads do not say where the screen is, so the builder measures it: the screen is the see-through area that the device encloses (`scripts/png-alpha.mjs`, a PNG reader without dependencies).
+
+`get_device_frame` returns the bezels of a device ahead of the Simulator's vector frame. Macs, the iMac and the Studio Displays have bezels and no vector frame.
 
 ## The symbol pack
 
@@ -147,12 +158,13 @@ npm test           # in a second terminal
 - `scripts/build-hig-pack.mjs`: builds the pack from Apple's site.
 - `src/devices.ts`: device lookup. `src/pack/devices.js` is the device pack and `src/pack/devices.d.ts` its shape.
 - `scripts/build-device-pack.mjs`: builds the device pack from Xcode's simulator files (Mac only).
+- `src/bezels.ts`: product bezel lookup. `src/pack/bezels.js` is the pack (written on a Mac, committed) and `src/pack/bezels.d.ts` its shape.
 - `src/frames.ts`: device frames. `src/pack/frames.js` is the frame pack (written by the extractor on a Mac, committed) and `src/pack/frames.d.ts` its shape.
 - `src/symbols.ts`: symbol search. `src/pack/symbols.js` is the symbol pack and `src/pack/symbols.d.ts` its shape.
 - `src/technologies.ts`: technology artwork lookup. `src/pack/technologies.js` is the pack (written on a Mac, committed) and `src/pack/technologies.d.ts` its shape.
 - `src/values.ts`: the design value tables. `src/pack/design-values.js` is the pack (built from `scripts/figma/`, committed) and `src/pack/design-values.d.ts` its shape.
 - `src/uikit.ts`: UI kit component search. `src/pack/ui-kit.js` is the pack (committed) and `src/pack/ui-kit.d.ts` its shape.
 - `scripts/fig-dump.mjs`: reads a Figma local copy (.fig). `scripts/build-ui-kit-pack.mjs` builds the UI kit pack with it.
-- `assets/`: static files deployed with the Worker; `assets/symbols/` holds the symbol shapes, `assets/technologies/` Apple's technology artwork and `assets/ui-kit/` the component outlines.
+- `assets/`: static files deployed with the Worker; `assets/symbols/` holds the symbol shapes, `assets/technologies/` Apple's technology artwork, `assets/bezels/` the product bezels and `assets/ui-kit/` the component outlines.
 - `test/smoke.mjs`: connects as a real MCP client and tries every tool.
 - `wrangler.jsonc`: Cloudflare settings. `name` sets the first part of the URL.

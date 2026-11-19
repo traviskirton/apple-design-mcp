@@ -99,7 +99,22 @@ try {
   check(/<svg [^>]*viewBox="0 0 [\d.]+ [\d.]+"/.test(frames.text), "a frame should come as an SVG with a viewBox");
 
   const noFrame = await call("get_device_frame", { devices: ["nokia"] });
-  check(noFrame.isError && noFrame.text.includes("No frame is loaded"), "get_device_frame should say when it has no frame");
+  check(noFrame.isError && noFrame.text.includes("No bezel or frame is loaded"), "get_device_frame should say when it has no frame");
+
+  if (parsed.sources.some((s) => s.bezels > 0)) {
+    check(frames.text.includes("### iPhone Duo, Apple's product bezel"), "get_device_frame did not return the iPhone Duo product bezel");
+    check(/Outer Closed Portrait: picture \d+ × \d+ px; screen \d+ × \d+ px at x \d+, y \d+/.test(frames.text), "the iPhone Duo bezel should give its screen position");
+    check(/\| [^|]+ \| Outer Closed Portrait \| https?:\/\/[^ |]+\/bezels\/iphone-duo-[a-z-]+-outer-closed-portrait\.png \|/.test(frames.text), "the iPhone Duo bezel should give the picture's address");
+    const mac = await call("get_device_frame", { devices: ["MacBook Air 13", "iPhone 18 Pro"] });
+    check(!mac.isError && mac.text.includes("### MacBook Air M5 13-inch, Apple's product bezel"), "get_device_frame did not find the 13-inch MacBook Air bezel");
+    check(mac.text.includes("### iPhone 18 Pro, Apple's product bezel") && !mac.text.includes("### iPhone 18 Pro Max, Apple's product bezel"), '"iPhone 18 Pro" should return the Pro and not the Pro Max');
+    const picture = /https?:\/\/[^ |]+\/bezels\/[a-z0-9-]+\.png/.exec(mac.text)?.[0];
+    const head = picture ? await fetch(picture, { method: "HEAD" }) : null;
+    if (head?.ok) check(head.headers.get("content-type") === "image/png", "a bezel picture should be served as image/png");
+    else console.log("bezels: the picture files are not on this server (assets/bezels/ is built by npm run pack:bezels)");
+  } else {
+    console.log("bezels: no product bezels are loaded on this server");
+  }
 
   const icons = await call("search_symbols", { queries: ["heart", "settings", "share"] });
   console.log(icons.text.split("\n").filter((line) => /^#{2,3} /.test(line)).join("\n"));
