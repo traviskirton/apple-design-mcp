@@ -2,6 +2,10 @@
 //   node test/svg.mjs
 import { forBrowsers, leftovers } from "../scripts/svg-for-browsers.mjs";
 import { hasSymbols, mergeSymbols, tidy } from "../scripts/export-ui-kit-svg.mjs";
+import { moveImages } from "../scripts/svg-images.mjs";
+import { mkdtempSync, readFileSync, readdirSync, rmSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
 
 let failed = 0;
 const check = (ok, what) => { if (!ok) { failed++; console.log("FAILED: " + what); } };
@@ -94,6 +98,19 @@ check(merged.symbols === 1 && merged.missed === 0, "one symbol should be merged"
 const done = tidy(forBrowsers(merged.svg));
 check(done.startsWith('<svg overflow="visible" width="10"') && done.includes('<g id="Tab image"><path data-symbol="diamond.fill" d="M1 1Z" fill="#FF0000"/></g>'), "a symbol should be a marked path without the unreadable id: " + done);
 check(done.includes('<text id="Label" fill="white" font-family="SF Pro, -apple-system, system-ui, sans-serif" font-size="10"><tspan x="146" y="60">Tab 1</tspan></text>'), "a label should stay text with fallback fonts");
+
+// Pictures move out of the SVG into files named by their hash; small ones stay.
+const temp = mkdtempSync(join(tmpdir(), "svg-images-"));
+const big = Buffer.alloc(5000, 7).toString("base64");
+const small = Buffer.alloc(100, 7).toString("base64");
+const withPictures = `<svg><image id="a" width="10" height="10" xlink:href="data:image/png;base64,${big}"/><image id="b" href="data:image/png;base64,${big}"/><image id="c" xlink:href="data:image/png;base64,${small}"/></svg>`;
+const split = moveImages(withPictures, { dir: temp, origin: "https://example.test" });
+check(split.moved === 2 && split.files.length === 1, "two uses of one picture should become one file: " + JSON.stringify([split.moved, split.files]));
+check(split.svg.includes(`<image id="a" width="10" height="10" href="https://example.test/ui-kit-svg/img/${split.files[0]}"/>`), "a picture should be pointed to by its full address: " + split.svg.slice(0, 200));
+check(split.svg.includes(`xlink:href="data:image/png;base64,${small}"`), "a small picture should stay inside the SVG");
+check(readdirSync(join(temp, "img")).length === 1 && readFileSync(join(temp, "img", split.files[0])).length === 5000, "the picture file should hold the picture's bytes");
+check(moveImages(split.svg, { dir: temp, origin: "https://example.test" }).moved === 0, "a second run should change nothing");
+rmSync(temp, { recursive: true, force: true });
 
 console.log(failed ? `${failed} failed` : "OK");
 process.exit(failed ? 1 : 0);
