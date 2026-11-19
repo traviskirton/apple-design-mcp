@@ -284,6 +284,10 @@ const DRAWING =
   "and the live material's refraction and bright edge are not in it. " +
   "Ids can repeat between two SVGs, so give each one's ids a prefix (also inside url(#…)) when several go into one page.";
 
+const PICTURES =
+  " A photo, wallpaper or app icon inside a drawing is an image element that loads from this server by its address: it shows when the SVG is in the page, " +
+  "and is missing when the SVG is shown through an img.";
+
 const LEGEND =
   "Reading an outline: every line is one layer, indented under the layer that holds it. It gives the layer's name, kind, width × height in points, " +
   "then its layout (row or column is a flex container with that gap and padding; \"hugs\" means sized by its content, \"fills\" means stretched to its parent), " +
@@ -483,7 +487,7 @@ export async function searchUiKit(
     left -= before - budget.left;
   }
 
-  if (drawings) parts.push(DRAWING);
+  if (drawings) parts.push(DRAWING + (found.some((f) => f.svg && /<image\b[^>]*\shref="http/.test(f.svg)) ? PICTURES : ""));
   if (matched) parts.push(LEGEND);
   if (undrawn.length && drawings) parts.push(`No drawing is on this server for ${[...new Set(undrawn)].map((n) => `"${n}"`).join(", ")}; build ${undrawn.length > 1 ? "them" : "it"} from the outline.`);
   else if (undrawn.length) parts.push("Apple's drawings of these components are not on this server, so each is given as an outline of its layers to build from.");

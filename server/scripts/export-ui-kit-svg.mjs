@@ -2,7 +2,7 @@
 // Figma's REST API. Writes assets/ui-kit-svg/<kit>/<node id>.svg (not committed), one file per
 // variant listed in src/pack/ui-kit.js. No dependencies.
 //
-//   node scripts/export-ui-kit-svg.mjs [--kit ios] [--limit 20] [--force]
+//   node scripts/export-ui-kit-svg.mjs [--kit ios] [--limit 20] [--force] [--origin https://your-worker.workers.dev]
 //
 // Needs a Figma personal access token with "File content: Read-only", in
 // the file ~/.config/apple-mcp/figma-token or in the environment variable FIGMA_TOKEN. The file is
@@ -16,12 +16,14 @@
 // private-use character, which shows only where Apple's fonts are installed, so each one is
 // replaced by its outline from a second export with outlined text, and tagged data-symbol="name".
 // Liquid Glass is written by Figma with blends that browsers do not draw; scripts/svg-for-browsers.mjs
-// rewrites those so that a browser shows the component as Figma does.
+// rewrites those so that a browser shows the component as Figma does. Pictures inside an SVG go
+// into assets/ui-kit-svg/img/ (scripts/svg-images.mjs), addressed at --origin, the deployed Worker.
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { homedir } from "node:os";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { forBrowsers, leftovers } from "./svg-for-browsers.mjs";
+import { DEFAULT_ORIGIN, moveImages } from "./svg-images.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const API = "https://api.figma.com/v1";
@@ -188,6 +190,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const onlyKit = option("--kit");
   const limit = Number(option("--limit")) || Infinity;
   const force = args.includes("--force");
+  const origin = (option("--origin") ?? DEFAULT_ORIGIN).replace(/\/$/, "");
 
   const files = JSON.parse(readFileSync(join(here, "figma", "kit-files.json"), "utf8"));
   const firstKey = onlyKit ? files[onlyKit] : Object.values(files)[0];
@@ -217,7 +220,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     const todo = missing.slice(0, limit);
     console.log(`  ${all.length} variants, ${all.length - missing.length} already exported, ${todo.length} to export${todo.length < missing.length ? ` now (${missing.length - todo.length} more after this)` : ""}`);
 
-    let written = 0, bytes = 0, symbols = 0, missed = 0, large = 0, largest = { id: "", size: 0 };
+    let written = 0, bytes = 0, symbols = 0, missed = 0, large = 0, pictures = 0, largest = { id: "", size: 0 };
     const unfixed = new Map();
     const failed = [];
     for (let at = 0; at < todo.length; at += BATCH) {
@@ -254,7 +257,10 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
             svg = merged.svg; symbols += merged.symbols; missed += merged.missed;
           } else missed++;
         }
-        svg = tidy(forBrowsers(svg));
+        // Photos, wallpapers and app icons go into files of their own, shared between the SVGs.
+        const split = moveImages(tidy(forBrowsers(svg)), { origin });
+        svg = split.svg;
+        pictures += split.moved;
         writeFileSync(pathOf(id), svg);
         written++;
         const size = Buffer.byteLength(svg);
@@ -269,7 +275,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
       `${kit.name}: wrote ${written} SVGs (${(bytes / 1048576).toFixed(1)} MB), ${symbols} symbols outlined, ${missed} symbol texts left as characters, ` +
         `${failed.length} failed, ${((performance.now() - started) / 1000).toFixed(0)} s`,
     );
-    if (written) console.log(`  largest: ${largest.id}, ${(largest.size / 1024).toFixed(0)} KB; ${large} over 100 KB`);
+    if (written) console.log(`  largest: ${largest.id}, ${(largest.size / 1024).toFixed(0)} KB; ${large} over 100 KB; ${pictures} pictures moved to assets/ui-kit-svg/img`);
     for (const [kind, ids] of unfixed) console.log(`  a browser may draw these unlike Figma (${kind}): ${ids.length} variants, such as ${ids.slice(0, 8).join(", ")}`);
     if (failed.length) console.log("  failed: " + failed.slice(0, 20).join("; ") + (failed.length > 20 ? `; and ${failed.length - 20} more` : ""));
   }
