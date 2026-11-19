@@ -41,6 +41,7 @@ Xcode's files hold no safe-area insets, no position for the Dynamic Island or ca
 SF Symbols come in two parts, both written by the extractor on a Mac (see `../extractor`):
 
 - `src/pack/symbols.js`: every symbol's name, release year, categories, Apple's search keywords and usage restriction. Committed, and compiled into the Worker.
+- `src/pack/symbol-index.js`: the search index over symbols.js, written by `npm run pack:symbol-index` (the extractor runs it). Committed; prebuilt so the Worker starts faster.
 - `assets/symbols/NAME.svg`: one file per symbol with its regular-weight shape. Not committed. Wrangler uploads the `assets` folder with each deploy, the server reads a file when a tool asks for that symbol, and each file is also public at `/symbols/NAME.svg`.
 
 A deploy from a machine where `assets/symbols` is empty removes the shapes from the live server; the tools then return names only. Deploy from the Mac that ran the extractor.

@@ -1,23 +1,14 @@
 // Search over the SF Symbols pack. Names and search data are loaded with the Worker;
 // shapes are read one file per symbol through `loadShape`.
+import prebuilt from "./pack/symbol-index.js";
 import pack from "./pack/symbols.js";
 import type { SymbolEntry } from "./pack/symbols.js";
+import { buildIndex, decodeIndex, singular, stem, tokens } from "./symbol-words.js";
 
 export const symbolPack = pack;
 
 /** Reads a symbol's SVG, or null when the shape is not deployed. */
 export type ShapeLoader = (name: string) => Promise<string | null>;
-
-// "arrow.up.circle.fill" and "Arrow up, circle" both become ["arrow", "up", "circle", ...].
-const tokens = (s: string) => s.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
-// Plurals read the same: "folders" finds "folder", "glasses" finds "glass".
-const singular = (w: string) =>
-  w.length > 3 && !/(ss|us|is)$/.test(w) ? w.replace(/ies$/, "y").replace(/(s|x|ch|sh)es$/, "$1").replace(/s$/, "") : w;
-// A looser form that also drops "-ing", "-ed" and a final "e": "sharing" finds "share".
-const stem = (w: string) => {
-  const base = singular(w);
-  return base.length > 4 ? base.replace(/(ing|ed|e)$/, "") : base;
-};
 
 // Words people use for an icon that SF Symbols names differently. Each word also finds symbols
 // whose name holds all the parts of one of these names.
@@ -52,25 +43,16 @@ const SYNONYMS: Record<string, string[]> = {
   expand: ["arrow.up.left.and.arrow.down.right"], collapse: ["arrow.down.right.and.arrow.up.left"], fullscreen: ["arrow.up.left.and.arrow.down.right"],
 };
 
-// The search index, built once when the Worker starts: for each word, the symbols that hold it.
-const parts: string[][] = pack.symbols.map((e) => tokens(e.name).map(singular));
-const post = (index: Map<string, number[]>, word: string, at: number) => {
-  const list = index.get(word);
-  if (!list) index.set(word, [at]);
-  else if (list[list.length - 1] !== at) list.push(at);
-};
-const byPart = new Map<string, number[]>(); // a part of the name, as written
-const byStem = new Map<string, number[]>(); // a part of the name, loosely
-const byKeyword = new Map<string, number[]>();
-const byCategory = new Map<string, number[]>();
-pack.symbols.forEach((entry, at) => {
-  for (const p of parts[at]) {
-    post(byPart, p, at);
-    post(byStem, stem(p), at);
-  }
-  for (const w of (entry.keywords ?? []).flatMap(tokens)) post(byKeyword, stem(w), at);
-  for (const i of entry.categories ?? []) for (const w of tokens(pack.categories[i]?.label ?? "")) post(byCategory, stem(w), at);
-});
+// The word index. scripts/build-symbol-index.mjs writes it ahead of time; if it was built from
+// another copy of the symbol pack, it is built here instead, which takes longer at startup.
+const index = prebuilt.pack_generated_at === pack.generated_at ? decodeIndex(prebuilt) : buildIndex(pack);
+const byPart = index.part;
+const byStem = index.stem;
+const byKeyword = index.keyword;
+const byCategory = index.category;
+// The parts of each symbol's name, worked out when a search first needs them.
+const partCache: (string[] | undefined)[] = [];
+const partsOf = (at: number) => (partCache[at] ??= tokens(pack.symbols[at].name).map(singular));
 const synonyms = new Map(Object.entries(SYNONYMS).map(([word, names]) => [singular(word), names.map((n) => tokens(n).map(singular))]));
 const byName = new Map(pack.symbols.map((entry, at) => [entry.name, at]));
 
@@ -103,7 +85,7 @@ export function searchSymbols(query: string, limit: number): SymbolEntry[] {
     const give = (list: number[] | undefined, points: number, first?: string) => {
       for (const at of list ?? []) {
         // A symbol named after the word ("star.fill") beats one that mentions it ("moon.stars").
-        const p = points + (first !== undefined && parts[at][0] === first ? 1 : 0);
+        const p = points + (first !== undefined && partsOf(at)[0] === first ? 1 : 0);
         if (p > (best.get(at) ?? 0)) best.set(at, p);
       }
     };
@@ -128,7 +110,7 @@ export function searchSymbols(query: string, limit: number): SymbolEntry[] {
   for (const [at, n] of matched) {
     if (n !== most) continue;
     // Plain symbols before their variants: "heart", then "heart.fill", then "heart.circle".
-    const extra = parts[at].reduce((sum, p) => sum + (p === "fill" ? 0.1 : 0.5), 0) - 0.5 * n;
+    const extra = partsOf(at).reduce((sum, p) => sum + (p === "fill" ? 0.1 : 0.5), 0) - 0.5 * n;
     ranked.push([at, score.get(at)! - Math.max(0, extra)]);
   }
   ranked.sort((a, b) => b[1] - a[1] || a[0] - b[0]);
