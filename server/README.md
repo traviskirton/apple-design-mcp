@@ -6,11 +6,11 @@ It serves Apple's Human Interface Guidelines through three tools. SF Symbols, UI
 
 | Tool | What it does |
 | --- | --- |
-| `search_hig` | Finds the guideline sections that cover a component, pattern, device or platform. Returns section ids with a short quote. |
-| `get_hig_page` | With a page id, returns the page's summary and a list of its sections. With a section id too, returns that section's text. |
+| `search_hig` | Takes a list of topics (components, patterns, devices) and returns the guideline text for all of them in one reply. A topic that names a page returns that page; other topics return the best-matching sections. |
+| `get_hig_page` | Reads one page or section by id, for anything `search_hig` listed but left out for size. |
 | `get_pack_info` | Reports what material is loaded, its date, and when the server answered. |
 
-Pages are split into sections because the quality test found that reading whole pages cost two to three times the tokens. Pictures are replaced by Apple's own description of each one.
+`search_hig` answers a whole brief in one call because each tool call costs the app a full turn of the model, which is slow. Its reply is limited to about 40,000 characters (roughly 10,000 tokens) by default, leaves out link lists, change logs and sections written for other platforms, and lists by id whatever did not fit. Pictures are replaced by Apple's own description of each one.
 
 The server is stateless. Each request builds a fresh server and gets a plain JSON answer, so there is no storage, no session and no sign-in. The guidelines are compiled into the Worker, so a tool call makes no network request.
 
