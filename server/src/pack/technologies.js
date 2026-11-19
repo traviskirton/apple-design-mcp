@@ -21,7 +21,7 @@ export default {
    "assets": [
     {
      "id": "sign-in-with-apple/logo-left-aligned-black-large",
-     "title": "Logo, left-aligned, black, large",
+     "title": "Logo, left-aligned, black logo on white, large",
      "format": "svg",
      "width": 39,
      "height": 44,
@@ -31,7 +31,7 @@ export default {
     },
     {
      "id": "sign-in-with-apple/logo-left-aligned-black-medium",
-     "title": "Logo, left-aligned, black, medium",
+     "title": "Logo, left-aligned, black logo on white, medium",
      "format": "svg",
      "width": 31,
      "height": 44,
@@ -41,7 +41,7 @@ export default {
     },
     {
      "id": "sign-in-with-apple/logo-left-aligned-black-small",
-     "title": "Logo, left-aligned, black, small",
+     "title": "Logo, left-aligned, black logo on white, small",
      "format": "svg",
      "width": 24,
      "height": 44,
@@ -51,7 +51,7 @@ export default {
     },
     {
      "id": "sign-in-with-apple/logo-left-aligned-white-large",
-     "title": "Logo, left-aligned, white, large",
+     "title": "Logo, left-aligned, white logo on black, large",
      "format": "svg",
      "width": 39,
      "height": 44,
@@ -61,7 +61,7 @@ export default {
     },
     {
      "id": "sign-in-with-apple/logo-left-aligned-white-medium",
-     "title": "Logo, left-aligned, white, medium",
+     "title": "Logo, left-aligned, white logo on black, medium",
      "format": "svg",
      "width": 31,
      "height": 44,
@@ -71,7 +71,7 @@ export default {
     },
     {
      "id": "sign-in-with-apple/logo-left-aligned-white-small",
-     "title": "Logo, left-aligned, white, small",
+     "title": "Logo, left-aligned, white logo on black, small",
      "format": "svg",
      "width": 24,
      "height": 44,
@@ -81,7 +81,7 @@ export default {
     },
     {
      "id": "sign-in-with-apple/logo-only-black",
-     "title": "Logo only, black",
+     "title": "Logo only, black logo on white",
      "format": "svg",
      "width": 56,
      "height": 56,
@@ -91,7 +91,7 @@ export default {
     },
     {
      "id": "sign-in-with-apple/logo-only-white",
-     "title": "Logo only, white",
+     "title": "Logo only, white logo on black",
      "format": "svg",
      "width": 56,
      "height": 56,
@@ -114,7 +114,7 @@ export default {
    "assets": [
     {
      "id": "add-apple-watch-face/button-symbol-and-text-dark",
-     "title": "Button, symbol and text, dark",
+     "title": "Button, symbol and text, white button (Apple's Dark variant)",
      "format": "svg",
      "width": 268,
      "height": 56,
@@ -125,7 +125,7 @@ export default {
     },
     {
      "id": "add-apple-watch-face/button-symbol-only-large-dark",
-     "title": "Button, symbol only, large, dark",
+     "title": "Button, symbol only, large, white button (Apple's Dark variant)",
      "format": "svg",
      "width": 56,
      "height": 56,
@@ -135,7 +135,7 @@ export default {
     },
     {
      "id": "add-apple-watch-face/button-symbol-only-small-dark",
-     "title": "Button, symbol only, small, dark",
+     "title": "Button, symbol only, small, white button (Apple's Dark variant)",
      "format": "svg",
      "width": 45,
      "height": 45,
@@ -145,7 +145,7 @@ export default {
     },
     {
      "id": "add-apple-watch-face/button-symbol-and-text-light",
-     "title": "Button, symbol and text, light",
+     "title": "Button, symbol and text, black button (Apple's Light variant)",
      "format": "svg",
      "width": 268,
      "height": 56,
@@ -156,7 +156,7 @@ export default {
     },
     {
      "id": "add-apple-watch-face/button-symbol-only-large-light",
-     "title": "Button, symbol only, large, light",
+     "title": "Button, symbol only, large, black button (Apple's Light variant)",
      "format": "svg",
      "width": 56,
      "height": 56,
@@ -166,7 +166,7 @@ export default {
     },
     {
      "id": "add-apple-watch-face/button-symbol-only-small-light",
-     "title": "Button, symbol only, small, light",
+     "title": "Button, symbol only, small, black button (Apple's Light variant)",
      "format": "svg",
      "width": 45,
      "height": 45,
