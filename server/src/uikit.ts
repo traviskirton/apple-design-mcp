@@ -281,7 +281,8 @@ function header(kit: Kit, c: KitComponent): string[] {
 }
 
 const DRAWING =
-  "Using a drawing: the SVG is Apple's own component, exported from Apple's UI kit by Figma. Use it as the component; do not redraw it. " +
+  "Using a drawing: the SVG is Apple's own component, exported from Apple's UI kit by Figma. Place it as it is and only change its icons and labels; " +
+  "do not rebuild it in HTML or CSS, even for tap states (lay clickable areas over it instead). " +
   "Its width and height are the component's own size in points; a shadow reaches past that box. In HTML, put the SVG into the page, where its " +
   "shadow shows around it and its labels and icons can be changed, or show it unchanged by its address in an img, which cuts the shadow off at the box. " +
   "Layers are groups and shapes with the layer's name as id. Labels are text elements: change a label by editing its text, and keep its position and font. " +
@@ -405,7 +406,7 @@ export async function searchUiKit(
       const address = folder + drawingFile(variant.node);
       if (shown.has(drawingKey)) block.push(`Apple's drawing of it is the one above, at ${address}.`);
       else if (f.inline) {
-        block.push(`Apple's drawing of it, also at ${address}:`, "```svg\n" + f.svg + "\n```");
+        block.push(`Apple's drawing of it, also at ${address}. Place it as it is; only change its icons and labels:`, "```svg\n" + f.svg + "\n```");
         inlined = f.svg.length;
       } else {
         const wanted = Math.ceil((f.svg.length + 2 * HEADER_ROOM) / 5000) * 5000;
