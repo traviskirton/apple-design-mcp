@@ -97,6 +97,8 @@ The drawings come from Figma itself, through its REST API, because only Figma re
 
 Figma writes Liquid Glass into SVG with blends that browsers do not draw: stacked fills with blend modes inside a filtered group, and shadows that blend "plus darker" or "plus lighter". As exported, Chrome shows a tab bar dark gray and an alert with black bands. `scripts/svg-for-browsers.mjs` rewrites those parts (the header of the file says how), and the export reports any variant that still holds one. Checked against Figma's own pictures of the tab bar and the alert on white: the colors are within 3 percent. Not carried over: the glass's refraction and bright edge, which SVG cannot hold. `npm run test:svg` checks the rewriting and the symbol merge.
 
+`node scripts/build-ui-kit-gallery.mjs` writes `assets/ui-kit-svg/index.html`, a page that shows every component's drawing on a background you choose. After a deploy it is at `/ui-kit-svg/` on the server.
+
 A component with light and dark variants is stored once, in light; `get_design_values` gives the dark value of each color. Variants with the same layers share one outline. An outline stops at 90 lines and 9 levels and does not go into instances; the reply adds the outlines of the instances' components as "Parts". An icon in an outline is given by its SF Symbols name. Apple publishes no table of the symbols' code points, so `scripts/figma/symbol-codepoints.txt` holds the names of the ones the kits use, found by comparing shapes (`scripts/symbol-glyphs/`, Mac only); the build lists any code point the table lacks. Not read yet: vector shapes. The kit's "Internal Only Canvas", "Product Bezels" and "App Icons" pages are left out.
 
 ## Deploy
