@@ -94,7 +94,12 @@ for (const type of devicetypes) {
     const width = dims["main-screen-width"] ?? profile.mainScreenWidth;
     const height = dims["main-screen-height"] ?? profile.mainScreenHeight;
     if (!scale || !width || !height) continue; // no screen of its own, such as Apple TV boxes without a size
-    screens = [screen(width, height, scale, dims["main-screen-pitch"] ?? profile.mainScreenWidthDPI, cornerRadius(caps.DeviceCornerRadius))];
+    // Xcode stores Apple TV 4K as 3840×2160 at @1x, but tvOS lays apps out at 1920×1080 points
+    // on every Apple TV, at @2x on a 4K screen. Store it that way so designs use the real point size.
+    const tv4k = family === "tv" && Number(scale) === 1 && Number(width) === 3840 && Number(height) === 2160;
+    screens = [
+      screen(width, height, tv4k ? 2 : scale, dims["main-screen-pitch"] ?? profile.mainScreenWidthDPI, cornerRadius(caps.DeviceCornerRadius)),
+    ];
   }
 
   // A device with two displays of its own folds: the smaller one is on the outside.
