@@ -10,15 +10,17 @@ import { WebStandardStreamableHTTPServerTransport } from "@modelcontextprotocol/
 import { z } from "zod";
 import { deviceMetrics, devicePack, FAMILIES } from "./devices.js";
 import { higPack, lookupHig, platformsIn, readPage } from "./hig.js";
+import { lookupSymbols, readSymbols, symbolPack } from "./symbols.js";
+import type { ShapeLoader } from "./symbols.js";
 
 const SERVER_NAME = "apple-design";
-const SERVER_VERSION = "0.3.0";
+const SERVER_VERSION = "0.4.0";
 
 const HIG_DATE = higPack.pack_version;
 
 const PACK = {
   status: "partial",
-  note: "Human Interface Guidelines text and device screen sizes are loaded. SF Symbols, UI kits, device frames and design values are not loaded yet.",
+  note: "Human Interface Guidelines text, device screen sizes and SF Symbols (names and regular-weight shapes) are loaded. UI kits, device frames and design values are not loaded yet.",
   pack_version: higPack.pack_version,
   sources: [
     {
@@ -33,13 +35,15 @@ const PACK = {
       version: `${devicePack.source.version}, read at ${devicePack.generated_at}`,
       devices: devicePack.source.devices,
     },
+    {
+      name: symbolPack.source.name,
+      version: `${symbolPack.source.version}, read at ${symbolPack.generated_at}`,
+      symbols: symbolPack.source.symbols,
+      shapes: symbolPack.source.with_shapes,
+    },
   ],
-  tools: ["get_pack_info", "search_hig", "get_hig_page", "get_device_metrics"],
-  planned_tools: [
-    "search_symbols", "get_symbol", "get_design_values",
-    "make_asset_catalog", "make_app_icon",
-    "search_ui_kit", "frame_screenshot",
-  ],
+  tools: ["get_pack_info", "search_hig", "get_hig_page", "get_device_metrics", "search_symbols", "get_symbol"],
+  planned_tools: ["get_design_values", "make_asset_catalog", "make_app_icon", "search_ui_kit", "frame_screenshot"],
 };
 
 const READ_ONLY = { readOnlyHint: true, idempotentHint: true, openWorldHint: false };
@@ -53,7 +57,18 @@ function reply(app: string, tool: string, args: unknown, text: string, isError =
   return { content: [{ type: "text" as const, text }], isError };
 }
 
-function buildServer(app: string): McpServer {
+interface Env {
+  /** The static files deployed with the Worker (assets/), which hold one SVG per symbol. */
+  ASSETS?: { fetch(input: string): Promise<Response> };
+}
+
+function buildServer(app: string, env: Env, origin: string): McpServer {
+  const loadShape: ShapeLoader = async (name) => {
+    if (!env.ASSETS) return null;
+    const res = await env.ASSETS.fetch(`https://assets.local/symbols/${name}.svg`);
+    return res.ok ? res.text() : null;
+  };
+
   const server = new McpServer(
     { name: SERVER_NAME, version: SERVER_VERSION },
     {
@@ -63,7 +78,8 @@ function buildServer(app: string): McpServer {
         "newer than what you remember. Before designing a screen or component, make one search_hig call that lists " +
         "every component, device and topic involved. It returns the guideline text itself, so one call is usually " +
         "enough; use get_hig_page only for a section that search_hig lists but does not include. For the size of a " +
-        "device's screen, call get_device_metrics instead of estimating.",
+        "device's screen, call get_device_metrics instead of estimating. For icons, call search_symbols once with " +
+        "every icon the design needs; it returns real SF Symbols as SVG, so do not substitute another icon set.",
     },
   );
 
@@ -191,6 +207,57 @@ function buildServer(app: string): McpServer {
     },
   );
 
+  server.registerTool(
+    "search_symbols",
+    {
+      title: "Find SF Symbols",
+      description:
+        `Find icons in Apple's SF Symbols (${symbolPack.source.symbols} symbols, version ${symbolPack.source.version}) ` +
+        "and get them as SVG. Pass every icon the design needs in one call as `queries`, one entry per icon, such as " +
+        "[\"settings\", \"heart\", \"share\", \"trash\"]. Each query returns the best-matching symbol with its SVG " +
+        "and the names of other matches. Use it instead of drawing icons or using another icon set, and to check " +
+        "that a symbol name exists before using it in code.",
+      inputSchema: {
+        queries: z
+          .array(z.string().min(1).max(100))
+          .min(1)
+          .max(20)
+          .describe("One entry per icon: a symbol name such as \"square.and.arrow.up\", or plain words such as \"share\"."),
+        limit: z.number().int().min(1).max(40).optional().describe("Matches to list for each query. Default 8."),
+        svg_per_query: z
+          .number()
+          .int()
+          .min(0)
+          .max(5)
+          .optional()
+          .describe("How many of each query's top matches come with their SVG. Default 1. Use 0 for names only."),
+      },
+      annotations: READ_ONLY,
+    },
+    async (args) => {
+      const text = await lookupSymbols(args.queries, args.limit ?? 8, args.svg_per_query ?? 1, loadShape, origin);
+      return reply(app, "search_symbols", args, text);
+    },
+  );
+
+  server.registerTool(
+    "get_symbol",
+    {
+      title: "Get SF Symbols by name",
+      description:
+        "Get the SVG of SF Symbols whose exact names you know, such as names that search_symbols listed without " +
+        "their shapes. Pass every name in one call.",
+      inputSchema: {
+        names: z.array(z.string().min(1).max(100)).min(1).max(40).describe("Symbol names, such as [\"heart.fill\", \"gearshape\"]."),
+      },
+      annotations: READ_ONLY,
+    },
+    async (args) => {
+      const result = await readSymbols(args.names, loadShape, origin);
+      return reply(app, "get_symbol", args, result.text, !result.ok);
+    },
+  );
+
   return server;
 }
 
@@ -216,7 +283,7 @@ function rpcError(status: number, message: string, headers: Record<string, strin
 }
 
 export default {
-  async fetch(request: Request): Promise<Response> {
+  async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
 
     if (url.pathname === "/mcp") {
@@ -224,7 +291,7 @@ export default {
       // Stateless server: there is no stream to open (GET) or session to end (DELETE).
       if (request.method !== "POST") return rpcError(405, "Method not allowed. Send POST.", { Allow: "POST, OPTIONS" });
 
-      const server = buildServer((request.headers.get("User-Agent") ?? "unknown").slice(0, 80));
+      const server = buildServer((request.headers.get("User-Agent") ?? "unknown").slice(0, 80), env, url.origin);
       const transport = new WebStandardStreamableHTTPServerTransport({
         sessionIdGenerator: undefined, // stateless
         enableJsonResponse: true,

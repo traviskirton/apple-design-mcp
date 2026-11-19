@@ -5,7 +5,7 @@ import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StreamableHTTPClientTransport } from "@modelcontextprotocol/sdk/client/streamableHttp.js";
 
 const url = process.argv[2] ?? "http://127.0.0.1:8787/mcp";
-const client = new Client({ name: "smoke-test", version: "0.3.0" });
+const client = new Client({ name: "smoke-test", version: "0.4.0" });
 
 function check(ok, what) {
   if (!ok) throw new Error(what);
@@ -29,7 +29,7 @@ try {
 
   const { tools } = await client.listTools();
   console.log("tools:", tools.map((t) => t.name).join(", "));
-  for (const name of ["get_pack_info", "search_hig", "get_hig_page", "get_device_metrics"]) {
+  for (const name of ["get_pack_info", "search_hig", "get_hig_page", "get_device_metrics", "search_symbols", "get_symbol"]) {
     check(tools.some((t) => t.name === name), `${name} is missing`);
   }
 
@@ -78,6 +78,18 @@ try {
 
   const noDevice = await call("get_device_metrics", { devices: ["nokia"] });
   check(noDevice.text.includes("No device matches"), "get_device_metrics should say when no device matches");
+
+  const icons = await call("search_symbols", { queries: ["heart", "settings", "share"] });
+  console.log(icons.text.split("\n").filter((line) => /^#{2,3} /.test(line)).join("\n"));
+  check(!icons.isError && icons.text.includes("### heart\n"), 'search_symbols did not put "heart" first for "heart"');
+  check(icons.text.includes("### gearshape") || icons.text.includes("### gear\n"), 'search_symbols did not find a gear for "settings"');
+  check(icons.text.includes("### square.and.arrow.up"), 'search_symbols did not find the share symbol');
+  if (icons.text.includes("<svg")) check(/<svg [^>]*viewBox="[^"]+"[^>]*>\s*<path /.test(icons.text), "a symbol's SVG should hold a viewBox and a path");
+  else console.log("WARNING: no symbol shapes on this server (assets/symbols is empty); names only.");
+
+  const named = await call("get_symbol", { names: ["heart.fill", "no.such.symbol"] });
+  check(!named.isError && named.text.includes("### heart.fill"), "get_symbol did not return heart.fill");
+  check(named.text.includes("There is no symbol with this name"), "get_symbol should say when a name does not exist");
 
   console.log("\nOK");
   await client.close();

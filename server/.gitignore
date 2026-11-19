@@ -1,3 +1,6 @@
 .wrangler/
 dist/
 src/pack/hig.js
+
+# One SVG per SF Symbol, written by the extractor on a Mac
+assets/symbols/
