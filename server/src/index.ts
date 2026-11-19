@@ -20,7 +20,7 @@ import type { DrawingLoader, OutlineLoader } from "./uikit.js";
 import { designValues, valuesPack, VALUE_PLATFORMS, VALUE_TOPICS } from "./values.js";
 
 const SERVER_NAME = "apple-design";
-const SERVER_VERSION = "0.11.0";
+const SERVER_VERSION = "0.11.1";
 
 const HIG_DATE = higPack.pack_version;
 
@@ -400,7 +400,7 @@ function buildServer(app: string, env: Env, origin: string): McpServer {
         "Beside it come the component's variants and properties and an outline of its layers: exact sizes, auto layout " +
         "(direction, gap, padding), corner radii, colors and text styles by Apple's names, for building it in code. Pass " +
         "every component of the design in one call as `queries`, such as [\"tab bar\", \"large title toolbar\", \"list row\"]. " +
-        "Add a device or a variant's words to narrow a query, such as \"iPad sidebar\" or \"destructive button\". Use it " +
+        "Add a device or a variant's words to narrow a query, such as \"iPad sidebar\", \"destructive button\" or \"tab bar 4 tabs\"; the variant a query names is the drawing it returns. Use it " +
         "for every standard Apple component in a design, instead of drawing the component yourself. Without `queries` it lists every component.",
       inputSchema: {
         queries: z
