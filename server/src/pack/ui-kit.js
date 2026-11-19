@@ -1,7 +1,7 @@
 // Written by scripts/build-ui-kit-pack.mjs from Apple's UI kits for Figma. Do not edit.
 export default {
  "pack_version": "2026-11-19",
- "generated_at": "2026-11-19T15:02:51.660Z",
+ "generated_at": "2026-11-19T15:51:24.329Z",
  "source": {
   "name": "Apple Design Resources, UI kits for Figma",
   "url": "https://developer.apple.com/design/resources/",
@@ -11,7 +11,8 @@ export default {
    "watchOS 26"
   ],
   "components": 596,
-  "variants": 2664
+  "variants": 2664,
+  "drawings": 2310
  },
  "kits": [
   {
@@ -55,6 +56,7 @@ export default {
     "Windows",
     "_Kit Helpers"
    ],
+   "drawings": 1080,
    "components": [
     {
      "id": "examples-ipad-tab-bars",
@@ -8524,6 +8526,7 @@ export default {
     "Windows",
     "_Kit"
    ],
+   "drawings": 1230,
    "components": [
     {
      "id": "examples-utility-window",
@@ -14318,6 +14321,7 @@ export default {
     "Toggles",
     "_Kit Helpers"
    ],
+   "drawings": 0,
    "components": [
     {
      "id": "colors-and-materials-swatch-grid",
