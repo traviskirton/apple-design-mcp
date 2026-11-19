@@ -12,21 +12,21 @@ import { deviceMetrics, devicePack, FAMILIES } from "./devices.js";
 import { bezelPack } from "./bezels.js";
 import { deviceFrames, framePack } from "./frames.js";
 import { higPack, lookupHig, platformsIn, readPage } from "./hig.js";
-import { lookupSymbols, readSymbols, symbolPack } from "./symbols.js";
-import type { ShapeLoader } from "./symbols.js";
+import { fromShard, lookupSymbols, readSymbols, shardOf, symbolPack, WEIGHTS } from "./symbols.js";
+import type { ShapeLoader, Weight } from "./symbols.js";
 import { technologyAssets, technologyPack } from "./technologies.js";
 import { KIT_IDS, searchUiKit, uiKitPack } from "./uikit.js";
 import type { DrawingLoader, OutlineLoader } from "./uikit.js";
 import { designValues, valuesPack, VALUE_PLATFORMS, VALUE_TOPICS } from "./values.js";
 
 const SERVER_NAME = "apple-design";
-const SERVER_VERSION = "0.11.2";
+const SERVER_VERSION = "0.12.0";
 
 const HIG_DATE = higPack.pack_version;
 
 const PACK = {
   status: "partial",
-  note: "Human Interface Guidelines text, device screen sizes, Apple's product bezels and vector device frames, SF Symbols (names and regular-weight shapes), technology artwork (Sign in with Apple, AirPlay and others), design values from Apple's UI kits (colors, text styles, sizes, materials, iPhone Duo layout guides) and the kits' components (Apple's drawing of every component as SVG, with its layers, sizes, layout and colors) are loaded.",
+  note: "Human Interface Guidelines text, device screen sizes, Apple's product bezels and vector device frames, SF Symbols (names, and shapes in all nine weights), technology artwork (Sign in with Apple, AirPlay and others), design values from Apple's UI kits (colors, text styles, sizes, materials, iPhone Duo layout guides) and the kits' components (Apple's drawing of every component as SVG, with its layers, sizes, layout and colors) are loaded.",
   pack_version: higPack.pack_version,
   sources: [
     {
@@ -97,12 +97,31 @@ interface Env {
   ASSETS?: { fetch(input: string): Promise<Response> };
 }
 
-function buildServer(app: string, env: Env, origin: string): McpServer {
-  const loadShape: ShapeLoader = async (name) => {
+/** Reads symbol shapes: the regular weight from symbols/NAME.svg, the others from their shard in symbol-weights/. */
+function shapeLoader(env: Env): ShapeLoader {
+  const shards = new Map<string, Promise<string | null>>();
+  return async (name, weight) => {
     if (!env.ASSETS) return null;
-    const res = await env.ASSETS.fetch(`https://assets.local/symbols/${name}.svg`);
-    return res.ok ? res.text() : null;
+    if (weight === "regular") {
+      const res = await env.ASSETS.fetch(`https://assets.local/symbols/${name}.svg`);
+      return res.ok ? res.text() : null;
+    }
+    const key = `${weight}/${shardOf(name)}`;
+    if (!shards.has(key)) shards.set(key, env.ASSETS.fetch(`https://assets.local/symbol-weights/${key}.txt`).then((r) => (r.ok ? r.text() : null)));
+    const text = await shards.get(key)!;
+    return text ? fromShard(text, name) : null;
   };
+}
+
+const weightInput = z
+  .enum(WEIGHTS)
+  .optional()
+  .describe(
+    "The weight of the symbols, to match the text beside them. Default regular. A drawing from search_ui_kit names each icon's weight in data-symbol-weight.",
+  );
+
+function buildServer(app: string, env: Env, origin: string): McpServer {
+  const loadShape = shapeLoader(env);
 
   const loadOutlines: OutlineLoader = async (kit, id) => {
     if (!env.ASSETS) return null;
@@ -291,7 +310,7 @@ function buildServer(app: string, env: Env, origin: string): McpServer {
         `Find icons in Apple's SF Symbols (${symbolPack.source.symbols} symbols, version ${symbolPack.source.version}) ` +
         "and get them as SVG. Pass every icon the design needs in one call as `queries`, one entry per icon, such as " +
         "[\"settings\", \"heart\", \"share\", \"trash\"]. Each query returns the best-matching symbol with its SVG " +
-        "and the names of other matches. Use it instead of drawing icons or using another icon set, and to check " +
+        "and the names of other matches. Pass `weight` to match the text beside the icons. Use it instead of drawing icons or using another icon set, and to check " +
         "that a symbol name exists before using it in code.",
       inputSchema: {
         queries: z
@@ -307,11 +326,12 @@ function buildServer(app: string, env: Env, origin: string): McpServer {
           .max(5)
           .optional()
           .describe("How many of each query's top matches come with their SVG. Default 1. Use 0 for names only."),
+        weight: weightInput,
       },
       annotations: READ_ONLY,
     },
     async (args) => {
-      const text = await lookupSymbols(args.queries, args.limit ?? 8, args.svg_per_query ?? 1, loadShape, origin);
+      const text = await lookupSymbols(args.queries, args.limit ?? 8, args.svg_per_query ?? 1, loadShape, origin, args.weight ?? "regular");
       return reply(app, "search_symbols", args, text);
     },
   );
@@ -325,11 +345,12 @@ function buildServer(app: string, env: Env, origin: string): McpServer {
         "their shapes. Pass every name in one call.",
       inputSchema: {
         names: z.array(z.string().min(1).max(100)).min(1).max(40).describe("Symbol names, such as [\"heart.fill\", \"gearshape\"]."),
+        weight: weightInput,
       },
       annotations: READ_ONLY,
     },
     async (args) => {
-      const result = await readSymbols(args.names, loadShape, origin);
+      const result = await readSymbols(args.names, loadShape, origin, args.weight ?? "regular");
       return reply(app, "get_symbol", args, result.text, !result.ok);
     },
   );
@@ -474,6 +495,18 @@ export default {
         console.error("mcp request failed", err);
         return rpcError(500, "Internal server error");
       }
+    }
+
+    // A symbol in another weight, read from its shard: /symbols/WEIGHT/NAME.svg.
+    const weighted = /^\/symbols\/([a-z]+)\/([^/]+)\.svg$/.exec(url.pathname);
+    if (weighted && request.method === "GET" && (WEIGHTS as readonly string[]).includes(weighted[1])) {
+      let name = weighted[2];
+      try { name = decodeURIComponent(name); } catch {}
+      const svg = await shapeLoader(env)(name, weighted[1] as Weight);
+      if (!svg) return new Response("Not found\n", { status: 404, headers: CORS });
+      return new Response(svg + "\n", {
+        headers: { ...CORS, "Content-Type": "image/svg+xml; charset=utf-8", "Cache-Control": "public, max-age=86400" },
+      });
     }
 
     if (url.pathname === "/" && request.method === "GET") {
