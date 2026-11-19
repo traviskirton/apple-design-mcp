@@ -61,6 +61,16 @@ Menu names change, so treat these as starting points:
 
 Write down which plan each account is on, because custom connectors are limited to some plans.
 
+## See what apps call
+
+Every tool call writes one log line: the tool, its inputs, the size of the reply and the calling app's name.
+
+```sh
+npx wrangler tail
+```
+
+Leave that running, use the connector in an app, and each call appears within a second or two as a line such as `{"tool":"search_hig","args":{"queries":["tab bar"]},"reply_chars":5123,"error":false,"app":"..."}`. Press Control-C to stop. The Cloudflare dashboard shows past calls under the worker's Logs tab.
+
 ## Run it on your own machine
 
 ```sh
