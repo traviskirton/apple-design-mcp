@@ -1,0 +1,21 @@
+=== 0
+- component; 402 × 552; column; gap 10; padding 0 16 68 16; cross center; hugs height
+  - Content Background: frame; 370 × 370; fills width; column; cross center; radius 26; fill Backgrounds/Primary - Elevated
+    - Header: frame; 370 × 66.33; row; gap 12; padding 14; main center; cross center; hugs height
+      - Icon: instance of _Custom Icon; 38.33 × 38.33
+      - Frame: frame; 291.67 × 35; fills width; row; gap 10; main center; hugs height
+        - Title and Description: frame; 223.67 × 35; fills width; fills height; column; main center
+          - text "Title"; SF Pro Semibold 15/17; 223.67 × 17.5; fills width; color Labels/Primary
+          - text "Description"; SF Pro Regular 15/18; 223.67 × 17.5; fills width; color Labels/Primary
+        - Time: frame; 58 × 17; column; gap 5.5; cross end; hugs content
+          - Time: instance of _Time; 58 × 17
+    - Body: frame; 370 × 303.67; fills height; fills width; column; gap 10; main center; cross center; fill #0088ff at 50%
+      - text "Notification Content"; SF Pro Regular 15/17; 139 × 17; color Labels/Primary
+  - Menu: frame; 250 × 104; column; gap 20; padding 20 26 20 26; hugs height; shown while Show Menu
+    - Clear Glass: instance of Liquid Glass - Clear; 250 × 104; absolute at (0.5, 0)
+    - Row 1: frame; 198 × 22; fills width; row; gap 14; cross center; hugs height
+      - text SF Symbol square.dashed; SF Pro Regular 17/22; centered; 20 × 22; color Labels/Primary
+      - text "Action"; style Body/Regular; 164 × 22; fills width; color Labels/Primary
+    - Row 2: frame; 198 × 22; fills width; row; gap 14; cross center; hugs height
+      - text SF Symbol square.dashed; SF Pro Regular 17/22; centered; 20 × 22; color Labels/Primary
+      - text "Action"; style Body/Regular; 164 × 22; fills width; color Labels/Primary

@@ -1,0 +1,6 @@
+=== 0
+- component; 205 × 251; radius 20; uses Screen Width, Screen Height
+  - Round Corners: frame; 205 × 251; at (0, 0); radius 14; fill #000000; uses Screen Width, Screen Height
+    - Tabs: instance of Tabs [Pages=4, Position=4]; 10 × 251; at (195, 0)
+    - Navigation Bar: instance of Navigation Bar [Type=Status Bar]; 205 × 46; at (0, 0)
+  - Bezel: instance of Bezels [Bezel Size=49mm]; 205 × 251; at (0, 0)

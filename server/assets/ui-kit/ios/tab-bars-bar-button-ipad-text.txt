@@ -1,0 +1,10 @@
+=== 0
+- component; 75 × 36; row; gap 10; padding 8 18 8 18; main center; cross center; hugs content
+  - text "Label"; SF Pro Medium 15/20; centered; 39 × 20; color Labels - Vibrant/Primary; blend linear burn; property Label
+=== 1
+- component; 77 × 36; row; gap 10; padding 8 18 8 18; main center; cross center; hugs content; capsule
+  - Selection: rectangle; 77 × 36; absolute at (0, 0); capsule; fill Fills - Vibrant/Tertiary; blend linear burn
+  - Frame: frame; 41 × 20; row; gap 10; main center; cross center; hugs content
+    - text "Label"; SF Pro Bold 15/20; centered; 41 × 20; color Miscellaneous/Tab Bar Selection; mask; property Label
+    - FFFFFF @50%: rectangle; 77 × 36; absolute at (-18, -8); fill #ffffff at 50%
+    - Tint (Plus D): rectangle; 77 × 36; absolute at (-18, -8); fill Accents/Blue (linear burn); blend linear burn

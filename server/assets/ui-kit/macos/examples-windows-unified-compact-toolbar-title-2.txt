@@ -1,0 +1,5 @@
+=== 0
+- component; 1512 × 993
+  - Desktop Template: instance of Desktop Template [Color Mode=Light]; with Show Dock off; 1512 × 993; at (0, 0)
+  - Windows - Composed: instance of Windows - Composed [Active=False, Window Type=Unified Compact Toolbar + Title]; 900 × 600; at (200, 120)
+  - Windows - Composed: instance of Windows - Composed [Window Type=Unified Compact Toolbar + Title, Active=True]; 900 × 600; at (500, 240)

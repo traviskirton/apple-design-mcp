@@ -1,0 +1,14 @@
+=== 0
+- component; 36 × 36
+  - Swatch: ellipse; 26 × 26; at (5, 5); fill #af52de
+  - Gradient: vector shape; 36 × 36; at (0, 0); fill angular gradient #e7e040 to #eeaa3c to #e8403b to #b33ed5 to #694ae8 to #3ccae7 to #3ce885 to #89e743 to #e7e040
+=== 1
+- component; 36 × 36
+  - Gradient: ellipse; 36 × 36; at (0, 0); fill angular gradient #e7e040 to #eeaa3c to #e8403b to #b33ed5 to #694ae8 to #3ccae7 to #3ce885 to #89e743 to #e7e040 + radial gradient #e4e4e4 to #e4e4e4 0%
+=== 2
+- component; 28 × 28
+  - Swatch: ellipse; 18 × 18; at (5, 5); fill #af52de
+  - Gradient: vector shape; 28 × 28; at (0, 0); fill angular gradient #e7e040 to #eeaa3c to #e8403b to #b33ed5 to #694ae8 to #3ccae7 to #3ce885 to #89e743 to #e7e040 + radial gradient #e4e4e4 to #e4e4e4 0%
+=== 3
+- component; 28 × 28
+  - Gradient: ellipse; 28 × 28; at (0, 0); fill angular gradient #e7e040 to #eeaa3c to #e8403b to #b33ed5 to #694ae8 to #3ccae7 to #3ce885 to #89e743 to #e7e040 + radial gradient #e4e4e4 to #e4e4e4 0%

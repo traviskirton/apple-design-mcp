@@ -1,0 +1,11 @@
+=== 0
+- component; 500 × 58; row; space between; padding 4 10 10 10; cross center; hugs height
+  - Buttons Leading: frame; 100 × 44; row; gap 12; main end; hugs content; slot Buttons Leading
+    - Button Group: instance of _Buttons - 44pt [Type=Symbol]; 44 × 44
+    - Button Group: instance of _Buttons - 44pt [Type=Symbol]; 44 × 44
+  - Buttons Center: frame; 100 × 44; row; gap 12; main end; hugs content; slot Buttons Center
+    - Button Group: instance of _Buttons - 44pt [Type=Symbol]; 44 × 44
+    - Button Group: instance of _Buttons - 44pt [Type=Symbol]; 44 × 44
+  - Buttons Trailing: frame; 100 × 44; row; gap 12; main end; hugs content; slot Buttons Trailing
+    - Button Group: instance of _Buttons - 44pt [Type=Symbol]; 44 × 44
+    - Button Group: instance of _Buttons - 44pt [Type=Symbol]; 44 × 44

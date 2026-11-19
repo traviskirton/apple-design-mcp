@@ -1,0 +1,12 @@
+=== 0
+- component; 208 × 248; radius 50.5; stroke #ff3b30 2; blend screen
+  - Copy Safe Area: vector shape; 178 × 212; at (15, 18); stroke #04de71 0.5
+  - Safe Area: rectangle; 208 × 248; at (0, 0); radius 50.5; stroke #04de71 3
+  - Crown Line: vector shape; 208 × 0; at (0, 68); stroke #ffffff 0.5; uses Screen Width; opacity 50%
+  - Center Line: vector shape; 208 × 0; at (0, 124.5); stroke #04de71 0.5; uses Screen Width
+  - Center Line: vector shape; 0 × 248; at (104, 0); stroke #04de71 0.5
+  - Button: frame; 35 × 35; at (15, 18); stroke #04de71 0.5
+    - Circle: ellipse; 35 × 35; at (0, 0); stroke #04de71 0.5
+  - Grid Line: vector shape; 178 × 0; at (15, 36); stroke #04de71 0.5
+  - Scroll Safe Area Inset: vector shape; 208 × 0; at (0, 212); stroke #5ac8fa 0.5
+  - Navigation Bar: rectangle; 208 × 62; at (0, 0); fill #5ac8fa at 25%; stroke #5ac8fa 1

@@ -1,0 +1,5 @@
+=== 0
+- component; 92 × 32; capsule
+  - Separator: rectangle; 1 × 24; at (45.5, 4); capsule; fill Labels/Tertiary at 30%
+  - _Decrement: instance of _Decrement [Style=Default]; 46 × 32; at (0, 0)
+  - _Increment: instance of _Increment [Style=Default]; 46 × 32; at (46, 0)

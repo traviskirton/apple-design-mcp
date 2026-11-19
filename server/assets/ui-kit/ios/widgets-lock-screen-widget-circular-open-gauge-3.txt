@@ -1,0 +1,7 @@
+=== 0
+- component; 72 × 72; row; padding 7; main center; cross center; background blur 40
+  - Frame: frame; 58 × 59
+    - Gauge: vector shape; 58 × 45.47; at (0, -0.19); fill Vibrant Fills/Dark/Vibrant Tertiary
+    - Current Value Indicator: ellipse; 5.67 × 5.67; at (43.13, 10.02); rotated 60°; fill Vibrant Labels/Dark/Vibrant Secondary
+    - text "AQI"; SF Pro Medium 12; centered; 30 × 14; at (14, 44); color Vibrant Labels/Dark/Vibrant Secondary; property Label
+    - text "27"; SF Pro Medium 24.5; 28 × 29; at (15, 12.5); color Vibrant Labels/Dark/Vibrant Secondary; property Number

@@ -1,0 +1,37 @@
+=== 0
+- component; 120 × 24; row; gap 2; padding 0 8 0 8; cross center; uses Fields/Inset - Left, Fields/Inset - Right, Global/Height
+  - BG: instance of _Input Fields [State=Idle]; 120 × 24; absolute at (0, 0)
+  - Magnifying Glass: instance of _Magnifying Glass; 16 × 15
+  - text "Search"; SF Pro Medium 13/16; 44 × 16; color Labels/Primary at 85%; property Value
+  - Clear: instance of _Clear [State=Idle]; 16 × 15
+=== 1
+- component; 120 × 24; row; gap 2; padding 0 8 0 8; cross center; uses Fields/Inset - Left, Fields/Inset - Right, Global/Height
+  - BG: instance of _Input Fields [State=Idle]; 120 × 24; absolute at (0, 0)
+  - Magnifying Glass: instance of _Magnifying Glass; 16 × 15
+  - Text + Cursor: frame; 68 × 18; fills width; row; cross center; hugs height
+    - text "Search"; SF Pro Medium 13/16; 44 × 16; color Labels/Primary at 85%; property Value
+    - Cursor: rectangle; 2 × 18; capsule; fill Accents/Blue; uses Cursor/Height
+  - Clear: instance of _Clear [State=Idle]; 16 × 15
+=== 2
+- component; 120 × 24; row; gap 2; padding 0 8 0 8; cross center; uses Fields/Inset - Left, Fields/Inset - Right, Global/Height
+  - BG: instance of _Input Fields [State=Idle]; 120 × 24; absolute at (0, 0)
+  - Magnifying Glass: instance of _Magnifying Glass; 16 × 15
+  - text "Search"; SF Pro Medium 13/16; 68 × 16; fills width; color Labels/Primary at 85%; property Value
+  - Clear: instance of _Clear [State=Idle]; 16 × 15
+=== 3
+- component; 120 × 24; row; space between; padding 0 8 0 8; cross center; uses Fields/Inset - Left, Fields/Inset - Right, Global/Height
+  - BG: instance of _Input Fields [State=Idle]; 120 × 24; absolute at (0, 0)
+  - Magnifying Glass: instance of _Magnifying Glass; 16 × 15
+  - Clear: instance of _Clear [State=Idle]; 16 × 15
+=== 4
+- component; 120 × 24; row; gap 2; padding 0 8 0 8; cross center; uses Fields/Inset - Left, Fields/Inset - Right, Global/Height
+  - BG: instance of _Input Fields [State=Idle]; 120 × 24; absolute at (0, 0)
+  - Magnifying Glass: instance of _Magnifying Glass; 16 × 15
+  - Text + Cursor: frame; 68 × 18; fills width; row; cross center; hugs height
+    - Cursor: rectangle; 2 × 18; capsule; fill Accents/Blue; uses Cursor/Height
+  - Clear: instance of _Clear [State=Idle]; 16 × 15
+=== 5
+- component; 120 × 24; row; gap 2; padding 0 8 0 8; cross center; uses Fields/Inset - Left, Fields/Inset - Right, Global/Height
+  - BG: instance of _Input Fields [State=Idle]; 120 × 24; absolute at (0, 0)
+  - Magnifying Glass: instance of _Magnifying Glass; 16 × 15
+  - Clear: instance of _Clear [State=Idle]; 16 × 15

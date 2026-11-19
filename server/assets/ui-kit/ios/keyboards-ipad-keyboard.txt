@@ -1,0 +1,16 @@
+=== 0
+- component; 1210 × 428; column; gap 16; padding 6 13.5 30 13.5; hugs height; radius 27
+  - Background: instance of _Background - Keyboard; 1210 × 428; absolute at (0, 0)
+  - Frame: frame; 1183 × 44; fills width
+    - Accessory Bar: frame; 644 × 44; at (269.5, 14); row; main center; cross center
+      - Autocorrection: instance of _Autocorrection; with Option 1 "“DESIGN”", Option 2 "DESIGNS", Option 3 "DESIGNED"; 644 × 25; fills width
+    - Button Set - Leading: instance of _Accessory Bar - iPad; 120 × 28; at (9, 9)
+  - Key Layout: instance of _Keyboard Layouts/iPad/Uppercase [Property 1=Light]; 1183 × 332; fills width
+=== 1
+- component; 1210 × 428; column; gap 16; padding 6 13.5 30 13.5; hugs height; radius 27
+  - Background: instance of _Background - Keyboard; 1210 × 428; absolute at (0, 0)
+  - Frame: frame; 1183 × 44; fills width
+    - Accessory Bar: frame; 644 × 44; at (269.5, 14); row; main center; cross center
+      - Autocorrection: instance of _Autocorrection; 644 × 25; fills width
+    - Button Set - Leading: instance of _Accessory Bar - iPad; 120 × 28; at (9, 9)
+  - Key Layout: instance of _Keyboard Layouts/iPad/Lowercase; 1183 × 332; fills width

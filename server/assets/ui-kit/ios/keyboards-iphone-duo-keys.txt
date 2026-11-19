@@ -1,0 +1,136 @@
+=== 0
+- component; 50 × 42; row; padding 0 0 5 0; main center; cross center; radius 10; fill #191919 (linear dodge) + #ffffff at 67%
+  - text ".com"; SF Pro Regular 19/19; centered; 50 × 37; fills width; fills height; color Labels/Primary
+=== 1
+- component; 50 × 42; row; padding 0 0 5 0; main center; cross center; radius 12; fill #191919 (linear dodge) + #ffffff at 67%
+  - text ".com"; SF Pro Regular 19/19; centered; 50 × 37; fills width; fills height; color Labels/Primary
+=== 2
+- component; 50 × 42; row; padding 1 0 0 0; main center; cross center; radius 10; fill #191919 (linear dodge) + #ffffff at 67%
+  - text SF Symbol delete.left; SF Compact Regular 21/28; centered; uppercase; 50 × 41; fills width; fills height; color Labels/Primary
+=== 3
+- component; 50 × 42; row; main center; cross center; radius 12; fill #191919 (linear dodge) + #ffffff at 67%
+  - text SF Symbol delete.left; SF Compact Regular 22/28; centered; uppercase; 50 × 42; fills width; fills height; color Labels/Primary
+=== 4
+- component; 50 × 42; row; main center; cross center; radius 10; fill #191919 (linear dodge) + #ffffff at 67%
+  - text SF Symbol delete.left; SF Compact Regular 20/28; centered; uppercase; 50 × 42; fills width; fills height; color Labels/Primary
+=== 5
+- component; 50 × 42; row; main center; cross center; radius 12; fill #191919 (linear dodge) + #ffffff at 67%
+  - text SF Symbol delete.left; SF Compact Regular 21/28; centered; uppercase; 50 × 42; fills width; fills height; color Labels/Primary
+=== 6
+- component; 50 × 42; row; main center; cross center; radius 10; fill #191919 (linear dodge) + #ffffff at 67%
+  - text SF Symbol shift; SF Pro Regular 23/28; centered; uppercase; 50 × 42; fills width; fills height; color Labels/Primary
+=== 7
+- component; 50 × 42; row; main center; cross center; radius 12; fill #191919 (linear dodge) + #ffffff at 67%
+  - text SF Symbol shift; SF Pro Regular 23/28; centered; uppercase; 50 × 42; fills width; fills height; color Labels/Primary
+=== 8
+- component; 50 × 42; row; main center; cross center; radius 10; fill #191919 (linear dodge) + #ffffff at 67%
+  - text SF Symbol shift.fill; SF Pro Regular 23/28; centered; uppercase; 50 × 42; fills width; fills height; color Labels/Primary
+=== 9
+- component; 50 × 42; row; main center; cross center; radius 12; fill #191919 (linear dodge) + #ffffff at 67%
+  - text SF Symbol shift.fill; SF Pro Regular 22/28; centered; uppercase; 50 × 42; fills width; fills height; color Labels/Primary
+=== 10
+- component; 50 × 42; row; main center; cross center; radius 12; fill #191919 (linear dodge) + #ffffff at 67%
+  - text SF Symbol shift.fill; SF Pro Regular 23/28; centered; uppercase; 50 × 42; fills width; fills height; color Labels/Primary
+=== 11
+- component; 50 × 42; row; padding 10; radius 10; fill #191919 (linear dodge) + #ffffff at 67%
+=== 12
+- component; 50 × 42; row; padding 10; radius 12; fill #191919 (linear dodge) + #ffffff at 67%
+=== 13
+- component; 50 × 42; row; main center; cross center; radius 10; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "123"; SF Compact Rounded Medium 16/19; centered; 50 × 42; fills width; fills height; color Labels/Primary
+=== 14
+- component; 50 × 42; row; main center; cross center; radius 12; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "123"; SF Compact Rounded Medium 18/19; centered; 50 × 42; fills width; fills height; color Labels/Primary
+=== 15
+- component; 50 × 42; row; padding 0 0 2 0; main center; cross center; radius 12; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "123"; SF Compact Rounded Medium 18/19; centered; 50 × 40; fills width; fills height; color Labels/Primary
+=== 16
+- component; 50 × 42; row; padding 0 0 4 0; main center; cross center; radius 10; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "#+="; SF Pro Regular 14; centered; 50 × 38; fills width; fills height; color Labels/Primary
+=== 17
+- component; 50 × 42; row; main center; cross center; radius 12; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "#+="; SF Pro Regular 14; centered; 50 × 42; fills width; fills height; color Labels/Primary
+=== 18
+- component; 50 × 42; row; padding 0 0 3 0; main center; cross center; radius 10; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "#+="; SF Pro Regular 14; centered; 50 × 39; fills width; fills height; color Labels/Primary
+=== 19
+- component; 50 × 42; row; padding 0 0 3 0; main center; cross center; radius 12; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "#+="; SF Pro Regular 14; centered; 50 × 39; fills width; fills height; color Labels/Primary
+=== 20
+- component; 50 × 42; row; main center; cross center; radius 10; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "ABC"; SF Pro Regular 19/28; centered; 39 × 28; color Labels/Primary
+=== 21
+- component; 50 × 42; row; padding 0 0 2 0; main center; cross center; radius 12; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "ABC"; SF Pro Regular 24/28; centered; 47 × 28; color Labels/Primary
+=== 22
+- component; 50 × 42; row; padding 0 0 2 0; main center; cross center; radius 10; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "ABC"; SF Pro Regular 19/28; centered; 39 × 28; color Labels/Primary
+=== 23
+- component; 50 × 42; row; padding 0 0 2 0; main center; cross center; radius 12; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "ABC"; SF Pro Regular 23/28; centered; 46 × 28; color Labels/Primary
+=== 24
+- component; 50 × 42; row; padding 0 0 2 0; main center; cross center; radius 10; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "123"; SF Pro Regular 19/28; centered; 33 × 28; color Labels/Primary
+=== 25
+- component; 50 × 42; row; padding 0 0 2 0; main center; cross center; radius 12; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "123"; SF Pro Regular 24/28; centered; 39 × 28; color Labels/Primary
+=== 26
+- component; 50 × 42; row; padding 0 0 2 0; main center; cross center; radius 12; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "123"; SF Pro Regular 23/28; centered; 38 × 28; color Labels/Primary
+=== 27
+- component; 50 × 42; column; radius 10; fill Accents/Blue
+  - text SF Symbol return; SF Pro Regular 20/28; centered; 50 × 42; fills height; fills width; color #ffffff
+=== 28
+- component; 50 × 42; column; radius 12; fill Accents/Blue
+  - text SF Symbol return; SF Pro Regular 22/28; centered; 50 × 42; fills height; fills width; color #ffffff
+=== 29
+- component; 50 × 42; column; padding 3 0 0 0; radius 12; fill Accents/Blue
+  - text SF Symbol return; SF Pro Regular 22/28; centered; 50 × 39; fills height; fills width; color #ffffff
+=== 30
+- component; 50 × 42; row; main center; cross center; radius 10; fill #191919 (linear dodge) + #ffffff at 67%
+  - text SF Symbol return; SF Pro Regular 20/28; centered; 50 × 42; fills width; fills height; color Labels/Primary
+=== 31
+- component; 50 × 42; row; main center; cross center; radius 12; fill #191919 (linear dodge) + #ffffff at 67%
+  - text SF Symbol return; SF Pro Regular 22/28; centered; 50 × 42; fills width; fills height; color Labels/Primary
+=== 32
+- component; 50 × 42; row; padding 3 0 0 0; main center; cross center; radius 12; fill #191919 (linear dodge) + #ffffff at 67%
+  - text SF Symbol return; SF Pro Regular 22/28; centered; 50 × 39; fills width; fills height; color Labels/Primary
+=== 33
+- component; 50 × 42; row; main center; cross center; radius 10; fill #191919 (linear dodge) + #ffffff at 67%
+  - text SF Symbol arrow.forward; SF Pro Regular 20/28; centered; 50 × 42; fills width; fills height; color Labels/Primary; property Symbol
+=== 34
+- component; 50 × 42; row; main center; cross center; radius 12; fill #191919 (linear dodge) + #ffffff at 67%
+  - text SF Symbol arrow.forward; SF Pro Regular 22/28; centered; 50 × 42; fills width; fills height; color Labels/Primary; property Symbol
+=== 35
+- component; 50 × 42; row; main center; cross center; radius 10; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "_"; SF Compact Regular 23/28; centered; 50 × 42; fills width; fills height; color Labels/Primary; property Character
+=== 36
+- component; 50 × 42; row; main center; cross center; radius 12; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "_"; SF Compact Regular 27/28; centered; 50 × 42; fills width; fills height; color Labels/Primary; property Character
+=== 37
+- component; 50 × 42; row; main center; cross center; radius 10; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "."; SF Compact Regular 27/33; centered; 50 × 42; fills width; fills height; color Labels/Primary; property Punctuation
+=== 38
+- component; 50 × 42; row; main center; cross center; radius 12; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "."; SF Compact Regular 27/33; centered; 50 × 42; fills width; fills height; color Labels/Primary; property Punctuation
+=== 39
+- component; 50 × 42; row; padding 0 0 3 0; main center; cross center; radius 12; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "."; SF Compact Regular 34/33; centered; 50 × 39; fills width; fills height; color Labels/Primary; property Punctuation
+=== 40
+- component; 50 × 42; row; padding 0 0 3 0; main center; cross center; radius 10; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "q"; SF Compact Regular 25/30; centered; 50 × 39; fills width; fills height; color Labels/Primary; property Letter
+=== 41
+- component; 50 × 42; row; padding 0 0 4 0; main center; cross center; radius 12; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "q"; SF Compact Regular 31/30; centered; 50 × 38; fills width; fills height; color Labels/Primary; property Letter
+=== 42
+- component; 50 × 42; row; padding 0 0 4 0; main center; cross center; radius 12; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "q"; SF Compact Regular 30/30; centered; 50 × 38; fills width; fills height; color Labels/Primary; property Letter
+=== 43
+- component; 50 × 42; row; main center; cross center; radius 10; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "q"; SF Compact Regular 24/28; centered; uppercase; 50 × 42; fills width; fills height; color Labels/Primary; property Letter
+=== 44
+- component; 50 × 42; row; padding 0 0 2 0; main center; cross center; radius 10; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "q"; SF Compact Regular 24/28; centered; uppercase; 50 × 40; fills width; fills height; color Labels/Primary; property Letter
+=== 45
+- component; 50 × 42; row; padding 0 0 3 0; main center; cross center; radius 12; fill #191919 (linear dodge) + #ffffff at 67%
+  - text "q"; SF Compact Regular 29/28; centered; uppercase; 50 × 39; fills width; fills height; color Labels/Primary; property Letter

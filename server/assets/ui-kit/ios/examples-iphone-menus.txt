@@ -1,0 +1,35 @@
+=== 0
+- component; 402 × 874
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 116 0 0 0; cross center; radius 44; fill Backgrounds/Primary
+    - Content Area: frame; 402 × 758; fills height; fills width
+      - text "Hello World"; SF Pro Regular 17; 89 × 20; at (16, 20); color Labels/Primary
+      - instance of Text Selection; 89 × 20; at (16, 20)
+    - Scroll Edge Effect - Soft: instance of Scroll Edge Effect - Soft [Edge=Top]; 402 × 116; absolute at (0, 0)
+  - Toolbar: instance of Toolbar - Top - iPhone [Style=Default]; 402 × 54; at (0, 62)
+  - instance of Edit Menu; 238 × 44; at (16, 180)
+  - Status Bar - iPhone: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 874; at (0, 0)
+=== 1
+- component; 402 × 874
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 116 0 0 0; cross center; radius 44; fill Backgrounds/Primary
+    - Content Area: frame; 402 × 758; fills height; fills width
+      - text "Hello World"; SF Pro Regular 17; 89 × 20; at (16, 20); color Labels/Primary
+      - instance of Text Selection; 89 × 20; at (16, 20)
+    - Scroll Edge Effect - Soft: instance of Scroll Edge Effect - Soft [Edge=Top]; 402 × 116; absolute at (0, 0)
+  - Toolbar: instance of Toolbar - Top - iPhone [Style=Default]; 402 × 54; at (0, 62)
+  - Menu: frame; 250 × 338; at (16, 180); column; padding 10 0 10 0; cross center; hugs height
+    - Liquid Glass - Regular - Medium: instance of Liquid Glass - Regular - Medium; 250 × 338; absolute at (0, 0)
+    - Quick Actions: frame; 250 × 56; fills width; row; gap 6; padding 0 10 0 10; cross center; hugs height
+      - Action 1: instance of Quick Action [Destructive=False]; with Symbol SF Symbol scissors, Label "Cut", Show Selection off; 72.67 × 56; fills width
+      - Action 2: instance of Quick Action [Destructive=False]; with Symbol SF Symbol doc.on.doc, Label "Copy", Show Selection off; 72.67 × 56; fills width
+      - Action 3: instance of Quick Action [Destructive=False]; with Symbol SF Symbol doc.on.clipboard, Label "Paste", Show Selection off; 72.67 × 56; fills width
+    - Menu Items: frame; 250 × 262; fills width; column; padding 0 16 0 16; hugs height
+      - Separator: instance of Separator; 218 × 21; fills width
+      - Item: instance of Menu Items [State=Default, Menu has Selection=False]; with Show Shortcut off, Symbol SF Symbol doc, Label "Attach File", Label "Paste and Match Style", Symbol SF Symbol doc.on.clipboard; 218 × 60; fills width
+      - Item: instance of Menu Items [State=Default, Menu has Selection=False]; with Show Shortcut off, Symbol SF Symbol text.magnifyingglass, Label "Find Selection", Label "Add Link", Symbol SF Symbol link; 218 × 40; fills width
+      - Separator: instance of Separator; 218 × 21; fills width
+      - Item: instance of Menu Items - Submenus [State=Default, Open=False, Menu has Selection=False]; with Show Subtitle off, Symbol SF Symbol bold.italic.underline, Label "Format", Symbol SF Symbol text.cursor, Label "Replace..."; 218 × 40; fills width
+      - Item: instance of Menu Items [State=Default, Menu has Selection=False]; with Show Shortcut off, Symbol SF Symbol doc.text.magnifyingglass, Label "Look Up", Label "Writing Tools", Symbol SF Symbol apple.writing.tools; 218 × 40; fills width
+      - Item: instance of Menu Items - Submenus [State=Default, Open=False, Menu has Selection=False]; with Show Subtitle off, Symbol SF Symbol text.insert, Label "AutoFill", Symbol SF Symbol pencil.and.ellipsis.rectangle, Label "AutoFill"; 218 × 40; fills width
+  - Status Bar - iPhone: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 874; at (0, 0)

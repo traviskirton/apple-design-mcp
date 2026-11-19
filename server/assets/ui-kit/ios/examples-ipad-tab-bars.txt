@@ -1,0 +1,14 @@
+=== 0
+- component; 1210 × 834; fill #ffffff
+  - Contents: frame; 1210 × 834; at (0, 0); column; cross center; fill Backgrounds/Primary
+    - Content Area: frame; 1210 × 834; fills height; fills width
+  - Toolbar - Top: instance of Toolbar - Top - iPad [Style=Compact Large, Tab Bar=True]; with Show Search off; 1210 × 54; at (0, 32)
+  - Status Bar: instance of Status bar and Menu bar- iPad [Full Screen=True, Menu Expanded=False, Background=Light]; 1210 × 32; at (-1, 0)
+  - Bezel: instance of iPad Pro M4 11" [Color=Silver]; 1210 × 834; at (0, 0)
+=== 1
+- component; 1210 × 834; fill #ffffff
+  - Contents: frame; 1210 × 834; at (0, 0); column; cross center; fill Backgrounds/Primary
+    - Content Area: frame; 1210 × 834; fills height; fills width
+  - Toolbar - Top: instance of Toolbar - Top - iPad [Style=Compact Large, Tab Bar=True]; with Show Search on; 1210 × 128; at (0, 32)
+  - Status Bar: instance of Status bar and Menu bar- iPad [Full Screen=True, Menu Expanded=False, Background=Light]; 1210 × 32; at (-1, 0)
+  - Bezel: instance of iPad Pro M4 11" [Color=Silver]; 1210 × 834; at (0, 0)

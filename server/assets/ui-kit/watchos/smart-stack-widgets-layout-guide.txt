@@ -1,0 +1,700 @@
+=== 0
+- component; 191 × 81.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 10 × 81.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 10 × 81.5; at (191, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 191 × 11.5; at (0, 81.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 191 × 11.5; at (0, 0); fill #04de71 at 30%
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 18; centered; 50 × 50; at (125.5, 15.5); color #ff3b30 at 50%
+  - text "Body"; SF Compact Rounded Medium 26/18.5; 99.5 × 19; at (16, 41); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 15/18.5; 99.5 × 19; at (16, 15.5); color #2094fa at 50%
+=== 1
+- component; 194 × 80.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 9.5 × 80.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 9.5 × 80.5; at (194, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 194 × 11; at (0, 80.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 194 × 11; at (0, 0); fill #04de71 at 30%
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 17; centered; 49 × 49; at (129, 16); color #ff3b30 at 50%
+  - text "Body"; SF Compact Rounded Medium 26/18.5; 103 × 19; at (16, 40.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 15/18.5; 103 × 19; at (16, 15); color #2094fa at 50%
+=== 2
+- component; 173 × 76.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7.5 × 76.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7.5 × 76.5; at (173, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 173 × 9; at (0, 76.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 173 × 9; at (0, 0); fill #04de71 at 30%
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 17; centered; 48 × 48; at (110.5, 15); color #ff3b30 at 50%
+  - text "Body"; SF Compact Rounded Medium 26/18.5; 86.5 × 19; at (14, 38.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 15/18.5; 86.5 × 19; at (14, 13); color #2094fa at 50%
+=== 3
+- component; 176 × 72.5; radius 12.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7 × 72.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7 × 72.5; at (176, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 176 × 8.5; at (0, 72.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 176 × 8.5; at (0, 0); fill #04de71 at 30%
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 16; centered; 45 × 45; at (117, 13.5); color #ff3b30 at 50%
+  - text "Body"; SF Compact Rounded Medium 24/18.5; 93 × 19; at (14, 35); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 14/18.5; 93 × 19; at (14, 12.5); color #2094fa at 50%
+=== 4
+- component; 152 × 69.5; radius 12.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7 × 69.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7 × 69.5; at (152, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 152 × 7; at (0, 69.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 152 × 7; at (0, 0); fill #04de71 at 30%
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 16; centered; 41 × 41; at (96, 14); color #ff3b30 at 50%
+  - text "Body"; SF Compact Rounded Medium 24/18.5; 72.5 × 19; at (12, 34); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 14/18.5; 72.5 × 19; at (12, 11.5); color #2094fa at 50%
+=== 5
+- component; 191 × 81.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 10 × 81.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 10 × 81.5; at (191, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 191 × 11.5; at (0, 81.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 191 × 11.5; at (0, 0); fill #04de71 at 30%
+  - Ellipse: ellipse; 50 × 50; at (125.5, 15.5); radius 4; stroke #ff3b30 at 50% 0.5
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 18; centered; 50 × 50; at (125.5, 15.5); color #ff3b30 at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 99.5 × 20; at (16, 50); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 99.5 × 20; at (16, 31); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 99.5 × 20; at (16, 12); color #2094fa at 50%
+=== 6
+- component; 194 × 80.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 9.5 × 80.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 9.5 × 80.5; at (194, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 194 × 11; at (0, 80.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 194 × 11; at (0, 0); fill #04de71 at 30%
+  - Ellipse: ellipse; 49 × 49; at (129, 16); radius 4; stroke #ff3b30 at 50% 0.5
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 17; centered; 49 × 49; at (129, 16); color #ff3b30 at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 103 × 20; at (16, 49.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 103 × 20; at (16, 30.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 103 × 20; at (16, 11.5); color #2094fa at 50%
+=== 7
+- component; 173 × 76.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7.5 × 76.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7.5 × 76.5; at (173, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 173 × 9; at (0, 76.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 173 × 9; at (0, 0); fill #04de71 at 30%
+  - Ellipse: ellipse; 49 × 49; at (110.5, 14); radius 4; stroke #ff3b30 at 50% 0.5
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 17; centered; 49 × 49; at (110.5, 14); color #ff3b30 at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 86.5 × 20; at (14, 47.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 86.5 × 20; at (14, 29); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 86.5 × 20; at (14, 9.5); color #2094fa at 50%
+=== 8
+- component; 176 × 72.5; radius 12.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7 × 72.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7 × 72.5; at (176, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 176 × 8.5; at (0, 72.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 176 × 8.5; at (0, 0); fill #04de71 at 30%
+  - Ellipse: ellipse; 45.5 × 45.5; at (117, 13.5); radius 4; stroke #ff3b30 at 50% 0.5
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 16; centered; 45.5 × 45.5; at (117, 13.5); color #ff3b30 at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 93 × 19; at (14, 45); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 93 × 19; at (14, 27.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 93 × 19; at (14, 10); color #2094fa at 50%
+=== 9
+- component; 152 × 69.5; radius 12.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7 × 69.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7 × 69.5; at (152, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 152 × 7; at (0, 69.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 152 × 7; at (0, 0); fill #04de71 at 30%
+  - Ellipse: ellipse; 45.5 × 45.5; at (94.5, 12); radius 4; stroke #ff3b30 at 50% 0.5
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 16; centered; 45.5 × 45.5; at (94.5, 12); color #ff3b30 at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 72.5 × 19; at (12, 43); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 72.5 × 19; at (12, 26); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 72.5 × 19; at (12, 8); color #2094fa at 50%
+=== 10
+- component; 191 × 81.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 10 × 81.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 10 × 81.5; at (191, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 191 × 11.5; at (0, 81.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 191 × 11.5; at (0, 0); fill #04de71 at 30%
+  - Progress Bar Track: rectangle; 171 × 12; at (10, 54); capsule; stroke #2094fa at 50% 0.5
+  - Progress Bar: rectangle; 114 × 12; at (10, 54); capsule; stroke #2094fa at 50% 0.5
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 171 × 20; at (10, 30); color #2094fa at 50%
+  - text "Headline"; SF Compact Rounded Semibold 17/19.5; 171 × 20; at (10, 10.5); color #2094fa at 50%
+=== 11
+- component; 194 × 80.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 9.5 × 80.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 9.5 × 80.5; at (194, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 194 × 11; at (0, 80.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 194 × 11; at (0, 0); fill #04de71 at 30%
+  - Progress Bar Track: rectangle; 175 × 12; at (9.5, 54); capsule; stroke #2094fa at 50% 0.5
+  - Progress Bar: rectangle; 117 × 12; at (9.5, 54); capsule; stroke #2094fa at 50% 0.5
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 175 × 20; at (9.5, 30); color #2094fa at 50%
+  - text "Headline"; SF Compact Rounded Semibold 17/19.5; 175 × 20; at (9.5, 10.5); color #2094fa at 50%
+=== 12
+- component; 173 × 76.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7.5 × 76.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7.5 × 76.5; at (173, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 173 × 9; at (0, 76.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 173 × 9; at (0, 0); fill #04de71 at 30%
+  - Progress Bar Track: rectangle; 158 × 12; at (7.5, 51.5); capsule; stroke #2094fa at 50% 0.5
+  - Progress Bar: rectangle; 106 × 12; at (7.5, 51.5); capsule; stroke #2094fa at 50% 0.5
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 158 × 20; at (7.5, 28); color #2094fa at 50%
+  - text "Headline"; SF Compact Rounded Semibold 17/19.5; 158 × 20; at (7.5, 8.5); color #2094fa at 50%
+=== 13
+- component; 176 × 72.5; radius 12.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7 × 72.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7 × 72.5; at (176, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 176 × 8.5; at (0, 72.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 176 × 8.5; at (0, 0); fill #04de71 at 30%
+  - Progress Bar Track: rectangle; 162 × 11; at (7, 47.5); capsule; stroke #2094fa at 50% 0.5
+  - Progress Bar: rectangle; 92 × 11; at (7, 47.5); capsule; stroke #2094fa at 50% 0.5
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 162 × 19; at (7, 26.5); color #2094fa at 50%
+  - text "Headline"; SF Compact Rounded Semibold 16/18.5; 162 × 19; at (7, 8); color #2094fa at 50%
+=== 14
+- component; 152 × 69.5; radius 12.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7 × 69.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7 × 69.5; at (152, 0); rotated -180°; fill #04de71 at 30%
+  - Progress Bar Track: rectangle; 138 × 11; at (7, 47.5); capsule; stroke #2094fa at 50% 0.5
+  - Progress Bar: rectangle; 92 × 11; at (7, 47.5); capsule; stroke #2094fa at 50% 0.5
+  - Margin - Bottom: rectangle; 152 × 7; at (0, 69.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 152 × 7; at (0, 0); fill #04de71 at 30%
+  - text "Body"; SF Compact Rounded Medium 16/18; 138 × 18; at (7, 25); color #2094fa at 50%
+  - text "Headline"; SF Compact Rounded Semibold 16/18.5; 138 × 19; at (7, 6.5); color #2094fa at 50%
+=== 15
+- component; 191 × 81.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 10 × 81.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 10 × 81.5; at (191, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 191 × 11.5; at (0, 81.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 191 × 11.5; at (0, 0); fill #04de71 at 30%
+  - Bar: rectangle; 5 × 55; at (10, 13.5); capsule; stroke #2094fa at 50% 0.5
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 161 × 20; at (20, 49.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 161 × 20; at (20, 30); color #2094fa at 50%
+  - text "Headline"; SF Compact Rounded Semibold 17/19.5; 161 × 20; at (20, 10.5); color #2094fa at 50%
+=== 16
+- component; 194 × 80.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 9.5 × 80.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 9.5 × 80.5; at (194, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 194 × 11; at (0, 80.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 194 × 11; at (0, 0); fill #04de71 at 30%
+  - Bar: rectangle; 5 × 55; at (9.5, 13); capsule; stroke #2094fa at 50% 0.5
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 165 × 20; at (19.5, 49.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 165 × 20; at (19.5, 30); color #2094fa at 50%
+  - text "Headline"; SF Compact Rounded Semibold 17/19.5; 165 × 20; at (19.5, 10.5); color #2094fa at 50%
+=== 17
+- component; 173 × 76.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7.5 × 76.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7.5 × 76.5; at (173, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 173 × 9; at (0, 76.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 173 × 9; at (0, 0); fill #04de71 at 30%
+  - Bar: rectangle; 5 × 55; at (7.5, 11); capsule; stroke #2094fa at 50% 0.5
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 147.5 × 20; at (18, 47.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 147.5 × 20; at (18, 28); color #2094fa at 50%
+  - text "Headline"; SF Compact Rounded Semibold 17/19.5; 147.5 × 20; at (18, 8.5); color #2094fa at 50%
+=== 18
+- component; 176 × 72.5; radius 12.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7 × 72.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7 × 72.5; at (176, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 176 × 8.5; at (0, 72.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 176 × 8.5; at (0, 0); fill #04de71 at 30%
+  - Bar: rectangle; 5 × 55; at (7, 9); capsule; stroke #2094fa at 50% 0.5
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 152 × 19; at (17, 45); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 152 × 19; at (17, 26.5); color #2094fa at 50%
+  - text "Headline"; SF Compact Rounded Semibold 16/18.5; 152 × 19; at (17, 8); color #2094fa at 50%
+=== 19
+- component; 152 × 69.5; radius 12.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7 × 69.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7 × 69.5; at (152, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 152 × 7; at (0, 69.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 152 × 7; at (0, 0); fill #04de71 at 30%
+  - Bar: rectangle; 5 × 51.5; at (7, 9); capsule; stroke #2094fa at 50% 0.5
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 128 × 19; at (17, 43.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18; 128 × 18; at (17, 25); color #2094fa at 50%
+  - text "Headline"; SF Compact Rounded Semibold 16/18.5; 128 × 19; at (17, 6.5); color #2094fa at 50%
+=== 20
+- component; 191 × 81.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 10 × 81.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 10 × 81.5; at (191, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 191 × 11.5; at (0, 81.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 191 × 11.5; at (0, 0); fill #04de71 at 30%
+  - Ellipse: ellipse; 52 × 52; at (10, 14.5); radius 4; stroke #ff3b30 at 50% 0.5
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 18; centered; 52 × 52; at (10, 14.5); color #ff3b30 at 50%
+  - Gutter: rectangle; 10 × 81.5; at (72, 0); rotated -180°; fill #04de71 at 30%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 109 × 20; at (72, 49.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 109 × 20; at (72, 30); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 109 × 20; at (72, 10.5); color #2094fa at 50%
+=== 21
+- component; 194 × 80.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 9.5 × 80.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 9.5 × 80.5; at (194, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 194 × 11; at (0, 80.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 194 × 11; at (0, 0); fill #04de71 at 30%
+  - Gutter: rectangle; 9.5 × 80.5; at (69, 0); rotated -180°; fill #04de71 at 30%
+  - Ellipse: ellipse; 50 × 50; at (9.5, 15); radius 4; stroke #ff3b30 at 50% 0.5
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 17; centered; 50 × 50; at (9.5, 15); color #ff3b30 at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 115.5 × 20; at (69, 49.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 115.5 × 20; at (69, 30); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 115.5 × 20; at (69, 10.5); color #2094fa at 50%
+=== 22
+- component; 173 × 76.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7.5 × 76.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7.5 × 76.5; at (173, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 173 × 9; at (0, 76.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 173 × 9; at (0, 0); fill #04de71 at 30%
+  - Ellipse: ellipse; 48 × 48; at (7.5, 14); radius 4; stroke #ff3b30 at 50% 0.5
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 17; centered; 48 × 48; at (7.5, 14); color #ff3b30 at 50%
+  - Gutter: rectangle; 7.5 × 76.5; at (63, 0); rotated -180°; fill #04de71 at 30%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 102.5 × 20; at (63, 47.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 102.5 × 20; at (63, 28); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 102.5 × 20; at (63, 8.5); color #2094fa at 50%
+=== 23
+- component; 176 × 72.5; radius 12.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7 × 72.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7 × 72.5; at (176, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 176 × 8.5; at (0, 72.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 176 × 8.5; at (0, 0); fill #04de71 at 30%
+  - Gutter: rectangle; 7 × 72.5; at (59, 0); rotated -180°; fill #04de71 at 30%
+  - Ellipse: ellipse; 45 × 45; at (7, 13.5); radius 4; stroke #ff3b30 at 50% 0.5
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 16; centered; 45 × 45; at (7, 13.5); color #ff3b30 at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 110 × 19; at (59, 45); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 110 × 19; at (59, 26.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 110 × 19; at (59, 8); color #2094fa at 50%
+=== 24
+- component; 152 × 69.5; radius 12.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7 × 69.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7 × 69.5; at (152, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 152 × 7; at (0, 69.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 152 × 7; at (0, 0); fill #04de71 at 30%
+  - Gutter: rectangle; 7 × 69.5; at (55, 0); rotated -180°; fill #04de71 at 30%
+  - Ellipse: ellipse; 41 × 41; at (7, 14); radius 4; stroke #ff3b30 at 50% 0.5
+  - text SF Symbol square.dashed; SF Pro Rounded Regular 16; centered; 41 × 41; at (7, 14); color #ff3b30 at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 90 × 19; at (55, 43.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 90 × 19; at (55, 25); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 90 × 19; at (55, 6.5); color #2094fa at 50%
+=== 25
+- component; 191 × 81.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 10 × 81.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 10 × 81.5; at (191, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 191 × 11.5; at (0, 81.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 191 × 11.5; at (0, 0); fill #04de71 at 30%
+  - Gutter: rectangle; 10 × 81.5; at (90.5, 0); fill #04de71 at 30%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 80.5 × 20; at (100.5, 49.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 80.5 × 20; at (100.5, 30); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 80.5 × 20; at (100.5, 10.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 80.5 × 20; at (10, 49.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 80.5 × 20; at (10, 30); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 80.5 × 20; at (10, 10.5); color #2094fa at 50%
+=== 26
+- component; 194 × 80.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 9.5 × 80.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 9.5 × 80.5; at (194, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 194 × 11; at (0, 80.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 194 × 11; at (0, 0); fill #04de71 at 30%
+  - Gutter: rectangle; 9.5 × 80.5; at (92.25, 0); fill #04de71 at 30%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 82.75 × 20; at (101.75, 49.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 82.75 × 20; at (101.75, 30); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 82.75 × 20; at (101.75, 10.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 82.75 × 20; at (9.5, 49.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 82.75 × 20; at (9.5, 30); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 82.75 × 20; at (9.5, 10.5); color #2094fa at 50%
+=== 27
+- component; 173 × 76.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7.5 × 76.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7.5 × 76.5; at (173, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 173 × 9; at (0, 76.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 173 × 9; at (0, 0); fill #04de71 at 30%
+  - Gutter: rectangle; 7.5 × 76.5; at (83, 0); fill #04de71 at 30%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 75.5 × 20; at (90.5, 47.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 75.5 × 20; at (90.5, 28); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 75.5 × 20; at (90.5, 8.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 75.5 × 20; at (7.5, 47.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 75.5 × 20; at (7.5, 28); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 75.5 × 20; at (7.5, 8.5); color #2094fa at 50%
+=== 28
+- component; 176 × 72.5; radius 12.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7 × 72.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7 × 72.5; at (176, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 176 × 8.5; at (0, 72.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 176 × 8.5; at (0, 0); fill #04de71 at 30%
+  - Gutter: rectangle; 7 × 72.5; at (84.5, 0); fill #04de71 at 30%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 77.5 × 19; at (91.5, 45); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 77.5 × 19; at (91.5, 26.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 77.5 × 19; at (91.5, 8); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 77.5 × 19; at (7, 45); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 77.5 × 19; at (7, 26.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 77.5 × 19; at (7, 8); color #2094fa at 50%
+=== 29
+- component; 152 × 69.5; radius 12.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7 × 69.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7 × 69.5; at (152, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 152 × 7; at (0, 69.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 152 × 7; at (0, 0); fill #04de71 at 30%
+  - Gutter: rectangle; 7 × 69.5; at (72.5, 0); fill #04de71 at 30%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 65.5 × 19; at (79.5, 43.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18; 65.5 × 18; at (79.5, 25); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18; 65.5 × 18; at (79.5, 6.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 65.5 × 19; at (7, 43.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18; 65.5 × 18; at (7, 25); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18; 65.5 × 18; at (7, 6.5); color #2094fa at 50%
+=== 30
+- component; 191 × 81.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 10 × 81.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 10 × 81.5; at (191, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 191 × 11.5; at (0, 81.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 191 × 11.5; at (0, 0); fill #04de71 at 30%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 171 × 20; at (10, 49.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 171 × 20; at (10, 30); color #2094fa at 50%
+  - text "Headline"; SF Compact Rounded Semibold 17/19.5; 171 × 20; at (10, 10.5); color #2094fa at 50%
+=== 31
+- component; 194 × 80.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 9.5 × 80.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 9.5 × 80.5; at (194, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 194 × 11; at (0, 80.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 194 × 11; at (0, 0); fill #04de71 at 30%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 175 × 20; at (9.5, 49.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 175 × 20; at (9.5, 30); color #2094fa at 50%
+  - text "Headline"; SF Compact Rounded Semibold 17/19.5; 175 × 20; at (9.5, 10.5); color #2094fa at 50%
+=== 32
+- component; 173 × 76.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7.5 × 76.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7.5 × 76.5; at (173, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 173 × 9; at (0, 76.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 173 × 9; at (0, 0); fill #04de71 at 30%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 158 × 20; at (7.5, 47.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 158 × 20; at (7.5, 28); color #2094fa at 50%
+  - text "Headline"; SF Compact Rounded Semibold 17/19.5; 158 × 20; at (7.5, 8.5); color #2094fa at 50%
+=== 33
+- component; 176 × 72.5; radius 12.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7 × 72.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7 × 72.5; at (176, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 176 × 8.5; at (0, 72.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 176 × 8.5; at (0, 0); fill #04de71 at 30%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 162 × 19; at (7, 45); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 162 × 19; at (7, 26.5); color #2094fa at 50%
+  - text "Headline"; SF Compact Rounded Semibold 16/18.5; 162 × 19; at (7, 8); color #2094fa at 50%
+=== 34
+- component; 152 × 69.5; radius 12.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7 × 69.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7 × 69.5; at (152, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 152 × 7; at (0, 69.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 152 × 7; at (0, 0); fill #04de71 at 30%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 138 × 19; at (7, 43.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18; 138 × 18; at (7, 25); color #2094fa at 50%
+  - text "Headline"; SF Compact Rounded Semibold 16/18.5; 138 × 19; at (7, 6.5); color #2094fa at 50%
+=== 35
+- component; 191 × 81.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 10 × 81.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 10 × 81.5; at (191, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 191 × 11.5; at (0, 81.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 191 × 11.5; at (0, 0); fill #04de71 at 30%
+  - text "Title"; SF Compact Rounded Regular 41.5; 171 × 50; at (10, 25); color #2094fa at 50%
+  - text "Headline"; SF Compact Rounded Semibold 17/19.5; 171 × 20; at (10, 10.5); color #2094fa at 50%
+=== 36
+- component; 194 × 80.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 9.5 × 80.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 9.5 × 80.5; at (194, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 194 × 11; at (0, 80.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 194 × 11; at (0, 0); fill #04de71 at 30%
+  - text "Title"; SF Compact Rounded Regular 41.5; 175 × 50; at (9.5, 25); color #2094fa at 50%
+  - text "Headline"; SF Compact Rounded Semibold 17/19.5; 175 × 20; at (9.5, 10.5); color #2094fa at 50%
+=== 37
+- component; 173 × 76.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7.5 × 76.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7.5 × 76.5; at (173, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 173 × 9; at (0, 76.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 173 × 9; at (0, 0); fill #04de71 at 30%
+  - text "Title"; SF Compact Rounded Regular 41.5; 158 × 50; at (7.5, 23.5); color #2094fa at 50%
+  - text "Headline"; SF Compact Rounded Semibold 17/19.5; 158 × 20; at (7.5, 8.5); color #2094fa at 50%
+=== 38
+- component; 176 × 72.5; radius 12.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7 × 72.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7 × 72.5; at (176, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 176 × 8.5; at (0, 72.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 176 × 8.5; at (0, 0); fill #04de71 at 30%
+  - text "Title"; SF Compact Rounded Regular 40.5; 162 × 48; at (7, 22); color #2094fa at 50%
+  - text "Headline"; SF Compact Rounded Semibold 16/18.5; 162 × 19; at (7, 8); color #2094fa at 50%
+=== 39
+- component; 152 × 69.5; radius 12.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7 × 69.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7 × 69.5; at (152, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 152 × 7; at (0, 69.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 152 × 7; at (0, 0); fill #04de71 at 30%
+  - text "Title"; SF Compact Rounded Regular 38; 138 × 45; at (7, 22); color #2094fa at 50%
+  - text "Headline"; SF Compact Rounded Semibold 16/18.5; 138 × 19; at (7, 6.5); color #2094fa at 50%
+=== 40
+- component; 191 × 81.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 10 × 81.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 10 × 81.5; at (191, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 191 × 11.5; at (0, 81.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 191 × 11.5; at (0, 0); fill #04de71 at 30%
+  - Gutter: rectangle; 10 × 51.5; at (132.5, 30); fill #04de71 at 30%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 38.5 × 20; at (142.5, 52.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 38.5 × 20; at (142.5, 34.5); color #2094fa at 50%
+  - text "Title"; SF Compact Rounded Regular 41.5; 122.5 × 52.5; at (10, 29); color #2094fa at 50%
+  - text "Headline"; SF Compact Rounded Semibold 17/19.5; 171 × 20; at (10, 10); color #2094fa at 50%
+=== 41
+- component; 194 × 80.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 9.5 × 80.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 9.5 × 80.5; at (194, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 194 × 11; at (0, 80.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 194 × 11; at (0, 0); fill #04de71 at 30%
+  - Gutter: rectangle; 9.5 × 51.5; at (136.5, 29); fill #04de71 at 30%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 38.5 × 20; at (146, 52); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 38.5 × 20; at (146, 34); color #2094fa at 50%
+  - text "Title"; SF Compact Rounded Regular 41.5; 127 × 52; at (9.5, 28.5); color #2094fa at 50%
+  - text "Headline"; SF Compact Rounded Semibold 17/19.5; 175 × 20; at (9.5, 9.5); color #2094fa at 50%
+=== 42
+- component; 173 × 76.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7.5 × 76.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7.5 × 76.5; at (173, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 173 × 9; at (0, 76.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 173 × 9; at (0, 0); fill #04de71 at 30%
+  - Gutter: rectangle; 7.5 × 49.5; at (119.5, 27); fill #04de71 at 30%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 38.5 × 20; at (127, 49.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 17/19.5; 38.5 × 20; at (127, 31.5); color #2094fa at 50%
+  - text "Title"; SF Compact Rounded Regular 41.5; 112 × 50; at (7.5, 26.5); color #2094fa at 50%
+  - text "Headline"; SF Compact Rounded Semibold 17/19.5; 158 × 20; at (7.5, 7.5); color #2094fa at 50%
+=== 43
+- component; 176 × 72.5; radius 12.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7 × 72.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7 × 72.5; at (176, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 176 × 8.5; at (0, 72.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 176 × 8.5; at (0, 0); fill #04de71 at 30%
+  - Gutter: rectangle; 7 × 47.5; at (125.5, 25); fill #04de71 at 30%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 36.5 × 19; at (132.5, 47.5); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 36.5 × 19; at (132.5, 30.5); color #2094fa at 50%
+  - text "Title"; SF Compact Rounded Regular 40.5; 118.5 × 47; at (7, 25.5); color #2094fa at 50%
+  - text "Headline"; SF Compact Rounded Semibold 16/18.5; 162 × 19; at (7, 6.5); color #2094fa at 50%
+=== 44
+- component; 152 × 69.5; radius 12.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7 × 69.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7 × 69.5; at (152, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 152 × 7; at (0, 69.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 152 × 7; at (0, 0); fill #04de71 at 30%
+  - Gutter: rectangle; 7 × 44.5; at (101.5, 25); fill #04de71 at 30%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 36.5 × 19; at (108.5, 45); color #2094fa at 50%
+  - text "Body"; SF Compact Rounded Medium 16/18.5; 36.5 × 19; at (108.5, 28); color #2094fa at 50%
+  - text "Title"; SF Compact Rounded Regular 38; 94.5 × 45; at (7, 24.5); color #2094fa at 50%
+  - text "Headline"; SF Compact Rounded Semibold 16/18.5; 138 × 19; at (7, 6); color #2094fa at 50%
+=== 45
+- component; 191 × 81.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 10 × 81.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 10 × 81.5; at (191, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 191 × 11.5; at (0, 81.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 191 × 11.5; at (0, 0); fill #04de71 at 30%
+  - Gauge 3: ellipse; 52 × 52; at (129, 15); radius 4; stroke #ff3b30 at 50% 0.5
+  - Gauge 2: ellipse; 52 × 52; at (69.5, 15); radius 4; stroke #ff3b30 at 50% 0.5
+  - Gauge 1: ellipse; 52 × 52; at (10, 15); radius 4; stroke #ff3b30 at 50% 0.5
+=== 46
+- component; 194 × 80.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 9.5 × 80.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 9.5 × 80.5; at (194, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 194 × 11; at (0, 80.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 194 × 11; at (0, 0); fill #04de71 at 30%
+  - Gauge 3: ellipse; 50 × 50; at (134.5, 15); radius 4; stroke #ff3b30 at 50% 0.5
+  - Gauge 2: ellipse; 50 × 50; at (72, 15); radius 4; stroke #ff3b30 at 50% 0.5
+  - Gauge 1: ellipse; 50 × 50; at (9.5, 15); radius 4; stroke #ff3b30 at 50% 0.5
+=== 47
+- component; 173 × 76.5; radius 14.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7.5 × 76.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7.5 × 76.5; at (173, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 173 × 9; at (0, 76.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 173 × 9; at (0, 0); fill #04de71 at 30%
+  - Gauge 3: ellipse; 48 × 48; at (117.5, 14); radius 4; stroke #ff3b30 at 50% 0.5
+  - Gauge 2: ellipse; 48 × 48; at (62.5, 14); radius 4; stroke #ff3b30 at 50% 0.5
+  - Gauge 1: ellipse; 48 × 48; at (7.5, 14); radius 4; stroke #ff3b30 at 50% 0.5
+=== 48
+- component; 176 × 72.5; radius 12.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7 × 72.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7 × 72.5; at (176, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 176 × 8.5; at (0, 72.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 176 × 8.5; at (0, 0); fill #04de71 at 30%
+  - Gauge 3: ellipse; 45 × 45; at (124, 14); radius 4; stroke #ff3b30 at 50% 0.5
+  - Gauge 2: ellipse; 45 × 45; at (65.5, 14); radius 4; stroke #ff3b30 at 50% 0.5
+  - Gauge 1: ellipse; 45 × 45; at (7, 14); radius 4; stroke #ff3b30 at 50% 0.5
+=== 49
+- component; 152 × 69.5; radius 12.5; stroke #ff9500 0.5
+  - Margin - Left: rectangle; 7 × 69.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7 × 69.5; at (152, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 152 × 7; at (0, 69.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 152 × 7; at (0, 0); fill #04de71 at 30%
+  - Gauge 3: ellipse; 41 × 41; at (104, 14); radius 4; stroke #ff3b30 at 50% 0.5
+  - Gauge 2: ellipse; 41 × 41; at (55.5, 14); radius 4; stroke #ff3b30 at 50% 0.5
+  - Gauge 1: ellipse; 41 × 41; at (7, 14); radius 4; stroke #ff3b30 at 50% 0.5
+=== 50
+- component; 191 × 81.5; radius 14.5; stroke #000000 0.5
+  - Margin - Left: rectangle; 10 × 81.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 10 × 81.5; at (191, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 191 × 11.5; at (0, 81.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 191 × 11.5; at (0, 0); fill #04de71 at 30%
+  - Chart: frame; 156.5 × 50; at (17, 24)
+    - text "Cap"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 19 × 14; at (137.5, 36); color #2094fa at 50%
+    - text "Cap"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 19 × 14; at (137.5, 0.5); color #2094fa at 50%
+    - Line: rectangle; 0.5 × 46.5; at (129.5, 0); fill #ff3b30 at 30%
+    - text "Cap"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 19 × 14; at (103, 36); color #2094fa at 50%
+    - text "Cap"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 19 × 14; at (103, 0.5); color #2094fa at 50%
+    - Line: rectangle; 0.5 × 46.5; at (95, 0); fill #ff3b30 at 30%
+    - text "Cap"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 19 × 14; at (68.5, 36); color #2094fa at 50%
+    - text "Cap"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 19 × 14; at (68.5, 0.5); color #2094fa at 50%
+    - Line: rectangle; 0.5 × 46.5; at (60.5, 0); fill #ff3b30 at 30%
+    - text "Cap"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 19 × 14; at (34, 36); color #2094fa at 50%
+    - text "Cap"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 19 × 14; at (34, 0.5); color #2094fa at 50%
+    - Line: rectangle; 0.5 × 46.5; at (26.5, 0); fill #ff3b30 at 30%
+    - text "Cap"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 19 × 14; at (0, 36); color #2094fa at 50%
+    - text "Cap"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 19 × 14; at (0, 0.5); color #2094fa at 50%
+  - text "Callout"; SF Compact Rounded Medium 14/15.5; 44 × 16; at (11, 8.5); color #2094fa at 50%
+=== 51
+- component; 194 × 80.5; radius 14.5; stroke #000000 0.5
+  - Margin - Left: rectangle; 8 × 80.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 8 × 80.5; at (194, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 194 × 8; at (0, 80.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 194 × 8; at (0, 0); fill #04de71 at 30%
+  - Chart: frame; 162 × 56; at (16, 20)
+    - text "Cap"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 19 × 14; at (143, 42); color #2094fa at 50%
+    - text "Cap"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 19 × 14; at (143, 0); color #2094fa at 50%
+    - Line: rectangle; 0.5 × 52.5; at (134.5, 0.5); fill #ff3b30 at 30%
+    - text "Cap"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 19 × 14; at (107, 42); color #2094fa at 50%
+    - text "Cap"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 19 × 14; at (107, 0); color #2094fa at 50%
+    - Line: rectangle; 0.5 × 52.5; at (98.5, 0.5); fill #ff3b30 at 30%
+    - text "Cap"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 19 × 14; at (72, 42); color #2094fa at 50%
+    - text "Cap"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 19 × 14; at (72, 0); color #2094fa at 50%
+    - Line: rectangle; 0.5 × 52.5; at (62.5, 0.5); fill #ff3b30 at 30%
+    - text "Cap"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 19 × 14; at (35, 42); color #2094fa at 50%
+    - text "Cap"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 19 × 14; at (35, 0); color #2094fa at 50%
+    - Line: rectangle; 0.5 × 52.5; at (27, 0.5); fill #ff3b30 at 30%
+    - text "Cap"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 19 × 14; at (0, 42); color #2094fa at 50%
+    - text "Cap"; SF Compact Rounded Medium 10.5/13.5; centered; uppercase; 19 × 14; at (0, 0); color #2094fa at 50%
+  - text "Callout"; SF Compact Rounded Medium 14/15.5; 44 × 16; at (8, 5); color #2094fa at 50%
+=== 52
+- component; 173 × 76.5; radius 14.5; stroke #000000 0.5
+  - Margin - Left: rectangle; 7.5 × 76.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7.5 × 76.5; at (173, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 173 × 7.5; at (0, 76.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 173 × 7.5; at (0, 0); fill #04de71 at 30%
+  - Chart: frame; 145 × 52; at (14, 20)
+    - text "Cap"; SF Compact Rounded Medium 10/13; centered; uppercase; 18 × 13; at (127, 39); color #2094fa at 50%
+    - text "Cap"; SF Compact Rounded Medium 10/13; centered; uppercase; 18 × 13; at (127, 0); color #2094fa at 50%
+    - Line: rectangle; 0.5 × 49.5; at (120, 0); fill #ff3b30 at 30%
+    - text "Cap"; SF Compact Rounded Medium 10/13; centered; uppercase; 18 × 13; at (95, 39); color #2094fa at 50%
+    - text "Cap"; SF Compact Rounded Medium 10/13; centered; uppercase; 18 × 13; at (95, 0); color #2094fa at 50%
+    - Line: rectangle; 0.5 × 49.5; at (88, 0); fill #ff3b30 at 30%
+    - text "Cap"; SF Compact Rounded Medium 10/13; centered; uppercase; 18 × 13; at (64, 39); color #2094fa at 50%
+    - text "Cap"; SF Compact Rounded Medium 10/13; centered; uppercase; 18 × 13; at (64, 0); color #2094fa at 50%
+    - Line: rectangle; 0.5 × 49.5; at (56, 0); fill #ff3b30 at 30%
+    - text "Cap"; SF Compact Rounded Medium 10/13; centered; uppercase; 18 × 13; at (32, 39); color #2094fa at 50%
+    - text "Cap"; SF Compact Rounded Medium 10/13; centered; uppercase; 18 × 13; at (32, 0); color #2094fa at 50%
+    - Line: rectangle; 0.5 × 49.5; at (24.5, 0); fill #ff3b30 at 30%
+    - text "Cap"; SF Compact Rounded Medium 10/13; centered; uppercase; 18 × 13; at (0, 39); color #2094fa at 50%
+    - text "Cap"; SF Compact Rounded Medium 10/13; centered; uppercase; 18 × 13; at (0, 0); color #2094fa at 50%
+  - text "Callout"; SF Compact Rounded Medium 14/15.5; 44 × 16; at (7.5, 4.5); color #2094fa at 50%
+=== 53
+- component; 176 × 72.5; radius 12.5; stroke #000000 0.5
+  - Margin - Left: rectangle; 7 × 72.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7 × 72.5; at (176, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 176 × 7; at (0, 72.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 176 × 7; at (0, 0); fill #04de71 at 30%
+  - Chart: frame; 149 × 51; at (14, 18)
+    - text "Cap"; SF Compact Rounded Medium 9.5/12.5; centered; uppercase; 18 × 13; at (131, 38); color #2094fa at 50%
+    - text "Cap"; SF Compact Rounded Medium 9.5/12.5; centered; uppercase; 18 × 13; at (131, 0); color #2094fa at 50%
+    - Line: rectangle; 0.5 × 47.5; at (122.5, 0.5); fill #ff3b30 at 30%
+    - text "Cap"; SF Compact Rounded Medium 9.5/12.5; centered; uppercase; 18 × 13; at (98, 38); color #2094fa at 50%
+    - text "Cap"; SF Compact Rounded Medium 9.5/12.5; centered; uppercase; 18 × 13; at (98, 0); color #2094fa at 50%
+    - Line: rectangle; 0.5 × 47.5; at (90, 0.5); fill #ff3b30 at 30%
+    - text "Cap"; SF Compact Rounded Medium 9.5/12.5; centered; uppercase; 18 × 13; at (65, 38); color #2094fa at 50%
+    - text "Cap"; SF Compact Rounded Medium 9.5/12.5; centered; uppercase; 18 × 13; at (65, 0); color #2094fa at 50%
+    - Line: rectangle; 0.5 × 47.5; at (57.5, 0.5); fill #ff3b30 at 30%
+    - text "Cap"; SF Compact Rounded Medium 9.5/12.5; centered; uppercase; 18 × 13; at (33, 38); color #2094fa at 50%
+    - text "Cap"; SF Compact Rounded Medium 9.5/12.5; centered; uppercase; 18 × 13; at (33, 0); color #2094fa at 50%
+    - Line: rectangle; 0.5 × 47.5; at (25, 0.5); fill #ff3b30 at 30%
+    - text "Cap"; SF Compact Rounded Medium 9.5/12.5; centered; uppercase; 18 × 13; at (0, 38); color #2094fa at 50%
+    - text "Cap"; SF Compact Rounded Medium 9.5/12.5; centered; uppercase; 18 × 13; at (0, 0); color #2094fa at 50%
+  - text "Callout"; SF Compact Rounded Medium 13/14.5; 41 × 15; at (7, 4); color #2094fa at 50%
+=== 54
+- component; 152 × 69.5; radius 12.5; stroke #000000 0.5
+  - Margin - Left: rectangle; 7 × 69.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 7 × 69.5; at (152, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 152 × 7; at (0, 69.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 152 × 7; at (0, 0); fill #04de71 at 30%
+  - Chart: frame; 127 × 47; at (12, 18)
+    - text "Cap"; SF Compact Rounded Medium 8.5/11.5; centered; uppercase; 16 × 12; at (111, 0); color #2094fa at 50%
+    - text "Cap"; SF Compact Rounded Medium 8.5/11.5; centered; uppercase; 16 × 12; at (111, 35); color #2094fa at 50%
+    - Line: rectangle; 0.5 × 44; at (106, 1); fill #ff3b30 at 30%
+    - text "Cap"; SF Compact Rounded Medium 8.5/11.5; centered; uppercase; 16 × 12; at (84, 0); color #2094fa at 50%
+    - text "Cap"; SF Compact Rounded Medium 8.5/11.5; centered; uppercase; 16 × 12; at (84, 35); color #2094fa at 50%
+    - Line: rectangle; 0.5 × 44; at (78, 1); fill #ff3b30 at 30%
+    - text "Cap"; SF Compact Rounded Medium 8.5/11.5; centered; uppercase; 16 × 12; at (56, 0); color #2094fa at 50%
+    - text "Cap"; SF Compact Rounded Medium 8.5/11.5; centered; uppercase; 16 × 12; at (56, 35); color #2094fa at 50%
+    - Line: rectangle; 0.5 × 44; at (50, 1); fill #ff3b30 at 30%
+    - text "Cap"; SF Compact Rounded Medium 8.5/11.5; centered; uppercase; 16 × 12; at (28, 0); color #2094fa at 50%
+    - text "Cap"; SF Compact Rounded Medium 8.5/11.5; centered; uppercase; 16 × 12; at (28, 35); color #2094fa at 50%
+    - Line: rectangle; 0.5 × 44; at (22, 1); fill #ff3b30 at 30%
+    - text "Cap"; SF Compact Rounded Medium 8.5/11.5; centered; uppercase; 16 × 12; at (0, 0); color #2094fa at 50%
+    - text "Cap"; SF Compact Rounded Medium 8.5/11.5; centered; uppercase; 16 × 12; at (0, 35); color #2094fa at 50%
+  - text "Callout"; SF Compact Rounded Medium 13/14.5; 41 × 15; at (7, 4); color #2094fa at 50%
+=== 55
+- component; 191 × 81.5; radius 14.5; stroke #ff9500 0.5
+  - Widget: frame; 46 × 46; at (133, 23.5)
+    - Rectangle: rectangle; 46 × 46; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 46 × 46; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - Widget: frame; 46 × 46; at (72.5, 23.5)
+    - Rectangle: rectangle; 46 × 46; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 46 × 46; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - Widget: frame; 46 × 46; at (12, 23.5)
+    - Rectangle: rectangle; 46 × 46; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 46 × 46; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - Margin - Left: rectangle; 12 × 81.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 12 × 81.5; at (191, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 191 × 12; at (0, 81.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 191 × 8; at (0, 0); fill #04de71 at 30%
+  - text "Caption 2"; SF Compact Rounded Medium 15/18; 64 × 18; at (12, 4.5); color #2094fa at 50%
+=== 56
+- component; 194 × 80.5; radius 14.5; stroke #ff9500 0.5
+  - Widget: frame; 45 × 45; at (137.5, 24)
+    - Rectangle: rectangle; 45 × 45; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 45 × 45; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - Widget: frame; 45 × 45; at (74.5, 24)
+    - Rectangle: rectangle; 45 × 45; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 45 × 45; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - Widget: frame; 45 × 45; at (11.5, 24)
+    - Rectangle: rectangle; 45 × 45; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 45 × 45; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - Margin - Left: rectangle; 11.5 × 80.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 11.5 × 80.5; at (194, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 194 × 11.5; at (0, 80.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 194 × 8; at (0, 0); fill #04de71 at 30%
+  - text "Caption 2"; SF Compact Rounded Medium 15/18; 64 × 18; at (11, 4); color #2094fa at 50%
+=== 57
+- component; 173 × 76.5; radius 14.5; stroke #ff9500 0.5
+  - Widget: frame; 42 × 42; at (119.5, 23)
+    - Rectangle: rectangle; 42 × 42; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 42 × 42; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - Widget: frame; 42 × 42; at (65.5, 23)
+    - Rectangle: rectangle; 42 × 42; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 42 × 42; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - Widget: frame; 42 × 42; at (11.5, 23)
+    - Rectangle: rectangle; 42 × 42; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 42 × 42; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - Margin - Left: rectangle; 11.5 × 76.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 11.5 × 76.5; at (173, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 173 × 11.5; at (0, 76.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 173 × 8; at (0, 0); fill #04de71 at 30%
+  - text "Caption 2"; SF Compact Rounded Medium 15/18; 64 × 18; at (11, 3); color #2094fa at 50%
+=== 58
+- component; 176 × 72.5; radius 12.5; stroke #ff9500 0.5
+  - Widget: frame; 41 × 41; at (125, 21.5)
+    - Rectangle: rectangle; 41 × 41; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 41 × 41; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - Widget: frame; 41 × 41; at (67.5, 21.5)
+    - Rectangle: rectangle; 41 × 41; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 41 × 41; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - Widget: frame; 41 × 41; at (10, 21.5)
+    - Rectangle: rectangle; 41 × 41; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 41 × 41; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - Margin - Left: rectangle; 10 × 72.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 10 × 72.5; at (176, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 176 × 10; at (0, 72.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 176 × 7; at (0, 0); fill #04de71 at 30%
+  - text "Caption 2"; SF Compact Rounded Medium 14/16; 60 × 16; at (10, 3); color #2094fa at 50%
+=== 59
+- component; 152 × 69.5; radius 12.5; stroke #ff9500 0.5
+  - Widget: frame; 37 × 37; at (105, 22.5)
+    - Rectangle: rectangle; 37 × 37; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 37 × 37; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - Widget: frame; 37 × 37; at (57.5, 22.5)
+    - Rectangle: rectangle; 37 × 37; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 37 × 37; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - Widget: frame; 37 × 37; at (10, 22.5)
+    - Rectangle: rectangle; 37 × 37; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+    - Ellipse: ellipse; 37 × 37; at (0, 0); radius 4; stroke #ff3b30 at 50% 0.5
+  - Margin - Left: rectangle; 10 × 69.5; at (0, 0); fill #04de71 at 30%
+  - Margin - Right: rectangle; 10 × 69.5; at (152, 0); rotated -180°; fill #04de71 at 30%
+  - Margin - Bottom: rectangle; 152 × 10; at (0, 69.5); fill #04de71 at 30%
+  - Margin - Top: rectangle; 152 × 7; at (0, 0); fill #04de71 at 30%
+  - text "Caption 2"; SF Compact Rounded Medium 14/16; 60 × 16; at (10, 2.5); color #2094fa at 50%

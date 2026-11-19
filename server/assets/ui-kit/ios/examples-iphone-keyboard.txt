@@ -1,0 +1,115 @@
+=== 0
+- component; 402 × 874
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 167 16 10 16; main center; cross center; radius 50; fill Backgrounds/Primary
+    - Content Area: frame; 370 × 697; fills height; fills width; column; gap 10; padding 10 0 10 0
+    - Scroll Edge Effect - Soft: instance of Scroll Edge Effect - Soft [Edge=Top]; 402 × 187; absolute at (0, 0)
+  - Frame: frame; 402 × 386; at (0, 488); column; gap 6; cross end; hugs height
+    - Accessories (48pt Toolbar): instance of Accessory Bar - iPhone/Toolbar [Type=Button Group]; 168 × 48
+    - Keyboard: instance of Keyboard [Type=Lower Case]; 402 × 332; fills width
+  - Toolbar - Top: instance of Toolbar - Top - iPhone [Style=Large Title]; with Title "Default", Show Subtitle off; 402 × 105; at (0, 62)
+  - Status bar: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 874; at (0, 0)
+=== 1
+- component; 402 × 874
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 167 16 10 16; main center; cross center; radius 50; fill Backgrounds/Primary
+    - Content Area: frame; 370 × 697; fills height; fills width; column; gap 10; padding 10 0 10 0
+    - Scroll Edge Effect - Soft: instance of Scroll Edge Effect - Soft [Edge=Top]; 402 × 187; absolute at (0, 0)
+  - Frame: frame; 402 × 390; at (0, 484); column; gap 10; cross end; hugs height
+    - Accessories (48pt Toolbar): instance of Accessory Bar - iPhone/Toolbar [Type=Button Group]; 168 × 48; shown while Show Accessories
+    - Keyboard: instance of Keyboard [Type=Upper Case]; 402 × 332; fills width
+  - Toolbar - Top: instance of Toolbar - Top - iPhone [Style=Large Title]; with Title "Numbers", Show Subtitle off; 402 × 105; at (0, 62)
+  - Status bar: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 874; at (0, 0)
+=== 2
+- component; 402 × 874
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 167 16 10 16; main center; cross center; radius 50; fill Backgrounds/Primary
+    - Content Area: frame; 370 × 697; fills height; fills width; column; gap 10; padding 10 0 10 0
+    - Scroll Edge Effect - Soft: instance of Scroll Edge Effect - Soft [Edge=Top]; 402 × 187; absolute at (0, 0)
+  - Frame: frame; 402 × 365; at (0, 509); column; gap 10; cross end; hugs height
+    - Accessories (48pt Toolbar): instance of Accessory Bar - iPhone/Toolbar [Type=Button Group]; 168 × 48; shown while Show Accessories
+    - Keyboard: instance of Keyboard [Type=Punctuation]; with Show suggestions off; 402 × 307; fills width
+  - Toolbar - Top: instance of Toolbar - Top - iPhone [Style=Large Title]; with Title "Numbers", Show Subtitle off; 402 × 105; at (0, 62)
+  - Status bar: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 874; at (0, 0)
+=== 3
+- component; 402 × 874
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 167 16 10 16; main center; cross center; radius 50; fill Backgrounds/Primary
+    - Content Area: frame; 370 × 697; fills height; fills width; column; gap 10; padding 10 0 10 0
+    - Scroll Edge Effect - Soft: instance of Scroll Edge Effect - Soft [Edge=Top]; 402 × 187; absolute at (0, 0)
+  - Frame: frame; 402 × 365; at (0, 509); column; gap 10; cross end; hugs height
+    - Accessories (48pt Toolbar): instance of Accessory Bar - iPhone/Toolbar [Type=Button Group]; 168 × 48; shown while Show Accessories
+    - Keyboard: instance of Keyboard [Type=Numeric]; with Show suggestions off; 402 × 307; fills width
+  - Toolbar - Top: instance of Toolbar - Top - iPhone [Style=Large Title]; with Title "Numbers", Show Subtitle off; 402 × 105; at (0, 62)
+  - Status bar: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 874; at (0, 0)
+=== 4
+- component; 402 × 874
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 167 16 10 16; main center; cross center; radius 50; fill Backgrounds/Primary
+    - Content Area: frame; 370 × 697; fills height; fills width; column; gap 10; padding 10 0 10 0
+    - Scroll Edge Effect - Soft: instance of Scroll Edge Effect - Soft [Edge=Top]; 402 × 187; absolute at (0, 0)
+  - Frame: frame; 402 × 388; at (0, 486); column; gap 6; hugs height
+    - Accessory Bar - Find: instance of Accessory Bar - iPhone/Find; 402 × 50; fills width
+    - Keyboard: instance of Keyboard [Type=Lower Case]; 402 × 332; fills width
+  - Toolbar - Top: instance of Toolbar - Top - iPhone [Style=Large Title]; with Title "Find", Show Subtitle off; 402 × 105; at (0, 62)
+  - Status bar: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 874; at (0, 0)
+=== 5
+- component; 402 × 874
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 167 16 10 16; main center; cross center; radius 50; fill Backgrounds/Primary
+    - Content Area: frame; 370 × 697; fills height; fills width; column; gap 10; padding 10 0 10 0
+    - Scroll Edge Effect - Soft: instance of Scroll Edge Effect - Soft [Edge=Top]; 402 × 187; absolute at (0, 0)
+  - Frame: frame; 402 × 437; at (0, 437); column; gap 6
+    - Find and Replace: instance of Accessory Bar - iPhone/Find and Replace; 402 × 101; fills width
+    - Keyboard: instance of Keyboard [Type=Lower Case]; 402 × 332; fills width
+  - Toolbar - Top: instance of Toolbar - Top - iPhone [Style=Large Title]; with Title "Find and Replace", Show Subtitle off; 402 × 105; at (0, 62)
+  - Status bar: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 874; at (0, 0)
+=== 6
+- component; 402 × 874
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 167 16 10 16; main center; cross center; radius 50; fill Backgrounds/Primary
+    - Content Area: frame; 370 × 697; fills height; fills width; column; gap 10; padding 10 0 10 0
+    - Scroll Edge Effect - Soft: instance of Scroll Edge Effect - Soft [Edge=Top]; 402 × 187; absolute at (0, 0)
+  - Keyboard: instance of Keyboard [Type=Email]; 402 × 332; at (0, 542)
+  - Toolbar - Top: instance of Toolbar - Top - iPhone [Style=Large Title]; with Title "Find and Replace", Show Subtitle off; 402 × 105; at (0, 62)
+  - Status bar: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 874; at (0, 0)
+=== 7
+- component; 402 × 874
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 167 16 10 16; main center; cross center; radius 50; fill Backgrounds/Primary
+    - Content Area: frame; 370 × 697; fills height; fills width; column; gap 10; padding 10 0 10 0
+    - Scroll Edge Effect - Soft: instance of Scroll Edge Effect - Soft [Edge=Top]; 402 × 187; absolute at (0, 0)
+  - Frame: frame; 402 × 399; at (0, 475); column; gap 6; hugs height
+    - Accessory Bar - Web Form: instance of Accessory Bar - iPhone/Web Form; 402 × 86
+    - Keyboard: instance of Keyboard [Type=Web]; 402 × 307; fills width
+  - Toolbar - Top: instance of Toolbar - Top - iPhone [Style=Large Title]; with Title "Find and Replace", Show Subtitle off; 402 × 105; at (0, 62)
+  - Status bar: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 874; at (0, 0)
+=== 8
+- component; 402 × 874
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 167 16 10 16; main center; cross center; radius 50; fill Backgrounds/Primary
+    - Content Area: frame; 370 × 697; fills height; fills width; column; gap 10; padding 10 0 10 0
+    - Scroll Edge Effect - Soft: instance of Scroll Edge Effect - Soft [Edge=Top]; 402 × 187; absolute at (0, 0)
+  - Frame: frame; 402 × 365; at (0, 509); column; gap 10; hugs height
+    - Accessory Bar - URL: instance of Accessory Bar - iPhone/URL; 402 × 48
+    - Keyboard: instance of Keyboard [Type=URL]; 402 × 307; fills width
+  - Toolbar - Top: instance of Toolbar - Top - iPhone [Style=Large Title]; with Title "Find and Replace", Show Subtitle off; 402 × 105; at (0, 62)
+  - Status bar: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 874; at (0, 0)
+=== 9
+- component; 402 × 874
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 167 16 10 16; main center; cross center; radius 50; fill Backgrounds/Primary
+    - Content Area: frame; 370 × 697; fills height; fills width; column; gap 10; padding 10 0 10 0
+    - Scroll Edge Effect - Soft: instance of Scroll Edge Effect - Soft [Edge=Top]; 402 × 187; absolute at (0, 0)
+  - Keyboard: instance of Keyboard [Type=Number Pad]; 402 × 308; at (0, 566)
+  - Toolbar - Top: instance of Toolbar - Top - iPhone [Style=Large Title]; with Title "Find and Replace", Show Subtitle off; 402 × 105; at (0, 62)
+  - Status bar: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 874; at (0, 0)
+=== 10
+- component; 402 × 874
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 167 16 10 16; main center; cross center; radius 50; fill Backgrounds/Primary
+    - Content Area: frame; 370 × 697; fills height; fills width; column; gap 10; padding 10 0 10 0
+    - Scroll Edge Effect - Soft: instance of Scroll Edge Effect - Soft [Edge=Top]; 402 × 187; absolute at (0, 0)
+  - Keyboard: instance of Keyboard [Type=Emoji]; 402 × 392; at (0, 482)
+  - Toolbar - Top: instance of Toolbar - Top - iPhone [Style=Large Title]; with Title "Emoji", Show Subtitle off; 402 × 105; at (0, 62)
+  - Status bar: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 874; at (0, 0)

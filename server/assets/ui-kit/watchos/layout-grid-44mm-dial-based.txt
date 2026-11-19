@@ -1,0 +1,19 @@
+=== 0
+- component; 184 × 224; radius 34.5; stroke #ff3b30 2; blend screen
+  - Copy Safe Area: vector shape; 163 × 199; at (10.5, 12.5); stroke #04de71 0.5
+  - Safe Area: rectangle; 184 × 224; at (0, 0); radius 34.5; stroke #04de71 3
+  - Crown Line: vector shape; 184 × 0; at (0, 51.5); stroke #ffffff 0.5; uses Screen Width; opacity 50%
+  - Center Line: vector shape; 184 × 0; at (0, 112); stroke #04de71 0.5; uses Screen Width
+  - Center Line: vector shape; 0 × 224; at (92, 0); stroke #04de71 0.5
+  - Dial: ellipse; 163 × 163; at (10.5, 30.5); stroke #04de71 0.5
+  - Corner Buttons: frame; 163 × 199; at (10.5, 12.5)
+    - Button: frame; 34 × 34; at (0, 0); stroke #04de71 0.5
+      - Circle: ellipse; 34 × 34; at (0, 0); stroke #04de71 0.5
+    - Button: frame; 34 × 34; at (129, 0); stroke #04de71 0.5
+      - Circle: ellipse; 34 × 34; at (0, 0); stroke #04de71 0.5
+    - Button: frame; 34 × 34; at (0, 165); stroke #04de71 0.5
+      - Circle: ellipse; 34 × 34; at (0, 0); stroke #04de71 0.5
+    - Button: frame; 34 × 34; at (129, 165); stroke #04de71 0.5
+      - Circle: ellipse; 34 × 34; at (0, 0); stroke #04de71 0.5
+  - Grid Line: vector shape; 163 × 0; at (10.5, 30); stroke #04de71 0.5
+  - Grid Line: vector shape; 163 × 0; at (10.5, 195); stroke #04de71 0.5

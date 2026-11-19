@@ -1,0 +1,58 @@
+=== 0
+- component; 370 × 377; column; padding 0 16 0 16; hugs height; fill Backgrounds – Grouped/Secondary; uses Margin
+  - Date: frame; 338 × 325; fills width; column; hugs height; stroke Separators/Non-opaque at 12% 0.5; shown while Show Date
+    - Header: frame; 338 × 40; fills width; row; space between; padding 13 6 3 8; cross center; hugs height
+      - Month and Year: frame; 97 × 24; row; gap 4; cross center; hugs width
+        - text "April 2026"; style Body/Emphasized; 84 × 22; color Labels/Primary
+        - text SF Symbol chevron.right; SF Pro Bold 13/18; 9 × 18; color Accents/Blue
+      - Arrows: frame; 58 × 24; row; gap 28; cross center; hugs content
+        - text SF Symbol chevron.left; SF Pro Medium 20; centered; 15 × 24; color Labels/Primary
+        - text SF Symbol chevron.right; SF Pro Medium 20; centered; 15 × 24; color Labels/Primary
+    - Frame: frame; 338 × 285; fills width; column; gap 4; padding 8 0 8 0; hugs height
+      - Date Header: frame; 338 × 20; fills width; row; space between; cross center
+        - text "SUN"; SF Pro Semibold 13/18; centered; uppercase; 38 × 18; color Labels/Tertiary at 30%
+        - text "MON"; SF Pro Semibold 13/18; centered; uppercase; 38 × 18; color Labels/Tertiary at 30%
+        - text "TUE"; SF Pro Semibold 13/18; centered; uppercase; 38 × 18; color Labels/Tertiary at 30%
+        - text "WED"; SF Pro Semibold 13/18; centered; uppercase; 38 × 18; color Labels/Tertiary at 30%
+        - text "THU"; SF Pro Semibold 13/18; centered; uppercase; 38 × 18; color Labels/Tertiary at 30%
+        - text "FRI"; SF Pro Semibold 13/18; centered; uppercase; 38 × 18; color Labels/Tertiary at 30%
+        - text "SAT"; SF Pro Semibold 13/18; centered; uppercase; 38 × 18; color Labels/Tertiary at 30%
+      - Calendar: frame; 338 × 245; fills width; column; gap 7; padding 3 0 0 0; hugs height
+        - Week 1: instance of _Week; 338 × 38; fills width
+        - Week 2: instance of _Week; 338 × 44; fills width
+        - Week 3: instance of _Week; 338 × 44; fills width
+        - Week 4: instance of _Week; 338 × 44; fills width
+        - Week 5: instance of _Week; 338 × 44; fills width
+  - Time: frame; 338 × 52; fills width; row; space between; cross center; stroke Separators/Non-opaque at 12% 1; shown while Show Time
+    - text "Time"; style Body/Regular; 39 × 22; color Labels/Primary; property Text
+    - Contents - Trailing: frame; 86 × 44; row; gap 8; main end; cross center; hugs width
+      - Date and time - Collapsed: instance of Date and time - Collapsed [State=Default]; with Show date off; 86 × 34
+=== 1
+- component; 370 × 377; column; padding 0 12 0 12; hugs height; radius 13
+  - Material: instance of Liquid Glass - Regular - Large; 370 × 377; absolute at (0, 0)
+  - Header: frame; 346 × 40; fills width; row; space between; padding 13 6 3 8; cross center; hugs height
+    - Month and Year: frame; 97 × 24; row; gap 4; cross center; hugs width
+      - text "April 2026"; style Body/Emphasized; 84 × 22; color Labels/Primary
+      - text SF Symbol chevron.right; SF Pro Bold 13/18; 9 × 18; color Accents/Blue
+    - Arrows: frame; 58 × 24; row; gap 28; cross center; hugs content
+      - text SF Symbol chevron.left; SF Pro Medium 20; centered; 15 × 24; color Labels/Primary
+      - text SF Symbol chevron.right; SF Pro Medium 20; centered; 15 × 24; color Labels/Primary
+  - Frame: frame; 346 × 285; fills width; column; gap 4; padding 8 0 8 0; hugs height
+    - Date Header: frame; 346 × 20; fills width; row; space between; padding 0 16 0 16; cross center
+      - text "SUN"; SF Pro Semibold 13/18; centered; uppercase; 38 × 18; color Labels/Tertiary at 30%
+      - text "MON"; SF Pro Semibold 13/18; centered; uppercase; 38 × 18; color Labels/Tertiary at 30%
+      - text "WED"; SF Pro Semibold 13/18; centered; uppercase; 38 × 18; color Labels/Tertiary at 30%
+      - text "THU"; SF Pro Semibold 13/18; centered; uppercase; 38 × 18; color Labels/Tertiary at 30%
+      - text "FRI"; SF Pro Semibold 13/18; centered; uppercase; 38 × 18; color Labels/Tertiary at 30%
+      - text "SAT"; SF Pro Semibold 13/18; centered; uppercase; 38 × 18; color Labels/Tertiary at 30%
+      - text "SUN"; SF Pro Semibold 13/18; centered; uppercase; 38 × 18; color Labels/Tertiary at 30%
+    - Calendar: frame; 346 × 245; fills width; column; gap 7; padding 3 0 0 0; hugs height
+      - Week 1: instance of _Week; 346 × 38; fills width
+      - Week 2: instance of _Week; 346 × 44; fills width
+      - Week 3: instance of _Week; 346 × 44; fills width
+      - Week 4: instance of _Week; 346 × 44; fills width
+      - Week 5: instance of _Week; 346 × 44; fills width
+  - Time: frame; 346 × 52; fills width; row; space between; cross center; stroke Separators/Non-opaque at 12% 1; shown while Show Time
+    - text "Time"; style Body/Regular; 136 × 22; color Labels/Primary; property Text
+    - Contents - Trailing: frame; 86 × 44; row; gap 8; main end; cross center; hugs width
+      - Date and time - Collapsed: instance of Date and time - Collapsed [State=Default]; with Show date off; 86 × 34

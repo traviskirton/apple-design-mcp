@@ -1,0 +1,7 @@
+=== 0
+- component; 300 × 300; radius 15; fill Window Background; shadow x 0 y 5 blur 20 #000000 at 30%
+  - Frame: frame; 300 × 65; at (0, 0); column; gap 4; padding 7 7 5 7; cross center; hugs height; stroke #3c3c43 at 12% 1
+    - Title Bar: frame; 286 × 18; fills width; row; space between; padding 4 5 4 5; cross center; hugs height
+      - Window Controls: instance of Window Controls/Utility [Active=True]; 44 × 10
+      - Title: instance of Window Titles/Utility Panel; 48 × 16; absolute at (119, 1)
+    - Tabs: instance of Utility Panel Tab Bar; 286 × 31; fills width

@@ -1,0 +1,9 @@
+=== 0
+- component; 160 × 160
+  - Dark: frame; 160 × 80; at (0, 80); fill #111111 (linear burn) + image at 20%
+    - Swatch: frame; 120 × 60; at (20, 0); radius 0 0 100 100; fill #808080 (saturation)
+    - Swatch: frame; 120 × 60; at (20, 0); radius 0 0 100 100; fill Accents - Vibrant/Red; blend linear dodge
+  - Light: frame; 160 × 80; at (0, 0); fill #dddddd + image at 20%
+    - Swatch: frame; 120 × 60; at (20, 20); radius 100 100 0 0; fill #808080 (saturation)
+    - Swatch: frame; 120 × 60; at (20, 20); radius 100 100 0 0; fill Accents - Vibrant/Red; blend linear burn
+  - text "Label"; style Footnote/Regular; 26 × 13; at (0, -30); color #000000; property Label

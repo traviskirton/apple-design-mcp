@@ -1,0 +1,4 @@
+=== 0
+- component; 49 × 18; row; padding 3 6 2 6; cross center; hugs content; background blur 20; shadow x 0 y 2 blur 8 #000000 at 20%; shadow x 0 y 0 blur 2 #000000 at 40%
+  - Materials: instance of Materials [Type=Ultra Thick]; 49 × 18; absolute at (0, 0)
+  - Text: instance of _Text; showing "Tooltip"; 37 × 13

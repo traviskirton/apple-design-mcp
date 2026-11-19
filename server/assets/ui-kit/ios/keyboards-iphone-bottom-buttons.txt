@@ -1,0 +1,8 @@
+=== 0
+- component; 240 × 78; row; space between; padding 23 36 26 34; cross center; hugs height
+  - text "ABC"; SF Compact Regular 21; centered; 40 × 25; color Labels/Primary; blend linear burn
+  - text SF Symbol mic; SF Compact Regular 24; centered; 24 × 29; color Labels/Primary; blend linear burn
+=== 1
+- component; 240 × 78; row; space between; padding 23 32 26 32; cross center; hugs height
+  - Emoji: vector shape; 26.8 × 26.8; fill Labels/Primary
+  - text SF Symbol mic; SF Compact Regular 24; centered; 24 × 29; color Labels/Primary; blend linear burn

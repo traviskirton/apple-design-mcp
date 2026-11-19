@@ -1,0 +1,14 @@
+=== 0
+- component; 720 × 400; row; radius 34; shadow x 0 y 30 blur 140 #000000 at 30%
+  - Sidebar: frame; 320 × 400; fills height; column; gap 10
+    - BG: instance of BG [Active=False]; 320 × 400; absolute at (0, 0)
+  - Content View: frame; 400 × 400; fills width; fills height; column; padding 10 0 0 0; fill Backgrounds/Primary
+    - Resize: instance of _Window Resize [Window=Floating]; 32 × 32; absolute at (368, 368)
+  - Resize: instance of _Window Resize [Window=Floating]; 32 × 32; absolute at (688, 368)
+=== 1
+- component; 720 × 400; row; radius 34; shadow x 0 y 30 blur 140 #000000 at 30%
+  - Sidebar: frame; 320 × 400; fills height; column; gap 10
+    - BG: instance of BG [Active=True]; 320 × 400; absolute at (0, 0)
+  - Content View: frame; 400 × 400; fills width; fills height; column; padding 10 0 0 0; fill Backgrounds/Primary
+    - Resize: instance of _Window Resize [Window=Floating]; 32 × 32; absolute at (368, 368)
+  - Resize: instance of _Window Resize [Window=Floating]; 32 × 32; absolute at (688, 368)

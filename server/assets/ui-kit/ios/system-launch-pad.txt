@@ -1,0 +1,18 @@
+=== 0
+- component; 68 × 68; column; gap 4.5; main center; cross center; radius 12
+  - Stack: frame; 68 × 61; absolute at (-8, 0)
+    - Tile: frame; 66 × 135.5; at (1, -50.25)
+      - Fill + Shadow: frame; 52 × 52; at (-1, 58.25); radius 17; fill #f8f8f8 at 8% (luminosity); shadow x 0 y 8 blur 15 #000000 at 2%; shadow x 0 y 0 blur 0 spread 0.5 #cccccc at 100% (linear burn); shadow x -1.25 y 0 blur 0 spread -0.75 #d0d0d0 at 100% (linear burn); shadow x 1.25 y 0 blur 0 spread -0.75 #d0d0d0 at 100% (linear burn)
+      - Glass Effect: frame; 52 × 52; at (-1, 58.25); radius 17; Liquid Glass effect; inner shadow x 0 y 40 blur 30 spread -40 #e6e6e6 at 100% (linear burn); inner shadow x 0 y -40 blur 10 spread -40 #282828 at 100% (linear dodge); inner shadow x 0 y 40 blur 10 spread -40 #282828 at 100% (linear dodge)
+    - Tile: frame; 66 × 135.5; at (5, -54.25)
+      - Fill + Shadow: frame; 60 × 60; at (-1, 58.25); radius 17; fill #f8f8f8 at 8% (luminosity); shadow x 0 y 8 blur 15 #000000 at 2%; shadow x 0 y 0 blur 0 spread 0.5 #cccccc at 100% (linear burn); shadow x -1.25 y 0 blur 0 spread -0.75 #d0d0d0 at 100% (linear burn); shadow x 1.25 y 0 blur 0 spread -0.75 #d0d0d0 at 100% (linear burn)
+      - Glass Effect: frame; 60 × 60; at (-1, 58.25); radius 17; Liquid Glass effect; inner shadow x 0 y 40 blur 30 spread -40 #e6e6e6 at 100% (linear burn); inner shadow x 0 y -40 blur 10 spread -40 #282828 at 100% (linear dodge); inner shadow x 0 y 40 blur 10 spread -40 #282828 at 100% (linear dodge)
+    - Tile: frame; 66 × 135.5; at (9, -58.25)
+      - Fill + Shadow: frame; 68 × 68; at (-1, 58.25); radius 17; fill #f8f8f8 at 8% (luminosity); shadow x 0 y 8 blur 15 #000000 at 2%; shadow x 0 y 0 blur 0 spread 0.5 #cccccc at 100% (linear burn); shadow x -1.25 y 0 blur 0 spread -0.75 #d0d0d0 at 100% (linear burn); shadow x 1.25 y 0 blur 0 spread -0.75 #d0d0d0 at 100% (linear burn)
+      - Glass Effect: frame; 68 × 68; at (-1, 58.25); radius 17; Liquid Glass effect; inner shadow x 0 y 40 blur 30 spread -40 #e6e6e6 at 100% (linear burn); inner shadow x 0 y -40 blur 10 spread -40 #282828 at 100% (linear dodge); inner shadow x 0 y 40 blur 10 spread -40 #282828 at 100% (linear dodge)
+  - Row 1: frame; 68 × 23; fills width; row; gap 4.5; main center; cross center; hugs height
+    - Icon: instance of App Icon/iPad [Custom Icon=False]; with Show App Name off, Show Badge off; 23 × 23
+    - Icon: instance of App Icon/iPad [Custom Icon=False]; with Show App Name off, Show Badge off; 23 × 23
+  - Row 2: frame; 68 × 23; fills width; row; gap 4.5; main center; cross center; hugs height
+    - Icon: instance of App Icon/iPad [Custom Icon=False]; with Show App Name off, Show Badge off; 23 × 23
+    - Icon: instance of App Icon/iPad [Custom Icon=False]; with Show App Name off, Show Badge off; 23 × 23

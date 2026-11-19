@@ -1,0 +1,10 @@
+=== 0
+- component; 54 × 54; column; gap 1; padding 6 8 7 8; main center; cross center
+  - Selection: rectangle; 54 × 54; absolute at (0, 0); capsule; fill Fills - Vibrant/Tertiary; blend linear burn
+  - Frame 1: frame; 38 × 28; fills width; row; gap 10; main center; cross center; hugs height
+    - text SF Symbol magnifyingglass; SF Pro Semibold 17/28; centered; 38 × 28; fills width; color Accents/Blue; mask; property Symbol
+    - FFFFFF @50%: rectangle; 54 × 54; absolute at (-8, -12.5); fill #ffffff at 50%
+    - Tint (Plus D): rectangle; 54 × 54; absolute at (-8, -12.5); fill Accents/Blue (linear burn); blend linear burn
+=== 1
+- component; 54 × 54; column; gap 1; padding 6 8 7 8; main center; cross center
+  - text SF Symbol magnifyingglass; SF Pro Semibold 17/28; centered; 38 × 28; fills width; color Labels - Vibrant/Primary; blend linear burn; property Symbol

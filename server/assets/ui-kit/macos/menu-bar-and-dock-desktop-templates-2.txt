@@ -1,0 +1,32 @@
+=== 0
+- component; 1152 × 55; row; gap 9; padding 8 8 0 8; main center; cross center; hugs content
+  - Dock Background: frame; 1152 × 55; absolute at (0, 0); capsule
+    - Fill + Shadow: frame; 1152 × 55; at (0, 0); radius 15; fill #4d4d4d at 30% (luminosity) + #1a1a1a at 10% (linear burn) + #ffffff at 8% (lighten); shadow x 0 y 0 blur 0 spread 0.5 #000000 at 25% (linear burn)
+    - Glass Effect: frame; 1152 × 55; at (0, 0); radius 15; fill #ffffff (multiply); Liquid Glass effect; inner shadow x 0 y -16 blur 16 spread -16 #161616 at 100% (linear dodge); inner shadow x 0 y 16 blur 16 spread -16 #161616 at 100% (linear dodge); inner shadow x 0 y -2.5 blur 1.5 spread -2.5 #808080 at 100% (linear dodge); inner shadow x 0 y 2.5 blur 1.5 spread -2.5 #808080 at 100% (linear dodge)
+  - Finder: instance of Dock Icon; 36 × 47
+  - Launch Pad: instance of Dock Icon; 36 × 47
+  - Safari: instance of Dock Icon; 36 × 47
+  - Messages: instance of Dock Icon; 36 × 47
+  - Mail: instance of Dock Icon; 36 × 47
+  - Maps: instance of Dock Icon; 36 × 47
+  - Photos: instance of Dock Icon; 36 × 47
+  - FaceTime: instance of Dock Icon; 36 × 47
+  - Phone: instance of Dock Icon; 36 × 47
+  - Calendar: instance of Dock Icon; 36 × 47
+  - Contacts: instance of Dock Icon; 36 × 47
+  - Notes: instance of Dock Icon; 36 × 47
+  - Apple TV: instance of Dock Icon; 36 × 47
+  - Music: instance of Dock Icon; 36 × 47
+  - Keynote: instance of Dock Icon; 36 × 47
+  - Pages: instance of Dock Icon; 36 × 47
+  - Numbers: instance of Dock Icon; 36 × 47
+  - App Store: instance of Dock Icon; 36 × 47
+  - Games: instance of Dock Icon; 36 × 47
+  - iPhone Mirroring: instance of Dock Icon; 36 × 47
+  - Siri: instance of Dock Icon; 36 × 47
+  - Settings: instance of Dock Icon; 36 × 47
+  - Custom Icon: instance of Dock Icon; 36 × 47
+  - Frame: frame; 11 × 45.5; row; padding 0 5 9.5 5; cross center; hugs content
+    - Separator: rectangle; 1 × 36; fill #404040; blend linear dodge
+  - Folder: instance of Dock Icon; 36 × 47
+  - Trash: instance of Dock Icon; 36 × 47

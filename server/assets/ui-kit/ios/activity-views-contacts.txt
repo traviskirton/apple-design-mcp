@@ -1,0 +1,10 @@
+=== 0
+- component; 500 × 118; row; gap 25.33; padding 16 0 0 15; hugs height
+  - Contact 1: instance of _Contact [People=1]; 66 × 102
+  - Contact 2: instance of _Contact [People=1]; 66 × 102
+  - Contact 3: instance of _Contact [People=2]; 66 × 102
+  - Contact 4: instance of _Contact [People=1]; 66 × 102
+  - Contact 5: instance of _Contact [People=1]; 66 × 102
+  - Contact 6: instance of _Contact [People=1]; 66 × 102
+  - Contact 7: instance of _Contact [People=1]; 66 × 102
+  - Separator: instance of _Separator; 500 × 1; absolute at (0, 0)

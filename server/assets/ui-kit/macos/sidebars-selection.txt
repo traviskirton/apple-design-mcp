@@ -1,0 +1,4 @@
+=== 0
+- component; 100 × 24; radius 8; fill Fills - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+=== 1
+- component; 100 × 24; radius 8; fill Fills - Vibrant (Use Plus Lighter | Darker)/Quinary; blend linear burn

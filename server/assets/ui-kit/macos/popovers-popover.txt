@@ -1,0 +1,4 @@
+=== 0
+- component; 200 × 200
+  - Popover: instance of Popover [Edge=Bottom (Center)]; 200 × 200; at (0, 0)
+  - Content Area: frame; 200 × 200; at (0, 0); column; gap 8; padding 20; cross center; slot Content Area

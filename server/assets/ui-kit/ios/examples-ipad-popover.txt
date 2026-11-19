@@ -1,0 +1,10 @@
+=== 0
+- component; 1210 × 834; fill #ffffff
+  - Screen: frame; 1208 × 834; at (0, 0); column; padding 134 20 10 20; main center; cross center; fill Backgrounds – Grouped/Primary
+    - Content Area: frame; 1168 × 690; fills height; fills width
+      - Button: instance of Button - Content Area [Size=Large, Style=Bordered - Prominent, Label Style=Title only, Is Enabled=True, Destructive=False]; with Label "Open Popover"; 149 × 50; at (510, 509)
+      - Popovers (iPad Only): instance of Popovers (iPad Only) [Edge=Bottom (Center)]; 420 × 420; at (374, 65)
+  - Scroll Edge Effect: instance of Scroll Edge Effect - Soft [Edge=Top]; 1208 × 134; at (0, 0)
+  - Toolbar - Top: instance of Toolbar - Top - iPad [Style=Large Title, Tab Bar=False]; with Show Subtitle off; 1210 × 109; at (0, 32)
+  - Status bar and Menu bar- iPad: instance of Status bar and Menu bar- iPad [Full Screen=True, Menu Expanded=False, Background=Light]; 1210 × 32; at (-1, 0)
+  - Bezel: instance of iPad Pro M4 11" [Color=Silver]; 1210 × 834; at (0, 0)

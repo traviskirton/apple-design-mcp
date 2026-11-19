@@ -1,0 +1,4 @@
+=== 0
+- component; 20 × 20; fill Labels/Tertiary at 25%
+=== 1
+- component; 20 × 20; fill Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn

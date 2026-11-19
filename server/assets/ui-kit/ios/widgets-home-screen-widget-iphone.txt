@@ -1,0 +1,20 @@
+=== 0
+- component; 164.67 × 164.67; radius 28
+  - text "Widget Name"; SF Pro Medium 12; 79 × 14; at (43, 170.33); color #ffffff; shadow x 0 y 2 blur 25 #000000 at 100%; property Widget Name
+  - Background: frame; 164.67 × 164.67; at (0, 0); radius 28; fill Accents/Indigo + linear gradient #171717 to #000000 (linear dodge); inner shadow x 0 y -4 blur 0.5 spread -4 #666666 at 100% (linear dodge); inner shadow x 0 y 4 blur 0.5 spread -4 #666666 at 100% (linear dodge); inner shadow x 0 y -1 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y 1 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y -20 blur 10 spread -20 #222222 at 100% (linear dodge); inner shadow x 0 y 20 blur 10 spread -20 #222222 at 100% (linear dodge)
+  - Padding Guide: frame; 129 × 129; at (18, 18); radius 11; stroke #000000 1; opacity 30%; shown while Show Padding
+=== 1
+- component; 349.67 × 164.33; radius 28
+  - text "Widget Name"; SF Pro Medium 12; 79 × 14; at (136, 169.33); color #ffffff; shadow x 0 y 2 blur 25 #000000 at 100%; property Widget Name
+  - Background: frame; 349.67 × 164.33; at (0, 0); radius 28; fill Accents/Indigo + linear gradient #171717 to #000000 (linear dodge); inner shadow x 0 y -4 blur 0.5 spread -4 #666666 at 100% (linear dodge); inner shadow x 0 y 4 blur 0.5 spread -4 #666666 at 100% (linear dodge); inner shadow x 0 y -1 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y 1 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y -20 blur 10 spread -20 #222222 at 100% (linear dodge); inner shadow x 0 y 20 blur 10 spread -20 #222222 at 100% (linear dodge)
+  - Padding Guide: frame; 314 × 128; at (18, 18); radius 11; stroke #000000 1; opacity 30%; shown while Show Padding
+=== 2
+- component; 349.67 × 365; radius 28
+  - text "Widget Name"; SF Pro Medium 12; 79 × 14; at (136, 370); color #ffffff; shadow x 0 y 2 blur 25 #000000 at 100%; property Widget Name
+  - Background: frame; 349.67 × 365; at (0, 0); radius 28; fill Accents/Indigo + linear gradient #171717 to #000000 (linear dodge); inner shadow x 0 y -4 blur 0.5 spread -4 #666666 at 100% (linear dodge); inner shadow x 0 y 4 blur 0.5 spread -4 #666666 at 100% (linear dodge); inner shadow x 0 y -1 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y 1 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y -20 blur 10 spread -20 #222222 at 100% (linear dodge); inner shadow x 0 y 20 blur 10 spread -20 #222222 at 100% (linear dodge)
+  - Padding Guide: frame; 314 × 329; at (18, 18); radius 11; stroke #000000 1; opacity 30%; shown while Show Padding
+=== 3
+- component; 349.67 × 565.67; radius 28
+  - text "Widget Name"; SF Pro Medium 12; 79 × 14; at (136, 571); color #ffffff; shadow x 0 y 2 blur 25 #000000 at 100%; property Widget Name
+  - Background: frame; 349.67 × 565.67; at (0, 0); radius 28; fill Accents/Indigo + linear gradient #171717 to #000000 (linear dodge); inner shadow x 0 y -4 blur 0.5 spread -4 #666666 at 100% (linear dodge); inner shadow x 0 y 4 blur 0.5 spread -4 #666666 at 100% (linear dodge); inner shadow x 0 y -1 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y 1 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y -20 blur 10 spread -20 #222222 at 100% (linear dodge); inner shadow x 0 y 20 blur 10 spread -20 #222222 at 100% (linear dodge)
+  - Padding Guide: frame; 314 × 530; at (18, 18); radius 11; stroke #000000 1; opacity 30%; shown while Show Padding

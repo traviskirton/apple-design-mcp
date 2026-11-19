@@ -1,0 +1,8 @@
+=== 0
+- component; 65 × 44; row; gap 3; padding 13 0 13 0; hugs content
+  - text "Label"; SF Pro Semibold 18/18; 48 × 18; color Accents/Blue; property Label
+  - text SF Symbol chevron.up.chevron.down; SF Pro Semibold 18/18; 14 × 18; color Accents/Blue
+=== 1
+- component; 65 × 44; row; gap 3; padding 13 0 13 0; hugs content
+  - text "Label"; SF Pro Semibold 18/18; 48 × 18; color Labels/Tertiary at 30%; property Label
+  - text SF Symbol chevron.up.chevron.down; SF Pro Semibold 18/18; 14 × 18; color Labels/Tertiary at 30%

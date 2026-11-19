@@ -1,0 +1,10 @@
+=== 0
+- component; 56 × 20; row; padding 0 10 0 10; main center; cross center; uses Segmented Control/Margins
+  - text "Label"; SF Pro Medium 13/16; centered; 36 × 20; fills width; fills height; radius 6; color Labels/Tertiary at 25%; uses Button/Radius; property Label
+=== 1
+- component; 56 × 20; row; padding 0 10 0 10; main center; cross center; uses Segmented Control/Margins
+  - BG: instance of _Control BG/Bordered [Context=Content Area, State=Clicked, On=False]; 56 × 20; absolute at (0, 0)
+  - text "Label"; SF Pro Medium 13/16; centered; 36 × 20; fills width; fills height; color Labels/Primary at 85%; property Label
+=== 2
+- component; 56 × 20; row; padding 0 10 0 10; main center; cross center; uses Segmented Control/Margins
+  - text "Label"; SF Pro Medium 13/16; centered; 36 × 20; fills width; fills height; radius 6; color Labels/Primary at 85%; uses Button/Radius; property Label

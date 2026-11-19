@@ -1,0 +1,7 @@
+=== 0
+- component; 220 × 30; row; main center; cross center; hugs content
+  - Color Wheel: instance of _Button - Utility Panel Tab Bar [Selected=True]; 44 × 30
+  - Sliders: instance of _Button - Utility Panel Tab Bar [Selected=False]; 44 × 30
+  - Swatches: instance of _Button - Utility Panel Tab Bar [Selected=False]; 44 × 30
+  - Images: instance of _Button - Utility Panel Tab Bar [Selected=False]; 44 × 30
+  - Crayons: instance of _Button - Utility Panel Tab Bar [Selected=False]; 44 × 30

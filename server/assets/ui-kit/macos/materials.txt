@@ -1,0 +1,10 @@
+=== 0
+- component; 100 × 100; fill Materials/Ultrathick; background blur 60
+=== 1
+- component; 100 × 100; fill Materials/Thick; background blur 60
+=== 2
+- component; 100 × 100; fill Materials/Medium; background blur 60
+=== 3
+- component; 100 × 100; fill Materials/Thin; background blur 60
+=== 4
+- component; 100 × 100; fill Materials/Ultrathin; background blur 60

@@ -1,0 +1,4 @@
+=== 0
+- component; 1512 × 993
+  - Desktop Template: instance of Desktop Template [Color Mode=Dark]; 1512 × 993; at (0, 0)
+  - Utility Panel: instance of Utility Panel; 300 × 300; at (606, 347)

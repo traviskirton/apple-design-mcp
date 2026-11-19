@@ -1,0 +1,12 @@
+=== 0
+- component; 24 × 24; column; main end; cross center; capsule; uses Global/Height
+  - BG: instance of _Control BG/Controls [Active=True, Context=Content Area, State=Disabled, On=False]; 24 × 24; absolute at (0, 0)
+  - text SF Symbol chevron.up.chevron.down; SF Pro Bold 13; centered; 24 × 24; fills height; fills width; color Labels/Tertiary at 25%
+=== 1
+- component; 24 × 24; column; main end; cross center; capsule; uses Global/Height
+  - BG: instance of _Control BG/Controls [Active=True, Context=Content Area, State=Clicked, On=False]; 24 × 24; absolute at (0, 0)
+  - text SF Symbol chevron.up.chevron.down; SF Pro Bold 13; centered; 24 × 24; fills height; fills width; color Labels/Primary at 85%
+=== 2
+- component; 24 × 24; column; main end; cross center; capsule; uses Global/Height
+  - BG: instance of _Control BG/Controls [Active=True, Context=Content Area, State=Idle, On=False]; 24 × 24; absolute at (0, 0)
+  - text SF Symbol chevron.up.chevron.down; SF Pro Bold 13; centered; 24 × 24; fills height; fills width; color Labels/Primary at 85%

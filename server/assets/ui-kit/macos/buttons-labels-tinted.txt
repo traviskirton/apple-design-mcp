@@ -1,0 +1,9 @@
+=== 0
+- component; 35 × 16; row; gap 10; main center; cross center; hugs content
+  - text "Label"; SF Pro Medium 13/16; centered; 35 × 16; color Accents/Blue; opacity 40%; property Label
+=== 1
+- component; 35 × 16; row; gap 10; main center; cross center; hugs content
+  - text "Label"; SF Pro Medium 13/16; centered; 35 × 16; color Accents/Blue; property Label
+=== 2
+- component; 35 × 16; row; gap 10; main center; cross center; hugs content
+  - text "Label"; SF Pro Medium 13/16; centered; 35 × 16; color Accents/Blue; opacity 25%; property Label

@@ -1,0 +1,6 @@
+=== 0
+- component; 105 × 74; row; padding 0 12.5 10 0; main end; cross end; radius 13; fill Accents/Blue
+  - text SF Symbol return.left; SF Pro Regular 22/28; right-aligned; 29 × 28; color Grays/White; property Label
+=== 1
+- component; 105 × 74; row; padding 0 12.5 10 0; main end; cross end; radius 13; fill #191919 (linear dodge) + #ffffff at 67%
+  - text SF Symbol return.left; SF Pro Regular 22/28; right-aligned; 29 × 28; color Labels/Primary; property Label

@@ -15,6 +15,7 @@
     "pack:ui-kit": "node scripts/build-ui-kit-pack.mjs",
     "pack:bezels": "node scripts/build-bezel-pack.mjs",
     "typecheck": "tsc --noEmit",
+    "check": "node scripts/check-assets.mjs && tsc --noEmit && node test/svg.mjs",
     "test": "node test/smoke.mjs",
     "test:svg": "node test/svg.mjs",
     "export:ui-kit-svg": "node scripts/export-ui-kit-svg.mjs",

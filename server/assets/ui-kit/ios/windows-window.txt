@@ -1,0 +1,3 @@
+=== 0
+- component; 720 × 400; radius 34; fill Backgrounds/Primary; shadow x 0 y 30 blur 140 #000000 at 30%
+  - Resize: instance of _Window Resize [Window=Floating]; 32 × 32; at (688, 368)

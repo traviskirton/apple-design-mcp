@@ -1,0 +1,2 @@
+=== 0
+- component; 40 × 28; radius 1; fill Accents/Blue; opacity 25%; blend multiply

@@ -1,0 +1,24 @@
+=== 0
+- component; 54 × 24; capsule; uses Toggle (Switch)/Track - Width, Toggle (Switch)/Track - Height
+  - Track: instance of _Tracks - Filled [Active=True, Context=Content Area, State=Idle]; 54 × 24; at (0, 0)
+  - Knob: instance of _Knob [Size=Medium, State=Disabled, Selection=True]; 54 × 24; at (0, 0)
+=== 1
+- component; 54 × 24; capsule; uses Toggle (Switch)/Track - Width, Toggle (Switch)/Track - Height
+  - Track: instance of _Tracks - Filled [Active=True, Context=Content Area, State=Clicked]; 54 × 24; at (0, 0)
+  - Knob: instance of _Knob [Size=Medium, State=Clicked, Selection=True]; 54 × 24; at (0, 0)
+=== 2
+- component; 54 × 24; capsule; uses Toggle (Switch)/Track - Width, Toggle (Switch)/Track - Height
+  - Track: instance of _Tracks - Filled [Active=True, Context=Content Area, State=Idle]; 54 × 24; at (0, 0)
+  - Knob: instance of _Knob [Size=Medium, State=Idle, Selection=True]; 54 × 24; at (0, 0)
+=== 3
+- component; 54 × 24; capsule; uses Toggle (Switch)/Track - Width, Toggle (Switch)/Track - Height
+  - Track: instance of _Tracks - Unfilled [Active=True, Context=Content Area, State=Disabled]; 54 × 24; at (0, 0); opacity 6%
+  - Knob: instance of _Knob [Size=Medium, State=Disabled, Selection=False]; 54 × 24; at (0, 0)
+=== 4
+- component; 54 × 24; capsule; uses Toggle (Switch)/Track - Width, Toggle (Switch)/Track - Height
+  - Track: instance of _Tracks - Unfilled [Active=True, Context=Content Area, State=Clicked]; 54 × 24; at (0, 0); opacity 19%
+  - Knob: instance of _Knob [Size=Medium, State=Clicked, Selection=False]; 54 × 24; at (0, 0)
+=== 5
+- component; 54 × 24; capsule; uses Toggle (Switch)/Track - Width, Toggle (Switch)/Track - Height
+  - Track: instance of _Tracks - Unfilled [Active=True, Context=Content Area, State=Idle]; 54 × 24; at (0, 0); opacity 10%
+  - Knob: instance of _Knob [Size=Medium, State=Idle, Selection=False]; 54 × 24; at (0, 0)

@@ -1,0 +1,7 @@
+=== 0
+- component; 402 × 874
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 0 16 0 16; main center; cross center; radius 44; fill Backgrounds/Primary
+    - Contents: frame; 402 × 874; fills height; column; main end; cross center
+  - instance of Color Picker - iPhone; 402 × 874; at (0, 0)
+  - Status bar: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 874; at (0, 0)

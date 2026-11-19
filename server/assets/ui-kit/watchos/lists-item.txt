@@ -1,0 +1,33 @@
+=== 0
+- component; 162 × 62.5; row; padding 4 9.5 4.5 9.5; main center; cross center; hugs height; uses Margin - LR - Copy Safe Area, List/Margin - Top, List/Margin - Bottom, Screen Width, List/Min Height
+  - Platter: rectangle; 158 × 63; absolute at (2, 0); radius 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Margin - LR - Copy Minus Full Width, List/Margin - Top, List/Margin - Bottom, List/Radius
+  - Frame: frame; 128 × 54; fills width; column; hugs height
+    - text "Bold Text"; SF Pro Bold 16/18; 128 × 18; fills width; color Labels/Primary; property Bold Text
+    - text "Label"; SF Pro Medium 16/18; 128 × 18; fills width; color Labels/Primary; property Label
+    - text "Subtitle"; SF Pro Light 16/18; 128 × 18; fills width; color Labels/Primary; property Subtitle
+  - text SF Symbol location.fill; SF Pro Medium 16/18; 15 × 18; color Labels/Primary; property Symbol
+=== 1
+- component; 162 × 43.5; row; padding 4 9.5 4.5 9.5; main center; cross center; hugs height; uses Margin - LR - Copy Safe Area, List/Margin - Top, List/Margin - Bottom, Screen Width, List/Min Height
+  - Platter: rectangle; 158 × 44; absolute at (2, 0); radius 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Margin - LR - Copy Minus Full Width, List/Margin - Top, List/Margin - Bottom, List/Radius
+  - text "Label"; SF Pro Medium 16/18; 128 × 18; fills width; color Labels/Primary; property Label
+  - text SF Symbol location.fill; SF Pro Medium 16/18; 15 × 18; color Labels/Primary; property Symbol
+=== 2
+- component; 162 × 44.5; row; padding 4 9.5 4.5 9.5; main center; cross center; hugs height; uses Margin - LR - Copy Safe Area, List/Margin - Top, List/Margin - Bottom, Screen Width, List/Min Height
+  - Platter: rectangle; 158 × 45; absolute at (2, 0); radius 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Margin - LR - Copy Minus Full Width, List/Margin - Top, List/Margin - Bottom, List/Radius
+  - Frame: frame; 143 × 36; fills width; column; hugs height
+    - text "Subtitle"; SF Pro Light 16/18; 143 × 18; fills width; color Labels/Primary; property Subtitle
+    - text "Label"; SF Pro Medium 16/18; 143 × 18; fills width; color Labels/Primary; property Label
+=== 3
+- component; 162 × 44.5; row; gap 6; padding 4 9.5 4.5 9.5; main center; cross center; hugs height; uses Margin - LR - Copy Safe Area, List/Margin - Top, List/Margin - Bottom, Screen Width, List/Min Height
+  - Platter: rectangle; 158 × 45; absolute at (2, 0); radius 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Margin - LR - Copy Minus Full Width, List/Margin - Top, List/Margin - Bottom, List/Radius
+  - text SF Symbol square.fill; SF Pro Medium 16/18; 19 × 18; color #f2f4fc; hidden unless Show Symbol - Leading
+  - Frame: frame; 143 × 36; fills width; column; hugs height
+    - text "Label"; SF Pro Medium 16/18; 143 × 18; fills width; color Labels/Primary; property Label
+    - text "Subtitle"; SF Pro Light 16/18; 143 × 18; fills width; color Labels/Primary; property Subtitle
+  - text SF Symbol square.fill; SF Pro Medium 16/18; 19 × 18; color #f2f4fc; hidden unless Show Symbol - Trailing
+=== 4
+- component; 162 × 43.5; row; gap 6; padding 4 9.5 4.5 9.5; main center; cross center; hugs height; uses Margin - LR - Copy Safe Area, List/Margin - Top, List/Margin - Bottom, Screen Width, List/Min Height
+  - Platter: rectangle; 158 × 44; absolute at (2, 0); radius 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Margin - LR - Copy Minus Full Width, List/Margin - Top, List/Margin - Bottom, List/Radius
+  - text SF Symbol square.fill; SF Pro Medium 16/18; 19 × 18; color #f2f4fc; hidden unless Show Symbol - Leading
+  - text "Label"; SF Pro Medium 16/18; 143 × 18; fills width; color Labels/Primary; property Label
+  - text SF Symbol square.fill; SF Pro Medium 16/18; 19 × 18; color #f2f4fc; hidden unless Show Symbol - Trailing

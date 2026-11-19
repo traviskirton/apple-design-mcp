@@ -1,0 +1,5 @@
+=== 0
+- component; 25 × 20; capsule; uses Slider/Knob - Ticked Slider/Width - Clicked, Slider/Knob - Ticked Slider/Height - Clicked
+  - Shadow: frame; 25 × 20; at (0.5, 7); capsule; stroke #000000 1; layer blur 6; opacity 50%
+  - Glass Effect: frame; 27 × 22; at (-0.5, -1); capsule; fill #ffffff at 9%; stroke #cccccc (linear burn) 0.5; Liquid Glass effect; inner shadow x 0 y 40 blur 30 spread -40 #e6e6e6 at 100% (linear burn); inner shadow x 0 y -40 blur 10 spread -40 #282828 at 100% (linear dodge); inner shadow x 0 y 40 blur 10 spread -40 #282828 at 100% (linear dodge)
+  - Specular Light: frame; 25 × 20; at (0.5, 0); capsule; fill #ffffff (multiply); inner shadow x 0 y -3 blur 0.5 spread -2.25 #282828 at 100% (linear dodge); inner shadow x 0 y 3 blur 0.5 spread -2.25 #282828 at 100% (linear dodge)

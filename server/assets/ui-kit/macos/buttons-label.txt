@@ -1,0 +1,12 @@
+=== 0
+- component; 35 × 16; row; gap 10; main center; cross center; hugs content
+  - text "Label"; SF Pro Medium 13/16; centered; 35 × 16; color Labels/Tertiary at 25%; property Label
+=== 1
+- component; 35 × 16; row; gap 10; main center; cross center; hugs content
+  - text "Label"; SF Pro Medium 13/16; centered; 35 × 16; color Labels/Primary at 85%; property Label
+=== 2
+- component; 35 × 16; row; gap 10; main center; cross center; hugs content
+  - text "Label"; SF Pro Medium 13/16; centered; 35 × 16; color Labels/Tertiary at 25%; blend linear burn; property Label
+=== 3
+- component; 35 × 16; row; gap 10; main center; cross center; hugs content
+  - text "Label"; SF Pro Medium 13/16; centered; 35 × 16; color Labels/Primary at 85%; blend linear burn; property Label

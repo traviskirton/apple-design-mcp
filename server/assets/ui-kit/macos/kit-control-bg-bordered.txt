@@ -1,0 +1,28 @@
+=== 0
+- component; 20 × 20
+  - Tint: frame; 20 × 20; at (0, 0); fill Accents - Vibrant/Blue; opacity 2%; blend linear burn
+=== 1
+- component; 20 × 20
+  - Tint: frame; 20 × 20; at (0, 0); fill Accents - Vibrant/Blue; opacity 16%; blend linear burn
+=== 2
+- component; 20 × 20
+  - Tint: frame; 20 × 20; at (0, 0); fill Accents - Vibrant/Blue; opacity 6%; blend linear burn
+=== 3
+- component; 20 × 20
+  - Tint: frame; 20 × 20; at (0, 0); fill Accents - Vibrant/Blue; opacity 3%
+  - Fill: frame; 20 × 20; at (0, 0); fill Accents - Vibrant/Blue; opacity 3%; blend linear burn
+=== 4
+- component; 20 × 20
+  - Tint: frame; 20 × 20; at (0, 0); fill Accents - Vibrant/Blue; opacity 15%; blend linear burn
+=== 5
+- component; 20 × 20; fill #000000 at 4%
+=== 6
+- component; 20 × 20; fill #000000 at 16%
+=== 7
+- component; 20 × 20; fill #000000 at 8%
+=== 8
+- component; 20 × 20; fill #000000 at 6% (overlay) + #000000 at 3% (linear burn)
+=== 9
+- component; 20 × 20; fill #000000 at 12% (overlay) + #000000 at 13% (linear burn)
+=== 10
+- component; 20 × 20; fill #000000 at 12% (overlay) + #000000 at 7% (linear burn)

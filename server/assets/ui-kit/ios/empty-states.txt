@@ -1,0 +1,28 @@
+=== 0
+- component; 402 × 874; column; padding 0 36 36 36; main center; cross center; radius 44
+  - Content: frame; 330 × 786; fills height; fills width; column; gap 16; padding 253 16 253 16; main center; cross center
+    - text SF Symbol star.fill; SF Pro Semibold 41; centered; 298 × 49; fills width; color Accents/Yellow; property Symbol
+    - Message and description: frame; 298 × 52; fills width; column; hugs height
+      - text "Message"; SF Pro Semibold 22; centered; 298 × 26; fills width; color Labels/Primary; property Message
+      - text "Description"; SF Pro Medium 22; centered; 298 × 26; fills width; color Labels/Secondary at 60%; property Description
+  - Button - Liquid Glass - Text: frame; 330 × 52; fills width; row; gap 4; padding 6 20 6 20; main center; cross center; capsule
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=True]; 330 × 52; absolute at (0, 0)
+    - Text: frame; 121 × 36; row; main center; cross center; hugs width; capsule; blend linear burn
+      - text "Primary Action"; SF Pro Medium 17; centered; 121 × 20; color Labels - Vibrant/Primary (linear dodge)
+=== 1
+- component; 402 × 874; column; padding 0 36 36 36; main center; cross center; radius 44
+  - Content: frame; 330 × 786; fills height; fills width; column; gap 16; padding 253 16 253 16; main center; cross center
+    - Circle: frame; 50 × 50; capsule
+      - Circle: frame; 50 × 50; at (0.5, 0.5); fill Accents/Pink; opacity 15%
+      - text SF Symbol star.fill; SF Pro Semibold 22; centered; 50 × 50; at (0, 0); color Accents/Pink; property Symbol
+    - Message and description: frame; 298 × 52; fills width; column; hugs height
+      - text "Message"; SF Pro Semibold 22; centered; 298 × 26; fills width; color Labels/Primary; property Message
+      - text "Description"; SF Pro Medium 22; centered; 298 × 26; fills width; color Labels/Secondary at 60%; property Description
+  - Button - Liquid Glass - Text: instance of Button - Liquid Glass - Text [Size=Large, Style=Glass Prominent, Is Enabled=True, Destructive=False]; 330 × 52; fills width
+=== 2
+- component; 402 × 874; column; padding 0 36 36 36; main center; cross center; radius 44
+  - Content: frame; 330 × 786; fills height; fills width; column; padding 253 16 253 16; main center; cross center
+    - Message and description: frame; 298 × 52; fills width; column; hugs height
+      - text "Message"; SF Pro Semibold 22; centered; 298 × 26; fills width; color Labels/Primary; property Message
+      - text "Description"; SF Pro Medium 22; centered; 298 × 26; fills width; color Labels/Secondary at 60%; property Description
+  - Button - Liquid Glass - Text: instance of Button - Liquid Glass - Text [Size=Large, Style=Glass Prominent, Is Enabled=True, Destructive=False]; 330 × 52; fills width

@@ -1,0 +1,7 @@
+=== 0
+- component; 162 × 72; row; gap 3; padding 8 8 8 0; cross center
+  - Bar: rectangle; 5 × 54; capsule; fill #ffffff (color dodge); opacity 90%
+  - Modular Columns: frame; 146 × 62; fills width; column; hugs height
+    - text "11:30AM-12:30PM"; SF Pro Semibold 16/21; 146 × 21; fills width; color Vibrant Labels/Dark/Vibrant Primary; background blur 40; property Line 1
+    - text "Design Review"; SF Pro Medium 16/21; 146 × 21; fills width; color Vibrant Labels/Dark/Vibrant Primary; background blur 40; property Line 2
+    - text "Conference Room"; SF Pro Medium 15/20; 146 × 20; fills width; color Vibrant Labels/Dark/Vibrant Secondary; background blur 40; property Line 3

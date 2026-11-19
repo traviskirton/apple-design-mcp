@@ -1,0 +1,3 @@
+=== 0
+- component; 162 × 16; column; padding 0 9.5 0 9.5; cross end; hugs height; uses Margin - LR - Copy Safe Area
+  - text "Section Header"; SF Pro Medium 13/15.5; 143 × 16; fills width; color Vibrant Labels/Dark/Primary; property Text

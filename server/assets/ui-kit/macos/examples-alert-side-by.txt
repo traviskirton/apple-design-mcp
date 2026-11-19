@@ -1,0 +1,4 @@
+=== 0
+- component; 1512 × 993
+  - Desktop Template: instance of Desktop Template [Color Mode=Dark]; 1512 × 993; at (0, 0)
+  - Alert: instance of Alert [Type=Side-by-side]; 260 × 152; at (626, 421)

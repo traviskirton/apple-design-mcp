@@ -1,0 +1,2 @@
+=== 0
+- component; 140 × 36; row; gap 6; cross center; capsule; fill Fills - Vibrant/Tertiary; blend linear burn

@@ -1,0 +1,8 @@
+=== 0
+- component; 1210 × 834; fill Backgrounds/Primary
+  - Screen: frame; 1210 × 780; at (0, 54)
+    - Content Area: frame; 1210 × 763; at (0, 0)
+  - Toolbar - Top - iPad: instance of Toolbar - Top - iPad [Style=Title 2 Line, Tab Bar=False]; with Show Subtitle off; 1210 × 54; at (0, 32)
+  - instance of Action Sheet; 300 × 296; at (900, 155)
+  - Status bar and Menu bar- iPad: instance of Status bar and Menu bar- iPad [Full Screen=True, Menu Expanded=False, Background=Light]; 1210 × 32; at (0, 0)
+  - Bezel: instance of iPad Pro M4 11" [Color=Silver]; 1210 × 834; at (0, 0)

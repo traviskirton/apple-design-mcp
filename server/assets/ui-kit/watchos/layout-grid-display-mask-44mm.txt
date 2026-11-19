@@ -1,0 +1,3 @@
+=== 0
+- component; 184 × 224
+  - Mask: vector shape; 184 × 224; at (0, 0); fill #000000

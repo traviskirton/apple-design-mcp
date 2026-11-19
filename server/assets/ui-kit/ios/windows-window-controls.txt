@@ -1,0 +1,12 @@
+=== 0
+- component; 41 × 22; row; gap 4.5; main center; cross center; capsule
+  - BG: instance of Liquid Glass - Regular - Small [Active=False, Prominent=False]; 41 × 22; absolute at (0, 0)
+  - Close: ellipse; 6 × 6; fill Labels/Secondary at 60%
+  - Minimize: ellipse; 6 × 6; fill Labels/Secondary at 60%
+  - Expand: ellipse; 6 × 6; fill Labels/Secondary at 60%
+=== 1
+- component; 41 × 22; row; gap 4.5; main center; cross center
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 41 × 22; absolute at (0, 0)
+  - Close: ellipse; 6 × 6; fill #ff5f57
+  - Minimize: ellipse; 6 × 6; fill #febc2f
+  - Expand: ellipse; 6 × 6; fill #27c840

@@ -1,0 +1,39 @@
+=== 0
+- component; 162 × 197; radius 20; fill #000000; uses Screen Width, Screen Height
+  - Watch Faces: instance of Watch Faces [Face=Activity Analog, Size=40mm]; 162 × 197; at (0, 0)
+  - Material: rectangle; 162 × 197; at (0, 0); fill Vibrant Backgrounds/Dark/Ultrathin; background blur 32; uses Margin - LR - Copy Safe Area, Screen Width, Screen Height
+  - Frame: frame; 162 × 197; at (0, 0); column; gap 16; uses Error/Content - T - Title with Close Button, Screen Width, Screen Height
+    - Navigation Bar: instance of Navigation Bar [Type=Modal - 1 Control]; 162 × 47.5; fills width
+    - Frame: frame; 162 × 37; fills width; column; gap 0.5; padding 0 6.5 0 6.5; cross center; hugs height; uses Margin - LR - Copy Minus Full Width
+      - text "Cannot Connect to server"; SF Compact Semibold 16/18.5; centered; 149 × 37; fills width; color #ffffff; property Title
+  - Floating Button: instance of Button - Floating/Default; with Label "Retry"; 162 × 54; at (0, 143)
+=== 1
+- component; 162 × 197; radius 20; fill #000000; uses Screen Width, Screen Height
+  - Frame: frame; 162 × 197; at (0, 0); column; cross center; uses Error/Content - T - Symbol + Description, Screen Width, Screen Height
+    - Navigation Bar: instance of Navigation Bar [Type=Status Bar]; 162 × 33; fills width
+    - Frame: frame; 162 × 101; fills width; column; gap 4; padding 0 6.5 0 6.5; cross center; hugs height; uses Margin - LR - Copy Minus Full Width
+      - text SF Symbol exclamationmark.triangle; SF Compact Regular 34; centered; 149 × 41; fills width; color #ffffff; property Symbol
+      - text "Something went wrong. Please try again."; SF Compact Regular 16/18.5; centered; 149 × 56; fills width; color #ffffff; property Desscription
+  - Floating Button: instance of Button - Floating/Default; with Label "OK"; 162 × 54; at (0, 143)
+=== 2
+- component; 162 × 197; radius 20; fill #000000; uses Screen Width, Screen Height
+  - Frame: frame; 162 × 197; at (0, 0); column; uses Screen Width, Screen Height
+    - Navigation Bar: instance of Navigation Bar [Type=Status Bar]; 162 × 33; fills width
+    - Frame: frame; 162 × 88; fills width; column; gap 0.5; padding 32 6.5 0 6.5; cross center; hugs height; uses Margin - LR - Copy Minus Full Width, Error/Content - T - Title
+      - text "Something went wrong. Please try again."; SF Compact Regular 16/18.5; centered; 149 × 56; fills width; color #ffffff; property Desscription
+  - Floating Button: instance of Button - Floating/Default; with Label "OK"; 162 × 54; at (0, 143)
+=== 3
+- component; 162 × 197; radius 20; fill #000000; uses Screen Width, Screen Height
+  - Frame: frame; 162 × 197; at (0, 0); column; gap 16; cross center; uses Error/Content - T - Title + Description, Screen Width, Screen Height
+    - Navigation Bar: instance of Navigation Bar [Type=Status Bar]; 162 × 32.5; fills width
+    - Frame: frame; 162 × 93.5; fills width; column; gap 0.5; padding 0 6.5 0 6.5; cross center; hugs height; uses Margin - LR - Copy Minus Full Width
+      - text "Cannot Connect to server"; SF Compact Semibold 16/18.5; centered; 149 × 37; fills width; color #ffffff; property Title
+      - text "Something went wrong. Please try again."; SF Compact Regular 16/18.5; centered; 149 × 56; fills width; color #ffffff; property Desscription
+  - Floating Button: instance of Button - Floating/Default; with Label "OK"; 162 × 54; at (0, 143)
+=== 4
+- component; 162 × 197; radius 20; fill #000000; uses Screen Width, Screen Height
+  - Group: frame; 162 × 101.5; at (0, 0); column; gap 32; hugs height; uses Error/Content - T - Title, Screen Width
+    - Navigation Bar: instance of Navigation Bar [Type=Status Bar]; 162 × 32.5; fills width
+    - Content Area: frame; 162 × 37; fills width; column; gap 0.5; padding 0 6.5 0 6.5; cross center; hugs height; uses Margin - LR - Copy Minus Full Width
+      - text "Cannot Connect to server"; SF Compact Semibold 16/18.5; centered; 149 × 37; fills width; color #ffffff; property Title
+  - Floating Button: instance of Button - Floating/Default; with Label "OK"; 162 × 54; at (0, 143)

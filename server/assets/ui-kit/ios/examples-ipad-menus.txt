@@ -1,0 +1,53 @@
+=== 0
+- component; 1210 × 834; fill Backgrounds/Primary
+  - Screen: frame; 1210 × 780; at (0, 54)
+    - Content Area: frame; 1210 × 763; at (0, 0)
+      - text "Hello World"; SF Pro Regular 17; 89 × 20; at (60, 80); color Labels/Primary
+      - instance of Text Selection; 89 × 20; at (60, 80)
+  - instance of Edit Menu; 232 × 44; at (16, 178)
+  - Toolbar - Top - iPad: instance of Toolbar - Top - iPad [Style=Compact Large, Tab Bar=False]; with Title "Menu"; 1210 × 54; at (0, 32)
+  - Status bar and Menu bar- iPad: instance of Status bar and Menu bar- iPad [Full Screen=True, Menu Expanded=False, Background=Light]; 1210 × 32; at (0, 0)
+  - Bezel: instance of iPad Pro M4 11" [Color=Silver]; 1210 × 834; at (0, 0)
+=== 1
+- component; 1210 × 834; fill Backgrounds/Primary
+  - Screen: frame; 1210 × 780; at (0, 54)
+    - Content Area: frame; 1210 × 763; at (0, 0)
+      - text "Hello World"; SF Pro Regular 17; 89 × 20; at (60, 80); color Labels/Primary
+      - instance of Text Selection; 89 × 20; at (60, 80)
+  - Menu: frame; 250 × 663; at (166, 128); column; padding 10 0 10 0; cross center; hugs height
+    - Liquid Glass - Regular - Medium: instance of Liquid Glass - Regular - Medium; 250 × 663; absolute at (0, 0)
+    - Quick Actions: frame; 250 × 56; fills width; row; gap 6; padding 0 10 0 10; cross center; hugs height
+      - Action 1: instance of Quick Action [Destructive=False]; with Symbol SF Symbol scissors, Label "Cut", Show Selection off; 72.67 × 56; fills width
+      - Action 2: instance of Quick Action [Destructive=False]; with Symbol SF Symbol doc.on.doc, Label "Copy", Show Selection off; 72.67 × 56; fills width
+      - Action 3: instance of Quick Action [Destructive=False]; with Symbol SF Symbol doc.on.clipboard, Label "Paste", Show Selection off; 72.67 × 56; fills width
+    - Menu Items: frame; 250 × 587; fills width; column; padding 0 8 0 8; hugs height
+      - Separator: instance of Separator - iPad; 234 × 21; fills width
+      - Item: instance of Menu Items - iPad [State=Destructive, Menu has selection=False]; with Show Shortcut off, Symbol SF Symbol trash, Label "Delete"; 234 × 40; fills width
+      - Separator: instance of Separator - iPad; 234 × 21; fills width
+      - Item: instance of Menu Items - Submenus - iPad [State=Default, Open=False, Menu has Selection=False]; with Symbol SF Symbol text.cursor, Label "Replace..."; 234 × 40; fills width
+      - Item: instance of Menu Items - Submenus - iPad [State=Default, Open=False, Menu has Selection=False]; with Symbol SF Symbol text.insert, Label "AutoFill"; 234 × 40; fills width
+      - Separator: instance of Separator - iPad; 234 × 21; fills width
+      - Item: instance of Menu Items - iPad [State=Default, Menu has selection=False]; with Show Shortcut off, Symbol SF Symbol link, Label "Add Link"; 234 × 40; fills width
+      - Separator: instance of Separator - iPad; 234 × 21; fills width
+      - Item: instance of Menu Items - iPad [State=Default, Menu has selection=False]; with Show Shortcut off, Symbol SF Symbol doc, Label "Attach File"; 234 × 40; fills width
+      - Separator: instance of Separator - iPad; 234 × 21; fills width
+      - Item: instance of Menu Items - Submenus - iPad [State=Default, Open=False, Menu has Selection=False]; 234 × 40; fills width
+      - Separator: instance of Separator - iPad; 234 × 21; fills width
+      - Item: instance of Menu Items - iPad [State=Default, Menu has selection=False]; with Show Shortcut off, Symbol SF Symbol doc.text.magnifyingglass, Label "Look Up"; 234 × 40; fills width
+      - Item: instance of Menu Items - iPad [State=Default, Menu has selection=False]; with Show Shortcut off, Symbol SF Symbol magnifyingglass.circle, Label "Search Web"; 234 × 40; fills width
+      - Item: instance of Menu Items - iPad [State=Default, Menu has selection=False]; with Show Shortcut off, Symbol SF Symbol play, Label "Speak"; 234 × 40; fills width
+      - Item: instance of Menu Items - iPad [State=Default, Menu has selection=False]; with Show Shortcut off, Symbol SF Symbol play, Label "Spell"; 234 × 40; fills width
+      - Separator: instance of Separator - iPad; 234 × 21; fills width
+      - Item: instance of Menu Items - iPad [State=Default, Menu has selection=False]; with Show Shortcut off, Symbol SF Symbol square.and.arrow.up, Label "Share..."; 234 × 40; fills width
+  - Submenu: frame; 250 × 241; at (408, 489); column; padding 10 0 10 0; cross center; hugs height
+    - Liquid Glass - Regular - Medium: instance of Liquid Glass - Regular - Medium; 250 × 241; absolute at (0, 0)
+    - Menu Items: frame; 250 × 221; fills width; column; padding 0 8 0 8; hugs height
+      - Item: instance of Menu Items - Submenus - iPad [State=Default, Open=False, Menu has Selection=False]; with Symbol SF Symbol bold.italic.underline, Label "Format"; 234 × 40; fills width
+      - Separator: instance of Separator; 234 × 21; fills width
+      - Item: instance of Menu Items - Submenus - iPad [State=Default, Open=False, Menu has Selection=False]; with Show Shortcut off, Symbol SF Symbol bold, Label "Bold"; 234 × 40; fills width
+      - Item: instance of Menu Items - Submenus - iPad [State=Default, Open=False, Menu has Selection=False]; with Show Shortcut off, Symbol SF Symbol italic, Label "Italic"; 234 × 40; fills width
+      - Item: instance of Menu Items - Submenus - iPad [State=Default, Open=False, Menu has Selection=False]; with Show Shortcut off, Symbol SF Symbol underline, Label "Underline"; 234 × 40; fills width
+      - Item: instance of Menu Items - Submenus - iPad [State=Default, Open=False, Menu has Selection=False]; with Show Shortcut off, Symbol SF Symbol strikethrough, Label "Strikethrough"; 234 × 40; fills width
+  - Toolbar - Top - iPad: instance of Toolbar - Top - iPad [Style=Compact Large, Tab Bar=False]; with Title "Menu"; 1210 × 54; at (0, 32)
+  - Status bar and Menu bar- iPad: instance of Status bar and Menu bar- iPad [Full Screen=True, Menu Expanded=False, Background=Light]; 1210 × 32; at (0, 0)
+  - Bezel: instance of iPad Pro M4 11" [Color=Silver]; 1210 × 834; at (0, 0)

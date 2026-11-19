@@ -1,0 +1,13 @@
+=== 0
+- component; 740 × 153; row; padding 18 0 28 0; cross center; hugs content
+  - Frame: frame; 740 × 107; row; gap 19.5; padding 19.5; main center; cross center; hugs content
+    - Material: instance of _Dock Material; 740 × 107; absolute at (0, 0)
+    - App Icons: instance of App Icon/iPad [Custom Icon=False]; with Show App Name off, App Name "FaceTime", Show Badge off; 68 × 68
+    - App Icons: instance of App Icon/iPad [Custom Icon=False]; with Show App Name off, App Name "FaceTime", Show Badge off; 68 × 68
+    - App Icons: instance of App Icon/iPad [Custom Icon=False]; with Show App Name off, App Name "FaceTime", Show Badge off; 68 × 68
+    - App Icons: instance of App Icon/iPad [Custom Icon=False]; with Show App Name off, App Name "FaceTime", Show Badge off; 68 × 68
+    - App Icons: instance of App Icon/iPad [Custom Icon=False]; with Show App Name off, App Name "FaceTime", Show Badge off; 68 × 68
+    - App Icons: instance of App Icon/iPad [Custom Icon=False]; with Show App Name off, App Name "FaceTime", Show Badge off; 68 × 68
+    - App Icons: instance of App Icon/iPad [Custom Icon=False]; with Show App Name off, App Name "FaceTime", Show Badge off; 68 × 68
+    - Separator: rectangle; 1 × 62; fill Fills - Vibrant/Secondary
+    - Apps: instance of _Launch Pad; 68 × 68

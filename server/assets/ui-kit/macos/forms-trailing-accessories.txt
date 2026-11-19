@@ -1,0 +1,46 @@
+=== 0
+- component; 120 × 24; row; gap 8; main end; cross center; hugs content
+  - Text Field: instance of Text Field [State=Idle, Show Text=False]; 120 × 24
+=== 1
+- component; 36 × 16; row; gap 8; main end; cross center; hugs content
+  - Toggles - Switches: instance of Toggles - Switches [Active=True, State=Idle, Selection=On]; 36 × 16
+  - text SF Symbol info.circle; SF Pro Medium 13/16; right-aligned; 16 × 16; color Labels/Secondary at 50%; hidden unless Show Info
+=== 2
+- component; 97 × 24; row; gap 6; main end; cross center; hugs content
+  - Stepper/Inside Field: instance of Stepper/Inside Field [State=Default]; 62 × 24
+  - text "Label"; SF Pro Medium 11/16; right-aligned; 29 × 16; color Labels/Secondary at 50%; property Label; shown while Show Label
+=== 3
+- component; 124 × 16; row; gap 16; main end; cross center; hugs content
+  - Radio Button: instance of Toggles - Radio Buttons [Active=True, State=Idle, Selection=On]; 54 × 16
+  - Radio Button: instance of Toggles - Radio Buttons [Active=True, State=Idle, Selection=Off]; 54 × 16
+=== 4
+- component; 63 × 16; row; gap 12; main end; cross center; hugs content
+  - text "Label"; SF Pro Medium 13/16; right-aligned; 35 × 16; color Labels/Primary at 85%; property Label
+  - Pop-Up Button: instance of Pop-Up Button [State=Idle, Show Label=False]; 16 × 16
+=== 5
+- component; 59 × 16; row; gap 8; main end; hugs content
+  - text "Label"; SF Pro Medium 13/16; right-aligned; 35 × 16; color Labels/Secondary at 50%; property Label; shown while Show Label
+  - text SF Symbol ellipsis; SF Pro Medium 13/16; right-aligned; 16 × 16; color Labels/Secondary at 50%
+=== 6
+- component; 60 × 16; row; gap 8; main end; cross center; hugs content
+  - Label + Info Button: frame; 60 × 16
+    - text "Label"; SF Pro Medium 13/16; right-aligned; 35 × 16; at (-1, 0); color Labels/Secondary at 50%; property Label; shown while Show Label
+    - text SF Symbol info.circle; SF Pro Medium 13/16; right-aligned; 16 × 16; at (44, 0); color Labels/Secondary at 50%
+=== 7
+- component; 35 × 16; row; gap 8; main end; cross center; hugs content
+  - text "Label"; SF Pro Medium 13/16; right-aligned; 35 × 16; color Labels/Secondary at 50%; property Label
+=== 8
+- component; 51 × 16; row; gap 8; main end; cross center; hugs content
+  - text "Label"; SF Pro Medium 13/16; right-aligned; 35 × 16; color Labels/Secondary at 50%; property Label; shown while Show Label
+  - text SF Symbol chevron.right; SF Pro Semibold 13/16; centered; 8 × 16; color Labels/Tertiary at 25%
+=== 9
+- component; 100 × 24; row; gap 8; main end; hugs content
+  - Combo Box: instance of Combo Box [State=Idle]; 100 × 24
+=== 10
+- component; 124 × 16; row; gap 16; main end; cross center; hugs content
+  - Checkbox: instance of Toggles - Checkboxes [Active=True, State=Idle, Selection=On]; 54 × 16
+  - Checkbox: instance of Toggles - Checkboxes [Active=False, State=Idle, Selection=Off]; 54 × 16
+=== 11
+- component; 110 × 24; row; gap 8; main end; cross center; hugs content
+  - text "Label"; SF Pro Medium 13/16; right-aligned; 35 × 16; color Labels/Secondary at 50%; property Label; shown while Show Label
+  - Buttons: instance of Buttons [Active=True, Context=Over-Glass, State=Idle, Style=Bordered, On=False]; 67 × 24

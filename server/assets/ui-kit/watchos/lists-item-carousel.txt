@@ -1,0 +1,44 @@
+=== 0
+- component; 162 × 91.5; column; padding 4 19.5 4.5 15; main center; hugs height; uses List/Carousel - Dimmed - Left Margin, List/Margin - Top, List/Margin - Scrolled, List/Margin - Bottom, Screen Width; opacity 60%
+  - Platter: rectangle; 138 × 92; absolute at (12, 0); radius 15.5; fill #f2f4fc at 8% + #f2f4fc at 56% (overlay); background blur 25; uses Margin - LR - Copy Minus Full Width, List/Margin - Top, List/Margin - Bottom, List/Radius - Carousel
+  - Frame: frame; 127.5 × 47; fills width; row; space between; hugs height
+    - text SF Symbol figure.outdoor.cycle; SF Compact Regular 39; 109.5 × 47; fills width; color #a6ff00; property Symbol
+    - Offset: frame; 18 × 25; row; gap 10; padding 3.5 0 3.5 0; cross center; hugs content
+      - More Button: frame; 18 × 18; capsule; fill #a6ff00 at 20%
+        - text SF Symbol ellipsis; SF Compact Medium 13; centered; 18 × 16; at (0, 0.5); color #a6ff00
+  - Text: frame; 127.5 × 36; fills width; column; padding 0 0 0 4.5; hugs height
+    - text "Label"; SF Pro Bold 16/18; 123 × 18; fills width; color Labels/Primary; property Label
+    - text "Subtitle"; SF Pro Medium 16/18; 123 × 18; fills width; color Labels/Secondary; property Subtitle
+=== 1
+- component; 162 × 91.5; column; padding 4 9.5 4.5 5.5; main center; hugs height; uses List/Carousel - Default - Left Margin, List/Margin - Top, Margin - LR - Copy Safe Area, List/Margin - Bottom, Screen Width
+  - Platter: rectangle; 158 × 92; absolute at (2, 0); radius 15.5; fill #f2f4fc at 8% + #f2f4fc at 56% (overlay); background blur 25; uses Margin - LR - Copy Minus Full Width, List/Margin - Top, List/Margin - Bottom, List/Radius - Carousel
+  - Frame: frame; 147 × 47; fills width; row; space between; hugs height
+    - text SF Symbol figure.outdoor.cycle; SF Compact Regular 39; 129 × 47; fills width; color #a6ff00; property Symbol
+    - Offset: frame; 18 × 25; row; gap 10; padding 3.5 0 3.5 0; cross center; hugs content
+      - More Button: frame; 18 × 18; capsule; fill #a6ff00 at 20%
+        - text SF Symbol ellipsis; SF Compact Medium 13; centered; 18 × 16; at (0, 0.5); color #a6ff00
+  - Text: frame; 147 × 36; fills width; column; padding 0 0 0 4; hugs height
+    - text "Label"; SF Pro Bold 16/18; 143 × 18; fills width; color Labels/Primary; property Label
+    - text "Subtitle"; SF Pro Medium 16/18; 143 × 18; fills width; color Labels/Secondary; property Subtitle
+=== 2
+- component; 162 × 91.5; column; padding 4 19.5 4.5 15; main center; hugs height; uses List/Carousel - Dimmed - Left Margin, List/Margin - Top, List/Margin - Scrolled, List/Margin - Bottom, Screen Width; opacity 60%
+  - Platter: rectangle; 138 × 92; absolute at (12, 0); radius 15.5; fill #a6ff00 at 20%; uses Margin - LR - Copy Minus Full Width, List/Margin - Top, List/Margin - Bottom, List/Radius - Carousel
+  - Frame: frame; 127.5 × 47; fills width; row; space between; hugs height
+    - text SF Symbol figure.outdoor.cycle; SF Compact Regular 39; 109.5 × 47; fills width; color #a6ff00; property Symbol
+    - Offset: frame; 18 × 25; row; gap 10; padding 3.5 0 3.5 0; cross center; hugs content
+      - More Button: frame; 18 × 18; capsule; fill #a6ff00 at 20%
+        - text SF Symbol ellipsis; SF Compact Medium 13; centered; 18 × 16; at (0, 0.5); color #a6ff00
+  - Text: frame; 127.5 × 36; fills width; column; padding 0 0 0 4; hugs height
+    - text "Label"; SF Pro Bold 16/18; 123.5 × 18; fills width; color Labels/Primary; property Label
+    - text "Subtitle"; SF Pro Medium 16/18; 123.5 × 18; fills width; color #a6ff00; property Subtitle
+=== 3
+- component; 162 × 91.5; column; padding 4 9.5 4.5 5.5; main center; hugs height; uses List/Carousel - Default - Left Margin, List/Margin - Top, Margin - LR - Copy Safe Area, List/Margin - Bottom, Screen Width
+  - Platter: rectangle; 158 × 92; absolute at (2, 0); radius 15.5; fill #a6ff00 at 20%; uses Margin - LR - Copy Minus Full Width, List/Margin - Top, List/Margin - Bottom, List/Radius - Carousel
+  - Frame: frame; 147 × 47; fills width; row; space between; hugs height
+    - text SF Symbol figure.outdoor.cycle; SF Compact Regular 39; 129 × 47; fills width; color #a6ff00; property Symbol
+    - Offset: frame; 18 × 25; row; gap 10; padding 3.5 0 3.5 0; cross center; hugs content
+      - More Button: frame; 18 × 18; capsule; fill #a6ff00 at 20%
+        - text SF Symbol ellipsis; SF Compact Medium 13; centered; 18 × 16; at (0, 0.5); color #a6ff00
+  - Text: frame; 147 × 36; fills width; column; padding 0 0 0 4; hugs height
+    - text "Label"; SF Pro Bold 16/18; 143 × 18; fills width; color Labels/Primary; property Label
+    - text "Subtitle"; SF Pro Medium 16/18; 143 × 18; fills width; color #a6ff00; property Subtitle

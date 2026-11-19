@@ -1,0 +1,132 @@
+=== 0
+- component; 402 × 88; row; space between; padding 16 32 32 32; cross end; hugs height
+  - Tab Bar Buttons: frame; 298 × 40; fills width; row; gap -7.33; cross center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 48; absolute at (-4, -4)
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=True]; 40 × 40
+  - Search: frame; 40 × 40; row; gap -10; cross center; hugs content
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 48; absolute at (-4, -4)
+    - Search Tab: instance of _Tab Bar Button Round - iPhone [Is Selected=False]; with Symbol SF Symbol square.fill; 40 × 40
+=== 1
+- component; 402 × 95; row; gap 16; padding 16 25 25 25; main center; cross end; hugs height
+  - Tab Bar Buttons with Prominent Tab: frame; 282 × 54; fills width; row; gap -8; padding 0 2 0 2; cross center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 290 × 62; absolute at (-4, -4)
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=True]; with Symbol SF Symbol diamond.fill, Label "Tab 1"; 75.5 × 54; fills width
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=False]; with Symbol SF Symbol circle.fill, Label "Tab 2"; 75.5 × 53.5; fills width
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=False]; with Symbol SF Symbol triangle.fill, Label "Tab 3"; 75.5 × 53.5; fills width
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=False]; with Symbol SF Symbol seal.fill, Label "Tab 4"; 75.5 × 53.5; fills width
+  - Search: frame; 54 × 54; row; gap -10; cross center; hugs content
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 62 × 62; absolute at (-4, -4)
+    - Search Tab: instance of _Tab Bar Button Round - iPhone [Is Selected=False]; with Symbol SF Symbol square.fill; 54 × 54
+=== 2
+- component; 402 × 95; row; gap 16; padding 16 25 25 25; main center; cross end; hugs height
+  - Tab Bar Buttons with Prominent Tab: frame; 282 × 54; fills width; row; gap -8; padding 0 2 0 2; cross center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 290 × 62; absolute at (-4, -4)
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=True]; with Symbol SF Symbol diamond.fill, Label "Tab 1"; 98 × 54; fills width
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=False]; with Symbol SF Symbol circle.fill, Label "Tab 2"; 98 × 53.5; fills width
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=False]; with Symbol SF Symbol triangle.fill, Label "Tab 3"; 98 × 53.5; fills width
+  - Search: frame; 54 × 54; row; gap -10; cross center; hugs content
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 62 × 62; absolute at (-4, -4)
+    - Search Tab: instance of _Tab Bar Button Round - iPhone [Is Selected=False]; with Symbol SF Symbol square.fill; 54 × 54
+=== 3
+- component; 402 × 95; row; space between; padding 16 25 25 25; cross end; hugs height
+  - Tab Bar Buttons with Prominent Tab: frame; 236 × 54; row; gap -8; padding 0 2 0 2; cross center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 244 × 62; absolute at (-4, -4)
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=True]; with Symbol SF Symbol diamond.fill, Label "Tab 1"; 120 × 54; fills width
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=False]; with Symbol SF Symbol circle.fill, Label "Tab 2"; 120 × 53.5; fills width
+  - Search: frame; 54 × 54; row; gap -10; cross center; hugs content
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 62 × 62; absolute at (-4, -4)
+    - Search Tab: instance of _Tab Bar Button Round - iPhone [Is Selected=False]; with Symbol SF Symbol square.fill; 54 × 54
+=== 4
+- component; 402 × 95; row; space between; padding 16 25 25 25; cross end; hugs height
+  - Tab Bar Buttons with Prominent Tab: frame; 120 × 54; row; gap -8; padding 0 2 0 2; cross center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 128 × 62; absolute at (-4, -4)
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=True]; with Symbol SF Symbol diamond.fill, Label "Tab 1"; 116 × 54; fills width
+  - Search: frame; 54 × 54; row; gap -10; cross center; hugs content
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 62 × 62; absolute at (-4, -4)
+    - Search Tab: instance of _Tab Bar Button Round - iPhone [Is Selected=False]; with Symbol SF Symbol square.fill; 54 × 54
+=== 5
+- component; 402 × 88; row; space between; padding 16 32 32 32; cross end; hugs height
+  - Tab Bar Buttons: frame; 298 × 40; fills width; row; gap -7.33; cross center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 48; absolute at (-4, -4)
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=True]; 40 × 40
+  - Search: frame; 40 × 40; row; gap -10; cross center; hugs content
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 48; absolute at (-4, -4)
+    - Search Tab: instance of _Tab Bar Button Round - iPhone [Is Selected=False]; 40 × 40
+=== 6
+- component; 402 × 95; row; gap 16; padding 16 25 25 25; main center; cross end; hugs height
+  - Tab Bar Buttons with Prominent Tab: frame; 282 × 54; fills width; row; gap -8; padding 0 2 0 2; cross center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 290 × 62; absolute at (-4, -4)
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=True]; with Symbol SF Symbol diamond.fill, Label "Tab 1"; 75.5 × 54; fills width
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=False]; with Symbol SF Symbol circle.fill, Label "Tab 2"; 75.5 × 53.5; fills width
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=False]; with Symbol SF Symbol triangle.fill, Label "Tab 3"; 75.5 × 53.5; fills width
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=False]; with Symbol SF Symbol seal.fill, Label "Tab 4"; 75.5 × 53.5; fills width
+  - Search: frame; 54 × 54; row; gap -10; cross center; hugs content
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 62 × 62; absolute at (-4, -4)
+    - Search Tab: instance of _Tab Bar Button Round - iPhone [Is Selected=False]; 54 × 54
+=== 7
+- component; 402 × 95; row; gap 16; padding 16 25 25 25; main center; cross end; hugs height
+  - Tab Bar Buttons with Prominent Tab: frame; 282 × 54; fills width; row; gap -8; padding 0 2 0 2; cross center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 290 × 62; absolute at (-4, -4)
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=True]; with Symbol SF Symbol diamond.fill, Label "Tab 1"; 98 × 54; fills width
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=False]; with Symbol SF Symbol circle.fill, Label "Tab 2"; 98 × 53.5; fills width
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=False]; with Symbol SF Symbol triangle.fill, Label "Tab 3"; 98 × 53.5; fills width
+  - Search: frame; 54 × 54; row; gap -10; cross center; hugs content
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 62 × 62; absolute at (-4, -4)
+    - Search Tab: instance of _Tab Bar Button Round - iPhone [Is Selected=False]; 54 × 54
+=== 8
+- component; 402 × 95; row; space between; padding 16 25 25 25; cross end; hugs height
+  - Tab Bar Buttons with Prominent Tab: frame; 236 × 54; row; gap -8; padding 0 2 0 2; cross center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 244 × 62; absolute at (-4, -4)
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=True]; with Symbol SF Symbol diamond.fill, Label "Tab 1"; 120 × 54; fills width
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=False]; with Symbol SF Symbol circle.fill, Label "Tab 2"; 120 × 53.5; fills width
+  - Search: frame; 54 × 54; row; gap -10; cross center; hugs content
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 62 × 62; absolute at (-4, -4)
+    - Search Tab: instance of _Tab Bar Button Round - iPhone [Is Selected=False]; 54 × 54
+=== 9
+- component; 402 × 95; row; space between; padding 16 25 25 25; cross end; hugs height
+  - Tab Bar Buttons with Prominent Tab: frame; 120 × 54; row; gap -8; padding 0 2 0 2; cross center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 128 × 62; absolute at (-4, -4)
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=True]; with Symbol SF Symbol diamond.fill, Label "Tab 1"; 116 × 54; fills width
+  - Search: frame; 54 × 54; row; gap -10; cross center; hugs content
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 62 × 62; absolute at (-4, -4)
+    - Search Tab: instance of _Tab Bar Button Round - iPhone [Is Selected=False]; 54 × 54
+=== 10
+- component; 402 × 88; row; padding 16 32 32 32; cross end; hugs height
+  - Tab Bar Buttons: frame; 338 × 40; fills width; row; gap -5.5; cross center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 48; absolute at (-4, -4)
+    - Tab 1: instance of _Tab Bar Button - iPhone [Selected=True]; 40 × 40
+=== 11
+- component; 402 × 88; row; padding 16 32 32 32; cross end; hugs height
+  - Tab Bar Buttons: frame; 338 × 40; fills width; row; gap -5.5; cross center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 48; absolute at (-4, -4)
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=True]; 40 × 40
+=== 12
+- component; 402 × 95; row; padding 16 25 25 25; main center; cross end; hugs height
+  - Tab Bar Buttons: frame; 352 × 54; fills width; row; gap -8; padding 0 2 0 2; main center; cross center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 360 × 62; absolute at (-4, -4)
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=True]; with Symbol SF Symbol diamond.fill, Label "Tab 1"; 76 × 54; fills width
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=False]; with Symbol SF Symbol circle.fill, Label "Tab 2"; 76 × 53.5; fills width
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=False]; with Symbol SF Symbol triangle.fill, Label "Tab 3"; 76 × 53.5; fills width
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=False]; with Symbol SF Symbol seal.fill, Label "Tab 4"; 76 × 53.5; fills width
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=False]; with Symbol SF Symbol square.fill, Label "Tab 5"; 76 × 53.5; fills width
+=== 13
+- component; 402 × 95; row; padding 16 25 25 25; main center; cross end; hugs height
+  - Tab Bar Buttons: frame; 352 × 54; fills width; row; gap -8; padding 0 2 0 2; main center; cross center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 360 × 62; absolute at (-4, -4)
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=True]; with Symbol SF Symbol diamond.fill, Label "Tab 1"; 93 × 54; fills width
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=False]; with Symbol SF Symbol circle.fill, Label "Tab 2"; 93 × 53.5; fills width
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=False]; with Symbol SF Symbol triangle.fill, Label "Tab 3"; 93 × 53.5; fills width
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=False]; with Symbol SF Symbol seal.fill, Label "Tab 4"; 93 × 53.5; fills width
+=== 14
+- component; 402 × 95; row; padding 16 68 25 68; main center; cross end; hugs height
+  - Tab Bar Buttons: frame; 266 × 54; fills width; row; gap -8; padding 0 2 0 2; main center; cross center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 274 × 62; absolute at (-4, -4)
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=True]; with Symbol SF Symbol diamond.fill, Label "Tab 1"; 92.67 × 54; fills width
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=False]; with Symbol SF Symbol circle.fill, Label "Tab 2"; 92.67 × 53.5; fills width
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=False]; with Symbol SF Symbol triangle.fill, Label "Tab 3"; 92.67 × 53.5; fills width
+=== 15
+- component; 402 × 95; row; padding 16 111 25 111; main center; cross end; hugs height
+  - Tab Bar Buttons: frame; 180 × 54; fills width; row; gap -8; padding 0 2 0 2; main center; cross center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 188 × 62; absolute at (-4, -4)
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=True]; with Symbol SF Symbol diamond.fill, Label "Tab 1"; 92 × 54; fills width
+    - Tab: instance of _Tab Bar Button - iPhone [Selected=False]; with Symbol SF Symbol circle.fill, Label "Tab 2"; 92 × 53.5; fills width

@@ -1,0 +1,6 @@
+=== 0
+- component; 100 × 100; fill Accents/Purple; opacity 40%
+=== 1
+- component; 100 × 100; fill Accents/Cyan; opacity 40%
+=== 2
+- component; 100 × 100; fill Accents/Red; opacity 40%

@@ -1,0 +1,16 @@
+=== 0
+- component; 86 × 48; row; gap 10; padding 13 16 13 16; main center; cross center; capsule; fill #ffffff at 60%
+  - BG: rectangle; 86 × 48; absolute at (0, 0); capsule; fill Accents/Blue; blend linear burn
+  - text "Action"; SF Pro Semibold 17/22; 52 × 22; color Grays/White; property Title
+=== 1
+- component; 86 × 48; row; gap 10; padding 13 16 13 16; main center; cross center; capsule
+  - BG: rectangle; 86 × 48; absolute at (0, 0); capsule; fill Fills/Secondary at 16%; blend linear burn
+  - text "Action"; SF Pro Semibold 17/22; 52 × 22; color Labels/Primary; property Title
+=== 2
+- component; 86 × 48; row; gap 10; padding 13 16 13 16; main center; cross center; capsule
+  - BG: rectangle; 86 × 48; absolute at (0, 0); capsule; fill Fills/Secondary at 16%; blend linear burn
+  - text "Cancel"; SF Pro Semibold 17/22; 56 × 22; color Labels/Primary
+=== 3
+- component; 86 × 48; row; gap 10; padding 13 16 13 16; main center; cross center; capsule
+  - BG: rectangle; 86 × 48; absolute at (0, 0); capsule; fill Fills/Secondary at 16%; blend linear burn
+  - text "Action"; SF Pro Semibold 17/22; 52 × 22; color #ffffff at 67% + #ff383c (linear burn); property Title

@@ -1,0 +1,15 @@
+=== 0
+- component; 25 × 22; row; gap 10; padding 0 1 0 2; cross center; hugs content
+  - Circle: frame; 22 × 22; capsule; fill Accents/Red
+    - text SF Symbol minus; SF Pro Semibold 14.5/22; centered; 22 × 22; at (0, 0); color Grays/White
+=== 1
+- component; 25 × 22; row; padding 0 1 0 2; cross center; hugs content
+  - Circle: frame; 22 × 22; capsule; fill Accents/Green
+    - text SF Symbol plus; SF Pro Semibold 14.5/22; centered; 22 × 22; at (0, 0); color Grays/White
+=== 2
+- component; 25 × 22; row; padding 0 1 0 2; cross center; hugs content
+  - Circle: frame; 22 × 22; capsule; fill Accents/Blue
+    - text SF Symbol checkmark; SF Pro Semibold 14.5/22; centered; 22 × 22; at (0, 0); color Grays/White
+=== 3
+- component; 25 × 22; row; gap 10; padding 0 1 0 2; cross center; hugs content
+  - Circle: frame; 22 × 22; capsule; stroke Grays/Gray 3 1.5

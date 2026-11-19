@@ -1,0 +1,45 @@
+=== 0
+- component; 162 × 197; fill #000000
+  - Button - All Apps: frame; 106 × 28; at (28, 163); row; gap 3; main center; cross center; capsule; fill #9ba0aa at 10% (linear dodge); stroke #ffffff at 3% 1.5; shadow x 0 y 10 blur 10 #000000 at 25%
+    - text SF Symbol list.bullet; SF Compact Rounded Regular 16.5/18; centered; 20 × 18; color Labels/Primary; opacity 80%
+    - text "All Apps"; SF Compact Rounded Regular 14.5/18; centered; 51 × 18; color Labels/Primary; opacity 80%
+  - Widgets: instance of Widgets [Type=Combo, Size=40mm]; 152 × 69.5; at (5, 103.5)
+  - Widgets: instance of Widgets [Type=Labeled Content, Size=40mm]; with Line 1 "June 2024", Metric "10"; 152 × 69.5; at (5, 31)
+  - text "JUN 16"; SF Compact Rounded Medium 16/19.5; 48 × 20; at (14, 5); color #b0b0b0
+  - text "9:41"; SF Compact Rounded Medium 16/19.5; right-aligned; 29 × 20; at (119, 5); color #ffffff
+=== 1
+- component; 187 × 223; fill #000000
+  - Button - All Apps: frame; 115 × 32; at (36, 179.5); row; gap 3; main center; cross center; capsule; fill #9ba0aa at 10% (linear dodge); stroke #ffffff at 3% 1.5; shadow x 0 y 10 blur 10 #000000 at 25%
+    - text SF Symbol list.bullet; SF Compact Rounded Regular 16.5/18; centered; 20 × 18; color Labels/Primary; opacity 80%
+    - text "All Apps"; SF Compact Rounded Regular 14.5/18; centered; 51 × 18; color Labels/Primary; opacity 80%
+  - Widgets: instance of Widgets [Type=Combo, Size=42mm]; 176 × 72.5; at (5.5, 118.5)
+  - Widgets: instance of Widgets [Type=Labeled Content, Size=42mm]; with Line 1 "June 2024", Metric "10"; 176 × 72.5; at (6, 40.5)
+  - text "JUN 16"; SF Compact Rounded Medium 16/19.5; 48 × 20; at (17.5, 12.5); color #b0b0b0
+  - text "9:41"; SF Compact Rounded Medium 16/19.5; right-aligned; 29 × 20; at (140.5, 12.5); color #ffffff
+=== 2
+- component; 184 × 224; fill #000000
+  - Button - All Apps: frame; 120 × 32; at (32, 183); row; gap 3; main center; cross center; capsule; fill #9ba0aa at 10% (linear dodge); stroke #ffffff at 3% 1.5; shadow x 0 y 10 blur 10 #000000 at 25%
+    - text SF Symbol list.bullet; SF Compact Rounded Regular 16.5/18; centered; 20 × 18; color Labels/Primary; opacity 80%
+    - text "All Apps"; SF Compact Rounded Regular 14.5/18; centered; 51 × 18; color Labels/Primary; opacity 80%
+  - Widgets: instance of Widgets [Type=Combo, Size=44mm]; 173 × 76.5; at (5.5, 119.5)
+  - Widgets: instance of Widgets [Type=Labeled Content, Size=44mm]; with Line 1 "June 2024", Metric "10"; 173 × 76.5; at (6, 38)
+  - text "JUN 16"; SF Compact Rounded Medium 17/19.5; 51 × 20; at (15, 9); color #b0b0b0
+  - text "9:41"; SF Compact Rounded Medium 17/19.5; right-aligned; 31 × 20; at (138, 9); color #ffffff
+=== 3
+- component; 208 × 248; fill #000000
+  - Button - All Apps: frame; 136 × 37; at (36, 197); row; gap 3; main center; cross center; capsule; fill #9ba0aa at 10% (linear dodge); stroke #ffffff at 3% 1.5; shadow x 0 y 10 blur 10 #000000 at 25%
+    - text SF Symbol list.bullet; SF Compact Rounded Regular 17.5/18; centered; 21 × 18; color Labels/Primary; opacity 80%
+    - text "All Apps"; SF Compact Rounded Regular 14.5/18; centered; 51 × 18; color Labels/Primary; opacity 80%
+  - Widgets: instance of Widgets [Type=Combo, Size=46mm]; 194 × 80.5; at (7, 129.5)
+  - Widgets: instance of Widgets [Type=Labeled Content, Size=46mm]; with Line 1 "June 2024", Metric "10"; 194 × 80.5; at (7, 44)
+  - text "JUN 16"; SF Compact Rounded Medium 17/19.5; 51 × 20; at (19.5, 15); color #b0b0b0
+  - text "9:41"; SF Compact Rounded Medium 17/19.5; right-aligned; 31 × 20; at (157.5, 15); color #ffffff
+=== 4
+- component; 205 × 251; fill #000000
+  - text "JUN 16"; SF Compact Rounded Medium 17/19.5; 51 × 20; at (19.5, 16); color #b0b0b0
+  - text "9:41"; SF Compact Rounded Medium 17/19.5; right-aligned; 31 × 20; at (154.5, 16); color #ffffff
+  - Button - All Apps: frame; 135 × 37; at (35, 203); row; gap 3; main center; cross center; capsule; fill #9ba0aa at 10% (linear dodge); stroke #ffffff at 3% 1.5; shadow x 0 y 10 blur 10 #000000 at 25%
+    - text SF Symbol list.bullet; SF Compact Rounded Regular 17.5/18; centered; 21 × 18; color Labels/Primary; opacity 80%
+    - text "All Apps"; SF Compact Rounded Regular 14.5/18; centered; 51 × 18; color Labels/Primary; opacity 80%
+  - Widgets: instance of Widgets [Type=Combo, Size=49mm]; 191 × 81.5; at (7, 131.5)
+  - Widgets: instance of Widgets [Type=Labeled Content, Size=49mm]; with Line 1 "June 2024", Metric "10"; 191 × 81.5; at (7, 45)

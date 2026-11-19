@@ -1,0 +1,60 @@
+=== 0
+- component; 80 × 36; capsule; uses Toggle (Switch)/Track - Width, Toggle (Switch)/Track - Height
+  - Knob: frame; 47 × 30; at (30, 3); capsule; fill #ffffff; shadow x 0 y 3 blur 36 #000000 at 5%; uses Toggle (Switch)/Knob - Width, Toggle (Switch)/Knob - Height
+=== 1
+- component; 80 × 36; capsule; uses Toggle (Switch)/Track - Width, Toggle (Switch)/Track - Height
+  - Knob: instance of _Knob Clicked; 73 × 46; at (16, -5)
+=== 2
+- component; 80 × 36; capsule; uses Toggle (Switch)/Track - Width, Toggle (Switch)/Track - Height
+  - Knob: frame; 47 × 30; at (3, 3); capsule; fill #ffffff; shadow x 0 y 3 blur 36 #000000 at 5%; uses Toggle (Switch)/Knob - Width, Toggle (Switch)/Knob - Height
+=== 3
+- component; 80 × 36; capsule; uses Toggle (Switch)/Track - Width, Toggle (Switch)/Track - Height
+  - Knob: instance of _Knob Clicked; 73 × 46; at (-9, -5)
+=== 4
+- component; 64 × 28; capsule; uses Toggle (Switch)/Track - Width, Toggle (Switch)/Track - Height
+  - Knob: frame; 38 × 24; at (24, 2); capsule; fill #ffffff; shadow x 0 y 3 blur 36 #000000 at 5%; uses Toggle (Switch)/Knob - Width, Toggle (Switch)/Knob - Height
+=== 5
+- component; 64 × 28; capsule; uses Toggle (Switch)/Track - Width, Toggle (Switch)/Track - Height
+  - Knob: instance of _Knob Clicked; 59 × 37; at (11.5, -4.5)
+=== 6
+- component; 64 × 28; capsule; uses Toggle (Switch)/Track - Width, Toggle (Switch)/Track - Height
+  - Knob: frame; 38 × 24; at (2, 2); capsule; fill #ffffff; shadow x 0 y 3 blur 36 #000000 at 5%; uses Toggle (Switch)/Knob - Width, Toggle (Switch)/Knob - Height
+=== 7
+- component; 64 × 28; capsule; uses Toggle (Switch)/Track - Width, Toggle (Switch)/Track - Height
+  - Knob: instance of _Knob Clicked; 59 × 37; at (-6.5, -4.5)
+=== 8
+- component; 54 × 24; capsule; uses Toggle (Switch)/Track - Width, Toggle (Switch)/Track - Height
+  - Knob: frame; 32 × 20; at (20, 2); capsule; fill #ffffff; shadow x 0 y 3 blur 36 #000000 at 5%; uses Toggle (Switch)/Knob - Width, Toggle (Switch)/Knob - Height
+=== 9
+- component; 54 × 24; capsule; uses Toggle (Switch)/Track - Width, Toggle (Switch)/Track - Height
+  - Knob: instance of _Knob Clicked; 50 × 31; at (10, -3.5)
+=== 10
+- component; 54 × 24; capsule; uses Toggle (Switch)/Track - Width, Toggle (Switch)/Track - Height
+  - Knob: frame; 32 × 20; at (2, 2); capsule; fill #ffffff; shadow x 0 y 3 blur 36 #000000 at 5%; uses Toggle (Switch)/Knob - Width, Toggle (Switch)/Knob - Height
+=== 11
+- component; 54 × 24; capsule; uses Toggle (Switch)/Track - Width, Toggle (Switch)/Track - Height
+  - Knob: instance of _Knob Clicked; 50 × 31; at (-6, -3.5)
+=== 12
+- component; 44 × 20; capsule; uses Toggle (Switch)/Track - Width, Toggle (Switch)/Track - Height
+  - Knob: frame; 26 × 16; at (16, 2); capsule; fill #ffffff; shadow x 0 y 3 blur 36 #000000 at 5%; uses Toggle (Switch)/Knob - Width, Toggle (Switch)/Knob - Height
+=== 13
+- component; 44 × 20; capsule; uses Toggle (Switch)/Track - Width, Toggle (Switch)/Track - Height
+  - Knob: instance of _Knob Clicked; 40 × 26; at (9, -3)
+=== 14
+- component; 44 × 20; capsule; uses Toggle (Switch)/Track - Width, Toggle (Switch)/Track - Height
+  - Knob: frame; 26 × 16; at (2, 2); capsule; fill #ffffff; shadow x 0 y 3 blur 36 #000000 at 5%; uses Toggle (Switch)/Knob - Width, Toggle (Switch)/Knob - Height
+=== 15
+- component; 44 × 20; capsule; uses Toggle (Switch)/Track - Width, Toggle (Switch)/Track - Height
+  - Knob: instance of _Knob Clicked; 40 × 26; at (-5, -3)
+=== 16
+- component; 36 × 16; capsule; uses Toggle (Switch)/Track - Width, Toggle (Switch)/Track - Height
+  - Knob: frame; 21 × 13; at (13, 1.5); capsule; fill #ffffff; shadow x 0 y 3 blur 36 #000000 at 5%; uses Toggle (Switch)/Knob - Width, Toggle (Switch)/Knob - Height
+=== 17
+- component; 36 × 16; capsule; uses Toggle (Switch)/Track - Width, Toggle (Switch)/Track - Height
+  - Knob: instance of _Knob Clicked; 33 × 20; at (8, -2)
+=== 18
+- component; 36 × 16; capsule; uses Toggle (Switch)/Track - Width, Toggle (Switch)/Track - Height
+  - Knob: frame; 21 × 13; at (1.5, 1.5); capsule; fill #ffffff; shadow x 0 y 3 blur 36 #000000 at 5%; uses Toggle (Switch)/Knob - Width, Toggle (Switch)/Knob - Height
+=== 19
+- component; 36 × 16; capsule; uses Toggle (Switch)/Track - Width, Toggle (Switch)/Track - Height
+  - Knob: instance of _Knob Clicked; 33 × 20; at (-5, -2)

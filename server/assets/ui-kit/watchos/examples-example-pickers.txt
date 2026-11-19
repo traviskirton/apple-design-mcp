@@ -1,0 +1,32 @@
+=== 0
+- component; 205 × 251; uses Screen Width, Screen Height
+  - Round Corners: frame; 205 × 251; at (0, 0); column; gap 5; cross center; radius 14; fill #000000; uses Screen Width, Screen Height
+    - Navigation Bar + Picker: frame; 205 × 176; fills width; column; cross center; hugs height
+      - Navigation Bar: instance of Navigation Bar [Type=Status + Title]; 205 × 64; fills width
+      - Picker: instance of Picker [Values=3 (mixed widths), Selected=1]; 201 × 112
+    - Button - Pill: instance of Button - Pill [Type=Primary Floating]; 205 × 54
+  - Bezel: instance of Bezels [Bezel Size=49mm]; 205 × 251; at (0, 0)
+=== 1
+- component; 205 × 251; uses Screen Width, Screen Height
+  - Round Corners: frame; 205 × 251; at (0, 0); column; gap 5; cross center; radius 14; fill #000000; uses Screen Width, Screen Height
+    - Navigation Bar + Picker: frame; 205 × 176; fills width; column; cross center; hugs height
+      - Navigation Bar: instance of Navigation Bar [Type=Status + Title]; 205 × 64; fills width
+      - Picker: instance of Picker [Values=3, Selected=1]; 201 × 112
+    - Button - Pill: instance of Button - Pill [Type=Primary Floating]; 205 × 54
+  - Bezel: instance of Bezels [Bezel Size=49mm]; 205 × 251; at (0, 0)
+=== 2
+- component; 205 × 251; uses Screen Width, Screen Height
+  - Round Corners: frame; 205 × 251; at (0, 0); column; gap 5; cross center; radius 14; fill #000000; uses Screen Width, Screen Height
+    - Navigation Bar + Picker: frame; 205 × 176; fills width; column; cross center; hugs height
+      - Navigation Bar: instance of Navigation Bar [Type=Status + Title]; 205 × 64; fills width
+      - Picker: instance of Picker [Values=2, Selected=1]; 174 × 112
+    - Button - Pill: instance of Button - Pill [Type=Primary Floating]; 205 × 54
+  - Bezel: instance of Bezels [Bezel Size=49mm]; 205 × 251; at (0, 0)
+=== 3
+- component; 205 × 251; uses Screen Width, Screen Height
+  - Round Corners: frame; 205 × 251; at (0, 0); column; gap 5; cross center; radius 14; fill #000000; uses Screen Width, Screen Height
+    - Navigation Bar + Picker: frame; 205 × 176; fills width; column; cross center; hugs height
+      - Navigation Bar: instance of Navigation Bar [Type=Status + Title]; 205 × 64; fills width
+      - Picker: instance of Picker [Values=1, Selected=1]; 174 × 112
+    - Button - Pill: instance of Button - Pill [Type=Primary Floating]; 205 × 54
+  - Bezel: instance of Bezels [Bezel Size=49mm]; 205 × 251; at (0, 0)

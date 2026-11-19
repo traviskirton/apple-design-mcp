@@ -1,0 +1,17 @@
+=== 0
+- component; 142 × 142; column; space between; padding 14 13 17 13
+  - BG: instance of _Controls - BG - iPad [On=False]; 142 × 142; absolute at (0, 0)
+  - Symbol: frame; 40 × 40; capsule; fill #111111 at 60% (luminosity) + #777777 (color dodge) + #222222 (linear dodge)
+    - text SF Symbol lock.rotation.open; SF Pro Bold 15; centered; 40 × 40; at (0, 0); color Grays/White; property Symbol
+  - Title and Detail: frame; 116 × 35; fills width; column; padding 0 2 0 2; main center; hugs height
+    - text "Title"; SF Pro Semibold 14; 112 × 17; fills width; color #ffffff; property Title
+    - text "Detail"; SF Pro Medium 14/18; 112 × 18; fills width; color #ffffff at 33% (linear dodge); property Detail
+=== 1
+- component; 142 × 142; column; space between; padding 14 13 17 13
+  - BG: instance of _Controls - BG - iPad [On=True]; 142 × 142; absolute at (0, 0)
+  - Symbol: frame; 40 × 40; capsule
+    - Ellipse 1: ellipse; 40 × 40; at (0, 0); fill Accents/Red
+    - text SF Symbol lock.rotation.open; SF Pro Bold 15; centered; 40 × 40; at (0, 0); color #ffffff; property Symbol
+  - Title and Detail: frame; 123 × 35; column; padding 0 2 0 2; main center; hugs height
+    - text "Title"; SF Pro Semibold 14; 119 × 17; fills width; color #000000; property Title
+    - text "Detail"; SF Pro Medium 14/18; 119 × 18; fills width; color #000000 at 40% (multiply); property Detail

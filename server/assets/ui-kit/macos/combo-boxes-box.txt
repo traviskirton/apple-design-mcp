@@ -1,0 +1,24 @@
+=== 0
+- component; 100 × 24; row; padding 2 2 2 0; main end; cross center; uses Combo Button/Inset, Global/Height
+  - Text Field: instance of Text Field [State=Disabled, Show Text=True]; 100 × 24; absolute at (0, 0)
+  - Combo Box Button: frame; 24 × 20; fills height; radius 4.5; uses Combo Button/Width - Button, Combo Button/Radius - Button
+    - Button BG: instance of _Control BG/Bordered [Context=Content Area, State=Disabled, On=False]; 24 × 20; at (0, 0)
+    - text SF Symbol chevron.down; SF Pro Bold 11/16; centered; 24 × 20; at (0, 0); color Labels/Tertiary at 25%
+=== 1
+- component; 100 × 24; row; padding 2 2 2 0; main end; cross center; uses Combo Button/Inset, Global/Height
+  - Text Field: instance of Text Field [State=Idle, Show Text=True]; 100 × 24; absolute at (0, 0)
+  - Combo Box Button: frame; 24 × 20; fills height; radius 4.5; uses Combo Button/Width - Button, Combo Button/Radius - Button
+    - Button BG: instance of _Control BG/Bordered [Context=Content Area, State=Clicked, On=False]; 24 × 20; at (0, 0)
+    - text SF Symbol chevron.down; SF Pro Bold 11/16; centered; 24 × 20; at (0, 0); color Labels/Primary at 85%
+=== 2
+- component; 100 × 24; row; padding 2 2 2 0; main end; cross center; uses Combo Button/Inset, Global/Height
+  - Text Field: instance of Text Field [State=Focused, Show Text=True]; 100 × 24; absolute at (0, 0)
+  - Combo Box Button: frame; 24 × 20; fills height; radius 4.5; uses Combo Button/Width - Button, Combo Button/Radius - Button
+    - Button BG: instance of _Control BG/Bordered [Context=Content Area, State=Idle, On=False]; 24 × 20; at (0, 0)
+    - text SF Symbol chevron.down; SF Pro Bold 11/16; centered; 24 × 20; at (0, 0); color Labels/Primary at 85%
+=== 3
+- component; 100 × 24; row; padding 2 2 2 0; main end; cross center; uses Combo Button/Inset, Global/Height
+  - Text Field: instance of Text Field [State=Idle, Show Text=True]; 100 × 24; absolute at (0, 0)
+  - Combo Box Button: frame; 24 × 20; fills height; radius 4.5; uses Combo Button/Width - Button, Combo Button/Radius - Button
+    - Button BG: instance of _Control BG/Bordered [Context=Content Area, State=Idle, On=False]; 24 × 20; at (0, 0)
+    - text SF Symbol chevron.down; SF Pro Bold 11/16; centered; 24 × 20; at (0, 0); color Labels/Primary at 85%

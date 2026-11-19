@@ -1,0 +1,92 @@
+=== 0
+- component; 402 × 691
+  - Popovers (iPad Only): instance of Popovers (iPad Only) [Edge=Bottom (Trailing)]; 402 × 613; at (0, 27)
+  - Panel Contents: frame; 402 × 618; at (0, 19); column; padding 16; main end; cross center; hugs height; uses Margin
+    - Toolbar: instance of _Toolbar; 370 × 49; fills width
+    - Segmented Control: frame; 370 × 44; fills width; column; padding 0 0 12 0; cross center; hugs height
+      - Segmented Control: instance of Segmented Control [Size=Small, Is Enabled=False]; 370 × 32; fills width
+    - Color Grid: frame; 370 × 296; fills width; column; cross center; radius 10
+      - Row 1: frame; 370 × 29.6; fills height; fills width; row
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #fefffe
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #ebebeb
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #d6d6d6
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #c2c2c2
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #adadad
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #999999
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #858585
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #707070
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #5c5c5c
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #474747
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #333333
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #000000
+      - Row 2: frame; 370 × 29.6; fills height; fills width; row
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #00374a
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #011d57
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #11053b
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #2e063d
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #3c071b
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #5c0701
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #5a1c00
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #583300
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #563d00
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #666100
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #4f5504
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #263e0f
+      - Row 3: frame; 370 × 29.6; fills height; fills width; row
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #004d65
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #012f7b
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #1a0a52
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #450d59
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #551029
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #831100
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #7b2900
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #7a4a00
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #785800
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #8d8602
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #6f760a
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #38571a
+      - Row 4: frame; 370 × 29.6; fills height; fills width; row
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #016e8f
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #0042a9
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #2c0977
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #61187c
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #791a3d
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #b51a00
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #ad3e00
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #a96800
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #a67b01
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #c4bc00
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #9ba50e
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #4e7a27
+      - Row 5: frame; 370 × 29.6; fills height; fills width; row
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #008cb4
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #0056d6
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #371a94
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #7a219e
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #99244f
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #e22400
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #da5100
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #d38301
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #d19d01
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #f5ec00
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #c3d117
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #669d34
+      - Row 6: frame; 370 × 29.6; fills height; fills width; row
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #00a1d8
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #0061fd
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #4d22b2
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #982abc
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #b92d5d
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #ff4015
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #ff6a00
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #ffab01
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #fcc700
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #fefb41
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #d9ec37
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #76bb40
+      - Row 7: frame; 370 × 29.6; fills height; fills width; row
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #01c7fc
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #3a87fd
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #5e30eb
+        - Swatch: rectangle; 30.83 × 29.6; fills width; fills height; fill #be38f3; stroke #ffffff 3
+  (13 more layers not listed)

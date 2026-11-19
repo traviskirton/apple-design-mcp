@@ -1,0 +1,20 @@
+=== 0
+- component; 162 × 74.5; row; padding 4 19.5 4.5 19.5; main center; cross center; hugs height; uses List/Margin - Scrolled, List/Margin - Top, List/Margin - Bottom, Screen Width; opacity 60%
+  - Platter: rectangle; 138 × 75; absolute at (12, 0); radius 8.5; fill linear gradient #315ad4 to #5ab3eb; uses List/Radius
+  - Frame: frame; 123 × 66; fills width; column; hugs height
+    - Label and Symbol: frame; 123 × 18; fills width; row; gap 2; hugs height
+      - text "Label"; SF Pro Medium 16/18; 106 × 18; fills width; color Labels/Primary; property Label
+      - text SF Symbol location.fill; SF Pro Medium 16/18; 15 × 18; color Labels/Primary; property Symbol; shown while Show Symbol
+    - text "67º"; SF Pro Light 32/32; 123 × 32; fills width; color Labels/Primary; property Large Text
+    - Secondary Text: frame; 123 × 16; fills width; shown while Show Subtitle
+      - text "Subtitle"; SF Pro Medium 16/18; 122 × 18; at (0.5, -1.5); color Labels/Secondary; property Subtitle
+=== 1
+- component; 162 × 74.5; row; padding 4 9.5 4.5 9.5; main center; cross center; hugs height; uses Margin - LR - Copy Safe Area, List/Margin - Top, List/Margin - Bottom, Screen Width
+  - Platter: rectangle; 158 × 75; absolute at (2, 0); radius 8.5; fill linear gradient #315ad4 to #5ab3eb; uses List/Radius
+  - Frame: frame; 143 × 66; fills width; column; hugs height
+    - Label and Symbol: frame; 143 × 18; fills width; row; gap 2; hugs height
+      - text "Label"; SF Pro Medium 16/18; 126 × 18; fills width; color Labels/Primary; property Label
+      - text SF Symbol location.fill; SF Pro Medium 16/18; 15 × 18; color Labels/Primary; property Symbol; shown while Show Symbol
+    - text "67º"; SF Pro Light 32/32; 143 × 32; fills width; color Labels/Primary; property Large Text
+    - Secondary Text: frame; 143 × 16; fills width; shown while Show Subtitle
+      - text "Subtitle"; SF Pro Medium 16/18; 144 × 18; at (0, -2); color Labels/Secondary; property Subtitle

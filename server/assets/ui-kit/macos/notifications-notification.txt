@@ -1,0 +1,24 @@
+=== 0
+- component; 344 × 77; row; gap 8; padding 12 14 12 10; hugs height
+  - BG - Banner - Stack: frame; 344 × 8; absolute at (0, 77)
+    - Liquid Glass - Notification: instance of Liquid Glass - Notification - Light; 312 × 68; absolute at (16, -60)
+  - BG - Banner: instance of Liquid Glass - Notification - Light; 344 × 77; absolute at (0, 0)
+  - Frame: frame; 40 × 53; fills height; row; padding 0 4 0 4; cross center; hugs width
+    - App Icon: instance of _System App Icon [App Icon=Custom]; 32 × 32
+  - Title + Description: frame; 232 × 32; fills width; column; hugs height
+    - text "Title"; SF Pro Bold 13/16; 232 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Title
+    - text "Message"; SF Pro Regular 13/16; 232 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Message
+  - Right Side: frame; 32 × 53; fills height; column; gap 7; cross end; hugs width
+    - text "now"; style Subheadline/Regular; right-aligned; 22 × 14; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+    - Image: frame; 32 × 32; radius 6; fill image
+=== 1
+- component; 344 × 77; row; gap 8; padding 12 14 12 10; hugs height
+  - Liquid Glass - Notification: instance of Liquid Glass - Notification - Light; 344 × 77; absolute at (0, 0)
+  - Frame: frame; 40 × 53; fills height; row; padding 0 4 0 4; cross center; hugs width
+    - App Icon: instance of _System App Icon [App Icon=Custom]; 32 × 32
+  - Title + Description: frame; 232 × 32; fills width; column; hugs height
+    - text "Title"; SF Pro Bold 13/16; 232 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Title
+    - text "Message"; SF Pro Regular 13/16; 232 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Message
+  - Right Side: frame; 32 × 53; fills height; column; gap 7; cross end; hugs width
+    - text "now"; style Subheadline/Regular; right-aligned; 22 × 14; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+    - Image: frame; 32 × 32; radius 6; fill image

@@ -1,0 +1,3 @@
+=== 0
+- component; 282 × 6
+  - Track: rectangle; 282 × 6; at (0, 0); capsule; fill Fills/Primary at 20%

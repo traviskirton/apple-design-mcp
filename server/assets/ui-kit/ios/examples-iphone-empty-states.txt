@@ -1,0 +1,20 @@
+=== 0
+- component; 402 × 874; radius 44
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 167 16 10 16; main center; cross center; radius 50; fill Backgrounds/Primary
+  - Empty States: instance of Empty States [Type=Title and Subtitle]; with Description "Start by adding a note", Message "No Notes"; 402 × 874; at (0, 0)
+  - Toolbar - Top - iPhone: instance of Toolbar - Top - iPhone [Style=Large Title]; with Show Subtitle off; 402 × 105; at (-0.5, 62)
+  - Status bar: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 874; at (0, 0)
+=== 1
+- component; 402 × 874; radius 44
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 167 16 10 16; main center; cross center; radius 50; fill Backgrounds/Primary
+  - Empty States: instance of Empty States [Type=Symbol in Circle]; with Description "You’ve completed all tasks", Message "No Reminders", Symbol SF Symbol checkmark; 402 × 874; at (0, 0)
+  - Toolbar: instance of Toolbar - Top - iPhone [Style=Large Title]; with Show Subtitle off; 402 × 105; at (-0.5, 62)
+  - Status bar: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 874; at (0, 0)
+=== 2
+- component; 402 × 874; radius 44
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 167 16 10 16; main center; cross center; radius 50; fill Backgrounds/Primary
+  - Empty States: instance of Empty States [Type=Large Symbol]; with Description "Quickly access mail from important peop…", Message "VIP"; 402 × 874; at (0, 0)
+  - Status bar: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 874; at (0, 0)

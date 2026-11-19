@@ -1,0 +1,7 @@
+=== 0
+- component; 44 × 30; column; padding 1 2 1 2; main center; cross center; radius 6
+  - Liquid Glass - Small: instance of Liquid Glass - Small [Active=True, State=Default]; 44 × 30; absolute at (0, 0)
+  - Image: frame; 24 × 24; row; gap 10; main center; cross center; fill image
+=== 1
+- component; 44 × 30; column; padding 1 2 1 2; main center; cross center; radius 6
+  - Image: frame; 24 × 24; row; gap 10; main center; cross center; fill image

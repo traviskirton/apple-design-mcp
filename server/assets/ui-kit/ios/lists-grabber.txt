@@ -1,0 +1,3 @@
+=== 0
+- component; 34 × 25; column; gap 10; padding 0 0 0 12; main center; cross center; hugs content
+  - text SF Symbol line.horizontal.3; SF Pro Regular 17/25; centered; 22 × 25; fills width; color Labels/Tertiary at 30%

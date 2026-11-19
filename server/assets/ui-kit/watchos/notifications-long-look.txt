@@ -1,0 +1,17 @@
+=== 0
+- component; 162 × 197; column; gap 2; padding 29.5 0 9.5 0; fill Vibrant Backgrounds/Dark/Ultrathin; background blur 32; uses Notification - Long Look/Margin - T - Platter, Margin - LR - Copy Safe Area, Screen Width, Screen Height
+  - Frame: frame; 162 × 106; column; padding 0 3 0 3; cross center; hugs height; uses Screen Width
+    - Body: frame; 158 × 106; column; padding 7 7.5 9.5 7.5; main center; cross center; hugs height; radius 18; fill #ffffff at 10%; Liquid Glass effect; uses Notification - Long Look/Margin - Left & Right, Notification - Long Look/Margin - Bottom, Width - Safe Area
+      - Frame: frame; 143 × 15; fills width; row; gap 10; padding 0 3 0 3; main end; cross center; hugs height
+        - text "now"; SF Compact Regular 12/14.5; right-aligned; 23 × 15; color Vibrant Labels/Dark/Secondary
+      - Frame: frame; 143 × 74.5; fills width; column; hugs height
+        - text "Title"; SF Compact Semibold 16/18.5; 143 × 18.5; fills width; color #ffffff; property Title
+        - text "The content of the notification goes here."; SF Compact Regular 16/18.5; 143 × 56; fills width; color #ffffff; property Details
+  - Buttons: frame; 162 × 144; fills width; column; gap 4; padding 2 0 2 0; hugs height
+    - Button 1: instance of Button - Pill [Type=Default Floating]; 162 × 44
+    - Button 2: instance of Button - Pill [Type=Default Floating]; 162 × 44; shown while Show Button 2
+    - Button 3: instance of Button - Pill [Type=Default Floating]; 162 × 44; shown while Show Button 3
+  - App Icon - Inset from Left: frame; 39.5 × 39.5; absolute at (0, 0); row; padding 9.5 0 0 9.5; cross center; hugs content; uses Margin - LR - Copy Safe Area, Margin - TB - Safe Area
+    - App Icon: instance of App Icon [Type=Custom]; 30 × 30
+  - Navigation Bar: frame; 162 × 32.5; absolute at (0, 0); column; padding 6 9.5 0 9.5; cross end; uses Margin - LR - Copy Safe Area, Nav Bar/Margin - Top, Screen Width, Nav Bar/Height - Status Bar
+    - text "10:09"; SF Compact Medium 16/18.5; right-aligned; 42 × 19; color Labels/Primary

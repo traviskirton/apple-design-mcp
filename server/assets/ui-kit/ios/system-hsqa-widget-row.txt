@@ -1,0 +1,7 @@
+=== 0
+- component; 250 × 38; row; space between; padding 0 17 0 17; cross center; hugs height
+  - App Icon: instance of _HSQA - App Icon - Light [Item=App, Selected=True]; 38 × 38; blend linear burn
+  - Widget - Small: instance of _HSQA - App Icon - Light [Item=Widget Small, Selected=False]; 38 × 38; blend linear burn
+  - Widget - Medium: instance of _HSQA - App Icon - Light [Item=Widget Medium, Selected=False]; 38 × 38; blend linear burn
+  - Widget - Large: instance of _HSQA - App Icon - Light [Item=Widget Large, Selected=False]; 38 × 38; blend linear burn
+  - Widget - XL: instance of _HSQA - App Icon - Light [Item=Widget XL, Selected=False]; 38 × 38; blend linear burn

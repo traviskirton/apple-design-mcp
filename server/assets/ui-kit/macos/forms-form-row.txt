@@ -1,0 +1,4 @@
+=== 0
+- component; 380 × 42; row; gap 16; padding 2 0 2 0; cross center; hugs height; stroke Labels/Quinary at 5% 1
+  - Leading Accessory: instance of Leading Accessories [Content=Title and Subtitle]; with Title "Detail", Show Subtitle off; 329 × 16; fills width
+  - Right Accessory: instance of Trailing Accessories [Type=Label]; 35 × 16

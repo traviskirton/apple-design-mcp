@@ -1,0 +1,335 @@
+=== 0
+- component; 162 × 43.5; row; gap 1; padding 0 3 0 3; main center; hugs height; uses Screen Width
+  - Leading Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 8.5 0 0 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.1.fill; SF Pro Medium 16/18; 20 × 18; color Labels/Primary; property Symbol - Leading
+  - Slider: frame; 67 × 43.5; fills width; column; gap 5; padding 0 5 0 5; main center; cross center; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Margin - Track - LR, Slider/Height
+    - Track: frame; 57 × 3; fills width; row; gap 1; capsule
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+  - Trailing Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 0 8.5 8.5 0; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.3.fill; SF Pro Medium 16/18; 27 × 18; color Labels/Primary; property Symbol - Trailing
+=== 1
+- component; 162 × 43.5; row; gap 1; padding 0 3 0 3; main center; hugs height; uses Screen Width
+  - Leading Button: frame; 43.5 × 43.5; row; main center; cross center; radius 8.5 0 0 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.1.fill; SF Pro Medium 16/18; 20 × 18; color Labels/Primary; property Symbol - Leading
+  - Slider: frame; 67 × 43.5; fills width; column; gap 5; padding 0 5 0 5; main center; cross center; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Margin - Track - LR, Slider/Height
+    - Track: frame; 57 × 3; fills width; row; gap 1; capsule
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+  - Trailing Button: frame; 43.5 × 43.5; row; main center; cross center; radius 0 8.5 8.5 0; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.3.fill; SF Pro Medium 16/18; 27 × 18; color Labels/Primary; property Symbol - Trailing
+=== 2
+- component; 162 × 43.5; row; gap 1; padding 0 3 0 3; main center; hugs height; uses Screen Width
+  - Leading Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 8.5 0 0 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.1.fill; SF Pro Medium 16/18; 20 × 18; color Labels/Primary; property Symbol - Leading
+  - Slider: frame; 67 × 43.5; fills width; column; gap 5; padding 0 5 0 5; main center; cross center; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Margin - Track - LR, Slider/Height
+    - Track: frame; 57 × 3; fills width; row; gap 1; capsule
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+  - Trailing Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 0 8.5 8.5 0; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.3.fill; SF Pro Medium 16/18; 27 × 18; color Labels/Primary; property Symbol - Trailing
+=== 3
+- component; 162 × 43.5; row; gap 1; padding 0 3 0 3; main center; hugs height; uses Screen Width
+  - Leading Button: frame; 43.5 × 43.5; row; main center; cross center; radius 8.5 0 0 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.1.fill; SF Pro Medium 16/18; 20 × 18; color Labels/Primary; property Symbol - Leading
+  - Slider: frame; 67 × 43.5; fills width; column; gap 5; padding 0 5 0 5; main center; cross center; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Margin - Track - LR, Slider/Height
+    - Track: frame; 57 × 3; fills width; row; gap 1; capsule
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+  - Trailing Button: frame; 43.5 × 43.5; row; main center; cross center; radius 0 8.5 8.5 0; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.3.fill; SF Pro Medium 16/18; 27 × 18; color Labels/Primary; property Symbol - Trailing
+=== 4
+- component; 162 × 43.5; row; gap 1; padding 0 3 0 3; main center; hugs height; uses Screen Width
+  - Leading Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 8.5 0 0 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.1.fill; SF Pro Medium 16/18; 20 × 18; color Labels/Primary; property Symbol - Leading
+  - Slider: frame; 67 × 43.5; fills width; column; gap 5; padding 0 5 0 5; main center; cross center; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Margin - Track - LR, Slider/Height
+    - Track: frame; 57 × 3; fills width; row; gap 1; capsule
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+  - Trailing Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 0 8.5 8.5 0; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.3.fill; SF Pro Medium 16/18; 27 × 18; color Labels/Primary; property Symbol - Trailing
+=== 5
+- component; 162 × 43.5; row; gap 1; padding 0 3 0 3; main center; hugs height; uses Screen Width
+  - Leading Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 8.5 0 0 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.1.fill; SF Pro Medium 16/18; 20 × 18; color Labels/Primary; property Symbol - Leading
+  - Slider: frame; 67 × 43.5; fills width; column; gap 5; padding 0 5 0 5; main center; cross center; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Margin - Track - LR, Slider/Height
+    - Track: frame; 57 × 3; fills width; row; gap 1; capsule
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+  - Trailing Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 0 8.5 8.5 0; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.3.fill; SF Pro Medium 16/18; 27 × 18; color Labels/Primary; property Symbol - Trailing
+=== 6
+- component; 162 × 43.5; row; gap 1; padding 0 3 0 3; main center; hugs height; uses Screen Width
+  - Leading Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 8.5 0 0 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.1.fill; SF Pro Medium 16/18; 20 × 18; color Labels/Primary; property Symbol - Leading
+  - Slider: frame; 67 × 43.5; fills width; column; gap 5; padding 0 5 0 5; main center; cross center; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Margin - Track - LR, Slider/Height
+    - Track: frame; 57 × 3; fills width; row; gap 1; capsule
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill Colors/Green
+  - Trailing Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 0 8.5 8.5 0; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.3.fill; SF Pro Medium 16/18; 27 × 18; color Labels/Primary; property Symbol - Trailing
+=== 7
+- component; 162 × 43.5; row; gap 1; padding 0 3 0 3; main center; hugs height; uses Screen Width
+  - Leading Button: frame; 43.5 × 43.5; row; main center; cross center; radius 8.5 0 0 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.1.fill; SF Pro Medium 16/18; 20 × 18; color Labels/Primary; property Symbol - Leading
+  - Slider: frame; 67 × 43.5; fills width; column; gap 5; padding 0 5 0 5; main center; cross center; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Margin - Track - LR, Slider/Height
+    - Track: frame; 57 × 3; fills width; row; gap 1; capsule
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+  - Trailing Button: frame; 43.5 × 43.5; row; main center; cross center; radius 0 8.5 8.5 0; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.3.fill; SF Pro Medium 16/18; 27 × 18; color Labels/Primary; property Symbol - Trailing
+=== 8
+- component; 162 × 43.5; row; gap 1; padding 0 3 0 3; main center; hugs height; uses Screen Width
+  - Leading Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 8.5 0 0 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.1.fill; SF Pro Medium 16/18; 20 × 18; color Labels/Primary; property Symbol - Leading
+  - Slider: frame; 67 × 43.5; fills width; column; gap 5; padding 0 5 0 5; main center; cross center; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Margin - Track - LR, Slider/Height
+    - Track: frame; 57 × 3; fills width; row; gap 1; capsule
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+  - Trailing Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 0 8.5 8.5 0; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.3.fill; SF Pro Medium 16/18; 27 × 18; color Labels/Primary; property Symbol - Trailing
+=== 9
+- component; 162 × 43.5; row; gap 1; padding 0 3 0 3; main center; hugs height; uses Screen Width
+  - Leading Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 8.5 0 0 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.1.fill; SF Pro Medium 16/18; 20 × 18; color Labels/Primary; property Symbol - Leading
+  - Slider: frame; 67 × 43.5; fills width; column; gap 5; padding 0 5 0 5; main center; cross center; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Margin - Track - LR, Slider/Height
+    - Track: frame; 57 × 3; fills width; row; gap 1; capsule
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+  - Trailing Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 0 8.5 8.5 0; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.3.fill; SF Pro Medium 16/18; 27 × 18; color Labels/Primary; property Symbol - Trailing
+=== 10
+- component; 162 × 43.5; row; gap 1; padding 0 3 0 3; main center; hugs height; uses Screen Width
+  - Leading Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 8.5 0 0 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.1.fill; SF Pro Medium 16/18; 20 × 18; color Labels/Primary; property Symbol - Leading
+  - Slider: frame; 67 × 43.5; fills width; column; gap 5; padding 0 5 0 5; main center; cross center; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Margin - Track - LR, Slider/Height
+    - Track: frame; 57 × 3; fills width; row; gap 1; capsule
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+  - Trailing Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 0 8.5 8.5 0; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.3.fill; SF Pro Medium 16/18; 27 × 18; color Labels/Primary; property Symbol - Trailing
+=== 11
+- component; 162 × 43.5; row; gap 1; padding 0 3 0 3; main center; hugs height; uses Screen Width
+  - Leading Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 8.5 0 0 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.1.fill; SF Pro Medium 16/18; 20 × 18; color Labels/Primary; property Symbol - Leading
+  - Slider: frame; 67 × 43.5; fills width; column; gap 5; padding 0 5 0 5; main center; cross center; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Margin - Track - LR, Slider/Height
+    - Track: frame; 57 × 3; fills width; row; gap 1; capsule
+      - Segment: rectangle; 13.5 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 13.5 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 13.5 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 13.5 × 3; fills width; fills height; fill Colors/Green
+  - Trailing Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 0 8.5 8.5 0; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.3.fill; SF Pro Medium 16/18; 27 × 18; color Labels/Primary; property Symbol - Trailing
+=== 12
+- component; 162 × 43.5; row; gap 1; padding 0 3 0 3; main center; hugs height; uses Screen Width
+  - Leading Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 8.5 0 0 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.1.fill; SF Pro Medium 16/18; 20 × 18; color Labels/Primary; property Symbol - Leading
+  - Slider: frame; 67 × 43.5; fills width; column; gap 5; padding 0 5 0 5; main center; cross center; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Margin - Track - LR, Slider/Height
+    - Track: frame; 57 × 3; fills width; row; gap 1; capsule
+      - Segment: rectangle; 13.5 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 13.5 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 13.5 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 13.5 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+  - Trailing Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 0 8.5 8.5 0; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.3.fill; SF Pro Medium 16/18; 27 × 18; color Labels/Primary; property Symbol - Trailing
+=== 13
+- component; 162 × 43.5; row; gap 1; padding 0 3 0 3; main center; hugs height; uses Screen Width
+  - Leading Button: frame; 43.5 × 43.5; row; main center; cross center; radius 8.5 0 0 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.1.fill; SF Pro Medium 16/18; 20 × 18; color Labels/Primary; property Symbol - Leading
+  - Slider: frame; 67 × 43.5; fills width; column; gap 5; padding 0 5 0 5; main center; cross center; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Margin - Track - LR, Slider/Height
+    - Track: frame; 57 × 3; fills width; row; gap 1; capsule
+      - Segment: rectangle; 13.5 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 13.5 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 13.5 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 13.5 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+  - Trailing Button: frame; 43.5 × 43.5; row; main center; cross center; radius 0 8.5 8.5 0; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.3.fill; SF Pro Medium 16/18; 27 × 18; color Labels/Primary; property Symbol - Trailing
+=== 14
+- component; 162 × 43.5; row; gap 1; padding 0 3 0 3; main center; hugs height; uses Screen Width
+  - Leading Button: frame; 43.5 × 43.5; row; main center; cross center; radius 8.5 0 0 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.1.fill; SF Pro Medium 16/18; 20 × 18; color Labels/Primary; property Symbol - Leading
+  - Slider: frame; 67 × 43.5; fills width; column; gap 5; padding 0 5 0 5; main center; cross center; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Margin - Track - LR, Slider/Height
+    - Track: frame; 57 × 3; fills width; row; gap 1; capsule
+      - Segment: rectangle; 13.5 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 13.5 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 13.5 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 13.5 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+  - Trailing Button: frame; 43.5 × 43.5; row; main center; cross center; radius 0 8.5 8.5 0; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.3.fill; SF Pro Medium 16/18; 27 × 18; color Labels/Primary; property Symbol - Trailing
+=== 15
+- component; 162 × 43.5; row; gap 1; padding 0 3 0 3; main center; hugs height; uses Screen Width
+  - Leading Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 8.5 0 0 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.1.fill; SF Pro Medium 16/18; 20 × 18; color Labels/Primary; property Symbol - Leading
+  - Slider: frame; 67 × 43.5; fills width; column; gap 5; padding 0 5 0 5; main center; cross center; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Margin - Track - LR, Slider/Height
+    - Track: frame; 57 × 3; fills width; row; gap 1; capsule
+      - Segment: rectangle; 18.33 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 18.33 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 18.33 × 3; fills width; fills height; fill Colors/Green
+  - Trailing Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 0 8.5 8.5 0; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.3.fill; SF Pro Medium 16/18; 27 × 18; color Labels/Primary; property Symbol - Trailing
+=== 16
+- component; 162 × 43.5; row; gap 1; padding 0 3 0 3; main center; hugs height; uses Screen Width
+  - Leading Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 8.5 0 0 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.1.fill; SF Pro Medium 16/18; 20 × 18; color Labels/Primary; property Symbol - Leading
+  - Slider: frame; 67 × 43.5; fills width; column; gap 5; padding 0 5 0 5; main center; cross center; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Margin - Track - LR, Slider/Height
+    - Track: frame; 57 × 3; fills width; row; gap 1; capsule
+      - Segment: rectangle; 18.33 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 18.33 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 18.33 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+  - Trailing Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 0 8.5 8.5 0; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.3.fill; SF Pro Medium 16/18; 27 × 18; color Labels/Primary; property Symbol - Trailing
+=== 17
+- component; 162 × 43.5; row; gap 1; padding 0 3 0 3; main center; hugs height; uses Screen Width
+  - Leading Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 8.5 0 0 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.1.fill; SF Pro Medium 16/18; 20 × 18; color Labels/Primary; property Symbol - Leading
+  - Slider: frame; 67 × 43.5; fills width; column; gap 5; padding 0 5 0 5; main center; cross center; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Margin - Track - LR, Slider/Height
+    - Track: frame; 57 × 3; fills width; row; gap 1; capsule
+      - Segment: rectangle; 18.33 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 18.33 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 18.33 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+  - Trailing Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 0 8.5 8.5 0; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.3.fill; SF Pro Medium 16/18; 27 × 18; color Labels/Primary; property Symbol - Trailing
+=== 18
+- component; 162 × 43.5; row; gap 1; padding 0 3 0 3; main center; hugs height; uses Screen Width
+  - Leading Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 8.5 0 0 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.1.fill; SF Pro Medium 16/18; 20 × 18; color Labels/Primary; property Symbol - Leading
+  - Slider: frame; 67 × 43.5; fills width; column; gap 5; padding 0 5 0 5; main center; cross center; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Margin - Track - LR, Slider/Height
+    - Track: frame; 57 × 3; fills width; row; gap 1; capsule
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+  - Trailing Button: frame; 43.5 × 43.5; row; main center; cross center; radius 0 8.5 8.5 0; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.3.fill; SF Pro Medium 16/18; 27 × 18; color Labels/Primary; property Symbol - Trailing
+=== 19
+- component; 162 × 43.5; row; gap 1; padding 0 3 0 3; main center; hugs height; uses Screen Width
+  - Leading Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 8.5 0 0 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.1.fill; SF Pro Medium 16/18; 20 × 18; color Labels/Primary; property Symbol - Leading
+  - Slider: frame; 67 × 43.5; fills width; column; gap 5; padding 0 5 0 5; main center; cross center; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Margin - Track - LR, Slider/Height
+    - Track: frame; 57 × 3; fills width; row; gap 1; capsule
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+  - Trailing Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 0 8.5 8.5 0; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.3.fill; SF Pro Medium 16/18; 27 × 18; color Labels/Primary; property Symbol - Trailing
+=== 20
+- component; 162 × 43.5; row; gap 1; padding 0 3 0 3; main center; hugs height; uses Screen Width
+  - Leading Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 8.5 0 0 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.1.fill; SF Pro Medium 16/18; 20 × 18; color Labels/Primary; property Symbol - Leading
+  - Slider: frame; 67 × 43.5; fills width; column; gap 5; padding 0 5 0 5; main center; cross center; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Margin - Track - LR, Slider/Height
+    - Track: frame; 57 × 3; fills width; row; gap 1; capsule
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 8.67 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+  - Trailing Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 0 8.5 8.5 0; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.3.fill; SF Pro Medium 16/18; 27 × 18; color Labels/Primary; property Symbol - Trailing
+=== 21
+- component; 162 × 43.5; row; gap 1; padding 0 3 0 3; main center; hugs height; uses Screen Width
+  - Leading Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 8.5 0 0 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.1.fill; SF Pro Medium 16/18; 20 × 18; color Labels/Primary; property Symbol - Leading
+  - Slider: frame; 67 × 43.5; fills width; column; gap 5; padding 0 5 0 5; main center; cross center; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Margin - Track - LR, Slider/Height
+    - Track: frame; 57 × 3; fills width; row; gap 1; capsule
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+  - Trailing Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 0 8.5 8.5 0; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.3.fill; SF Pro Medium 16/18; 27 × 18; color Labels/Primary; property Symbol - Trailing
+=== 22
+- component; 162 × 43.5; row; gap 1; padding 0 3 0 3; main center; hugs height; uses Screen Width
+  - Leading Button: frame; 43.5 × 43.5; row; main center; cross center; radius 8.5 0 0 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.1.fill; SF Pro Medium 16/18; 20 × 18; color Labels/Primary; property Symbol - Leading
+  - Slider: frame; 67 × 43.5; fills width; column; gap 5; padding 0 5 0 5; main center; cross center; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Margin - Track - LR, Slider/Height
+    - Track: frame; 57 × 3; fills width; row; gap 1; capsule
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+  - Trailing Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 0 8.5 8.5 0; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.3.fill; SF Pro Medium 16/18; 27 × 18; color Labels/Primary; property Symbol - Trailing
+=== 23
+- component; 162 × 43.5; row; gap 1; padding 0 3 0 3; main center; hugs height; uses Screen Width
+  - Leading Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 8.5 0 0 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.1.fill; SF Pro Medium 16/18; 20 × 18; color Labels/Primary; property Symbol - Leading
+  - Slider: frame; 67 × 43.5; fills width; column; gap 5; padding 0 5 0 5; main center; cross center; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Margin - Track - LR, Slider/Height
+    - Track: frame; 57 × 3; fills width; row; gap 1; capsule
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 10.6 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+  - Trailing Button: frame; 43.5 × 43.5; row; main center; cross center; radius 0 8.5 8.5 0; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.3.fill; SF Pro Medium 16/18; 27 × 18; color Labels/Primary; property Symbol - Trailing
+=== 24
+- component; 162 × 43.5; row; gap 1; padding 0 3 0 3; main center; hugs height; uses Screen Width
+  - Leading Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 8.5 0 0 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.1.fill; SF Pro Medium 16/18; 20 × 18; color Labels/Primary; property Symbol - Leading
+  - Slider: frame; 67 × 43.5; fills width; column; gap 5; padding 0 5 0 5; main center; cross center; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Margin - Track - LR, Slider/Height
+    - Track: frame; 57 × 3; fills width; row; gap 1; capsule
+      - Segment: rectangle; 13.5 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 13.5 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 13.5 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 13.5 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+  - Trailing Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 0 8.5 8.5 0; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.3.fill; SF Pro Medium 16/18; 27 × 18; color Labels/Primary; property Symbol - Trailing
+=== 25
+- component; 162 × 43.5; row; gap 1; padding 0 3 0 3; main center; hugs height; uses Screen Width
+  - Leading Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 8.5 0 0 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.1.fill; SF Pro Medium 16/18; 20 × 18; color Labels/Primary; property Symbol - Leading
+  - Slider: frame; 67 × 43.5; fills width; column; gap 5; padding 0 5 0 5; main center; cross center; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Margin - Track - LR, Slider/Height
+    - Track: frame; 57 × 3; fills width; row; gap 1; capsule
+      - Segment: rectangle; 13.5 × 3; fills width; fills height; fill Colors/Green
+      - Segment: rectangle; 13.5 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 13.5 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+      - Segment: rectangle; 13.5 × 3; fills width; fills height; fill #04de71 + #000000 at 77%
+  - Trailing Button: frame; 43.5 × 43.5; fills height; row; main center; cross center; radius 0 8.5 8.5 0; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Slider/Button Width, Slider/Height, List/Radius
+    - text SF Symbol speaker.3.fill; SF Pro Medium 16/18; 27 × 18; color Labels/Primary; property Symbol - Trailing

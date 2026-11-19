@@ -1,0 +1,22 @@
+=== 0
+- component; 402 × 48; row; space between; padding 10 16 10 16; cross end; hugs height
+  - Header and Description: frame; 325 × 28; fills width; column; gap 2; hugs height
+    - Frame: frame; 306 × 28; column; cross center; hugs content
+      - text "Supertitle"; SF Pro Regular 15/20; 306 × 20; color Labels/Secondary at 60%; property Supertitle; hidden unless Show Supertitle
+      - text "Header"; SF Pro Bold 22/28; 306 × 28; color Labels/Primary; property Text
+    - text "Subtitle"; SF Pro Regular 15/20; 306 × 20; color Labels/Secondary at 60%; property Subtitle; hidden unless Show Subtitle
+  - Frame: frame; 45 × 21; column; gap 10; padding 0 0 1 0; hugs height
+    - Trailing: instance of _Header Trailing Accessories [Type=Action]; 45 × 20; fills width; shown while Show Disclosure
+=== 1
+- component; 402 × 45; row; space between; padding 10 16 10 16; cross end; hugs height
+  - Header and Description: frame; 325 × 25; fills width; column; gap 2; hugs height
+    - Frame: frame; 306 × 25; column; cross center; hugs content
+      - text "Supertitle"; SF Pro Regular 15/20; 306 × 20; color Labels/Secondary at 60%; property Supertitle; hidden unless Show Supertitle
+      - text "Header"; SF Pro Semibold 20/25; 306 × 25; color Labels/Primary; property Text
+    - text "Subtitle"; SF Pro Regular 15/20; 306 × 20; color Labels/Secondary at 60%; property Subtitle; hidden unless Show Subtitle
+  - Trailing: instance of _Header Trailing Accessories [Type=Action]; 45 × 20; shown while Show Disclosure
+=== 2
+- component; 402 × 42; row; padding 10 16 10 16; main center; cross end; hugs height
+  - Header and Description: frame; 370 × 22; fills width; column; gap 2; main center; hugs height
+    - text "Header"; SF Pro Semibold 17/22; 370 × 22; fills width; color Labels/Secondary at 60%; property Text
+    - text "Subtitle"; SF Pro Regular 15/20; 306 × 20; color Labels/Secondary at 60%; property Subtitle; hidden unless Show Subtitle

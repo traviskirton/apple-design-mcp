@@ -1,14 +1,23 @@
 // Connects to the server as a real MCP client and tries every tool.
 // Usage: npm test                       (against `npm run dev` on this machine)
 //        npm test -- https://HOST/mcp   (against the deployed server)
+// Missing static files (symbol shapes, drawings, bezels) fail the test. Add --allow-missing-assets
+// to only warn, for a server run from a copy without server/assets/.
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StreamableHTTPClientTransport } from "@modelcontextprotocol/sdk/client/streamableHttp.js";
 
-const url = process.argv[2] ?? "http://127.0.0.1:8787/mcp";
+const allowMissing = process.argv.includes("--allow-missing-assets");
+const url = process.argv.slice(2).find((a) => !a.startsWith("--")) ?? "http://127.0.0.1:8787/mcp";
 const client = new Client({ name: "smoke-test", version: "0.7.0" });
 
 function check(ok, what) {
   if (!ok) throw new Error(what);
+}
+
+/** Static files the packs say exist are not served: a failure, unless --allow-missing-assets. */
+function missing(what) {
+  if (!allowMissing) throw new Error(`${what} (run with --allow-missing-assets to only warn)`);
+  console.log(`WARNING: ${what}`);
 }
 
 async function call(name, args = {}) {
@@ -111,7 +120,7 @@ try {
     const picture = /https?:\/\/[^ |]+\/bezels\/[a-z0-9-]+\.png/.exec(mac.text)?.[0];
     const head = picture ? await fetch(picture, { method: "HEAD" }) : null;
     if (head?.ok) check(head.headers.get("content-type") === "image/png", "a bezel picture should be served as image/png");
-    else console.log("bezels: the picture files are not on this server (assets/bezels/ is built by npm run pack:bezels)");
+    else missing("the bezel pictures are not on this server (assets/bezels/ is built by npm run pack:bezels)");
   } else {
     console.log("bezels: no product bezels are loaded on this server");
   }
@@ -122,7 +131,7 @@ try {
   check(icons.text.includes("### gearshape") || icons.text.includes("### gear\n"), 'search_symbols did not find a gear for "settings"');
   check(icons.text.includes("### square.and.arrow.up"), 'search_symbols did not find the share symbol');
   if (icons.text.includes("<svg")) check(/<svg [^>]*viewBox="[^"]+"[^>]*>\s*<path /.test(icons.text), "a symbol's SVG should hold a viewBox and a path");
-  else console.log("WARNING: no symbol shapes on this server (assets/symbols is empty); names only.");
+  else missing("no symbol shapes on this server (assets/symbols is empty)");
 
   const named = await call("get_symbol", { names: ["heart.fill", "no.such.symbol"] });
   check(!named.isError && named.text.includes("### heart.fill"), "get_symbol did not return heart.fill");
@@ -130,7 +139,7 @@ try {
 
   const weighted = await call("get_symbol", { names: ["heart.fill"], weight: "semibold" });
   check(!weighted.isError && weighted.text.includes("### heart.fill"), "get_symbol with a weight did not return heart.fill");
-  if (weighted.text.includes("this is the regular weight")) console.log("WARNING: no other weights on this server (assets/symbol-weights is empty); regular only.");
+  if (weighted.text.includes("this is the regular weight")) missing("no other weights on this server (assets/symbol-weights is empty)");
   else if (weighted.text.includes("<svg")) {
     check(weighted.text.includes("/symbols/semibold/heart.fill.svg") && weighted.text.includes("Each SVG is the semibold weight"), "a semibold symbol should say so and give its address");
     const regular = /```svg\n([\s\S]*?)\n```/.exec(named.text)?.[1];
@@ -212,7 +221,7 @@ if (named.text.includes("```svg")) {
     check(!small.text.includes("```svg") && small.text.includes("more than this reply has room for"), "a drawing that does not fit should be given by its address");
   } else {
     check(drawn.text.includes("not on this server"), "search_ui_kit should say when the drawings are missing");
-    console.log("search_ui_kit: no drawings on this server (assets/ui-kit-svg/ is built by node scripts/export-ui-kit-svg.mjs)");
+    missing("search_ui_kit: no drawings on this server (assets/ui-kit-svg/ is built by node scripts/export-ui-kit-svg.mjs)");
   }
 
   const everyComponent = await call("search_ui_kit", { platform: "macos" });

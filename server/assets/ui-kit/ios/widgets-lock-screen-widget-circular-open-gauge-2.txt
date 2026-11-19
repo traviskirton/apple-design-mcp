@@ -1,0 +1,8 @@
+=== 0
+- component; 72 × 72; column; padding 7; main center; cross center; background blur 40
+  - Frame: frame; 58 × 55.39
+    - Gauge: vector shape; 58 × 45.47; at (0, 0); fill Vibrant Fills/Dark/Vibrant Tertiary
+    - Current Value Indicator: ellipse; 5.67 × 5.67; at (43.13, 10.21); rotated 60°; fill Vibrant Labels/Dark/Vibrant Secondary
+    - text "78"; SF Pro Medium 11; 14 × 13; at (32.5, 44.39); color Vibrant Labels/Dark/Vibrant Secondary; property Max Value
+    - text "50"; SF Pro Medium 11; 15 × 13; at (10.5, 44.39); color Vibrant Labels/Dark/Vibrant Secondary; property Min Value
+    - text "67"; SF Pro Medium 24; 29 × 29; at (14, 12.67); color Vibrant Labels/Dark/Vibrant Secondary; property Value

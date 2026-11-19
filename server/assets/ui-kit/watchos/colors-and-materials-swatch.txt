@@ -1,0 +1,8 @@
+=== 0
+- component; 100 × 100; fill image
+  - Swatch: vector shape; 53.05 × 56.37; at (23, 22); fill Labels/Primary
+  - text "Color"; SF Pro Regular 13/18; 33 × 18; at (0, -30); color #ffffff; property Color
+=== 1
+- component; 100 × 100; fill image
+  - Swatch: rectangle; 80 × 80; at (10, 10); capsule; fill Accents/Red
+  - text "Color"; SF Pro Regular 13/18; 33 × 18; at (0, -30); color #ffffff; property Color

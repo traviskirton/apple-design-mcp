@@ -1,0 +1,7 @@
+=== 0
+- component; 1210 × 834; fill Backgrounds/Primary
+  - instance of Overlay; 1210 × 834; at (0, 0)
+  - Sheet: instance of Sheet - iPad; 936 × 355; at (137, 32)
+  - Status bar and Menu bar- iPad: instance of Status bar and Menu bar- iPad [Full Screen=True, Menu Expanded=False, Background=Light]; 1210 × 32; at (0, 0)
+  - Keyboard: instance of Keyboard [Type=Default]; 1210 × 428; at (0, 406)
+  - Bezel: instance of iPad Pro M4 11" [Color=Silver]; 1210 × 834; at (0, 0)

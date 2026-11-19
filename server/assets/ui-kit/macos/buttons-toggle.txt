@@ -1,0 +1,24 @@
+=== 0
+- component; 67 × 24; column; padding 0 16 0 16; main center; cross center; hugs width; radius 6; uses Button/Padding - Horizontal, Global/Height, Button/Radius
+  - BG: instance of _Control BG/Bordered [Context=Content Area, State=Disabled, On=True]; 67 × 24; absolute at (0, 0)
+  - Label: instance of _Labels - Toggle [Active=True, Context=Content Area, State=Disabled, On=True]; 35 × 16
+=== 1
+- component; 67 × 24; column; padding 0 16 0 16; main center; cross center; hugs width; radius 6; uses Button/Padding - Horizontal, Global/Height, Button/Radius
+  - BG: instance of _Control BG/Bordered [Context=Content Area, State=Clicked, On=True]; 67 × 24; absolute at (0, 0)
+  - Label: instance of _Labels - Toggle [Active=True, Context=Content Area, State=Clicked, On=True]; 35 × 16
+=== 2
+- component; 67 × 24; column; padding 0 16 0 16; main center; cross center; hugs width; radius 6; uses Button/Padding - Horizontal, Global/Height, Button/Radius
+  - BG: instance of _Control BG/Bordered [Context=Content Area, State=Idle, On=True]; 67 × 24; absolute at (0, 0)
+  - Label: instance of _Labels - Toggle [Active=True, Context=Content Area, State=Idle, On=True]; 35 × 16
+=== 3
+- component; 67 × 24; column; padding 0 16 0 16; main center; cross center; hugs width; radius 6; uses Button/Padding - Horizontal, Global/Height, Button/Radius
+  - BG: instance of _Control BG/Bordered [Context=Content Area, State=Disabled, On=False]; 67 × 24; absolute at (0, 0)
+  - Label: instance of _Labels - Toggle [Active=True, Context=Content Area, State=Disabled, On=False]; 35 × 16
+=== 4
+- component; 67 × 24; column; padding 0 16 0 16; main center; cross center; hugs width; radius 6; uses Button/Padding - Horizontal, Global/Height, Button/Radius
+  - BG: instance of _Control BG/Bordered [Context=Content Area, State=Clicked, On=True]; 67 × 24; absolute at (0, 0)
+  - Label: instance of _Labels - Toggle [Active=True, Context=Content Area, State=Clicked, On=False]; 35 × 16
+=== 5
+- component; 67 × 24; column; padding 0 16 0 16; main center; cross center; hugs width; radius 6; uses Button/Padding - Horizontal, Global/Height, Button/Radius
+  - BG: instance of _Control BG/Bordered [Context=Content Area, State=Idle, On=False]; 67 × 24; absolute at (0, 0)
+  - Label: instance of _Labels - Toggle [Active=True, Context=Content Area, State=Idle, On=False]; 35 × 16

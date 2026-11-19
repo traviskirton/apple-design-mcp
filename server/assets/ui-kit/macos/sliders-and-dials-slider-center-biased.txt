@@ -1,0 +1,380 @@
+=== 0
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Disabled]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=True, State=Disabled]; 50 × 6; at (50, 9)
+  - Scale Layout: frame; 100 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Disabled, Style=Non-Ticked]; 1 × 20; at (99, -7)
+=== 1
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Disabled]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=True, State=Disabled]; 20 × 6; at (50, 9)
+  - Scale Layout: frame; 75 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Disabled, Style=Non-Ticked]; 1 × 20; at (74, -7)
+=== 2
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Disabled]; 100 × 6; at (0, 9)
+  - Track Filled: frame; 2 × 6; at (51, 9); rotated -180°; uses Slider/Track/Inset - Vertical
+    - Frame: frame; 2 × 8; at (0, 7); column; main center; cross center; uses Slider/Knob - Non-ticked Slider/Inset
+      - Track Filled: instance of _Tracks (OLD) [Active=True, On=True, State=Disabled, Context=Content Area]; 2 × 8; fills height; fills width; opacity 50%
+    - Midline: frame; 2 × 4; at (0, 1); fill Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+  - Scale Layout: frame; 50 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Disabled, Style=Non-Ticked]; 1 × 20; at (49, -7)
+=== 3
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Disabled]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=True, State=Disabled]; 30 × 6; at (50, 9); rotated -180°
+  - Scale Layout: frame; 25 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Disabled, Style=Non-Ticked]; 1 × 20; at (24, -7)
+=== 4
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Disabled]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=True, State=Disabled]; 50 × 6; at (50, 9); rotated -180°
+  - Knob: instance of _Knob [State=Disabled, Style=Non-Ticked]; 1 × 20; at (0, 2)
+=== 5
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Clicked]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=True, State=Clicked]; 50 × 6; at (50, 9)
+  - Scale Layout: frame; 100 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Clicked, Style=Non-Ticked]; 1 × 20; at (99, -7)
+=== 6
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Clicked]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=True, State=Clicked]; 20 × 6; at (50, 9)
+  - Scale Layout: frame; 75 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Clicked, Style=Non-Ticked]; 1 × 20; at (74, -7)
+=== 7
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Clicked]; 100 × 6; at (0, 9)
+  - Track Filled: frame; 2 × 6; at (51, 9); rotated -180°; uses Slider/Track/Inset - Vertical
+    - Frame: frame; 2 × 8; at (0, 7); column; main center; cross center; uses Slider/Knob - Non-ticked Slider/Inset
+      - Track Filled: instance of _Tracks - Filled [Active=True, Context=Content Area, State=Idle]; 2 × 8; fills height; fills width
+    - Midline: frame; 2 × 4; at (0, 1); fill Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+  - Scale Layout: frame; 50 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Clicked, Style=Non-Ticked]; 1 × 20; at (49, -7)
+=== 8
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Clicked]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=True, State=Clicked]; 30 × 6; at (50, 9); rotated -180°
+  - Scale Layout: frame; 25 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Clicked, Style=Non-Ticked]; 1 × 20; at (24, -7)
+=== 9
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Clicked]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=True, State=Clicked]; 50 × 6; at (50, 9); rotated -180°
+  - Knob: instance of _Knob [State=Clicked, Style=Non-Ticked]; 1 × 20; at (0, 2)
+=== 10
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Idle]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=True, State=Idle]; 50 × 6; at (50, 9)
+  - Scale Layout: frame; 100 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Idle, Style=Non-Ticked]; 1 × 20; at (99, -7)
+=== 11
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Idle]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=True, State=Idle]; 20 × 6; at (50, 9)
+  - Scale Layout: frame; 75 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Idle, Style=Non-Ticked]; 1 × 20; at (74, -7)
+=== 12
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Idle]; 100 × 6; at (0, 9)
+  - Track Filled: frame; 2 × 6; at (51, 9); rotated -180°; uses Slider/Track/Inset - Vertical
+    - Frame: frame; 2 × 8; at (0, 7); column; main center; cross center; uses Slider/Knob - Non-ticked Slider/Inset
+      - Track Filled: instance of _Tracks (OLD) [Active=True, On=True, State=Idle, Context=Content Area]; 2 × 8; fills height; fills width
+    - Midline: frame; 2 × 4; at (0, 1); fill Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+  - Scale Layout: frame; 50 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Idle, Style=Non-Ticked]; 1 × 20; at (49, -7)
+=== 13
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Idle]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=True, State=Idle]; 30 × 6; at (50, 9); rotated -180°
+  - Scale Layout: frame; 25 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Idle, Style=Non-Ticked]; 1 × 20; at (24, -7)
+=== 14
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Idle]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=True, State=Idle]; 50 × 6; at (50, 9); rotated -180°
+  - Knob: instance of _Knob [State=Idle, Style=Non-Ticked]; 1 × 20; at (0, 2)
+=== 15
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Disabled]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=True, State=Disabled]; 50 × 6; at (50, 9)
+  - Scale Layout: frame; 100 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Disabled, Style=Ticked]; 1 × 20; at (99, -7)
+=== 16
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Disabled]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=True, State=Disabled]; 20 × 6; at (50, 9)
+  - Scale Layout: frame; 75 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Disabled, Style=Ticked]; 1 × 20; at (74, -7)
+=== 17
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Disabled]; 100 × 6; at (0, 9)
+  - Track Filled: frame; 2 × 6; at (51, 9); rotated -180°; uses Slider/Track/Inset - Vertical
+    - Frame: frame; 2 × 8; at (0, 7); column; main center; cross center; uses Slider/Knob - Non-ticked Slider/Inset
+      - Track Filled: instance of _Tracks (OLD) [Active=True, On=True, State=Disabled, Context=Content Area]; 2 × 8; fills height; fills width; opacity 50%
+    - Midline: frame; 2 × 4; at (0, 1); fill Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+  - Scale Layout: frame; 50 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Disabled, Style=Ticked]; 1 × 20; at (49, -7)
+=== 18
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Disabled]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=True, State=Disabled]; 30 × 6; at (50, 9); rotated -180°
+  - Scale Layout: frame; 25 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Disabled, Style=Ticked]; 1 × 20; at (24, -7)
+=== 19
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Disabled]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=True, State=Disabled]; 50 × 6; at (50, 9); rotated -180°
+  - Knob: instance of _Knob [State=Disabled, Style=Ticked]; 1 × 20; at (0, 2)
+=== 20
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Clicked]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=True, State=Disabled]; 50 × 6; at (50, 9)
+  - Scale Layout: frame; 100 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Clicked, Style=Ticked]; 1 × 20; at (99, -7)
+=== 21
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Clicked]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=True, State=Clicked]; 20 × 6; at (50, 9)
+  - Scale Layout: frame; 75 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Clicked, Style=Ticked]; 1 × 20; at (74, -7)
+=== 22
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Clicked]; 100 × 6; at (0, 9)
+  - Track Filled: frame; 2 × 6; at (51, 9); rotated -180°; uses Slider/Track/Inset - Vertical
+    - Frame: frame; 2 × 8; at (0, 7); column; main center; cross center; uses Slider/Knob - Non-ticked Slider/Inset
+      - Track Filled: instance of _Tracks - Filled [Active=True, Context=Content Area, State=Idle]; 2 × 8; fills height; fills width
+    - Midline: frame; 2 × 4; at (0, 1); fill Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+  - Scale Layout: frame; 50 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Clicked, Style=Ticked]; 1 × 20; at (49, -7)
+=== 23
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Clicked]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=True, State=Clicked]; 30 × 6; at (50, 9); rotated -180°
+  - Scale Layout: frame; 25 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Clicked, Style=Ticked]; 1 × 20; at (24, -7)
+=== 24
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Clicked]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=True, State=Clicked]; 50 × 6; at (50, 9); rotated -180°
+  - Knob: instance of _Knob [State=Clicked, Style=Ticked]; 1 × 20; at (0, 2)
+=== 25
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Idle]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=True, State=Idle]; 50 × 6; at (50, 9)
+  - Scale Layout: frame; 100 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Idle, Style=Ticked]; 1 × 20; at (99, -7)
+=== 26
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Idle]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=True, State=Idle]; 20 × 6; at (50, 9)
+  - Scale Layout: frame; 75 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Idle, Style=Ticked]; 1 × 20; at (74, -7)
+=== 27
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Idle]; 100 × 6; at (0, 9)
+  - Scale Layout: frame; 50 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Idle, Style=Ticked]; 1 × 20; at (49, -7)
+=== 28
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Idle]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=True, State=Idle]; 30 × 6; at (50, 9); rotated -180°
+  - Scale Layout: frame; 25 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Idle, Style=Ticked]; 1 × 20; at (24, -7)
+=== 29
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Idle]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=True, State=Idle]; 50 × 6; at (50, 9); rotated -180°
+  - Knob: instance of _Knob [State=Idle, Style=Ticked]; 1 × 20; at (0, 2)
+=== 30
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Disabled]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=False, State=Disabled]; 50 × 6; at (50, 9)
+  - Scale Layout: frame; 100 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Disabled, Style=Non-Ticked]; 1 × 20; at (99, -7)
+=== 31
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Disabled]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=False, State=Disabled]; 20 × 6; at (50, 9)
+  - Scale Layout: frame; 75 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Disabled, Style=Non-Ticked]; 1 × 20; at (74, -7)
+=== 32
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Disabled]; 100 × 6; at (0, 9)
+  - Track Filled: frame; 2 × 6; at (51, 9); rotated -180°; uses Slider/Track/Inset - Vertical
+    - Frame: frame; 2 × 8; at (0, 7); column; main center; cross center; uses Slider/Knob - Non-ticked Slider/Inset
+      - Track Filled: instance of _Tracks - Filled [Active=True, Context=Content Area, State=Idle]; 2 × 8; fills height; fills width
+    - Midline: frame; 2 × 4; at (0, 1); fill Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+  - Scale Layout: frame; 50 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Disabled, Style=Non-Ticked]; 1 × 20; at (49, -7)
+=== 33
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Disabled]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=False, State=Disabled]; 20 × 6; at (50, 9); rotated -180°
+  - Scale Layout: frame; 25 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Disabled, Style=Non-Ticked]; 1 × 20; at (24, -7)
+=== 34
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Disabled]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=False, State=Disabled]; 50 × 6; at (50, 9); rotated -180°
+  - Knob: instance of _Knob [State=Disabled, Style=Non-Ticked]; 1 × 20; at (0, 2)
+=== 35
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Clicked]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=False, State=Clicked]; 50 × 6; at (50, 9)
+  - Scale Layout: frame; 100 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Clicked, Style=Non-Ticked]; 1 × 20; at (99, -7)
+=== 36
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Clicked]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=False, State=Clicked]; 20 × 6; at (50, 9)
+  - Scale Layout: frame; 75 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Clicked, Style=Non-Ticked]; 1 × 20; at (74, -7)
+=== 37
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Clicked]; 100 × 6; at (0, 9)
+  - Track Filled: frame; 2 × 6; at (51, 9); rotated -180°; uses Slider/Track/Inset - Vertical
+    - Frame: frame; 2 × 8; at (0, 7); column; main center; cross center; uses Slider/Knob - Non-ticked Slider/Inset
+      - Track Filled: instance of _Tracks - Filled [Active=False, Context=Content Area, State=Idle]; 2 × 8; fills height; fills width; opacity 17%
+    - Midline: frame; 2 × 4; at (0, 1); fill Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+  - Scale Layout: frame; 50 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Clicked, Style=Non-Ticked]; 1 × 20; at (49, -7)
+=== 38
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Clicked]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=False, State=Clicked]; 20 × 6; at (50, 9); rotated -180°
+  - Scale Layout: frame; 25 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Clicked, Style=Non-Ticked]; 1 × 20; at (24, -7)
+=== 39
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Clicked]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=False, State=Clicked]; 50 × 6; at (50, 9); rotated -180°
+  - Knob: instance of _Knob [State=Clicked, Style=Non-Ticked]; 1 × 20; at (0, 2)
+=== 40
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Idle]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=False, State=Idle]; 50 × 6; at (50, 9)
+  - Scale Layout: frame; 100 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Idle, Style=Non-Ticked]; 1 × 20; at (99, -7)
+=== 41
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Idle]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=False, State=Idle]; 20 × 6; at (50, 9)
+  - Scale Layout: frame; 75 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Idle, Style=Non-Ticked]; 1 × 20; at (74, -7)
+=== 42
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Idle]; 100 × 6; at (0, 9)
+  - Track Filled: frame; 2 × 6; at (51, 9); rotated -180°; uses Slider/Track/Inset - Vertical
+    - Frame: frame; 2 × 8; at (0, 7); column; main center; cross center; uses Slider/Knob - Non-ticked Slider/Inset
+      - Track Filled: instance of _Tracks (OLD) [Active=False, On=False, State=Idle, Context=Content Area]; 2 × 8; fills height; fills width
+    - Midline: frame; 2 × 4; at (0, 1); fill Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+  - Scale Layout: frame; 50 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Idle, Style=Non-Ticked]; 1 × 20; at (49, -7)
+=== 43
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Idle]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=False, State=Idle]; 20 × 6; at (50, 9); rotated -180°
+  - Scale Layout: frame; 25 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Idle, Style=Non-Ticked]; 1 × 20; at (24, -7)
+=== 44
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled [State=Idle]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=False, State=Idle]; 50 × 6; at (50, 9); rotated -180°
+  - Knob: instance of _Knob [State=Idle, Style=Non-Ticked]; 1 × 20; at (0, 2)
+=== 45
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Disabled]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=False, State=Disabled]; 50 × 6; at (50, 9)
+  - Scale Layout: frame; 100 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Disabled, Style=Ticked]; 1 × 20; at (99, -7)
+=== 46
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Disabled]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=False, State=Disabled]; 20 × 6; at (50, 9)
+  - Scale Layout: frame; 75 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Disabled, Style=Ticked]; 1 × 20; at (74, -7)
+=== 47
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Disabled]; 100 × 6; at (0, 9)
+  - Track Filled: frame; 2 × 6; at (51, 9); rotated -180°; uses Slider/Track/Inset - Vertical
+    - Frame: frame; 2 × 8; at (0, 7); column; main center; cross center; uses Slider/Knob - Non-ticked Slider/Inset
+      - Track Filled: instance of _Tracks - Filled [Active=True, Context=Content Area, State=Idle]; 2 × 8; fills height; fills width
+    - Midline: frame; 2 × 4; at (0, 1); fill Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+  - Scale Layout: frame; 50 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Disabled, Style=Ticked]; 1 × 20; at (49, -7)
+=== 48
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Disabled]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=False, State=Disabled]; 20 × 6; at (50, 9); rotated -180°
+  - Scale Layout: frame; 25 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Disabled, Style=Ticked]; 1 × 20; at (24, -7)
+=== 49
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Disabled]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=False, State=Disabled]; 50 × 6; at (50, 9); rotated -180°
+  - Knob: instance of _Knob [State=Disabled, Style=Ticked]; 1 × 20; at (0, 2)
+=== 50
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Clicked]; 100 × 6; at (0, 9)
+  - _Track Filled: instance of _Track Filled [Active=False, State=Disabled]; 50 × 6; at (50, 9)
+  - Scale Layout: frame; 100 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Clicked, Style=Ticked]; 1 × 20; at (99, -7)
+=== 51
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Clicked]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=False, State=Clicked]; 20 × 6; at (50, 9)
+  - Scale Layout: frame; 75 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Clicked, Style=Ticked]; 1 × 20; at (74, -7)
+=== 52
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Clicked]; 100 × 6; at (0, 9)
+  - Track Filled: frame; 2 × 6; at (51, 9); rotated -180°; uses Slider/Track/Inset - Vertical
+    - Frame: frame; 2 × 8; at (0, 7); column; main center; cross center; uses Slider/Knob - Non-ticked Slider/Inset
+      - Track Filled: instance of _Tracks - Filled [Active=False, Context=Content Area, State=Idle]; 2 × 8; fills height; fills width; opacity 17%
+    - Midline: frame; 2 × 4; at (0, 1); fill Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+  - Scale Layout: frame; 50 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Clicked, Style=Ticked]; 1 × 20; at (49, -7)
+=== 53
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Clicked]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=False, State=Clicked]; 20 × 6; at (50, 9); rotated -180°
+  - Scale Layout: frame; 25 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Clicked, Style=Ticked]; 1 × 20; at (24, -7)
+=== 54
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Clicked]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=False, State=Clicked]; 50 × 6; at (50, 9); rotated -180°
+  - Knob: instance of _Knob [State=Clicked, Style=Ticked]; 1 × 20; at (0, 2)
+=== 55
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Idle]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=False, State=Idle]; 20 × 6; at (50, 9)
+  - Scale Layout: frame; 75 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Idle, Style=Ticked]; 1 × 20; at (74, -7)
+=== 56
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Idle]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=False, State=Idle]; 50 × 6; at (50, 9)
+  - Scale Layout: frame; 100 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Idle, Style=Ticked]; 1 × 20; at (99, -7)
+=== 57
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Idle]; 100 × 6; at (0, 9)
+  - Track Filled: frame; 2 × 6; at (51, 9); rotated -180°; uses Slider/Track/Inset - Vertical
+    - Frame: frame; 2 × 8; at (0, 7); column; main center; cross center; uses Slider/Knob - Non-ticked Slider/Inset
+      - Track Filled: instance of _Tracks (OLD) [Active=False, On=False, State=Idle, Context=Content Area]; 2 × 8; fills height; fills width
+    - Midline: frame; 2 × 4; at (0, 1); fill Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+  - Scale Layout: frame; 50 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Idle, Style=Ticked]; 1 × 20; at (49, -7)
+=== 58
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Idle]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=False, State=Idle]; 20 × 6; at (50, 9); rotated -180°
+  - Scale Layout: frame; 25 × 6; at (0, 9)
+    - Knob: instance of _Knob [State=Idle, Style=Ticked]; 1 × 20; at (24, -7)
+=== 59
+- component; 100 × 24; uses Global/Height
+  - Track Unfilled: instance of _Track Unfilled - Center-biased [State=Idle]; 100 × 6; at (0, 9)
+  - Track Filled: instance of _Track Filled [Active=False, State=Idle]; 50 × 6; at (50, 9); rotated -180°
+  - Knob: instance of _Knob [State=Idle, Style=Ticked]; 1 × 20; at (0, 2)

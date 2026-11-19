@@ -1,0 +1,7 @@
+=== 0
+- component; 1800 × 208; column; gap 32; hugs height
+  - text "Component name"; SF Pro Bold 56/60; 1800 × 60; fills width; color Grays/White; property Component name
+  - text "Description"; SF Pro Regular 28/34; 1800 × 34; fills width; color Grays/White; property Description; shown while Show Description
+  - Frame: frame; 1800 × 50; fills width; column; gap 16; padding 8 0 8 0; hugs height
+    - text "Human Interface Guidelines"; SF Pro Regular 28/34; 1800 × 34; fills width; color Link; property Link 1; shown while Show Link 1
+    - text "Human Interface Guidelines"; SF Pro Regular 28/34; 2000 × 34; fills width; color Link; property Link 2; hidden unless Show Link 2

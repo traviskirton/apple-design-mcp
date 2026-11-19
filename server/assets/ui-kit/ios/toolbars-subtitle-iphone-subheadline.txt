@@ -1,0 +1,3 @@
+=== 0
+- component; 55 × 20; row; gap 10; main center; cross center; hugs content
+  - text "Subtitle"; SF Pro Medium 15/20; 55 × 20; color Labels - Vibrant/Secondary; blend linear burn; property Subtitle

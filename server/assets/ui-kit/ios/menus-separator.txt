@@ -1,0 +1,3 @@
+=== 0
+- component; 160 × 21; column; padding 10 8 10 8; main center; cross center; hugs height; uses Menus/Menu Items/Separator Padding Top, Menus/Menu Items/Separator Padding Bottom
+  - Separator: frame; 144 × 1; fills width; fill Separators/Vibrant; blend linear burn

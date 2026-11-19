@@ -1,0 +1,16 @@
+=== 0
+- component; 66 × 102
+  - Names: frame; 82 × 30; at (-8, 72); column; padding 1 0 0 0; cross center; hugs height
+    - text "First and First"; SF Pro Regular 10/13; centered; 82 × 13; fills width; color Labels - Vibrant/Primary; blend linear burn; property Names
+    - text "2 People"; style Caption1/Regular; centered; 82 × 16; fills width; color Labels - Vibrant/Secondary; blend linear burn; property # of People
+  - Group: frame; 66 × 66; at (0, 0); capsule; fill Fills/Secondary at 16%
+    - Avatar 2: frame; 20 × 20; at (36, 36); capsule; fill image
+    - Avatar 1: frame; 35.33 × 35.33; at (7, 7); capsule; fill image
+  - Icon: instance of _System Icons [Icon=Messages]; 22 × 22; at (46, 44)
+=== 1
+- component; 66 × 102
+  - Name: frame; 82 × 32; at (-8, 72); column; hugs height
+    - text "First"; style Caption1/Regular; centered; 82 × 16; fills width; color Labels - Vibrant/Primary; blend linear burn; property Label
+    - text "Last"; style Caption1/Regular; centered; 82 × 16; fills width; color Labels - Vibrant/Primary; blend linear burn; property Last Name
+  - Avatar: frame; 66 × 66; at (0, 0); capsule; fill image
+  - Icon: instance of _System Icons [Icon=Messages]; 20 × 20; at (46, 46)

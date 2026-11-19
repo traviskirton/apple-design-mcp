@@ -1,0 +1,9 @@
+=== 0
+- component; 402 × 86; column; gap 10; padding 0 11 0 11; main end; cross center; hugs height
+  - Button: instance of Button - Liquid Glass - Text [Size=Small, Style=Glass, Is Enabled=True, Destructive=False]; 96 × 28
+  - Field: frame; 380 × 48; fills width; row; space between; padding 0 18 0 18; cross center; capsule
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 380 × 48; absolute at (0, 0)
+    - Cycle Controls: frame; 76 × 36; row; space between; cross center; hugs height
+      - text SF Symbol chevron.up; SF Pro Medium 17/22; centered; 22 × 36; color Labels - Vibrant/Primary; blend linear burn
+      - text SF Symbol chevron.down; SF Pro Medium 17/22; centered; 22 × 36; color Labels - Vibrant/Primary; blend linear burn
+    - text SF Symbol checkmark; SF Pro Semibold 17/22; centered; 25 × 22; color Labels - Vibrant/Primary; blend linear burn

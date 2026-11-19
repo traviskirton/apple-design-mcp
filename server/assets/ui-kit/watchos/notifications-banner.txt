@@ -1,0 +1,7 @@
+=== 0
+- component; 162 × 45.5; column; padding 9.5 9.5 0 9.5; cross center; hugs height; fill #000000 at 45%; background blur 32; uses Margin - LR - Copy Safe Area, Margin - TB - Safe Area, Screen Width
+  - Banner: frame; 143 × 36; fills width; row; gap 10; padding 0 4 0 4; main center; cross center; capsule; fill #ffffff at 10%; Liquid Glass effect
+    - App Icon: instance of App Icon [Type=Custom]; 28 × 28
+    - Title and Subtitle: frame; 97 × 28; fills width; column; gap -2; main center; hugs height
+      - text "Title"; SF Compact Semibold 12/14.5; 97 × 15; fills width; color #ffffff; property Title
+      - text "Description"; SF Compact Regular 12/14.5; 97 × 15; fills width; color #ffffff; property Description

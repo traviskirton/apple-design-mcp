@@ -1,0 +1,5 @@
+=== 0
+- component; 72 × 72; row; padding 7; main center; cross center; capsule; background blur 50
+  - Circle: frame; 58 × 58; fills height; column; gap -2.5; padding 7 0 7 0; main center; cross center; capsule; fill Vibrant Fills/Dark/Vibrant Tertiary; background blur 40
+    - text "Label"; SF Pro Regular 11/13; 29 × 13; color Vibrant Labels/Dark/Vibrant Secondary; property Secondary Label
+    - text "Label"; SF Pro Regular 15/20; 39 × 20; color Vibrant Labels/Dark/Vibrant Secondary

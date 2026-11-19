@@ -1,0 +1,10 @@
+=== 0
+- component; 48 × 48; column; padding 6 8 7 8; main center; cross center
+  - Selection: rectangle; 44 × 58; absolute at (2, -5); capsule; fill Fills - Vibrant/Tertiary; blend linear burn
+  - Frame 1: frame; 32 × 28; fills width; row; gap 10; main center; cross center; hugs height
+    - text SF Symbol star.fill; SF Pro Semibold 17/28; centered; 32 × 28; fills width; color Accents/Blue; mask; property Symbol
+    - FFFFFF @50%: rectangle; 48 × 54; absolute at (-8, -12.5); fill #ffffff at 50%
+    - Tint (Plus D): rectangle; 48 × 54; absolute at (-8, -12.5); fill Accents/Blue (linear burn); blend linear burn
+=== 1
+- component; 48 × 48; column; padding 6 8 7 8; main center; cross center
+  - text SF Symbol star.fill; SF Pro Semibold 18/28; centered; 32 × 28; fills width; color Labels - Vibrant/Primary; blend linear burn; property Symbol
