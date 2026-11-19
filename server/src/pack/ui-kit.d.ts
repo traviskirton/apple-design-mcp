@@ -1,6 +1,8 @@
 // Shape of the UI kit pack (ui-kit.js, written by scripts/build-ui-kit-pack.mjs on a Mac from
 // local copies of Apple's UI kits for Figma). The outlines themselves are static files at
 // "ui-kit/<kit id>/<component id>.txt": blocks that start with "=== <index>" on its own line.
+// The drawings are static files at "ui-kit-svg/<kit id>/<node id>.svg", one per variant, written
+// by scripts/export-ui-kit-svg.mjs.
 
 export interface KitVariant {
   /** The variant's property values, such as "Style=Large Title". Empty for a component without variants. */
@@ -10,6 +12,8 @@ export interface KitVariant {
   height: number;
   /** Index of this variant's outline in the component's file. Variants with the same layers share one. */
   outline: number;
+  /** The variant's node id in the kit's Figma file, such as "3:72207". Apple's drawing of it is the static file "ui-kit-svg/<kit id>/3-72207.svg". */
+  node: string;
 }
 
 export interface KitProperty {
@@ -49,13 +53,15 @@ export interface Kit {
   /** Such as "iOS and iPadOS 27". */
   name: string;
   pages: string[];
+  /** How many of the kit's variants have a drawing: an SVG under "ui-kit-svg/<kit id>/". */
+  drawings?: number;
   components: KitComponent[];
 }
 
 export interface UiKitPack {
   pack_version: string;
   generated_at: string;
-  source: { name: string; url: string; kits: string[]; components: number; variants: number };
+  source: { name: string; url: string; kits: string[]; components: number; variants: number; drawings?: number };
   kits: Kit[];
 }
 

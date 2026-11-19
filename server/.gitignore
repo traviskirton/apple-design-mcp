@@ -11,5 +11,8 @@ assets/technologies/
 # One text file per UI kit component, written by scripts/build-ui-kit-pack.mjs from the kits' .fig files
 assets/ui-kit/
 
+# One SVG per UI kit component variant, exported from Figma by scripts/export-ui-kit-svg.mjs
+assets/ui-kit-svg/
+
 # Apple's product bezel pictures (PNG), written by scripts/build-bezel-pack.mjs on a Mac
 assets/bezels/

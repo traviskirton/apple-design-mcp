@@ -368,7 +368,7 @@ function readKit(kit, path) {
         const text = outline(s);
         let index = texts.indexOf(text);
         if (index < 0) index = texts.push(text) - 1;
-        return { name: isSet ? variantLabel(s.name) : "", width: Math.round(s.size.x * 100) / 100, height: Math.round(s.size.y * 100) / 100, outline: index };
+        return { name: isSet ? variantLabel(s.name) : "", width: Math.round(s.size.x * 100) / 100, height: Math.round(s.size.y * 100) / 100, outline: index, node: guidKey(s.guid) };
       });
       const refs = new Set();
       symbols.forEach((s) => references(s).forEach((r) => refs.add(r)));
@@ -408,6 +408,7 @@ if (!existsSync(folder)) throw new Error(`No folder ${folder}. Pass the folder t
 const files = readdirSync(folder).filter((f) => f.endsWith(".fig")).sort();
 const packKits = [];
 const assetRoot = join(here, "..", "assets", "ui-kit");
+const drawingRoot = join(here, "..", "assets", "ui-kit-svg");
 rmSync(assetRoot, { recursive: true, force: true });
 
 for (const id of KIT_ORDER) {
@@ -428,10 +429,12 @@ for (const id of KIT_ORDER) {
     variants += c.variants.length;
     delete c._texts;
   }
-  packKits.push({ id, name: `${kit.name}${version ? " " + version : ""}`, pages, components });
+  // Apple's drawings of the variants, exported by scripts/export-ui-kit-svg.mjs: counted, so the server can say how many it has.
+  const drawings = components.reduce((n, c) => n + c.variants.filter((v) => v.node && existsSync(join(drawingRoot, id, v.node.replace(/:/g, "-") + ".svg"))).length, 0);
+  packKits.push({ id, name: `${kit.name}${version ? " " + version : ""}`, pages, drawings, components });
   console.log(
     `${kit.name}${version ? " " + version : ""}: ${components.length} components (${components.filter((c) => !c.helper).length} published), ` +
-      `${variants} variants, ${outlines} distinct outlines, ${(bytes / 1024).toFixed(0)} KB of outlines, ` +
+      `${variants} variants, ${drawings} with a drawing in assets/ui-kit-svg, ${outlines} distinct outlines, ${(bytes / 1024).toFixed(0)} KB of outlines, ` +
       `${outside} references to components on skipped pages, ${((performance.now() - started) / 1000).toFixed(1)} s`,
   );
 }
@@ -447,11 +450,12 @@ const pack = {
     kits: packKits.map((k) => k.name),
     components: packKits.reduce((n, k) => n + k.components.length, 0),
     variants: packKits.reduce((n, k) => n + k.components.reduce((m, c) => m + c.variants.length, 0), 0),
+    drawings: packKits.reduce((n, k) => n + k.drawings, 0),
   },
   kits: packKits,
 };
 const outPath = join(here, "..", "src", "pack", "ui-kit.js");
-const body = JSON.stringify(pack, null, 1).replace(/\{\n\s+"name": ("[^"\n]*"),\n\s+"width": ([\d.]+),\n\s+"height": ([\d.]+),\n\s+"outline": (\d+)\n\s+\}/g, '{"name":$1,"width":$2,"height":$3,"outline":$4}');
+const body = JSON.stringify(pack, null, 1).replace(/\{\n\s+"name": ("[^"\n]*"),\n\s+"width": ([\d.]+),\n\s+"height": ([\d.]+),\n\s+"outline": (\d+),\n\s+"node": ("[\d:]+")\n\s+\}/g, '{"name":$1,"width":$2,"height":$3,"outline":$4,"node":$5}');
 writeFileSync(outPath, `// Written by scripts/build-ui-kit-pack.mjs from Apple's UI kits for Figma. Do not edit.\nexport default ${body};\n`);
 console.log(`Wrote ${outPath} (${(Buffer.byteLength(body) / 1024).toFixed(0)} KB) and ${assetRoot}.`);
 if (unnamedSymbols.size) {

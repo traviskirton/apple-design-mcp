@@ -161,7 +161,7 @@ try {
   const kit = await call("search_ui_kit", { queries: ["tab bar", "large title toolbar", "mac sidebar", "watch button", "checkbox", "zebra crossing"] });
   check(!kit.isError && kit.text.includes("### Tab Bar - iPhone\n"), 'search_ui_kit did not put "Tab Bar - iPhone" first for "tab bar"');
   check(kit.text.includes("Variants (24): Minimized = False / True; Tabs = 2 / 3 / 4 / 5;"), "the tab bar's variants are missing or changed");
-  check(kit.text.includes("### Toolbar - Top - iPhone\n") && kit.text.includes("Shown: Style=Large Title, 402 × 125."), 'search_ui_kit should show the Large Title variant for "large title toolbar"');
+  check(kit.text.includes("### Toolbar - Top - iPhone\n") && kit.text.includes("Shown: Style=Large Title, 402 × 125 points."), 'search_ui_kit should show the Large Title variant for "large title toolbar"');
   check(kit.text.includes('### Sidebars - Composed\n\nmacOS 27 kit, page "Sidebars".'), 'search_ui_kit should read "mac sidebar" from the macOS kit');
   check(kit.text.includes("### Button - Pill\n\nwatchOS 26 kit"), 'search_ui_kit should read "watch button" from the watchOS kit');
   check(kit.text.includes("### Toggles - Checkboxes\n\nmacOS 27 kit"), 'search_ui_kit should find "checkbox" in the macOS kit when the iOS kit has none');
@@ -173,6 +173,23 @@ try {
   } else {
     check(kit.text.includes("The outline files are not deployed on this server"), "search_ui_kit should say when the outline files are missing");
     console.log("search_ui_kit: no outline files on this server (assets/ui-kit/ is built by npm run pack:ui-kit)");
+  }
+
+  // Apple's drawings: one SVG per variant, exported from Figma by scripts/export-ui-kit-svg.mjs.
+  const drawn = await call("search_ui_kit", { queries: ["tab bar", "toggle"] });
+  if (drawn.text.includes("```svg")) {
+    check(/Apple's drawing of it, also at \S+\/ui-kit-svg\/ios\/3-72207\.svg:\n\n```svg\n<svg overflow="visible" width="402" height="95"/.test(drawn.text), "the tab bar's drawing should be in the reply, at the component's own size");
+    check(drawn.text.includes('data-symbol="diamond.fill"'), "an icon in a drawing should be a shape marked with its SF Symbols name");
+    check(/<text id="Label"[^>]*font-family="SF Pro, -apple-system, system-ui, sans-serif"[^>]*><tspan[^>]*>Tab 1<\/tspan><\/text>/.test(drawn.text), "a label in a drawing should stay text, with fallback fonts");
+    check(drawn.text.includes("Using a drawing:") && drawn.text.includes("27-68922.svg"), "the reply should say how to use a drawing and name the other variants' files");
+    const address = /at (\S+\/ui-kit-svg\/ios\/3-72207\.svg)/.exec(drawn.text)?.[1];
+    const file = address ? await fetch(address.replace(/^https?:\/\/[^/]+/, new URL(url).origin)) : null;
+    check(file?.ok && (file.headers.get("content-type") ?? "").includes("svg"), "a drawing should be served at its address as SVG");
+    const small = await call("search_ui_kit", { queries: ["tab bar", "alert"], max_chars: 6000 });
+    check(!small.text.includes("```svg") && small.text.includes("more than this reply has room for"), "a drawing that does not fit should be given by its address");
+  } else {
+    check(drawn.text.includes("not on this server"), "search_ui_kit should say when the drawings are missing");
+    console.log("search_ui_kit: no drawings on this server (assets/ui-kit-svg/ is built by node scripts/export-ui-kit-svg.mjs)");
   }
 
   const everyComponent = await call("search_ui_kit", { platform: "macos" });
