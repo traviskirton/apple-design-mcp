@@ -2,7 +2,7 @@
 
 The MCP server, written in TypeScript for Cloudflare Workers.
 
-It serves Apple's Human Interface Guidelines, the screen sizes and frames of Apple devices, SF Symbols as SVG, and Apple's artwork for its technologies. UI kits and design values are not loaded yet.
+It serves Apple's Human Interface Guidelines, the screen sizes and frames of Apple devices, SF Symbols as SVG, Apple's artwork for its technologies, and the colors, text styles and sizes from Apple's UI kits. UI kit components are not loaded yet.
 
 | Tool | What it does |
 | --- | --- |
@@ -13,6 +13,7 @@ It serves Apple's Human Interface Guidelines, the screen sizes and frames of App
 | `search_symbols` | Takes a list of icons to find (names or plain words such as "share") and returns, for each, the best-matching SF Symbol with its SVG and the names of other matches. |
 | `get_symbol` | Returns the SVG of symbols by exact name. |
 | `get_technology_assets` | Returns Apple's own artwork for its technologies (the Sign in with Apple logo, AirPlay glyphs, Game Center icons and others): SVG for vector artwork, a PNG address for pictures. Without names it lists everything it holds. |
+| `get_design_values` | Returns the values Apple defines in its UI kits for iOS and iPadOS 27 and for macOS 27: system colors as hex (light, dark, increased contrast), text styles, standard sizes, materials and Liquid Glass settings. With `topics: ["layout"]` it returns Apple's layout guides for iPhone Duo. |
 | `get_pack_info` | Reports what material is loaded, its date, and when the server answered. |
 
 `search_hig` answers a whole brief in one call because each tool call costs the app a full turn of the model, which is slow. Its reply is limited to about 40,000 characters (roughly 10,000 tokens) by default, leaves out link lists, change logs and sections written for other platforms, and lists by id whatever did not fit. Pictures are replaced by Apple's own description of each one.
@@ -61,6 +62,14 @@ Apple publishes artwork for showing its technologies in an app (Sign in with App
 - `npm run pack:technologies` rebuilds both after `fetch_apple_design_resources.py` reports a change.
 
 Apple Pay, Wallet and the other technologies that Apple publishes as Figma and Sketch templates only are not loaded.
+
+## Design values
+
+Apple's UI kits for Figma define the system colors, text styles and standard sizes as variables and styles. `scripts/figma/` holds text dumps of those for the iOS and iPadOS 27 kit and the macOS 27 kit, and of the iOS kit's "Layout Guides" page. `scripts/figma/README.md` says how each dump was made. `scripts/build-design-values.mjs` turns them into:
+
+- `src/pack/design-values.js`: per platform, the colors (light, dark, increased contrast, and the UIKit or AppKit name where the color is a system color), the text styles at the default size, the sizes table, the material paints, the Liquid Glass settings and the iPhone Duo layout templates. Committed, and compiled into the Worker.
+
+- `npm run pack:values` rebuilds it; it needs no Mac. The build stops if the kit's accent colors, grays or default text styles disagree with the guidelines pack. The kit's Dynamic Type table is left out because it disagrees with the guidelines at some accessibility sizes; `search_hig` holds the published table.
 
 ## Deploy
 
@@ -129,6 +138,7 @@ npm test           # in a second terminal
 - `src/frames.ts`: device frames. `src/pack/frames.js` is the frame pack (written by the extractor on a Mac, committed) and `src/pack/frames.d.ts` its shape.
 - `src/symbols.ts`: symbol search. `src/pack/symbols.js` is the symbol pack and `src/pack/symbols.d.ts` its shape.
 - `src/technologies.ts`: technology artwork lookup. `src/pack/technologies.js` is the pack (written on a Mac, committed) and `src/pack/technologies.d.ts` its shape.
+- `src/values.ts`: the design value tables. `src/pack/design-values.js` is the pack (built from `scripts/figma/`, committed) and `src/pack/design-values.d.ts` its shape.
 - `assets/`: static files deployed with the Worker; `assets/symbols/` holds the symbol shapes and `assets/technologies/` Apple's technology artwork.
 - `test/smoke.mjs`: connects as a real MCP client and tries every tool.
 - `wrangler.jsonc`: Cloudflare settings. `name` sets the first part of the URL.

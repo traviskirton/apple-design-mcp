@@ -1,0 +1,86 @@
+## TEXT STYLES | family | style | size | lineHeight | letterSpacing
+Large Title/Regular | SF Pro | Regular | 34@Size/Large Title | 41@Leading/Large Title | 0.4@Typography/Letter spacing/Large-title
+Large Title/Emphasized | SF Pro | Bold | 34@Size/Large Title | 41@Leading/Large Title | 0.4@Typography/Letter spacing/Large-title
+Title1/Regular | SF Pro | Regular | 28@Size/Title 1 | 34@Leading/Title 1 | 0.38@Typography/Letter spacing/Title-1
+Title1/Emphasized | SF Pro | Bold | 28@Size/Title 1 | 34@Leading/Title 1 | 0.38@Typography/Letter spacing/Title-1
+Title2/Regular | SF Pro | Regular | 22@Size/Title 2 | 28@Leading/Title 2 | -0.26@Typography/Letter spacing/Title-2
+Title2/Emphasized | SF Pro | Bold | 22@Size/Title 2 | 28@Leading/Title 2 | -0.26@Typography/Letter spacing/Title-2
+Title3/Regular | SF Pro | Regular | 20@Size/Title 3 | 25@Leading/Title 3 | -0.45@Typography/Letter spacing/Title-3
+Title3/Emphasized | SF Pro | Semibold | 20@Size/Title 3 | 25@Leading/Title 3 | -0.45@Typography/Letter spacing/Title-3
+Headline/Regular | SF Pro | Semibold | 17@Size/Headline | 22@Leading/Headline | -0.43@Typography/Letter spacing/Headline
+Headline/Italic | SF Pro | Semibold Italic | 17@Size/Headline | 22@Leading/Headline | -0.43@Typography/Letter spacing/Headline
+Body/Regular | SF Pro | Regular | 17@Size/Body | 22@Leading/Body | -0.43@Typography/Letter spacing/Body
+Body/Emphasized | SF Pro | Semibold | 17@Size/Body | 22@Leading/Body | -0.43@Typography/Letter spacing/Body
+Body/Italic | SF Pro | Regular Italic | 17@Size/Body | 22@Leading/Body | -0.43@Typography/Letter spacing/Body
+Body/Emphasized Italic | SF Pro | Semibold Italic | 17@Size/Body | 22@Leading/Body | -0.43@Typography/Letter spacing/Body
+Callout/Regular | SF Pro | Regular | 16@Size/Callout | 21@Leading/Callout | -0.31@Typography/Letter spacing/Callout
+Callout/Emphasized | SF Pro | Semibold Italic | 16@Size/Callout | 21@Leading/Callout | -0.31@Typography/Letter spacing/Callout
+Callout/Italic | SF Pro | Regular Italic | 16@Size/Callout | 21@Leading/Callout | -0.31@Typography/Letter spacing/Callout
+Subheadline/Regular | SF Pro | Regular | 15@Size/Subheadline | 20@Leading/Subheadline | -0.23@Typography/Letter spacing/Subheadline
+Subheadline/Emphasized | SF Pro | Semibold | 15@Size/Subheadline | 20@Leading/Subheadline | -0.23@Typography/Letter spacing/Subheadline
+Subheadline/Italic | SF Pro | Regular Italic | 15@Size/Subheadline | 20@Leading/Subheadline | -0.23@Typography/Letter spacing/Subheadline
+Subheadline/Emphaized Italic | SF Pro | Semibold Italic | 15@Size/Subheadline | 20@Leading/Subheadline | -0.23@Typography/Letter spacing/Subheadline
+Footnote/Regular | SF Pro | Regular | 13@Size/Footnote | 18@Leading/Footnote | -0.08@Typography/Letter spacing/Footnote
+Footnote/Emphasized | SF Pro | Semibold | 13@Size/Footnote | 18@Leading/Footnote | -0.08@Typography/Letter spacing/Footnote
+Footnote/Italic | SF Pro | Regular Italic | 13@Size/Footnote | 18@Leading/Footnote | -0.08@Typography/Letter spacing/Footnote
+Caption1/Regular | SF Pro | Regular | 12@Size/Caption 1 | 16@Leading/Caption 1 | 0@Typography/Letter spacing/Caption-1
+Caption1/Emphasized | SF Pro | Semibold | 12@Size/Caption 1 | 16@Leading/Caption 1 | 0@Typography/Letter spacing/Caption-1
+Caption1/Italic | SF Pro | Regular Italic | 12@Size/Caption 1 | 16@Leading/Caption 1 | 0@Typography/Letter spacing/Caption-1
+Caption1/Emphasized Italic | SF Pro | Semibold Italic | 12@Size/Caption 1 | 16@Leading/Caption 1 | 0@Typography/Letter spacing/Caption-1
+Callout/Emphasized Italic | SF Pro | Semibold Italic | 16@Size/Callout | 21@Leading/Callout | -0.31@Typography/Letter spacing/Callout
+Footnote/Emphasized Italic | SF Pro | Semibold Italic | 13@Size/Footnote | 18@Leading/Footnote | -0.08@Typography/Letter spacing/Footnote
+Caption2/Regular | SF Pro | Regular | 11@Size/Caption 2 | 13@Leading/Caption 2 | 0.06@Typography/Letter spacing/Caption-2
+Caption2/Emphasized | SF Pro | Semibold | 11@Size/Caption 2 | 13@Leading/Caption 2 | 0.06@Typography/Letter spacing/Caption-2
+Caption2/Italic | SF Pro | Regular Italic | 11@Size/Caption 2 | 13@Leading/Caption 2 | 0.06@Typography/Letter spacing/Caption-2
+Caption2/Emphasized Italic | SF Pro | Semibold Italic | 11@Size/Caption 2 | 13@Leading/Caption 2 | 0.06@Typography/Letter spacing/Caption-2
+## PAINT STYLES
+Colors/Red | #ff383c
+Colors/Orange | #ff8d28
+Colors/Yellow | #ffcc00
+Colors/Green | #34c759
+Colors/Mint | #00c8b3
+Colors/Teal | #00c3d0
+Colors/Cyan | #00c0e8
+Colors/Blue | #0088ff
+Colors/Indigo | #6155f5
+Colors/Purple | #cb30e0
+Colors/Pink | #ff2d55
+Colors/Brown | #ac7f5e
+Backgrounds/Primary | #ffffff
+Backgrounds/Secondary | #f2f2f7
+Backgrounds/Tertiary | #ffffff
+Backgrounds Grouped/Primary | #f2f2f7
+Backgrounds Grouped/Secondary | #ffffff
+Backgrounds Grouped/Tertiary | #f2f2f7
+Fills/Primary | #78787833
+Fills/Secondary | #78788029
+Fills/Tertiary | #7676801f
+Fills/Quaternary | #74748014
+Grays/Gray | #8e8e93
+Grays/Gray 2 | #aeaeb2
+Grays/Gray 3 | #c7c7cc
+Grays/Gray 4 | #d1d1d6
+Grays/Gray 5 | #e5e5ea
+Grays/Gray 6 | #f2f2f7
+Grays/Black | #000000
+Grays/White | #ffffff
+Labels/Primary | #000000
+Labels/Secondary | #3c3c4399
+Labels/Tertiary | #3c3c434d
+Labels/Quaternary | #3c3c432e
+Separators/Opaque | #c6c6c8
+Separators/Non-opaque | #0000001f
+Vibrant Fills/Dark/Vibrant Primary | #ffffff33 LINEAR_DODGE
+Vibrant Fills/Dark/Vibrant Secondary | #ffffff1f LINEAR_DODGE
+Vibrant Fills/Dark/Vibrant Tertiary | #ffffff12 LINEAR_DODGE
+Vibrant Fills/Light/Vibrant Primary | #00000033 LINEAR_BURN
+Vibrant Fills/Light/Vibrant Secondary | #0000001f LINEAR_BURN
+Vibrant Fills/Light/Vibrant Tertiary | #00000012 LINEAR_BURN
+Vibrant Labels/Dark/Vibrant Primary | #ffffff LINEAR_DODGE
+Vibrant Labels/Dark/Vibrant Secondary | #ffffff99 LINEAR_DODGE
+Vibrant Labels/Dark/Vibrant Tertiary | #ffffff40 LINEAR_DODGE
+Vibrant Labels/Dark/Vibrant Quaternary | #ffffff26 LINEAR_DODGE
+Vibrant Labels/Light/Vibrant Primary | #000000
+Vibrant Labels/Light/Vibrant Secondary | #7f7f7f80 LUMINOSITY + #3d3d3d OVERLAY
+Vibrant Labels/Light/Vibrant Tertiary | #7f7f7f66 LUMINOSITY + #3d3d3d80 OVERLAY
+Vibrant Labels/Light/Vibrant Quaternary | #7f7f7f33 LUMINOSITY + #3d3d3d80 OVERLAY

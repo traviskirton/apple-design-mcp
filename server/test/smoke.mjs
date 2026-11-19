@@ -29,7 +29,7 @@ try {
 
   const { tools } = await client.listTools();
   console.log("tools:", tools.map((t) => t.name).join(", "));
-  for (const name of ["get_pack_info", "search_hig", "get_hig_page", "get_device_metrics", "get_device_frame", "search_symbols", "get_symbol", "get_technology_assets"]) {
+  for (const name of ["get_pack_info", "search_hig", "get_hig_page", "get_device_metrics", "get_device_frame", "search_symbols", "get_symbol", "get_technology_assets", "get_design_values"]) {
     check(tools.some((t) => t.name === name), `${name} is missing`);
   }
 
@@ -123,6 +123,25 @@ try {
   const everyArt = await call("get_technology_assets");
   check(!everyArt.isError && everyArt.text.includes("| Technology | Artwork |"), "get_technology_assets should list everything without `technologies`");
   check(!everyArt.text.includes("<svg"), "the list of all artwork should not hold SVG");
+
+  const values = await call("get_design_values");
+  console.log(values.text.split("\n").filter((line) => /^#{2,3} /.test(line)).join("\n"));
+  check(!values.isError && values.text.includes("## iOS and iPadOS 27 colors"), "get_design_values should default to iOS colors");
+  check(values.text.includes("| Labels, Secondary | `secondaryLabel` | #3c3c4399 | #ebebf5b2 | #3c3c43cc | same |"), "the iOS secondary label color is missing or changed");
+  check(values.text.includes("| Accents, Blue | `systemBlue` | #0088ff | #0091ff | #1e6ef4 | #5cb8ff |"), "the iOS system blue is missing or changed");
+  check(values.text.includes("| Body | Regular | 17 | 22 | -0.43 | Semibold |"), "the iOS Body text style is missing or changed");
+  check(values.text.includes("| Sheet Top Radius | 38 | 32 |"), "the iOS sizes table is missing");
+  check(!values.text.includes("Fold Avoidance Region") && values.text.includes('topics ["layout"]'), "layout guides should be returned only when asked for");
+
+  const duoGuides = await call("get_design_values", { topics: ["layout"] });
+  check(!duoGuides.isError && duoGuides.text.includes("### iPhone Duo outer screen, portrait (466 × 678)"), "the iPhone Duo layout templates are missing");
+  check(duoGuides.text.includes("| Fold Avoidance Region | 0 | 455.5 | 669 | 40 |"), "the fold avoidance region is missing or changed");
+  check(duoGuides.text.includes("| Reserved Region | 382 | 0 | 84 | 169 |"), "the outer screen's reserved region is missing or changed");
+  check(!duoGuides.text.includes("colors\n"), "topics should limit the reply to the tables named");
+
+  const mac = await call("get_design_values", { platform: "macos", topics: ["text", "sizes"] });
+  check(!mac.isError && mac.text.includes("| Body | Regular | 13 | 16 | 0 | Semibold |"), "the macOS Body text style is missing or changed");
+  check(mac.text.includes("| Global, Height | 16 | 20 | 24 | 28 | 36 |"), "the macOS control heights are missing or changed");
 
   console.log("\nOK");
   await client.close();

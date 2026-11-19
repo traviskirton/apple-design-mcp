@@ -1,0 +1,236 @@
+- COMPONENT_SET "_Layout Overlays" 400x140 @0,5300
+  - COMPONENT "Type=Reserved Region" 100x100 @280,20
+  - COMPONENT "Type=Safe Area Inset" 100x100 @150,20
+  - COMPONENT "Type=Layout Margin" 100x100 @20,20
+- COMPONENT "iPhone Duo/Standard/Inner - Landscape - Folded" 951x669 @0,4300
+  - FRAME "Screen" 951x669 @0,0
+    - FRAME "Vertical Bar" 84x669 @867,0 VERTICAL gap 8 pad 24 24 24 12
+      - FRAME "Top" 48x527 @12,24 VERTICAL gap 6 pad 0 0 0 0
+        - FRAME "Frame" 48x143 @0,0 VERTICAL gap 12 pad 0 0 0 0
+      - FRAME "Bottom" 48x86 @12,559 VERTICAL gap 12 pad 0 0 0 0
+    - INSTANCE "Toolbar - Top - iPhone Duo" 951x84 @0,0 inst HORIZONTAL gap 12 pad 24 24 12 20
+    - FRAME "Layout Guides and Safe Areas" 951x669 @0,0
+      - INSTANCE "Layout Margin: 20pt" 20x669 @0,0 inst
+      - INSTANCE "Safe Area Inset" 867x84 @0,0 inst
+      - INSTANCE "Safe Area Inset" 84x669 @867,0 inst
+      - INSTANCE "Reserved Region" 84x119 @867,0 inst
+      - INSTANCE "Fold Avoidance Region" 40x669 @455.5,0 inst
+  - INSTANCE "iPhone Duo" 1031x749 @-40,-40 inst
+- COMPONENT "iPhone Duo/Sheets/Inner - Landscape - Folded" 951x669 @1200,4300
+  - FRAME "Screen" 951x669 @0,0
+    - FRAME "Vertical Bar" 84x669 @867,0 VERTICAL gap 8 pad 24 24 24 12
+      - FRAME "Top" 48x527 @12,24 VERTICAL gap 6 pad 0 0 0 0
+        - FRAME "Frame" 48x143 @0,0 VERTICAL gap 12 pad 0 0 0 0
+      - FRAME "Bottom" 48x86 @12,559 VERTICAL gap 12 pad 0 0 0 0
+    - INSTANCE "Toolbar - Top - iPhone Duo" 951x84 @0,0 inst HORIZONTAL gap 12 pad 24 24 12 20
+    - FRAME "Layout Guides and Safe Areas" 951x669 @0,0
+      - INSTANCE "Layout Margin: 20pt" 20x669 @0,0 inst
+      - INSTANCE "Safe Area Inset" 867x84 @0,0 inst
+      - INSTANCE "Safe Area Inset" 84x669 @867,0 inst
+      - INSTANCE "Reserved Region" 84x119 @867,0 inst
+      - INSTANCE "Fold Avoidance Region" 40x669 @455.5,0 inst
+  - INSTANCE "Overlay" 951x669 @0,0 inst
+  - FRAME "Sheet" 468x356 @8,305
+    - INSTANCE "BG" 468x356 @0,0 inst
+    - FRAME "Vertical Bar" 76x356 @392,0 VERTICAL gap 8 pad 16 16 16 12
+      - FRAME "Camera Punchout" 48x42 @12,24
+      - FRAME "Top" 48x230 @12,16 VERTICAL gap 6 pad 0 0 0 0
+        - FRAME "Frame" 48x48 @0,0 VERTICAL gap 12 pad 0 0 0 0
+      - FRAME "Bottom" 48x86 @12,254 VERTICAL gap 12 pad 0 0 0 0
+    - INSTANCE "Toolbar - Top - iPhone Duo" 468x76 @0,0 inst HORIZONTAL gap 12 pad 16 16 12 16
+    - FRAME "Layout Guides and Safe Areas" 468x356 @0,0
+      - INSTANCE "Layout Margin: 16pt" 16x356 @0,0 inst
+      - INSTANCE "Layout Margin: 16pt" 16x356 @452,0 inst
+      - INSTANCE "Safe Area Inset" 468x76 @0,0 inst
+  - INSTANCE "Overlay" 951x669 @0,0 inst
+  - INSTANCE "iPhone Duo" 1031x749 @-40,-40 inst
+- COMPONENT "iPhone Duo/Standard/Inner - Landscape" 951x669 @0,3500
+  - FRAME "Vertical Bar" 84x669 @867,0 VERTICAL gap 8 pad 24 24 24 12
+    - FRAME "Top" 48x343 @12,24 VERTICAL gap 6 pad 0 0 0 0
+      - FRAME "Frame" 48x259 @0,0 VERTICAL gap 12 pad 0 0 0 0
+        - INSTANCE "Status bar - iPhone Duo" 48x83 @0,0 inst VERTICAL gap 6 pad 11 0 1 0
+        - INSTANCE "Button Group" 48x164 @0,95 inst VERTICAL gap 0 pad 10 6 10 6
+    - FRAME "Bottom" 48x270 @12,375 VERTICAL gap 12 pad 0 0 0 0
+      - INSTANCE "Tab Bar - iPhone Duo" 48x270 @0,0 inst VERTICAL gap 12 pad 0 0 0 0
+  - INSTANCE "Toolbar - Top - iPhone Duo" 951x84 @0,0 inst HORIZONTAL gap 12 pad 24 24 12 20
+  - FRAME "Layout Guides and Safe Areas" 951x669 @0,0
+    - INSTANCE "Layout Margin: 20pt" 20x669 @0,0 inst
+    - INSTANCE "Safe Area Inset" 84x669 @867,0 inst
+    - INSTANCE "Reserved Region" 84x119 @867,0 inst
+  - INSTANCE "iPhone Duo" 1031x749 @-40,-40 inst
+- COMPONENT "iPhone Duo/Sheets/Inner - Landscape" 951x669 @1200,3500
+  - FRAME "Screen" 951x669 @0,0
+    - FRAME "Vertical Bar" 84x669 @867,0 VERTICAL gap 8 pad 24 24 24 12
+      - FRAME "Top" 48x527 @12,24 VERTICAL gap 6 pad 0 0 0 0
+        - FRAME "Frame" 48x143 @0,0 VERTICAL gap 12 pad 0 0 0 0
+      - FRAME "Bottom" 48x86 @12,559 VERTICAL gap 12 pad 0 0 0 0
+    - INSTANCE "Toolbar - Top - iPhone Duo" 951x84 @0,0 inst HORIZONTAL gap 12 pad 24 24 12 20
+    - FRAME "Layout Guides and Safe Areas" 951x669 @0,0
+      - INSTANCE "Layout Margin: 20pt" 20x669 @0,0 inst
+      - INSTANCE "Safe Area Inset" 867x84 @0,0 inst
+      - INSTANCE "Safe Area Inset" 84x669 @867,0 inst
+      - INSTANCE "Reserved Region" 84x119 @867,0 inst
+  - INSTANCE "Overlay" 951x669 @0,0 inst
+  - FRAME "Sheet" 653x356 @149,305
+    - INSTANCE "BG" 653x356 @0,0 inst
+    - FRAME "Vertical Bar" 76x356 @577,0 VERTICAL gap 8 pad 16 16 16 12
+      - FRAME "Camera Punchout" 48x42 @12,24
+      - FRAME "Top" 48x230 @12,16 VERTICAL gap 6 pad 0 0 0 0
+        - FRAME "Frame" 48x48 @0,0 VERTICAL gap 12 pad 0 0 0 0
+      - FRAME "Bottom" 48x86 @12,254 VERTICAL gap 12 pad 0 0 0 0
+    - INSTANCE "Toolbar - Top - iPhone Duo" 653x76 @0,0 inst HORIZONTAL gap 12 pad 16 16 12 16
+    - FRAME "Layout Guides and Safe Areas" 653x356 @0,0
+      - INSTANCE "Layout Margin: 16pt" 16x356 @0,0 inst
+      - INSTANCE "Layout Margin: 16pt" 16x356 @637,0 inst
+      - INSTANCE "Safe Area Inset" 653x76 @0,0 inst
+  - INSTANCE "iPhone Duo" 1031x749 @-40,-40 inst
+- COMPONENT "iPhone Duo/Standard/Inner - Portrait - Folded" 669x951 @0,2371
+  - INSTANCE "Toolbar - Top - iPhone Duo" 669x84 @0,0 inst HORIZONTAL gap 12 pad 24 24 12 20
+  - INSTANCE "Tab Bar" 409x95 @130,856 inst HORIZONTAL gap 16 pad 16 25 25 25
+  - FRAME "Layout Guides and Safe Areas" 669x951 @0,0
+    - INSTANCE "Layout Margin: 20pt" 20x951 @0,0 inst
+    - INSTANCE "Layout Margin: 20pt" 20x951 @649,0 inst
+    - INSTANCE "Safe Area Inset" 669x84 @0,0 inst
+    - INSTANCE "Safe Area Inset" 669x95 @0,856 inst
+    - INSTANCE "Reserved Region" 134x84 @535,0 inst
+  - INSTANCE "iPhone Duo" 749x1031 @-40,-40 inst
+  - INSTANCE "Fold Avoidance Region" 669x40 @0,455.5 inst
+- COMPONENT "iPhone Duo/Sheets/Inner - Portrait - Folded" 669x951 @1200,2371
+  - FRAME "Screen" 669x951 @0,0
+    - INSTANCE "Toolbar - Top - iPhone Duo" 669x84 @0,0 inst HORIZONTAL gap 12 pad 24 24 12 20
+    - FRAME "Layout Guides and Safe Areas" 669x951 @0,0
+      - INSTANCE "Layout Margin: 20pt" 20x951 @0,0 inst
+      - INSTANCE "Layout Margin: 20pt" 20x951 @649,0 inst
+      - INSTANCE "Safe Area Inset" 669x84 @0,0 inst
+      - INSTANCE "Safe Area Inset" 669x95 @0,856 inst
+      - INSTANCE "Reserved Region" 134x84 @535,0 inst
+      - INSTANCE "Fold Avoidance Region" 669x40 @0,455.5 inst
+  - INSTANCE "Overlay" 669x951 @0,0 inst
+  - FRAME "Sheet" 653x356 @8,587
+    - INSTANCE "BG" 653x356 @0,0 inst
+    - FRAME "Vertical Bar" 76x356 @577,0 VERTICAL gap 8 pad 16 16 16 12
+      - FRAME "Camera Punchout" 48x42 @12,24
+      - FRAME "Top" 48x230 @12,16 VERTICAL gap 6 pad 0 0 0 0
+        - FRAME "Frame" 48x48 @0,0 VERTICAL gap 12 pad 0 0 0 0
+      - FRAME "Bottom" 48x86 @12,254 VERTICAL gap 12 pad 0 0 0 0
+    - INSTANCE "Toolbar - Top - iPhone Duo" 653x76 @0,0 inst HORIZONTAL gap 12 pad 16 16 12 16
+    - FRAME "Layout Guides and Safe Areas" 653x356 @0,0
+      - INSTANCE "Layout Margin: 16pt" 16x356 @0,0 inst
+      - INSTANCE "Layout Margin: 16pt" 16x356 @637,0 inst
+      - INSTANCE "Safe Area Inset" 653x76 @0,0 inst
+  - INSTANCE "iPhone Duo" 749x1031 @-40,-40 inst
+- COMPONENT "iPhone Duo/Standard/Inner - Portrait" 669x951 @0,1310
+  - INSTANCE "Toolbar - Top - iPhone Duo" 669x84 @0,0 inst HORIZONTAL gap 12 pad 24 24 12 20
+  - INSTANCE "Tab Bar" 409x95 @130,856 inst HORIZONTAL gap 16 pad 16 25 25 25
+  - FRAME "Layout Guides and Safe Areas" 669x951 @0,0
+    - INSTANCE "Layout Margin: 20pt" 20x951 @0,0 inst
+    - INSTANCE "Layout Margin: 20pt" 20x951 @649,0 inst
+    - INSTANCE "Safe Area Inset" 669x84 @0,0 inst
+    - INSTANCE "Safe Area Inset" 669x95 @0,856 inst
+    - INSTANCE "Reserved Region" 134x84 @535,0 inst
+  - INSTANCE "iPhone Duo" 749x1031 @-40,-40 inst
+- COMPONENT "iPhone Duo/Sheets/Inner - Portrait" 669x951 @1200,1310
+  - FRAME "Screen" 669x951 @0,0
+    - INSTANCE "Toolbar - Top - iPhone Duo" 669x84 @0,0 inst HORIZONTAL gap 12 pad 24 24 12 20
+    - FRAME "Layout Guides and Safe Areas" 669x951 @0,0
+      - INSTANCE "Layout Margin: 20pt" 20x951 @0,0 inst
+      - INSTANCE "Layout Margin: 20pt" 20x951 @649,0 inst
+      - INSTANCE "Safe Area Inset" 669x84 @0,0 inst
+      - INSTANCE "Safe Area Inset" 669x95 @0,856 inst
+      - INSTANCE "Reserved Region" 134x84 @535,0 inst
+  - INSTANCE "Overlay" 669x951 @0,0 inst
+  - FRAME "Sheet" 653x356 @8,587
+    - INSTANCE "BG" 653x356 @0,0 inst
+    - FRAME "Vertical Bar" 76x356 @577,0 VERTICAL gap 8 pad 16 16 16 12
+      - FRAME "Camera Punchout" 48x42 @12,24
+      - FRAME "Top" 48x230 @12,16 VERTICAL gap 6 pad 0 0 0 0
+        - FRAME "Frame" 48x48 @0,0 VERTICAL gap 12 pad 0 0 0 0
+      - FRAME "Bottom" 48x86 @12,254 VERTICAL gap 12 pad 0 0 0 0
+    - INSTANCE "Toolbar - Top - iPhone Duo" 653x76 @0,0 inst HORIZONTAL gap 12 pad 16 16 12 16
+    - FRAME "Layout Guides and Safe Areas" 653x356 @0,0
+      - INSTANCE "Layout Margin: 16pt" 16x356 @0,0 inst
+      - INSTANCE "Layout Margin: 16pt" 16x356 @637,0 inst
+      - INSTANCE "Safe Area Inset" 653x76 @0,0 inst
+  - INSTANCE "iPhone Duo" 749x1031 @-40,-40 inst
+- COMPONENT "iPhone Duo/Standard/Outer - Landscape" 678x466 @0,760
+  - FRAME "Vertical Bar" 84x466 @594,0 VERTICAL gap 8 pad 24 24 24 12
+    - FRAME "Top" 48x90 @12,24 VERTICAL gap 6 pad 0 0 0 0
+      - FRAME "Frame" 48x48 @0,0 VERTICAL gap 12 pad 0 0 0 0
+        - INSTANCE "Status bar - iPhone Duo" 48x86 @0,0 inst VERTICAL gap 6 pad 11 0 1 0
+        - INSTANCE "Overflow" 48x48 @0,0 inst HORIZONTAL gap 18 pad 0 6 0 6
+    - FRAME "Bottom" 48x270 @12,122 VERTICAL gap 12 pad 0 0 0 0
+      - INSTANCE "Tab Bar - iPhone Duo" 48x270 @0,0 inst VERTICAL gap 12 pad 0 0 0 0
+    - FRAME "Camera Punchout" 48x42 @12,400
+  - INSTANCE "Toolbar - Top - iPhone Duo" 678x84 @0,0 inst HORIZONTAL gap 12 pad 24 24 12 20
+  - INSTANCE "Outer Display Lens" 95.67x95.67 @582,370 inst
+  - FRAME "Layout Guides and Safe Areas" 678x466 @0,0
+    - INSTANCE "Layout Margin: 20pt" 20x466 @0,0 inst
+    - INSTANCE "Safe Area Inset" 84x466 @594,0 inst
+  - INSTANCE "iPhone Duo" 731.33x524.67 @704,495.67 inst
+- COMPONENT "iPhone Duo/Sheets/Outer - Landscape" 678x466 @1200,760
+  - FRAME "Screen" 678x466 @0,0
+    - FRAME "Vertical Bar" 84x466 @594,0 VERTICAL gap 8 pad 24 24 24 12
+      - FRAME "Top" 48x274 @12,24 VERTICAL gap 6 pad 0 0 0 0
+        - FRAME "Frame" 48x48 @0,0 VERTICAL gap 12 pad 0 0 0 0
+      - FRAME "Bottom" 48x86 @12,306 VERTICAL gap 12 pad 0 0 0 0
+      - FRAME "Camera Punchout" 48x42 @12,400
+    - FRAME "Layout Guides and Safe Areas" 678x466 @0,0
+      - INSTANCE "Layout Margin: 20pt" 20x466 @0,0 inst
+      - INSTANCE "Safe Area Inset" 84x466 @594,0 inst
+  - INSTANCE "Overlay" 678x466 @0,0 inst
+  - FRAME "Sheet" 662x458 @8,8
+    - FRAME "Vertical Bar" 76x458 @586,0 VERTICAL gap 8 pad 24 16 24 12
+      - FRAME "Camera Punchout" 48x42 @12,24
+      - FRAME "Top" 48x316 @12,24 VERTICAL gap 6 pad 0 0 0 0
+        - FRAME "Frame" 48x108 @0,0 VERTICAL gap 12 pad 0 0 0 0
+      - FRAME "Bottom" 48x86 @12,348 VERTICAL gap 12 pad 0 0 0 0
+    - INSTANCE "Toolbar - Top - iPhone Duo" 662x84 @0,0 inst HORIZONTAL gap 12 pad 24 24 12 20
+    - FRAME "Layout Guides and Safe Areas" 662x458 @0,0
+      - INSTANCE "Layout Margin: 16pt" 16x458 @0,0 inst
+      - INSTANCE "Safe Area Inset" 662x84 @0,0 inst
+      - INSTANCE "Safe Area Inset" 76x458 @586,0 inst
+  - INSTANCE "Outer Display Lens" 95.67x95.67 @582,370 inst
+  - INSTANCE "iPhone Duo" 731.33x524.67 @704,495.67 inst
+- COMPONENT "iPhone Duo/Standard/Outer - Portrait" 466x678 @0,0
+  - FRAME "Vertical Bar" 84x678 @382,0 VERTICAL gap 8 pad 24 24 24 12
+    - FRAME "Camera Punchout" 48x42 @12,24
+    - FRAME "Top" 48x302 @12,74 VERTICAL gap 6 pad 0 0 0 0
+      - FRAME "Frame" 48x259 @0,0 VERTICAL gap 12 pad 0 0 0 0
+        - INSTANCE "Status bar - iPhone Duo" 48x83 @0,0 inst VERTICAL gap 6 pad 11 0 1 0
+        - INSTANCE "Button Group" 48x164 @0,95 inst VERTICAL gap 0 pad 10 6 10 6
+    - FRAME "Bottom" 48x270 @12,384 VERTICAL gap 12 pad 0 0 0 0
+      - INSTANCE "Tab Bar - iPhone Duo" 48x270 @0,0 inst VERTICAL gap 12 pad 0 0 0 0
+  - INSTANCE "Toolbar - Top - iPhone Duo" 466x84 @0,0 inst HORIZONTAL gap 12 pad 24 24 12 20
+  - INSTANCE "Outer Display Lens" 95.67x95.67 @370,0 inst
+  - FRAME "Layout Guides and Safe Areas" 466x678 @0,0
+    - INSTANCE "Layout Margin: 20pt" 20x678 @0,0 inst
+    - INSTANCE "Safe Area Inset" 84x678 @382,0 inst
+    - INSTANCE "Reserved Region" 84x169 @382,0 inst
+  - INSTANCE "iPhone Duo" 524.67x731.33 @-29,-27 inst
+- COMPONENT "iPhone Duo/Sheets/Outer - Portrait" 466x678 @1200,0
+  - FRAME "Screen" 466x678 @0,0
+    - FRAME "Vertical Bar" 84x678 @382,0 VERTICAL gap 8 pad 24 24 24 12
+      - FRAME "Camera Punchout" 48x42 @12,24
+      - FRAME "Top" 48x486 @12,74 VERTICAL gap 6 pad 0 0 0 0
+        - FRAME "Frame" 48x143 @0,0 VERTICAL gap 12 pad 0 0 0 0
+      - FRAME "Bottom" 48x86 @12,568 VERTICAL gap 12 pad 0 0 0 0
+    - FRAME "Layout Guides and Safe Areas" 466x678 @0,0
+      - INSTANCE "Layout Margin: 20pt" 20x678 @0,0 inst
+      - INSTANCE "Safe Area Inset" 84x678 @382,0 inst
+      - INSTANCE "Reserved Region" 84x169 @382,0 inst
+  - INSTANCE "Overlay" 466x678 @0,0 inst
+  - INSTANCE "Outer Display Lens" 95.67x95.67 @370,0 inst
+  - FRAME "Sheet" 450x356 @8,314
+    - INSTANCE "BG" 450x356 @0,0 inst
+    - FRAME "Vertical Bar" 76x356 @374,0 VERTICAL gap 8 pad 16 16 16 12
+      - FRAME "Camera Punchout" 48x42 @12,24
+      - FRAME "Top" 48x230 @12,16 VERTICAL gap 6 pad 0 0 0 0
+        - FRAME "Frame" 48x108 @0,0 VERTICAL gap 12 pad 0 0 0 0
+      - FRAME "Bottom" 48x86 @12,254 VERTICAL gap 12 pad 0 0 0 0
+    - INSTANCE "Toolbar - Top - iPhone Duo" 450x76 @0,0 inst HORIZONTAL gap 12 pad 16 16 12 16
+    - FRAME "Layout Guides and Safe Areas" 450x356 @0,0
+      - INSTANCE "Layout Margin: 16pt" 16x356 @0,0 inst
+      - INSTANCE "Safe Area Inset" 450x76 @0,0 inst
+      - INSTANCE "Safe Area Inset" 76x356 @374,0 inst
+  - INSTANCE "iPhone Duo" 524.67x731.33 @-29,-27 inst
+- INSTANCE "Header" 1400x242 @0,-500 inst VERTICAL gap 32 pad 0 0 0 0
