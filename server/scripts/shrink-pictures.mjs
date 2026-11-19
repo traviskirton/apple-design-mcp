@@ -1,11 +1,12 @@
-// Halves the pixel size of the pictures in assets/ui-kit-svg/img/ that are too large to deploy.
+// Makes the pictures in assets/ui-kit-svg/img/ that are too large to deploy smaller.
 // No dependencies: node:zlib reads and writes the PNG data.
 //
 //   node scripts/shrink-pictures.mjs [--over 16]
 //
-// Cloudflare takes static files up to 25 MiB. Two wallpapers in Apple's kits are larger as PNG, at
-// more than four times the pixels any drawing shows them with. A PNG over `--over` MiB (default
-// 16) is halved in width and height, again if needed, and written back under the same name, so
+// Cloudflare takes static files up to 25 MiB. Two wallpapers in Apple's kits are larger, as the
+// PNGs Figma wrote. A PNG over `--over` MiB (default 16) is written again, at 8 bits a channel and
+// packed as tightly as PNG allows; if that is still too large it is halved in width and height,
+// again if needed. It keeps its name, so
 // the SVGs that point to it need no change: an image element draws its picture at the size the
 // element gives, whatever the picture's own pixel size. The color profile is kept.
 //
@@ -148,11 +149,12 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     let image = decodePng(readFileSync(path));
     if (image.error) { console.log(`${name}: ${mb(size)}, ${image.error}; left as it is.`); left++; continue; }
     const from = `${image.width} × ${image.height}`;
-    let out;
-    do {
+    // Written again at 8 bits and well packed, a picture is often small enough at its full size.
+    let out = encodePng(image);
+    while (out.length > limit && image.width > 64) {
       image = halve(image);
       out = encodePng(image);
-    } while (out.length > limit && image.width > 64);
+    }
     writeFileSync(path, out);
     shrunk++;
     console.log(`${name}: ${from}, ${mb(size)} is now ${image.width} × ${image.height}, ${mb(out.length)}.`);
