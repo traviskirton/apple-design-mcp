@@ -13,7 +13,7 @@
 // corner radius, fills, strokes, effects and text, with colours and text styles by the names
 // Apple gives them in the kit. Vector shapes are named, not drawn.
 
-import { existsSync, mkdirSync, readdirSync, rmSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { buildTree, guidKey, readFig } from "./fig-dump.mjs";
@@ -43,10 +43,30 @@ const lower = (s) => s.toLowerCase().replace(/_/g, " ");
 const cut = (s, n) => (s.length > n ? s.slice(0, n - 1) + "…" : s);
 const isPrivateUse = (s) => s.length > 0 && [...s].every((ch) => { const c = ch.codePointAt(0); return (c >= 0xe000 && c <= 0xf8ff) || c >= 0xf0000; });
 
-/** Text as it is quoted in an outline. SF Symbols are private-use characters, shown by code point. */
+// SF Symbols are private-use characters in Apple's fonts. scripts/figma/symbol-codepoints.txt holds
+// the name of each one the kits use ("1007C9 house.fill" per line); one it lacks prints as its code point.
+const symbolNames = new Map();
+const symbolTable = join(here, "figma", "symbol-codepoints.txt");
+if (existsSync(symbolTable)) {
+  for (const line of readFileSync(symbolTable, "utf8").split("\n")) {
+    const m = /^([0-9A-Fa-f]{4,6})\s+(\S+)/.exec(line);
+    if (m) symbolNames.set(parseInt(m[1], 16), m[2]);
+  }
+}
+const unnamedSymbols = new Set();
+const symbol = (ch) => {
+  const code = ch.codePointAt(0);
+  const name = symbolNames.get(code);
+  if (name) return name;
+  const shown = "U+" + code.toString(16).toUpperCase();
+  unnamedSymbols.add(shown);
+  return shown;
+};
+
+/** Text as it is quoted in an outline. A text of SF Symbols is given as the symbols' names. */
 function quote(characters, limit = 60) {
   const text = characters.replace(/\s+/g, " ").trim();
-  if (isPrivateUse(text)) return `SF Symbol ${[...text].map((ch) => "U+" + ch.codePointAt(0).toString(16).toUpperCase()).join(" ")}`;
+  if (isPrivateUse(text)) return `SF Symbol ${[...text].map(symbol).join(" ")}`;
   return JSON.stringify(cut(text, limit));
 }
 
@@ -434,3 +454,6 @@ const outPath = join(here, "..", "src", "pack", "ui-kit.js");
 const body = JSON.stringify(pack, null, 1).replace(/\{\n\s+"name": ("[^"\n]*"),\n\s+"width": ([\d.]+),\n\s+"height": ([\d.]+),\n\s+"outline": (\d+)\n\s+\}/g, '{"name":$1,"width":$2,"height":$3,"outline":$4}');
 writeFileSync(outPath, `// Written by scripts/build-ui-kit-pack.mjs from Apple's UI kits for Figma. Do not edit.\nexport default ${body};\n`);
 console.log(`Wrote ${outPath} (${(Buffer.byteLength(body) / 1024).toFixed(0)} KB) and ${assetRoot}.`);
+if (unnamedSymbols.size) {
+  console.log(`${unnamedSymbols.size} SF Symbols have no name in scripts/figma/symbol-codepoints.txt: ${[...unnamedSymbols].sort().join(" ")}`);
+}
