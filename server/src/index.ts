@@ -15,7 +15,7 @@ import { lookupSymbols, readSymbols, symbolPack } from "./symbols.js";
 import type { ShapeLoader } from "./symbols.js";
 
 const SERVER_NAME = "apple-design";
-const SERVER_VERSION = "0.5.0";
+const SERVER_VERSION = "0.5.1";
 
 const HIG_DATE = higPack.pack_version;
 
