@@ -166,6 +166,9 @@ try {
   check(kit.text.includes("### Button - Pill\n\nwatchOS 26 kit"), 'search_ui_kit should read "watch button" from the watchOS kit');
   check(kit.text.includes("### Toggles - Checkboxes\n\nmacOS 27 kit"), 'search_ui_kit should find "checkbox" in the macOS kit when the iOS kit has none');
   check(kit.text.includes('## "zebra crossing"\n\nNo component of the iOS and iPadOS 27 kit matches.'), "search_ui_kit should say when nothing matches");
+  const duoBars = await call("search_ui_kit", { queries: ["iPhone Duo vertical toolbar", "iPhone Duo tab bar 4 tabs"] });
+  check(duoBars.text.includes("### _Buttons - 48pt\n") && duoBars.text.includes("Shown: Type=Button Group, Preferred Axis=Vertical, 48 × 164 points."), 'search_ui_kit should give the vertical button group for "iPhone Duo vertical toolbar", not the horizontal toolbar');
+  check(duoBars.text.includes("### Tab Bar - iPhone Duo\n") && duoBars.text.includes("Shown: Minimized=False, Tabs=4, Type=Default, 48 × 210 points."), 'search_ui_kit should show the 4-tab variant for "4 tabs"');
   if (kit.text.includes("```text")) {
     check(kit.text.includes("- Tab Bar Buttons: frame; 180 × 54; fills width; row; gap -8;"), "the tab bar's outline is missing or changed");
     // Asked alone: among six queries with drawings, the parts are the first thing left out for size.
@@ -187,6 +190,12 @@ try {
     const address = /at (\S+\/ui-kit-svg\/ios\/3-72207\.svg)/.exec(drawn.text)?.[1];
     const file = address ? await fetch(address.replace(/^https?:\/\/[^/]+/, new URL(url).origin)) : null;
     check(file?.ok && (file.headers.get("content-type") ?? "").includes("svg"), "a drawing should be served at its address as SVG");
+    // A query that names a variant gets its drawing into the reply before one that names none.
+    const named = await call("search_ui_kit", { queries: ["stepper", "tab bar 5 tabs search role"], max_chars: 16000 });
+if (named.text.includes("```svg")) {
+          check(/Shown: Minimized=False, Tabs=5, Type=Search Role, 402 × 95 points\.\n\nApple's drawing of it, also at \S+:\n\n```svg/.test(named.text), "the variant a query names should be in the reply as SVG");
+      check(/### Stepper\n[\s\S]*?more than this reply has room for/.test(named.text), "the drawing no query word chose should give way and come by its address");
+    } else console.log("search_ui_kit: the drawings for the named-variant check are not on this server");
     const small = await call("search_ui_kit", { queries: ["tab bar", "alert"], max_chars: 6000 });
     check(!small.text.includes("```svg") && small.text.includes("more than this reply has room for"), "a drawing that does not fit should be given by its address");
   } else {

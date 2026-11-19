@@ -109,13 +109,16 @@ function score(e: Indexed, q: Query): number {
   }
   if (!matched) return 0;
   // Every word has to be found for a full match; partial matches rank far below.
-  if (matched < q.content.length) total = total * 0.2 * (matched / q.content.length);
+  const partial = matched < q.content.length ? 0.2 * (matched / q.content.length) : 1;
+  total *= partial;
 
   // The page named exactly after the query holds the standard component: "button" means the "Buttons" page.
   if (matched === q.content.length && e.page.length === q.content.length && e.page.every((w) => q.content.some((c) => wordMatch(c, w)))) total += 2;
 
   const own = [...e.name, ...e.place];
-  for (const d of q.devices) total += own.includes(d) ? 4 : 0;
+  // The device is a preference among components that match: it does not lift one that lacks a word
+  // ("vertical" in "iPhone Duo vertical toolbar") over one that has them all.
+  for (const d of q.devices) total += own.includes(d) ? 4 * partial : 0;
   if (q.devices.length) {
     const other = [...DEVICE_WORDS].filter((d) => !q.devices.includes(d) && e.name.includes(d));
     total -= 3 * other.length;
@@ -188,6 +191,8 @@ const USUAL: [RegExp, RegExp][] = [
   [/^state$/i, /^(idle|default|normal|enabled|rest|resting)$/i],
   [/^size$/i, /^(medium|regular|default)$/i],
   [/^device$/i, /^iphone/i],
+  // The toolbar's button parts: the group of buttons is what a toolbar holds.
+  [/^type$/i, /^button group$/i],
 ];
 
 /**
@@ -216,13 +221,14 @@ const NO = /^(false|no|off)$/i;
  * The variant a query asks for ("large destructive button"), else the default one. A word can be a
  * property's value ("large"), the name of a property that is switched on ("destructive") or
  * "disabled". Among the variants that fit equally well, the one closest to the default is taken.
+ * `named` is the number of query words that chose it.
  */
-function pickVariant(c: KitComponent, queryWords: string[]): KitVariant {
+function pickVariant(c: KitComponent, queryWords: string[]): { variant: KitVariant; named: number } {
   const fallback = defaultVariant(c);
-  if (c.variants.length < 2) return fallback;
+  if (c.variants.length < 2) return { variant: fallback, named: 0 };
   const nameWords = new Set(words(c.name));
   const extra = queryWords.filter((w) => !nameWords.has(w));
-  if (!extra.length) return fallback;
+  if (!extra.length) return { variant: fallback, named: 0 };
   const pairs = (v: KitVariant) => v.name.split(", ").map((p) => p.split("=") as [string, string | undefined]);
   const usual = new Set(fallback.name.split(", "));
   let bestV = fallback;
@@ -240,7 +246,7 @@ function pickVariant(c: KitComponent, queryWords: string[]): KitVariant {
     const near = v.name.split(", ").filter((p) => usual.has(p)).length;
     if (n > bestN || (n === bestN && n > 0 && near > bestNear)) [bestV, bestN, bestNear] = [v, n, near];
   }
-  return bestV;
+  return { variant: bestV, named: bestN };
 }
 
 // ---------- text ----------
@@ -337,20 +343,23 @@ export async function searchUiKit(
     queries.map(async (query) => {
       const { kit: kitId, hits, q } = findComponents(query, asked);
       const kit = pack.kits.find((k) => k.id === kitId);
-      if (!kit || !hits.length) return { query, kitId, kit, hits, q, variant: undefined, svg: null, inline: false };
-      const variant = pickVariant(hits[0].c, [...q.content, ...q.devices, ...q.states]);
+      if (!kit || !hits.length) return { query, kitId, kit, hits, q, variant: undefined, named: 0, svg: null, inline: false };
+      const { variant, named } = pickVariant(hits[0].c, [...q.content, ...q.devices, ...q.states]);
       const svg = variant.node ? await loadDrawing(kit.id, drawingFile(variant.node)) : null;
-      return { query, kitId, kit, hits, q, variant, svg: svg?.trim() || null, inline: false };
+      return { query, kitId, kit, hits, q, variant, named, svg: svg?.trim() || null, inline: false };
     }),
   );
 
-  // The drawings that go into the reply itself: as many as fit, smallest first. The others are given by address.
+  // The drawings that go into the reply itself, as many as fit; the others are given by address.
+  // First the ones whose query names a variant ("4 tabs", "vertical"): the caller wants that drawing
+  // and has no other way to it. Whole example screens last, and within each group the smallest first.
   let pool = maxChars - HEADER_ROOM * queries.length;
   const inReply = new Set<string>();
-  for (const f of found.filter((x) => x.svg).sort((a, b) => a.svg!.length - b.svg!.length)) {
+  const rank = (f: (typeof found)[number]) => (f.hits[0].c.page === "Examples" ? 2 : f.named ? 0 : 1);
+  for (const f of found.filter((x) => x.svg).sort((a, b) => rank(a) - rank(b) || a.svg!.length - b.svg!.length)) {
     const key = `${f.kit!.id}/${f.variant!.node}`;
     if (inReply.has(key)) continue;
-    if (f.svg!.length > pool) break;
+    if (f.svg!.length > pool) continue;
     pool -= f.svg!.length;
     inReply.add(key);
     f.inline = true;
