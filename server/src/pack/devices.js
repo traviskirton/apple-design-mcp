@@ -1,0 +1,7 @@
+export default {"pack_version":"2026-11-19","generated_at":"2026-11-19T00:00:00.000Z","source":{"name":"Xcode simulator device types","version":"FIXTURE, not real data","devices":5},"devices":[
+{"id":"iPhone-17-Pro","name":"iPhone 17 Pro","family":"iphone","model":"iPhone18,1","current":true,"dynamic_island":true,"screens":[{"width_pt":402,"height_pt":874,"scale":3,"width_px":1206,"height_px":2622,"ppi":460,"corner_radius_pt":62}]},
+{"id":"iPhone-17-Pro-Max","name":"iPhone 17 Pro Max","family":"iphone","current":true,"dynamic_island":true,"screens":[{"width_pt":440,"height_pt":956,"scale":3,"width_px":1320,"height_px":2868,"ppi":460,"corner_radius_pt":62}]},
+{"id":"iPhone-Duo","name":"iPhone Duo","family":"iphone","model":"iPhone19,4","current":true,"dynamic_island":true,"screens":[{"role":"outer","width_pt":466,"height_pt":678,"scale":3,"width_px":1398,"height_px":2034,"ppi":460,"corner_radius_pt":{"top_left":8,"top_right":59,"bottom_left":8,"bottom_right":59}},{"role":"inner","width_pt":669,"height_pt":951,"scale":3,"width_px":2007,"height_px":2853,"corner_radius_pt":55,"natural_orientation":"landscape"}]},
+{"id":"iPhone-8","name":"iPhone 8","family":"iphone","current":false,"screens":[{"width_pt":375,"height_pt":667,"scale":2,"width_px":750,"height_px":1334,"ppi":326}]},
+{"id":"iPad-Pro-13-inch-M5","name":"iPad Pro 13-inch (M5)","family":"ipad","current":true,"screens":[{"width_pt":1032,"height_pt":1376,"scale":2,"width_px":2064,"height_px":2752,"ppi":264,"corner_radius_pt":30,"natural_orientation":"landscape"}]}
+]};
