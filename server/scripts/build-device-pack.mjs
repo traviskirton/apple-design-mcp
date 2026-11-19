@@ -15,6 +15,7 @@ import { execFileSync } from "node:child_process";
 import { existsSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { mergeSafeAreas } from "./merge-safe-areas.mjs";
 
 const OUT = join(dirname(fileURLToPath(import.meta.url)), "..", "src", "pack", "devices.js");
 const dumpAt = process.argv.indexOf("--dump");
@@ -122,6 +123,9 @@ for (const type of devicetypes) {
   });
 }
 
+// Safe-area insets, measured in the Simulator by extractor/measure-safe-areas.py.
+const measured = DUMP === null ? mergeSafeAreas(devices) : 0;
+
 if (DUMP !== null) {
   console.log(JSON.stringify({ xcode, devicetypes: dumped }, null, 2));
   process.exit(0);
@@ -140,7 +144,7 @@ const pack = {
   devices,
 };
 writeFileSync(OUT, `export default ${JSON.stringify(pack, null, 1)};\n`);
-console.log(`Device pack: ${devices.length} devices from ${xcode}, written to src/pack/devices.js`);
+console.log(`Device pack: ${devices.length} devices from ${xcode}, ${measured} screens with safe-area insets, written to src/pack/devices.js`);
 for (const d of devices.filter((d) => d.screens.length > 1)) {
   console.log(`  ${d.name}: ${d.screens.map((s) => `${s.role} ${s.width_pt}×${s.height_pt}`).join(", ")}`);
 }
