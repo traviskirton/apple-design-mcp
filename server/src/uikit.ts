@@ -45,10 +45,17 @@ const BARS: [RegExp, string][] = [
   [/\bbottom bar\b/, "toolbar bottom"],
   [/\bshare sheet\b/, "activity view"],
   [/\bsearch bar\b/, "search field"],
+  [/\bactivity indicator\b|\bloading indicator\b/, "indeterminate circular progress"],
+  [/\bbottom sheet\b/, "sheet"],
+];
+// Names written as one word or two: "popup" and "pop up" are the kit's "Pop-Up".
+const SPELLINGS: [RegExp, string][] = [
+  [/\bpop ?ups?\b/, "pop up"],
+  [/\bpull ?downs?\b/, "pull down"],
 ];
 // "list" alone means the thing lists are made of; the kit has no component of that name.
 const LISTS: [RegExp, string][] = [[/^(list|table)( view)?$/, "list row"]];
-const PHRASES: Record<string, [RegExp, string][]> = { ios: [...BARS, ...LISTS], macos: BARS, watchos: [] };
+const PHRASES: Record<string, [RegExp, string][]> = { ios: [...SPELLINGS, ...BARS, ...LISTS], macos: [...SPELLINGS, ...BARS], watchos: SPELLINGS };
 
 /** How well a query word matches a word of a name: 3 the same word, 2 its start or end, 0 no match. */
 function wordMatch(q: string, w: string): number {
@@ -178,6 +185,9 @@ export function findComponents(query: string, asked?: KitId): { kit: KitId; hits
       if (found.length && score(found[0], q) >= 4) return { kit: other, hits: found, q };
     }
   }
+  // A query of several words that only some of them find ("split view" finding "Activity View")
+  // names something the kits do not have: say so instead of offering the near miss.
+  if (parsed.q.content.length >= 2 && !full(hits)) hits = [];
   return { kit: parsed.kit, hits, q: parsed.q };
 }
 
@@ -316,6 +326,26 @@ class Budget {
 /** Room kept for each query's heading, properties and notes when the drawings are given their share of the reply. */
 const HEADER_ROOM = 1500;
 
+/** Below this share of the reply, a query lists 3 other variants and 4 other matches instead of 8 and 12. */
+const BRIEF_BELOW = 3000;
+
+/** The least of an outline kept when it is cut for size. */
+const MIN_OUTLINE = 600;
+
+/** An outline cut at a line break to about `limit` characters, fenced, saying how much was left out. */
+function cutOutline(text: string, limit: number): string {
+  const lines = text.split("\n");
+  const kept: string[] = [];
+  let n = 0;
+  for (const line of lines) {
+    if (kept.length && n + line.length + 1 > limit) break;
+    kept.push(line);
+    n += line.length + 1;
+  }
+  return "```text\n" + kept.join("\n") + "\n```\n\n" +
+    `(Outline cut for size: ${kept.length} of ${lines.length} lines. Call again with this query alone, or a larger max_chars, for all of it.)`;
+}
+
 /**
  * The components that best match each query: Apple's drawing of the variant asked for, the outline
  * of its layers and of the parts it is built from. Without queries: the list of every published
@@ -392,6 +422,8 @@ export async function searchUiKit(
     }
     matched++;
     const budget = new Budget(Math.floor(left / (queries.length - n)));
+    // A small share of the reply gets shorter lists of other variants and other matches.
+    const listed = budget.left < BRIEF_BELOW ? 3 : 8;
     const before = budget.left;
     const { c } = hits[0];
     const variant = f.variant;
@@ -424,9 +456,9 @@ export async function searchUiKit(
     const otherVariants = !others.length
       ? null
       : `Other variants: ${others
-          .slice(0, 8)
+          .slice(0, listed)
           .map((v) => `${v.name} (${size(v)}${f.svg && v.node ? `, ${drawingFile(v.node)}` : ""})`)
-          .join("; ")}${others.length > 8 ? `; and ${others.length - 8} more` : ""}. ` +
+          .join("; ")}${others.length > listed ? `; and ${others.length - listed} more` : ""}. ` +
         (f.svg ? `Their drawings are in ${folder} under these file names. ` : "") +
         "Add a variant's words to the query to get it in full.";
 
@@ -445,9 +477,12 @@ export async function searchUiKit(
       const fenced = "```text\n" + text + "\n```";
       const at = otherVariants ? block.length - 1 : block.length;
       if (!inlined) {
-        budget.left -= fenced.length;
-        block.splice(at, 0, f.svg ? "Its layers:" : "Its layers (no drawing of it is on this server):", fenced);
-        outlineShown = true;
+        // Without a drawing in the reply the outline is what the caller builds from, so it stays,
+        // cut to the query's share when it does not fit.
+        const kept = budget.left >= fenced.length ? fenced : cutOutline(text, Math.max(budget.left, f.svg ? MIN_OUTLINE : 2 * MIN_OUTLINE));
+        budget.left -= kept.length;
+        block.splice(at, 0, f.svg ? "Its layers:" : "Its layers (no drawing of it is on this server):", kept);
+        outlineShown = kept === fenced;
       } else if (budget.take(fenced)) {
         block.splice(at, 0, "Its layers, with the spacing, sizes, colors and text styles by Apple's names:", fenced);
         outlineShown = true;
@@ -490,9 +525,10 @@ export async function searchUiKit(
       if (skipped.length) parts.push(`Parts left out for size: ${[...new Set(skipped)].map((n) => `"${n}"`).join(", ")}. Pass a name as a query to get it.`);
     }
 
-    const more = hits.slice(1, 13).map((h) => `"${h.c.name}"${h.c.section ? ` (${h.c.section})` : ""}`);
+    const matches = listed === 8 ? 12 : 4;
+    const more = hits.slice(1, 1 + matches).map((h) => `"${h.c.name}"${h.c.section ? ` (${h.c.section})` : ""}`);
     if (more.length) {
-      parts.push(`Other matches: ${[...new Set(more)].join(", ")}${hits.length > 13 ? `, and ${hits.length - 13} more` : ""}.`);
+      parts.push(`Other matches: ${[...new Set(more)].join(", ")}${hits.length > 1 + matches ? `, and ${hits.length - 1 - matches} more` : ""}.`);
       budget.left -= parts[parts.length - 1].length;
     }
     left -= before - budget.left;
