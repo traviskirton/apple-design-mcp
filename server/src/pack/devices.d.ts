@@ -17,9 +17,14 @@ export interface Insets {
 export interface Screen {
   /** Only on devices with two screens of their own: "outer" (closed) and "inner" (open). */
   role?: "outer" | "inner";
-  /** Portrait size in points. */
+  /** Portrait size in points: the size apps are laid out at. */
   width_pt: number;
   height_pt: number;
+  /**
+   * Present when the layout size is larger than pixels ÷ scale (iPhone 12 mini and 13 mini): the
+   * system draws at the layout size and scales the picture down to the screen's pixels.
+   */
+  downsampled?: true;
   scale: number;
   width_px: number;
   height_px: number;

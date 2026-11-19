@@ -34,7 +34,11 @@ The server is stateless. Each request builds a fresh server and gets a plain JSO
 - `npm run pack:devices` rebuilds it. Do that after installing a new Xcode, then commit the file.
 - `node scripts/build-device-pack.mjs --dump Duo` prints everything Xcode holds for the device types whose name contains "Duo".
 
-Xcode's files hold no safe-area insets, no position for the Dynamic Island or cameras, and no fold or hinge positions. The tool's reply says so, and sends the model to the guidelines for those.
+- `npm run pack:safe-areas` applies `scripts/safe-areas.json` to the committed pack without Xcode.
+
+Xcode's files hold no safe-area insets, so they are measured: `extractor/measure-safe-areas.py` runs a small probe app in temporary simulators (named "apple-mcp-temp …", deleted afterwards) and writes `scripts/safe-areas.json`, which the pack builder merges in. iPad landscape insets, the iPhone Duo's inner screen and devices without an installed runtime have no measurement. iPhone 12 mini and 13 mini are listed at the size apps are laid out at (375 × 812 points), which is larger than their pixels ÷ scale.
+
+Nothing holds the position of the Dynamic Island or cameras, or fold and hinge positions. The tool's reply says so, and sends the model to the guidelines for those.
 
 ## The symbol pack
 

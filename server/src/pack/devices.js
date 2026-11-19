@@ -849,13 +849,28 @@ export default {
    "current": true,
    "screens": [
     {
-     "width_pt": 360,
-     "height_pt": 780,
+     "width_pt": 375,
+     "height_pt": 812,
      "scale": 3,
      "width_px": 1080,
      "height_px": 2340,
      "ppi": 476,
-     "corner_radius_pt": 44
+     "corner_radius_pt": 44,
+     "downsampled": true,
+     "safe_area": {
+      "portrait": {
+       "top": 50,
+       "bottom": 34,
+       "left": 0,
+       "right": 0
+      },
+      "landscape": {
+       "top": 0,
+       "bottom": 20,
+       "left": 50,
+       "right": 50
+      }
+     }
     }
    ]
   },
@@ -963,13 +978,28 @@ export default {
    "current": true,
    "screens": [
     {
-     "width_pt": 360,
-     "height_pt": 780,
+     "width_pt": 375,
+     "height_pt": 812,
      "scale": 3,
      "width_px": 1080,
      "height_px": 2340,
      "ppi": 476,
-     "corner_radius_pt": 44
+     "corner_radius_pt": 44,
+     "downsampled": true,
+     "safe_area": {
+      "portrait": {
+       "top": 50,
+       "bottom": 34,
+       "left": 0,
+       "right": 0
+      },
+      "landscape": {
+       "top": 0,
+       "bottom": 20,
+       "left": 50,
+       "right": 50
+      }
+     }
     }
    ]
   },

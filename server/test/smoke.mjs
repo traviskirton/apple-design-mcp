@@ -5,7 +5,7 @@ import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StreamableHTTPClientTransport } from "@modelcontextprotocol/sdk/client/streamableHttp.js";
 
 const url = process.argv[2] ?? "http://127.0.0.1:8787/mcp";
-const client = new Client({ name: "smoke-test", version: "0.5.1" });
+const client = new Client({ name: "smoke-test", version: "0.6.0" });
 
 function check(ok, what) {
   if (!ok) throw new Error(what);
@@ -83,6 +83,12 @@ try {
   check(
     duo.text.includes("| iPhone Duo, outer screen (closed) | 0 | 34 | 0 | 84 |"),
     "get_device_metrics should give the iPhone Duo outer screen's portrait insets (top 0, bottom 34, left 0, right 84)",
+  );
+
+  const mini = await call("get_device_metrics", { devices: ["iPhone 13 mini"] });
+  check(
+    mini.text.includes("| iPhone 13 mini | 375 × 812 |") && mini.text.includes("| iPhone 13 mini | 50 | 34 | 0 | 0 |"),
+    "get_device_metrics should list iPhone 13 mini at its layout size (375 × 812) with portrait insets top 50, bottom 34",
   );
 
   const frames = await call("get_device_frame", { devices: ["iPhone Duo"] });
