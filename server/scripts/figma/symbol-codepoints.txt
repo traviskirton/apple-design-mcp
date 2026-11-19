@@ -47,6 +47,7 @@
 1001B4 sunset.fill
 1001BA moon.fill
 1001D5 cloud.sun.fill
+1001F7 square.grid.2x2
 1001FE exclamationmark.triangle
 100202 square.and.arrow.up
 10020A pencil
