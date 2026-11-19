@@ -20,7 +20,7 @@ import type { DrawingLoader, OutlineLoader } from "./uikit.js";
 import { designValues, valuesPack, VALUE_PLATFORMS, VALUE_TOPICS } from "./values.js";
 
 const SERVER_NAME = "apple-design";
-const SERVER_VERSION = "0.12.0";
+const SERVER_VERSION = "0.12.1";
 
 const HIG_DATE = higPack.pack_version;
 
@@ -440,7 +440,7 @@ function buildServer(app: string, env: Env, origin: string): McpServer {
           .min(2000)
           .max(100000)
           .optional()
-          .describe("Approximate size limit for the whole reply, shared between the queries. Default 40000."),
+          .describe("Approximate size limit for the drawings and outlines, shared between the queries. Default 40000. Each query's name, variants and other matches (about 1,500 characters) and the notes on using drawings (about 2,500) come on top."),
       },
       annotations: READ_ONLY,
     },
