@@ -1,37 +1,52 @@
-// Apple design MCP server, milestone 0: one tool, no data yet.
+// Apple design MCP server.
 //
-// The only purpose of this version is to prove that a server on Cloudflare
-// Workers can be added by URL in claude.ai, the Claude apps and chatgpt.com.
-// It is stateless: every request builds a fresh server and answers in plain
-// JSON, so it needs no storage, no sessions and no sign-in.
+// Stateless: every request builds a fresh server and answers in plain JSON, so it
+// needs no storage, no sessions and no sign-in. The Human Interface Guidelines are
+// compiled into the Worker (see scripts/build-hig-pack.mjs), so a tool call makes no
+// network or storage request.
 
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { WebStandardStreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/webStandardStreamableHttp.js";
+import { z } from "zod";
+import { formatHits, higPack, readPage, searchHig } from "./hig.js";
 
 const SERVER_NAME = "apple-design";
-const SERVER_VERSION = "0.0.1";
+const SERVER_VERSION = "0.1.0";
 
-// Stands in for the real asset pack manifest until the extractor exists.
+const HIG_DATE = higPack.pack_version;
+
 const PACK = {
-  status: "placeholder",
-  note: "Milestone 0 connection test. No Apple assets are loaded yet.",
-  pack_version: null as string | null,
-  sources: [] as { name: string; version: string }[],
+  status: "partial",
+  note: "Human Interface Guidelines text is loaded. SF Symbols, UI kits, device frames and design values are not loaded yet.",
+  pack_version: higPack.pack_version,
+  sources: [
+    {
+      name: higPack.source.name,
+      version: `copied from ${higPack.source.url} at ${higPack.generated_at}`,
+      pages: higPack.source.pages,
+      sections: higPack.source.sections,
+      sha256: higPack.source.sha256,
+    },
+  ],
+  tools: ["get_pack_info", "search_hig", "get_hig_page"],
   planned_tools: [
-    "search_symbols", "get_symbol",
-    "search_hig", "get_hig_page", "get_design_values",
+    "search_symbols", "get_symbol", "get_design_values",
     "get_device_metrics", "make_asset_catalog", "make_app_icon",
     "search_ui_kit", "frame_screenshot",
   ],
 };
+
+const READ_ONLY = { readOnlyHint: true, idempotentHint: true, openWorldHint: false };
 
 function buildServer(): McpServer {
   const server = new McpServer(
     { name: SERVER_NAME, version: SERVER_VERSION },
     {
       instructions:
-        "Apple design reference for building Apple-platform apps. This is an early test version: " +
-        "only get_pack_info works, and it reports that no assets are loaded yet.",
+        "Apple design reference for designing and building apps for iPhone, iPad, Mac, Apple Watch, Apple TV and " +
+        `Apple Vision Pro. It holds Apple's Human Interface Guidelines as published on ${HIG_DATE}, which may be ` +
+        "newer than what you remember. Before designing a screen or component, call search_hig for the components " +
+        "and devices involved, then get_hig_page for the sections that apply.",
     },
   );
 
@@ -40,10 +55,9 @@ function buildServer(): McpServer {
     {
       title: "Get pack info",
       description:
-        "Report which version of Apple's design assets this server has loaded (SF Symbols, " +
-        "Human Interface Guidelines, UI kits, device bezels) and when the server answered. " +
+        "Report which Apple design material this server has loaded, its date, and when the server answered. " +
         "Call it to check the server is connected and how current its data is.",
-      annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
+      annotations: READ_ONLY,
     },
     async () => {
       const info = {
@@ -53,6 +67,60 @@ function buildServer(): McpServer {
         ...PACK,
       };
       return { content: [{ type: "text", text: JSON.stringify(info, null, 2) }] };
+    },
+  );
+
+  server.registerTool(
+    "search_hig",
+    {
+      title: "Search the Human Interface Guidelines",
+      description:
+        `Search Apple's Human Interface Guidelines (all ${higPack.source.pages} pages, as published on ${HIG_DATE}) ` +
+        "for the sections that cover a component, pattern, device or platform, such as \"tab bar\", \"sheet\", " +
+        "\"dark mode color\", \"app icon\" or a device name. Use it before designing or building any Apple-platform " +
+        "screen, and for devices or system features you are unsure about, because the guidelines change several " +
+        "times a year. Returns matching sections with a short quote; read a section with get_hig_page.",
+      inputSchema: {
+        query: z
+          .string()
+          .min(1)
+          .max(200)
+          .describe("A few plain words: component, pattern, device or platform names. Example: \"toolbar iPad\"."),
+        limit: z.number().int().min(1).max(20).optional().describe("How many sections to return. Default 8."),
+      },
+      annotations: READ_ONLY,
+    },
+    async ({ query, limit }) => ({
+      content: [{ type: "text", text: formatHits(query, searchHig(query, limit ?? 8)) }],
+    }),
+  );
+
+  server.registerTool(
+    "get_hig_page",
+    {
+      title: "Read a Human Interface Guidelines page",
+      description:
+        "Read Apple's Human Interface Guidelines. With only `page`, returns the page's summary and a list of its " +
+        "sections with their sizes. With `section`, returns that section's full text, which is the cheapest way to " +
+        "get guidance: most pages have a \"best-practices\" section and one section per platform, such as " +
+        "\"platform-considerations/ios\". Pictures are given as Apple's own descriptions of them.",
+      inputSchema: {
+        page: z
+          .string()
+          .min(1)
+          .max(200)
+          .describe("Page id from search_hig, such as \"tab-bars\". A page title or developer.apple.com URL also works."),
+        section: z
+          .string()
+          .max(200)
+          .optional()
+          .describe("Section id from search_hig or from this tool's section list. \"all\" returns the whole page."),
+      },
+      annotations: READ_ONLY,
+    },
+    async ({ page, section }) => {
+      const result = readPage(page, section);
+      return { content: [{ type: "text", text: result.text }], isError: !result.ok };
     },
   );
 
@@ -105,7 +173,8 @@ export default {
 
     if (url.pathname === "/" && request.method === "GET") {
       const text =
-        `${SERVER_NAME} MCP server ${SERVER_VERSION} (connection test)\n\n` +
+        `${SERVER_NAME} MCP server ${SERVER_VERSION}\n` +
+        `Human Interface Guidelines: ${higPack.source.pages} pages, copied ${HIG_DATE}\n\n` +
         `Add this URL as a custom connector in your AI app:\n${url.origin}/mcp\n`;
       return new Response(text, { headers: { "Content-Type": "text/plain; charset=utf-8" } });
     }
