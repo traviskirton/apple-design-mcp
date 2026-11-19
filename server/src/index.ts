@@ -8,10 +8,10 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { WebStandardStreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/webStandardStreamableHttp.js";
 import { z } from "zod";
-import { formatHits, higPack, readPage, searchHig } from "./hig.js";
+import { higPack, lookupHig, platformsIn, readPage } from "./hig.js";
 
 const SERVER_NAME = "apple-design";
-const SERVER_VERSION = "0.1.0";
+const SERVER_VERSION = "0.2.0";
 
 const HIG_DATE = higPack.pack_version;
 
@@ -45,8 +45,9 @@ function buildServer(): McpServer {
       instructions:
         "Apple design reference for designing and building apps for iPhone, iPad, Mac, Apple Watch, Apple TV and " +
         `Apple Vision Pro. It holds Apple's Human Interface Guidelines as published on ${HIG_DATE}, which may be ` +
-        "newer than what you remember. Before designing a screen or component, call search_hig for the components " +
-        "and devices involved, then get_hig_page for the sections that apply.",
+        "newer than what you remember. Before designing a screen or component, make one search_hig call that lists " +
+        "every component, device and topic involved. It returns the guideline text itself, so one call is usually " +
+        "enough; use get_hig_page only for a section that search_hig lists but does not include.",
     },
   );
 
@@ -73,26 +74,45 @@ function buildServer(): McpServer {
   server.registerTool(
     "search_hig",
     {
-      title: "Search the Human Interface Guidelines",
+      title: "Look up the Human Interface Guidelines",
       description:
-        `Search Apple's Human Interface Guidelines (all ${higPack.source.pages} pages, as published on ${HIG_DATE}) ` +
-        "for the sections that cover a component, pattern, device or platform, such as \"tab bar\", \"sheet\", " +
-        "\"dark mode color\", \"app icon\" or a device name. Use it before designing or building any Apple-platform " +
-        "screen, and for devices or system features you are unsure about, because the guidelines change several " +
-        "times a year. Returns matching sections with a short quote; read a section with get_hig_page.",
+        `Look up Apple's Human Interface Guidelines (all ${higPack.source.pages} pages, as published on ${HIG_DATE}) ` +
+        "and get the text of the sections that apply. Pass every topic of the task in one call as `queries`, one " +
+        "entry per component, pattern, device or platform, such as [\"iPhone Duo\", \"toolbar\", \"tab bar\"]. " +
+        "Use it once before designing or building any Apple-platform screen, and for devices or system features you " +
+        "are unsure about, because the guidelines change several times a year. When a query names a guidelines page, " +
+        "the reply holds that page; otherwise it holds the best-matching sections. Sections left out for size are " +
+        "listed by id.",
       inputSchema: {
-        query: z
-          .string()
+        queries: z
+          .array(z.string().min(1).max(200))
           .min(1)
-          .max(200)
-          .describe("A few plain words: component, pattern, device or platform names. Example: \"toolbar iPad\"."),
-        limit: z.number().int().min(1).max(20).optional().describe("How many sections to return. Default 8."),
+          .max(8)
+          .optional()
+          .describe("One entry per topic, each a few plain words. Example: [\"sheet\", \"dark mode color\", \"iPad sidebar\"]."),
+        query: z.string().min(1).max(200).optional().describe("A single topic. Prefer `queries`."),
+        platforms: z
+          .array(z.enum(["ios", "ipados", "macos", "tvos", "visionos", "watchos"]))
+          .optional()
+          .describe("Leave out sections written for other platforms. If omitted, platforms named in the queries are used."),
+        max_chars: z
+          .number()
+          .int()
+          .min(2000)
+          .max(100000)
+          .optional()
+          .describe("Approximate size limit for the whole reply, shared between the queries. Default 40000."),
       },
       annotations: READ_ONLY,
     },
-    async ({ query, limit }) => ({
-      content: [{ type: "text", text: formatHits(query, searchHig(query, limit ?? 8)) }],
-    }),
+    async ({ queries, query, platforms, max_chars }) => {
+      const all = [...(queries ?? []), ...(query ? [query] : [])].slice(0, 8);
+      if (!all.length) {
+        return { content: [{ type: "text", text: "Pass `queries`: a list with one entry per topic." }], isError: true };
+      }
+      const text = lookupHig(all, max_chars ?? 40000, platforms?.length ? platforms : platformsIn(all));
+      return { content: [{ type: "text", text }] };
+    },
   );
 
   server.registerTool(
@@ -100,10 +120,10 @@ function buildServer(): McpServer {
     {
       title: "Read a Human Interface Guidelines page",
       description:
-        "Read Apple's Human Interface Guidelines. With only `page`, returns the page's summary and a list of its " +
-        "sections with their sizes. With `section`, returns that section's full text, which is the cheapest way to " +
-        "get guidance: most pages have a \"best-practices\" section and one section per platform, such as " +
-        "\"platform-considerations/ios\". Pictures are given as Apple's own descriptions of them.",
+        "Read one page or section of Apple's Human Interface Guidelines by id. Use it for a section that search_hig " +
+        "listed but did not include. With only `page`, returns the page's summary and a list of its sections with " +
+        "their sizes. With `section`, returns that section's full text. Pictures are given as Apple's own " +
+        "descriptions of them.",
       inputSchema: {
         page: z
           .string()
