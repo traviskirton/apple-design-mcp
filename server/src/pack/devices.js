@@ -1,6 +1,6 @@
 export default {
  "pack_version": "2026-11-19",
- "generated_at": "2026-11-19T02:56:47.830Z",
+ "generated_at": "2026-11-19T02:58:38.974Z",
  "source": {
   "name": "Xcode simulator device types",
   "version": "Xcode 27.2, Build version 27B52",
@@ -1675,9 +1675,9 @@ export default {
    "current": true,
    "screens": [
     {
-     "width_pt": 3840,
-     "height_pt": 2160,
-     "scale": 1,
+     "width_pt": 1920,
+     "height_pt": 1080,
+     "scale": 2,
      "width_px": 3840,
      "height_px": 2160
     }
@@ -1707,9 +1707,9 @@ export default {
    "current": true,
    "screens": [
     {
-     "width_pt": 3840,
-     "height_pt": 2160,
-     "scale": 1,
+     "width_pt": 1920,
+     "height_pt": 1080,
+     "scale": 2,
      "width_px": 3840,
      "height_px": 2160
     }
@@ -1739,9 +1739,9 @@ export default {
    "current": true,
    "screens": [
     {
-     "width_pt": 3840,
-     "height_pt": 2160,
-     "scale": 1,
+     "width_pt": 1920,
+     "height_pt": 1080,
+     "scale": 2,
      "width_px": 3840,
      "height_px": 2160
     }
