@@ -1,0 +1,16 @@
+=== 0
+- component; 1210 × 834
+  - Wallpaper: instance of Wallpapers - iPad; 1210 × 834; at (0, 0)
+  - Home Indicator: instance of Home Indicator [Device=iPad, Orientation=Landscape]; 402 × 21; at (404, 812.5)
+  - instance of Lock Screen Widget - Inline; 327 × 26; at (442, 66.5)
+  - text SF Symbol lock.fill; SF Pro Medium 19; centered; 19 × 23; at (596, 26); color #ffffff
+  - Widgets: frame; 164 × 702; at (47, 68)
+    - Tall Body: instance of Lock Screen Widget - Tall Body; with Line 1 "Cupertino", Line 2 "9:41AM"; 162 × 72; at (0, 630)
+    - Clock Big (iPad Only): instance of Lock Screen Widget/2x2/Clock Big (iPad Only); 162 × 162; at (0, 450)
+    - Rectangular with Chart: instance of Lock Screen Widget - Rectangular with Chart; with Symbol SF Symbol triangle.fill, Label "AAPL", Secondary Label "+1.78"; 162 × 72; at (0, 360.21)
+    - instance of Lock Screen Widget / Circular / Open Gauge 3; 72 × 72; at (90, 270)
+    - Circular - Open Gauge: instance of Lock Screen Widget / Circular / Open Gauge 2; 72 × 72; at (0, 270)
+    - Modular with Bar: instance of Lock Screen Widget - Modular with Bar; 162 × 72; at (0, 180)
+    - instance of Lock Screen Widget/2x2/Date (iPad Only); 162 × 162; at (0, 0)
+  - 9:41 - Fill: vector shape; 239.31 × 102; at (485, 109); fill #404040 (linear dodge); background blur 80; shadow x -0.5 y 0 blur 0 spread -0.75 #d0d0d0 at 100% (linear burn); shadow x 0.5 y 0 blur 0 spread -0.75 #d0d0d0 at 100% (linear burn)
+  - 9:41 - Glass Effect: vector shape; 239.31 × 102; at (485, 109); Liquid Glass effect; inner shadow x 0 y -1 blur 3 spread -40 #282828 at 100% (linear dodge); inner shadow x 0 y 1 blur 3 spread -40 #282828 at 100% (linear dodge)

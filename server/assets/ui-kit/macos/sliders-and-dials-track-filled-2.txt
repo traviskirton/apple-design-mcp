@@ -1,0 +1,30 @@
+=== 0
+- component; 50 × 6; uses Slider/Track/Inset - Vertical
+  - Frame: frame; 53 × 6; at (-1, 6); column; padding 1 0 1 0; main center; cross center; uses Slider/Track/Inset - Vertical
+    - Track Filled: instance of _Tracks - Filled [Active=False, Context=Content Area, State=Idle]; 53 × 4; fills height; fills width; opacity 17%
+  - Frame: frame; 53 × 6; at (-1, 6); row; padding 1 0 1 0; cross center; uses Slider/Track/Inset - Vertical
+    - Midline: instance of _Slider Midline [Active=False]; 2 × 4
+=== 1
+- component; 50 × 6; uses Slider/Track/Inset - Vertical
+  - Frame: frame; 53 × 6; at (-1, 6); column; padding 1 0 1 0; main center; cross center; uses Slider/Track/Inset - Vertical
+    - Track Filled: instance of _Tracks - Filled [Active=True, Context=Content Area, State=Clicked]; 53 × 4; fills height; fills width
+  - Frame: frame; 53 × 6; at (-1, 6); row; padding 1 0 1 0; cross center; uses Slider/Track/Inset - Vertical
+    - Midline: instance of _Slider Midline [Active=False]; 2 × 4
+=== 2
+- component; 50 × 6; uses Slider/Track/Inset - Vertical
+  - Frame: frame; 54 × 6; at (-1, 6); column; padding 1 1 1 0; main center; cross center; uses Slider/Track/Inset - Vertical, Slider/Track/Inset - Horizontal
+    - Track Filled: instance of _Tracks - Filled [Active=False, Context=Content Area, State=Idle]; 53 × 4; fills height; fills width; opacity 17%
+  - Frame: frame; 54 × 6; at (-1, 6); row; padding 1 1 1 0; cross center; uses Slider/Track/Inset - Vertical, Slider/Track/Inset - Horizontal
+    - Midline: instance of _Slider Midline [Active=False]; 2 × 4
+=== 3
+- component; 50 × 6; uses Slider/Track/Inset - Vertical
+  - Frame: frame; 53 × 6; at (-1, 6); column; padding 1 0 1 0; main center; cross center; uses Slider/Track/Inset - Vertical
+    - Track Filled: instance of _Tracks - Filled [Active=True, Context=Content Area, State=Idle]; 53 × 4; fills height; fills width
+  - Frame: frame; 53 × 6; at (-1, 6); row; padding 1 0 1 0; cross center; uses Slider/Track/Inset - Vertical
+    - Midline: instance of _Slider Midline [Active=True]; 2 × 4; blend linear burn
+=== 4
+- component; 50 × 6; uses Slider/Track/Inset - Vertical
+  - Frame: frame; 54 × 6; at (-1, 6); column; padding 1 1 1 0; main center; cross center; uses Slider/Track/Inset - Vertical, Slider/Track/Inset - Horizontal
+    - Track Filled: instance of _Tracks - Filled [Active=True, Context=Content Area, State=Idle]; 53 × 4; fills height; fills width
+  - Frame: frame; 54 × 6; at (-1, 6); row; padding 1 1 1 0; cross center; uses Slider/Track/Inset - Vertical, Slider/Track/Inset - Horizontal
+    - Midline: instance of _Slider Midline [Active=True]; 2 × 4; blend linear burn

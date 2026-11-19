@@ -1,0 +1,71 @@
+=== 0
+- component; 1210 × 834
+  - instance of Lock Screen - iPad; 1210 × 834; at (0, 0)
+  - Home Indicator: instance of Home Indicator [Device=iPad, Orientation=Landscape]; 402 × 21; at (404, 812.5)
+  - Controls: frame; 294 × 491; at (866, 72)
+    - Background Blur: frame; 534 × 686; at (-120, -75)
+      - Layer Blur: rectangle; 414 × 566; at (60, 60); radius 34; fill #ff0000; layer blur 120; mask
+      - Background Blur: rectangle; 734 × 886; at (-100, -100); fill #444444 at 60% (lighten) + #e5e5e5 (linear burn) + #111111 (linear dodge); background blur 20
+    - 1x1 - Battery: frame; 66 × 66; at (152, 425); capsule
+      - BG: instance of _Controls - BG - iPad [On=False]; 66 × 66; absolute at (0, 0)
+      - 􀺸: vector shape; 35.33 × 16.73; at (15.82, 24.93); fill #ffffff at 50%
+      - 􀺸: vector shape; 17.07 × 8.28; at (20.04, 29.15); fill #ffffff
+    - 1x1 - Screen Sharing: frame; 66 × 66; at (228, 350); capsule
+      - BG: instance of _Controls - BG - iPad [On=False]; 66 × 66; absolute at (0, 0)
+      - 􀏧: vector shape; 23.82 × 19.02; at (19, 22); fill #ffffff at 50%
+      - 􀏧: vector shape; 24 × 19; at (25, 27.5); fill Grays/White
+    - 1x1 - Camera: instance of _Controls - iPad - 1x1 [On=False]; with Symbol SF Symbol camera.fill; 66 × 66; at (0, 198)
+    - 2x2 - Floor Lamp: instance of _Controls - iPad - 2x2 [On=False]; with Symbol SF Symbol lightbulb.fill; 142 × 142; at (0, 349)
+    - Volume: frame; 66 × 142; at (228, 197)
+      - BG: instance of _Controls - BG - iPad [On=False]; 66 × 142; at (0, 0)
+      - Extra Fill: frame; 66 × 72; at (0, 70); radius 0 0 100 100; fill #6f6f6f (color dodge) + #ffffff at 65% (screen)
+      - Speaker: frame; 29.4 × 22.72; at (16.29, 97.48)
+        - 􀊧: vector shape; 9.89 × 18.46; at (19.51, 2.12); fill Accents/Cyan; opacity 50%
+        - 􀊧: vector shape; 15.53 × 22.72; at (0, 0); fill Accents/Cyan
+    - Brightness: frame; 66 × 142; at (152, 197)
+      - BG: instance of _Controls - BG - iPad [On=False]; 66 × 142; at (0, 0)
+      - Extra Fill: frame; 66 × 87; at (0, 55); radius 0 0 100 100; fill #6f6f6f (color dodge) + #ffffff at 65% (screen)
+      - Sun: frame; 28.25 × 28.3; at (18.87, 94.68)
+        - 􀆮: vector shape; 28.25 × 28.3; at (0, 0); fill Accents/Yellow; opacity 50%
+        - 􀆮: vector shape; 13.25 × 13.27; at (7.49, 7.52); fill Accents/Yellow
+    - 2x1 - Focus: instance of _Controls - iPad - 2x1 [On=False, Type=Toggle]; with Symbol SF Symbol moon.fill; 142 × 66; at (0, 273)
+    - 1x1 - Silent Mode: instance of _Controls - iPad - 1x1 [On=True]; with Symbol SF Symbol bell.slash.fill; 66 × 66; at (76, 197)
+    - 1x1 - Rotation Lock: frame; 66 × 66; at (152, 349); capsule
+      - BG: instance of _Controls - BG - iPad [On=False]; 66 × 66; absolute at (0, 0)
+      - text SF Symbol lock.rotation.open; SF Pro Medium 32; centered; 66 × 66; at (0, 0); color Grays/White
+    - Music: frame; 142 × 142; at (152, 45); radius 30
+      - BG: instance of _Controls - BG - iPad [On=False]; 142 × 142; absolute at (0, 0)
+      - text SF Symbol forward.fill; SF Pro Bold 12; centered; 20 × 14; at (98, 111); color #ffffff
+      - text SF Symbol play.fill; SF Pro Bold 25; centered; 24 × 30; at (58, 102); color #ffffff
+      - text SF Symbol backward.fill; SF Pro Bold 12; centered; 20 × 14; at (24, 111); color #ffffff
+      - text "Artist"; SF Pro Medium 14/18; 110 × 18; at (16, 84); color #ffffff at 33% (linear dodge)
+      - text "Track"; SF Pro Medium 14; 110 × 18; at (16, 66); color #ffffff
+      - AirDrop: frame; 39 × 39; at (89, 13.5); capsule; fill #111111 at 60% (luminosity) + #777777 (color dodge) + #222222 (linear dodge)
+        - text SF Symbol airplayaudio; SF Pro Medium 15; centered; 23 × 23; at (8, 8.5); color #ffffff
+      - Album Cover: rectangle; 50 × 50; at (14, 14); radius 14; fill #111111 at 60% (luminosity) + #777777 (color dodge) + #222222 (linear dodge)
+    - Group: frame; 142 × 142; at (0, 45); radius 30
+      - BG: instance of _Controls - BG - iPad [On=False]; 142 × 142; absolute at (0, 0)
+      - Network: frame; 23 × 23; at (105.33, 105.33); capsule; fill #111111 at 60% (luminosity) + #777777 (color dodge) + #222222 (linear dodge)
+        - text SF Symbol network; SF Pro Bold 9; centered; 23 × 23; at (-0.33, -0.33); color Grays/White
+      - Personal Hotspot: frame; 23 × 23; at (77, 105.33); capsule; fill #111111 at 60% (luminosity) + #777777 (color dodge) + #222222 (linear dodge)
+        - text SF Symbol personalhotspot; SF Pro Bold 13; centered; 23 × 23; at (0, -0.33); color Grays/White
+      - Bluetooth: frame; 23 × 23; at (105.33, 77); capsule; fill Accents/Blue
+        - Vector: vector shape; 6.94 × 11; at (7.67, 6); fill #ffffff
+      - Cellular: frame; 23 × 23; at (77, 77); capsule; fill Accents/Green
+        - text SF Symbol cellularbars; SF Pro Bold 7; centered; 23 × 23; at (0, 0); color Grays/White
+      - Wi-Fi: frame; 51 × 51; at (13, 77); capsule; fill Accents/Blue
+        - text SF Symbol wifi; SF Pro Bold 16; centered; 23 × 14; at (14, 19); color Grays/White
+      - AirDrop: frame; 51 × 51; at (77, 13); capsule; fill #111111 at 60% (luminosity) + #777777 (color dodge) + #222222 (linear dodge)
+        - Vectors: vector shape; 24 × 22.61; at (14, 14); fill #ffffff
+      - Airplane Mode: frame; 51 × 51; at (13, 13); capsule; fill #111111 at 60% (luminosity) + #777777 (color dodge) + #222222 (linear dodge)
+        - text SF Symbol airplane; SF Pro Bold 16; centered; 22 × 14; at (15, 19); color Grays/White
+    - Status Bar: frame; 97 × 16; at (192, 1)
+      - Battery: vector shape; 30 × 14; at (67, 1); fill #ffffff
+      - text "100%"; SF Pro Semibold 15/16; right-aligned; 43 × 16; at (20, 0); color #ffffff
+      - Wifi: vector shape; 18 × 13; at (-1, 1.5); fill #ffffff
+  - Page Control: frame; 21.33 × 240.55; at (1174, 355)
+    - Cellular: vector shape; 17.44 × 14.86; at (2, 109); fill #000000 at 25% (linear burn)
+    - Music: vector shape; 13.78 × 16.89; at (4, 53.33); fill #000000 at 25% (linear burn)
+    - Favorites: vector shape; 16 × 14.82; at (3, 1); fill #ffffff
+  - text SF Symbol power; SF Pro Semibold 15; centered; 44 × 44; at (1119.33, 16); color #ffffff
+  - text SF Symbol plus; SF Pro Semibold 15; centered; 44 × 44; at (857, 16); color #ffffff

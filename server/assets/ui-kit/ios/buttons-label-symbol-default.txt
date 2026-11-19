@@ -1,0 +1,6 @@
+=== 0
+- component; 28 × 36; row; main center; cross center; hugs width; capsule
+  - text SF Symbol checkmark; SF Pro Semibold 19/22; centered; 28 × 22; color Labels - Vibrant/Tertiary; blend linear burn; property Label
+=== 1
+- component; 28 × 36; row; main center; cross center; hugs width; capsule
+  - text SF Symbol checkmark; SF Pro Semibold 19/22; centered; 28 × 22; color Labels - Vibrant/Primary; blend linear burn; property Label

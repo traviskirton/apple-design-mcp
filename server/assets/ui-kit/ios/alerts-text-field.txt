@@ -1,0 +1,6 @@
+=== 0
+- component; 272 × 123; column; gap 10; padding 0 0 19 0; hugs height; radius 26
+  - Fields: frame; 272 × 104; fills width; column; hugs height
+    - _Background: instance of _Text Field Background; 272 × 104; absolute at (0, 0); blend linear burn
+    - Text Field: instance of Text Field [State=Value Entered]; 272 × 52; fills width
+    - Text Field: instance of Text Field [State=Placeholder]; 272 × 52; fills width; shown while Second Field

@@ -1,0 +1,21 @@
+=== 0
+- component; 300 × 307; column; padding 14; hugs height
+  - BG: instance of Liquid Glass - Regular - Medium; 300 × 307; absolute at (0, 0)
+  - Title and Message: frame; 272 × 108; fills width; column; gap 10; padding 8 8 24 8; cross center; hugs height
+    - text "A Short Title Is Best"; SF Pro Semibold 17/22; 256 × 22; fills width; color Labels/Primary; property Title
+    - text "A message should be a short, complete sentence."; SF Pro Regular 17/22; 256 × 44; fills width; color Labels/Primary; property Message; shown while Show Message
+  - instance of Text Field; 272 × 123; fills width; shown while Show Text Field
+  - Buttons: frame; 272 × 48; fills width; row; gap 8; hugs height
+    - Button: instance of _Buttons [Role=Cancel]; with Title "Secondary"; 132 × 48; fills width
+    - Button: instance of _Buttons [Role=Default]; with Title "Default"; 132 × 48; fills width
+=== 1
+- component; 300 × 419; column; padding 14; main center; hugs height
+  - BG: instance of Liquid Glass - Regular - Medium; 300 × 419; absolute at (0, 0)
+  - Title and Message: frame; 272 × 108; fills width; column; gap 10; padding 8 8 24 8; cross center; hugs height
+    - text "A Short Title Is Best"; SF Pro Semibold 17/22; 256 × 22; fills width; color Labels/Primary; property Title
+    - text "A message should be a short, complete sentence."; SF Pro Regular 17/22; 256 × 44; fills width; color Labels/Primary; property Message; shown while Show Message
+  - instance of Text Field; 272 × 123; fills width; shown while Show Text Field
+  - Actions: frame; 272 × 160; fills width; column; gap 8; hugs height; slot Actions
+    - Button: instance of _Buttons [Role=Default]; with Title "Default"; 272 × 48; fills width
+    - Button: instance of _Buttons [Role=Destructive]; with Title "Destructive"; 272 × 48; fills width
+    - Button: instance of _Buttons [Role=Cancel]; with Title "Secondary"; 272 × 48; fills width

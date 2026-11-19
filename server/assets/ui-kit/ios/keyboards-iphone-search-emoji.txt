@@ -1,0 +1,10 @@
+=== 0
+- component; 402 × 57; row; gap 10; padding 12 12 5 12; hugs height
+  - Search Field: frame; 247 × 40; fills width; row; gap 6; padding 10; cross center; hugs height; capsule; fill Grays/Gray 6
+    - text SF Symbol magnifyingglass; SF Pro Regular 17/20; centered; 21 × 20; color Labels - Vibrant/Secondary (linear burn)
+    - text "Search Emoji"; SF Pro Regular 17/20; 99 × 20; color Labels - Vibrant/Secondary (linear burn)
+  - Genmoji: frame; 121 × 40; row; gap 6; padding 9 16 9 16; main center; cross center; hugs content; capsule; fill Grays/Gray 6
+    - Genmoji Symbol: frame; 18 × 17
+      - Vector: vector shape; 18 × 17; at (0, 0); fill #231f20; mask
+      - Gradient: rectangle; 21.4 × 21; at (-2, -2.5); fill image
+    - text "Genmoji"; SF Pro Medium 17/22; 65 × 22; color image

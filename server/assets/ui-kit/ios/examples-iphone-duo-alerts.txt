@@ -1,0 +1,60 @@
+=== 0
+- component; 951 × 669; radius 20; fill Backgrounds/Primary
+  - Vertical Bar: frame; 84 × 669; at (867, 0); column; gap 8; padding 24 24 24 12; cross center
+    - Top: frame; 48 × 527; fills height; column; gap 6; cross center; hugs width
+      - Frame: frame; 48 × 203; column; gap 12; cross center; hugs content
+        - Status bar - iPhone Duo: instance of Status bar - iPhone Duo [Type=Vertical]; 48 × 83
+        - Close: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+        - Share: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+    - Bottom: frame; 48 × 86; column; gap 12; main end; cross center; hugs height
+  - Toolbar - Top - iPhone Duo: instance of Toolbar - Top - iPhone Duo [Sheet=False, Style=Title]; 951 × 84; at (0, 0)
+  - Overlay - Alerts: instance of _Overlay - Alerts; 951 × 669; at (0, 0)
+  - Alert: instance of Alert [Button Layout=Side-by-Side]; with Show text field off; 320 × 307; at (77, 181)
+  - iPhone Duo: instance of iPhone Duo [Display=Inner, Color=Star White, Orientation=Landscape]; 951 × 669; at (0, 0)
+=== 1
+- component; 951 × 669; radius 20; fill Backgrounds/Primary
+  - Vertical Bar: frame; 84 × 669; at (867, 0); column; gap 8; padding 24 24 24 12; cross center
+    - Top: frame; 48 × 527; fills height; column; gap 6; cross center; hugs width
+      - Frame: frame; 48 × 203; column; gap 12; cross center; hugs content
+        - Status bar - iPhone Duo: instance of Status bar - iPhone Duo [Type=Vertical]; 48 × 83
+        - Close: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+        - Share: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+    - Bottom: frame; 48 × 86; column; gap 12; main end; cross center; hugs height
+  - Toolbar - Top - iPhone Duo: instance of Toolbar - Top - iPhone Duo [Sheet=False, Style=Title]; 951 × 84; at (0, 0)
+  - Overlay - Alerts: instance of _Overlay - Alerts; 951 × 669; at (0, 0)
+  - Alert: instance of Alert [Button Layout=Side-by-Side]; with Show text field off; 320 × 307; at (316, 181)
+  - iPhone Duo: instance of iPhone Duo [Display=Inner, Color=Star White, Orientation=Landscape]; 951 × 669; at (0, 0)
+=== 2
+- component; 669 × 951; radius 20; fill Backgrounds/Primary
+  - Toolbar - Top - iPhone Duo: instance of Toolbar - Top - iPhone Duo [Sheet=False, Style=Title]; 669 × 84; at (0, 0)
+  - Overlay - Alerts: instance of _Overlay - Alerts; 669 × 951; at (0, 0)
+  - Alert: instance of Alert [Button Layout=Side-by-Side]; with Show text field off; 320 × 307; at (175, 322)
+  - iPhone Duo: instance of iPhone Duo [Display=Inner, Color=Star White, Orientation=Portrait]; 669 × 951; at (0, 0)
+=== 3
+- component; 466 × 678; radius 0 20 20 0; fill Backgrounds/Primary
+  - Vertical Bar: frame; 84 × 678; at (382, 0); column; gap 8; padding 24 24 24 12; cross center; hugs width
+    - Camera Punchout: frame; 48 × 42; fills width
+    - Top: frame; 48 × 486; fills height; column; gap 6; cross center; hugs width
+      - Frame: frame; 48 × 203; column; gap 12; cross center; hugs content
+        - Status bar - iPhone Duo: instance of Status bar - iPhone Duo [Type=Vertical]; 48 × 83
+        - Close: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+        - Share: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+    - Bottom: frame; 48 × 86; column; gap 12; main end; cross center; hugs height
+  - Toolbar - Top - iPhone Duo: instance of Toolbar - Top - iPhone Duo [Sheet=False, Style=Title]; 466 × 84; at (0, 0)
+  - Overlay - Alerts: instance of _Overlay - Alerts; 466 × 678; at (0, 0)
+  - Alert: instance of Alert [Button Layout=Side-by-Side]; with Show text field off; 320 × 307; at (31, 186)
+  - Outer Display Lens: instance of iPhone Duo/Outer Display Lens; 95.67 × 95.67; at (370, 0)
+  - iPhone Duo: instance of iPhone Duo [Display=Outer, Color=Star White, Orientation=Portrait]; 466 × 678; at (0, 0)
+=== 4
+- component; 678 × 466; radius 0 0 20 20; fill Backgrounds/Primary
+  - Vertical Bar: frame; 84 × 466; at (594, 0); column; gap 8; padding 24 24 24 12; cross center
+    - Top: frame; 48 × 324; fills height; column; gap 6; cross center; hugs width
+      - Frame: frame; 48 × 108; column; gap 12; cross center; hugs content
+        - Close: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+        - Share: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+    - Bottom: frame; 48 × 86; column; gap 12; main end; cross center; hugs height
+  - Toolbar - Top - iPhone Duo: instance of Toolbar - Top - iPhone Duo [Sheet=False, Style=Title]; 678 × 84; at (0, 0)
+  - Overlay - Alerts: instance of _Overlay - Alerts; 678 × 467; at (0, 0)
+  - Alert: instance of Alert [Button Layout=Side-by-Side]; with Show text field off; 320 × 307; at (179, 80)
+  - Outer Display Lens: instance of iPhone Duo/Outer Display Lens; 95.67 × 95.67; at (582, 370)
+  - iPhone Duo: instance of iPhone Duo [Display=Outer, Color=Star White, Orientation=Landscape]; 678 × 466; at (678, 466); rotated -180°

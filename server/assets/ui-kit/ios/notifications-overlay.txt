@@ -1,0 +1,2 @@
+=== 0
+- component; 100 × 100; radius 30; fill #000000 at 25% + #000000 at 5% (linear burn)

@@ -1,0 +1,56 @@
+=== 0
+- component; 10 × 197; column; padding 33.5 2 33.5 2; cross center; hugs width; uses Scrollbar/Margin - Top, Screen Height
+  - Scrollbar: frame; 6 × 32; column; main center; cross center; hugs width; capsule; fill #ffffff at 14%; background blur 24; uses Scrollbar/Height - Track
+    - Spacer: frame; 6 × 8; fills height; capsule
+    - Spacer: frame; 6 × 8; fills height; capsule
+    - Spacer: frame; 6 × 8; fills height; capsule
+    - Elevator: frame; 6 × 8; fills height; capsule; fill Labels/Primary
+=== 1
+- component; 10 × 197; column; padding 33.5 2 33.5 2; cross center; hugs width; uses Scrollbar/Margin - Top, Screen Height
+  - Scrollbar: frame; 6 × 32; column; main center; cross center; hugs width; capsule; fill #ffffff at 14%; background blur 24; uses Scrollbar/Height - Track
+    - Spacer: frame; 6 × 8; fills height; capsule
+    - Spacer: frame; 6 × 8; fills height; capsule
+    - Elevator: frame; 6 × 8; fills height; capsule; fill Labels/Primary
+    - Spacer: frame; 6 × 8; fills height; capsule
+=== 2
+- component; 10 × 197; column; padding 33.5 2 33.5 2; cross center; hugs width; uses Scrollbar/Margin - Top, Screen Height
+  - Scrollbar: frame; 6 × 32; column; main center; cross center; hugs width; capsule; fill #ffffff at 14%; background blur 24; uses Scrollbar/Height - Track
+    - Spacer: frame; 6 × 8; fills height; capsule
+    - Elevator: frame; 6 × 8; fills height; capsule; fill Labels/Primary
+    - Spacer: frame; 6 × 8; fills height; capsule
+    - Spacer: frame; 6 × 8; fills height; capsule
+=== 3
+- component; 10 × 197; column; padding 33.5 2 33.5 2; cross center; hugs width; uses Scrollbar/Margin - Top, Screen Height
+  - Scrollbar: frame; 6 × 32; column; main center; cross center; hugs width; capsule; fill #ffffff at 14%; background blur 24; uses Scrollbar/Height - Track
+    - Spacer: frame; 6 × 8; fills height; capsule; fill Labels/Primary
+    - Spacer: frame; 6 × 8; fills height; capsule
+    - Spacer: frame; 6 × 8; fills height; capsule
+    - Spacer: frame; 6 × 8; fills height; capsule
+=== 4
+- component; 10 × 197; column; padding 33.5 2 33.5 2; cross center; hugs width; uses Scrollbar/Margin - Top, Screen Height
+  - Scrollbar: frame; 6 × 32; column; main center; cross center; hugs width; capsule; fill #ffffff at 14%; background blur 24; uses Scrollbar/Height - Track
+    - Spacer: frame; 6 × 10.67; fills height; capsule
+    - Spacer: frame; 6 × 10.67; fills height; capsule
+    - Elevator: frame; 6 × 10.67; fills height; capsule; fill Labels/Primary
+=== 5
+- component; 10 × 197; column; padding 33.5 2 33.5 2; cross center; hugs width; uses Scrollbar/Margin - Top, Screen Height
+  - Scrollbar: frame; 6 × 32; column; main center; cross center; hugs width; capsule; fill #ffffff at 14%; background blur 24; uses Scrollbar/Height - Track
+    - Spacer: frame; 6 × 10.67; fills height; capsule
+    - Elevator: frame; 6 × 10.67; fills height; capsule; fill Labels/Primary
+    - Spacer: frame; 6 × 10.67; fills height; capsule
+=== 6
+- component; 10 × 197; column; padding 33.5 2 33.5 2; cross center; hugs width; uses Scrollbar/Margin - Top, Screen Height
+  - Scrollbar: frame; 6 × 32; column; main center; cross center; hugs width; capsule; fill #ffffff at 14%; background blur 24; uses Scrollbar/Height - Track
+    - Elevator: frame; 6 × 10.67; fills height; capsule; fill Labels/Primary
+    - Spacer: frame; 6 × 10.67; fills height; capsule
+    - Spacer: frame; 6 × 10.67; fills height; capsule
+=== 7
+- component; 10 × 197; column; padding 33.5 2 33.5 2; cross center; hugs width; uses Scrollbar/Margin - Top, Screen Height
+  - Scrollbar: frame; 6 × 32; column; main center; cross center; hugs width; capsule; fill #ffffff at 14%; background blur 24; uses Scrollbar/Height - Track
+    - Spacer: frame; 6 × 16; fills height; capsule
+    - Elevator: frame; 6 × 16; fills height; capsule; fill Labels/Primary
+=== 8
+- component; 10 × 197; column; padding 33.5 2 33.5 2; cross center; hugs width; uses Scrollbar/Margin - Top, Screen Height
+  - Scrollbar: frame; 6 × 32; column; main center; cross center; capsule; fill #ffffff at 14%; background blur 24; uses Scrollbar/Height - Track
+    - Elevator: frame; 6 × 16; fills height; capsule; fill Labels/Primary
+    - Spacer: frame; 6 × 16; fills height; capsule

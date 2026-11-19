@@ -1,0 +1,6 @@
+=== 0
+- component; 100 × 25; column; gap 10; padding 5 0 4 0; hugs height; uses Menu/Inset - Top - Header, Menu/Inset - Bottom - Header
+  - text "Header"; SF Pro Bold 13; centered; 48 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn; property Header
+=== 1
+- component; 100 × 25; column; gap 10; padding 5 0 4 20; hugs height; uses Menu/Inset - Left - Header, Menu/Inset - Top - Header, Menu/Inset - Bottom - Header
+  - text "Header"; SF Pro Bold 13; centered; 48 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn; property Header

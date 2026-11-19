@@ -1,0 +1,8 @@
+=== 0
+- component; 402 × 25
+  - Frame: frame; 370 × 40; at (16, -20); row; gap 12; cross center; hugs content
+    - Frame: frame; 316 × 40; column; gap -2.5; padding 1 0 1.5 0; cross center; hugs height
+      - text "password for this website — Passwords"; SF Pro Regular 14/20; centered; 316 × 20; fills width; color Labels - Vibrant/Primary; blend linear burn
+      - text "Smith.Trev@icloud.com"; SF Pro Regular 16/20; centered; 316 × 20; fills width; color Labels - Vibrant/Primary; blend linear burn; property Email
+    - Pipe: rectangle; 1 × 24; capsule; fill Fills - Vibrant/Primary; blend linear burn
+    - text SF Symbol key.fill; SF Pro Semibold 19; centered; 29 × 23; color Labels - Vibrant/Primary; opacity 65%; blend linear burn

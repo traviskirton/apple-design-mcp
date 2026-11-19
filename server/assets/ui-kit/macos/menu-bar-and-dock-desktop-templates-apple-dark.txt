@@ -1,0 +1,7 @@
+=== 0
+- component; 33 × 24; radius 4
+  - Selection: frame; 41 × 25; at (-4, -1); capsule; fill #ffffff at 8% (linear dodge); background blur 60
+  - text SF Symbol applelogo; SF Pro Regular 16.3/20; centered; 15 × 20; at (9, 0.5); color #ffffff
+=== 1
+- component; 33 × 24; radius 4
+  - text SF Symbol applelogo; SF Pro Regular 16.3/20; centered; 15 × 20; at (9, 0.5); color #ffffff

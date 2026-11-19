@@ -1,0 +1,28 @@
+=== 0
+- component; 402 × 874; radius 38 38 0 0
+  - instance of Overlay; 402 × 874; at (0, 0); shown while Show Dimming Layer
+  - Sheet: frame; 390 × 459; at (6, 409); column
+    - BG: instance of Liquid Glass - Regular - Medium; 390 × 459; absolute at (0, 0)
+    - Content: frame; 390 × 459; fills height; fills width; column; padding 16 0 0 0; slot Content
+      - Toolbar - Top - iPhone: instance of Toolbar - Top - iPhone [Style=Default]; 390 × 54; fills width
+    - Grabber: frame; 390 × 10; absolute at (0, 0); column; padding 6 0 0 0; cross center; hugs height; shown while Show Grabber
+      - Grabber: instance of Grabber; 60 × 4; blend linear burn
+=== 1
+- component; 402 × 874; column; padding 62 0 0 0; main end; cross center; uses Status Bar/Height
+  - instance of Overlay; 402 × 874; absolute at (0, 0); shown while Show Dimming Layer
+  - Frame: frame; 402 × 812; fills height; fills width; column; cross center; radius 38 38 0 0; fill Backgrounds/Primary - Elevated; shadow x 0 y 15 blur 75 #000000 at 18%
+    - Content: frame; 402 × 812; fills height; fills width; column; padding 16 0 0 0; slot Content
+      - Toolbar - Top - iPhone: instance of Toolbar - Top - iPhone [Style=Default]; 402 × 54; fills width
+    - Grabber: frame; 402 × 10; absolute at (0, 0); column; padding 6 0 0 0; cross center; hugs height; shown while Show Grabber
+      - Grabber: instance of Grabber; 60 × 4; blend linear burn
+=== 2
+- component; 402 × 874; row; padding 62 0 0 0; cross center; hugs width; uses Status Bar/Height
+  - instance of Overlay; 402 × 874; absolute at (0, 0); shown while Show Dimming Layer
+  - Frame: frame; 402 × 812; fills height
+    - Background Page: frame; 370 × 812; at (16, 0); column; cross center; radius 38 38 0 0; fill Backgrounds/Primary
+      - Overlay: frame; 370 × 812; fills height; fills width; fill #000000 at 10%
+    - Sheet: frame; 402 × 802; at (0, 10); column; cross center; radius 38 38 0 0; fill Backgrounds/Primary - Elevated; shadow x 0 y 15 blur 75 #000000 at 18%
+      - Content: frame; 402 × 802; fills height; fills width; column; padding 16 0 0 0; slot Content
+        - Toolbar - Top - iPhone: instance of Toolbar - Top - iPhone [Style=Default]; 402 × 54; fills width
+      - Grabber: frame; 402 × 10; absolute at (0, 0); column; padding 6 0 0 0; cross center; hugs height; shown while Show Grabber
+        - Grabber: instance of Grabber; 60 × 4; blend linear burn

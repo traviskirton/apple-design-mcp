@@ -1,0 +1,11 @@
+=== 0
+- component; 8 × 8; row; main center; cross center; hugs content; capsule
+  - Indicator: frame; 8 × 8; column; main center; cross center; capsule; fill Labels/Tertiary at 30%
+=== 1
+- component; 8 × 8; row; padding 1; cross center; hugs content; capsule
+  - Indicator: frame; 6 × 6; column; main center; cross center; capsule; fill Labels/Tertiary at 30%
+=== 2
+- component; 6 × 6; row; padding 1; cross center; hugs content; capsule
+  - Indicator: frame; 4 × 4; column; main center; cross center; capsule; fill Labels/Tertiary at 30%
+=== 3
+- component; 8 × 8; capsule; fill Labels/Primary

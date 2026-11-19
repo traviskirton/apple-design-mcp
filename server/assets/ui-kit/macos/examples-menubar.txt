@@ -1,0 +1,6 @@
+=== 0
+- component; 1512 × 993
+  - Desktop Template: instance of Desktop Template [Color Mode=Dark]; 1512 × 993; at (0, 0)
+  - Pointers: instance of Pointers [Type=Default]; 28 × 28; at (494, 272)
+  - instance of Menu; 260 × 543; at (186, 35)
+  - instance of Menu; 228 × 202; at (441, 166)

@@ -1,0 +1,186 @@
+=== 0
+- component; 1210 × 834; column; cross center
+  - Wallpaper: instance of Wallpapers - iPad; 1210 × 834; absolute at (0, 0)
+  - Status bar and Menu bar- iPad: instance of Status bar and Menu bar- iPad [Full Screen=True, Menu Expanded=False, Background=Light]; 1210 × 32; shown while Show Status Bar
+  - App Icons: frame; 1210 × 642; fills height; fills width; column; gap 53; padding 52 0 0 0; cross center
+    - Row 1: frame; 1210 × 68; fills width; row; space between; padding 0 162 0 162; hugs height
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "FaceTime"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Files"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Reminders"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Maps"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Home"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Camera"; 68 × 68
+    - Row 2: frame; 1210 × 68; fills width; row; space between; padding 0 162 0 162; hugs height
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "App Store"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Books"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Games"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "TV"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "News"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Settings"; 68 × 68
+    - Row 3: frame; 1210 × 68; fills width; row; space between; padding 0 162 0 162; hugs height
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Clock"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Weather"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Stocks"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Contacts"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Phone"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=True]; with App Name "Your App"; 68 × 68
+    - Row 4: frame; 1210 × 68; fills width; row; space between; padding 0 162 0 162; hugs height
+      - Spacer: frame; 68 × 68
+      - Spacer: frame; 68 × 68
+      - Spacer: frame; 68 × 68
+      - Spacer: frame; 68 × 68
+  - Page Control: frame; 48 × 7; row; gap 10; padding 0 12 0 12; main center; cross center; hugs content; capsule
+    - Dot 1: frame; 7 × 7; capsule; fill Grays/White
+    - Dot 2: frame; 7 × 7; capsule; fill Grays/White; opacity 30%
+  - Dock: instance of _Dock - iPad; 740 × 153
+=== 1
+- component; 1210 × 834; column; cross center
+  - Wallpaper: instance of Wallpapers - iPad; 1210 × 834; absolute at (0, 0)
+  - Status bar and Menu bar- iPad: instance of Status bar and Menu bar- iPad [Full Screen=True, Menu Expanded=False, Background=Light]; 1210 × 32; fills width; shown while Show Status Bar
+  - Page Control: frame; 48 × 7; row; gap 10; padding 0 12 0 12; main center; cross center; hugs content; capsule
+    - Dot 1: frame; 7 × 7; capsule; fill Grays/White
+    - Dot 2: frame; 7 × 7; capsule; fill Grays/White; opacity 30%
+  - App Icons: frame; 1210 × 642; fills height; fills width; column; gap 93; padding 44 0 0 0; cross center
+    - Row 1: frame; 1210 × 68; fills width; row; space between; padding 0 162 0 162; hugs height
+      - Spacer: frame; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "FaceTime"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Files"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Reminders"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Maps"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Home"; 68 × 68
+    - Row 2: frame; 1210 × 68; fills width; row; space between; padding 0 162 0 162; hugs height
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Camera"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "App Store"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Books"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Games"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "TV"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "News"; 68 × 68
+    - Row 3: frame; 1210 × 68; fills width; row; space between; padding 0 162 0 162; hugs height
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Settings"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Clock"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Weather"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Stocks"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Contacts"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Phone"; 68 × 68
+    - Row 4: frame; 1210 × 68; fills width; row; space between; padding 0 162 0 162; hugs height
+      - App Icon: instance of App Icon/iPad [Custom Icon=True]; with App Name "Your App"; 68 × 68
+      - Spacer: frame; 68 × 68
+      - Spacer: frame; 68 × 68
+      - Spacer: frame; 68 × 68
+      - Spacer: frame; 68 × 68
+  - Dock: instance of _Dock - iPad; 740 × 153
+  - Home Screen Widget - iPad: instance of Home Screen Widget - iPad [Size=Small]; 138 × 138; absolute at (127, 49)
+=== 2
+- component; 1210 × 834; column; cross center
+  - Wallpaper: instance of Wallpapers - iPad; 1210 × 834; absolute at (0, 0)
+  - Status bar and Menu bar- iPad: instance of Status bar and Menu bar- iPad [Full Screen=True, Menu Expanded=False, Background=Light]; 1210 × 32; fills width; shown while Show Status Bar
+  - App Icons: frame; 1210 × 642; fills height; fills width; column; gap 93; padding 52 0 0 0; cross center
+    - Row 1: frame; 1210 × 68; fills width; row; space between; padding 0 162 0 162; hugs height
+      - Spacer: frame; 68 × 68
+      - Spacer: frame; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "FaceTime"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Files"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Reminders"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Maps"; 68 × 68
+    - Row 2: frame; 1210 × 68; fills width; row; space between; padding 0 162 0 162; hugs height
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Home"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Camera"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "App Store"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Books"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Games"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "TV"; 68 × 68
+    - Row 3: frame; 1210 × 68; fills width; row; space between; padding 0 162 0 162; hugs height
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "News"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Settings"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Clock"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Weather"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Stocks"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Contacts"; 68 × 68
+    - Row 4: frame; 1210 × 68; fills width; row; space between; padding 0 162 0 162; hugs height
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Phone"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=True]; with App Name "Your App"; 68 × 68
+      - Spacer: frame; 68 × 68
+      - Spacer: frame; 68 × 68
+      - Spacer: frame; 68 × 68
+      - Spacer: frame; 68 × 68
+  - Page Control: frame; 48 × 7; row; gap 10; padding 0 12 0 12; main center; cross center; hugs content; capsule
+    - Dot 1: frame; 7 × 7; capsule; fill Grays/White
+    - Dot 2: frame; 7 × 7; capsule; fill Grays/White; opacity 30%
+  - Dock: instance of _Dock - iPad; 740 × 153
+  - Home Screen Widget - iPad: instance of Home Screen Widget - iPad [Size=Medium]; 300 × 136; absolute at (127, 49)
+=== 3
+- component; 1210 × 834; column; cross center
+  - Wallpaper: instance of Wallpapers - iPad; 1210 × 834; absolute at (0, 0)
+  - Status bar and Menu bar- iPad: instance of Status bar and Menu bar- iPad [Full Screen=True, Menu Expanded=False, Background=Light]; 1210 × 32; fills width; shown while Show Status Bar
+  - App Icons: frame; 1210 × 642; fills height; fills width; column; gap 76; padding 50 0 0 0; cross center
+    - Row 1: frame; 1210 × 68; fills width; row; space between; padding 0 162 0 162; hugs height
+      - Spacer: frame; 68 × 68
+      - Spacer: frame; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "FaceTime"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Files"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Reminders"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Maps"; 68 × 68
+    - Row 2: frame; 1210 × 68; fills width; row; space between; padding 0 162 0 162; hugs height
+      - Spacer: frame; 68 × 68
+      - Spacer: frame; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Home"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Camera"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "App Store"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Books"; 68 × 68
+    - Row 3: frame; 1210 × 68; fills width; row; space between; padding 0 162 0 162; hugs height
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Games"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "TV"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "News"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Settings"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Clock"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Weather"; 68 × 68
+    - Row 4: frame; 1210 × 68; fills width; row; space between; padding 0 162 0 162; hugs height
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Stocks"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Contacts"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Phone"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=True]; with App Name "Your App"; 68 × 68
+      - Spacer: frame; 68 × 68
+      - Spacer: frame; 68 × 68
+  - Page Control: frame; 48 × 7; row; gap 10; padding 0 12 0 12; main center; cross center; hugs content; capsule
+    - Dot 1: frame; 7 × 7; capsule; fill Grays/White
+    - Dot 2: frame; 7 × 7; capsule; fill Grays/White; opacity 30%
+  - Dock: instance of _Dock - iPad; 740 × 153
+  - Home Screen Widget - iPad: instance of Home Screen Widget - iPad [Size=Large]; 300 × 300; absolute at (127, 49)
+=== 4
+- component; 1210 × 834; column; cross center
+  - Wallpaper: instance of Wallpapers - iPad; 1210 × 834; absolute at (0, 0)
+  - Status bar and Menu bar- iPad: instance of Status bar and Menu bar- iPad [Full Screen=True, Menu Expanded=False, Background=Light]; 1210 × 32; fills width; shown while Show Status Bar
+  - App Icons: frame; 1210 × 642; fills height; fills width; column; gap 93; padding 52 0 0 0; cross center
+    - Row 1: frame; 1210 × 68; fills width; row; space between; padding 0 162 0 162; hugs height
+      - Spacer: frame; 68 × 68
+      - Spacer: frame; 68 × 68
+      - Spacer: frame; 68 × 68
+      - Spacer: frame; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "FaceTime"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Files"; 68 × 68
+    - Row 2: frame; 1210 × 68; fills width; row; space between; padding 0 162 0 162; hugs height
+      - Spacer: frame; 68 × 68
+      - Spacer: frame; 68 × 68
+      - Spacer: frame; 68 × 68
+      - Spacer: frame; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Reminders"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Maps"; 68 × 68
+    - Row 3: frame; 1210 × 68; fills width; row; space between; padding 0 162 0 162; hugs height
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Home"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Camera"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "App Store"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Books"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Games"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "TV"; 68 × 68
+    - Row 4: frame; 1210 × 68; fills width; row; space between; padding 0 162 0 162; hugs height
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "News"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Settings"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Clock"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Weather"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=False]; with App Name "Stocks"; 68 × 68
+      - App Icon: instance of App Icon/iPad [Custom Icon=True]; with App Name "Your App"; 68 × 68
+  - Page Control: frame; 48 × 7; row; gap 10; padding 0 12 0 12; main center; cross center; hugs content; capsule
+    - Dot 1: frame; 7 × 7; capsule; fill Grays/White
+    - Dot 2: frame; 7 × 7; capsule; fill Grays/White; opacity 30%
+  - Dock: instance of _Dock - iPad; 740 × 153
+  - Home Screen Widget - iPad: instance of Home Screen Widget - iPad [Size=Extra Large]; 628 × 300; absolute at (127, 49)

@@ -1,0 +1,6 @@
+=== 0
+- component; 5 × 20
+  - text SF Symbol chevron.right; SF Pro Bold 9/9; 5 × 20; at (-1, 0); color #ffffff
+=== 1
+- component; 5 × 20
+  - text SF Symbol chevron.down; SF Pro Bold 9/9; centered; 5 × 20; at (-1, 0); color #ffffff

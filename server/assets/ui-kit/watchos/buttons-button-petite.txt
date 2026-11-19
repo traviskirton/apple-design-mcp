@@ -1,0 +1,4 @@
+=== 0
+- component; 143 × 26.5; row; gap 10; padding 0 9.5 0 9.5; main center; cross center; capsule; uses Margin - LR - Copy Safe Area, Button/Height - Petite
+  - Frame: frame; 124 × 26.5; fills width; fills height; row; gap 10; padding 0 10 0 10; main center; cross center; capsule; fill Vibrant Fills/Dark/Secondary; uses Button/Height - Petite
+    - text "Action"; SF Compact Medium 16/18.5; centered; 104 × 19; fills width; color Labels/Primary; property Label

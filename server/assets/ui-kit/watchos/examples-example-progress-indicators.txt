@@ -1,0 +1,17 @@
+=== 0
+- component; 205 × 251; uses Screen Width, Screen Height
+  - Round Corners: frame; 205 × 251; at (0, 0); radius 14; fill #000000; uses Screen Width, Screen Height
+    - Frame: frame; 205 × 251; at (0, 0); column; gap 3.5; main center; cross center; uses Screen Width, Screen Height
+      - Progress Indicator: instance of Progress Indicator [Size=Large (Content Area)]; 34 × 34
+      - text "Loading message"; SF Compact Regular 17/18.5; right-aligned; 137 × 19; color Labels/Primary
+    - Navigation Bar: instance of Navigation Bar [Type=Status Bar]; 205 × 46; at (0, 0)
+  - Bezel: instance of Bezels [Bezel Size=49mm]; 205 × 251; at (0, 0)
+=== 1
+- component; 205 × 251; uses Screen Width, Screen Height
+  - Round Corners: frame; 205 × 251; at (0, 0); radius 14; fill #000000; uses Screen Width, Screen Height
+    - Item: frame; 205 × 57.5; at (0, 46); row; gap 6; padding 10 15.5 10.5 15.5; main center; cross center; hugs height; uses Margin - LR - Copy Safe Area, List/Margin - Top, List/Margin - Bottom, Screen Width, List/Min Height
+      - Platter: rectangle; 201 × 58; absolute at (2, 0); radius 8.5; fill #f2f4fc at 8% + #f2f4fc at 56% (overlay); background blur 25; uses Margin - LR - Copy Minus Full Width, List/Margin - Top, List/Margin - Bottom
+      - text "Inline progress"; SF Pro Medium 16/18; 150 × 18; fills width; color Labels/Primary
+      - Progress Indicator: instance of Progress Indicator [Size=Medium (Table Row)]; 18 × 18
+    - Navigation Bar: instance of Navigation Bar [Type=Status Bar]; 205 × 46; at (0, 0)
+  - Bezel: instance of Bezels [Bezel Size=49mm]; 205 × 251; at (0, 0)

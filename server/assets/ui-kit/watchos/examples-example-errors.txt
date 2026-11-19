@@ -1,0 +1,20 @@
+=== 0
+- component; 205 × 251; radius 20; fill #000000; uses Screen Width, Screen Height
+  - Content: instance of Example [Type=Title with Close Button]; 205 × 251; at (0, 0)
+  - Bezel: instance of Bezels [Bezel Size=49mm]; 205 × 251; at (0, 0)
+=== 1
+- component; 205 × 251; radius 20; fill #000000; uses Screen Width, Screen Height
+  - Content: instance of Example [Type=Symbol + Description]; 205 × 251; at (0, 0)
+  - Bezel: instance of Bezels [Bezel Size=49mm]; 205 × 251; at (0, 0)
+=== 2
+- component; 205 × 251; radius 20; fill #000000; uses Screen Width, Screen Height
+  - Content: instance of Example [Type=Description Only]; 205 × 251; at (0, 0)
+  - Bezel: instance of Bezels [Bezel Size=49mm]; 205 × 251; at (0, 0)
+=== 3
+- component; 205 × 251; radius 20; fill #000000; uses Screen Width, Screen Height
+  - Content: instance of Example [Type=Title + Description]; 205 × 251; at (0, 0)
+  - Bezel: instance of Bezels [Bezel Size=49mm]; 205 × 251; at (0, 0)
+=== 4
+- component; 205 × 251; radius 20; fill #000000; uses Screen Width, Screen Height
+  - Content: instance of Example [Type=Title]; 205 × 251; at (0, 0)
+  - Bezel: instance of Bezels [Bezel Size=49mm]; 205 × 251; at (0, 0)

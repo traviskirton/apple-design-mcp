@@ -1,0 +1,55 @@
+=== 0
+- component; 162 × 47.5; row; space between; padding 6 9.5 0 9.5; fill Vibrant Backgrounds/Dark/Blurred - Top; background blur 30; uses Margin - LR - Copy Safe Area, Nav Bar/Margin - Top, Screen Width, Nav Bar/Height
+  - Button Inset: frame; 63 × 38; column; gap 10; padding 4 0 4 0; hugs content; uses Nav Bar/Button - Top Offset
+    - Leading Button: instance of _Button - Text; with Label "Cancel"; 63 × 30
+  - Button Inset: frame; 51 × 38; column; gap 10; padding 4 0 4 0; hugs content; uses Nav Bar/Button - Top Offset
+    - Trailing Button: instance of _Button - Text; 51 × 30
+=== 1
+- component; 162 × 47.5; row; space between; padding 6 9.5 0 9.5; fill Vibrant Backgrounds/Dark/Blurred - Top; background blur 30; uses Margin - LR - Copy Safe Area, Nav Bar/Margin - Top, Screen Width, Nav Bar/Height
+  - Button Inset: frame; 30 × 38; row; gap 10; padding 4 0 4 0; cross center; hugs content; uses Nav Bar/Button - Top Offset
+    - instance of Button - Corner; with Label SF Symbol xmark; 30 × 30
+  - Button Inset: frame; 51 × 38; column; gap 10; padding 4 0 4 0; hugs content; uses Nav Bar/Button - Top Offset
+    - Trailing Button: instance of _Button - Text; 51 × 30
+=== 2
+- component; 162 × 47.5; row; gap 6; padding 6 9.5 0 9.5; main center; fill Vibrant Backgrounds/Dark/Blurred - Top; background blur 30; uses Margin - LR - Copy Safe Area, Nav Bar/Margin - Top, Screen Width, Nav Bar/Height
+  - Button Inset: frame; 30 × 38; row; gap 10; padding 4 0 4 0; cross center; hugs content; uses Nav Bar/Button - Top Offset
+    - instance of Button - Corner; with Label SF Symbol xmark; 30 × 30
+  - Frame: frame; 107 × 37.5; fills width; column; gap -0.5; cross end; hugs height; uses Nav Bar/Gap
+    - text "10:09"; SF Compact Medium 16/18.5; right-aligned; 107 × 19; fills width; color Labels/Primary; property Time
+    - text ""; SF Compact Medium 16/18.5; centered; 0 × 19; color Colors/Blue
+=== 3
+- component; 162 × 47.5; row; gap 6; padding 6 9.5 0 9.5; main center; fill Vibrant Backgrounds/Dark/Blurred - Top; background blur 30; uses Margin - LR - Copy Safe Area, Nav Bar/Margin - Top, Screen Width, Nav Bar/Height
+  - Button Inset: frame; 30 × 38; row; gap 10; padding 4 0 4 0; cross center; hugs content; uses Nav Bar/Button - Top Offset
+    - instance of Button - Corner; with Label SF Symbol xmark; 30 × 30
+  - Frame: frame; 71 × 37.5; fills width; column; gap -0.5; main center; cross center; hugs height; uses Nav Bar/Gap
+    - text "10:09"; SF Compact Medium 16/18.5; centered; 71 × 19; fills width; color Labels/Primary; property Time
+    - text "Title"; SF Compact Medium 16/18.5; centered; 71 × 19; fills width; color Colors/Blue; property Title
+  - Button Inset: frame; 30 × 38; row; gap 10; padding 4 0 4 0; cross center; hugs height; uses Nav Bar/Button - Top Offset
+    - instance of Button - Corner; with Label SF Symbol checkmark; 30 × 30
+=== 4
+- component; 162 × 47.5; row; gap 6; padding 6 9.5 0 9.5; main center; fill Vibrant Backgrounds/Dark/Blurred - Top; background blur 30; uses Margin - LR - Copy Safe Area, Nav Bar/Margin - Top, Screen Width, Nav Bar/Height
+  - Button Inset: frame; 30 × 38; row; gap 10; padding 4 0 4 0; cross center; hugs content; uses Nav Bar/Button - Top Offset
+    - instance of Button - Corner; with Label SF Symbol chevron.left; 30 × 30
+  - Frame: frame; 107 × 37.5; fills width; column; gap -0.5; cross end; hugs height; uses Nav Bar/Gap
+    - text "10:09"; SF Compact Medium 16/18.5; right-aligned; 107 × 19; fills width; color Labels/Primary; property Time
+    - text "Title"; SF Compact Medium 16/18.5; right-aligned; 107 × 19; fills width; color Colors/Blue; property Title
+=== 5
+- component; 162 × 47.5; row; gap 6; padding 6 9.5 0 9.5; main center; fill Vibrant Backgrounds/Dark/Blurred - Top; background blur 30; uses Margin - LR - Copy Safe Area, Nav Bar/Margin - Top, Screen Width, Nav Bar/Height
+  - Button Inset: frame; 30 × 38; row; gap 10; padding 4 0 4 0; cross center; hugs content; uses Nav Bar/Button - Top Offset
+    - instance of Button - Corner; with Label SF Symbol info; 30 × 30
+  - Frame: frame; 71 × 37.5; fills width; column; gap -0.5; main center; cross center; hugs height; uses Nav Bar/Gap
+    - text "10:09"; SF Compact Medium 16/18.5; centered; 71 × 19; fills width; color Labels/Primary; property Time
+    - text "Title"; SF Compact Medium 16/18.5; centered; 71 × 19; fills width; color Colors/Blue; property Title
+  - Button Inset: frame; 30 × 38; row; gap 10; padding 4 0 4 0; cross center; hugs content; uses Nav Bar/Button - Top Offset
+    - instance of Button - Corner; with Label SF Symbol plus; 30 × 30
+=== 6
+- component; 162 × 47.5; column; gap -4.5; padding 3 9.5 0 9.5; cross end; fill Vibrant Backgrounds/Dark/Blurred - Top; background blur 30; uses Nav Bar/Gap - Large Title, Margin - LR - Copy Safe Area, Nav Bar/Margin - Top - Large Title, Screen Width, Nav Bar/Height
+  - text "10:09"; SF Compact Medium 16/18.5; right-aligned; 42 × 19; color Labels/Primary; property Time
+  - text "Title"; SF Compact Medium 24/26.5; 143 × 27; fills width; color Colors/Blue; property Title
+=== 7
+- component; 162 × 47.5; column; gap -0.5; padding 6 9.5 0 9.5; cross end; fill Vibrant Backgrounds/Dark/Blurred - Top; background blur 30; uses Nav Bar/Gap, Margin - LR - Copy Safe Area, Nav Bar/Margin - Top, Screen Width, Nav Bar/Height
+  - text "10:09"; SF Compact Medium 16/18.5; right-aligned; 42 × 19; color Labels/Primary; property Time
+  - text "Title"; SF Compact Medium 16/18.5; right-aligned; 33 × 19; color Colors/Blue; property Title
+=== 8
+- component; 162 × 32.5; column; padding 6 9.5 0 9.5; cross end; fill Vibrant Backgrounds/Dark/Blurred - Top; background blur 30; uses Margin - LR - Copy Safe Area, Nav Bar/Margin - Top, Screen Width, Nav Bar/Height - Status Bar
+  - text "10:09"; SF Compact Medium 16/18.5; right-aligned; 42 × 19; color Labels/Primary; property Time

@@ -1,0 +1,2 @@
+=== 0
+- component; 200 × 200; radius 30; fill #000000 at 23%

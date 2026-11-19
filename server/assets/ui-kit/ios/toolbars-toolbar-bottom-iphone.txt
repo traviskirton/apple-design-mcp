@@ -1,0 +1,24 @@
+=== 0
+- component; 402 × 84; row; space between; padding 4 28 32 28; cross center; hugs height
+  - Button Group - Leading: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+  - Button Group - Trailing: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+  - Page Dots: instance of _Toolbar page control [Dots=3, Selection=2]; 88 × 48; absolute at (157, 4)
+=== 1
+- component; 402 × 84; row; gap 12; padding 4 28 32 28; hugs height
+  - Search Field: instance of _Search - 48pt [State=Placeholder]; 286 × 48; fills width
+  - Button: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+=== 2
+- component; 402 × 84; row; gap 12; padding 4 28 32 28; hugs height
+  - Button: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+  - Search Field: instance of _Search - 48pt [State=Placeholder]; 286 × 48; fills width
+=== 3
+- component; 402 × 84; row; space between; padding 4 28 32 28; cross center; hugs height
+  - Search Field: instance of _Search - 48pt [State=Placeholder]; 346 × 48; fills width
+=== 4
+- component; 402 × 84; row; space between; padding 4 28 32 28; cross center; hugs height
+  - Buttons Leading: frame; 108 × 48; row; gap 12; main end; hugs content; slot Buttons Leading
+    - Button Group: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+    - Button Group: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+  - Buttons Trailing: frame; 108 × 48; row; gap 12; main end; hugs content; slot Buttons Trailing
+    - Button Group: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48
+    - Button Group: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 48 × 48

@@ -1,0 +1,52 @@
+=== 0
+- component; 54 × 102; column; gap 6; hugs content
+  - Title + Subtitle: frame; 42 × 32; column; gap 2; hugs content
+    - text "Title"; SF Pro Medium 13/16; 42 × 16; fills width; color Labels/Primary at 85%; property Title
+    - text "Subtitle"; SF Pro Medium 11/14; 42 × 14; fills width; color Labels/Secondary at 50%; property Subtitle; shown while Show Subtitle
+  - Options: frame; 54 × 64; column; gap 8; hugs content
+    - Radio Button: instance of Toggles - Radio Buttons [Active=True, State=Idle, Selection=On]; 54 × 16
+    - Radio Button: instance of Toggles - Radio Buttons [Active=True, State=Idle, Selection=Off]; 54 × 16
+    - Radio Button: instance of Toggles - Radio Buttons [Active=True, State=Idle, Selection=Off]; 54 × 16
+=== 1
+- component; 49 × 16; row; gap 6; cross center; hugs content
+  - text SF Symbol square.dashed; style Body/Regular; centered; 15 × 16; rotated -180°; color Labels/Primary at 85%; shown while Show Symbol
+  - text "Title"; SF Pro Medium 13/16; 28 × 16; color Labels/Primary at 85%; property Title
+=== 2
+- component; 92 × 32; row; gap 8; cross center; hugs content
+  - Frame: frame; 42 × 26; row; gap 8; cross center; hugs content
+    - _Chevron: instance of _Chevron [Disclosed=False]; 8 × 16; shown while Show Disclosure
+    - Sidebar Icon: instance of _Left Accessory Icons / 32pt [Color=Light Gray]; 26 × 26; shown while Show Symbol
+  - Title + Subtitle: frame; 42 × 32; column; gap 2; hugs content
+    - text "Title"; SF Pro Medium 13/16; 28 × 16; color Labels/Primary at 85%; property Title
+    - text "Subtitle"; SF Pro Medium 11/14; 42 × 14; color Labels/Secondary at 50%; property Subtitle; shown while Show Subtitle
+=== 3
+- component; 86 × 32; row; gap 8; hugs content
+  - Chevron + Icon: frame; 36 × 19; row; gap 8; cross center; hugs width
+    - _Chevron: instance of _Chevron [Disclosed=False]; 8 × 16; shown while Show Disclosure
+    - Icon: instance of _Left Accessory Icons / 24pt [Color=Light Gray]; 20 × 20; shown while Show Symbol
+  - Title + Subtitle: frame; 42 × 32; column; gap 2; hugs content
+    - text "Title"; SF Pro Medium 13/16; 28 × 16; color Labels/Primary at 85%; property Title
+    - text "Subtitle"; SF Pro Medium 11/14; 42 × 14; color Labels/Secondary at 50%; property Subtitle; shown while Show Subtitle
+=== 4
+- component; 100 × 32; row; gap 8; cross center; hugs content
+  - Frame: frame; 50 × 26; row; gap 8; cross center; hugs content
+    - Checkbox: instance of Toggles - Checkboxes [Active=True, State=Idle, Selection=On]; 16 × 16
+    - Sidebar Icon: instance of _Left Accessory Icons / 32pt [Color=Light Gray]; 26 × 26; shown while Show Symbol
+  - Title + Subtitle: frame; 42 × 32; column; gap 2; hugs content
+    - text "Title"; SF Pro Medium 13/16; 28 × 16; color Labels/Primary at 85%; property Title
+    - text "Subtitle"; SF Pro Medium 11/14; 42 × 14; color Labels/Secondary at 50%; property Subtitle; shown while Show Subtitle
+=== 5
+- component; 94 × 32; row; gap 8; hugs content
+  - Chevron + Icon: frame; 44 × 19; row; gap 8; cross center; hugs width
+    - Checkbox: instance of Toggles - Checkboxes [Active=True, State=Idle, Selection=On]; 16 × 16
+    - Icon: instance of _Left Accessory Icons / 24pt [Color=Light Gray]; 20 × 20; shown while Show Symbol
+  - Title + Subtitle: frame; 42 × 32; column; gap 2; hugs content
+    - text "Title"; SF Pro Medium 13/16; 28 × 16; color Labels/Primary at 85%; property Title
+    - text "Subtitle"; SF Pro Medium 11/14; 42 × 14; color Labels/Secondary at 50%; property Subtitle; shown while Show Subtitle
+=== 6
+- component; 42 × 32; column; gap 2; hugs content
+  - text "Title"; SF Pro Medium 13/16; 28 × 16; color Labels/Primary at 85%; property Title
+  - text "Subtitle"; SF Pro Medium 11/14; 42 × 14; color Labels/Secondary at 50%; property Subtitle; shown while Show Subtitle
+=== 7
+- component; 67 × 24; column; gap 10; hugs content
+  - Buttons: instance of Buttons [Active=True, Context=Over-Glass, State=Idle, Style=Bordered, On=False]; 67 × 24

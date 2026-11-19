@@ -1,0 +1,126 @@
+=== 0
+- component; 48 × 108; column; gap 12; hugs content
+  - Tab Bar Buttons: frame; 48 × 48; fills width; row; gap -7.33; cross center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 48; absolute at (0, 0)
+    - Tab: instance of _Tab Bar Button Round - iPhone Duo [Is Selected=True]; 48 × 48
+  - Search: frame; 48 × 48; row; gap -10; cross center; hugs content
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 48; absolute at (0, 0)
+    - Search Tab: instance of _Tab Bar Button Round - iPhone Duo [Is Selected=False]; with Symbol SF Symbol square.fill; 48 × 48
+=== 1
+- component; 48 × 108; column; gap 12; hugs content
+  - Tab Bar Buttons: frame; 48 × 48; fills width; row; gap -7.33; cross center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 48; absolute at (0, 0)
+    - Tab: instance of _Tab Bar Button Round - iPhone Duo [Is Selected=True]; 48 × 48
+  - Search: frame; 48 × 48; row; gap -10; cross center; hugs content
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 48; absolute at (0, 0)
+    - Search Tab: instance of _Tab Bar Button Round - iPhone Duo [Is Selected=False]; 48 × 48
+=== 2
+- component; 48 × 48; column; gap 12; hugs content
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 48; absolute at (0, 0)
+  - Tab 1: instance of _Tab Bar Button - iPhone Duo [Is Selected=False]; 48 × 48
+=== 3
+- component; 48 × 48; column; gap 12; hugs content
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 48; absolute at (0, 0)
+  - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=False]; 48 × 48
+=== 4
+- component; 48 × 270; column; gap 12; hugs content
+  - Tab Bar Buttons with Prominent Tab: frame; 48 × 210; column; gap 2; padding 6 0 6 0; main center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 210; absolute at (48, 0); rotated -180°
+    - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=True]; 48 × 48
+    - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=False]; 48 × 48
+    - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=False]; 48 × 48
+    - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=False]; 48 × 48
+  - Search: frame; 48 × 48; row; cross center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 48; absolute at (0, 0)
+    - Search Tab: instance of _Tab Bar Button Round - iPhone Duo [Is Selected=False]; with Symbol SF Symbol square.fill; 48 × 48
+=== 5
+- component; 48 × 270; column; gap 12; hugs content
+  - Tab Bar Buttons with Prominent Tab: frame; 48 × 210; column; gap 2; padding 6 0 6 0; main center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 210; absolute at (48, 0); rotated -180°
+    - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=True]; 48 × 48
+    - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=False]; 48 × 48
+    - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=False]; 48 × 48
+    - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=False]; 48 × 48
+  - Search: frame; 48 × 48; row; cross center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 48; absolute at (0, 0)
+    - Search Tab: instance of _Tab Bar Button Round - iPhone Duo [Is Selected=False]; 48 × 48
+=== 6
+- component; 48 × 260; column; gap 2; padding 6 0 6 0; hugs content
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 260; absolute at (48, 0); rotated -180°
+  - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=True]; 48 × 48
+  - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=False]; 48 × 48
+  - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=False]; 48 × 48
+  - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=False]; 48 × 48
+  - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=False]; 48 × 48
+=== 7
+- component; 48 × 220; column; gap 12; hugs content
+  - Tab Bar Buttons with Prominent Tab: frame; 48 × 160; column; gap 2; padding 6 0 6 0; main center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 160; absolute at (48, 0); rotated -180°
+    - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=True]; 48 × 48
+    - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=False]; 48 × 48
+    - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=False]; 48 × 48
+  - Search: frame; 48 × 48; row; cross center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 48; absolute at (0, 0)
+    - Search Tab: instance of _Tab Bar Button Round - iPhone Duo [Is Selected=False]; with Symbol SF Symbol square.fill; 48 × 48
+=== 8
+- component; 48 × 220; column; gap 12; hugs content
+  - Tab Bar Buttons with Prominent Tab: frame; 48 × 160; column; gap 2; padding 6 0 6 0; main center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 160; absolute at (48, 0); rotated -180°
+    - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=True]; 48 × 48
+    - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=False]; 48 × 48
+    - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=False]; 48 × 48
+  - Search: frame; 48 × 48; row; cross center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 48; absolute at (0, 0)
+    - Search Tab: instance of _Tab Bar Button Round - iPhone Duo [Is Selected=False]; 48 × 48
+=== 9
+- component; 48 × 210; column; gap 2; padding 6 0 6 0; hugs content
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 210; absolute at (48, 0); rotated -180°
+  - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=True]; 48 × 48
+  - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=False]; 48 × 48
+  - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=False]; 48 × 48
+  - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=False]; 48 × 48
+=== 10
+- component; 48 × 170; column; gap 12; hugs content
+  - Tab Bar Buttons with Prominent Tab: frame; 48 × 110; column; gap 2; padding 6 0 6 0; main center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 110; absolute at (48, 0); rotated -180°
+    - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=True]; 48 × 48
+    - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=False]; 48 × 48
+  - Search: frame; 48 × 48; row; cross center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 48; absolute at (0, 0)
+    - Search Tab: instance of _Tab Bar Button Round - iPhone Duo [Is Selected=False]; with Symbol SF Symbol square.fill; 48 × 48
+=== 11
+- component; 48 × 170; column; gap 12; hugs content
+  - Tab Bar Buttons with Prominent Tab: frame; 48 × 110; column; gap 2; padding 6 0 6 0; main center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 110; absolute at (48, 0); rotated -180°
+    - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=True]; 48 × 48
+    - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=False]; 48 × 48
+  - Search: frame; 48 × 48; row; cross center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 48; absolute at (0, 0)
+    - Search Tab: instance of _Tab Bar Button Round - iPhone Duo [Is Selected=False]; 48 × 48
+=== 12
+- component; 48 × 177; column; gap 2; padding 6 0 6 0; hugs content
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 177; absolute at (48, 0); rotated -180°
+  - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=True]; 48 × 54
+  - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=False]; 48 × 53.5
+  - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=False]; 48 × 53.5
+=== 13
+- component; 48 × 120; column; gap 12; hugs content
+  - Tab Bar Buttons with Prominent Tab: frame; 48 × 60; row; gap 2; padding 6 0 6 0; cross center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 60; absolute at (0, 0)
+    - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=True]; 48 × 48
+  - Search: frame; 48 × 48; row; cross center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 48; absolute at (0, 0)
+    - Search Tab: instance of _Tab Bar Button Round - iPhone Duo [Is Selected=False]; with Symbol SF Symbol square.fill; 48 × 48
+=== 14
+- component; 48 × 120; column; gap 12; hugs content
+  - Tab Bar Buttons with Prominent Tab: frame; 48 × 60; column; gap 2; padding 6 0 6 0; main center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 60; absolute at (48, 0); rotated -180°
+    - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=True]; 48 × 48
+  - Search: frame; 48 × 48; row; cross center; hugs height
+    - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 48; absolute at (0, 0)
+    - Search Tab: instance of _Tab Bar Button Round - iPhone Duo [Is Selected=False]; 48 × 48
+=== 15
+- component; 48 × 110; column; gap 2; padding 6 0 6 0; hugs content
+  - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 48 × 110; absolute at (48, 0); rotated -180°
+  - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=True]; 48 × 48
+  - Tab: instance of _Tab Bar Button - iPhone Duo [Is Selected=False]; 48 × 48

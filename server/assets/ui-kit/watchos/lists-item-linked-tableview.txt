@@ -1,0 +1,4 @@
+=== 0
+- component; 162 × 43.5; row; gap 6; padding 4 7.5 4.5 7.5; cross center; hugs height; fill Vibrant Fills/Dark/Secondary; background blur 25; uses Margin - LR - Copy Safe Area List, List/Margin - Top, List/Margin - Bottom, Screen Width, List/Min Height
+  - text "Label"; SF Pro Medium 16/18; 123 × 18; fills width; color Labels/Primary; property Label
+  - text SF Symbol checkmark; SF Pro Medium 16/18; 18 × 18; color Colors/Green; shown while Show Checkmark

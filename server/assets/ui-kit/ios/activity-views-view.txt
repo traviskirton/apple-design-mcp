@@ -1,0 +1,16 @@
+=== 0
+- component; 402 × 1046; column; padding 62 0 0 0; cross center; uses Status Bar/Height
+  - Activity View: frame; 402 × 984; fills height; fills width; column; gap 20; padding 16; cross center; radius 38 38 0 0; fill Backgrounds/Primary - Elevated; shadow x 0 y 15 blur 75 #000000 at 18%
+    - Header: instance of _Header; 370 × 133; fills width
+    - Contacts: instance of _Contacts; 370 × 118; fills width
+    - Apps: instance of _Apps; 370 × 101; fills width
+    - Actions: instance of _Actions; 370 × 120; fills width
+    - Action Group: frame; 370 × 208; fills width; column; hugs height; radius 10; fill Fills/Secondary at 16%
+      - Action 1: instance of _Actions; with Action "Add to Reading List", Symbol SF Symbol eyeglasses; 370 × 52; fills width
+      - Action 2: instance of _Actions; with Action "Add Bookmark", Symbol SF Symbol book; 370 × 52; fills width
+      - Action 3: instance of _Actions; with Action "Add to Favorites"; 370 × 52; fills width
+      - Action 4: instance of _Actions; with Action "Add to Home Screen", Symbol SF Symbol plus.app; 370 × 52; fills width
+    - Action Group: frame; 370 × 104; fills width; column; hugs height; radius 10; fill Fills/Secondary at 16%
+      - Action 5: instance of _Actions; with Action "Markup", Symbol SF Symbol pencil.tip.crop.circle; 370 × 52; fills width
+      - Action 6: instance of _Actions; with Action "Print", Symbol SF Symbol printer; 370 × 52; fills width
+    - Edit Actions: instance of Button - Liquid Glass - Text [Size=Large, Style=Glass, Is Enabled=True, Destructive=False]; 139 × 50

@@ -1,0 +1,4 @@
+=== 0
+- component; 162 × 72; column; gap 4; padding 6 8 5 8; main center; hugs height
+  - text "Label"; SF Pro Bold 15/20; 146 × 16; fills width; color Vibrant Labels/Dark/Vibrant Primary; background blur 135.91; property Line 1
+  - text "Label"; SF Pro Regular 34/41; 146 × 41; fills width; color Vibrant Labels/Dark/Vibrant Primary; background blur 135.91; property Line 2

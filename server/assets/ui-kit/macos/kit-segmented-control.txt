@@ -1,0 +1,12 @@
+=== 0
+- component; 20 × 20; row; gap 10; padding 10; fill #0088ff + #000000 at 3%; opacity 45%
+=== 1
+- component; 20 × 20; row; gap 10; padding 10; fill #0088ff + #000000 at 15%
+=== 2
+- component; 20 × 20; row; gap 10; padding 10; fill #0088ff + #000000 at 3%
+=== 3
+- component; 20 × 20; row; gap 10; padding 10; fill #0078f0 + #000000 at 3%; opacity 45%
+=== 4
+- component; 20 × 20; row; gap 10; padding 10; fill #0078f0 + #000000 at 15%
+=== 5
+- component; 20 × 20; row; gap 10; padding 10; fill #0078f0 + #000000 at 3%

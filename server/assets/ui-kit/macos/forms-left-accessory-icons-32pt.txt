@@ -1,0 +1,48 @@
+=== 0
+- component; 26 × 26; radius 5; fill Accents/Red + linear gradient #ffffff to #ffffff 0% at 20%; shadow x 0 y 0.5 blur 1.5 #000000 at 20%; inner shadow x 0 y -0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y -1 blur 0.5 spread -1 #ffffff at 100% (overlay); inner shadow x 0 y 0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y 1 blur 0.5 spread -1 #ffffff at 80%
+  - text SF Symbol square.dashed; SF Pro Regular 14/20; centered; 26 × 26; at (0, 0); color #ffffff; property Symbol
+=== 1
+- component; 26 × 26; radius 5; fill Accents/Orange + linear gradient #ffffff to #ffffff 0% at 20%; shadow x 0 y 0.5 blur 1.5 #000000 at 20%; inner shadow x 0 y -0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y -1 blur 0.5 spread -1 #ffffff at 100% (overlay); inner shadow x 0 y 0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y 1 blur 0.5 spread -1 #ffffff at 80%
+  - text SF Symbol square.dashed; SF Pro Regular 14/20; centered; 26 × 26; at (0, 0); color #ffffff; property Symbol
+=== 2
+- component; 26 × 26; radius 5; fill Accents/Yellow + linear gradient #ffffff to #ffffff 0% at 20%; shadow x 0 y 0.5 blur 1.5 #000000 at 20%; inner shadow x 0 y -0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y -1 blur 0.5 spread -1 #ffffff at 100% (overlay); inner shadow x 0 y 0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y 1 blur 0.5 spread -1 #ffffff at 80%
+  - text SF Symbol square.dashed; SF Pro Regular 14/20; centered; 26 × 26; at (0, 0); color #ffffff; property Symbol
+=== 3
+- component; 26 × 26; radius 5; fill Accents/Green + linear gradient #ffffff to #ffffff 0% at 20%; shadow x 0 y 0.5 blur 1.5 #000000 at 20%; inner shadow x 0 y -0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y -1 blur 0.5 spread -1 #ffffff at 100% (overlay); inner shadow x 0 y 0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y 1 blur 0.5 spread -1 #ffffff at 80%
+  - text SF Symbol square.dashed; SF Pro Regular 14/20; centered; 26 × 26; at (0, 0); color #ffffff; property Symbol
+=== 4
+- component; 26 × 26; radius 5; fill Accents/Mint + linear gradient #ffffff to #ffffff 0% at 20%; shadow x 0 y 0.5 blur 1.5 #000000 at 20%; inner shadow x 0 y -0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y -1 blur 0.5 spread -1 #ffffff at 100% (overlay); inner shadow x 0 y 0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y 1 blur 0.5 spread -1 #ffffff at 80%
+  - text SF Symbol square.dashed; SF Pro Regular 14/20; centered; 26 × 26; at (0, 0); color #ffffff; property Symbol
+=== 5
+- component; 26 × 26; radius 5; fill Accents/Teal + linear gradient #ffffff to #ffffff 0% at 20%; shadow x 0 y 0.5 blur 1.5 #000000 at 20%; inner shadow x 0 y -0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y -1 blur 0.5 spread -1 #ffffff at 100% (overlay); inner shadow x 0 y 0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y 1 blur 0.5 spread -1 #ffffff at 80%
+  - text SF Symbol square.dashed; SF Pro Regular 14/20; centered; 26 × 26; at (0, 0); color #ffffff; property Symbol
+=== 6
+- component; 26 × 26; radius 5; fill Accents/Cyan + linear gradient #ffffff to #ffffff 0% at 20%; shadow x 0 y 0.5 blur 1.5 #000000 at 20%; inner shadow x 0 y -0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y -1 blur 0.5 spread -1 #ffffff at 100% (overlay); inner shadow x 0 y 0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y 1 blur 0.5 spread -1 #ffffff at 80%
+  - text SF Symbol square.dashed; SF Pro Regular 14/20; centered; 26 × 26; at (0, 0); color #ffffff; property Symbol
+=== 7
+- component; 26 × 26; radius 5; fill Accents/Blue + linear gradient #ffffff to #ffffff 0% at 20%; shadow x 0 y 0.5 blur 1.5 #000000 at 20%; inner shadow x 0 y -0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y -1 blur 0.5 spread -1 #ffffff at 100% (overlay); inner shadow x 0 y 0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y 1 blur 0.5 spread -1 #ffffff at 80%
+  - text SF Symbol square.dashed; SF Pro Regular 14/20; centered; 26 × 26; at (0, 0); color #ffffff; property Symbol
+=== 8
+- component; 26 × 26; radius 5; fill Accents/Indigo + linear gradient #ffffff to #ffffff 0% at 20%; shadow x 0 y 0.5 blur 1.5 #000000 at 20%; inner shadow x 0 y -0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y -1 blur 0.5 spread -1 #ffffff at 100% (overlay); inner shadow x 0 y 0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y 1 blur 0.5 spread -1 #ffffff at 80%
+  - text SF Symbol square.dashed; SF Pro Regular 14/20; centered; 26 × 26; at (0, 0); color #ffffff; property Symbol
+=== 9
+- component; 26 × 26; radius 5; fill Accents/Purple + linear gradient #ffffff to #ffffff 0% at 20%; shadow x 0 y 0.5 blur 1.5 #000000 at 20%; inner shadow x 0 y -0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y -1 blur 0.5 spread -1 #ffffff at 100% (overlay); inner shadow x 0 y 0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y 1 blur 0.5 spread -1 #ffffff at 80%
+  - text SF Symbol square.dashed; SF Pro Regular 14/20; centered; 26 × 26; at (0, 0); color #ffffff; property Symbol
+=== 10
+- component; 26 × 26; radius 5; fill Accents/Pink + linear gradient #ffffff to #ffffff 0% at 20%; shadow x 0 y 0.5 blur 1.5 #000000 at 20%; inner shadow x 0 y -0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y -1 blur 0.5 spread -1 #ffffff at 100% (overlay); inner shadow x 0 y 0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y 1 blur 0.5 spread -1 #ffffff at 80%
+  - text SF Symbol square.dashed; SF Pro Regular 14/20; centered; 26 × 26; at (0, 0); color #ffffff; property Symbol
+=== 11
+- component; 26 × 26; radius 5; fill Accents/Brown + linear gradient #ffffff to #ffffff 0% at 20%; shadow x 0 y 0.5 blur 1.5 #000000 at 20%; inner shadow x 0 y -0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y -1 blur 0.5 spread -1 #ffffff at 100% (overlay); inner shadow x 0 y 0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y 1 blur 0.5 spread -1 #ffffff at 80%
+  - text SF Symbol square.dashed; SF Pro Regular 14/20; centered; 26 × 26; at (0, 0); color #ffffff; property Symbol
+=== 12
+- component; 26 × 26; radius 5; fill #000000 + linear gradient #ffffff to #ffffff 0% at 20%; shadow x 0 y 0.5 blur 1.5 #000000 at 20%; inner shadow x 0 y -0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y -1 blur 0.5 spread -1 #ffffff at 100% (overlay); inner shadow x 0 y 0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y 1 blur 0.5 spread -1 #ffffff at 80%
+  - text SF Symbol square.dashed; SF Pro Regular 14/20; centered; 26 × 26; at (0, 0); color #ffffff; property Symbol
+=== 13
+- component; 26 × 26; radius 5; fill #4a4a4a + linear gradient #ffffff to #ffffff 0% at 20%; shadow x 0 y 0.5 blur 1.5 #000000 at 20%; inner shadow x 0 y -0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y -1 blur 0.5 spread -1 #ffffff at 100% (overlay); inner shadow x 0 y 0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y 1 blur 0.5 spread -1 #ffffff at 80%
+  - text SF Symbol square.dashed; SF Pro Regular 14/20; centered; 26 × 26; at (0, 0); color #ffffff; property Symbol
+=== 14
+- component; 26 × 26; radius 5; fill #919191 + linear gradient #ffffff to #ffffff 0% at 20%; shadow x 0 y 0.5 blur 1.5 #000000 at 20%; inner shadow x 0 y -0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y -1 blur 0.5 spread -1 #ffffff at 100% (overlay); inner shadow x 0 y 0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y 1 blur 0.5 spread -1 #ffffff at 80%
+  - text SF Symbol square.dashed; SF Pro Regular 14/20; centered; 26 × 26; at (0, 0); color #ffffff; property Symbol
+=== 15
+- component; 26 × 26; radius 5; fill #e5e5e5 + linear gradient #ffffff to #ffffff 0%; shadow x 0 y 0.5 blur 1.5 #000000 at 20%; inner shadow x 0 y -0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y -1 blur 0.5 spread -1 #ffffff at 100% (overlay); inner shadow x 0 y 0.5 blur 0 #1a1a1a at 100% (linear dodge); inner shadow x 0 y 1 blur 0.5 spread -1 #ffffff at 80%
+  - text SF Symbol square.dashed; SF Pro Regular 14/20; centered; 26 × 26; at (0, 0); color #000000 at 85%; property Symbol

@@ -1,0 +1,9 @@
+=== 0
+- component; 1210 × 834; fill Backgrounds/Primary
+  - Screen: frame; 1210 × 780; at (0, 54)
+    - Content Area: frame; 1210 × 763; at (0, 0)
+      - Picker Button: instance of Picker Button [Size=Large, Selected=True]; 36 × 36; at (587, 693)
+  - Toolbar - Top - iPad: instance of Toolbar - Top - iPad [Style=Title 2 Line, Tab Bar=False]; with Show Subtitle off; 1210 × 54; at (0, 32)
+  - Color Picker: instance of Color Picker - iPad; 402 × 691; at (404, 40)
+  - Status bar and Menu bar- iPad: instance of Status bar and Menu bar- iPad/Status bar only; 1210 × 32; at (0, 0)
+  - Bezel: instance of iPad Pro M4 11" [Color=Silver]; 1210 × 834; at (0, 0)

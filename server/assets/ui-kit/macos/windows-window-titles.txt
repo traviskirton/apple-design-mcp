@@ -1,0 +1,16 @@
+=== 0
+- component; 111 × 30; row; gap 3; hugs content
+  - text SF Symbol folder; SF Pro Semibold 15/15; centered; 17 × 15; color Labels/Primary at 85%; property Symbol; shown while Show Symbol
+  - Title and Subtitle: frame; 91 × 30; column; gap 2; hugs content
+    - text "Title"; SF Pro Bold 13/15; 30 × 15; color Labels/Primary at 85%; blend linear burn; property Title
+    - Subtitle: frame; 91 × 13; row; space between; cross center; hugs height; shown while Show Subtitle
+      - text "Subtitle"; SF Pro Medium 11/13; 42 × 13; color #999999; blend linear burn; property Subtitle
+      - text "— Edited"; SF Pro Medium 11/13; 47 × 13; color #999999; blend linear burn
+=== 1
+- component; 111 × 30; row; gap 3; hugs content
+  - text SF Symbol folder; SF Pro Semibold 15/15; centered; 17 × 15; color Labels/Primary at 85%; property Symbol; shown while Show Symbol
+  - Title and Subtitle: frame; 91 × 30; column; gap 2; hugs content
+    - text "Title"; SF Pro Bold 15/15; 34 × 15; color Labels/Primary at 85%; blend linear burn; property Title
+    - Subtitle: frame; 91 × 13; row; space between; cross center; hugs height; shown while Show Subtitle
+      - text "Subtitle"; SF Pro Medium 11/13; 42 × 13; color #999999; blend linear burn; property Subtitle
+      - text "— Edited"; SF Pro Medium 11/13; 47 × 13; color #999999; blend linear burn

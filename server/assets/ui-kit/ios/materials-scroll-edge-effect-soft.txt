@@ -1,0 +1,8 @@
+=== 0
+- component; 200 × 200; background blur 10
+  - Gradient Mask: frame; 200 × 200; at (0, 0); fill linear gradient #ff0000 to #ff0000 0% at 90%; mask
+  - Blur: rectangle; 200 × 200; at (0, 0); fill #000000 (screen); background blur 100; opacity 90%
+=== 1
+- component; 200 × 200; background blur 10
+  - Gradient Mask: frame; 200 × 200; at (0, 0); fill linear gradient #000000 to #000000 0%; mask
+  - Blur: rectangle; 200 × 200; at (0, 0); fill #000000 (screen); background blur 100; opacity 90%

@@ -1,0 +1,9 @@
+=== 0
+- component; 46 × 32; fill Fills/Quaternary at 8%
+  - text SF Symbol minus; style Headline/Regular; centered; 46 × 22; at (0, 5); color Labels/Tertiary at 30%
+=== 1
+- component; 46 × 32; fill Fills/Quaternary at 8% + #000000 at 8% (linear burn)
+  - text SF Symbol minus; style Headline/Regular; centered; 46 × 22; at (0, 5); color Labels/Primary
+=== 2
+- component; 46 × 32; fill Fills/Tertiary at 12%
+  - text SF Symbol minus; style Headline/Regular; centered; 46 × 22; at (0, 5); color Labels/Primary

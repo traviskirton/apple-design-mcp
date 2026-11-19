@@ -1,0 +1,8 @@
+=== 0
+- component; 200 × 42; row; gap 14; padding 2 26 0 26; cross center
+  - text SF Symbol square.dashed; SF Pro Regular 17/22; centered; 20 × 22; color Accents/Red; property Symbol
+  - text "Action"; style Body/Regular; 114 × 22; fills width; color Accents/Red; property Label
+=== 1
+- component; 200 × 42; row; gap 14; padding 2 26 0 26; cross center; blend linear burn
+  - text SF Symbol square.dashed; SF Pro Regular 17/22; centered; 20 × 22; color Labels - Vibrant/Primary; property Symbol
+  - text "Action"; style Body/Regular; 114 × 22; fills width; color Labels - Vibrant/Primary; property Label

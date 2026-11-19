@@ -1,0 +1,12 @@
+=== 0
+- component; 20 × 20
+  - Fill: frame; 20 × 20; at (0, 0); radius 6; fill #ffffff at 50%; shadow x 0 y 0 blur 0 spread 1 #000000 at 4%; uses Global/Radius
+=== 1
+- component; 20 × 20
+  - Border: frame; 20 × 20; at (0, 0); radius 6; fill #ffffff (multiply); shadow x 0 y 0 blur 0 spread 1 #000000 at 8%; uses Global/Radius; blend linear burn
+  - Fill: frame; 20 × 20; at (0, 0); radius 6; fill #ffffff; uses Global/Radius
+  - Focus Ring: frame; 20 × 20; at (0, 0); radius 6; fill #ffffff (multiply); shadow x 0 y 0 blur 0 spread 3.5 #0088ff at 100%; inner shadow x 0 y 0 blur 0 spread 1 #0088ff at 100%; uses Global/Radius; opacity 50%
+=== 2
+- component; 20 × 20
+  - Border: frame; 20 × 20; at (0, 0); radius 6; fill #ffffff (multiply); shadow x 0 y 0 blur 0 spread 1 #000000 at 8%; uses Global/Radius
+  - Fill: frame; 20 × 20; at (0, 0); radius 6; fill #ffffff; uses Global/Radius

@@ -1,0 +1,9 @@
+=== 0
+- component; 32 × 28; row; padding 0 4 0 4; main center; cross center; capsule; blend linear burn
+  - text SF Symbol square.dashed; SF Pro Medium 13/22; centered; 24 × 22; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; property Symbol
+=== 1
+- component; 32 × 28; row; padding 0 4 0 4; main center; cross center; capsule; fill Fills - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn
+  - text SF Symbol square.dashed; SF Pro Medium 13/22; centered; 24 × 22; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; property Symbol
+=== 2
+- component; 32 × 28; row; padding 0 4 0 4; main center; cross center; capsule; blend linear burn
+  - text SF Symbol square.dashed; SF Pro Medium 13/22; centered; 24 × 22; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; property Symbol

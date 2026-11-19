@@ -1,0 +1,22 @@
+=== 0
+- component; 238 × 578; column; padding 10 0 10 0; cross center; hugs height
+  - Liquid Glass - Regular - Medium: instance of Liquid Glass - Regular - Medium; 238 × 578; absolute at (0, 0)
+  - Control Group: frame; 238 × 56; fills width; row; gap 6; padding 0 10 0 10; cross center; hugs height
+    - Action 1: instance of Quick Action [Destructive=False]; with Show Selection on; 68.67 × 56; fills width
+    - Action 2: instance of Quick Action [Destructive=False]; with Show Selection off; 68.67 × 56; fills width
+    - Action 3: instance of Quick Action [Destructive=True]; with Label "Desctructive", Show Selection off; 68.67 × 56; fills width
+  - Menu Items: frame; 238 × 502; fills width; column; padding 0 16 0 16; cross center; hugs height; uses Menus/Menu Items/Padding Sides; slot Menu Items
+    - Separator: instance of Separator; 206 × 21; fills width
+    - Item: instance of Menu Items [State=Default, Menu has Selection=False]; with Label "Action", Label "Label"; 206 × 40; fills width
+    - Item: instance of Menu Items [State=Disabled, Menu has Selection=False]; with Label "Disabled Action", Letter "B"; 206 × 40; fills width
+    - Item: instance of Menu Items [State=Destructive, Menu has Selection=False]; with Label "Destructive Action", Letter "C"; 206 × 60; fills width
+    - Separator: instance of Separator; 206 × 21; fills width
+    - Item: instance of Menu Items [State=Default, Menu has Selection=False]; with Show Shortcut off, Label "Action"; 206 × 40; fills width
+    - Separator: instance of Separator; 206 × 21; fills width
+    - Section Title: instance of Section Title; with Text "Section Title"; 206 × 29; fills width
+    - Item: instance of Menu Items - Submenus [State=Default, Open=False, Menu has Selection=False]; with Label "Submenu", Show Symbol off; 206 × 40; fills width
+    - Item: instance of Menu Items - Submenus [State=Default, Open=False, Menu has Selection=False]; with Label "Submenu", Show Symbol off; 206 × 40; fills width
+    - Item: instance of Menu Items - Submenus [State=Default, Open=False, Menu has Selection=False]; with Label "Submenu with a long title", Show Symbol off; 206 × 60; fills width
+    - Separator: instance of Separator; 206 × 21; fills width
+    - Section Title: instance of Section Title; with Text "Section Title"; 206 × 29; fills width
+    - Item: instance of Menu Items [State=Default, Menu has Selection=False]; with Label "Action", Letter "Y"; 206 × 40; fills width

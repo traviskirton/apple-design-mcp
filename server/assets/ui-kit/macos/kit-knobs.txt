@@ -1,0 +1,6 @@
+=== 0
+- component; 20 × 20; fill #ffffff at 65% + #ffffff at 45% + #ffffff at 35%
+=== 1
+- component; 20 × 20
+=== 2
+- component; 20 × 20; fill #ffffff

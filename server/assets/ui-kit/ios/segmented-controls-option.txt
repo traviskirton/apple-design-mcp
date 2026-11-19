@@ -1,0 +1,6 @@
+=== 0
+- component; 80 × 28; row; padding 3 6 3 6; cross center; capsule; fill Miscellaneous/Segmented Control - Selected Fill; shadow x 0 y 2 blur 20 #000000 at 6%
+  - text "Label"; SF Pro Semibold 13.33/18; centered; 68 × 18; fills width; color Labels/Primary; property Title
+=== 1
+- component; 80 × 28; row; padding 3 6 3 6; cross center; capsule
+  - text "Label"; SF Pro Medium 13.33/18; centered; 68 × 18; fills width; color Labels/Primary; property Title

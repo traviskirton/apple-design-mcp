@@ -1,0 +1,8 @@
+=== 0
+- component; 402 × 874
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 167 16 10 16; main center; cross center; radius 50; fill Backgrounds/Primary
+    - Scroll Edge Effect: instance of Scroll Edge Effect - Soft [Edge=Top]; 402 × 167; absolute at (0, 0)
+    - Content Area: frame; 370 × 697; fills height; fills width; column; gap 10; padding 10 0 10 0
+  - Status bar: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Face ID: instance of Face ID [State=Authenticating]; 402 × 874; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 874; at (0, 0)

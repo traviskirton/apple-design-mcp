@@ -1,0 +1,10 @@
+=== 0
+- component; 68 × 68
+  - Icon: instance of _Custom Icon; 68 × 68; at (0, 0)
+  - text "App Name"; SF Pro Medium 12/14; centered; 61 × 14; at (3.5, 76.5); color #ffffff; shadow x 0 y 2 blur 25 #000000 at 100%; property App Name; shown while Show App Name
+  - Badge: instance of App Icon/iPhone/Home Indicator/_Badge; 34 × 24; at (45, -12); hidden unless Show Badge
+=== 1
+- component; 68 × 68
+  - Icon: instance of _System Icons [Icon=App Store]; 68 × 68; at (0, 0)
+  - text "App Name"; SF Pro Medium 12/14; centered; 61 × 14; at (3.5, 76.5); color #ffffff; shadow x 0 y 2 blur 25 #000000 at 100%; property App Name; shown while Show App Name
+  - Badge: instance of App Icon/iPhone/Home Indicator/_Badge; 34 × 24; at (45, -12); hidden unless Show Badge

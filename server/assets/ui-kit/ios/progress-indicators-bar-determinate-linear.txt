@@ -1,0 +1,55 @@
+=== 0
+- component; 402 × 44; column; gap 3; padding 20 16 20 16; hugs height; uses Margin
+  - text "Loading..."; style Body/Regular; 75 × 22; color Labels/Primary; property Label; hidden unless Show Label
+  - Track: frame; 370 × 4; fills width; capsule; fill Fills/Primary at 20%
+    - Filled: frame; 370 × 4; at (0, 0); capsule; fill Accents/Blue
+=== 1
+- component; 402 × 44; column; gap 3; padding 20 16 20 16; hugs height; uses Margin
+  - text "Loading..."; style Body/Regular; 75 × 22; color Labels/Primary; property Label; hidden unless Show Label
+  - Track: frame; 370 × 4; fills width; capsule; fill Fills/Primary at 20%
+    - Filled: frame; 321 × 4; at (0, 0); capsule; fill Accents/Blue
+=== 2
+- component; 402 × 44; column; gap 3; padding 20 16 20 16; hugs height; uses Margin
+  - text "Loading..."; style Body/Regular; 75 × 22; color Labels/Primary; property Label; hidden unless Show Label
+  - Track: frame; 370 × 4; fills width; capsule; fill Fills/Primary at 20%
+    - Filled: frame; 286 × 4; at (0, 0); capsule; fill Accents/Blue
+=== 3
+- component; 402 × 44; column; gap 3; padding 20 16 20 16; hugs height; uses Margin
+  - text "Loading..."; style Body/Regular; 75 × 22; color Labels/Primary; property Label; hidden unless Show Label
+  - Track: frame; 370 × 4; fills width; capsule; fill Fills/Primary at 20%
+    - Filled: frame; 253 × 4; at (0, 0); capsule; fill Accents/Blue
+=== 4
+- component; 402 × 44; column; gap 3; padding 20 16 20 16; hugs height; uses Margin
+  - text "Loading..."; style Body/Regular; 75 × 22; color Labels/Primary; property Label; hidden unless Show Label
+  - Track: frame; 370 × 4; fills width; capsule; fill Fills/Primary at 20%
+    - Filled: frame; 219 × 4; at (0, 0); capsule; fill Accents/Blue
+=== 5
+- component; 402 × 44; column; gap 3; padding 20 16 20 16; hugs height; uses Margin
+  - text "Loading..."; style Body/Regular; 75 × 22; color Labels/Primary; property Label; hidden unless Show Label
+  - Track: frame; 370 × 4; fills width; capsule; fill Fills/Primary at 20%
+    - Filled: frame; 185 × 4; at (0, 0); capsule; fill Accents/Blue
+=== 6
+- component; 402 × 44; column; gap 3; padding 20 16 20 16; hugs height; uses Margin
+  - text "Loading..."; style Body/Regular; 75 × 22; color Labels/Primary; property Label; hidden unless Show Label
+  - Track: frame; 370 × 4; fills width; capsule; fill Fills/Primary at 20%
+    - Filled: frame; 152 × 4; at (0, 0); capsule; fill Accents/Blue
+=== 7
+- component; 402 × 44; column; gap 3; padding 20 16 20 16; hugs height; uses Margin
+  - text "Loading..."; style Body/Regular; 75 × 22; color Labels/Primary; property Label; hidden unless Show Label
+  - Track: frame; 370 × 4; fills width; capsule; fill Fills/Primary at 20%
+    - Filled: frame; 117 × 4; at (0, 0); capsule; fill Accents/Blue
+=== 8
+- component; 402 × 44; column; gap 3; padding 20 16 20 16; hugs height; uses Margin
+  - text "Loading..."; style Body/Regular; 75 × 22; color Labels/Primary; property Label; hidden unless Show Label
+  - Track: frame; 370 × 4; fills width; capsule; fill Fills/Primary at 20%
+    - Filled: frame; 83 × 4; at (0, 0); capsule; fill Accents/Blue
+=== 9
+- component; 402 × 44; column; gap 3; padding 20 16 20 16; hugs height; uses Margin
+  - text "Loading..."; style Body/Regular; 75 × 22; color Labels/Primary; property Label; hidden unless Show Label
+  - Track: frame; 370 × 4; fills width; capsule; fill Fills/Primary at 20%
+    - Filled: frame; 50 × 4; at (0, 0); capsule; fill Accents/Blue
+=== 10
+- component; 402 × 44; column; gap 3; padding 20 16 20 16; hugs height; uses Margin
+  - text "Loading..."; style Body/Regular; 75 × 22; color Labels/Primary; property Label; hidden unless Show Label
+  - Track: frame; 370 × 4; fills width; capsule; fill Fills/Primary at 20%
+    - Filled: frame; 6 × 4; at (0, 0); capsule; fill Accents/Blue

@@ -1,0 +1,3 @@
+=== 0
+- component; 282 × 6
+  - Fill: rectangle; 282 × 6; at (0, 0); capsule; fill Accents/Blue

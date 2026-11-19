@@ -1,0 +1,36 @@
+=== 0
+- component; 64 × 28; capsule; fill Labels/Tertiary at 30%; opacity 50%
+  - Knob: frame; 38 × 24; at (2, 2); capsule; fill #ffffff
+  - Frame: frame; 21 × 10; at (41, 9); row; gap 10; main center; cross center; hugs height
+    - AX Label: ellipse; 10 × 10; stroke Miscellaneous/Toggle/AX Label - Off 1; hidden unless Show AX Label
+=== 1
+- component; 64 × 28; capsule; fill Accents/Green; opacity 50%
+  - Frame: frame; 21 × 10; at (2, 9); row; gap 10; main center; cross center; hugs height
+    - AX Label: rectangle; 1 × 10; fill #ffffff; hidden unless Show AX Label
+  - Knob: frame; 38 × 24; at (24, 2); capsule; fill #ffffff
+=== 2
+- component; 64 × 28; capsule; fill Labels/Tertiary at 30%
+  - Frame: frame; 21 × 10; at (41, 9); row; gap 10; main center; cross center; hugs height
+    - AX Label: ellipse; 10 × 10; stroke Miscellaneous/Toggle/AX Label - Off 1; hidden unless Show AX Label
+  - Knob: frame; 58 × 38; at (-8, -5); capsule
+    - Shadow: frame; 58 × 38; at (0, 7); capsule; stroke #000000 1; layer blur 6; opacity 50%
+    - Glass Effect: frame; 60 × 40; at (-1, -1); capsule; fill #ffffff at 9%; stroke #cccccc (linear burn) 0.5; Liquid Glass effect; inner shadow x 0 y 40 blur 30 spread -40 #e6e6e6 at 100% (linear burn); inner shadow x 0 y -40 blur 10 spread -40 #282828 at 100% (linear dodge); inner shadow x 0 y 40 blur 10 spread -40 #282828 at 100% (linear dodge)
+    - Specular Light: frame; 58 × 38; at (0, 0); capsule; fill #ffffff (multiply); inner shadow x 0 y -3 blur 0.5 spread -2.25 #282828 at 100% (linear dodge); inner shadow x 0 y 3 blur 0.5 spread -2.25 #282828 at 100% (linear dodge)
+=== 3
+- component; 64 × 28; capsule; fill Accents/Green
+  - Frame: frame; 21 × 10; at (2, 9); row; gap 10; main center; cross center; hugs height
+    - AX Label: rectangle; 1 × 10; fill #ffffff; hidden unless Show AX Label
+  - Knob: frame; 58 × 38; at (14, -5); capsule
+    - Shadow: frame; 58 × 38; at (0, 7); capsule; stroke #000000 1; layer blur 6; opacity 50%
+    - Glass Effect: frame; 60 × 40; at (-1, -1); capsule; fill #ffffff at 9%; stroke #cccccc (linear burn) 0.5; Liquid Glass effect; inner shadow x 0 y 40 blur 30 spread -40 #e6e6e6 at 100% (linear burn); inner shadow x 0 y -40 blur 10 spread -40 #282828 at 100% (linear dodge); inner shadow x 0 y 40 blur 10 spread -40 #282828 at 100% (linear dodge)
+    - Specular Light: frame; 58 × 38; at (0, 0); capsule; fill #ffffff (multiply); inner shadow x 0 y -3 blur 0.5 spread -2.25 #282828 at 100% (linear dodge); inner shadow x 0 y 3 blur 0.5 spread -2.25 #282828 at 100% (linear dodge)
+=== 4
+- component; 64 × 28; capsule; fill Labels/Tertiary at 30%
+  - Knob: frame; 38 × 24; at (2, 2); capsule; fill #ffffff
+  - Frame: frame; 21 × 10; at (41, 9); row; gap 10; main center; cross center; hugs height
+    - AX Label: ellipse; 10 × 10; stroke Miscellaneous/Toggle/AX Label - Off 1; hidden unless Show AX Label
+=== 5
+- component; 64 × 28; capsule; fill Accents/Green
+  - Frame: frame; 21 × 10; at (2, 9); row; gap 10; main center; cross center; hugs height
+    - AX Label: rectangle; 1 × 10; fill #ffffff; hidden unless Show AX Label
+  - Knob: frame; 38 × 24; at (24, 2); capsule; fill #ffffff

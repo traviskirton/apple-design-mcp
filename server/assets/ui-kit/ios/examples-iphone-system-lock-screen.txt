@@ -1,0 +1,4 @@
+=== 0
+- component; 402 × 874; radius 48
+  - instance of Lock Screen - iPhone; 402 × 874; at (0, 0)
+  - Bezel: instance of iPhone 17 Pro [Color=Silver]; 402 × 874; at (0, 0)

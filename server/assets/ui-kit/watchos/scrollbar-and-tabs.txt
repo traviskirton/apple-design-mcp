@@ -1,0 +1,56 @@
+=== 0
+- component; 10 × 197; column; padding 33.5 2 33.5 2; cross center; hugs width; uses Scrollbar/Margin - Top, Screen Height
+  - Page Control: frame; 6 × 32; column; gap 2; main center; cross center; hugs width; capsule; uses Scrollbar/Height - Track
+    - Spacer: frame; 6 × 6; capsule; fill #f2f4fc at 30%
+    - Spacer: frame; 6 × 6; capsule; fill #f2f4fc at 30%
+    - Spacer: frame; 6 × 6; capsule; fill #f2f4fc at 30%
+    - Elevator: frame; 6 × 6; capsule; fill #ffffff
+=== 1
+- component; 10 × 197; column; padding 33.5 2 33.5 2; cross center; hugs width; uses Scrollbar/Margin - Top, Screen Height
+  - Page Control: frame; 6 × 32; column; gap 2; main center; cross center; hugs width; capsule; uses Scrollbar/Height - Track
+    - Spacer: frame; 6 × 6; capsule; fill #f2f4fc at 30%
+    - Spacer: frame; 6 × 6; capsule; fill #f2f4fc at 30%
+    - Elevator: frame; 6 × 6; capsule; fill #ffffff
+    - Spacer: frame; 6 × 6; capsule; fill #f2f4fc at 30%
+=== 2
+- component; 10 × 197; column; padding 33.5 2 33.5 2; cross center; hugs width; uses Scrollbar/Margin - Top, Screen Height
+  - Page Control: frame; 6 × 32; column; gap 2; main center; cross center; hugs width; capsule; uses Scrollbar/Height - Track
+    - Spacer: frame; 6 × 6; capsule; fill #f2f4fc at 30%
+    - Elevator: frame; 6 × 6; capsule; fill #ffffff
+    - Spacer: frame; 6 × 6; capsule; fill #f2f4fc at 30%
+    - Spacer: frame; 6 × 6; capsule; fill #f2f4fc at 30%
+=== 3
+- component; 10 × 197; column; padding 33.5 2 33.5 2; cross center; hugs width; uses Scrollbar/Margin - Top, Screen Height
+  - Page Control: frame; 6 × 32; column; gap 2; main center; cross center; hugs width; capsule; uses Scrollbar/Height - Track
+    - Spacer: frame; 6 × 6; capsule; fill #ffffff
+    - Spacer: frame; 6 × 6; capsule; fill #f2f4fc at 30%
+    - Spacer: frame; 6 × 6; capsule; fill #f2f4fc at 30%
+    - Spacer: frame; 6 × 6; capsule; fill #f2f4fc at 30%
+=== 4
+- component; 10 × 197; column; padding 33.5 2 33.5 2; cross center; hugs width; uses Scrollbar/Margin - Top, Screen Height
+  - Page Control: frame; 6 × 32; column; gap 2; main center; cross center; hugs width; capsule; uses Scrollbar/Height - Track
+    - Spacer: frame; 6 × 6; capsule; fill #f2f4fc at 30%
+    - Spacer: frame; 6 × 6; capsule; fill #f2f4fc at 30%
+    - Elevator: frame; 6 × 6; capsule; fill #ffffff
+=== 5
+- component; 10 × 197; column; padding 33.5 2 33.5 2; cross center; hugs width; uses Scrollbar/Margin - Top, Screen Height
+  - Page Control: frame; 6 × 32; column; gap 2; main center; cross center; hugs width; capsule; uses Scrollbar/Height - Track
+    - Spacer: frame; 6 × 6; capsule; fill #f2f4fc at 30%
+    - Elevator: frame; 6 × 6; capsule; fill #ffffff
+    - Spacer: frame; 6 × 6; capsule; fill #f2f4fc at 30%
+=== 6
+- component; 10 × 197; column; padding 33.5 2 33.5 2; cross center; hugs width; uses Scrollbar/Margin - Top, Screen Height
+  - Page Control: frame; 6 × 32; column; gap 2; main center; cross center; hugs width; capsule; uses Scrollbar/Height - Track
+    - Elevator: frame; 6 × 6; capsule; fill #ffffff
+    - Spacer: frame; 6 × 6; capsule; fill #f2f4fc at 30%
+    - Spacer: frame; 6 × 6; capsule; fill #f2f4fc at 30%
+=== 7
+- component; 10 × 197; column; padding 33.5 2 33.5 2; cross center; hugs width; uses Scrollbar/Margin - Top, Screen Height
+  - Page Control: frame; 6 × 32; column; gap 2; main center; cross center; hugs width; capsule; uses Scrollbar/Height - Track
+    - Spacer: frame; 6 × 6; capsule; fill #f2f4fc at 30%
+    - Elevator: frame; 6 × 6; capsule; fill #ffffff
+=== 8
+- component; 10 × 197; column; padding 33.5 2 33.5 2; cross center; hugs width; uses Scrollbar/Margin - Top, Screen Height
+  - Page Control: frame; 6 × 32; column; gap 2; main center; cross center; capsule; uses Scrollbar/Height - Track
+    - Elevator: frame; 6 × 6; capsule; fill #ffffff
+    - Spacer: frame; 6 × 6; capsule; fill #f2f4fc at 30%

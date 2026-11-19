@@ -1,0 +1,52 @@
+=== 0
+- component; 1000 × 448; row; hugs width; radius 16; fill Window Background; shadow x 0 y 18 blur 54 #000000 at 30%; shadow x 0 y 0 blur 1 #000000 at 80%
+  - Split View: frame; 1000 × 448; fills width; fills height; row; main center; cross center
+    - Leading: frame; 210 × 448; fills height; column
+      - BG: instance of BG [Active=True]; 210 × 448; absolute at (0, 0)
+      - Sidebar: instance of Sidebars - Composed [Size=Small]; 210 × 560; fills width
+    - Trailing: frame; 790 × 448; fills width; fills height; column; padding 20 0 0 0; radius 0 10 10 0; fill Window Background
+      - Top Section: frame; 790 × 153; fills width; row; gap 8; padding 0 20 12 12; main center; hugs height
+        - Left Column: frame; 256.5 × 141; fills width; fills height; column; gap 13; main end; cross end
+          - text "Save As:"; SF Pro Medium 13/14; right-aligned; 80 × 24; color Labels/Secondary at 50%
+          - text "Tags:"; SF Pro Medium 13/14; right-aligned; 80 × 24; color Labels/Secondary at 50%
+          - text "File Format:"; SF Pro Medium 13/14; right-aligned; 80 × 24; color Labels/Secondary at 50%
+          - Frame: frame; 256.5 × 30; fills width; row; gap 8; padding 6 0 0 0; hugs height
+            - Segmented Contro: instance of Segmented Control/2/None/True; 48 × 24
+            - Pulldown Button: instance of Pulldown Button [State=Idle]; with Label SF Symbol list.bullet, Label SF Symbol list.bullet; 67 × 24
+            - Pulldown Button: instance of Pulldown Button [State=Idle]; with Label SF Symbol square.grid.3x1.below.line.grid.1x2, Label SF Symbol square.grid.3x1.below.line.grid.1x2; 67 × 24
+        - Center Column: frame; 229 × 141; column; gap 13; hugs height
+          - Text Field: Save As: instance of Text Field [State=Focused, Show Text=True]; with Value "Untitled", Value "Untitled"; 229 × 24; fills width
+          - Text Field: Tags: instance of Text Field [State=Idle, Show Text=False]; 229 × 24; fills width
+          - Frame: frame; 229 × 24; fills width; row; gap 8; main center; cross center; hugs height
+            - Frame: frame; 229 × 24; fills width; fills height; row; gap 8; cross center
+              - Pop-Up Button: instance of Pop-Up Button [State=Idle, Show Label=True]; with Label "Rich Text Format"; 229 × 24; fills width
+          - Frame: frame; 229 × 30; fills width; row; gap 8; main center; cross center; hugs height
+            - Frame: frame; 229 × 30; fills width; fills height; row; gap 8; padding 6 0 0 0; cross center
+              - Pop-Up Button: instance of Pop-Up Button [State=Idle, Show Label=True]; with Label "Wallpapers"; 197 × 24; fills width
+              - Disclosure Button: frame; 24 × 24; column; main end; cross center; radius 6; uses Global/Height, Global/Radius
+                - BG: instance of _Control BG/Bordered [Context=Content Area, State=Idle, On=False]; 24 × 24; absolute at (0, 0)
+                - text SF Symbol chevron.down; SF Pro Bold 13; centered; 24 × 25; fills width; color Labels/Primary at 85%
+        - Right Column: frame; 256.5 × 141; fills width; fills height; column; gap 14; main end; cross end
+          - Search Field: instance of Search Field [Text=False, State=Idle]; 168 × 24
+      - Outline View: frame; 790 × 219; fills height; fills width; column; gap 3; fill Window Background; stroke Miscellaneous/Tables/Column Separator at 10% 1
+        - instance of Column Header; 790 × 28; fills width
+        - Rows: frame; 790 × 260; fills width; column; hugs height; fill Window Background
+          - Table Rows: instance of Table Rows [Level=0, Type=Alternating Row Color]; with Primary "Delivery"; 790 × 20; fills width
+          - Table Rows: instance of Table Rows [Level=0, Type=Default]; with Primary "Designs", Secondary 1 "3/28/26, 10:41 AM", Secondary 2 "––", Secondary 3 "Folder"; 790 × 20; fills width
+          - Table Rows: instance of Table Rows [Level=0, Type=Alternating Row Color]; with Primary "Source"; 790 × 20; fills width
+          - Table Rows: instance of Table Rows [Level=0, Type=Default]; with Primary "z. Archived", Secondary 1 "3/28/26, 10:41 AM", Secondary 2 "––", Secondary 3 "Folder"; 790 × 20; fills width
+          - Table Rows: instance of Table Rows [Level=0, Type=Alternating Row Color]; with Show Disclosure off; 790 × 20; fills width
+          - Table Rows: instance of Table Rows [Level=0, Type=Default]; with Primary "Wallpaper-260323@2x.png", Secondary 1 "3/23/26, 9:00 AM", Secondary 2 "59.9 MB", Secondary 3 "PNG image", Show Disclosure off; 790 × 20; fills width
+          - Table Rows: instance of Table Rows [Level=0, Type=Alternating Row Color]; with Show Disclosure off; 790 × 20; fills width
+          - Table Rows: instance of Table Rows [Level=0, Type=Default]; with Show Disclosure off; 790 × 20; fills width
+          - Table Rows - Blank: instance of Table Rows - Blank [Alternating Row=True]; 790 × 20; fills width
+          - Table Rows - Blank: instance of Table Rows - Blank [Alternating Row=False]; 790 × 20; fills width
+          - Table Rows - Blank: instance of Table Rows - Blank [Alternating Row=True]; 790 × 20; fills width
+          - Table Rows - Blank: instance of Table Rows - Blank [Alternating Row=False]; 790 × 20; fills width
+          - Table Rows - Blank: instance of Table Rows - Blank [Alternating Row=True]; 790 × 20; fills width
+      - Buttons: frame; 790 × 56; fills width; row; gap 8; padding 12 20 20 20; cross center; hugs height
+        - Button: instance of Buttons [Active=True, Context=Over-Glass, State=Idle, Style=Bordered, On=False]; with Label "Show Options"; 104 × 24
+        - Button: instance of Buttons [Active=True, Context=Over-Glass, State=Idle, Style=Bordered - Destructive, On=False]; with Label "New Document"; 73 × 24
+        - Spacing: frame; 393 × 24; fills width; fills height
+        - Trailing Button: instance of Buttons [Active=True, Context=Over-Glass, State=Idle, Style=Bordered, On=False]; with Label "Cancel"; 74 × 24
+        - Trailing Default Button: instance of Buttons [Active=True, Context=Over-Glass, State=Idle, Style=Bordered - Prominent (Default) D, On=False]; with Label "Save"; 74 × 24

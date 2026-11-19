@@ -1,0 +1,8 @@
+=== 0
+- component; 21 × 21; capsule; stroke Labels - Vibrant/Tertiary 1.5; blend linear burn
+=== 1
+- component; 21 × 21; capsule; fill Accents/Blue
+  - text SF Symbol checkmark; SF Pro Medium 17/22; centered; 21 × 22; at (0, -0.5); color #ffffff
+=== 2
+- component; 21 × 21; capsule; fill Accents/Red
+  - text SF Symbol minus; SF Pro Medium 17/22; centered; 21 × 22; at (0, -0.5); color #ffffff

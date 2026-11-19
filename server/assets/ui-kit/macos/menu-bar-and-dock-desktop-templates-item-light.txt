@@ -1,0 +1,7 @@
+=== 0
+- component; 47 × 24; row; gap 10; padding 4 9 4 9; hugs content; radius 4
+  - Selection: frame; 55 × 25; absolute at (-4, -1); capsule; fill #000000 at 8% (linear burn); background blur 60
+  - text "Item"; style Body/Emphasized; centered; 29 × 16; color #000000 at 85%; property Menu Item
+=== 1
+- component; 47 × 24; row; gap 10; padding 4 9 4 9; hugs content; radius 4
+  - text "Item"; style Body/Emphasized; centered; 29 × 16; color #000000 at 85%; property Menu Item

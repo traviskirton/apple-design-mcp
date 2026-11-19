@@ -1,0 +1,13 @@
+=== 0
+- component; 402 × 133; row; gap 16; hugs height
+  - Thumbnail: frame; 80 × 133; fills height; column; gap 10; padding 16 0 0 16; cross center; hugs width
+    - Thumbnail: frame; 64 × 64; radius 16; fill image; stroke #000000 at 15% 0.5; shadow x 0 y 2 blur 16 #000000 at 15%
+  - Middle: frame; 246 × 133; fills width; column; gap 12; padding 16 0 2 0; hugs height
+    - Title and Subtitle: frame; 246 × 39; fills width; column; gap 1; hugs height
+      - text "Title"; SF Pro Semibold 16/20; 246 × 20; fills width; color Labels - Vibrant/Primary; blend linear burn
+      - text "Subtitle"; SF Pro Regular 16/20; 215 × 18; color Labels - Vibrant/Secondary; blend linear burn
+    - Menu: instance of _Button - Liquid Glass; with Symbol SF Symbol person.2.fill; 108 × 34
+    - Secondary Menu: frame; 214 × 18; row; gap 4; hugs content
+      - text "Only invited people can edit."; SF Pro Regular 15/18; 199 × 18; color Labels - Vibrant/Secondary; blend linear burn
+      - text SF Symbol chevron.right; SF Pro Regular 15/18; 11 × 18; color Labels - Vibrant/Tertiary; blend linear burn
+  - Close: instance of _Buttons - 48pt [Type=Symbol, Preferred Axis=Horizontal]; 44 × 44

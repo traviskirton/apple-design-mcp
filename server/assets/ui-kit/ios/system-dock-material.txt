@@ -1,0 +1,4 @@
+=== 0
+- component; 300 × 103
+  - Fill + Shadow: frame; 300 × 103; at (0, 0); radius 38; fill #999999 at 33% (luminosity); shadow x 0 y 8 blur 15 #000000 at 2%; shadow x 0 y 0 blur 0 spread 0.5 #cccccc at 100% (linear burn); shadow x -1.25 y 0 blur 0 spread -0.75 #d0d0d0 at 100% (linear burn); shadow x 1.25 y 0 blur 0 spread -0.75 #d0d0d0 at 100% (linear burn)
+  - Glass Effect: frame; 300 × 103; at (0, 0); radius 38; Liquid Glass effect; inner shadow x 0 y -40 blur 10 spread -40 #282828 at 100% (linear dodge); inner shadow x 0 y 40 blur 10 spread -40 #282828 at 100% (linear dodge); inner shadow x 0 y -1.25 blur 0.25 #282828 at 100% (linear dodge); inner shadow x 0 y 1.25 blur 0.25 #282828 at 100% (linear dodge)

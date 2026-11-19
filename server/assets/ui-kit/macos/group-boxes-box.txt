@@ -1,0 +1,2 @@
+=== 0
+- component; 200 × 200; radius 12; fill Fills - Opaque/Quaternary at 3%; opacity 50%

@@ -1,0 +1,20 @@
+=== 0
+- component; 50 × 6; uses Slider/Track/Inset - Vertical
+  - Frame: frame; 56 × 6; at (-3, 6); column; padding 1; main center; cross center; uses Slider/Track/Inset - Horizontal, Slider/Track/Inset - Vertical
+    - Track Filled: instance of _Tracks - Filled [Active=False, Context=Content Area, State=Disabled]; 54 × 4; fills height; fills width; opacity 6%
+=== 1
+- component; 50 × 6; uses Slider/Track/Inset - Vertical
+  - Frame: frame; 56 × 6; at (-3, 6); column; padding 1; main center; cross center; uses Slider/Track/Inset - Horizontal, Slider/Track/Inset - Vertical
+    - Track Filled: instance of _Tracks - Filled [Active=True, Context=Content Area, State=Clicked]; 54 × 4; fills height; fills width
+=== 2
+- component; 50 × 6; uses Slider/Track/Inset - Vertical
+  - Frame: frame; 56 × 6; at (-3, 6); column; padding 1; main center; cross center; uses Slider/Track/Inset - Horizontal, Slider/Track/Inset - Vertical
+    - Track Filled: instance of _Tracks - Filled [Active=False, Context=Content Area, State=Idle]; 54 × 4; fills height; fills width; opacity 17%
+=== 3
+- component; 50 × 6; uses Slider/Track/Inset - Vertical
+  - Frame: frame; 56 × 6; at (-3, 6); column; padding 1; main center; cross center; uses Slider/Track/Inset - Horizontal, Slider/Track/Inset - Vertical
+    - Track Filled: instance of _Tracks - Filled [Active=True, Context=Content Area, State=Disabled]; 54 × 4; fills height; fills width; opacity 6%
+=== 4
+- component; 50 × 6; uses Slider/Track/Inset - Vertical
+  - Frame: frame; 56 × 6; at (-3, 6); column; padding 1; main center; cross center; uses Slider/Track/Inset - Horizontal, Slider/Track/Inset - Vertical
+    - Track Filled: instance of _Tracks - Filled [Active=True, Context=Content Area, State=Idle]; 54 × 4; fills height; fills width

@@ -1,0 +1,11 @@
+=== 0
+- component; 402 × 50; row; gap 10; padding 0 11 0 11; main center; cross center; hugs height
+  - Frame: frame; 320 × 50; fills width; fills height; row; gap 8; cross center
+    - Previous and Next: frame; 84 × 48; row; gap 12; padding 6 14 6 14; cross center
+      - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 84 × 48; absolute at (0, 0)
+      - Previous: instance of _Previous [Enabled=True]; 22 × 36
+      - Next: instance of _Next [Enabled=True]; 22 × 36
+    - Field: frame; 228 × 50; fills width; fills height; row; gap 6; padding 0 12 0 12; cross center; capsule
+      - BG: instance of Liquid Glass - Regular - Small [Active=True, Prominent=False]; 228 × 50; absolute at (0, 0)
+      - Find Field: instance of _Field - Find [State=Text Entered]; 204 × 22; fills width
+  - Done: instance of Button - Liquid Glass - Symbol [Style=Glass, Is Enabled=True, Destructive=False]; 50 × 50

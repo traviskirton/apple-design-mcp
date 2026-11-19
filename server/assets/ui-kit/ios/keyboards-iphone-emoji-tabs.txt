@@ -1,0 +1,26 @@
+=== 0
+- component; 402 × 42; row; space between; padding 6 12 6 12; cross center; hugs height
+  - Tab: frame; 30 × 30; column; gap 10; main center; cross center
+    - Star-Eyes: vector shape; 13 × 16; fill Labels/Secondary at 60%; blend linear burn
+  - Tab: frame; 30 × 30; column; gap 10; main center; cross center
+    - Stickers: vector shape; 15 × 14; fill Labels/Secondary at 60%; blend linear burn
+  - Tab: frame; 30 × 30; column; main center; cross center; capsule; fill Fills/Tertiary at 12%
+    - text SF Symbol clock; SF Pro Regular 15; centered; 18 × 18; color Labels/Secondary at 60%; blend linear burn
+  - Tab: frame; 30 × 30; column; gap 10; padding 7 0 7 0; main center; cross center
+    - Emoji: vector shape; 14 × 14; fill Labels/Secondary at 60%; blend linear burn
+  - Tab: frame; 30 × 30; column; gap 10; main center; cross center
+    - Dogs: vector shape; 17 × 15; fill Labels/Secondary at 60%; blend linear burn
+  - Tab: frame; 30 × 30; column; gap 10; main center; cross center
+    - Food-and-Drink: vector shape; 15 × 16; fill Labels/Secondary at 60%; blend linear burn
+  - Tab: frame; 30 × 30; column; gap 10; main center; cross center
+    - Sports: vector shape; 14 × 14; fill Labels/Secondary at 60%; blend linear burn
+  - Tab: frame; 30 × 30; column; gap 10; main center; cross center
+    - Vehicles: vector shape; 19 × 14; fill Labels/Secondary at 60%; blend linear burn
+  - Tab: frame; 30 × 30; column; gap 10; main center; cross center; hugs height
+    - text SF Symbol lightbulb; SF Pro Regular 15; centered; 30 × 30; fills width; color Labels/Secondary at 60%; blend linear burn
+  - Tab: frame; 30 × 30; column; gap 10; main center; cross center
+    - Favorites: vector shape; 14 × 14; fill Labels/Secondary at 60%; blend linear burn
+  - Tab: frame; 30 × 30; column; gap 10; main center; cross center; hugs height
+    - text SF Symbol flag; SF Pro Regular 15; centered; 30 × 30; fills width; color Labels/Secondary at 60%; blend linear burn
+  - Delete: frame; 40 × 30; column; padding 0 0 0 6; main center; cross end; blend linear burn
+    - Delete: vector shape; 21.67 × 18; fill Labels/Secondary at 60%

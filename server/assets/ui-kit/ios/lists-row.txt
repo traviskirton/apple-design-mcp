@@ -1,0 +1,24 @@
+=== 0
+- component; 300 × 68; row; padding 0 16 0 16; main center; cross center
+  - Edit Button: frame; 37 × 22; row; padding 0 16 0 0; cross center; hugs content; hidden unless Show Edit Button
+  - Image: frame; 76 × 68; row; padding 0 8 0 0; cross center; hugs content; hidden unless Show Image
+  - Contents: frame; 268 × 68; fills width; fills height; column; padding 0 0 1 0; main center
+    - Separator: instance of _Separator; 268 × 1; fills width; blend linear burn
+    - Title and Trailing Accessories: frame; 268 × 66; fills height; fills width; row; cross center
+      - Title and Detail: frame; 200 × 60; fills width; column; main center
+        - text "Title"; style Body/Regular; 200 × 22; fills width; color Labels/Primary; property Title
+        - text "Subtitle"; style Subheadline/Regular; 200 × 20; fills width; color Labels/Secondary at 60%; property Subtitle; shown while Show Subtitle
+      - Accessories and Grabber: frame; 68 × 66; fills height; row; main end; cross center; hugs width; shown while Show Trailing
+        - Contents - Trailing: instance of _Trailing [Type=Default]; with Show Symbol off, Show Checkmark off, Show Info off; 68 × 22
+        - Grabber: instance of _Grabber; 22 × 68; fills height; hidden unless Show Grabber
+=== 1
+- component; 300 × 52; row; padding 0 16 0 16; main center; cross center
+  - Edit Button: frame; 37 × 44; row; padding 0 16 0 0; cross center; hugs width; hidden unless Show Edit Button
+  - Image: frame; 60 × 52; row; padding 0 8 0 0; main center; cross center; hugs content; hidden unless Show Image
+  - Contents: frame; 268 × 52; fills width; fills height; column; padding 0 0 1 0; main center
+    - Separator: instance of _Separator; 268 × 1; fills width; blend linear burn
+    - Title and Trailing Accessories: frame; 268 × 50; fills height; fills width; row; cross center
+      - text "Title"; style Body/Regular; 162 × 50; fills width; fills height; color Labels/Primary; property Title
+      - Accessories and Grabber: frame; 106 × 50; fills height; row; main end; cross center; hugs width; shown while Show Trailing
+        - Contents - Trailing: instance of _Trailing [Type=Default]; with Show Checkmark off, Show Info off; 106 × 22
+        - Grabber: instance of _Grabber; 38 × 52; fills height; hidden unless Show Grabber

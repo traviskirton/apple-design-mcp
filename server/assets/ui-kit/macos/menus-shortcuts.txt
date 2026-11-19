@@ -1,0 +1,16 @@
+=== 0
+- component; 25 × 16; row; gap 1; cross center; hugs content
+  - text SF Symbol globe; SF Pro Medium 13; centered; 12 × 16; color #ffffff; hidden unless Show Fn
+  - text SF Symbol control; SF Pro Medium 13; centered; 12 × 16; color #ffffff; hidden unless Show Control
+  - text SF Symbol option; SF Pro Medium 13; centered; 12 × 16; color #ffffff; hidden unless Show Option
+  - text SF Symbol shift; SF Pro Medium 13; centered; 12 × 16; color #ffffff; hidden unless Show Shift
+  - text SF Symbol command; SF Pro Medium 13; centered; 12 × 16; color #ffffff; shown while Show Command
+  - text "A"; SF Pro Medium 13; centered; 12 × 16; color #ffffff; property Letter
+=== 1
+- component; 25 × 16; row; gap 1; cross center; hugs content; blend linear burn
+  - text SF Symbol globe; SF Pro Medium 13; centered; 12 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; hidden unless Show Fn
+  - text SF Symbol control; SF Pro Medium 13; centered; 12 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; hidden unless Show Control
+  - text SF Symbol option; SF Pro Medium 13; centered; 12 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; hidden unless Show Option
+  - text SF Symbol shift; SF Pro Medium 13; centered; 12 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; hidden unless Show Shift
+  - text SF Symbol command; SF Pro Medium 13; centered; 12 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; shown while Show Command
+  - text "A"; SF Pro Medium 13; centered; 12 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; property Letter

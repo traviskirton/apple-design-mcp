@@ -1,0 +1,3 @@
+=== 0
+- component; 260 × 54; row; cross center; hugs height
+  - Section Header: instance of _Section Header; 260 × 54; fills width

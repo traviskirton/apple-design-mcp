@@ -1,0 +1,12 @@
+=== 0
+- component; 300 × 52; column; padding 0 16 1 16; cross end
+  - Separator: instance of _Separator; 268 × 1; fills width; blend linear burn
+  - text "Action"; style Body/Regular; 268 × 50; fills height; fills width; color Grays/Gray 2
+=== 1
+- component; 300 × 52; column; padding 0 16 1 16; cross end
+  - Separator: instance of _Separator; 268 × 1; fills width; blend linear burn
+  - text "Action"; style Body/Regular; 268 × 50; fills height; fills width; color Accents/Red
+=== 2
+- component; 300 × 52; column; padding 0 16 1 16; main center; cross center
+  - Separator: instance of _Separator; 268 × 1; fills width; blend linear burn
+  - text "Action"; style Body/Regular; 268 × 50; fills height; fills width; color Accents/Blue

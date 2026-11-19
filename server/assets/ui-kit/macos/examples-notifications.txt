@@ -1,0 +1,7 @@
+=== 0
+- component; 1512 × 993
+  - Desktop Template: instance of Desktop Template [Color Mode=Dark]; 1512 × 993; at (0, 0)
+  - Notifications: frame; 376 × 314; at (1136, 0); column; gap 16; padding 49 16 49 16; cross end; hugs content
+    - Notification: instance of Notification [Stack=False]; 344 × 56
+    - Notification: instance of Notification [Stack=False]; with Title "Dinner in Timber Cove", Message "Invitation from Kristina Today at 8:00 …"; 344 × 72
+    - Notification: instance of Notification [Stack=True]; with Title "Home", Message "Outdoor Light was turned off"; 344 × 56

@@ -1,0 +1,14 @@
+=== 0
+- component; 162 × 72; column; gap -1; padding 8 8 6 8; main center; hugs height
+  - Row 1: frame; 146 × 20; fills width; row; gap 2; cross center
+    - text SF Symbol app.dashed; SF Pro Regular 12/16; 14 × 16; color Vibrant Labels/Dark/Vibrant Primary; background blur 135.91; property Symbol 1
+    - text "Label"; SF Pro Semibold 15/20; uppercase; 88 × 20; fills width; color Vibrant Labels/Dark/Vibrant Primary; background blur 135.91; property Line 1 Leading
+    - text "Label"; SF Pro Medium 15/20; 40 × 20; color Vibrant Labels/Dark/Vibrant Primary; background blur 135.91; property Line 1 Trailing
+  - Row 2: frame; 146 × 20; fills width; row; gap 2; cross center
+    - text SF Symbol app.dashed; SF Pro Regular 12/16; 14 × 16; color #ffffff; background blur 135.91; property Symbol 2
+    - text "Label"; SF Pro Semibold 15/20; uppercase; 88 × 20; fills width; color Vibrant Labels/Dark/Vibrant Primary; background blur 135.91; property Line 2 Leading
+    - text "Label"; SF Pro Medium 15/20; 40 × 20; color Vibrant Labels/Dark/Vibrant Primary; background blur 135.91; property Line 2 Trailing
+  - Row 3: frame; 146 × 20; fills width; row; gap 2; cross center
+    - text SF Symbol app.dashed; SF Pro Regular 12/16; 14 × 16; color #ffffff; background blur 135.91; property Symbol 3
+    - text "Label"; SF Pro Semibold 15/20; uppercase; 88 × 20; fills width; color Vibrant Labels/Dark/Vibrant Primary; background blur 135.91; property Line 3 Leading
+    - text "Label"; SF Pro Medium 15/20; 40 × 20; color Vibrant Labels/Dark/Vibrant Primary; background blur 135.91; property Line 3 Trailing

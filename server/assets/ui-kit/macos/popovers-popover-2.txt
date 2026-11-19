@@ -1,0 +1,28 @@
+=== 0
+- component; 200 × 200
+  - Fill + Shadow: vector shape; 210.5 × 200; at (0, 0); radius 20; fill #ffffff at 70% (lighten) + #bfbfbf at 10% (darken); shadow x 0 y 8 blur 48 #000000 at 25%; shadow x -0.5 y 0 blur 0 spread -0.75 #dbdbdb at 100% (linear burn); shadow x 0.5 y 0 blur 0 spread -0.75 #dbdbdb at 100% (linear burn)
+  - Glass Effect: vector shape; 210.5 × 200; at (0, 0); radius 20; fill #ffffff (multiply); Liquid Glass effect; inner shadow x 0 y -1 blur 1 #333333 at 100% (color dodge); inner shadow x 0 y 1 blur 1 #333333 at 100% (linear dodge)
+=== 1
+- component; 200 × 200
+  - Fill + Shadow: vector shape; 200 × 210.5; at (0, 0); radius 20; fill #ffffff at 70% (lighten) + #bfbfbf at 10% (darken); shadow x 0 y 8 blur 48 #000000 at 45%; shadow x 0 y 0.5 blur 0 #cccccc at 100% (linear burn); shadow x 0 y -0.5 blur 0 #cccccc at 100% (linear burn); shadow x -0.5 y 0 blur 0 spread -0.75 #a6a6a6 at 100% (linear burn); shadow x 0.5 y 0 blur 0 spread -0.75 #a6a6a6 at 100% (linear burn)
+  - Glass Effect: vector shape; 200 × 210.5; at (0, 0); radius 20; fill #ffffff (multiply); Liquid Glass effect; inner shadow x 0 y -1 blur 1 #333333 at 100% (color dodge); inner shadow x 0 y 1 blur 1 #333333 at 100% (linear dodge)
+=== 2
+- component; 200 × 200
+  - Fill + Shadow: vector shape; 200 × 210.5; at (0, 0); radius 20; fill #ffffff at 70% (lighten) + #bfbfbf at 10% (darken); shadow x 0 y 8 blur 48 #000000 at 25%; shadow x -0.5 y 0 blur 0 spread -0.75 #dbdbdb at 100% (linear burn); shadow x 0.5 y 0 blur 0 spread -0.75 #dbdbdb at 100% (linear burn)
+  - Glass Effect: vector shape; 200 × 210.5; at (0, 0); radius 20; fill #ffffff (multiply); Liquid Glass effect; inner shadow x 0 y -1 blur 1 #333333 at 100% (color dodge); inner shadow x 0 y 1 blur 1 #333333 at 100% (linear dodge)
+=== 3
+- component; 200 × 200
+  - Fill + Shadow: vector shape; 200 × 210.5; at (0, -10.5); radius 20; fill #ffffff at 70% (lighten) + #bfbfbf at 10% (darken); shadow x 0 y 8 blur 48 #000000 at 25%; shadow x -0.5 y 0 blur 0 spread -0.75 #dbdbdb at 100% (linear burn); shadow x 0.5 y 0 blur 0 spread -0.75 #dbdbdb at 100% (linear burn)
+  - Glass Effect: vector shape; 200 × 210.5; at (0, -10.5); radius 20; fill #ffffff (multiply); Liquid Glass effect; inner shadow x 0 y -1 blur 1 #333333 at 100% (color dodge); inner shadow x 0 y 1 blur 1 #333333 at 100% (linear dodge)
+=== 4
+- component; 200 × 200; radius 10
+  - Fill + Shadow: vector shape; 200 × 210.5; at (0, -10.5); radius 20; fill #ffffff at 70% (lighten) + #bfbfbf at 10% (darken); shadow x 0 y 8 blur 48 #000000 at 25%; shadow x -0.5 y 0 blur 0 spread -0.75 #dbdbdb at 100% (linear burn); shadow x 0.5 y 0 blur 0 spread -0.75 #dbdbdb at 100% (linear burn)
+  - Glass Effect: vector shape; 200 × 210.5; at (0, -10.5); radius 20; fill #ffffff (multiply); Liquid Glass effect; inner shadow x 0 y -1 blur 1 #333333 at 100% (color dodge); inner shadow x 0 y 1 blur 1 #333333 at 100% (linear dodge)
+=== 5
+- component; 200 × 200
+  - Fill + Shadow: vector shape; 210.5 × 200; at (-10.5, 0); radius 20; fill #ffffff at 70% (lighten) + #bfbfbf at 10% (darken); shadow x 0 y 8 blur 48 #000000 at 25%; shadow x -0.5 y 0 blur 0 spread -0.75 #dbdbdb at 100% (linear burn); shadow x 0.5 y 0 blur 0 spread -0.75 #dbdbdb at 100% (linear burn)
+  - Glass Effect: vector shape; 210.5 × 200; at (-10.5, 0); radius 20; fill #ffffff (multiply); Liquid Glass effect; inner shadow x 0 y -1 blur 1 #333333 at 100% (color dodge); inner shadow x 0 y 1 blur 1 #333333 at 100% (linear dodge)
+=== 6
+- component; 200 × 200; radius 10
+  - Fill + Shadow: vector shape; 210.5 × 200; at (-10.5, 0); radius 20; fill #ffffff at 70% (lighten) + #bfbfbf at 10% (darken); shadow x 0 y 8 blur 48 #000000 at 25%; shadow x -0.5 y 0 blur 0 spread -0.75 #dbdbdb at 100% (linear burn); shadow x 0.5 y 0 blur 0 spread -0.75 #dbdbdb at 100% (linear burn)
+  - Glass Effect: vector shape; 210.5 × 200; at (-10.5, 0); radius 20; fill #ffffff (multiply); Liquid Glass effect; inner shadow x 0 y -1 blur 1 #333333 at 100% (color dodge); inner shadow x 0 y 1 blur 1 #333333 at 100% (linear dodge)

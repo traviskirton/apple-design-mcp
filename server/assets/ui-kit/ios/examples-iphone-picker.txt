@@ -1,0 +1,21 @@
+=== 0
+- component; 402 × 874
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 116 16 10 16; main center; cross center; radius 50; fill Backgrounds – Grouped/Primary
+    - Content Area: frame; 370 × 748; fills height; fills width; column; gap 10; padding 10 0 10 0
+      - Date and time - Pickers: instance of Date and time - Pickers [Style=Compact]; 370 × 377; fills width
+  - Toolbar - Top: instance of Toolbar - Top - iPhone [Style=Default]; with Title "Sliders", Show Subtitle off; 402 × 54; at (0, 62)
+  - Status Bar - iPhone: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 874; at (0, 0)
+=== 1
+- component; 402 × 874
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 116 16 10 16; main center; cross center; radius 50; fill Backgrounds – Grouped/Primary
+    - Content Area: frame; 370 × 748; fills height; fills width; column; gap 10; padding 10 0 10 0
+      - Grouped List: frame; 370 × 377; fills width; column; hugs height; radius 26; fill Backgrounds – Grouped/Secondary
+        - Date and time - Pickers: instance of Date and time - Pickers [Style=Inline]; 370 × 377; fills width
+      - Grouped List: frame; 370 × 156; fills width; column; hugs height; radius 26; fill Backgrounds – Grouped/Secondary
+        - Row: instance of Row [Height=Regular]; with Show Details off; 370 × 52; fills width
+        - Row: instance of Row [Height=Regular]; with Show Details off; 370 × 52; fills width
+        - Row: instance of Row [Height=Regular]; with Show Details off; 370 × 52; fills width
+  - Toolbar - Top: instance of Toolbar - Top - iPhone [Style=Default]; with Title "Sliders", Show Subtitle off; 402 × 54; at (0, 62)
+  - Status Bar - iPhone: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 874; at (0, 0)

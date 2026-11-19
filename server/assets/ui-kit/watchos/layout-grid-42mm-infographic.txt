@@ -1,0 +1,20 @@
+=== 0
+- component; 187 × 223; radius 44; stroke #ff3b30 2; blend screen
+  - Copy Safe Area: vector shape; 161 × 191; at (13, 16); stroke #04de71 0.5
+  - Safe Area: rectangle; 187 × 223; at (0, 0); radius 44; stroke #04de71 3
+  - Crown Line: vector shape; 187 × 0; at (0, 61.25); stroke #ffffff 0.5; uses Screen Width; opacity 50%
+  - Center Line: vector shape; 187 × 0; at (0, 111.5); stroke #04de71 0.5; uses Screen Width
+  - Center Line: vector shape; 0 × 223; at (93.5, 0); stroke #04de71 0.5
+  - Button: frame; 32 × 32; at (13, 16); stroke #04de71 0.5
+    - Circle: ellipse; 32 × 32; at (0, 0); stroke #04de71 0.5
+  - Grid Line: vector shape; 161 × 0; at (13, 32); stroke #04de71 0.5
+  - Grid Line: vector shape; 161 × 0; at (13, 191); stroke #04de71 0.5
+  - Gridlines: frame; 161 × 151; at (13, 48)
+    - Grid Line: vector shape; 31.5 × 0; at (102.25, 103.75); rotated 90°; stroke #5ac8fa 0.5
+    - Grid Line: vector shape; 161 × 0; at (0, 151.25); stroke #5ac8fa 0.5
+    - Grid Line: vector shape; 161 × 0; at (0, 135.25); stroke #5ac8fa 0.5
+    - Grid Line: vector shape; 59 × 0; at (102, 119.75); stroke #5ac8fa 0.5
+    - Grid Line: vector shape; 161 × 0; at (0, 103.75); stroke #5ac8fa 0.5
+    - Grid Line: vector shape; 161 × 0; at (0, 79.75); stroke #5ac8fa 0.5
+    - Grid Line: vector shape; 161 × 0; at (0, 15.75); stroke #5ac8fa 0.5
+    - Grid Line: vector shape; 161 × 0; at (0, -0.25); stroke #5ac8fa 0.5

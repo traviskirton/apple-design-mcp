@@ -1,0 +1,4 @@
+=== 0
+- component; 1210 × 834
+  - instance of Lock Screen - iPad; 1210 × 834; at (0, 0)
+  - Bezel: instance of iPad Pro M4 11" [Color=Silver]; 1210 × 834; at (0, 0)

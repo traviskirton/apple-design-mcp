@@ -1,0 +1,14 @@
+=== 0
+- component; 204 × 34; row; gap 6; main end; cross center; hugs width; radius 6
+  - Date: frame; 112 × 34; row; gap 5; padding 6 11 6 11; main center; cross center; hugs content; capsule; fill Fills/Tertiary at 12%; shown while Show date
+    - text "Apr 1,"; style Body/Regular; centered; 44 × 22; color Labels/Primary; property Month
+    - text "2026"; style Body/Regular; centered; 41 × 22; color Labels/Primary; property Year
+  - Time: frame; 86 × 34; row; gap 10; padding 6 11 6 11; hugs content; capsule; fill Fills/Tertiary at 12%; shown while Show time
+    - text "9:41 AM"; style Body/Regular; centered; 64 × 22; color Labels/Primary; property Time
+=== 1
+- component; 204 × 34; row; gap 6; main end; cross center; hugs width; radius 6
+  - Date: frame; 112 × 34; row; gap 5; padding 6 11 6 11; main center; cross center; hugs content; capsule; fill Fills/Tertiary at 12%; shown while Show date
+    - text "Apr 1,"; style Body/Regular; centered; 44 × 22; color Accents/Blue; property Month
+    - text "2026"; style Body/Regular; centered; 41 × 22; color Accents/Blue; property Year
+  - Time: frame; 86 × 34; row; gap 10; padding 6 11 6 11; hugs content; capsule; fill Fills/Tertiary at 12%; shown while Show time
+    - text "9:41 AM"; style Body/Regular; centered; 64 × 22; color Accents/Blue; property Time

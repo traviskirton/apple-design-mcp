@@ -1,0 +1,40 @@
+=== 0
+- component; 402 × 874
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 116 16 10 16; main center; cross center; radius 50; fill Backgrounds/Primary
+    - Content Area: frame; 370 × 748; fills height; fills width; column; gap 10; padding 10 0 10 0
+    - Scroll Edge Effect - Soft: instance of Scroll Edge Effect - Soft [Edge=Top]; 402 × 116; absolute at (0, 0)
+  - Toolbar - Top - iPhone: instance of Toolbar - Top - iPhone [Style=Title 2 Line Left]; 402 × 54; at (0, 62)
+  - Status Bar - iPhone: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 874; at (0, 0)
+=== 1
+- component; 402 × 874
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 116 16 10 16; main center; cross center; radius 50; fill Backgrounds/Primary
+    - Content Area: frame; 370 × 748; fills height; fills width; column; gap 10; padding 10 0 10 0
+    - Scroll Edge Effect - Soft: instance of Scroll Edge Effect - Soft [Edge=Top]; 402 × 116; absolute at (0, 0)
+  - Toolbar - Top - iPhone: instance of Toolbar - Top - iPhone [Style=Title 2 Line]; 402 × 54; at (0, 62)
+  - Status Bar - iPhone: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 874; at (0, 0)
+=== 2
+- component; 402 × 874
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 116 16 10 16; main center; cross center; radius 50; fill Backgrounds/Primary
+    - Content Area: frame; 370 × 748; fills height; fills width; column; gap 10; padding 10 0 10 0
+    - Scroll Edge Effect - Soft: instance of Scroll Edge Effect - Soft [Edge=Top]; 402 × 187; absolute at (0, 0)
+  - Toolbar - Top - iPhone: instance of Toolbar - Top - iPhone [Style=Large Title]; 402 × 125; at (0, 62)
+  - Status Bar - iPhone: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 874; at (0, 0)
+=== 3
+- component; 402 × 874
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 116 16 10 16; main center; cross center; radius 50; fill Backgrounds/Primary
+    - Content Area: frame; 370 × 748; fills height; fills width; column; gap 10; padding 10 0 10 0
+    - Scroll Edge Effect - Soft: instance of Scroll Edge Effect - Soft [Edge=Top]; 402 × 116; absolute at (0, 0)
+  - Toolbar - Top - iPhone: instance of Toolbar - Top - iPhone [Style=Compact Large]; 402 × 54; at (0, 62)
+  - Status Bar - iPhone: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 874; at (0, 0)
+=== 4
+- component; 402 × 874
+  - Screen: frame; 402 × 874; at (0, 0); column; padding 116 16 10 16; main center; cross center; radius 50; fill Backgrounds/Primary
+    - Content Area: frame; 370 × 748; fills height; fills width; column; gap 10; padding 10 0 10 0
+    - Scroll Edge Effect - Soft: instance of Scroll Edge Effect - Soft [Edge=Top]; 402 × 116; absolute at (0, 0)
+  - Toolbar - Top - iPhone: instance of Toolbar - Top - iPhone [Style=Default]; 402 × 54; at (0, 62)
+  - Status Bar - iPhone: instance of Status Bar - iPhone [iPhone=iPhone 18 Pro]; 402 × 62; at (0, 0)
+  - Bezel: instance of iPhone 18 Pro [Color=Silver]; 402 × 874; at (0, 0)

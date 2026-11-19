@@ -1,0 +1,3 @@
+=== 0
+- component; 69 × 41
+  - text "Title"; style Large Title/Emphasized; 69 × 41; at (0, 0); color Labels - Vibrant/Primary; blend linear burn; property Title

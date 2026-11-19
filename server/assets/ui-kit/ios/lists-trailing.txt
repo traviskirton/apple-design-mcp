@@ -1,0 +1,33 @@
+=== 0
+- component; 97 × 22; row; gap 10; padding 0 16 0 0; main end; hugs content
+  - text "Pop-up"; style Body/Regular; right-aligned; 58 × 22; color Labels/Secondary at 60%
+  - text SF Symbol chevron.up.chevron.down; SF Pro Regular 17/22; right-aligned; 13 × 22; color Labels/Secondary at 60%
+=== 1
+- component; 52 × 16; row; main end; cross center; hugs width
+  - text "Button"; style Body/Regular; right-aligned; 52 × 16; color Accents/Blue; property Button Label
+=== 2
+- component; 92 × 32; row; main end; cross center; hugs content
+  - Stepper: instance of Stepper; 92 × 32
+=== 3
+- component; 106 × 34; row; main end; cross center; hugs content
+  - Date: instance of Date and time - Collapsed [State=Default]; with Month "June", Year "2024", Show time off; 106 × 34
+=== 4
+- component; 86 × 34; row; gap 8; main end; cross center; hugs content
+  - Time: instance of Date and time - Collapsed [State=Default]; with Month "June", Year "2024", Show date off; 86 × 34
+=== 5
+- component; 198 × 34; row; gap 6; main end; cross center; hugs content
+  - Date and Time: instance of Date and time - Collapsed [State=Default]; with Month "June", Year "2024"; 198 × 34
+=== 6
+- component; 64 × 28; row; main end; cross center; hugs content
+  - Toggle - Switch: instance of Toggle - Switch [State=Idle, Is On=True, Is Enabled=True]; 64 × 28
+=== 7
+- component; 64 × 32; row; gap 12; main end; cross center; hugs content
+  - text "Detail"; style Body/Regular; right-aligned; 44 × 22; color Labels/Secondary at 60%
+  - Disclosure: instance of _Contents/Disclosure [Disclosed=False]; 8 × 32
+=== 8
+- component; 182 × 22; row; gap 16; main end; cross center; hugs content
+  - text "Detail"; style Body/Regular; right-aligned; 44 × 22; color Labels/Secondary at 60%; property Detail Text
+  - text SF Symbol star; SF Pro Regular 17/22; centered; 22 × 22; color Colors/Blue; shown while Show Symbol
+  - text SF Symbol info.circle; SF Pro Regular 17/20; centered; 22 × 22; color Accents/Blue; shown while Show Info
+  - text SF Symbol checkmark; SF Pro Semibold 17/22; centered; 22 × 22; color Labels/Primary; shown while Show Checkmark
+  - text SF Symbol chevron.right; SF Pro Semibold 17/22; 8 × 22; color Labels/Tertiary at 30%; shown while Show Drill-in

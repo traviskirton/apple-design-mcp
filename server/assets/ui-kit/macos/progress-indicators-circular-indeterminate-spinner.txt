@@ -1,0 +1,20 @@
+=== 0
+- component; 16 × 16; opacity 55%
+  - 315: rectangle; 2 × 5; at (1.64, 3.05); rotated -45°; capsule; fill Labels/Primary at 85%; opacity 87%
+  - 270: rectangle; 2 × 5; at (5, 7); rotated 90°; capsule; fill Labels/Primary at 85%; opacity 75%
+  - 225: rectangle; 2 × 5; at (5.17, 9.41); rotated 45°; capsule; fill Labels/Primary at 85%; opacity 63%
+  - 180: rectangle; 2 × 5; at (7, 11); capsule; fill Labels/Primary at 85%; opacity 51%
+  - 135: rectangle; 2 × 5; at (9.41, 10.83); rotated -45°; capsule; fill Labels/Primary at 85%; opacity 39%
+  - 90: rectangle; 2 × 5; at (16, 7); rotated 90°; capsule; fill Labels/Primary at 85%; opacity 27%
+  - 45: rectangle; 2 × 5; at (12.95, 1.64); rotated 45°; capsule; fill Labels/Primary at 85%; opacity 15%
+  - 0: rectangle; 2 × 5; at (7, 0); capsule; fill Labels/Primary at 85%
+=== 1
+- component; 32 × 32; opacity 55%
+  - 315: rectangle; 4 × 10; at (3.27, 6.1); rotated -45°; capsule; fill Labels/Primary at 85%; opacity 87%
+  - 270: rectangle; 4 × 10; at (10, 14); rotated 90°; capsule; fill Labels/Primary at 85%; opacity 75%
+  - 225: rectangle; 4 × 10; at (10.34, 18.83); rotated 45°; capsule; fill Labels/Primary at 85%; opacity 63%
+  - 180: rectangle; 4 × 10; at (14, 22); capsule; fill Labels/Primary at 85%; opacity 51%
+  - 135: rectangle; 4 × 10; at (18.83, 21.66); rotated -45°; capsule; fill Labels/Primary at 85%; opacity 39%
+  - 90: rectangle; 4 × 10; at (32, 14); rotated 90°; capsule; fill Labels/Primary at 85%; opacity 27%
+  - 45: rectangle; 4 × 10; at (25.9, 3.27); rotated 45°; capsule; fill Labels/Primary at 85%; opacity 15%
+  - 0: rectangle; 4 × 10; at (14, 0); capsule; fill Labels/Primary at 85%

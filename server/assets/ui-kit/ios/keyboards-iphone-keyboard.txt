@@ -1,0 +1,373 @@
+=== 0
+- component; 402 × 332; column; padding 24 0 0 0; cross end; hugs height
+  - Background: instance of _Background - Keyboard; 402 × 332; absolute at (0, 0)
+  - Autocorrection: instance of _Autocorrection; 402 × 25; fills width; shown while Show suggestions
+  - Keys: frame; 402 × 205; fills width; column; gap 11; padding 0 6.67 0 6.67; hugs height
+    - Row 1: frame; 388.66 × 43; fills width; row; gap 6; main center; cross center; hugs height
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "W"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "E"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "R"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "T"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "Y"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "U"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "I"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "O"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "P"; 33.47 × 43; fills width
+    - Row 2: frame; 388.66 × 43; fills width; row; gap 6; padding 0 20 0 20; main center; cross center; hugs height
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "A"; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "S"; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "D"; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "F"; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "G"; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "H"; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "J"; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "K"; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "L"; 33.41 × 43; fills width
+    - Row 3: frame; 388.66 × 43; fills width; row; gap 13.33; cross center; hugs height
+      - Shift Key: instance of _Keys - iPhone [Type=Shift - On]; 45 × 43; fills height
+      - Row 3: frame; 271.99 × 43; fills width; row; gap 6; hugs height
+        - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "Z"; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "X"; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "C"; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "V"; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "B"; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "N"; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "M"; 33.71 × 43; fills width
+      - Delete Key: instance of _Keys - iPhone [Type=Delete]; with Letter SF Symbol delete.backward; 45 × 43; fills height
+    - Row 4: frame; 388.66 × 43; fills width; row; gap 6; cross center; hugs height
+      - Keyboard Switch: instance of _Keys - iPhone [Type=Keyboard Switch - 123]; 92.67 × 43
+      - Space: instance of _Keys - iPhone [Type=Space]; 190.99 × 43; fills width
+      - Return: instance of _Keys - iPhone [Type=Return - Default]; 93 × 43
+  - Bottom Buttons: instance of _Bottom Buttons [Type=Emoji and Mic]; 402 × 78; fills width
+=== 1
+- component; 402 × 332; column; padding 24 0 0 0; cross end; hugs height
+  - Background: instance of _Background - Keyboard; 402 × 332; absolute at (0, 0)
+  - Autocorrection: instance of _Autocorrection; 402 × 25; fills width; shown while Show suggestions
+  - Keys: frame; 402 × 205; fills width; column; gap 11; padding 0 6.67 0 6.67; cross center; hugs height
+    - Row 1: frame; 388.66 × 43; fills width; row; gap 6; main center; cross center; hugs height
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "q"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "w"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "e"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "r"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "t"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "y"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "u"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "i"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "o"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "p"; 33.47 × 43; fills width
+    - Row 2: frame; 388.66 × 43; fills width; row; gap 6; padding 0 20 0 20; main center; cross center; hugs height
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+    - Row 3: frame; 388.66 × 43; fills width; row; gap 13.33; cross center; hugs height
+      - Shift Key: instance of _Keys - iPhone [Type=Shift - Off]; with Letter SF Symbol shift; 45 × 43
+      - Row 3: frame; 271.99 × 43; fills width; row; gap 6; hugs height
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+      - Delete Key: instance of _Keys - iPhone [Type=Delete]; with Letter SF Symbol delete.backward; 45 × 43
+    - Row 4: frame; 388.66 × 43; fills width; row; gap 6; cross center; hugs height
+      - Keyboard Switch: instance of _Keys - iPhone [Type=Keyboard Switch - 123]; 92.67 × 43
+      - Space: instance of _Keys - iPhone [Type=Space]; 190.99 × 43; fills width
+      - Return: instance of _Keys - iPhone [Type=Return - Default]; 93 × 43
+  - Bottom Buttons: instance of _Bottom Buttons [Type=Emoji and Mic]; 402 × 78; fills width
+=== 2
+- component; 402 × 332; column; padding 24 0 0 0; cross end; hugs height
+  - Background: instance of _Background - Keyboard; 402 × 332; absolute at (0, 0)
+  - Autocorrection: instance of _Autocorrection; 402 × 25; fills width; shown while Show suggestions
+  - Keys: frame; 402 × 205; fills width; column; gap 11; padding 0 6.67 0 6.67; hugs height
+    - Row 1: frame; 388.66 × 43; fills width; row; gap 6; main center; cross center; hugs height
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "1"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "2"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "3"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "4"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "5"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "6"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "7"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "8"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "9"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "0"; 33.47 × 43; fills width
+    - Row 2: frame; 388.66 × 43; fills width; row; gap 6; main center; cross center; hugs height
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "-"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "/"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Special Charaters (not capitalized)]; with Character ":"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter ";"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "("; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter ")"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "$"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "&"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "@"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "“"; 33.47 × 43; fills width
+    - Row 3: frame; 388.66 × 43; fills width; row; gap 13.67; cross center; hugs height
+      - #+=: instance of _Keys - iPhone [Type=Number and Punctuation Switch - #+]; 46 × 43; fills height
+      - Middle: frame; 269.33 × 43; fills width; row; gap 6; hugs height
+        - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "."; 49.07 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter ","; 49.07 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "?"; 49.07 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "!"; 49.07 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "‘"; 49.07 × 43; fills width
+      - Delete Key: instance of _Keys - iPhone [Type=Delete]; with Letter SF Symbol delete.backward; 46 × 43; fills height
+    - Row 4: frame; 388.66 × 43; fills width; row; gap 6; cross center; hugs height
+      - Keyboard Switch: instance of _Keys - iPhone [Type=Keyboard Switch - ABC]; 92.67 × 43
+      - Space: instance of _Keys - iPhone [Type=Space]; 190.99 × 43; fills width
+      - Return: instance of _Keys - iPhone [Type=Return - Default]; 93 × 43
+  - Bottom Buttons: instance of _Bottom Buttons [Type=Emoji and Mic]; 402 × 78; fills width
+=== 3
+- component; 402 × 332; column; padding 24 0 0 0; cross end; hugs height
+  - Background: instance of _Background - Keyboard; 402 × 332; absolute at (0, 0)
+  - Autocorrection: instance of _Autocorrection; 402 × 25; fills width; shown while Show suggestions
+  - Keys: frame; 402 × 205; fills width; column; gap 11; padding 0 6.67 0 6.67; hugs height
+    - Row 1: frame; 388.66 × 43; fills width; row; gap 6; main center; cross center; hugs height
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "["; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "]"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "{"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "}"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Punctuation]; with Punctuation "#"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "%"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "^"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "*"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "+"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "="; 33.47 × 43; fills width
+    - Row 2: frame; 388.66 × 43; fills width; row; gap 6; main center; cross center; hugs height
+      - Key: instance of _Keys - iPhone [Type=Special Charaters (not capitalized)]; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "\\"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "|"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "~"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "<"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter ">"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "€"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "£"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "¥"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "·"; 33.47 × 43; fills width
+    - Row 3: frame; 388.66 × 43; fills width; row; gap 13.67; cross center; hugs height
+      - Keyboard Switch: instance of _Keys - iPhone [Type=Number and Punctuation Switch - 123]; 46 × 43; fills height
+      - Middle: frame; 269.33 × 43; fills width; row; gap 6; hugs height
+        - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "."; 49.07 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter ","; 49.07 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "?"; 49.07 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "!"; 49.07 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Upper Case]; with Letter "‘"; 49.07 × 43; fills width
+      - Return: instance of _Keys - iPhone [Type=Delete]; with Letter SF Symbol delete.backward; 46 × 43; fills height
+    - Row 4: frame; 388.66 × 43; fills width; row; gap 6; cross center; hugs height
+      - Keyboard Switch: instance of _Keys - iPhone [Type=Keyboard Switch - ABC]; 92.67 × 43
+      - Space: instance of _Keys - iPhone [Type=Space]; 190.99 × 43; fills width
+      - Return: instance of _Keys - iPhone [Type=Return - Default]; 93 × 43
+  - Bottom Buttons: instance of _Bottom Buttons [Type=Emoji and Mic]; 402 × 78; fills width
+=== 4
+- component; 402 × 332; column; padding 24 0 0 0; cross end; hugs height
+  - Background: instance of _Background - Keyboard; 402 × 332; absolute at (0, 0)
+  - Suggestion: instance of _Suggestion; 402 × 25; shown while Show suggestions
+  - Keys: frame; 402 × 205; fills width; column; gap 11; padding 0 6.67 0 6.67; hugs height
+    - Row 1: frame; 388.66 × 43; fills width; row; gap 6; main center; cross center; hugs height
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "q"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "w"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "e"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "r"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "t"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "y"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "u"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "i"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "o"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "p"; 33.47 × 43; fills width
+    - Row 2: frame; 388.66 × 43; fills width; row; gap 6; padding 0 20 0 20; main center; cross center; hugs height
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+    - Row 3: frame; 388.66 × 43; fills width; row; gap 13.33; cross center; hugs height
+      - Shift Key: instance of _Keys - iPhone [Type=Shift - Off]; with Letter SF Symbol shift; 45 × 43
+      - Row 3: frame; 271.99 × 43; fills width; row; gap 6; hugs height
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+      - Delete Key: instance of _Keys - iPhone [Type=Delete]; with Letter SF Symbol delete.backward; 45 × 43
+    - Row 4: frame; 388.66 × 43; fills width; row; gap 6; cross center; hugs height
+      - Keyboard Switch: instance of _Keys - iPhone [Type=Keyboard Switch - 123]; 92.67 × 43
+      - Frame: frame; 190.99 × 43; fills width; row; gap 6; cross center; radius 5
+        - Space: instance of _Keys - iPhone [Type=Space]; 94.99 × 43; fills width
+        - @: instance of _Keys - iPhone [Type=Special Charaters (not capitalized)]; with Character "@"; 42 × 43
+        - .: instance of _Keys - iPhone [Type=Punctuation]; 42 × 43
+      - Return: instance of _Keys - iPhone [Type=Return - Default]; 93 × 43
+  - Bottom Buttons: instance of _Bottom Buttons [Type=Emoji and Mic]; 402 × 78; fills width
+=== 5
+- component; 402 × 307; column; padding 24 0 0 0; cross end; hugs height
+  - Background: instance of _Background - Keyboard; 402 × 307; absolute at (0, 0)
+  - Keys: frame; 402 × 205; column; gap 11; padding 0 6.67 0 6.67; hugs height
+    - Row 1: frame; 388.66 × 43; fills width; row; gap 6; main center; cross center; hugs height
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "q"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "w"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "e"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "r"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "t"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "y"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "u"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "i"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "o"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "p"; 33.47 × 43; fills width
+    - Row 2: frame; 388.66 × 43; fills width; row; gap 6; padding 0 20 0 20; main center; cross center; hugs height
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+    - Row 3: frame; 388.66 × 43; fills width; row; gap 13.33; cross center; hugs height
+      - Shift Key: instance of _Keys - iPhone [Type=Shift - Off]; with Letter SF Symbol shift; 45 × 43
+      - Row 3: frame; 271.99 × 43; fills width; row; gap 6; hugs height
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+      - Delete Key: instance of _Keys - iPhone [Type=Delete]; with Letter SF Symbol delete.backward; 45 × 43
+    - Row 4: frame; 388.66 × 43; fills width; row; gap 6; cross center; hugs height
+      - Keyboard Switch: instance of _Keys - iPhone [Type=Keyboard Switch - 123]; 92.67 × 43
+      - Frame: frame; 190.99 × 43; fills width; row; gap 6; cross center; radius 5
+        - Space: instance of _Keys - iPhone [Type=Punctuation]; 59.66 × 43; fills width
+        - .: instance of _Keys - iPhone [Type=Punctuation]; with Punctuation "/"; 59.66 × 43; fills width
+        - .com: instance of _Keys - iPhone [Type=.com]; 59.66 × 43; fills width
+      - Return: instance of _Keys - iPhone [Type=Return - Default]; 93 × 43
+  - Bottom Buttons: instance of _Bottom Buttons [Type=Emoji and Mic]; 402 × 78; fills width
+=== 6
+- component; 402 × 307; column; padding 24 0 0 0; cross end; hugs height
+  - Background: instance of _Background - Keyboard; 402 × 307; absolute at (0, 0)
+  - Keys: frame; 402 × 205; fills width; column; gap 11; padding 0 6.67 0 6.67; hugs height
+    - Row 1: frame; 388.66 × 43; fills width; row; gap 6; main center; cross center; hugs height
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "q"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "w"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "e"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "r"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "t"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "y"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "u"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "i"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "o"; 33.47 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; with Letter "p"; 33.47 × 43; fills width
+    - Row 2: frame; 388.66 × 43; fills width; row; gap 6; padding 0 20 0 20; main center; cross center; hugs height
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+      - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.41 × 43; fills width
+    - Row 3: frame; 388.66 × 43; fills width; row; gap 13.33; cross center; hugs height
+      - Shift Key: instance of _Keys - iPhone [Type=Shift - Off]; with Letter SF Symbol shift; 45 × 43
+      - Row 3: frame; 271.99 × 43; fills width; row; gap 6; hugs height
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+        - Key: instance of _Keys - iPhone [Type=Lower Case]; 33.71 × 43; fills width
+      - Delete Key: instance of _Keys - iPhone [Type=Delete]; with Letter SF Symbol delete.backward; 45 × 43
+    - Row 4: frame; 388.66 × 43; fills width; row; gap 6; cross center; hugs height
+      - Keyboard Switch: instance of _Keys - iPhone [Type=Keyboard Switch - 123]; 92.67 × 43
+      - Space: instance of _Keys - iPhone [Type=Space]; 181.66 × 43; fills width
+      - .: instance of _Keys - iPhone [Type=Punctuation]; 33.33 × 43
+      - Return: instance of _Keys - iPhone [Type=Return - Prominent]; showing SF Symbol arrow.right; 63 × 43
+  - Bottom Buttons: instance of _Bottom Buttons [Type=Emoji and Mic]; 402 × 78; fills width
+=== 7
+- component; 402 × 308; column; gap 6; padding 24 7.67 74 7.67; hugs height; radius 27 27 62 62
+  - Background: instance of _Background - Keyboard; 402 × 308; absolute at (0, 0)
+  - Frame: frame; 386.66 × 48; fills width; row; gap 6
+    - Key: instance of _Number Pad [Type=Number + ABC]; with Line 1 "1", Line 2 ""; 124.89 × 48; fills width; fills height
+    - Key: instance of _Number Pad [Type=Number + ABC]; with Line 1 "2", Line 2 "ABC"; 124.89 × 48; fills width; fills height
+    - Key: instance of _Number Pad [Type=Number + ABC]; with Line 1 "3"; 124.89 × 48; fills width; fills height
+  - Frame: frame; 386.66 × 48; fills width; row; gap 6
+    - Key: instance of _Number Pad [Type=Number + ABC]; with Line 1 "4", Line 2 "GHI"; 124.89 × 48; fills width; fills height
+    - Key: instance of _Number Pad [Type=Number + ABC]; with Line 1 "5", Line 2 "JKL"; 124.89 × 48; fills width; fills height
+    - Key: instance of _Number Pad [Type=Number + ABC]; with Line 1 "6", Line 2 "MNO"; 124.89 × 48; fills width; fills height
+  - Frame: frame; 386.66 × 48; fills width; row; gap 6
+    - Key: instance of _Number Pad [Type=Number + ABC]; 124.89 × 48; fills width; fills height
+    - Key: instance of _Number Pad [Type=Number + ABC]; 124.89 × 48; fills width; fills height
+    - Key: instance of _Number Pad [Type=Number + ABC]; 124.89 × 48; fills width; fills height
+  - Frame: frame; 386.66 × 48; fills width; row; gap 6
+    - Space: rectangle; 124.89 × 48; fills width; fills height
+    - Key: instance of _Number Pad [Type=Number]; with Line 1 "0"; 124.89 × 48; fills width; fills height
+    - Key: instance of _Number Pad [Type=Delete]; with Line 1 SF Symbol delete.left; 124.89 × 48; fills width; fills height
+=== 8
+- component; 402 × 392; column; hugs height; radius 27 27 62 62
+  - Background: instance of _Background - Keyboard; 402 × 392; absolute at (0, 0)
+  - Search: instance of _Search Emoji; 402 × 57; fills width
+  - Emoji: frame; 402 × 215; fills width; row; gap 14; padding 0 10 0 10; cross center; hugs height
+    - Column 1: frame; 40 × 215; column; gap 5; cross center; hugs height
+      - text "😂"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+      - text "👊"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+      - text "😭"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+      - text "👀"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+    - Column 2: frame; 40 × 215; column; gap 5; cross center; hugs height
+      - text "😩"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+      - text "😊"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+      - text "👻"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+      - text "💨"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+    - Column 3: frame; 40 × 215; column; gap 5; cross center; hugs height
+      - text "😔"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+      - text "🦆"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+      - Frame: frame; 40 × 50; row; gap 10; cross center
+        - IMG_2527: rectangle; 40 × 43; fill image
+      - text "🐵"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+    - Column 4: frame; 40 × 215; column; gap 5; cross center; hugs height
+      - text "😏"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+      - text "👊"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+      - text "👩‍💻"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+      - text "👍"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+    - Column 5: frame; 40 × 215; column; gap 5; cross center; hugs height
+      - text "💕"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+      - text "🙆‍♀️"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+      - text "😭"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+      - text "🙃"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+    - Column 6: frame; 40 × 215; column; gap 5; cross center; hugs height
+      - text "😂"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+      - Frame: frame; 40 × 50; column; gap 10; main center; cross center
+        - IMG_2526: rectangle; 35 × 40; fill image
+      - text "👀"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+      - Frame: frame; 40 × 50; row; gap 10; main center; cross center
+        - IMG_2522: rectangle; 40 × 43; fill image
+    - Column 7: frame; 40 × 215; column; gap 5; cross center; hugs height
+      - text "👁"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+      - Frame: frame; 40 × 50; row; gap 10; main center; cross center
+        - IMG_2536: rectangle; 39.22 × 50.52; fill image
+      - text "🏆"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+      - Frame: frame; 40 × 50; column; gap 10; main center; cross center
+        - IMG_2535: rectangle; 40.04 × 39; fill image
+    - Column 8: frame; 40 × 215; column; gap 5; cross center; hugs height
+      - text "😀"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+      - text "😃"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+      - text "😄"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+      - text "😁"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+    - Column 9: frame; 40 × 215; column; gap 5; cross center; hugs height
+      - text "🥹"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+      - text "😅"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+      - text "😂"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+      - text "🤣"; SF Pro Regular 39/38.5; centered; 40 × 50; color #000000
+  - Emoji Tabs: instance of _Emoji Tabs; 402 × 42; fills width
+  - _Bottom Buttons: instance of _Bottom Buttons [Type=ABC and Mic]; 402 × 78; fills width

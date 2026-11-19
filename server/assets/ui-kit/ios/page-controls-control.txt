@@ -1,0 +1,37 @@
+=== 0
+- component; 402 × 44
+  - Controls container: frame; 112 × 24; at (144, 10); row; padding 8 12 8 12; main center; cross center; hugs width; capsule
+    - Background: instance of _Materials [Style=Ultrathin]; 112 × 24; absolute at (0, 0)
+    - 2-6 Pages: frame; 88 × 8; row; gap 8; main center; cross center; hugs content; slot 2-6 Pages
+      - _Page Indicator: instance of _Page Indicator [Is Active=False, Type=Default]; 8 × 8
+      - _Page Indicator: instance of _Page Indicator [Is Active=False, Type=Default]; 8 × 8
+      - _Page Indicator: instance of _Page Indicator [Is Active=True, Type=Default]; 8 × 8
+      - _Page Indicator: instance of _Page Indicator [Is Active=False, Type=Default]; 8 × 8
+      - _Page Indicator: instance of _Page Indicator [Is Active=False, Type=Default]; 8 × 8
+      - _Page Indicator: instance of _Page Indicator [Is Active=False, Type=Default]; 8 × 8
+=== 1
+- component; 402 × 44
+  - Controls container: frame; 140 × 24; at (130, 10); row; padding 8 12 8 12; main center; cross center; hugs width; capsule
+    - Background: instance of _Materials [Style=Ultrathin]; 140 × 24; absolute at (0, 0)
+    - 7 Pages: frame; 116 × 8; row; gap 10; main center; cross center; hugs content; slot 7 Pages
+      - _Page Indicator: instance of _Page Indicator [Is Active=False, Type=Adjacent]; 8 × 8
+      - _Page Indicator: instance of _Page Indicator [Is Active=False, Type=Default]; 8 × 8
+      - _Page Indicator: instance of _Page Indicator [Is Active=False, Type=Default]; 8 × 8
+      - _Page Indicator: instance of _Page Indicator [Is Active=True, Type=Default]; 8 × 8
+      - _Page Indicator: instance of _Page Indicator [Is Active=False, Type=Default]; 8 × 8
+      - _Page Indicator: instance of _Page Indicator [Is Active=False, Type=Default]; 8 × 8
+      - _Page Indicator: instance of _Page Indicator [Is Active=False, Type=Adjacent]; 8 × 8
+=== 2
+- component; 402 × 44
+  - Controls container: frame; 156 × 24; at (122, 10); row; padding 8 12 8 12; main center; cross center; hugs width; capsule
+    - Background: instance of _Materials [Style=Ultrathin]; 156 × 24; absolute at (0, 0)
+    - 8+ Pages: frame; 132 × 8; row; gap 8; main center; cross center; hugs content; slot 8+ Pages
+      - _Page Indicator: instance of _Page Indicator [Is Active=False, Type=Overflow]; 6 × 6
+      - _Page Indicator: instance of _Page Indicator [Is Active=False, Type=Adjacent]; 8 × 8
+      - _Page Indicator: instance of _Page Indicator [Is Active=False, Type=Default]; 8 × 8
+      - _Page Indicator: instance of _Page Indicator [Is Active=False, Type=Default]; 8 × 8
+      - _Page Indicator: instance of _Page Indicator [Is Active=True, Type=Default]; 8 × 8
+      - _Page Indicator: instance of _Page Indicator [Is Active=False, Type=Default]; 8 × 8
+      - _Page Indicator: instance of _Page Indicator [Is Active=False, Type=Default]; 8 × 8
+      - _Page Indicator: instance of _Page Indicator [Is Active=False, Type=Adjacent]; 8 × 8
+      - _Page Indicator: instance of _Page Indicator [Is Active=False, Type=Overflow]; 6 × 6

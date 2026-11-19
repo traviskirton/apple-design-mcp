@@ -1,0 +1,6 @@
+=== 0
+- component; 600 × 28; row; padding 4 0 5 0; cross center; hugs height
+  - _Column Headers: instance of _Column Headers [First Column=True, Selected=True]; 180 × 19; fills width
+  - _Column Headers: instance of _Column Headers [First Column=False, Selected=False]; 140 × 19
+  - _Column Headers: instance of _Column Headers [First Column=False, Selected=False]; 140 × 19
+  - _Column Headers: instance of _Column Headers [First Column=False, Selected=False]; 140 × 19

@@ -1,0 +1,12 @@
+=== 0
+- component; 162 × 43.5; row; padding 0 3 0 3; main center; cross center; hugs height; uses Screen Width
+  - Frame: frame; 156 × 43.5; fills width; row; gap 8; padding 4 7.5 4.5 7; main center; cross center; radius 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses List/Margin - Top, Toggle/Margin - R, List/Margin - Bottom, List/Min Height, List/Radius
+    - text "Label"; SF Pro Medium 16/18; 97.5 × 18; fills width; color Labels/Primary; property Label
+    - Control: frame; 36 × 22; row; padding 1; cross center; capsule; fill Vibrant Fills/Dark/Primary
+      - Knob: frame; 20 × 20; capsule; fill #ffffff
+=== 1
+- component; 162 × 43.5; row; padding 0 3 0 3; main center; cross center; hugs height; uses Screen Width
+  - Frame: frame; 156 × 43.5; fills width; row; gap 8; padding 4 7.5 4.5 7; main center; cross center; radius 8.5; fill Vibrant Fills/Dark/Secondary; background blur 25; uses List/Margin - Top, Toggle/Margin - R, List/Margin - Bottom, List/Min Height, List/Radius
+    - text "Label"; SF Pro Medium 16/18; 97.5 × 18; fills width; color Labels/Primary; property Label
+    - Control: frame; 36 × 22; row; padding 1; main end; cross center; capsule; fill Colors/Green
+      - Knob: frame; 20 × 20; capsule; fill #ffffff

@@ -1,0 +1,6 @@
+=== 0
+- component; 72 × 72; column; padding 7; main center; cross center; background blur 40
+  - Frame: frame; 58 × 55.39
+    - Gauge: ellipse; 58 × 58; at (0, 0); stroke #000000 6; background blur 40
+    - Gauge: ellipse; 58 × 58; at (0, 0); stroke #000000 6
+    - text SF Symbol app.dashed; SF Pro Semibold 19/28; centered; 58 × 58; at (0, 0); color Vibrant Labels/Dark/Vibrant Secondary; property Symbol

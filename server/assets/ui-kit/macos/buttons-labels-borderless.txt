@@ -1,0 +1,18 @@
+=== 0
+- component; 35 × 16; row; gap 10; main center; cross center; hugs content
+  - text "Label"; SF Pro Medium 13/16; centered; 35 × 16; color Accents/Blue; opacity 50%; property Label
+=== 1
+- component; 35 × 16; row; gap 10; main center; cross center; hugs content
+  - text "Label"; SF Pro Medium 13/16; centered; 35 × 16; color Accents/Blue + #000000 at 18% (linear burn); property Label
+=== 2
+- component; 35 × 16; row; gap 10; main center; cross center; hugs content
+  - text "Label"; SF Pro Medium 13/16; centered; 35 × 16; color Accents/Blue; property Label
+=== 3
+- component; 35 × 16; row; gap 10; main center; cross center; hugs content
+  - text "Label"; SF Pro Medium 13/16; centered; 35 × 16; color Accents - Vibrant/Blue; opacity 50%; blend linear burn; property Label
+=== 4
+- component; 35 × 16; row; gap 10; main center; cross center; hugs content
+  - text "Label"; SF Pro Medium 13/16; centered; 35 × 16; color Accents - Vibrant/Blue + #000000 at 18% (linear burn); blend linear burn; property Label
+=== 5
+- component; 35 × 16; row; gap 10; main center; cross center; hugs content
+  - text "Label"; SF Pro Medium 13/16; centered; 35 × 16; color Accents - Vibrant/Blue; blend linear burn; property Label

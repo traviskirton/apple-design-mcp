@@ -1,0 +1,25 @@
+=== 0
+- component; 659 × 370
+  - Dark - Base: frame; 459 × 100; at (200, 270); row; gap 20
+    - Swatch: instance of _Swatch [Type=Color]; 100 × 100
+    - Swatch: instance of _Swatch [Type=Color]; 100 × 100
+    - Swatch: instance of _Swatch [Type=Color]; 100 × 100
+    - Swatch: instance of _Swatch [Type=Color]; 100 × 100
+  - Dark - Elevated: frame; 459 × 100; at (200, 150); row; gap 20
+    - Swatch: instance of _Swatch [Type=Color]; 100 × 100
+    - Swatch: instance of _Swatch [Type=Color]; 100 × 100
+    - Swatch: instance of _Swatch [Type=Color]; 100 × 100
+    - Swatch: instance of _Swatch [Type=Color]; 100 × 100
+  - Light: frame; 459 × 100; at (200, 30); row; gap 20
+    - Swatch: instance of _Swatch [Type=Color]; 100 × 100
+    - Swatch: instance of _Swatch [Type=Color]; 100 × 100
+    - Swatch: instance of _Swatch [Type=Color]; 100 × 100
+    - Swatch: instance of _Swatch [Type=Color]; 100 × 100
+  - text "Dark - Elevated"; style Footnote/Regular; 94 × 18; at (0, 180); color #000000
+  - text "Dark - Base"; style Footnote/Regular; 72 × 18; at (0, 290); color #000000
+  - text "Light"; style Footnote/Regular; 31 × 18; at (0, 70); color #000000
+  - text "Quaternary"; style Footnote/Regular; 69 × 18; at (560, 0); color #000000
+  - text "Tertiary"; style Footnote/Regular; 47 × 18; at (440, 0); color #000000
+  - text "Secondary"; style Footnote/Regular; 65 × 18; at (320, 0); color #000000
+  - text "Primary"; style Footnote/Regular; 47 × 18; at (200, 0); color #000000
+  - text "Backgrounds"; style Footnote/Emphasized; 83 × 18; at (0, 0); color #000000; property Group

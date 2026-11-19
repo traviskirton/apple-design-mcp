@@ -1,0 +1,3 @@
+=== 0
+- component; 300 × 32; column; padding 8 16 6 16; hugs height
+  - text "Footer text"; SF Pro Regular 13/18; 268 × 18; fills width; color Labels/Secondary at 60%; property Text

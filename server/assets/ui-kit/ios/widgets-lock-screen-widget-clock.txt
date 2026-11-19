@@ -1,0 +1,7 @@
+=== 0
+- component; 72 × 72; row; padding 7; main center; cross center; hugs content; background blur 40
+  - Clock: frame; 58 × 58; capsule; fill Vibrant Fills/Dark/Vibrant Tertiary; background blur 40
+    - Hands and Ticks: frame; 52 × 52; at (3, 3)
+      - Combined Shape: vector shape; 52 × 52; at (0, 0); fill Vibrant Labels/Dark/Vibrant Primary; background blur 135.91
+      - Subtract: vector shape; 30.79 × 26.64; at (2.78, 10.47); fill Vibrant Labels/Dark/Vibrant Secondary
+    - text "NYC"; SF Pro Medium 9.5; 21 × 11; at (18.5, 12.75); color Vibrant Labels/Dark/Vibrant Primary; property City

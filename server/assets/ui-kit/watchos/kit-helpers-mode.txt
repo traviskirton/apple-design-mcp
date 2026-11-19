@@ -1,0 +1,4 @@
+=== 0
+- component; 54 × 19; row; gap 4; padding 3 6 3 6; main center; cross center; hugs height; radius 4; fill Vibrant Fills/Dark/Tertiary; stroke #e6eeff at 75% 1
+  - Union: vector shape; 7.93 × 9.16; fill Vibrant Labels/Dark/Secondary
+  - text "Light"; SF Pro Semibold 11/13; 30.07 × 13; fills width; color Vibrant Labels/Dark/Primary

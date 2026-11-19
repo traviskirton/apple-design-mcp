@@ -1,0 +1,3 @@
+=== 0
+- component; 16 × 15
+  - text SF Symbol magnifyingglass; SF Pro Rounded Medium 13/15; centered; 16 × 15; at (0, 0); color Labels/Primary at 85%

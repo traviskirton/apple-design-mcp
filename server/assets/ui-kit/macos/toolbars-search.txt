@@ -1,0 +1,120 @@
+=== 0
+- component; 130 × 24; row; gap 4; padding 0 6 0 6; cross center; capsule
+  - Liquid Glass: instance of Liquid Glass - Small [Active=False, State=Default]; 130 × 24; absolute at (0, 0)
+  - text SF Symbol magnifyingglass; SF Pro Medium 13/16; centered; 16 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+  - text "Value"; SF Pro Medium 13/16; 98 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Value
+=== 1
+- component; 130 × 24; row; gap 4; padding 0 6 0 6; cross center; capsule
+  - Liquid Glass: instance of Liquid Glass - Small [Active=False, State=Default]; 130 × 24; absolute at (0, 0)
+  - text SF Symbol magnifyingglass; SF Pro Medium 13/16; centered; 16 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn
+  - Text + Cursor: frame; 98 × 18; fills width; row; cross center; hugs height
+    - Cursor: rectangle; 2 × 18; capsule; fill Accents/Blue; uses Cursor/Height
+=== 2
+- component; 130 × 24; row; gap 4; padding 0 6 0 6; cross center; capsule
+  - Liquid Glass: instance of Liquid Glass - Small [Active=False, State=Default]; 130 × 24; absolute at (0, 0)
+  - text SF Symbol magnifyingglass; SF Pro Medium 13/16; centered; 16 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn
+  - Text + Cursor: frame; 98 × 18; fills width; row; cross center; hugs height
+    - text "Value"; SF Pro Medium 13/16; 35 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Value
+    - Cursor: rectangle; 2 × 18; capsule; fill Accents/Blue; uses Cursor/Height
+=== 3
+- component; 130 × 24; row; gap 4; padding 0 6 0 6; cross center; capsule
+  - Liquid Glass: instance of Liquid Glass - Small [Active=False, State=Default]; 130 × 24; absolute at (0, 0)
+  - text SF Symbol magnifyingglass; SF Pro Medium 13/16; centered; 16 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn
+  - text "Value"; SF Pro Medium 13/16; 98 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Value
+=== 4
+- component; 130 × 24; row; gap 4; padding 0 6 0 6; cross center; capsule
+  - Liquid Glass: instance of Liquid Glass - Small [Active=False, State=Default]; 130 × 24; absolute at (0, 0)
+  - text SF Symbol magnifyingglass; SF Pro Medium 13/16; centered; 16 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn
+  - text "Search"; SF Pro Medium 13/16; 98 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn; property Placeholder
+=== 5
+- component; 130 × 36; row; gap 6; padding 0 10 0 10; cross center; capsule
+  - Liquid Glass: instance of Liquid Glass - Small [Active=False, State=Default]; 130 × 36; absolute at (0, 0)
+  - text SF Symbol magnifyingglass; SF Pro Medium 13/16; centered; 16 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+  - text "Value"; SF Pro Medium 13/16; 88 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Value
+=== 6
+- component; 130 × 36; row; gap 6; padding 0 10 0 10; cross center; capsule
+  - Liquid Glass: instance of Liquid Glass - Small [Active=False, State=Default]; 130 × 36; absolute at (0, 0)
+  - text SF Symbol magnifyingglass; SF Pro Medium 13/16; centered; 16 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn
+  - Text + Cursor: frame; 88 × 18; fills width; row; cross center; hugs height
+    - Cursor: rectangle; 2 × 18; capsule; fill Accents/Blue; uses Cursor/Height
+=== 7
+- component; 130 × 36; row; gap 6; padding 0 10 0 10; cross center; capsule
+  - Liquid Glass: instance of Liquid Glass - Small [Active=False, State=Default]; 130 × 36; absolute at (0, 0)
+  - text SF Symbol magnifyingglass; SF Pro Medium 13/16; centered; 16 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn
+  - Text + Cursor: frame; 88 × 18; fills width; row; cross center; hugs height
+    - text "Value"; SF Pro Medium 13/16; 35 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Value
+    - Cursor: rectangle; 2 × 18; capsule; fill Accents/Blue; uses Cursor/Height
+=== 8
+- component; 130 × 36; row; gap 6; padding 0 10 0 10; cross center; capsule
+  - Liquid Glass: instance of Liquid Glass - Small [Active=False, State=Default]; 130 × 36; absolute at (0, 0)
+  - text SF Symbol magnifyingglass; SF Pro Medium 13/16; centered; 16 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn
+  - text "Value"; SF Pro Medium 13/16; 88 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Value
+=== 9
+- component; 130 × 36; row; gap 6; padding 0 10 0 10; cross center; capsule
+  - Liquid Glass: instance of Liquid Glass - Small [Active=False, State=Default]; 130 × 36; absolute at (0, 0)
+  - text SF Symbol magnifyingglass; SF Pro Medium 13/16; centered; 16 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn
+  - text "Search"; SF Pro Medium 13/16; 88 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn; property Placeholder
+=== 10
+- component; 130 × 24; row; gap 4; padding 0 6 0 6; cross center; capsule
+  - Liquid Glass: instance of Liquid Glass - Small [Active=True, State=Default]; 130 × 24; absolute at (0, 0)
+  - text SF Symbol magnifyingglass; SF Pro Medium 13/16; centered; 16 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+  - text "Value"; SF Pro Medium 13/16; 98 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Value
+=== 11
+- component; 130 × 24; row; gap 4; padding 0 6 0 6; cross center; capsule
+  - Liquid Glass: instance of Liquid Glass - Small [Active=True, State=Default]; 130 × 24; absolute at (0, 0)
+  - Focus Ring Thick: frame; 130 × 24; absolute at (0, 0); capsule; fill #ffffff (multiply); shadow x 0 y 0 blur 0 spread 3.5 #007aff at 25%; blend linear burn
+  - Focus Ring Thin: frame; 130 × 24; absolute at (0, 0); capsule; fill #ffffff (multiply); shadow x 0 y 0 blur 0 spread 1 #007aff at 15%; blend linear burn
+  - text SF Symbol magnifyingglass; SF Pro Medium 13/16; centered; 16 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn
+  - Text + Cursor: frame; 98 × 18; fills width; row; cross center; hugs height
+    - Cursor: rectangle; 2 × 18; capsule; fill Accents/Blue; uses Cursor/Height
+=== 12
+- component; 130 × 24; row; gap 4; padding 0 6 0 6; cross center; capsule
+  - Liquid Glass: instance of Liquid Glass - Small [Active=True, State=Default]; 130 × 24; absolute at (0, 0)
+  - Focus Ring Thick: frame; 130 × 24; absolute at (0, 0); capsule; fill #ffffff (multiply); shadow x 0 y 0 blur 0 spread 3.5 #007aff at 25%; blend linear burn
+  - Focus Ring Thin: frame; 130 × 24; absolute at (0, 0); capsule; fill #ffffff (multiply); shadow x 0 y 0 blur 0 spread 1 #007aff at 15%; blend linear burn
+  - text SF Symbol magnifyingglass; SF Pro Medium 13/16; centered; 16 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn
+  - Text + Cursor: frame; 98 × 18; fills width; row; cross center; hugs height
+    - text "Value"; SF Pro Medium 13/16; 35 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Value
+    - Cursor: rectangle; 2 × 18; capsule; fill Accents/Blue; uses Cursor/Height
+=== 13
+- component; 130 × 24; row; gap 4; padding 0 6 0 6; cross center; capsule
+  - Liquid Glass: instance of Liquid Glass - Small [Active=True, State=Default]; 130 × 24; absolute at (0, 0)
+  - text SF Symbol magnifyingglass; SF Pro Medium 13/16; centered; 16 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn
+  - text "Value"; SF Pro Medium 13/16; 98 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Value
+=== 14
+- component; 130 × 24; row; gap 4; padding 0 6 0 6; cross center; capsule
+  - Liquid Glass: instance of Liquid Glass - Small [Active=True, State=Default]; 130 × 24; absolute at (0, 0)
+  - text SF Symbol magnifyingglass; SF Pro Medium 13/16; centered; 16 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn
+  - text "Search"; SF Pro Medium 13/16; 98 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn; property Placeholder
+=== 15
+- component; 130 × 36; row; gap 6; padding 0 10 0 10; cross center; capsule
+  - Liquid Glass: instance of Liquid Glass - Small [Active=True, State=Default]; 130 × 36; absolute at (0, 0)
+  - text SF Symbol magnifyingglass; SF Pro Medium 13/16; centered; 16 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn
+  - text "Value"; SF Pro Medium 13/16; 88 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Tertiary; blend linear burn; property Value
+=== 16
+- component; 130 × 36; row; gap 6; padding 0 10 0 10; cross center; capsule
+  - Liquid Glass: instance of Liquid Glass - Small [Active=True, State=Default]; 130 × 36; absolute at (0, 0)
+  - Focus Ring Thick: frame; 130 × 36; absolute at (0, 0); capsule; fill #ffffff (multiply); shadow x 0 y 0 blur 0 spread 3.5 #007aff at 25%; blend linear burn
+  - Focus Ring Thin: frame; 130 × 36; absolute at (0, 0); capsule; fill #ffffff (multiply); shadow x 0 y 0 blur 0 spread 1 #007aff at 15%; blend linear burn
+  - text SF Symbol magnifyingglass; SF Pro Medium 13/16; centered; 16 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn
+  - Text + Cursor: frame; 88 × 18; fills width; row; cross center; hugs height
+    - Cursor: rectangle; 2 × 18; capsule; fill Accents/Blue; uses Cursor/Height
+=== 17
+- component; 130 × 36; row; gap 6; padding 0 10 0 10; cross center; capsule
+  - Liquid Glass: instance of Liquid Glass - Small [Active=True, State=Default]; 130 × 36; absolute at (0, 0)
+  - Focus Ring Thick: frame; 130 × 36; absolute at (0, 0); capsule; fill #ffffff (multiply); shadow x 0 y 0 blur 0 spread 3.5 #007aff at 25%; blend linear burn
+  - Focus Ring Thin: frame; 130 × 36; absolute at (0, 0); capsule; fill #ffffff (multiply); shadow x 0 y 0 blur 0 spread 1 #007aff at 15%; blend linear burn
+  - text SF Symbol magnifyingglass; SF Pro Medium 13/16; centered; 16 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn
+  - Text + Cursor: frame; 88 × 18; fills width; row; cross center; hugs height
+    - text "Value"; SF Pro Medium 13/16; 35 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Value
+    - Cursor: rectangle; 2 × 18; capsule; fill Accents/Blue; uses Cursor/Height
+=== 18
+- component; 130 × 36; row; gap 6; padding 0 10 0 10; cross center; capsule
+  - Liquid Glass: instance of Liquid Glass - Small [Active=True, State=Default]; 130 × 36; absolute at (0, 0)
+  - text SF Symbol magnifyingglass; SF Pro Medium 13/16; centered; 16 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn
+  - text "Value"; SF Pro Medium 13/16; 88 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Primary; blend linear burn; property Value
+=== 19
+- component; 130 × 36; row; gap 6; padding 0 10 0 10; cross center; capsule
+  - Liquid Glass: instance of Liquid Glass - Small [Active=True, State=Default]; 130 × 36; absolute at (0, 0)
+  - text SF Symbol magnifyingglass; SF Pro Medium 13/16; centered; 16 × 16; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn
+  - text "Search"; SF Pro Medium 13/16; 88 × 16; fills width; color Labels - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn; property Placeholder

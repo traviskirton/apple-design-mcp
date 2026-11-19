@@ -1,0 +1,44 @@
+=== 0
+- component; 121 × 24; row; padding 2; cross center; hugs width
+  - BG: instance of Liquid Glass - Small [Active=False, State=Default]; 121 × 24; absolute at (0, 0)
+  - Items: frame; 117 × 20; row; gap 2; cross center; hugs content; slot Items
+    - Button: instance of _Buttons/Medium [State=Idle]; 24 × 20; blend linear burn
+    - Separator: instance of _Separator [Size=Medium, Next to Selected=False]; 3 × 16
+    - Button: instance of _Buttons/Medium [State=Idle]; 24 × 20; blend linear burn
+    - Separator: instance of _Separator [Size=Medium, Next to Selected=True]; 3 × 16
+    - Button: instance of _Buttons/Medium [State=Selected]; 24 × 20; blend linear burn
+    - Separator: instance of _Separator [Size=Medium, Next to Selected=True]; 3 × 16
+    - Button: instance of _Buttons/Medium [State=Idle]; 24 × 20; blend linear burn
+=== 1
+- component; 145 × 36; row; padding 4; cross center; hugs content
+  - BG: instance of Liquid Glass - Small [Active=False, State=Default]; 145 × 36; absolute at (0, 0)
+  - Items: frame; 137 × 28; row; cross center; hugs content; slot Items
+    - Button: instance of _Buttons/XL [State=Idle]; 32 × 28; blend linear burn
+    - Separator: instance of _Separator [Size=XL, Next to Selected=False]; 3 × 20
+    - Button: instance of _Buttons/XL [State=Idle]; 32 × 28; blend linear burn
+    - Separator: instance of _Separator [Size=XL, Next to Selected=True]; 3 × 20
+    - Button: instance of _Buttons/XL [State=Selected]; 32 × 28; blend linear burn
+    - Separator: instance of _Separator [Size=XL, Next to Selected=True]; 3 × 20
+    - Button: instance of _Buttons/XL [State=Idle]; 32 × 28; blend linear burn
+=== 2
+- component; 121 × 24; row; padding 2; cross center; hugs width
+  - BG: instance of Liquid Glass - Small [Active=True, State=Default]; 121 × 24; absolute at (0, 0)
+  - Items: frame; 117 × 20; row; gap 2; cross center; hugs content; slot Items
+    - Button: instance of _Buttons/Medium [State=Idle]; 24 × 20; blend linear burn
+    - Separator: instance of _Separator [Size=Medium, Next to Selected=False]; 3 × 16
+    - Button: instance of _Buttons/Medium [State=Idle]; 24 × 20; blend linear burn
+    - Separator: instance of _Separator [Size=Medium, Next to Selected=True]; 3 × 16
+    - Button: instance of _Buttons/Medium [State=Selected]; 24 × 20; blend linear burn
+    - Separator: instance of _Separator [Size=Medium, Next to Selected=True]; 3 × 16
+    - Button: instance of _Buttons/Medium [State=Idle]; 24 × 20; blend linear burn
+=== 3
+- component; 145 × 36; row; padding 4; cross center; hugs content
+  - BG: instance of Liquid Glass - Small [Active=True, State=Default]; 145 × 36; absolute at (0, 0)
+  - Items: frame; 137 × 28; row; cross center; hugs content; slot Items
+    - Button: instance of _Buttons/XL [State=Idle]; 32 × 28; blend linear burn
+    - Separator: instance of _Separator [Size=XL, Next to Selected=False]; 3 × 20
+    - Button: instance of _Buttons/XL [State=Idle]; 32 × 28; blend linear burn
+    - Separator: instance of _Separator [Size=XL, Next to Selected=True]; 3 × 20
+    - Button: instance of _Buttons/XL [State=Selected]; 32 × 28; blend linear burn
+    - Separator: instance of _Separator [Size=XL, Next to Selected=True]; 3 × 20
+    - Button: instance of _Buttons/XL [State=Idle]; 32 × 28; blend linear burn

@@ -1,0 +1,3 @@
+=== 0
+- component; 100 × 11
+  - Separator: rectangle; 102.67 × 1; at (-1.33, 5); fill Fills - Vibrant (Use Plus Lighter | Darker)/Secondary; blend linear burn

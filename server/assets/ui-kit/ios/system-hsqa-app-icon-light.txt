@@ -1,0 +1,30 @@
+=== 0
+- component; 38 × 38; row; gap 10; padding 10; main center; cross center; blend linear burn
+  - 􀇷: vector shape; 17.08 × 17.08; fill Labels/Primary; property Symbol
+=== 1
+- component; 38 × 38; row; gap 10; padding 10; main center; cross center; blend linear burn
+  - Widget Small: vector shape; 17.8 × 17.8; fill Labels/Primary
+=== 2
+- component; 38 × 38; row; gap 10; padding 10; main center; cross center; blend linear burn
+  - Widget Medium: vector shape; 28.85 × 17.86; fill Labels/Primary
+=== 3
+- component; 38 × 38; row; gap 10; padding 10; main center; cross center; blend linear burn
+  - Widget Large: vector shape; 24 × 23; fill Labels/Primary
+=== 4
+- component; 38 × 38; row; gap 10; padding 10; main center; cross center; blend linear burn
+  - Widget XL: vector shape; 22 × 25; fill Labels/Primary
+=== 5
+- component; 38 × 38; row; gap 10; padding 10; main center; cross center; radius 8; fill Fills - Vibrant/Tertiary; blend linear burn
+  - 􀇷: vector shape; 17.08 × 17.08; fill Labels/Primary; property Symbol
+=== 6
+- component; 38 × 38; row; gap 10; padding 10; main center; cross center; radius 8; fill Fills - Vibrant/Tertiary; blend linear burn
+  - Widget Small: vector shape; 17.8 × 17.8; fill Labels/Primary
+=== 7
+- component; 38 × 38; row; gap 10; padding 10; main center; cross center; radius 8; fill Fills - Vibrant/Tertiary; blend linear burn
+  - Widget Large: vector shape; 24 × 23; fill Labels/Primary
+=== 8
+- component; 38 × 38; row; gap 10; padding 10; main center; cross center; radius 8; fill Fills - Vibrant/Tertiary; blend linear burn
+  - Widget Medium: vector shape; 28.85 × 17.86; fill Labels/Primary
+=== 9
+- component; 38 × 38; row; gap 10; padding 10; main center; cross center; radius 8; fill Fills - Vibrant/Tertiary; blend linear burn
+  - Widget XL: vector shape; 22 × 25; fill Labels/Primary

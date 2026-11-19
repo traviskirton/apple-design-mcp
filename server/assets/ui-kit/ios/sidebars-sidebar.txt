@@ -1,0 +1,47 @@
+=== 0
+- component; 320 × 802; column; padding 32 10 10 10
+  - Sidebar Items: frame; 300 × 720; fills width; column; hugs height; slot Sidebar Items
+    - Sidebar Toolbar: frame; 300 × 54; fills width; row; space between; padding 0 0 10 0; hugs height
+      - Leading: frame; 200 × 44; fills width; row; gap 12; cross center; hugs height
+        - Edit: instance of _Buttons - 44pt [Type=Text]; 60 × 44
+      - Trailing: frame; 100 × 44; row; gap 12; cross center; hugs content
+        - Button: instance of _Buttons - 44pt [Type=Symbol]; 44 × 44
+        - Button: instance of _Buttons - 44pt [Type=Symbol]; 44 × 44
+    - instance of Sidebar Search Field; 300 × 64; fills width
+    - Sidebar Row: instance of Sidebar Row [State=Default, Indent Level=0]; 300 × 44; fills width
+    - Sidebar Row: instance of Sidebar Row [State=Default, Indent Level=0]; 300 × 44; fills width
+    - Sidebar Row: instance of Sidebar Row [State=Default, Indent Level=0]; 300 × 44; fills width
+    - Sidebar Row: instance of Sidebar Row [State=Default, Indent Level=0]; 288 × 44
+    - instance of Section Header; 300 × 54; fills width
+    - Sidebar Row: instance of Sidebar Row [State=Default, Indent Level=0]; 300 × 44; fills width
+    - Sidebar Row: instance of Sidebar Row [State=Selected, Indent Level=0]; 300 × 44; fills width
+    - Sidebar Row: instance of Sidebar Row [State=Default, Indent Level=0]; 300 × 44; fills width
+    - instance of Section Header; 300 × 54; fills width
+    - instance of Section Header; 300 × 54; fills width
+    - Sidebar Row: instance of Sidebar Row [State=Default, Indent Level=0]; 300 × 44; fills width
+    - Sidebar Row: instance of Sidebar Row [State=Default, Indent Level=0]; 300 × 44; fills width
+    - Sidebar Row: instance of Sidebar Row [State=Default, Indent Level=0]; 300 × 44; fills width
+=== 1
+- component; 320 × 802; column; padding 10
+  - Sidebar Items: frame; 300 × 720; fills width; column; hugs height; slot Sidebar Items
+    - Sidebar Toolbar: frame; 300 × 54; fills width; row; space between; padding 0 0 10 0; hugs height
+      - Leading: frame; 200 × 44; fills width; row; gap 12; padding 0 0 0 11; cross center; hugs height
+        - Window Controls: instance of _Window Controls [Window State=Active]; 41 × 22
+        - Edit: instance of _Buttons - 44pt [Type=Text]; 60 × 44
+      - Trailing: frame; 100 × 44; row; gap 12; cross center; hugs content
+        - Button: instance of _Buttons - 44pt [Type=Symbol]; 44 × 44
+        - Button: instance of _Buttons - 44pt [Type=Symbol]; 44 × 44
+    - instance of Sidebar Search Field; 300 × 64; fills width
+    - Sidebar Row: instance of Sidebar Row [State=Default, Indent Level=0]; 300 × 44; fills width
+    - Sidebar Row: instance of Sidebar Row [State=Default, Indent Level=0]; 300 × 44; fills width
+    - Sidebar Row: instance of Sidebar Row [State=Default, Indent Level=0]; 300 × 44; fills width
+    - Sidebar Row: instance of Sidebar Row [State=Default, Indent Level=0]; 288 × 44
+    - instance of Section Header; 300 × 54; fills width
+    - Sidebar Row: instance of Sidebar Row [State=Default, Indent Level=0]; 300 × 44; fills width
+    - Sidebar Row: instance of Sidebar Row [State=Selected, Indent Level=0]; 300 × 44; fills width
+    - Sidebar Row: instance of Sidebar Row [State=Default, Indent Level=0]; 300 × 44; fills width
+    - instance of Section Header; 300 × 54; fills width
+    - instance of Section Header; 300 × 54; fills width
+    - Sidebar Row: instance of Sidebar Row [State=Default, Indent Level=0]; 300 × 44; fills width
+    - Sidebar Row: instance of Sidebar Row [State=Default, Indent Level=0]; 300 × 44; fills width
+    - Sidebar Row: instance of Sidebar Row [State=Default, Indent Level=0]; 300 × 44; fills width

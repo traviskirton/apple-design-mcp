@@ -1,0 +1,69 @@
+=== 0
+- component; 67 × 24; column; padding 0 16 0 16; main center; cross center; hugs width; radius 6; uses Button/Padding - Horizontal, Global/Height, Button/Radius
+  - Label: instance of _Labels - Borderless [Context=Content Area, State=Disabled]; 35 × 16
+=== 1
+- component; 67 × 24; column; padding 0 16 0 16; main center; cross center; hugs width; radius 6; uses Button/Padding - Horizontal, Global/Height, Button/Radius
+  - BG: instance of _Control BG/Bordered [Context=Content Area, State=Disabled, On=False]; 67 × 24; absolute at (0, 0)
+  - Label: instance of _Label [Active=Active, Context=Content Area, State=Disabled, Style=Bordered, On=False]; 35 × 16
+=== 2
+- component; 67 × 24; column; padding 0 16 0 16; main center; cross center; hugs width; radius 6; uses Button/Padding - Horizontal, Global/Height, Button/Radius
+  - Label: instance of _Labels - Borderless [Context=Content Area, State=Clicked]; 35 × 16
+=== 3
+- component; 67 × 24; column; padding 0 16 0 16; main center; cross center; hugs width; radius 6; uses Button/Padding - Horizontal, Global/Height, Button/Radius
+  - BG: instance of _Control BG/Bordered [Context=Content Area, State=Clicked, On=False]; 67 × 24; absolute at (0, 0)
+  - Label: instance of _Label [Active=Active, Context=Content Area, State=Clicked, Style=Bordered, On=False]; 35 × 16
+=== 4
+- component; 67 × 24; column; padding 0 16 0 16; main center; cross center; hugs width; radius 6; uses Button/Padding - Horizontal, Global/Height, Button/Radius
+  - Label: instance of _Labels - Borderless [Context=Content Area, State=Idle]; 35 × 16
+=== 5
+- component; 67 × 24; column; padding 0 16 0 16; main center; cross center; hugs width; radius 6; uses Button/Padding - Horizontal, Global/Height, Button/Radius
+  - BG: instance of _Control BG/Bordered [Context=Content Area, State=Idle, On=False]; 67 × 24; absolute at (0, 0)
+  - Label: instance of _Label [Active=Active, Context=Content Area, State=Idle, Style=Bordered, On=False]; 35 × 16
+=== 6
+- component; 67 × 24; column; padding 0 16 0 16; main center; cross center; hugs width; radius 6; uses Button/Padding - Horizontal, Global/Height, Button/Radius
+  - BG: instance of _Control BG/Bordered - Prominent - Destructive [Context=Content Area, State=Disabled]; 67 × 24; absolute at (0, 0); opacity 40%
+  - Label: instance of _Labels - Preferred [Context=Content Area, State=Disabled]; 35 × 16
+=== 7
+- component; 67 × 24; column; padding 0 16 0 16; main center; cross center; hugs width; radius 6; uses Button/Padding - Horizontal, Global/Height, Button/Radius
+  - BG: instance of _Control BG/Bordered - Prominent [Context=Content Area, State=Disabled]; 67 × 24; absolute at (0, 0); opacity 40%
+  - Label: instance of _Labels - Preferred [Context=Content Area, State=Disabled]; 35 × 16
+=== 8
+- component; 67 × 24; column; padding 0 16 0 16; main center; cross center; hugs width; radius 6; uses Button/Padding - Horizontal, Global/Height, Button/Radius
+  - BG: instance of _Control BG/Bordered - Destructive [State=Disabled]; 67 × 24; absolute at (0, 0); opacity 10%
+  - Label: instance of _Labels - Destructive [Context=Content Area, State=Disabled]; 35 × 16
+=== 9
+- component; 67 × 24; column; padding 0 16 0 16; main center; cross center; hugs width; radius 6; uses Button/Padding - Horizontal, Global/Height, Button/Radius
+  - BG: instance of _Control BG/Bordered - Tinted [State=Disabled]; 67 × 24; absolute at (0, 0); opacity 12%
+  - Label: instance of _Labels - Tinted [Context=Content Area, State=Disabled, Window State=Active]; 35 × 16
+=== 10
+- component; 67 × 24; column; padding 0 16 0 16; main center; cross center; hugs width; radius 6; uses Button/Padding - Horizontal, Global/Height, Button/Radius
+  - BG: instance of _Control BG/Bordered - Prominent - Destructive [Context=Content Area, State=Clicked]; 67 × 24; absolute at (0, 0)
+  - Label: instance of _Labels - Preferred [Context=Content Area, State=Clicked]; 35 × 16
+=== 11
+- component; 67 × 24; column; padding 0 16 0 16; main center; cross center; hugs width; radius 6; uses Button/Padding - Horizontal, Global/Height, Button/Radius
+  - BG: instance of _Control BG/Bordered - Prominent [Context=Content Area, State=Clicked]; 67 × 24; absolute at (0, 0)
+  - Label: instance of _Labels - Preferred [Context=Content Area, State=Clicked]; 35 × 16
+=== 12
+- component; 67 × 24; column; padding 0 16 0 16; main center; cross center; hugs width; radius 6; uses Button/Padding - Horizontal, Global/Height, Button/Radius
+  - BG: instance of _Control BG/Bordered - Destructive [State=Clicked]; 67 × 24; absolute at (0, 0); opacity 28%
+  - Label: instance of _Labels - Destructive [Context=Content Area, State=Clicked]; 35 × 16
+=== 13
+- component; 67 × 24; column; padding 0 16 0 16; main center; cross center; hugs width; radius 6; uses Button/Padding - Horizontal, Global/Height, Button/Radius
+  - BG: instance of _Control BG/Bordered - Tinted [State=Clicked]; 67 × 24; absolute at (0, 0); opacity 28%
+  - Label: instance of _Labels - Tinted [Context=Content Area, State=Clicked, Window State=Active]; 35 × 16
+=== 14
+- component; 67 × 24; column; padding 0 16 0 16; main center; cross center; hugs width; radius 6; uses Button/Padding - Horizontal, Global/Height, Button/Radius
+  - BG: instance of _Control BG/Bordered - Prominent - Destructive [Context=Content Area, State=Idle]; 67 × 24; absolute at (0, 0)
+  - Label: instance of _Labels - Preferred [Context=Content Area, State=Idle]; 35 × 16
+=== 15
+- component; 67 × 24; column; padding 0 16 0 16; main center; cross center; hugs width; radius 6; uses Button/Padding - Horizontal, Global/Height, Button/Radius
+  - BG: instance of _Control BG/Bordered - Prominent [Context=Content Area, State=Idle]; 67 × 24; absolute at (0, 0)
+  - Label: instance of _Labels - Preferred [Context=Content Area, State=Idle]; 35 × 16
+=== 16
+- component; 67 × 24; column; padding 0 16 0 16; main center; cross center; hugs width; radius 6; uses Button/Padding - Horizontal, Global/Height, Button/Radius
+  - BG: instance of _Control BG/Bordered - Destructive [State=Idle]; 67 × 24; absolute at (0, 0); opacity 20%
+  - Label: instance of _Labels - Destructive [Context=Content Area, State=Idle]; 35 × 16
+=== 17
+- component; 67 × 24; column; padding 0 16 0 16; main center; cross center; hugs width; radius 6; uses Button/Padding - Horizontal, Global/Height, Button/Radius
+  - BG: instance of _Control BG/Bordered - Tinted [State=Idle]; 67 × 24; absolute at (0, 0); opacity 20%
+  - Label: instance of _Labels - Tinted [Context=Content Area, State=Idle, Window State=Active]; 35 × 16
