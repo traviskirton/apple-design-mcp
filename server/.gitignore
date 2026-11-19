@@ -2,20 +2,6 @@
 dist/
 src/pack/hig.js
 
-# One SVG per SF Symbol, written by the extractor on a Mac
-assets/symbols/
-
-# The other eight weights of every SF Symbol, 256 files each, written by extract-symbols --weights
-assets/symbol-weights/
-
-# Apple's technology artwork (SVG and PNG), written by scripts/build-technology-pack.mjs on a Mac
-assets/technologies/
-
-# One text file per UI kit component, written by scripts/build-ui-kit-pack.mjs from the kits' .fig files
-assets/ui-kit/
-
-# One SVG per UI kit component variant, exported from Figma by scripts/export-ui-kit-svg.mjs
-assets/ui-kit-svg/
-
-# Apple's product bezel pictures (PNG), written by scripts/build-bezel-pack.mjs on a Mac
-assets/bezels/
+# assets/ is committed: the symbols, symbol weights, technology artwork, UI kit outlines and
+# drawings, and bezels are built on a Mac and are needed by every deploy (scripts/check-assets.mjs).
+.DS_Store
