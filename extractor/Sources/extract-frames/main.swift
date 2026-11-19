@@ -243,7 +243,7 @@ struct SVGResult { var svg: String; var notes: Set<String> }
 func makeSVG(_ f: BuiltFrame, decimals: Int) -> SVGResult {
     let screen = screenPath(f)
     var notes = Set<String>()
-    var fills: [Fill] = []
+    var under: [Fill] = [], over: [Fill] = [], slices: [[Fill]] = []
     for (placed, button) in layers(f) {
         var got: [Fill] = []
         if let placed {
@@ -261,8 +261,28 @@ func makeSVG(_ f: BuiltFrame, decimals: Int) -> SVGResult {
             notes.insert("buttons without art drawn as flat dark bars")
             got = [Fill(path: CGPath(rect: button.rect, transform: nil), evenOdd: false, color: RGB(r: 0.23, g: 0.23, b: 0.23))]
         }
-        fills += got
+        if let button { if button.onTop { over += got } else { under += got } } else { slices.append(got) }
     }
+    // Join the slices. Each slice draws the same layers, clipped to its own rectangle, so the n-th
+    // layer of every slice is one shape cut into pieces. Uniting the pieces with the same paint removes
+    // the seams a browser shows where two pieces meet, without overlapping translucent paint.
+    var body: [(key: String, fill: Fill)] = []
+    for slice in slices {
+        for (n, fill) in slice.enumerated() {
+            let key = "\(n)|\(fill.color.hex)|\(num(fill.opacity))"
+            let path = fill.evenOdd ? fill.path.normalized(using: .evenOdd) : fill.path
+            if let i = body.firstIndex(where: { $0.key == key }) {
+                body[i].fill.path = body[i].fill.path.union(path)
+            } else {
+                body.append((key, Fill(path: path, evenOdd: false, opacity: fill.opacity, color: fill.color)))
+            }
+        }
+    }
+    if slices.count > 1 {
+        // Keep the drawing order: by layer number, then first appearance.
+        body.sort { Int($0.key.split(separator: "|")[0])! < Int($1.key.split(separator: "|")[0])! }
+    }
+    var fills = under + body.map(\.fill) + over
     // Paint below 6% opacity (faint highlights) is invisible at frame sizes and costs bytes.
     if fills.contains(where: { $0.opacity < 0.06 }) { notes.insert("highlights under 6% opacity dropped") }
     fills = fills.filter { $0.opacity >= 0.06 }
