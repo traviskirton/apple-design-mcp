@@ -116,7 +116,7 @@ func place(_ p: CGPDFPage, in dest: CGRect) -> Placed {
 }
 
 /// True for the placeholder slices that newer chromes ship ("unused" text in place of art).
-func isPlaceholder(_ p: CGPDFPage) -> Bool { readPage(p).unsupported.contains("text") }
+func isPlaceholder(_ p: CGPDFPage) -> Bool { readPage(p, drawText: false).unsupported.contains("text") }
 
 func buildFrame(chrome: String, screen: ScreenSpec) -> BuiltFrame? {
     let res = chromeDir.appendingPathComponent("\(chrome).devicechrome/Contents/Resources")
@@ -247,7 +247,7 @@ func makeSVG(_ f: BuiltFrame, decimals: Int) -> SVGResult {
     for (placed, button) in layers(f) {
         var got: [Fill] = []
         if let placed {
-            let (list, unsupported) = readPage(placed.page, transform: placed.transform, clip: CGPath(rect: placed.clip, transform: nil))
+            let (list, unsupported) = readPage(placed.page, transform: placed.transform, clip: CGPath(rect: placed.clip, transform: nil), drawText: false)
             got = list
             if unsupported.contains("images"), let button {
                 // Older chromes draw some buttons as bitmaps: use a dark rounded bar of the same size.

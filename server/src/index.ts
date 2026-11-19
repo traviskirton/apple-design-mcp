@@ -13,15 +13,16 @@ import { deviceFrames, framePack } from "./frames.js";
 import { higPack, lookupHig, platformsIn, readPage } from "./hig.js";
 import { lookupSymbols, readSymbols, symbolPack } from "./symbols.js";
 import type { ShapeLoader } from "./symbols.js";
+import { technologyAssets, technologyPack } from "./technologies.js";
 
 const SERVER_NAME = "apple-design";
-const SERVER_VERSION = "0.6.0";
+const SERVER_VERSION = "0.7.0";
 
 const HIG_DATE = higPack.pack_version;
 
 const PACK = {
   status: "partial",
-  note: "Human Interface Guidelines text, device screen sizes, device frames and SF Symbols (names and regular-weight shapes) are loaded. UI kits and design values are not loaded yet.",
+  note: "Human Interface Guidelines text, device screen sizes, device frames, SF Symbols (names and regular-weight shapes) and technology artwork (Sign in with Apple, AirPlay and others) are loaded. UI kits and design values are not loaded yet.",
   pack_version: higPack.pack_version,
   sources: [
     {
@@ -47,8 +48,14 @@ const PACK = {
       version: `${framePack.source.version}, read at ${framePack.generated_at}`,
       frames: framePack.source.frames,
     },
+    {
+      name: technologyPack.source.name,
+      version: `copied from ${technologyPack.source.url} at ${technologyPack.generated_at}`,
+      technologies: technologyPack.source.technologies,
+      assets: technologyPack.source.assets,
+    },
   ],
-  tools: ["get_pack_info", "search_hig", "get_hig_page", "get_device_metrics", "get_device_frame", "search_symbols", "get_symbol"],
+  tools: ["get_pack_info", "search_hig", "get_hig_page", "get_device_metrics", "get_device_frame", "search_symbols", "get_symbol", "get_technology_assets"],
   planned_tools: ["get_design_values", "make_asset_catalog", "make_app_icon", "search_ui_kit", "frame_screenshot"],
 };
 
@@ -85,7 +92,8 @@ function buildServer(app: string, env: Env, origin: string): McpServer {
         "every component, device and topic involved. It returns the guideline text itself, so one call is usually " +
         "enough; use get_hig_page only for a section that search_hig lists but does not include. For the size of a " +
         "device's screen, call get_device_metrics instead of estimating. For icons, call search_symbols once with " +
-        "every icon the design needs; it returns real SF Symbols as SVG, so do not substitute another icon set.",
+        "every icon the design needs; it returns real SF Symbols as SVG, so do not substitute another icon set. For " +
+        "an Apple technology's own logo or badge, such as Sign in with Apple or AirPlay, call get_technology_assets.",
     },
   );
 
@@ -281,6 +289,33 @@ function buildServer(app: string, env: Env, origin: string): McpServer {
     async (args) => {
       const result = await readSymbols(args.names, loadShape, origin);
       return reply(app, "get_symbol", args, result.text, !result.ok);
+    },
+  );
+
+  server.registerTool(
+    "get_technology_assets",
+    {
+      title: "Get Apple technology artwork",
+      description:
+        "Get Apple's own artwork for showing its technologies in an app: the Sign in with Apple logo, AirPlay glyphs, " +
+        "ARKit badges, Game Center icons and symbols, the HomeKit glyph, the Apple Health and Home app icons, Siri " +
+        "icons and the Add Apple Watch Face button. Vector artwork comes as SVG, pictures as a PNG address. Name " +
+        "every technology of the task in one call as `technologies`; without it the tool lists everything it holds. " +
+        "Use it instead of drawing an Apple logo or badge by hand.",
+      inputSchema: {
+        technologies: z
+          .array(z.string().min(1).max(100))
+          .max(10)
+          .optional()
+          .describe(
+            "Technology names, such as [\"Sign in with Apple\", \"AirPlay\"]. Add words from an artwork's name to narrow it, such as \"Sign in with Apple logo only\" or \"Game Center symbol\".",
+          ),
+      },
+      annotations: READ_ONLY,
+    },
+    async (args) => {
+      const result = technologyAssets(args.technologies ?? [], origin);
+      return reply(app, "get_technology_assets", args, result.text, !result.ok);
     },
   );
 

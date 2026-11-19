@@ -107,3 +107,23 @@ python3 extractor/measure-safe-areas.py --again          # measure again
   simulators with that prefix are ever touched. Device types no installed runtime runs are skipped;
   runtimes are never downloaded.
 - About a minute per device. `--minutes` (default 45) stops starting new devices after that long.
+
+# pdf-to-svg
+
+Converts one-page PDF artwork to SVG with its colors and checks it; used by
+`server/scripts/build-technology-pack.mjs` (`npm run pack:technologies`) for Apple's technology artwork.
+
+```bash
+swift run -c release pdf-to-svg FILE.pdf [FILE.pdf ...]          # one JSON line per file
+DIFF_DIR=/some/folder swift run -c release pdf-to-svg FILE.pdf   # also write the PDF | SVG renderings as a PNG
+```
+
+Each line holds the page size (MediaBox), the SVG, anything the reader could not convert, and a
+check against Core Graphics' own rendering of the PDF at 4x: coverage overlap (1.0 is identical), the
+color difference where both are opaque, and the number of inked pixels (0 means blank).
+
+The PDF reader (`PDFVector`) turns text into glyph outlines when the font program is embedded in the
+PDF and the font is a simple one (Type 1, CFF or TrueType): character codes map to glyphs through the
+font's `Differences`, else the standard names of printable ASCII, else the font's own character map.
+That is how the Game Center symbols (set in SF Hello) and the Add Apple Watch Face button text
+(SF Pro Text) become paths.
