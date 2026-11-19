@@ -9,14 +9,18 @@
 // scripts/figma/kit-files.json maps each kit to the key of a copy of the kit in the token
 // owner's Figma account (the part of the file's address after /design/).
 //
-// What an exported SVG holds: the variant's layers as groups with the layers' names as ids, text
+// What an exported SVG holds: the variant at its own size (a shadow reaches past the SVG's box),
+// its layers as groups with the layers' names as ids, text
 // as <text> (so a label can be changed), and SF Symbols as shapes. Figma writes a symbol as a
 // private-use character, which shows only where Apple's fonts are installed, so each one is
 // replaced by its outline from a second export with outlined text, and tagged data-symbol="name".
+// Liquid Glass is written by Figma with blends that browsers do not draw; scripts/svg-for-browsers.mjs
+// rewrites those so that a browser shows the component as Figma does.
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { homedir } from "node:os";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { forBrowsers, leftovers } from "./svg-for-browsers.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const API = "https://api.figma.com/v1";
@@ -66,8 +70,20 @@ export function mergeSymbols(text, outlined, nameOf) {
   return { svg: out + text.slice(last), symbols, missed };
 }
 
-/** Apple's fonts with fallbacks, so text shows in the system font where SF Pro is not installed. */
-export const tidy = (svg) => svg.replace(/font-family="(SF [^",]*|New York[^",]*)"/g, 'font-family="$1, -apple-system, system-ui, sans-serif"').replace(/\r\n/g, "\n");
+/**
+ * Apple's fonts with fallbacks, so text shows in the system font where SF Pro is not installed;
+ * no line breaks or indentation between tags (Figma writes a text's characters and its tags
+ * on one line, so none of that white space is part of a label).
+ */
+export const tidy = (svg) =>
+  svg
+    .replace(/font-family="(SF [^",]*|New York[^",]*)"/g, 'font-family="$1, -apple-system, system-ui, sans-serif"')
+    .replace(/>\s*\n\s*</g, "><")
+    // A symbol layer is named by its character, which Figma writes as an unreadable id.
+    .replace(/ id="(?:&#\d+;)+(?:_\d+)?"/g, "")
+    // The box is the component's own; what reaches past it (a shadow) shows where the SVG is put into a page.
+    .replace(/^<svg /, '<svg overflow="visible" ')
+    .trim();
 
 // ---------- Figma ----------
 
@@ -119,7 +135,8 @@ async function download(url) {
 
 /** Addresses of the rendered SVGs of `ids`. A batch that fails to render is split in two and tried again. */
 async function render(token, key, ids, outlineText) {
-  const query = `ids=${encodeURIComponent(ids.join(","))}&format=svg&svg_include_id=true&svg_outline_text=${outlineText}`;
+  // use_absolute_bounds: the SVG's box is the component's own box, and a shadow keeps its shapes outside it.
+  const query = `ids=${encodeURIComponent(ids.join(","))}&format=svg&svg_include_id=true&svg_outline_text=${outlineText}&use_absolute_bounds=true`;
   try {
     const json = await figma(token, `/images/${key}?${query}`);
     return json.images ?? {};
@@ -171,7 +188,8 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     const todo = all.filter((id) => force || !existsSync(pathOf(id))).slice(0, limit);
     console.log(`  ${all.length} variants, ${all.length - todo.length} already exported, ${todo.length} to export`);
 
-    let written = 0, bytes = 0, symbols = 0, missed = 0;
+    let written = 0, bytes = 0, symbols = 0, missed = 0, large = 0, largest = { id: "", size: 0 };
+    const unfixed = new Map();
     const failed = [];
     for (let at = 0; at < todo.length; at += BATCH) {
       const ids = todo.slice(at, at + BATCH);
@@ -207,10 +225,14 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
             svg = merged.svg; symbols += merged.symbols; missed += merged.missed;
           } else missed++;
         }
-        svg = tidy(svg);
+        svg = tidy(forBrowsers(svg));
         writeFileSync(pathOf(id), svg);
         written++;
-        bytes += Buffer.byteLength(svg);
+        const size = Buffer.byteLength(svg);
+        bytes += size;
+        if (size > largest.size) largest = { id, size };
+        if (size > 100000) large++;
+        for (const kind of leftovers(svg)) unfixed.set(kind, [...(unfixed.get(kind) ?? []), id]);
       }
       console.log(`  ${Math.min(at + BATCH, todo.length)} of ${todo.length}`);
     }
@@ -218,6 +240,8 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
       `${kit.name}: wrote ${written} SVGs (${(bytes / 1048576).toFixed(1)} MB), ${symbols} symbols outlined, ${missed} symbol texts left as characters, ` +
         `${failed.length} failed, ${((performance.now() - started) / 1000).toFixed(0)} s`,
     );
+    if (written) console.log(`  largest: ${largest.id}, ${(largest.size / 1024).toFixed(0)} KB; ${large} over 100 KB`);
+    for (const [kind, ids] of unfixed) console.log(`  a browser may draw these unlike Figma (${kind}): ${ids.length} variants, such as ${ids.slice(0, 8).join(", ")}`);
     if (failed.length) console.log("  failed: " + failed.slice(0, 20).join("; ") + (failed.length > 20 ? `; and ${failed.length - 20} more` : ""));
   }
 }

@@ -16,17 +16,17 @@ import { lookupSymbols, readSymbols, symbolPack } from "./symbols.js";
 import type { ShapeLoader } from "./symbols.js";
 import { technologyAssets, technologyPack } from "./technologies.js";
 import { KIT_IDS, searchUiKit, uiKitPack } from "./uikit.js";
-import type { OutlineLoader } from "./uikit.js";
+import type { DrawingLoader, OutlineLoader } from "./uikit.js";
 import { designValues, valuesPack, VALUE_PLATFORMS, VALUE_TOPICS } from "./values.js";
 
 const SERVER_NAME = "apple-design";
-const SERVER_VERSION = "0.10.0";
+const SERVER_VERSION = "0.11.0";
 
 const HIG_DATE = higPack.pack_version;
 
 const PACK = {
   status: "partial",
-  note: "Human Interface Guidelines text, device screen sizes, Apple's product bezels and vector device frames, SF Symbols (names and regular-weight shapes), technology artwork (Sign in with Apple, AirPlay and others), design values from Apple's UI kits (colors, text styles, sizes, materials, iPhone Duo layout guides) and the kits' components (layers, sizes, layout and colors of every component) are loaded.",
+  note: "Human Interface Guidelines text, device screen sizes, Apple's product bezels and vector device frames, SF Symbols (names and regular-weight shapes), technology artwork (Sign in with Apple, AirPlay and others), design values from Apple's UI kits (colors, text styles, sizes, materials, iPhone Duo layout guides) and the kits' components (Apple's drawing of every component as SVG, with its layers, sizes, layout and colors) are loaded.",
   pack_version: higPack.pack_version,
   sources: [
     {
@@ -74,6 +74,7 @@ const PACK = {
       version: `${uiKitPack.source.kits.join(", ")}, read at ${uiKitPack.generated_at}`,
       components: uiKitPack.source.components,
       variants: uiKitPack.source.variants,
+      drawings: uiKitPack.source.drawings ?? 0,
     },
   ],
   tools: ["get_pack_info", "search_hig", "get_hig_page", "get_device_metrics", "get_device_frame", "search_symbols", "get_symbol", "get_technology_assets", "get_design_values", "search_ui_kit"],
@@ -109,6 +110,12 @@ function buildServer(app: string, env: Env, origin: string): McpServer {
     return res.ok ? res.text() : null;
   };
 
+  const loadDrawing: DrawingLoader = async (kit, file) => {
+    if (!env.ASSETS) return null;
+    const res = await env.ASSETS.fetch(`https://assets.local/ui-kit-svg/${kit}/${file}`);
+    return res.ok ? res.text() : null;
+  };
+
   const server = new McpServer(
     { name: SERVER_NAME, version: SERVER_VERSION },
     {
@@ -122,8 +129,9 @@ function buildServer(app: string, env: Env, origin: string): McpServer {
         "every icon the design needs; it returns real SF Symbols as SVG, so do not substitute another icon set. For " +
         "an Apple technology's own logo or badge, such as Sign in with Apple or AirPlay, call get_technology_assets. " +
         "For system colors, text styles and standard sizes, call get_design_values instead of recalling them. " +
-        "Before drawing a standard component such as a toolbar, tab bar, list row, alert, sheet or button, call " +
-        "search_ui_kit once with every component the design needs; it returns Apple's own construction of each one.",
+        "For a standard component such as a toolbar, tab bar, list row, alert, sheet or button, call search_ui_kit " +
+        "once with every component the design needs; it returns Apple's own drawing of each one as SVG with its " +
+        "measurements, so use that and do not draw the component yourself.",
     },
   );
 
@@ -384,15 +392,16 @@ function buildServer(app: string, env: Env, origin: string): McpServer {
     {
       title: "Look up Apple's UI kit components",
       description:
-        `Look up how Apple builds its standard components, from Apple's UI kits for ${uiKitPack.source.kits.join(", ")} ` +
+        `Get Apple's own standard components, from Apple's UI kits for ${uiKitPack.source.kits.join(", ")} ` +
         `(${uiKitPack.source.components} components, ${uiKitPack.source.variants} variants): toolbars, tab bars, sidebars, lists, ` +
         "alerts, sheets, menus, buttons, toggles, sliders, text fields, keyboards, widgets, notifications, windows and " +
-        "whole example screens. For each query it returns the best-matching component with its variants and " +
-        "properties, and an outline of its layers: exact sizes, auto layout (direction, gap, padding), corner radii, " +
-        "colors and text styles by Apple's names, and the parts it is built from. Pass every component of the design " +
-        "in one call as `queries`, such as [\"tab bar\", \"large title toolbar\", \"list row\"]. Add a device or a " +
-        "variant's words to narrow a query, such as \"iPad sidebar\" or \"destructive button\". Use it before drawing " +
-        "or coding a standard Apple component, instead of estimating its metrics. Without `queries` it lists every component.",
+        "whole example screens. For each query it returns the best-matching component as Apple's drawing of it: an SVG " +
+        "exported from the kit, with labels as editable text and icons named as SF Symbols, to place in a design as it is. " +
+        "Beside it come the component's variants and properties and an outline of its layers: exact sizes, auto layout " +
+        "(direction, gap, padding), corner radii, colors and text styles by Apple's names, for building it in code. Pass " +
+        "every component of the design in one call as `queries`, such as [\"tab bar\", \"large title toolbar\", \"list row\"]. " +
+        "Add a device or a variant's words to narrow a query, such as \"iPad sidebar\" or \"destructive button\". Use it " +
+        "for every standard Apple component in a design, instead of drawing the component yourself. Without `queries` it lists every component.",
       inputSchema: {
         queries: z
           .array(z.string().min(1).max(120))
@@ -414,7 +423,7 @@ function buildServer(app: string, env: Env, origin: string): McpServer {
       annotations: READ_ONLY,
     },
     async (args) => {
-      const result = await searchUiKit(args.queries ?? [], args.platform, args.max_chars ?? 40000, loadOutlines);
+      const result = await searchUiKit(args.queries ?? [], args.platform, args.max_chars ?? 40000, loadOutlines, loadDrawing, origin);
       return reply(app, "search_ui_kit", args, result.text, !result.ok);
     },
   );
