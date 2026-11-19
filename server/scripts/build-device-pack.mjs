@@ -12,7 +12,7 @@
 // reports: Contents/Resources/capabilities.plist (screen size, scale, pixels per inch,
 // corner radius, Dynamic Island, and `displays[]`, the list of displays).
 import { execFileSync } from "node:child_process";
-import { existsSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -122,6 +122,37 @@ for (const type of devicetypes) {
   });
 }
 
+// Safe-area insets, measured in the Simulator by extractor/measure-safe-areas.py. A measurement
+// applies to every device with the same screens; on a device with two screens it goes to the
+// screen of the same size.
+const SAFE_AREAS = join(dirname(fileURLToPath(import.meta.url)), "safe-areas.json");
+let measured = 0;
+if (DUMP === null && existsSync(SAFE_AREAS)) {
+  const byDevice = new Map();
+  for (const m of Object.values(JSON.parse(readFileSync(SAFE_AREAS, "utf8")).devices ?? {})) {
+    for (const id of m.applies_to ?? []) if (!byDevice.has(id)) byDevice.set(id, []);
+    for (const id of m.applies_to ?? []) byDevice.get(id).push(m);
+  }
+  const insets = (o) => ({ top: o.top, bottom: o.bottom, left: o.left, right: o.right });
+  for (const d of devices) {
+    for (const m of byDevice.get(d.id) ?? []) {
+      const [w, h] = [m.portrait.width, m.portrait.height].sort((a, b) => a - b);
+      const screen = d.screens.find((s) => {
+        const [sw, sh] = [s.width_pt, s.height_pt].sort((a, b) => a - b);
+        return Math.abs(sw - w) < 1 && Math.abs(sh - h) < 1;
+      });
+      if (!screen) continue;
+      // Landscape is kept only when both landscape orientations agree (mirrored left to right). On
+      // iPad they do not: the simulated hardware stays in portrait when only the app rotates, so its
+      // status bar and home indicator insets are not the landscape ones.
+      const r = m.landscape, l = m.landscape_left;
+      const agree = l && r.top === l.top && r.bottom === l.bottom && r.left === l.right && r.right === l.left;
+      screen.safe_area = { portrait: insets(m.portrait), ...(agree ? { landscape: insets(r) } : {}) };
+      measured++;
+    }
+  }
+}
+
 if (DUMP !== null) {
   console.log(JSON.stringify({ xcode, devicetypes: dumped }, null, 2));
   process.exit(0);
@@ -140,7 +171,7 @@ const pack = {
   devices,
 };
 writeFileSync(OUT, `export default ${JSON.stringify(pack, null, 1)};\n`);
-console.log(`Device pack: ${devices.length} devices from ${xcode}, written to src/pack/devices.js`);
+console.log(`Device pack: ${devices.length} devices from ${xcode}, ${measured} screens with safe-area insets, written to src/pack/devices.js`);
 for (const d of devices.filter((d) => d.screens.length > 1)) {
   console.log(`  ${d.name}: ${d.screens.map((s) => `${s.role} ${s.width_pt}×${s.height_pt}`).join(", ")}`);
 }

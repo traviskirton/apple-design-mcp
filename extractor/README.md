@@ -82,3 +82,28 @@ Run it after `server/src/pack/devices.js` is rebuilt (it reads the device list f
 `--verify` rasterizes each frame and Xcode's own art (placed the same way, with the screen cleared) at
 2x and reports their overlap, the color difference where both draw, any ink inside the screen, and how
 much of the 1-point band just outside the screen's straight edges is covered.
+
+# measure-safe-areas.py
+
+Measures the safe-area insets of the current iPhones and iPads in the iOS Simulator and writes them to
+`server/scripts/safe-areas.json` (committed). `npm run pack:devices` in `server/` merges them into each
+screen in `devices.js` as `safe_area: { portrait, landscape }`, and `get_device_metrics` lists them.
+
+```bash
+python3 extractor/measure-safe-areas.py                  # every distinct screen not yet measured
+python3 extractor/measure-safe-areas.py --only iPhone-Air # one device (comma-separate several)
+python3 extractor/measure-safe-areas.py --again          # measure again
+```
+
+- `safe-area-probe/` is a minimal UIKit app (one Swift file and an Info.plist with a launch screen,
+  so it runs at the device's full size). The script compiles it with `xcrun swiftc` for the simulator.
+  It prints its key window's `safeAreaInsets` and size in portrait, landscape-right and landscape-left
+  as one JSON line, then exits.
+- Devices are grouped by screen sizes, corner radii and Dynamic Island; one device per group is
+  measured (plus a few named ones, to confirm that devices sharing a screen agree), and the result
+  `applies_to` the whole group.
+- Each measurement uses a temporary simulator named `apple-mcp-temp ...` on the newest installed iOS
+  runtime that runs the device: created, booted, measured, shut down and deleted, one at a time. Only
+  simulators with that prefix are ever touched. Device types no installed runtime runs are skipped;
+  runtimes are never downloaded.
+- About a minute per device. `--minutes` (default 45) stops starting new devices after that long.

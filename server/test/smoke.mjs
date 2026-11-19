@@ -79,6 +79,12 @@ try {
   const noDevice = await call("get_device_metrics", { devices: ["nokia"] });
   check(noDevice.text.includes("No device matches"), "get_device_metrics should say when no device matches");
 
+  const duo = await call("get_device_metrics", { devices: ["iPhone Duo"] });
+  check(
+    duo.text.includes("| iPhone Duo, outer screen (closed) | 0 | 34 | 0 | 84 |"),
+    "get_device_metrics should give the iPhone Duo outer screen's portrait insets (top 0, bottom 34, left 0, right 84)",
+  );
+
   const frames = await call("get_device_frame", { devices: ["iPhone Duo"] });
   console.log(frames.text.split("\n").filter((line) => /^(###|Frame:|Screen:)/.test(line)).join("\n"));
   check(!frames.isError && frames.text.includes("### iPhone Duo, outer screen (closed)"), "get_device_frame did not return the iPhone Duo outer frame");
