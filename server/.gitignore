@@ -10,3 +10,6 @@ assets/technologies/
 
 # One text file per UI kit component, written by scripts/build-ui-kit-pack.mjs from the kits' .fig files
 assets/ui-kit/
+
+# Apple's product bezel pictures (PNG), written by scripts/build-bezel-pack.mjs on a Mac
+assets/bezels/

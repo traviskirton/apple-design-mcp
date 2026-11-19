@@ -1,6 +1,6 @@
 {
   "name": "apple-design-mcp-server",
-  "version": "0.9.1",
+  "version": "0.10.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -13,6 +13,7 @@
     "pack:technologies": "node scripts/build-technology-pack.mjs",
     "pack:values": "node scripts/build-design-values.mjs",
     "pack:ui-kit": "node scripts/build-ui-kit-pack.mjs",
+    "pack:bezels": "node scripts/build-bezel-pack.mjs",
     "typecheck": "tsc --noEmit",
     "test": "node test/smoke.mjs"
   },
