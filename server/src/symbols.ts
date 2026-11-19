@@ -10,85 +10,129 @@ export type ShapeLoader = (name: string) => Promise<string | null>;
 
 // "arrow.up.circle.fill" and "Arrow up, circle" both become ["arrow", "up", "circle", ...].
 const tokens = (s: string) => s.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
-// Plurals and "-ing" forms read the same: "folders" finds "folder", "sharing" finds "share".
-const stem = (w: string) => (w.length > 4 ? w.replace(/(ies)$/, "y").replace(/(ing|es|s|e)$/, "") : w);
+// Plurals read the same: "folders" finds "folder", "glasses" finds "glass".
+const singular = (w: string) =>
+  w.length > 3 && !/(ss|us|is)$/.test(w) ? w.replace(/ies$/, "y").replace(/(s|x|ch|sh)es$/, "$1").replace(/s$/, "") : w;
+// A looser form that also drops "-ing", "-ed" and a final "e": "sharing" finds "share".
+const stem = (w: string) => {
+  const base = singular(w);
+  return base.length > 4 ? base.replace(/(ing|ed|e)$/, "") : base;
+};
 
-interface Indexed {
-  entry: SymbolEntry;
-  order: number;
-  nameParts: Set<string>;
-  keywordParts: Set<string>;
-  categoryParts: Set<string>;
-}
-
-// Words people use for an icon that SF Symbols names differently. Each word also matches these name parts.
+// Words people use for an icon that SF Symbols names differently. Each word also finds symbols
+// whose name holds all the parts of one of these names.
 const SYNONYMS: Record<string, string[]> = {
-  off: ["slash"], disable: ["slash"], disabled: ["slash"], mute: ["speaker.slash", "mic.slash"], muted: ["speaker.slash", "mic.slash"], block: ["slash"], hidden: ["slash"],
+  off: ["slash"], disable: ["slash"], disabled: ["slash"], block: ["slash"], hidden: ["eye.slash", "slash"], hide: ["eye.slash"],
+  mute: ["speaker.slash", "mic.slash"], muted: ["speaker.slash", "mic.slash"], show: ["eye"], visible: ["eye"],
   add: ["plus"], new: ["plus"], create: ["plus"],
   remove: ["minus", "xmark"], delete: ["trash", "xmark"], close: ["xmark"], cancel: ["xmark"], dismiss: ["xmark"],
+  back: ["chevron.left", "chevron.backward", "arrow.left"], previous: ["chevron.left", "backward"], next: ["chevron.right", "forward"],
   search: ["magnifyingglass"], find: ["magnifyingglass"], zoom: ["magnifyingglass"],
-  edit: ["pencil"], write: ["pencil"], compose: ["pencil"],
-  setting: ["gear", "gearshape"], preference: ["gear", "gearshape"], option: ["gear", "gearshape", "slider"],
-  done: ["checkmark"], ok: ["checkmark"], confirm: ["checkmark"], complete: ["checkmark"],
-  home: ["house"], user: ["person"], profile: ["person"], account: ["person"], contact: ["person"],
+  edit: ["pencil"], write: ["pencil"], compose: ["square.and.pencil", "pencil"],
+  setting: ["gear", "gearshape"], preference: ["gear", "gearshape"],
+  done: ["checkmark"], ok: ["checkmark"], confirm: ["checkmark"], complete: ["checkmark"], success: ["checkmark.circle", "checkmark"],
+  error: ["exclamationmark", "xmark.circle"], warning: ["exclamationmark.triangle", "exclamationmark"], alert: ["exclamationmark", "bell"],
+  home: ["house"], user: ["person"], profile: ["person"], account: ["person"], contact: ["person"], people: ["person.2", "person.3"],
   image: ["photo"], picture: ["photo"], chat: ["bubble", "message"], comment: ["bubble"],
-  favorite: ["heart", "star"], like: ["heart", "hand.thumbsup"], love: ["heart"],
-  info: ["info"], help: ["questionmark"], warning: ["exclamationmark"], alert: ["exclamationmark", "bell"],
-  notification: ["bell"], email: ["envelope"], mail: ["envelope"], call: ["phone"], download: ["arrow.down"],
-  upload: ["arrow.up"], refresh: ["arrow.clockwise"], reload: ["arrow.clockwise"], menu: ["line.3.horizontal", "ellipsis"],
-  more: ["ellipsis"], filter: ["line.3.horizontal.decrease"], sort: ["arrow.up.arrow.down"], location: ["location", "mappin"],
+  favorite: ["heart", "star"], like: ["heart", "hand.thumbsup"], love: ["heart"], dislike: ["hand.thumbsdown"],
+  info: ["info"], help: ["questionmark"], question: ["questionmark"],
+  notification: ["bell"], email: ["envelope"], mail: ["envelope"], call: ["phone"], send: ["paperplane"],
+  share: ["square.and.arrow.up"], save: ["bookmark", "square.and.arrow.down"], download: ["arrow.down"], upload: ["arrow.up"],
+  refresh: ["arrow.clockwise"], reload: ["arrow.clockwise"], sync: ["arrow.triangle.2.circlepath"],
+  undo: ["arrow.uturn.backward"], redo: ["arrow.uturn.forward"],
+  menu: ["line.3.horizontal", "ellipsis"], more: ["ellipsis"], filter: ["line.3.horizontal.decrease"], sort: ["arrow.up.arrow.down"],
+  location: ["location", "mappin"], time: ["clock"], date: ["calendar"], schedule: ["calendar"],
+  recipe: ["fork.knife", "book"], food: ["fork.knife"], restaurant: ["fork.knife"],
+  shop: ["cart", "bag"], store: ["cart", "bag", "storefront"], buy: ["cart"], pay: ["creditcard"], money: ["dollarsign"],
+  copy: ["document.on.document", "doc.on.doc"], paste: ["clipboard"], attach: ["paperclip"], attachment: ["paperclip"],
+  file: ["document", "doc"], list: ["list.bullet"], grid: ["square.grid.2x2"], chart: ["chart.bar"], stats: ["chart.bar"],
+  password: ["key", "lock"], secure: ["lock"], unlock: ["lock.open"], logout: ["rectangle.portrait.and.arrow.right"],
+  dark: ["moon"], light: ["sun.max", "lightbulb"], brightness: ["sun.max"], language: ["globe"], world: ["globe"], web: ["globe", "safari"],
+  music: ["music.note"], sound: ["speaker.wave.2"], volume: ["speaker.wave.2"], record: ["record.circle", "mic"], print: ["printer"],
+  expand: ["arrow.up.left.and.arrow.down.right"], collapse: ["arrow.down.right.and.arrow.up.left"], fullscreen: ["arrow.up.left.and.arrow.down.right"],
 };
-const synonymParts = new Map(
-  Object.entries(SYNONYMS).map(([word, alts]) => [stem(word), alts.map((alt) => tokens(alt).map(stem))]),
-);
 
-const indexed: Indexed[] =pack.symbols.map((entry, order) => ({
-  entry,
-  order,
-  nameParts: new Set(tokens(entry.name).map(stem)),
-  keywordParts: new Set((entry.keywords ?? []).flatMap(tokens).map(stem)),
-  categoryParts: new Set((entry.categories ?? []).flatMap((i) => tokens(pack.categories[i]?.label ?? "")).map(stem)),
-}));
-const byName = new Map(indexed.map((s) => [s.entry.name, s]));
+// The search index, built once when the Worker starts: for each word, the symbols that hold it.
+const parts: string[][] = pack.symbols.map((e) => tokens(e.name).map(singular));
+const post = (index: Map<string, number[]>, word: string, at: number) => {
+  const list = index.get(word);
+  if (!list) index.set(word, [at]);
+  else if (list[list.length - 1] !== at) list.push(at);
+};
+const byPart = new Map<string, number[]>(); // a part of the name, as written
+const byStem = new Map<string, number[]>(); // a part of the name, loosely
+const byKeyword = new Map<string, number[]>();
+const byCategory = new Map<string, number[]>();
+pack.symbols.forEach((entry, at) => {
+  for (const p of parts[at]) {
+    post(byPart, p, at);
+    post(byStem, stem(p), at);
+  }
+  for (const w of (entry.keywords ?? []).flatMap(tokens)) post(byKeyword, stem(w), at);
+  for (const i of entry.categories ?? []) for (const w of tokens(pack.categories[i]?.label ?? "")) post(byCategory, stem(w), at);
+});
+const synonyms = new Map(Object.entries(SYNONYMS).map(([word, names]) => [singular(word), names.map((n) => tokens(n).map(singular))]));
+const byName = new Map(pack.symbols.map((entry, at) => [entry.name, at]));
 
 /** The symbol with this name, following Apple's renames. */
 export function findSymbol(name: string): SymbolEntry | undefined {
   const key = name.trim().toLowerCase().replace(/\s+/g, ".");
-  return (byName.get(key) ?? byName.get(pack.aliases[key] ?? ""))?.entry;
+  const at = byName.get(key) ?? byName.get(pack.aliases[key] ?? "");
+  return at === undefined ? undefined : pack.symbols[at];
+}
+
+/** Symbols whose name holds every one of these parts. */
+function withAll(names: string[]): number[] {
+  const lists = names.map((p) => byPart.get(p) ?? []).sort((a, b) => a.length - b.length);
+  const rest = lists.slice(1).map((l) => new Set(l));
+  return (lists[0] ?? []).filter((at) => rest.every((set) => set.has(at)));
 }
 
 /**
- * Best matches first. A symbol matches a word through its name, Apple's keywords or its category.
+ * Best matches first. A word scores by how it matches a symbol: a synonym (11), a part of the name
+ * (10), a looser form of a name part (6), one of Apple's keywords (4) or the category (1).
  * Symbols that match every word win; when none does, the ones that match the most words are returned.
  */
 export function searchSymbols(query: string, limit: number): SymbolEntry[] {
-  const want = [...new Set(tokens(query).map(stem))];
+  const want = [...new Set(tokens(query).map(singular))];
   if (!want.length) return [];
-  const exact = findSymbol(query);
-  const scored: { s: Indexed; matched: number; score: number }[] = [];
-  for (const s of indexed) {
-    let score = 0;
-    let matched = 0;
-    for (const w of want) {
-      if (s.nameParts.has(w)) score += 10;
-      else if (synonymParts.get(w)?.some((alt) => alt.every((p) => s.nameParts.has(p)))) score += 8;
-      else if (s.keywordParts.has(w)) score += 4;
-      else if (s.categoryParts.has(w)) score += 1;
-      else continue;
-      matched++;
+  const score = new Map<number, number>();
+  const matched = new Map<number, number>();
+  for (const w of want) {
+    const best = new Map<number, number>();
+    const give = (list: number[] | undefined, points: number, first?: string) => {
+      for (const at of list ?? []) {
+        // A symbol named after the word ("star.fill") beats one that mentions it ("moon.stars").
+        const p = points + (first !== undefined && parts[at][0] === first ? 1 : 0);
+        if (p > (best.get(at) ?? 0)) best.set(at, p);
+      }
+    };
+    give(byPart.get(w), 10, w);
+    for (const names of synonyms.get(w) ?? []) give(withAll(names), 11, names[0]);
+    give(byStem.get(stem(w)), 6);
+    give(byKeyword.get(stem(w)), 4);
+    give(byCategory.get(stem(w)), 1);
+    for (const [at, p] of best) {
+      score.set(at, (score.get(at) ?? 0) + p);
+      matched.set(at, (matched.get(at) ?? 0) + 1);
     }
-    if (!matched && s.entry !== exact) continue;
-    // Plain symbols before their variants: "heart" before "heart.circle.fill".
-    score -= Math.max(0, s.nameParts.size - matched) * 0.5;
-    if (s.entry === exact) score += 100;
-    scored.push({ s, matched: s.entry === exact ? want.length : matched, score });
   }
-  const most = Math.max(0, ...scored.map((x) => x.matched));
-  return scored
-    .filter((x) => x.matched === most)
-    .sort((a, b) => b.score - a.score || a.s.order - b.s.order)
-    .slice(0, limit)
-    .map(({ s }) => s.entry);
+  const exact = findSymbol(query);
+  if (exact) {
+    const at = byName.get(exact.name)!;
+    score.set(at, (score.get(at) ?? 0) + 100);
+    matched.set(at, want.length);
+  }
+  const most = Math.max(0, ...matched.values());
+  const ranked: [number, number][] = [];
+  for (const [at, n] of matched) {
+    if (n !== most) continue;
+    // Plain symbols before their variants: "heart", then "heart.fill", then "heart.circle".
+    const extra = parts[at].reduce((sum, p) => sum + (p === "fill" ? 0.1 : 0.5), 0) - 0.5 * n;
+    ranked.push([at, score.get(at)! - Math.max(0, extra)]);
+  }
+  ranked.sort((a, b) => b[1] - a[1] || a[0] - b[0]);
+  return ranked.slice(0, limit).map(([at]) => pack.symbols[at]);
 }
 
 function since(entry: SymbolEntry): string {
