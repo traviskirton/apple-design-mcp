@@ -44,7 +44,7 @@ const devices: Device[] = pack.devices
 const named = devices.map((device) => ({ device, words: new Set(tokens(device.name)) }));
 
 /** Devices whose name holds every word of the query. An exact name wins over longer names. */
-function find(query: string): Device[] {
+export function findDevices(query: string): Device[] {
   const want = tokens(query);
   if (!want.length) return [];
   const hits = named.filter(({ words }) => want.every((w) => words.has(w)));
@@ -63,7 +63,7 @@ function radius(r: Screen["corner_radius_pt"]): string {
   return `top-left ${num(r.top_left)}, top-right ${num(r.top_right)}, bottom-left ${num(r.bottom_left)}, bottom-right ${num(r.bottom_right)}`;
 }
 
-const ROLE = { outer: "outer screen (closed)", inner: "inner screen (open)" };
+export const ROLE = { outer: "outer screen (closed)", inner: "inner screen (open)" };
 
 function table(devices: Device[]): string {
   const rows = devices.flatMap((d) =>
@@ -108,7 +108,7 @@ export function deviceMetrics(queries: string[], families: string[], all: boolea
     const missing: string[] = [];
     let vision = false;
     for (const q of queries) {
-      const hits = find(q);
+      const hits = findDevices(q);
       if (!hits.length && aboutVision(q)) vision = true;
       else if (!hits.length) missing.push(q);
       for (const d of hits) found.set(d.id, d);

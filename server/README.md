@@ -9,6 +9,7 @@ It serves Apple's Human Interface Guidelines, the screen sizes of Apple devices,
 | `search_hig` | Takes a list of topics (components, patterns, devices) and returns the guideline text for all of them in one reply. A topic that names a page returns that page; other topics return the best-matching sections. |
 | `get_hig_page` | Reads one page or section by id, for anything `search_hig` listed but left out for size. |
 | `get_device_metrics` | Returns the screen size of the named devices in points and pixels, with scale, pixels per inch, corner radius and whether the device has a Dynamic Island. Without names it lists every current device. A folding device has one row per screen. |
+| `get_device_frame` | Returns the drawing of a device's body as SVG, with the position of the screen inside it. A folding device returns one frame per screen. |
 | `search_symbols` | Takes a list of icons to find (names or plain words such as "share") and returns, for each, the best-matching SF Symbol with its SVG and the names of other matches. |
 | `get_symbol` | Returns the SVG of symbols by exact name. |
 | `get_pack_info` | Reports what material is loaded, its date, and when the server answered. |
@@ -108,6 +109,7 @@ npm test           # in a second terminal
 - `scripts/build-hig-pack.mjs`: builds the pack from Apple's site.
 - `src/devices.ts`: device lookup. `src/pack/devices.js` is the device pack and `src/pack/devices.d.ts` its shape.
 - `scripts/build-device-pack.mjs`: builds the device pack from Xcode's simulator files (Mac only).
+- `src/frames.ts`: device frames. `src/pack/frames.js` is the frame pack (written by the extractor on a Mac, committed) and `src/pack/frames.d.ts` its shape.
 - `src/symbols.ts`: symbol search. `src/pack/symbols.js` is the symbol pack and `src/pack/symbols.d.ts` its shape.
 - `assets/`: static files deployed with the Worker; `assets/symbols/` holds the symbol shapes.
 - `test/smoke.mjs`: connects as a real MCP client and tries every tool.
