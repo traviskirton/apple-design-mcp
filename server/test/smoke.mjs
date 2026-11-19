@@ -168,7 +168,9 @@ try {
   check(kit.text.includes('## "zebra crossing"\n\nNo component of the iOS and iPadOS 27 kit matches.'), "search_ui_kit should say when nothing matches");
   if (kit.text.includes("```text")) {
     check(kit.text.includes("- Tab Bar Buttons: frame; 180 × 54; fills width; row; gap -8;"), "the tab bar's outline is missing or changed");
-    check(kit.text.includes("#### _Tab Bar Button - iPhone [Selected=True], 72 × 54"), "the tab bar's parts are missing");
+    // Asked alone: among six queries with drawings, the parts are the first thing left out for size.
+    const alone = await call("search_ui_kit", { queries: ["tab bar"] });
+    check(alone.text.includes("#### _Tab Bar Button - iPhone [Selected=True], 72 × 54"), "the tab bar's parts are missing");
     check(kit.text.includes("with Symbol SF Symbol diamond.fill, Label \"Tab 1\""), "an icon in an outline should be given by its SF Symbols name");
   } else {
     check(kit.text.includes("The outline files are not deployed on this server"), "search_ui_kit should say when the outline files are missing");
