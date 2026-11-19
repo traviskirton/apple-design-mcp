@@ -29,7 +29,7 @@ try {
 
   const { tools } = await client.listTools();
   console.log("tools:", tools.map((t) => t.name).join(", "));
-  for (const name of ["get_pack_info", "search_hig", "get_hig_page", "get_device_metrics", "get_device_frame", "search_symbols", "get_symbol", "get_technology_assets", "get_design_values"]) {
+  for (const name of ["get_pack_info", "search_hig", "get_hig_page", "get_device_metrics", "get_device_frame", "search_symbols", "get_symbol", "get_technology_assets", "get_design_values", "search_ui_kit"]) {
     check(tools.some((t) => t.name === name), `${name} is missing`);
   }
 
@@ -142,6 +142,26 @@ try {
   const mac = await call("get_design_values", { platform: "macos", topics: ["text", "sizes"] });
   check(!mac.isError && mac.text.includes("| Body | Regular | 13 | 16 | 0 | Semibold |"), "the macOS Body text style is missing or changed");
   check(mac.text.includes("| Global, Height | 16 | 20 | 24 | 28 | 36 |"), "the macOS control heights are missing or changed");
+
+  const kit = await call("search_ui_kit", { queries: ["tab bar", "large title toolbar", "mac sidebar", "watch button", "checkbox", "zebra crossing"] });
+  check(!kit.isError && kit.text.includes("### Tab Bar - iPhone\n"), 'search_ui_kit did not put "Tab Bar - iPhone" first for "tab bar"');
+  check(kit.text.includes("Variants (24): Minimized = False / True; Tabs = 2 / 3 / 4 / 5;"), "the tab bar's variants are missing or changed");
+  check(kit.text.includes("### Toolbar - Top - iPhone\n") && kit.text.includes("Shown: Style=Large Title, 402 × 125."), 'search_ui_kit should show the Large Title variant for "large title toolbar"');
+  check(kit.text.includes('### Sidebars - Composed\n\nmacOS 27 kit, page "Sidebars".'), 'search_ui_kit should read "mac sidebar" from the macOS kit');
+  check(kit.text.includes("### Button - Pill\n\nwatchOS 26 kit"), 'search_ui_kit should read "watch button" from the watchOS kit');
+  check(kit.text.includes("### Toggles - Checkboxes\n\nmacOS 27 kit"), 'search_ui_kit should find "checkbox" in the macOS kit when the iOS kit has none');
+  check(kit.text.includes('## "zebra crossing"\n\nNo component of the iOS and iPadOS 27 kit matches.'), "search_ui_kit should say when nothing matches");
+  if (kit.text.includes("```text")) {
+    check(kit.text.includes("- Tab Bar Buttons: frame; 180 × 54; fills width; row; gap -8;"), "the tab bar's outline is missing or changed");
+    check(kit.text.includes("#### _Tab Bar Button - iPhone [Selected=True], 72 × 54"), "the tab bar's parts are missing");
+  } else {
+    check(kit.text.includes("The outline files are not deployed on this server"), "search_ui_kit should say when the outline files are missing");
+    console.log("search_ui_kit: no outline files on this server (assets/ui-kit/ is built by npm run pack:ui-kit)");
+  }
+
+  const everyComponent = await call("search_ui_kit", { platform: "macos" });
+  check(!everyComponent.isError && everyComponent.text.includes("## macOS 27 kit: components by page"), "search_ui_kit should list a kit's components without `queries`");
+  check(!everyComponent.text.includes("```text"), "the component list should not hold outlines");
 
   console.log("\nOK");
   await client.close();
