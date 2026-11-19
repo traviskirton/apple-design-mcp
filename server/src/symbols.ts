@@ -52,10 +52,10 @@ const SYNONYMS: Record<string, string[]> = {
   mute: ["speaker.slash", "mic.slash"], muted: ["speaker.slash", "mic.slash"], show: ["eye"], visible: ["eye"],
   add: ["plus"], new: ["plus"], create: ["plus"],
   remove: ["minus", "xmark"], delete: ["trash", "xmark"], close: ["xmark"], cancel: ["xmark"], dismiss: ["xmark"],
-  back: ["chevron.left", "chevron.backward", "arrow.left"], previous: ["chevron.left", "backward"], next: ["chevron.right", "forward"],
+  back: ["chevron.backward", "chevron.left", "arrow.left"], previous: ["chevron.backward", "backward"], next: ["chevron.forward", "forward"],
   search: ["magnifyingglass"], find: ["magnifyingglass"], zoom: ["magnifyingglass"],
   edit: ["pencil"], write: ["pencil"], compose: ["square.and.pencil", "pencil"],
-  setting: ["gear", "gearshape"], preference: ["gear", "gearshape"],
+  setting: ["gearshape", "gear"], preference: ["gearshape", "gear"],
   done: ["checkmark"], ok: ["checkmark"], confirm: ["checkmark"], complete: ["checkmark"], success: ["checkmark.circle", "checkmark"],
   error: ["exclamationmark", "xmark.circle"], warning: ["exclamationmark.triangle", "exclamationmark"], alert: ["exclamationmark", "bell"],
   home: ["house"], user: ["person"], profile: ["person"], account: ["person"], contact: ["person"], people: ["person.2", "person.3"],
@@ -73,7 +73,7 @@ const SYNONYMS: Record<string, string[]> = {
   copy: ["document.on.document", "doc.on.doc"], paste: ["clipboard"], attach: ["paperclip"], attachment: ["paperclip"],
   file: ["document", "doc"], list: ["list.bullet"], grid: ["square.grid.2x2"], chart: ["chart.bar"], stats: ["chart.bar"],
   password: ["key", "lock"], secure: ["lock"], unlock: ["lock.open"], logout: ["rectangle.portrait.and.arrow.right"],
-  dark: ["moon"], light: ["sun.max", "lightbulb"], brightness: ["sun.max"], language: ["globe"], world: ["globe"], web: ["globe", "safari"],
+  weather: ["cloud.sun", "sun.max", "cloud"], dark: ["moon"], light: ["sun.max", "lightbulb"], brightness: ["sun.max"], language: ["globe"], world: ["globe"], web: ["globe", "safari"],
   music: ["music.note"], sound: ["speaker.wave.2"], volume: ["speaker.wave.2"], record: ["record.circle", "mic"], print: ["printer"],
   expand: ["arrow.up.left.and.arrow.down.right"], collapse: ["arrow.down.right.and.arrow.up.left"], fullscreen: ["arrow.up.left.and.arrow.down.right"],
 };
@@ -98,6 +98,22 @@ export function findSymbol(name: string): SymbolEntry | undefined {
   return at === undefined ? undefined : pack.symbols[at];
 }
 
+/**
+ * Two query words that SF Symbols writes as one name part ("credit card" is creditcard, "face id"
+ * is faceid, "qr code" is qrcode) become that part.
+ */
+function joinCompounds(words: string[]): string[] {
+  const out: string[] = [];
+  for (let i = 0; i < words.length; i++) {
+    const joined = i + 1 < words.length ? words[i] + words[i + 1] : "";
+    if (joined && byPart.get(singular(joined))?.length) {
+      out.push(joined);
+      i++;
+    } else out.push(words[i]);
+  }
+  return out;
+}
+
 /** Symbols whose name holds every one of these parts. */
 function withAll(names: string[]): number[] {
   const lists = names.map((p) => byPart.get(p) ?? []).sort((a, b) => a.length - b.length);
@@ -111,7 +127,7 @@ function withAll(names: string[]): number[] {
  * Symbols that match every word win; when none does, the ones that match the most words are returned.
  */
 export function searchSymbols(query: string, limit: number): SymbolEntry[] {
-  const want = [...new Set(tokens(query).map(singular))];
+  const want = [...new Set(joinCompounds(tokens(query)).map(singular))];
   if (!want.length) return [];
   const score = new Map<number, number>();
   const matched = new Map<number, number>();
@@ -125,7 +141,8 @@ export function searchSymbols(query: string, limit: number): SymbolEntry[] {
       }
     };
     give(byPart.get(w), 10, w);
-    for (const names of synonyms.get(w) ?? []) give(withAll(names), 11, names[0]);
+    // The first name listed for a word is the usual one: "back" is chevron.backward, which turns with right-to-left text.
+    (synonyms.get(w) ?? []).forEach((names, i) => give(withAll(names), i === 0 ? 11.5 : 11, names[0]));
     give(byStem.get(stem(w)), 6);
     give(byKeyword.get(stem(w)), 4);
     give(byCategory.get(stem(w)), 1);

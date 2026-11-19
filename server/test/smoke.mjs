@@ -217,6 +217,8 @@ if (named.text.includes("```svg")) {
           check(/Shown: Minimized=False, Tabs=5, Type=Search Role, 402 × 95 points\.\n\nApple's drawing of it, also at \S+\. Place it as it is; only change its icons and labels:\n\n```svg/.test(named.text), "the variant a query names should be in the reply as SVG");
       check(/### Stepper\n[\s\S]*?more than this reply has room for/.test(named.text), "the drawing no query word chose should give way and come by its address");
     } else console.log("search_ui_kit: the drawings for the named-variant check are not on this server");
+    const tiny = await call("search_ui_kit", { queries: ["tab bar"], max_chars: 2000 });
+    check(tiny.text.length < 5000, "search_ui_kit should keep a small max_chars close: an outline that does not fit is cut");
     const small = await call("search_ui_kit", { queries: ["tab bar", "alert"], max_chars: 6000 });
     check(!small.text.includes("```svg") && small.text.includes("more than this reply has room for"), "a drawing that does not fit should be given by its address");
   } else {

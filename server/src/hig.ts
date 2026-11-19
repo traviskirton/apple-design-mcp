@@ -152,8 +152,32 @@ interface Item {
   section: HigSection;
 }
 
+// What people call a thing, next to the guidelines page that covers it. Applied before searching,
+// so "navigation bar" reads as "toolbars" and names that page.
+const PHRASES: [RegExp, string][] = [
+  [/\b(navigation|nav) ?bars?\b/g, "toolbars"],
+  [/\b(log ?in|sign ?in|sign ?up)\b(?! with apple)/g, "managing accounts sign in with apple"],
+  [/\b(activity|loading) indicators?\b|\bspinners?\b/g, "progress indicators"],
+  [/\bmodals?\b|\bbottom sheets?\b/g, "sheets"],
+  [/\bspacing\b|\bmargins?\b|\bgrid\b/g, "layout"],
+  [/\bfonts?\b|\btype ?scale\b/g, "typography"],
+  [/\bswitch(es)?\b/g, "toggles"],
+  [/\bdrop ?downs?\b/g, "pop-up buttons"],
+  [/\bshare sheets?\b/g, "activity views"],
+  [/\bsearch bars?\b/g, "search fields"],
+  [/\b(toasts?|snackbars?)\b/g, "notifications"],
+];
+
+/** A query in the guidelines' own words. */
+export function expandQuery(query: string): string {
+  let q = query.toLowerCase();
+  for (const [from, to] of PHRASES) q = q.replace(from, to);
+  return q;
+}
+
 /** What one query should return, best first: named pages in Apple's own order, then strong search hits. */
-function candidates(query: string, platforms: string[], taken: Set<HigSection>): Item[] {
+function candidates(asked: string, platforms: string[], taken: Set<HigSection>): Item[] {
+  const query = expandQuery(asked);
   const hits = searchHig(query, 12);
   const wanted = (s: HigSection) => {
     if (NOT_SEARCHED.has(s.id) || !s.text || taken.has(s)) return false;
