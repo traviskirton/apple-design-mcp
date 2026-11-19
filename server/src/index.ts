@@ -308,7 +308,7 @@ function buildServer(app: string, env: Env, origin: string): McpServer {
           .max(10)
           .optional()
           .describe(
-            "Technology names, such as [\"Sign in with Apple\", \"AirPlay\"]. Add words from an artwork's name to narrow it, such as \"Sign in with Apple white logo only\".",
+            "Technology names, such as [\"Sign in with Apple\", \"AirPlay\"]. Add words from an artwork's name to narrow it, such as \"Sign in with Apple logo only\" or \"Game Center symbol\".",
           ),
       },
       annotations: READ_ONLY,

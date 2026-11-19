@@ -34,6 +34,10 @@ if (!existsSync(EXTRACTED)) {
 
 const cap = (s) => s[0].toUpperCase() + s.slice(1);
 const lower = (s) => s.toLowerCase();
+// Apple names these files by the color of the logo or the theme they are for, which reads the wrong
+// way round for the tile behind the logo, so titles say what is drawn.
+const SIWA_COLOR = { Black: "black logo on white", White: "white logo on black" };
+const WATCH_THEME = { Dark: "white button (Apple's Dark variant)", Light: "black button (Apple's Light variant)" };
 
 // What goes in: per technology, its download folder and each artwork's id, title and source.
 // `from: "pdf"` converts the PDF at `source`; `pdf` names the PDF to use when Apple's SVG is not plain vector art.
@@ -42,11 +46,11 @@ const TECHNOLOGIES = [
     id: "sign-in-with-apple", name: "Sign in with Apple", keywords: ["SIWA"], folder: "Logo-Sign-in-with-Apple",
     assets: [
       ...["Black", "White"].flatMap((c) => ["Large", "Medium", "Small"].map((s) => ({
-        id: `logo-left-aligned-${lower(c)}-${lower(s)}`, title: `Logo, left-aligned, ${lower(c)}, ${lower(s)}`,
+        id: `logo-left-aligned-${lower(c)}-${lower(s)}`, title: `Logo, left-aligned, ${SIWA_COLOR[c]}, ${lower(s)}`,
         source: `Sign in with Apple - Left Aligned/SVG/Logo - SIWA - Left-aligned - ${c} - ${s}.svg`,
       }))),
       ...["Black", "White"].map((c) => ({
-        id: `logo-only-${lower(c)}`, title: `Logo only, ${lower(c)}`,
+        id: `logo-only-${lower(c)}`, title: `Logo only, ${SIWA_COLOR[c]}`,
         source: `Sign in with Apple - Logo Only/SVG/Logo - SIWA - Logo-only - ${c}.svg`,
       })),
     ],
@@ -54,11 +58,11 @@ const TECHNOLOGIES = [
   {
     id: "add-apple-watch-face", name: "Add Apple Watch Face", keywords: ["watch face"], folder: "Glyph-Add-Apple-Watch-Face",
     assets: ["Dark", "Light"].flatMap((t) => [
-      { id: `button-symbol-and-text-${lower(t)}`, title: `Button, symbol and text, ${lower(t)}`,
+      { id: `button-symbol-and-text-${lower(t)}`, title: `Button, symbol and text, ${WATCH_THEME[t]}`,
         source: `Assets/SVG/Symbol and Text - ${t}@1x.svg`, pdf: `Assets/PDF/Symbol and Text - ${t}@1x.pdf` },
-      { id: `button-symbol-only-large-${lower(t)}`, title: `Button, symbol only, large, ${lower(t)}`,
+      { id: `button-symbol-only-large-${lower(t)}`, title: `Button, symbol only, large, ${WATCH_THEME[t]}`,
         source: `Assets/SVG/Symbol-only - Large - ${t}@1x.svg`, pdf: `Assets/PDF/Symbol-only - Large - ${t}@1x.pdf` },
-      { id: `button-symbol-only-small-${lower(t)}`, title: `Button, symbol only, small, ${lower(t)}`,
+      { id: `button-symbol-only-small-${lower(t)}`, title: `Button, symbol only, small, ${WATCH_THEME[t]}`,
         source: `Assets/SVG/Symbol-only - Small - ${t}@1x.svg`, pdf: `Assets/PDF/Symbol-only - Small - ${t}@1x.pdf` },
     ]),
   },
