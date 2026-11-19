@@ -86,6 +86,8 @@ private final class Interpreter {
     var leading: CGFloat = 0
     var rise: CGFloat = 0
     var fonts: [String: EmbeddedFont?] = [:]
+    /// When false, text is not drawn and is reported in `unsupported` as "text".
+    var drawText = true
 
     init(contentStream: CGPDFContentStreamRef, state: GState) {
         self.contentStream = contentStream
@@ -215,7 +217,7 @@ private final class Interpreter {
 
     /// Draws a string's glyphs as filled outlines and advances the text position.
     func show(_ bytes: [UInt8]) {
-        guard let name = fontName, let font = font(name) else { unsupported.insert("text"); return }
+        guard drawText, let name = fontName, let font = font(name) else { unsupported.insert("text"); return }
         for code in bytes {
             let render = CGAffineTransform(a: fontSize * horizontalScale, b: 0, c: 0, d: fontSize, tx: 0, ty: rise)
                 .concatenating(textMatrix).concatenating(state.ctm)
@@ -370,6 +372,7 @@ private final class Interpreter {
         inner.ctm = formMatrix(stream).concatenating(state.ctm)
         if let bbox = formBBox(stream) { inner.clip = clipped(inner.clip, by: CGPath(rect: bbox, transform: [inner.ctm]), evenOdd: false) }
         let child = Interpreter(contentStream: CGPDFContentStreamCreateWithStream(stream, resources, contentStream), state: inner)
+        child.drawText = drawText
         child.run()
         unsupported.formUnion(child.unsupported)
         return child.fills
@@ -557,11 +560,14 @@ public struct PDFShape {
 
 /// The fills of a page, drawn with `transform` (page space to the caller's space) and clipped to
 /// `clip` (in the caller's space).
-public func readPage(_ page: CGPDFPage, transform: CGAffineTransform = .identity, clip: CGPath? = nil) -> (fills: [Fill], unsupported: Set<String>) {
+/// `drawText: false` leaves text out (reported as "text"), for art where text is a placeholder.
+public func readPage(_ page: CGPDFPage, transform: CGAffineTransform = .identity, clip: CGPath? = nil,
+                     drawText: Bool = true) -> (fills: [Fill], unsupported: Set<String>) {
     var state = GState()
     state.ctm = transform
     state.clip = clip
     let interpreter = Interpreter(contentStream: CGPDFContentStreamCreateWithPage(page), state: state)
+    interpreter.drawText = drawText
     interpreter.run()
     return (interpreter.fills, interpreter.unsupported)
 }
