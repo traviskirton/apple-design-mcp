@@ -1,6 +1,6 @@
 {
   "name": "apple-design-mcp-server",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -12,6 +12,7 @@
     "pack:symbol-index": "node scripts/build-symbol-index.mjs",
     "pack:technologies": "node scripts/build-technology-pack.mjs",
     "pack:values": "node scripts/build-design-values.mjs",
+    "pack:ui-kit": "node scripts/build-ui-kit-pack.mjs",
     "typecheck": "tsc --noEmit",
     "test": "node test/smoke.mjs"
   },
