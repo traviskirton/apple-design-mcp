@@ -110,7 +110,7 @@ function readTokens() {
 }
 
 /** The first token that can read the file `key`. Says where it came from, never the token. */
-async function workingToken(key) {
+export async function workingToken(key) {
   const refused = [];
   for (const { token, from } of readTokens()) {
     try {
@@ -127,7 +127,7 @@ async function workingToken(key) {
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-async function figma(token, path) {
+export async function figma(token, path) {
   for (let attempt = 0; ; attempt++) {
     const res = await fetch(API + path, { headers: { "X-Figma-Token": token } });
     if (res.status === 429 && attempt < 6) {
@@ -148,7 +148,7 @@ async function figma(token, path) {
   }
 }
 
-async function download(url) {
+export async function download(url) {
   for (let attempt = 0; ; attempt++) {
     try {
       const res = await fetch(url);
@@ -162,7 +162,7 @@ async function download(url) {
 }
 
 /** Addresses of the rendered SVGs of `ids`. A batch that fails to render is split in two and tried again. */
-async function render(token, key, ids, outlineText) {
+export async function render(token, key, ids, outlineText) {
   // use_absolute_bounds: the SVG's box is the component's own box, and a shadow keeps its shapes outside it.
   const query = `ids=${encodeURIComponent(ids.join(","))}&format=svg&svg_include_id=true&svg_outline_text=${outlineText}&use_absolute_bounds=true`;
   try {
@@ -175,7 +175,7 @@ async function render(token, key, ids, outlineText) {
   }
 }
 
-async function inParallel(items, n, work) {
+export async function inParallel(items, n, work) {
   let next = 0;
   await Promise.all(Array.from({ length: Math.min(n, items.length) }, async () => {
     while (next < items.length) await work(items[next++]);
