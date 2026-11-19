@@ -119,6 +119,13 @@ let svgDir = repo.appendingPathComponent("server/assets/symbols")
             .filter { $0.hasSuffix(".svg") }.map { String($0.dropLast(4)) })
         try writePack(meta, shapes: onDisk, to: packURL)
         print("Pack: \(meta.names.count) symbols, \(onDisk.intersection(meta.names).count) with shapes, written to server/src/pack/symbols.js")
+        // The Worker's search index is built from the pack ahead of time (server/scripts/build-symbol-index.mjs).
+        let node = Process()
+        node.executableURL = URL(fileURLWithPath: "/usr/bin/env")
+        node.arguments = ["node", repo.appendingPathComponent("server/scripts/build-symbol-index.mjs").path]
+        try node.run()
+        node.waitUntilExit()
+        if node.terminationStatus != 0 { print("  the symbol index was not rebuilt; run npm run pack:symbol-index in server/") }
     }
 
     if let count = Int(option("--verify") ?? verifyOnly ?? "") {
