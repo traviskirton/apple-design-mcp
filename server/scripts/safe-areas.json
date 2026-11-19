@@ -1,0 +1,1083 @@
+{
+ "devices": {
+  "iPad-9th-generation": {
+   "applies_to": [
+    "iPad-9th-generation"
+   ],
+   "device_name": "apple-mcp-temp iPad-9th-generation",
+   "landscape": {
+    "bottom": 20,
+    "height": 810,
+    "left": 0,
+    "orientation": 3,
+    "right": 0,
+    "top": 10,
+    "width": 1080
+   },
+   "landscape_again": {
+    "bottom": 20,
+    "height": 810,
+    "left": 0,
+    "orientation": 3,
+    "right": 0,
+    "top": 10,
+    "width": 1080
+   },
+   "landscape_left": {
+    "bottom": 10,
+    "height": 810,
+    "left": 0,
+    "orientation": 4,
+    "right": 0,
+    "top": 32,
+    "width": 1080
+   },
+   "measured_at": "2026-11-18",
+   "model": "iPad12,2",
+   "portrait": {
+    "bottom": 20,
+    "height": 1080,
+    "left": 0,
+    "orientation": 1,
+    "right": 0,
+    "top": 32,
+    "width": 810
+   },
+   "runtime": "27.0",
+   "screen": {
+    "height": 1080,
+    "scale": 2,
+    "width": 810
+   },
+   "system": "27.0"
+  },
+  "iPad-A16": {
+   "applies_to": [
+    "iPad-A16",
+    "iPad-10th-generation"
+   ],
+   "device_name": "apple-mcp-temp iPad-A16",
+   "landscape": {
+    "bottom": 20,
+    "height": 820,
+    "left": 0,
+    "orientation": 3,
+    "right": 0,
+    "top": 10,
+    "width": 1180
+   },
+   "landscape_left": {
+    "bottom": 10,
+    "height": 820,
+    "left": 0,
+    "orientation": 4,
+    "right": 0,
+    "top": 32,
+    "width": 1180
+   },
+   "measured_at": "2026-11-18",
+   "model": "iPad15,7",
+   "portrait": {
+    "bottom": 20,
+    "height": 1180,
+    "left": 0,
+    "orientation": 1,
+    "right": 0,
+    "top": 32,
+    "width": 820
+   },
+   "runtime": "27.0",
+   "screen": {
+    "height": 1180,
+    "scale": 2,
+    "width": 820
+   },
+   "system": "27.0"
+  },
+  "iPad-Air-11-inch-M4": {
+   "applies_to": [
+    "iPad-Air-11-inch-M4",
+    "iPad-Air-11-inch-M3",
+    "iPad-Air-11-inch-M2",
+    "iPad-Air-5th-generation",
+    "iPad-Air--4th-generation-"
+   ],
+   "device_name": "apple-mcp-temp iPad-Air-11-inch-M4",
+   "landscape": {
+    "bottom": 20,
+    "height": 820,
+    "left": 0,
+    "orientation": 3,
+    "right": 0,
+    "top": 10,
+    "width": 1180
+   },
+   "landscape_left": {
+    "bottom": 10,
+    "height": 820,
+    "left": 0,
+    "orientation": 4,
+    "right": 0,
+    "top": 32,
+    "width": 1180
+   },
+   "measured_at": "2026-11-18",
+   "model": "iPad16,9",
+   "portrait": {
+    "bottom": 20,
+    "height": 1180,
+    "left": 0,
+    "orientation": 1,
+    "right": 0,
+    "top": 32,
+    "width": 820
+   },
+   "runtime": "27.0",
+   "screen": {
+    "height": 1180,
+    "scale": 2,
+    "width": 820
+   },
+   "system": "27.0"
+  },
+  "iPad-Air-13-inch-M4": {
+   "applies_to": [
+    "iPad-Air-13-inch-M4",
+    "iPad-Air-13-inch-M3",
+    "iPad-Air-13-inch-M2",
+    "iPad-Pro-12-9-inch-6th-generation-16GB",
+    "iPad-Pro-12-9-inch-6th-generation-8GB",
+    "iPad-Pro-12-9-inch-5th-generation",
+    "iPad-Pro--12-9-inch---4th-generation-"
+   ],
+   "device_name": "apple-mcp-temp iPad-Air-13-inch-M4",
+   "landscape": {
+    "bottom": 20,
+    "height": 1024,
+    "left": 0,
+    "orientation": 3,
+    "right": 0,
+    "top": 10,
+    "width": 1366
+   },
+   "landscape_left": {
+    "bottom": 10,
+    "height": 1024,
+    "left": 0,
+    "orientation": 4,
+    "right": 0,
+    "top": 32,
+    "width": 1366
+   },
+   "measured_at": "2026-11-18",
+   "model": "iPad16,11",
+   "portrait": {
+    "bottom": 20,
+    "height": 1366,
+    "left": 0,
+    "orientation": 1,
+    "right": 0,
+    "top": 32,
+    "width": 1024
+   },
+   "runtime": "27.0",
+   "screen": {
+    "height": 1366,
+    "scale": 2,
+    "width": 1024
+   },
+   "system": "27.0"
+  },
+  "iPad-Pro-11-inch-4th-generation-16GB": {
+   "applies_to": [
+    "iPad-Pro-11-inch-4th-generation-16GB",
+    "iPad-Pro-11-inch-4th-generation-8GB",
+    "iPad-Pro-11-inch-3rd-generation",
+    "iPad-Pro--11-inch---2nd-generation-"
+   ],
+   "device_name": "apple-mcp-temp iPad-Pro-11-inch-4th-generation-16GB",
+   "landscape": {
+    "bottom": 20,
+    "height": 834,
+    "left": 0,
+    "orientation": 3,
+    "right": 0,
+    "top": 10,
+    "width": 1194
+   },
+   "landscape_left": {
+    "bottom": 10,
+    "height": 834,
+    "left": 0,
+    "orientation": 4,
+    "right": 0,
+    "top": 32,
+    "width": 1194
+   },
+   "measured_at": "2026-11-18",
+   "model": "iPad14,4",
+   "portrait": {
+    "bottom": 20,
+    "height": 1194,
+    "left": 0,
+    "orientation": 1,
+    "right": 0,
+    "top": 32,
+    "width": 834
+   },
+   "runtime": "27.0",
+   "screen": {
+    "height": 1194,
+    "scale": 2,
+    "width": 834
+   },
+   "system": "27.0"
+  },
+  "iPad-Pro-11-inch-M5-16GB": {
+   "applies_to": [
+    "iPad-Pro-11-inch-M5-16GB",
+    "iPad-Pro-11-inch-M5-12GB",
+    "iPad-Pro-11-inch-M4-16GB",
+    "iPad-Pro-11-inch-M4-8GB"
+   ],
+   "device_name": "apple-mcp-temp iPad-Pro-11-inch-M5-16GB",
+   "landscape": {
+    "bottom": 20,
+    "height": 834,
+    "left": 0,
+    "orientation": 3,
+    "right": 0,
+    "top": 10,
+    "width": 1210
+   },
+   "landscape_left": {
+    "bottom": 10,
+    "height": 834,
+    "left": 0,
+    "orientation": 4,
+    "right": 0,
+    "top": 32,
+    "width": 1210
+   },
+   "measured_at": "2026-11-18",
+   "model": "iPad17,2",
+   "portrait": {
+    "bottom": 20,
+    "height": 1210,
+    "left": 0,
+    "orientation": 1,
+    "right": 0,
+    "top": 32,
+    "width": 834
+   },
+   "runtime": "27.0",
+   "screen": {
+    "height": 1210,
+    "scale": 2,
+    "width": 834
+   },
+   "system": "27.0"
+  },
+  "iPad-Pro-13-inch-M5-12GB": {
+   "applies_to": [
+    "iPad-Pro-13-inch-M5-16GB",
+    "iPad-Pro-13-inch-M5-12GB",
+    "iPad-Pro-13-inch-M4-16GB",
+    "iPad-Pro-13-inch-M4-8GB"
+   ],
+   "device_name": "apple-mcp-temp iPad-Pro-13-inch-M5-12GB",
+   "landscape": {
+    "bottom": 20,
+    "height": 1032,
+    "left": 0,
+    "orientation": 3,
+    "right": 0,
+    "top": 10,
+    "width": 1376
+   },
+   "landscape_again": {
+    "bottom": 20,
+    "height": 1032,
+    "left": 0,
+    "orientation": 3,
+    "right": 0,
+    "top": 10,
+    "width": 1376
+   },
+   "landscape_left": {
+    "bottom": 10,
+    "height": 1032,
+    "left": 0,
+    "orientation": 4,
+    "right": 0,
+    "top": 32,
+    "width": 1376
+   },
+   "measured_at": "2026-11-18",
+   "model": "iPad17,4",
+   "portrait": {
+    "bottom": 20,
+    "height": 1376,
+    "left": 0,
+    "orientation": 1,
+    "right": 0,
+    "top": 32,
+    "width": 1032
+   },
+   "runtime": "27.0",
+   "screen": {
+    "height": 1376,
+    "scale": 2,
+    "width": 1032
+   },
+   "system": "27.0"
+  },
+  "iPad-mini-A17-Pro": {
+   "applies_to": [
+    "iPad-mini-A17-Pro",
+    "iPad-mini-6th-generation"
+   ],
+   "device_name": "apple-mcp-temp iPad-mini-A17-Pro",
+   "landscape": {
+    "bottom": 20,
+    "height": 744,
+    "left": 0,
+    "orientation": 3,
+    "right": 0,
+    "top": 10,
+    "width": 1133
+   },
+   "landscape_again": {
+    "bottom": 20,
+    "height": 744,
+    "left": 0,
+    "orientation": 3,
+    "right": 0,
+    "top": 10,
+    "width": 1133
+   },
+   "landscape_left": {
+    "bottom": 10,
+    "height": 744,
+    "left": 0,
+    "orientation": 4,
+    "right": 0,
+    "top": 32,
+    "width": 1133
+   },
+   "measured_at": "2026-11-18",
+   "model": "iPad16,2",
+   "portrait": {
+    "bottom": 20,
+    "height": 1133,
+    "left": 0,
+    "orientation": 1,
+    "right": 0,
+    "top": 32,
+    "width": 744
+   },
+   "runtime": "27.0",
+   "screen": {
+    "height": 1133,
+    "scale": 2,
+    "width": 744
+   },
+   "system": "27.0"
+  },
+  "iPhone-11": {
+   "applies_to": [
+    "iPhone-11"
+   ],
+   "device_name": "apple-mcp-temp iPhone-11",
+   "landscape": {
+    "bottom": 20,
+    "height": 414,
+    "left": 48,
+    "orientation": 3,
+    "right": 48,
+    "top": 0,
+    "width": 896
+   },
+   "landscape_left": {
+    "bottom": 20,
+    "height": 414,
+    "left": 48,
+    "orientation": 4,
+    "right": 48,
+    "top": 0,
+    "width": 896
+   },
+   "measured_at": "2026-11-18",
+   "model": "iPhone12,1",
+   "portrait": {
+    "bottom": 34,
+    "height": 896,
+    "left": 0,
+    "orientation": 1,
+    "right": 0,
+    "top": 48,
+    "width": 414
+   },
+   "runtime": "27.0",
+   "screen": {
+    "height": 896,
+    "scale": 2,
+    "width": 414
+   },
+   "system": "27.0"
+  },
+  "iPhone-11-Pro": {
+   "applies_to": [
+    "iPhone-11-Pro"
+   ],
+   "device_name": "apple-mcp-temp iPhone-11-Pro",
+   "landscape": {
+    "bottom": 20,
+    "height": 375,
+    "left": 44,
+    "orientation": 3,
+    "right": 44,
+    "top": 0,
+    "width": 812
+   },
+   "landscape_left": {
+    "bottom": 20,
+    "height": 375,
+    "left": 44,
+    "orientation": 4,
+    "right": 44,
+    "top": 0,
+    "width": 812
+   },
+   "measured_at": "2026-11-18",
+   "model": "iPhone12,3",
+   "portrait": {
+    "bottom": 34,
+    "height": 812,
+    "left": 0,
+    "orientation": 1,
+    "right": 0,
+    "top": 44,
+    "width": 375
+   },
+   "runtime": "27.0",
+   "screen": {
+    "height": 812,
+    "scale": 3,
+    "width": 375
+   },
+   "system": "27.0"
+  },
+  "iPhone-11-Pro-Max": {
+   "applies_to": [
+    "iPhone-11-Pro-Max"
+   ],
+   "device_name": "apple-mcp-temp iPhone-11-Pro-Max",
+   "landscape": {
+    "bottom": 20,
+    "height": 414,
+    "left": 44,
+    "orientation": 3,
+    "right": 44,
+    "top": 0,
+    "width": 896
+   },
+   "landscape_left": {
+    "bottom": 20,
+    "height": 414,
+    "left": 44,
+    "orientation": 4,
+    "right": 44,
+    "top": 0,
+    "width": 896
+   },
+   "measured_at": "2026-11-18",
+   "model": "iPhone12,5",
+   "portrait": {
+    "bottom": 34,
+    "height": 896,
+    "left": 0,
+    "orientation": 1,
+    "right": 0,
+    "top": 44,
+    "width": 414
+   },
+   "runtime": "27.0",
+   "screen": {
+    "height": 896,
+    "scale": 3,
+    "width": 414
+   },
+   "system": "27.0"
+  },
+  "iPhone-12-Pro": {
+   "applies_to": [
+    "iPhone-12-Pro",
+    "iPhone-12"
+   ],
+   "device_name": "apple-mcp-temp iPhone-12-Pro",
+   "landscape": {
+    "bottom": 20,
+    "height": 390,
+    "left": 47,
+    "orientation": 3,
+    "right": 47,
+    "top": 0,
+    "width": 844
+   },
+   "landscape_left": {
+    "bottom": 20,
+    "height": 390,
+    "left": 47,
+    "orientation": 4,
+    "right": 47,
+    "top": 0,
+    "width": 844
+   },
+   "measured_at": "2026-11-18",
+   "model": "iPhone13,3",
+   "portrait": {
+    "bottom": 34,
+    "height": 844,
+    "left": 0,
+    "orientation": 1,
+    "right": 0,
+    "top": 47,
+    "width": 390
+   },
+   "runtime": "27.0",
+   "screen": {
+    "height": 844,
+    "scale": 3,
+    "width": 390
+   },
+   "system": "27.0"
+  },
+  "iPhone-12-Pro-Max": {
+   "applies_to": [
+    "iPhone-12-Pro-Max"
+   ],
+   "device_name": "apple-mcp-temp iPhone-12-Pro-Max",
+   "landscape": {
+    "bottom": 20,
+    "height": 428,
+    "left": 47,
+    "orientation": 3,
+    "right": 47,
+    "top": 0,
+    "width": 926
+   },
+   "landscape_left": {
+    "bottom": 20,
+    "height": 428,
+    "left": 47,
+    "orientation": 4,
+    "right": 47,
+    "top": 0,
+    "width": 926
+   },
+   "measured_at": "2026-11-18",
+   "model": "iPhone13,4",
+   "portrait": {
+    "bottom": 34,
+    "height": 926,
+    "left": 0,
+    "orientation": 1,
+    "right": 0,
+    "top": 47,
+    "width": 428
+   },
+   "runtime": "27.0",
+   "screen": {
+    "height": 926,
+    "scale": 3,
+    "width": 428
+   },
+   "system": "27.0"
+  },
+  "iPhone-13-mini": {
+   "applies_to": [
+    "iPhone-13-mini",
+    "iPhone-12-mini"
+   ],
+   "device_name": "apple-mcp-temp iPhone-13-mini",
+   "landscape": {
+    "bottom": 20,
+    "height": 375,
+    "left": 50,
+    "orientation": 3,
+    "right": 50,
+    "top": 0,
+    "width": 812
+   },
+   "landscape_left": {
+    "bottom": 20,
+    "height": 375,
+    "left": 50,
+    "orientation": 4,
+    "right": 50,
+    "top": 0,
+    "width": 812
+   },
+   "measured_at": "2026-11-18",
+   "model": "iPhone14,4",
+   "portrait": {
+    "bottom": 34,
+    "height": 812,
+    "left": 0,
+    "orientation": 1,
+    "right": 0,
+    "top": 50,
+    "width": 375
+   },
+   "runtime": "27.0",
+   "screen": {
+    "height": 812,
+    "scale": 3,
+    "width": 375
+   },
+   "system": "27.0"
+  },
+  "iPhone-14-Plus": {
+   "applies_to": [
+    "iPhone-14-Plus",
+    "iPhone-13-Pro-Max"
+   ],
+   "device_name": "apple-mcp-temp iPhone-14-Plus",
+   "landscape": {
+    "bottom": 20,
+    "height": 428,
+    "left": 47,
+    "orientation": 3,
+    "right": 47,
+    "top": 0,
+    "width": 926
+   },
+   "landscape_left": {
+    "bottom": 20,
+    "height": 428,
+    "left": 47,
+    "orientation": 4,
+    "right": 47,
+    "top": 0,
+    "width": 926
+   },
+   "measured_at": "2026-11-18",
+   "model": "iPhone14,8",
+   "portrait": {
+    "bottom": 34,
+    "height": 926,
+    "left": 0,
+    "orientation": 1,
+    "right": 0,
+    "top": 47,
+    "width": 428
+   },
+   "runtime": "27.0",
+   "screen": {
+    "height": 926,
+    "scale": 3,
+    "width": 428
+   },
+   "system": "27.0"
+  },
+  "iPhone-16": {
+   "applies_to": [
+    "iPhone-16",
+    "iPhone-15-Pro",
+    "iPhone-15",
+    "iPhone-14-Pro"
+   ],
+   "device_name": "apple-mcp-temp iPhone-16",
+   "landscape": {
+    "bottom": 20,
+    "height": 393,
+    "left": 59,
+    "orientation": 3,
+    "right": 59,
+    "top": 0,
+    "width": 852
+   },
+   "landscape_left": {
+    "bottom": 20,
+    "height": 393,
+    "left": 59,
+    "orientation": 4,
+    "right": 59,
+    "top": 0,
+    "width": 852
+   },
+   "measured_at": "2026-11-18",
+   "model": "iPhone17,3",
+   "portrait": {
+    "bottom": 34,
+    "height": 852,
+    "left": 0,
+    "orientation": 1,
+    "right": 0,
+    "top": 59,
+    "width": 393
+   },
+   "runtime": "27.0",
+   "screen": {
+    "height": 852,
+    "scale": 3,
+    "width": 393
+   },
+   "system": "27.0"
+  },
+  "iPhone-16-Plus": {
+   "applies_to": [
+    "iPhone-16-Plus",
+    "iPhone-15-Pro-Max",
+    "iPhone-15-Plus",
+    "iPhone-14-Pro-Max"
+   ],
+   "device_name": "apple-mcp-temp iPhone-16-Plus",
+   "landscape": {
+    "bottom": 20,
+    "height": 430,
+    "left": 59,
+    "orientation": 3,
+    "right": 59,
+    "top": 0,
+    "width": 932
+   },
+   "landscape_left": {
+    "bottom": 20,
+    "height": 430,
+    "left": 59,
+    "orientation": 4,
+    "right": 59,
+    "top": 0,
+    "width": 932
+   },
+   "measured_at": "2026-11-18",
+   "model": "iPhone17,4",
+   "portrait": {
+    "bottom": 34,
+    "height": 932,
+    "left": 0,
+    "orientation": 1,
+    "right": 0,
+    "top": 59,
+    "width": 430
+   },
+   "runtime": "27.0",
+   "screen": {
+    "height": 932,
+    "scale": 3,
+    "width": 430
+   },
+   "system": "27.0"
+  },
+  "iPhone-17": {
+   "applies_to": [
+    "iPhone-18-Pro",
+    "iPhone-17-Pro",
+    "iPhone-17",
+    "iPhone-16-Pro"
+   ],
+   "device_name": "apple-mcp-temp iPhone-17",
+   "landscape": {
+    "bottom": 20,
+    "height": 402,
+    "left": 62,
+    "orientation": 3,
+    "right": 62,
+    "top": 0,
+    "width": 874
+   },
+   "landscape_left": {
+    "bottom": 20,
+    "height": 402,
+    "left": 62,
+    "orientation": 4,
+    "right": 62,
+    "top": 0,
+    "width": 874
+   },
+   "measured_at": "2026-11-18",
+   "model": "iPhone18,3",
+   "portrait": {
+    "bottom": 34,
+    "height": 874,
+    "left": 0,
+    "orientation": 1,
+    "right": 0,
+    "top": 62,
+    "width": 402
+   },
+   "runtime": "27.0",
+   "screen": {
+    "height": 874,
+    "scale": 3,
+    "width": 402
+   },
+   "system": "27.0"
+  },
+  "iPhone-17e": {
+   "applies_to": [
+    "iPhone-17e",
+    "iPhone-16e",
+    "iPhone-14",
+    "iPhone-13-Pro",
+    "iPhone-13"
+   ],
+   "device_name": "apple-mcp-temp iPhone-17e",
+   "landscape": {
+    "bottom": 20,
+    "height": 390,
+    "left": 47,
+    "orientation": 3,
+    "right": 47,
+    "top": 0,
+    "width": 844
+   },
+   "landscape_left": {
+    "bottom": 20,
+    "height": 390,
+    "left": 47,
+    "orientation": 4,
+    "right": 47,
+    "top": 0,
+    "width": 844
+   },
+   "measured_at": "2026-11-18",
+   "model": "iPhone18,5",
+   "portrait": {
+    "bottom": 34,
+    "height": 844,
+    "left": 0,
+    "orientation": 1,
+    "right": 0,
+    "top": 47,
+    "width": 390
+   },
+   "runtime": "27.0",
+   "screen": {
+    "height": 844,
+    "scale": 3,
+    "width": 390
+   },
+   "system": "27.0"
+  },
+  "iPhone-18-Pro": {
+   "applies_to": [
+    "iPhone-18-Pro",
+    "iPhone-17-Pro",
+    "iPhone-17",
+    "iPhone-16-Pro"
+   ],
+   "device_name": "apple-mcp-temp iPhone-18-Pro",
+   "landscape": {
+    "bottom": 20,
+    "height": 402,
+    "left": 62,
+    "orientation": 3,
+    "right": 62,
+    "top": 0,
+    "width": 874
+   },
+   "landscape_left": {
+    "bottom": 20,
+    "height": 402,
+    "left": 62,
+    "orientation": 4,
+    "right": 62,
+    "top": 0,
+    "width": 874
+   },
+   "measured_at": "2026-11-18",
+   "model": "iPhone19,2",
+   "portrait": {
+    "bottom": 34,
+    "height": 874,
+    "left": 0,
+    "orientation": 1,
+    "right": 0,
+    "top": 62,
+    "width": 402
+   },
+   "runtime": "27.0",
+   "screen": {
+    "height": 874,
+    "scale": 3,
+    "width": 402
+   },
+   "system": "27.0"
+  },
+  "iPhone-18-Pro-Max": {
+   "applies_to": [
+    "iPhone-18-Pro-Max",
+    "iPhone-17-Pro-Max",
+    "iPhone-16-Pro-Max"
+   ],
+   "device_name": "apple-mcp-temp iPhone-18-Pro-Max",
+   "landscape": {
+    "bottom": 20,
+    "height": 440,
+    "left": 62,
+    "orientation": 3,
+    "right": 62,
+    "top": 0,
+    "width": 956
+   },
+   "landscape_left": {
+    "bottom": 20,
+    "height": 440,
+    "left": 62,
+    "orientation": 4,
+    "right": 62,
+    "top": 0,
+    "width": 956
+   },
+   "measured_at": "2026-11-18",
+   "model": "iPhone19,3",
+   "portrait": {
+    "bottom": 34,
+    "height": 956,
+    "left": 0,
+    "orientation": 1,
+    "right": 0,
+    "top": 62,
+    "width": 440
+   },
+   "runtime": "27.0",
+   "screen": {
+    "height": 956,
+    "scale": 3,
+    "width": 440
+   },
+   "system": "27.0"
+  },
+  "iPhone-Air": {
+   "applies_to": [
+    "iPhone-Air"
+   ],
+   "device_name": "apple-mcp-temp iPhone-Air",
+   "landscape": {
+    "bottom": 20,
+    "height": 420,
+    "left": 68,
+    "orientation": 3,
+    "right": 68,
+    "top": 0,
+    "width": 912
+   },
+   "landscape_left": {
+    "bottom": 20,
+    "height": 420,
+    "left": 68,
+    "orientation": 4,
+    "right": 68,
+    "top": 0,
+    "width": 912
+   },
+   "measured_at": "2026-11-18",
+   "model": "iPhone18,4",
+   "portrait": {
+    "bottom": 34,
+    "height": 912,
+    "left": 0,
+    "orientation": 1,
+    "right": 0,
+    "top": 68,
+    "width": 420
+   },
+   "runtime": "27.0",
+   "screen": {
+    "height": 912,
+    "scale": 3,
+    "width": 420
+   },
+   "system": "27.0"
+  },
+  "iPhone-Duo": {
+   "applies_to": [
+    "iPhone-Duo"
+   ],
+   "device_name": "apple-mcp-temp iPhone-Duo",
+   "landscape": {
+    "bottom": 34,
+    "height": 466,
+    "left": 84,
+    "orientation": 3,
+    "right": 0,
+    "top": 0,
+    "width": 678
+   },
+   "landscape_left": {
+    "bottom": 34,
+    "height": 466,
+    "left": 0,
+    "orientation": 4,
+    "right": 84,
+    "top": 0,
+    "width": 678
+   },
+   "measured_at": "2026-11-18",
+   "model": "iPhone19,4",
+   "portrait": {
+    "bottom": 34,
+    "height": 678,
+    "left": 0,
+    "orientation": 1,
+    "right": 84,
+    "top": 0,
+    "width": 466
+   },
+   "runtime": "27.2",
+   "screen": {
+    "height": 678,
+    "scale": 3,
+    "width": 466
+   },
+   "system": "27.2"
+  },
+  "iPhone-SE-3rd-generation": {
+   "applies_to": [
+    "iPhone-SE-3rd-generation",
+    "iPhone-SE--2nd-generation-"
+   ],
+   "device_name": "apple-mcp-temp iPhone-SE-3rd-generation",
+   "landscape": {
+    "bottom": 0,
+    "height": 375,
+    "left": 0,
+    "orientation": 3,
+    "right": 0,
+    "top": 0,
+    "width": 667
+   },
+   "landscape_left": {
+    "bottom": 0,
+    "height": 375,
+    "left": 0,
+    "orientation": 4,
+    "right": 0,
+    "top": 0,
+    "width": 667
+   },
+   "measured_at": "2026-11-18",
+   "model": "iPhone14,6",
+   "portrait": {
+    "bottom": 0,
+    "height": 667,
+    "left": 0,
+    "orientation": 1,
+    "right": 0,
+    "top": 20,
+    "width": 375
+   },
+   "runtime": "27.0",
+   "screen": {
+    "height": 667,
+    "scale": 2,
+    "width": 375
+   },
+   "system": "27.0"
+  }
+ },
+ "note": "Safe-area insets in points, measured in the iOS Simulator by extractor/measure-safe-areas.py: a window's safeAreaInsets with the status bar shown, in portrait and in landscape (home button or Dynamic Island on the left of a landscape-right screen). `applies_to` lists the devices with the same screen sizes, corner radii and Dynamic Island, which share the measurement."
+}

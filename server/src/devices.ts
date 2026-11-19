@@ -81,20 +81,61 @@ function table(devices: Device[]): string {
   ].join("\n");
 }
 
+function insetTable(devices: Device[]): string {
+  const rows = devices.flatMap((d) =>
+    d.screens
+      .filter((s) => s.safe_area)
+      .map((s) => {
+        const { portrait: p, landscape: l } = s.safe_area!;
+        const name = s.role ? `${d.name}, ${ROLE[s.role]}` : d.name;
+        const land = l ? [l.top, l.bottom, l.left, l.right].map(num) : ["", "", "", ""];
+        return `| ${name} | ${num(p.top)} | ${num(p.bottom)} | ${num(p.left)} | ${num(p.right)} | ${land.join(" | ")} |`;
+      }),
+  );
+  if (!rows.length) return "";
+  return [
+    "Safe area insets (points)",
+    "",
+    "| Device | Portrait top | Portrait bottom | Portrait left | Portrait right | Landscape top | Landscape bottom | Landscape left | Landscape right |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+    ...rows,
+  ].join("\n");
+}
+
 function byFamily(devices: Device[]): string {
   const families = [...new Set(devices.map((d) => d.family))];
   const order = (f: string) => (FAMILIES as readonly string[]).indexOf(f);
   families.sort((a, b) => order(a) - order(b));
   return families
-    .map((f) => `## ${FAMILY_TITLE[f] ?? f}\n\n${table(devices.filter((d) => d.family === f))}` + (f === "tv" ? `\n\n${TV}` : ""))
+    .map((f) => {
+      const list = devices.filter((d) => d.family === f);
+      const insets = insetTable(list);
+      return `## ${FAMILY_TITLE[f] ?? f}\n\n${table(list)}` + (insets ? `\n\n${insets}` : "") + (f === "tv" ? `\n\n${TV}` : "");
+    })
     .join("\n\n");
 }
 
-const NOTE =
+const SIZES_NOTE =
   "iPhone, iPad and Apple Watch sizes are given with the screen in portrait; swap width and height for landscape. " +
-  "Corner radii are listed for that same portrait position. Design at the size in points; the scale gives the pixel size for exported " +
-  "images. This data does not hold safe-area insets, the position or size of the Dynamic Island and cameras, or " +
-  "fold and hinge positions; take those from the guidelines (search_hig) and say so if you estimate them.";
+  "Corner radii are listed for that same portrait position. Design at the size in points; the scale gives the pixel size for exported images.";
+
+/** The closing note: what the data holds for these devices, and what it does not. */
+function note(devices: Device[]): string {
+  const all = devices.flatMap((d) => d.screens);
+  const measured = all.filter((s) => s.safe_area).length;
+  const insets =
+    measured === 0
+      ? "This data does not hold safe-area insets, "
+      : "Safe-area insets were measured in the iOS Simulator with the status bar shown; landscape is landscape-right, " +
+        "with the Dynamic Island or home button on the left. Lay out bars and content inside them. " +
+        (measured < all.length ? "Devices without a row in the safe-area table have no measurement. " : "") +
+        (devices.some((d) => d.screens.some((s) => s.safe_area && !s.safe_area.landscape))
+          ? "Empty landscape cells could not be measured reliably (iPad: the Simulator keeps the status bar placed for portrait). "
+          : "") +
+        "This data does not hold ";
+  return `${SIZES_NOTE} ${insets}the position or size of the Dynamic Island and cameras, or fold and hinge positions; ` +
+    "take those from the guidelines (search_hig) and say so if you estimate them.";
+}
 
 /**
  * Screen sizes for the named devices, or for every current device when none are named.
@@ -114,7 +155,7 @@ export function deviceMetrics(queries: string[], families: string[], all: boolea
       for (const d of hits) found.set(d.id, d);
     }
     const parts: string[] = [];
-    if (found.size) parts.push(byFamily([...found.values()]), NOTE);
+    if (found.size) parts.push(byFamily([...found.values()]), note([...found.values()]));
     if (vision) parts.push(VISION);
     if (missing.length) {
       parts.push(
@@ -130,5 +171,5 @@ export function deviceMetrics(queries: string[], families: string[], all: boolea
   if (families.length) list = list.filter((d) => families.includes(d.family));
   const vision = !families.length || families.includes("vision");
   if (!list.length) return [vision ? VISION : "No devices match.", source].join("\n\n");
-  return [byFamily(list), NOTE, ...(vision ? [VISION] : []), source].join("\n\n");
+  return [byFamily(list), note(list), ...(vision ? [VISION] : []), source].join("\n\n");
 }
