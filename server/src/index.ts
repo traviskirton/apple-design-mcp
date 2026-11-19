@@ -15,7 +15,7 @@ import { lookupSymbols, readSymbols, symbolPack } from "./symbols.js";
 import type { ShapeLoader } from "./symbols.js";
 
 const SERVER_NAME = "apple-design";
-const SERVER_VERSION = "0.5.1";
+const SERVER_VERSION = "0.6.0";
 
 const HIG_DATE = higPack.pack_version;
 
@@ -186,7 +186,8 @@ function buildServer(app: string, env: Env, origin: string): McpServer {
     {
       title: "Get device screen sizes",
       description:
-        "Get the screen size of Apple devices in points and pixels, with the scale factor, as defined by " +
+        "Get the screen size of Apple devices in points and pixels, with the scale factor, corner radius and " +
+        "safe-area insets (measured in the Simulator for iPhone and iPad), as defined by " +
         `${devicePack.source.version}. Call it before drawing a screen, frame or mockup at a device's real size, ` +
         "and for devices newer than you remember. Name every device of the task in one call as `devices`, such as " +
         "[\"iPhone Duo\", \"iPad Pro 13\"]. Without `devices` it lists every current device.",

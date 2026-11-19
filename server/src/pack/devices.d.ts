@@ -7,12 +7,24 @@ export interface Corners {
   bottom_right: number;
 }
 
+export interface Insets {
+  top: number;
+  bottom: number;
+  left: number;
+  right: number;
+}
+
 export interface Screen {
   /** Only on devices with two screens of their own: "outer" (closed) and "inner" (open). */
   role?: "outer" | "inner";
-  /** Portrait size in points. */
+  /** Portrait size in points: the size apps are laid out at. */
   width_pt: number;
   height_pt: number;
+  /**
+   * Present when the layout size is larger than pixels ÷ scale (iPhone 12 mini and 13 mini): the
+   * system draws at the layout size and scales the picture down to the screen's pixels.
+   */
+  downsampled?: true;
   scale: number;
   width_px: number;
   height_px: number;
@@ -21,6 +33,12 @@ export interface Screen {
   corner_radius_pt?: number | Corners;
   /** Present when the screen's natural orientation is landscape. */
   natural_orientation?: "landscape";
+  /**
+   * The window's safe-area insets in points, measured in the iOS Simulator with the status bar shown.
+   * Landscape is landscape-right: the Dynamic Island or home button on the left. It is left out where
+   * the two landscape orientations did not agree in the Simulator (iPad).
+   */
+  safe_area?: { portrait: Insets; landscape?: Insets };
 }
 
 export interface Device {
