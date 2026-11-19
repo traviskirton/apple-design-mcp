@@ -5,6 +5,9 @@ src/pack/hig.js
 # One SVG per SF Symbol, written by the extractor on a Mac
 assets/symbols/
 
+# The other eight weights of every SF Symbol, 256 files each, written by extract-symbols --weights
+assets/symbol-weights/
+
 # Apple's technology artwork (SVG and PNG), written by scripts/build-technology-pack.mjs on a Mac
 assets/technologies/
 

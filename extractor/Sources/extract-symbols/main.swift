@@ -5,6 +5,9 @@
 //   swift run -c release extract-symbols --verify 60     also compare 60 SVGs (some fixed, the rest random)
 //                                                        with the system's own rendering, pixel by pixel
 //   swift run -c release extract-symbols --verify-only 60  compare without writing anything
+//   swift run -c release extract-symbols --weights all   the other eight weights (or --weights medium,semibold),
+//                                                        into server/assets/symbol-weights/WEIGHT/SHARD.txt;
+//                                                        with --only, only those symbols are updated
 import AppKit
 import PDFVector
 import SwiftUI
@@ -16,11 +19,27 @@ let repo = URL(fileURLWithPath: #filePath).deletingLastPathComponent().deletingL
     .deletingLastPathComponent().deletingLastPathComponent()
 let packURL = repo.appendingPathComponent("server/src/pack/symbols.js")
 let svgDir = repo.appendingPathComponent("server/assets/symbols")
+let weightDir = repo.appendingPathComponent("server/assets/symbol-weights")
 
-/// The symbol drawn by SwiftUI as PDF: regular weight, medium scale, 100-point font.
-@MainActor func renderPDF(_ name: String) -> Data? {
+/// The weights besides regular. The Worker may hold at most 20,000 static files, so each weight is
+/// written as 256 shards, one symbol per line: its name, a tab, its SVG. server/src/symbols.ts and
+/// server/scripts/symbol-shapes.mjs find a symbol's shard the same way (`shard`).
+let weights: [(String, Font.Weight)] = [
+    ("ultralight", .ultraLight), ("thin", .thin), ("light", .light), ("medium", .medium),
+    ("semibold", .semibold), ("bold", .bold), ("heavy", .heavy), ("black", .black),
+]
+
+/// FNV-1a of the name's UTF-8 bytes, modulo 256, as two hex digits.
+func shard(_ name: String) -> String {
+    var h: UInt32 = 0x811c9dc5
+    for b in name.utf8 { h ^= UInt32(b); h = h &* 0x01000193 }
+    return String(format: "%02x", h % 256)
+}
+
+/// The symbol drawn by SwiftUI as PDF: medium scale, 100-point font, regular weight unless given.
+@MainActor func renderPDF(_ name: String, weight: Font.Weight = .regular) -> Data? {
     guard NSImage(systemSymbolName: name, accessibilityDescription: nil) != nil else { return nil }
-    let renderer = ImageRenderer(content: Image(systemName: name).font(.system(size: 100)).foregroundStyle(.black))
+    let renderer = ImageRenderer(content: Image(systemName: name).font(.system(size: 100, weight: weight)).foregroundStyle(.black))
     let data = NSMutableData()
     renderer.render { size, draw in
         var box = CGRect(origin: .zero, size: size)
@@ -84,12 +103,53 @@ let svgDir = repo.appendingPathComponent("server/assets/symbols")
     let only = option("--only").map { Set($0.split(separator: ",").map(String.init)) }
     var svgs: [String: String] = [:]
 
-    func extract(_ name: String) -> (svg: String?, why: String?) {
-        guard let pdf = renderPDF(name) else { return (nil, "macOS cannot draw it") }
+    func extract(_ name: String, weight: Font.Weight = .regular) -> (svg: String?, why: String?) {
+        guard let pdf = renderPDF(name, weight: weight) else { return (nil, "macOS cannot draw it") }
         guard let shape = readPDF(pdf) else { return (nil, "the PDF could not be read") }
         if !shape.unsupported.isEmpty { return (nil, "the PDF holds \(shape.unsupported.sorted().joined(separator: ", "))") }
         if shape.fills.isEmpty { return (nil, "it draws nothing") }
         return (svgDocument(shape), nil)
+    }
+
+    if let list = option("--weights") {
+        let wanted = list == "all" ? weights : weights.filter { w in list.split(separator: ",").contains { $0 == w.0 } }
+        if wanted.isEmpty { print("--weights takes all, or names from: \(weights.map(\.0).joined(separator: ", "))"); return }
+        let todo = only.map { o in meta.names.filter { o.contains($0) } } ?? meta.names
+        for (weightName, weight) in wanted {
+            let dir = weightDir.appendingPathComponent(weightName)
+            try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
+            var shards: [String: [String: String]] = [:]
+            if only != nil {
+                // Keep the other symbols already in the shards.
+                for file in (try? FileManager.default.contentsOfDirectory(atPath: dir.path)) ?? [] where file.hasSuffix(".txt") {
+                    let text = (try? String(contentsOf: dir.appendingPathComponent(file), encoding: .utf8)) ?? ""
+                    for line in text.split(separator: "\n") {
+                        guard let tab = line.firstIndex(of: "\t") else { continue }
+                        shards[String(file.dropLast(4)), default: [:]][String(line[..<tab])] = String(line[line.index(after: tab)...])
+                    }
+                }
+            }
+            var written = 0, skipped = 0, done = 0
+            for name in todo {
+                let (svg, _) = autoreleasepool { extract(name, weight: weight) }
+                if let svg {
+                    shards[shard(name), default: [:]][name] = svg.trimmingCharacters(in: .whitespacesAndNewlines)
+                    written += 1
+                } else {
+                    skipped += 1
+                }
+                done += 1
+                if done % 2000 == 0 { print("  \(weightName): \(done)/\(todo.count)") }
+            }
+            var bytes = 0
+            for (key, entries) in shards {
+                let text = entries.keys.sorted().map { "\($0)\t\(entries[$0]!)" }.joined(separator: "\n") + "\n"
+                bytes += text.utf8.count
+                try Data(text.utf8).write(to: dir.appendingPathComponent("\(key).txt"))
+            }
+            print("\(weightName): \(written) symbols in \(shards.count) files (\(bytes / 1024) KB) in server/assets/symbol-weights/\(weightName); \(skipped) skipped")
+        }
+        return
     }
 
     if verifyOnly == nil {

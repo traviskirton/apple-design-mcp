@@ -3,7 +3,7 @@
 import { forBrowsers, leftovers } from "../scripts/svg-for-browsers.mjs";
 import { hasSymbols, mergeSymbols, tidy } from "../scripts/export-ui-kit-svg.mjs";
 import { moveImages } from "../scripts/svg-images.mjs";
-import { mkdtempSync, readFileSync, readdirSync, rmSync } from "node:fs";
+import { mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 
@@ -153,6 +153,50 @@ rmSync(temp, { recursive: true, force: true });
   check(out.includes('<g transform="translate(210 51)"><g id="Label" style="mix-blend-mode:multiply"><text fill="#1A1A1A" font-family="SF Pro, -apple-system, system-ui, sans-serif" font-size="10" font-weight="590"><tspan x="21" y="9">Tab 2</tspan></text></g></g>'), "a label with the blend mode should be text in a multiply group: " + out);
   check(out.includes('<image id="p"') && flattened(out).length === 0, "a picture that is a real picture should stay, and the others be gone");
   check(asMarkup(under[0][0], `<svg><image href="data:image/png;base64,AA"/></svg>`, 9, () => "x") === null, "a layer that exports as a picture should not be used");
+}
+
+// A symbol's weight goes with it; a symbol that is the mask itself is drawn from our own shapes.
+{
+  const { mergeSymbols: merge } = await import("../scripts/export-ui-kit-svg.mjs");
+  const heavy = `<svg><text id="s" fill="#000" font-family="SF Pro" font-size="17" font-weight="590"><tspan x="1" y="2">&#x1007c9;</tspan></text></svg>`;
+  const got = merge(heavy, `<svg><path id="s" d="M1 1Z"/></svg>`, () => "diamond.fill");
+  check(got.svg.includes('<path data-symbol="diamond.fill" data-symbol-weight="semibold" id="s"') || got.svg.includes('data-symbol="diamond.fill" data-symbol-weight="semibold"'), "a semibold symbol should say so: " + got.svg);
+
+  const { weightName, shardOf, inkBox, placeSymbol, readShape } = await import("../scripts/symbol-shapes.mjs");
+  check(weightName(590) === "semibold" && weightName(510) === "medium" && weightName(400) === "regular" && weightName(undefined) === "regular" && weightName(900) === "black", "font weights should map to symbol weights");
+  check(shardOf("heart") === "e3" && shardOf("star.fill") === "40" && shardOf("square.and.arrow.up") === "6d", "the shard of a name should not change (the extractor and the Worker use the same)");
+
+  const box = inkBox(`<svg viewBox="0 0 120 100"><path d="M10 20L110 20L110 80C110 90 10 90 10 80Z"/></svg>`);
+  check(box && box.x === 10 && box.y === 20 && box.w === 100 && Math.abs(box.h - 67.5) < 0.01, "the ink box should hold the curve: " + JSON.stringify(box));
+
+  const temp = mkdtempSync(join(tmpdir(), "shapes-"));
+  mkdirSync(join(temp, "symbols"));
+  mkdirSync(join(temp, "symbol-weights", "semibold"), { recursive: true });
+  writeFileSync(join(temp, "symbols", "star.fill.svg"), '<svg viewBox="0 0 10 10"><path d="M0 0L10 0L10 10Z"/></svg>');
+  writeFileSync(join(temp, "symbol-weights", "semibold", shardOf("star.fill") + ".txt"), 'star.fill\t<svg viewBox="0 0 12 12"><path d="M1 1L11 1L11 11Z"/></svg>\n');
+  check(readShape(temp, "star.fill").includes("M0 0") && readShape(temp, "star.fill", "semibold").includes("M1 1") && readShape(temp, "heart", "semibold") === null, "shapes should be read in their weight");
+  rmSync(temp, { recursive: true, force: true });
+
+  // The Duo tab: the symbol TEXT is the mask; the white and tint fills after it are cut to the glyph.
+  const { flatLayers, match, asMarkup } = await import("../scripts/redraw-flattened.mjs");
+  const bb = (x, y, w, h) => ({ x: x + 500, y: y + 500, width: w, height: h });
+  const fill = (r, g, b, a = 1) => [{ type: "SOLID", color: { r, g, b, a } }];
+  const duo = { id: "2:1", type: "COMPONENT", absoluteBoundingBox: bb(0, 0, 48, 48), children: [
+    { id: "sel", type: "RECTANGLE", blendMode: "LINEAR_BURN", fills: fill(0.93, 0.93, 0.93), absoluteBoundingBox: bb(2, -5, 44, 58), absoluteRenderBounds: bb(2, -5, 44, 58) },
+    { id: "f", type: "FRAME", absoluteBoundingBox: bb(8, 9.5, 32, 28), children: [
+      { id: "glyph", type: "TEXT", isMask: true, characters: "\u{1002C3}", style: { fontWeight: 590 }, fills: fill(0, 0.53, 1), absoluteBoundingBox: bb(8, 9.5, 32, 28), absoluteRenderBounds: null },
+      { id: "white", type: "RECTANGLE", fills: [{ type: "SOLID", color: { r: 1, g: 1, b: 1, a: 1 }, opacity: 0.5 }], absoluteBoundingBox: bb(0, -3, 48, 54), absoluteRenderBounds: bb(11.88, 11.2, 24.23, 23.06) },
+      { id: "tint", type: "RECTANGLE", blendMode: "LINEAR_BURN", fills: fill(0, 136 / 255, 1), absoluteBoundingBox: bb(0, -3, 48, 54), absoluteRenderBounds: bb(11.88, 11.2, 24.23, 23.06) },
+    ] },
+  ] };
+  const layers = flatLayers(duo);
+  check(!layers.some((l) => l.id === "white" || l.id === "tint"), "fills shown through a mask should not be drawn themselves: " + layers.map((l) => l.id));
+  const under = match([{ x: 11.88, y: 11.2, w: 24.23, h: 23.06 }], layers);
+  check(under[0].length === 1 && under[0][0].type === "SYMBOL" && under[0][0].tint.color === "#0088FF", "the glyph picture should be the symbol in the tint color: " + JSON.stringify(under[0]));
+  const made = asMarkup(under[0][0], '<svg viewBox="0 0 120 120"><path d="M10 10L110 10L60 110Z"/></svg>', 1, () => "star.fill");
+  check(made && made.body.startsWith('<g transform="translate(') && made.body.includes('fill="#0088FF"') && made.body.includes('<path data-symbol="star.fill" data-symbol-weight="semibold" d="M10 10'), "the symbol should be our shape, placed and tinted: " + made?.body);
+  check(placeSymbol('<svg viewBox="0 0 120 120"><path d="M10 10L110 10L110 110L10 110Z"/></svg>', { x: 5, y: 5, w: 20, h: 20 }, { color: "#000000", opacity: 1 }, "x", "regular").startsWith('<g transform="translate(3 3) scale(0.2)"'), "the ink should fill the box");
+  check(asMarkup(under[0][0], null, 2, () => "star.fill") === null, "a symbol with no shape here should leave the picture");
 }
 
 console.log(failed ? `${failed} failed` : "OK");

@@ -21,6 +21,8 @@ swift run -c release extract-symbols                   # pack and all SVGs (a fe
 swift run -c release extract-symbols --verify 60       # the same, then compare 60 SVGs with the system's drawing
 swift run -c release extract-symbols --verify-only 60  # compare only, write nothing
 swift run -c release extract-symbols --only heart,wifi # just these SVGs; the pack is rewritten from what is on disk
+swift run -c release extract-symbols --weights all     # the other eight weights, into server/assets/symbol-weights
+                                                      # (256 files per weight; --weights medium,semibold for some)
 ```
 
 Run it again after a macOS or SF Symbols update, then deploy the server.
