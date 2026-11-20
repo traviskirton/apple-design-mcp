@@ -104,8 +104,10 @@ p, h1, h2, h3, ol, ul, figure { margin: 0; }
 .snippet .hl { color: var(--accent); }
 .snippet button { flex: none; border-left: 1px solid var(--rule); background: transparent; color: var(--accent); font: 700 15px var(--mono); padding: 0 24px; min-width: 100px; }
 .other-text { font-size: 24px; line-height: 1.4; max-width: 640px; }
-.try { display: grid; grid-template-columns: 120px minmax(0,1fr); gap: 24px; align-items: baseline; }
-.try q { font-size: 30px; line-height: 1.3; font-weight: 500; letter-spacing: -.01em; max-width: 1000px; text-wrap: pretty; }
+.try { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 14px 32px; align-items: center; }
+.try .eyebrow { grid-column: 1 / -1; }
+.try button { border: 1px solid var(--rule); background: transparent; color: var(--accent); font: 700 15px var(--mono); padding: 12px 20px; min-width: 100px; }
+.try-text { font-size: 30px; line-height: 1.3; font-weight: 500; letter-spacing: -.01em; max-width: 1000px; text-wrap: pretty; }
 
 /* Proof */
 .proof-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
@@ -174,8 +176,8 @@ p, h1, h2, h3, ol, ul, figure { margin: 0; }
   .snippet pre { padding: 20px 22px; font-size: 14px; }
   .snippet button { padding: 0 20px; min-width: 92px; font-size: 14px; }
   .other-text { font-size: 21px; }
-  .try { grid-template-columns: 80px minmax(0,1fr); gap: 16px; }
-  .try q { font-size: 24px; }
+  .try { gap: 12px 24px; }
+  .try-text { font-size: 24px; }
 
   .proof-grid { gap: 16px; }
   .proof-grid figure { gap: 12px; }
@@ -245,7 +247,8 @@ p, h1, h2, h3, ol, ul, figure { margin: 0; }
   .snippet button { border-left: 0; border-top: 1px solid var(--rule); height: 44px; min-width: 0; padding: 0; font-size: 14px; }
   .other-text { font-size: 18px; }
   .try { display: flex; flex-direction: column; gap: 10px; padding-top: 8px; }
-  .try q { font-size: 20px; }
+  .try-text { font-size: 20px; }
+  .try button { align-self: flex-start; }
 
   .proof-grid { grid-template-columns: 1fr; gap: 32px; }
   .proof-grid figcaption { font-size: 12px; }
@@ -432,7 +435,8 @@ p, h1, h2, h3, ol, ul, figure { margin: 0; }
 
       <div class="try">
         <p class="eyebrow">Try:</p>
-        <q>Design a Settings screen for iPhone 18 Pro, light and dark. Place Apple's components as they are.</q>
+        <p class="try-text" id="try-prompt">Design the recipe detail screen of a cooking app for iPhone Duo, closed and open.</p>
+        <button type="button" data-copy="prompt">Copy</button>
       </div>
     </div>
   </section>
@@ -476,6 +480,7 @@ p, h1, h2, h3, ol, ul, figure { margin: 0; }
   document.querySelectorAll('[data-url]').forEach(el => { el.textContent = URL_; });
   const SNIPPETS = {
     url: URL_,
+    prompt: document.getElementById('try-prompt').textContent,
     code: 'claude mcp add --transport http apple-design ' + URL_,
     plugin: '/plugin marketplace add traviskirton/apple-design-mcp\n/plugin install apple-design@apple-design-mcp',
     cursor: '{ "mcpServers": { "apple-design": { "url": "' + URL_ + '" } } }',
