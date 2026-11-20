@@ -1,0 +1,11 @@
+{
+  "name": "apple-design-mcp",
+  "owner": { "name": "Travis Kirton" },
+  "plugins": [
+    {
+      "name": "apple-design",
+      "source": "./plugin",
+      "description": "Apple's design resources for designing Apple apps: the Apple Design MCP server plus a skill that tells the agent how to use it."
+    }
+  ]
+}

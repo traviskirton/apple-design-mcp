@@ -16,6 +16,15 @@
 // 4. mix-blend-mode: plus-darker exists in Safari only. It becomes multiply, which is the same on
 //    white and within a few percent on light colours.
 //
+// 5. A black shape that blends "screen" changes nothing in Figma (it is how Apple marks a blur
+//    layer, such as the scroll edge effect), but a browser that isolates its group (a mask, a
+//    filter) paints it black: the black band over the top of a screen. It is dropped.
+// 6. Figma writes an inner shadow with a spread as an erosion of the layer's alpha, though Figma
+//    erodes the layer's shape. On a layer with a faint fill (an image well's 2% fill) a browser then
+//    fills the whole layer with the shadow's colour (a white panel). The erosion now takes the
+//    shape's hard alpha, which Figma's filter computes just before it.
+// 7. A text's style "white-space: premix-blend-mode:..." gets its missing semicolon.
+//
 // Also dropped: empty groups, filters and clip paths nothing uses, and shape-rendering="crispEdges",
 // which makes rounded corners jagged.
 //
@@ -208,6 +217,21 @@ function dropUnused(lines) {
   return out;
 }
 
+const BLACK_SCREEN = /<(?:path|rect|circle|ellipse)\b(?![^>]*\s(?:filter|stroke|mask)=)[^>]*\sfill="(?:black|#000000|#000)"[^>]*mix-blend-mode:\s*screen[^>]*\/>/g;
+
+/**
+ * Fixes 5 and 6, on the whole SVG. Can be run again on its own output, and on SVGs exported before
+ * these fixes existed (scripts/refix-ui-kit-svg.mjs).
+ */
+export function browserFixes(svg) {
+  return svg
+    .replace(BLACK_SCREEN, (m, at, all) => (/<g\b[^>]*\sfilter="[^"]*"[^>]*>\s*$/.test(all.slice(Math.max(0, at - 400), at)) ? m : ""))
+    // Figma writes a text's blend mode straight after its white-space, with no semicolon between
+    // ("white-space: premix-blend-mode:plus-lighter"), so a browser ignores both.
+    .replace(/(style="[^"]*\bwhite-space:\s*pre)(mix-blend-mode:)/g, "$1;$2")
+    .replace(/(result="hardAlpha"\/>\s*<feMorphology\b[^>]*operator="erode"[^>]*)\sin="SourceAlpha"/g, '$1 in="hardAlpha"');
+}
+
 /** `svg` as Figma exported it; the same drawing for a browser. */
 export function forBrowsers(svg) {
   // One tag per line, also where Figma did not write it that way or a symbol's outline was put in.
@@ -217,10 +241,10 @@ export function forBrowsers(svg) {
   lines = dropWhiteMultiply(lines);
   lines = fixShadows(lines).flatMap((l) => l.split("\n"));
   lines = dropUnused(lines);
-  return lines
+  return browserFixes(lines
     .join("\n")
     .replace(/mix-blend-mode:\s*plus-darker/g, "mix-blend-mode:multiply")
-    .replace(/\sshape-rendering="crispEdges"/g, "");
+    .replace(/\sshape-rendering="crispEdges"/g, ""));
 }
 
 /** What a browser would still draw differently from Figma after forBrowsers: one word per kind, for the export's report. */

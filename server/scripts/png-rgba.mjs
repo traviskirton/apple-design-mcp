@@ -4,20 +4,26 @@ import { deflateSync, inflateSync } from "node:zlib";
 
 const SIGNATURE = Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]);
 
-/** `{ width, height, data }`, data being RGBA bytes row by row, not premultiplied. */
+/**
+ * `{ width, height, data, space }`, data being RGBA bytes row by row, not premultiplied, and space
+ * "p3" when the PNG says its colors are Display P3 (a cICP chunk with P3 primaries, or an ICC profile
+ * named so), else "srgb". toSRGB converts.
+ */
 export function decodePNG(buf) {
   if (buf.length < 24 || !buf.subarray(0, 8).equals(SIGNATURE)) throw new Error("not a PNG");
   const width = buf.readUInt32BE(16), height = buf.readUInt32BE(20);
   const bitDepth = buf[24], colorType = buf[25], interlace = buf[28];
   if (interlace) throw new Error("interlaced PNGs are not supported");
   const idat = [];
-  let plte = null, trns = null;
+  let plte = null, trns = null, space = "srgb";
   for (let p = 8; p + 12 <= buf.length; ) {
     const len = buf.readUInt32BE(p);
     const type = buf.toString("latin1", p + 4, p + 8);
     if (type === "IDAT") idat.push(buf.subarray(p + 8, p + 8 + len));
     else if (type === "PLTE") plte = buf.subarray(p + 8, p + 8 + len);
     else if (type === "tRNS") trns = buf.subarray(p + 8, p + 8 + len);
+    else if (type === "cICP" && buf[p + 8] === 12) space = "p3";
+    else if (type === "iCCP" && /P3/i.test(buf.toString("latin1", p + 8, p + 8 + Math.min(len, 80)).split("\0")[0])) space = "p3";
     else if (type === "IEND") break;
     p += 12 + len;
   }
@@ -66,7 +72,26 @@ export function decodePNG(buf) {
     }
     [prev, line] = [line, prev];
   }
-  return { width, height, data: out };
+  return { width, height, data: out, space };
+}
+
+// Display P3 to sRGB, both with the sRGB transfer curve, in linear light (D65 for both).
+const P3_TO_SRGB = [1.2249401, -0.2249404, 0, -0.0420569, 1.0420571, 0, -0.0196376, -0.0786361, 1.0982735];
+const toLinear = new Float64Array(256).map((_, i) => { const c = i / 255; return c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4; });
+const toByte = (l) => { const v = l <= 0 ? 0 : l >= 1 ? 1 : l <= 0.0031308 ? l * 12.92 : 1.055 * l ** (1 / 2.4) - 0.055; return Math.round(v * 255); };
+
+/** The image in sRGB: unchanged unless its space is "p3"; colors outside sRGB are clipped. */
+export function toSRGB(img) {
+  if (img.space !== "p3") return img;
+  const data = new Uint8Array(img.data);
+  const m = P3_TO_SRGB;
+  for (let i = 0; i < data.length; i += 4) {
+    const r = toLinear[data[i]], g = toLinear[data[i + 1]], b = toLinear[data[i + 2]];
+    data[i] = toByte(m[0] * r + m[1] * g + m[2] * b);
+    data[i + 1] = toByte(m[3] * r + m[4] * g + m[5] * b);
+    data[i + 2] = toByte(m[6] * r + m[7] * g + m[8] * b);
+  }
+  return { ...img, data, space: "srgb" };
 }
 
 const CRC = (() => {
