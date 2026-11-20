@@ -15,5 +15,8 @@
   // The site and the server on apple-design-mcp.com; the workers.dev address stays on as a backup.
   "routes": [{ "pattern": "apple-design-mcp.com", "custom_domain": true }],
   "workers_dev": true,
+  // Keep `wrangler dev` on localhost: without this it rewrites request URLs to the route's host, so the
+  // addresses the server hands out (such as /frames/ID.svg) would point at the live domain.
+  "dev": { "host": "localhost:8787" },
   "observability": { "enabled": true }
 }
