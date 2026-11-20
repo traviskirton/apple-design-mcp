@@ -17,3 +17,7 @@
 /bezels/*
   Access-Control-Allow-Origin: *
   Cache-Control: public, max-age=86400
+
+/apple-design-skill.zip
+  Content-Disposition: attachment; filename="apple-design-skill.zip"
+  Cache-Control: public, max-age=3600

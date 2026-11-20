@@ -29,4 +29,4 @@ Not affiliated with Apple.
 `plugin/skills/apple-design/SKILL.md` tells an agent when to use the server and how: one `get_design_brief` call per device, Apple's SVGs placed as they are in mockups, and the system's own components in SwiftUI, UIKit and AppKit code.
 
 - **Claude Code:** `/plugin marketplace add traviskirton/apple-design-mcp`, then `/plugin install apple-design@apple-design-mcp`. This installs the skill and connects the server.
-- **claude.ai and the Claude apps:** zip the `plugin/skills/apple-design` folder and upload it under Settings > Capabilities > Skills. Add the server separately as a custom connector: `https://apple-design-mcp.com/mcp`.
+- **claude.ai and the Claude apps:** download https://apple-design-mcp.com/apple-design-skill.zip and upload it under Settings > Capabilities > Skills. Add the server separately as a custom connector: `https://apple-design-mcp.com/mcp`.
