@@ -10,14 +10,14 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=JetBrains+Mono:wght@400;500;700;800&display=swap">
 <style>
 :root {
-  --paper: #f3efe8;
+  --paper: #f1f0eb;
   --ink: #17130f;
-  --muted: #5e554b;
-  --rule: #d6cdbf;
-  --orange: oklch(0.63 0.22 38);
-  --code-bg: #ebe4d8;
-  --tab-hover: #e8e0d3;
-  --footer-url-rule: #3a3029;
+  --muted: #545967;
+  --rule: #d3d3ce;
+  --orange: oklch(0.49 0.27 259);
+  --code-bg: #e6e5df;
+  --tab-hover: #e6e5df;
+  --footer-url-rule: #33302c;
   --mono: "JetBrains Mono", ui-monospace, monospace;
   --pad: 56px;
 }
@@ -113,9 +113,9 @@ button { font: inherit; color: inherit; cursor: pointer; border: 0; border-radiu
 .proof-grid .with figcaption { color: var(--orange); }
 .shot {
   height: 520px; border: 1px solid var(--rule); display: flex; align-items: center; justify-content: center;
-  font: 13px var(--mono); color: #6b6157; background: repeating-linear-gradient(135deg, #e6dfd3 0 12px, #ede7dc 12px 24px);
+  font: 13px var(--mono); color: var(--muted); background: repeating-linear-gradient(135deg, #e6e5df 0 12px, #ecebe5 12px 24px);
 }
-.with .shot { border-color: var(--orange); background: repeating-linear-gradient(135deg, #f4dccb 0 12px, #f8e5d6 12px 24px); }
+.with .shot { border-color: var(--orange); background: repeating-linear-gradient(135deg, #dfe4f3 0 12px, #e8ebf4 12px 24px); }
 .shot img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
 .proof-caption { font-size: 26px; line-height: 1.4; font-weight: 500; max-width: 980px; text-wrap: pretty; margin: 0; }
 .proof-caption span { color: var(--muted); }
@@ -134,7 +134,7 @@ button { font: inherit; color: inherit; cursor: pointer; border: 0; border-radiu
 .footer { background: var(--orange); color: var(--paper); padding: 100px var(--pad) 40px; display: flex; flex-direction: column; gap: 64px; }
 .footer .display { font-size: clamp(60px, 10.4vw, 150px); color: var(--paper); }
 .footer-row { display: flex; justify-content: space-between; align-items: center; gap: 40px; flex-wrap: wrap; }
-.urlbox-dark { background: var(--ink); color: #ecebe6; }
+.urlbox-dark { background: var(--ink); color: var(--paper); }
 .urlbox-dark button { border-left: 1px solid var(--footer-url-rule); background: var(--ink); color: var(--orange); }
 .footer-links { display: flex; gap: 32px; font: 700 16px var(--mono); }
 .footer-links a { color: var(--paper); }
