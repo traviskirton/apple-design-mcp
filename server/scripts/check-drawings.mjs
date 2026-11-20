@@ -29,7 +29,7 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync
 import { dirname, join, relative } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { Chrome } from "./chrome.mjs";
-import { decodePNG, encodePNG } from "./png-rgba.mjs";
+import { decodePNG, encodePNG, toSRGB } from "./png-rgba.mjs";
 import { leftovers } from "./svg-for-browsers.mjs";
 import { DEFAULT_ORIGIN } from "./svg-images.mjs";
 
@@ -204,7 +204,10 @@ async function checkUiKit({ out, kitFilter, limit, refresh, maxScore }) {
         const page = join(tmp, "drawing.svg");
         writeFileSync(page, svg);
         const ours = decodePNG(await chrome.screenshot(pathToFileURL(page).href + `?n=${i}`, { width, height, scale: 2 }));
-        const ref = decodePNG(readFileSync(v.ref));
+        const raw = decodePNG(readFileSync(v.ref));
+        // Figma tags its render Display P3 where the kit is set to P3; Chrome's screenshot is sRGB.
+        const ref = toSRGB(raw);
+        if (raw.space !== "srgb") entry.reference_space = raw.space;
         const cmp = compareImages(ref, ours);
         entry.score = Math.round(cmp.score * 10000) / 10000;
         entry.size = { apple: [ref.width, ref.height], ours: [ours.width, ours.height] };
