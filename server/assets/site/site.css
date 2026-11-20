@@ -1,0 +1,16 @@
+/* Apple Design MCP project layer, loaded after ds.css: rules for this site that are not a ds component. */
+
+/* setup tabs: each panel holds one line of code, so the well is short and the code reads at body size */
+.setup-tabs .tabgallery-panel { aspect-ratio: 21 / 5; }
+.setup-tabs .code {
+  font-size: 17px; line-height: 25px;
+  white-space: pre-wrap; overflow-wrap: anywhere;
+  text-align: center;
+}
+@media (max-width: 734px) {
+  .setup-tabs .tabgallery-panel { aspect-ratio: auto; min-height: 180px; }
+  .setup-tabs .code { font-size: 14px; line-height: 20px; }
+}
+
+/* setup steps read as a list, so their captions run left-aligned in the centred column */
+.setup-tabs .tabgallery-caption { text-align: left; }
