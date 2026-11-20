@@ -1,0 +1,33 @@
+# Runs every check on each pull request and on main: the asset counts, the type check, the SVG,
+# ranking and coverage tests (npm run check), then the smoke test against the server run locally
+# with wrangler dev. Nothing is built from Apple's sources here; those scripts need a Mac.
+name: Check
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: server
+    env:
+      WRANGLER_SEND_METRICS: "false"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: server/package-lock.json
+      - run: npm ci
+      - run: npm run check
+      - name: Smoke test against wrangler dev
+        run: |
+          npx wrangler dev --port 8787 > "$RUNNER_TEMP/dev.log" 2>&1 &
+          for i in $(seq 1 90); do curl -sf http://127.0.0.1:8787/ > /dev/null && break; sleep 1; done
+          npm test || { tail -50 "$RUNNER_TEMP/dev.log"; exit 1; }

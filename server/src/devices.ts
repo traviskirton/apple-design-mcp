@@ -48,6 +48,9 @@ export function findDevices(query: string): Device[] {
   const want = tokens(query);
   if (!want.length) return [];
   const hits = named.filter(({ words }) => want.every((w) => words.has(w)));
+  // A model left out of the list because it has the same screens as the device it is named after,
+  // such as "iPad Pro 13-inch (M5) (16GB)" or "Apple Watch SE (44mm) (2nd generation)", is that device.
+  if (!hits.length && /\([^)]*\)\s*$/.test(query)) return findDevices(query.replace(/\s*\([^)]*\)\s*$/, ""));
   const exact = hits.filter(({ words }) => words.size === want.length);
   const list = exact.length ? exact : hits;
   // Without a model year in the query, prefer devices that are still current.
