@@ -6,8 +6,8 @@
   // Before every deploy (and `wrangler dev`): Apple's guidelines are downloaded into src/pack/hig.js the
   // first time (`npm run pack` refreshes them), then `npm run check` stops when assets/ lacks the files
   // the packs describe (a deploy replaces every live file), or when the types, the SVG tests or the
-  // ranking tests fail.
-  "build": { "command": "node scripts/build-hig-pack.mjs --if-missing && npm run check" },
+  // ranking tests fail. It also zips plugin/skills/apple-design into assets/apple-design-skill.zip.
+  "build": { "command": "node scripts/build-hig-pack.mjs --if-missing && node scripts/build-skill-zip.mjs && npm run check" },
   // One SVG per SF Symbol, written by the extractor on a Mac. Served at /symbols/NAME.svg and read by the symbol tools.
   "assets": { "directory": "./assets", "binding": "ASSETS" },
   "observability": { "enabled": true }
