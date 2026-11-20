@@ -1,6 +1,5 @@
 .wrangler/
 dist/
-src/pack/hig.js
 
 # assets/ is committed: the symbols, symbol weights, technology artwork, UI kit outlines and
 # drawings, and bezels are built on a Mac and are needed by every deploy (scripts/check-assets.mjs).
