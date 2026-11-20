@@ -19,6 +19,7 @@
 // 5. A black shape that blends "screen" changes nothing in Figma (it is how Apple marks a blur
 //    layer, such as the scroll edge effect), but a browser that isolates its group (a mask, a
 //    filter) paints it black: the black band over the top of a screen. It is dropped.
+// 7. A text's style "white-space: premix-blend-mode:..." gets its missing semicolon.
 // 6. Figma writes an inner shadow with a spread as an erosion of the layer's alpha, though Figma
 //    erodes the layer's shape. On a layer with a faint fill (an image well's 2% fill) a browser then
 //    fills the whole layer with the shadow's colour (a white panel). The erosion now takes the
@@ -225,6 +226,9 @@ const BLACK_SCREEN = /<(?:path|rect|circle|ellipse)\b(?![^>]*\s(?:filter|stroke|
 export function browserFixes(svg) {
   return svg
     .replace(BLACK_SCREEN, (m, at, all) => (/<g\b[^>]*\sfilter="[^"]*"[^>]*>\s*$/.test(all.slice(Math.max(0, at - 400), at)) ? m : ""))
+    // Figma writes a text's blend mode straight after its white-space, with no semicolon between
+    // ("white-space: premix-blend-mode:plus-lighter"), so a browser ignores both.
+    .replace(/(style="[^"]*\bwhite-space:\s*pre)(mix-blend-mode:)/g, "$1;$2")
     .replace(/(result="hardAlpha"\/>\s*<feMorphology\b[^>]*operator="erode"[^>]*)\sin="SourceAlpha"/g, '$1 in="hardAlpha"');
 }
 
