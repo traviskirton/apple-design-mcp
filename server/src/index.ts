@@ -10,6 +10,7 @@ import { WebStandardStreamableHTTPServerTransport } from "@modelcontextprotocol/
 import { z } from "zod";
 import { deviceMetrics, devicePack, FAMILIES } from "./devices.js";
 import { bezelPack } from "./bezels.js";
+import { designBrief } from "./brief.js";
 import { deviceFrames, framePack, frameSvg } from "./frames.js";
 import { higPack, lookupHig, platformsIn, readPage } from "./hig.js";
 import { fromShard, lookupSymbols, readSymbols, shardOf, symbolPack, WEIGHTS } from "./symbols.js";
@@ -20,7 +21,7 @@ import type { DrawingLoader, OutlineLoader } from "./uikit.js";
 import { designValues, valuesPack, VALUE_PLATFORMS, VALUE_TOPICS } from "./values.js";
 
 const SERVER_NAME = "apple-design";
-const SERVER_VERSION = "0.12.2";
+const SERVER_VERSION = "0.13.0";
 
 const HIG_DATE = higPack.pack_version;
 
@@ -77,7 +78,7 @@ const PACK = {
       drawings: uiKitPack.source.drawings ?? 0,
     },
   ],
-  tools: ["get_pack_info", "search_hig", "get_hig_page", "get_device_metrics", "get_device_frame", "search_symbols", "get_symbol", "get_technology_assets", "get_design_values", "search_ui_kit"],
+  tools: ["get_pack_info", "search_hig", "get_hig_page", "get_device_metrics", "get_device_frame", "search_symbols", "get_symbol", "get_technology_assets", "get_design_values", "search_ui_kit", "get_design_brief"],
   planned_tools: ["make_asset_catalog", "make_app_icon", "frame_screenshot"],
 };
 
@@ -141,7 +142,9 @@ function buildServer(app: string, env: Env, origin: string): McpServer {
       instructions:
         "Apple design reference for designing and building apps for iPhone, iPad, Mac, Apple Watch, Apple TV and " +
         `Apple Vision Pro. It holds Apple's Human Interface Guidelines as published on ${HIG_DATE}, which may be ` +
-        "newer than what you remember. Before designing a screen or component, make one search_hig call that lists " +
+        "newer than what you remember. To design a screen for one device, call get_design_brief first, once, with the " +
+        "device, every component and every icon: it returns the device, its guidelines, Apple's drawings of the " +
+        "components, the icons and the system values in one reply. Otherwise, before designing a screen or component, make one search_hig call that lists " +
         "every component, device and topic involved. It returns the guideline text itself, so one call is usually " +
         "enough; use get_hig_page only for a section that search_hig lists but does not include. For the size of a " +
         "device's screen, call get_device_metrics instead of estimating. For icons, call search_symbols once with " +
@@ -447,6 +450,63 @@ function buildServer(app: string, env: Env, origin: string): McpServer {
     async (args) => {
       const result = await searchUiKit(args.queries ?? [], args.platform, args.max_chars ?? 40000, loadOutlines, loadDrawing, origin);
       return reply(app, "search_ui_kit", args, result.text, !result.ok);
+    },
+  );
+
+  server.registerTool(
+    "get_design_brief",
+    {
+      title: "Get a design brief for one device",
+      description:
+        "Get everything a screen design for one Apple device needs in one reply: the device's screen size and " +
+        "Apple's pictures of it, the guidelines written for that device and platform, the guidelines for each " +
+        "component, Apple's own drawing of each component as SVG in the device's variant, the icons as SF Symbols, and " +
+        "the platform's system colors, text styles and sizes. Everything is limited to the device's platform, so a " +
+        "watch design gets only watchOS material. Call it first, once, naming every component and icon of the " +
+        "design; use the other tools only for what it does not cover. Place the component SVGs as they are and only " +
+        "change their icons and labels.",
+      inputSchema: {
+        device: z.string().min(1).max(100).describe("One device, such as \"iPhone 18 Pro\", \"iPad Pro 13\", \"Apple Watch Series 11\" or \"MacBook Air 13\"."),
+        components: z
+          .array(z.string().min(1).max(120))
+          .max(12)
+          .optional()
+          .describe("Every standard component of the design, such as [\"tab bar\", \"toolbar\", \"list row\"]. Add a variant's words to narrow one, such as \"tab bar 4 tabs\"."),
+        icons: z
+          .array(z.string().min(1).max(100))
+          .max(20)
+          .optional()
+          .describe("Every icon of the design, as a symbol name or plain words, such as [\"heart\", \"share\", \"timer\"]."),
+        topics: z
+          .array(z.string().min(1).max(200))
+          .max(6)
+          .optional()
+          .describe("Other guideline topics, such as [\"dark mode\", \"onboarding\"]."),
+        weight: weightInput,
+        max_chars: z
+          .number()
+          .int()
+          .min(10000)
+          .max(150000)
+          .optional()
+          .describe("Approximate size limit for the guidelines and drawings. Default 90000."),
+      },
+      annotations: READ_ONLY,
+    },
+    async (args) => {
+      const result = await designBrief(
+        {
+          device: args.device,
+          components: args.components ?? [],
+          icons: args.icons ?? [],
+          topics: args.topics ?? [],
+          weight: args.weight ?? "regular",
+          maxChars: args.max_chars ?? 90000,
+        },
+        { shape: loadShape, outlines: loadOutlines, drawing: loadDrawing },
+        origin,
+      );
+      return reply(app, "get_design_brief", args, result.text, !result.ok);
     },
   );
 
