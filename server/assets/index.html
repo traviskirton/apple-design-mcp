@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apple Design MCP</title>
+<meta name="description" content="A free remote MCP server that gives AI assistants Apple's Human Interface Guidelines, every SF Symbol, Apple's iOS and macOS components and device frames.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=JetBrains+Mono:wght@400;500;700;800&display=swap">
+<style>
+:root {
+  --paper: #f3efe8;
+  --ink: #17130f;
+  --muted: #5e554b;
+  --rule: #d6cdbf;
+  --orange: oklch(0.63 0.22 38);
+  --code-bg: #ebe4d8;
+  --tab-hover: #e8e0d3;
+  --footer-url-rule: #3a3029;
+  --mono: "JetBrains Mono", ui-monospace, monospace;
+  --pad: 56px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: Archivo, system-ui, sans-serif; -webkit-font-smoothing: antialiased;
+}
+a { color: var(--orange); text-decoration: none; }
+a:hover { text-decoration: underline; }
+button { font: inherit; color: inherit; cursor: pointer; border: 0; border-radius: 0; }
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.page { max-width: 1440px; margin: 0 auto; overflow: hidden; }
+.mono { font-family: var(--mono); }
+
+/* Display type: condensed Archivo needs the word spacing or the gaps collapse. */
+.display {
+  font-stretch: 68%; font-weight: 900; line-height: .84; letter-spacing: -.02em;
+  word-spacing: .16em; text-transform: uppercase; margin: 0;
+}
+.display-xl { font-size: clamp(72px, 15vw, 218px); color: var(--orange); }
+.display-l { font-size: clamp(64px, 11vw, 160px); }
+
+/* Hero */
+.hero { min-height: 900px; display: flex; flex-direction: column; }
+.nav { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 30px var(--pad); font: 700 15px var(--mono); }
+.nav-links { display: flex; gap: 36px; font-weight: 500; }
+.nav-links a { color: var(--ink); }
+.hero-head { flex: 1; display: flex; align-items: center; padding: 0 48px; }
+.hero-bar { display: grid; grid-template-columns: auto minmax(0,1fr) minmax(0,1fr); gap: 40px; align-items: end; padding: 0 var(--pad) 48px; }
+.hero-url { display: flex; flex-direction: column; gap: 12px; }
+.hero-blurb { font-size: 19px; line-height: 1.4; font-weight: 500; text-wrap: pretty; margin: 0; }
+.hero-works { font: 500 14px/1.7 var(--mono); text-align: right; margin: 0; }
+.small-mono { font: 500 14px var(--mono); margin: 0; }
+
+/* URL boxes */
+.urlbox { display: flex; font-family: var(--mono); max-width: 100%; }
+.urlbox .url { padding: 20px 24px; font-size: 20px; overflow-wrap: anywhere; }
+.urlbox button { font: 700 17px var(--mono); padding: 0 26px; min-width: 116px; flex: none; }
+.urlbox-orange { background: var(--orange); color: var(--paper); }
+.urlbox-orange .url { font-weight: 700; }
+.urlbox-orange button { background: var(--ink); color: var(--paper); text-transform: uppercase; letter-spacing: .04em; }
+.urlbox-small .url { padding: 18px 22px; font-size: 18px; }
+.urlbox-small button { font-size: 15px; padding: 0 22px; min-width: 100px; text-transform: none; letter-spacing: 0; }
+
+/* Sections */
+.section { border-top: 1px solid var(--rule); padding: 120px var(--pad); display: flex; flex-direction: column; gap: 56px; scroll-margin-top: 0; }
+.section-head { display: flex; flex-direction: column; gap: 24px; }
+.eyebrow { font: 700 15px var(--mono); color: var(--orange); margin: 0; }
+.setup-head { display: grid; grid-template-columns: minmax(0,1fr) 440px; gap: 64px; align-items: end; }
+.setup-intro { font-size: 20px; line-height: 1.45; color: var(--muted); text-wrap: pretty; margin: 0; }
+
+/* Tabs */
+.tabs { display: grid; grid-template-columns: 320px minmax(0,1fr); border: 1px solid var(--rule); }
+.tablist { display: flex; flex-direction: column; border-right: 1px solid var(--rule); }
+.tab {
+  display: flex; justify-content: space-between; align-items: center; height: 60px; padding: 0 24px;
+  border-bottom: 1px solid var(--rule); background: transparent; color: var(--ink);
+  font: 500 17px var(--mono); text-align: left; white-space: nowrap;
+}
+.tab:hover { background: var(--tab-hover); }
+.tab[aria-selected="true"] { background: var(--orange); color: var(--paper); font-weight: 700; }
+.tab[aria-selected="true"]::after { content: "→"; }
+.tab:focus-visible { outline-offset: -4px; }
+.panel { padding: 48px var(--pad); min-height: 420px; display: flex; flex-direction: column; gap: 32px; }
+.panel[hidden] { display: none; }
+.panel:focus-visible { outline-offset: -4px; }
+.panel-title { display: flex; flex-direction: column; gap: 8px; }
+.panel-title h3 { font-size: 40px; font-weight: 800; letter-spacing: -.02em; margin: 0; }
+.panel-title p { font: 15px var(--mono); color: var(--muted); margin: 0; }
+.steps { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+.steps li { display: grid; grid-template-columns: 64px 1fr; padding: 14px 0; border-bottom: 1px solid var(--rule); font-size: 19px; line-height: 1.4; }
+.steps.roomy li { padding: 18px 0; font-size: 21px; }
+.steps .n { font: 700 15px/1.8 var(--mono); color: var(--orange); }
+.steps.roomy .n { line-height: 1.9; }
+.steps code { font-family: var(--mono); color: var(--orange); }
+.note { font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 760px; text-wrap: pretty; margin: 0; }
+.note b { color: var(--ink); }
+.snippet { display: flex; align-items: stretch; background: var(--code-bg); border: 1px solid var(--rule); font-family: var(--mono); }
+.snippet pre { flex: 1; margin: 0; padding: 24px 28px; font: 17px/1.6 var(--mono); white-space: pre-wrap; overflow-wrap: anywhere; }
+.snippet .hl { color: var(--orange); }
+.snippet button { border-left: 1px solid var(--rule); background: transparent; color: var(--orange); font: 700 15px var(--mono); padding: 0 24px; min-width: 100px; flex: none; }
+.other-text { font-size: 24px; line-height: 1.4; max-width: 640px; margin: 0; }
+.try { display: grid; grid-template-columns: 120px minmax(0,1fr); gap: 24px; align-items: baseline; }
+.try q { font-size: 30px; line-height: 1.3; font-weight: 500; letter-spacing: -.01em; max-width: 1000px; text-wrap: pretty; }
+
+/* Proof */
+.proof-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.proof-grid figure { margin: 0; display: flex; flex-direction: column; gap: 14px; }
+.proof-grid figcaption { font: 700 14px var(--mono); color: var(--muted); }
+.proof-grid .with figcaption { color: var(--orange); }
+.shot {
+  height: 520px; border: 1px solid var(--rule); display: flex; align-items: center; justify-content: center;
+  font: 13px var(--mono); color: #6b6157; background: repeating-linear-gradient(135deg, #e6dfd3 0 12px, #ede7dc 12px 24px);
+}
+.with .shot { border-color: var(--orange); background: repeating-linear-gradient(135deg, #f4dccb 0 12px, #f8e5d6 12px 24px); }
+.shot img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.proof-caption { font-size: 26px; line-height: 1.4; font-weight: 500; max-width: 980px; text-wrap: pretty; margin: 0; }
+.proof-caption span { color: var(--muted); }
+
+/* What's inside */
+.inside { list-style: none; margin: 0; padding: 0; border-top: 1.5px solid var(--ink); }
+.inside li { display: grid; grid-template-columns: minmax(0,1fr) 420px; gap: 40px; align-items: center; padding: 22px 0; border-bottom: 1px solid var(--rule); }
+.inside .big {
+  display: flex; flex-wrap: wrap; gap: 0 .22em; align-items: baseline; font-stretch: 68%; font-weight: 900;
+  font-size: clamp(56px, 7.2vw, 104px); line-height: .9; text-transform: uppercase; letter-spacing: -.01em;
+}
+.inside .big span:first-child { color: var(--orange); }
+.inside .detail { font: 500 17px/1.5 var(--mono); color: var(--muted); }
+
+/* Footer */
+.footer { background: var(--orange); color: var(--paper); padding: 100px var(--pad) 40px; display: flex; flex-direction: column; gap: 64px; }
+.footer .display { font-size: clamp(60px, 10.4vw, 150px); color: var(--paper); }
+.footer-row { display: flex; justify-content: space-between; align-items: center; gap: 40px; flex-wrap: wrap; }
+.urlbox-dark { background: var(--ink); color: #ecebe6; }
+.urlbox-dark button { border-left: 1px solid var(--footer-url-rule); background: var(--ink); color: var(--orange); }
+.footer-links { display: flex; gap: 32px; font: 700 16px var(--mono); }
+.footer-links a { color: var(--paper); }
+.footer-base { border-top: 1.5px solid var(--paper); padding-top: 20px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font: 500 14px var(--mono); }
+
+.br-desktop { display: inline; }
+
+/* Below the designed width: scale down, then stack. */
+@media (max-width: 1200px) {
+  .hero-bar { grid-template-columns: auto minmax(0,1fr); }
+  .hero-works { grid-column: 1 / -1; text-align: left; }
+  .setup-head { grid-template-columns: 1fr; gap: 32px; }
+  .inside li { grid-template-columns: 1fr; gap: 10px; }
+}
+@media (max-width: 900px) {
+  :root { --pad: 20px; }
+  .hero { min-height: 0; }
+  .nav { flex-direction: column; align-items: flex-start; }
+  .nav-links { gap: 20px; flex-wrap: wrap; }
+  .hero-head { padding: 72px var(--pad); }
+  .hero-bar { grid-template-columns: 1fr; gap: 24px; }
+  .urlbox .url { font-size: 15px; padding: 16px; }
+  .urlbox button { min-width: 88px; padding: 0 16px; font-size: 15px; }
+  .section { padding: 72px var(--pad); gap: 40px; }
+  .tabs { grid-template-columns: 1fr; }
+  .tablist { flex-direction: row; overflow-x: auto; border-right: 0; border-bottom: 1px solid var(--rule); }
+  .tab { border-bottom: 0; border-right: 1px solid var(--rule); height: 52px; font-size: 15px; gap: 10px; }
+  .panel { padding: 28px var(--pad); min-height: 0; }
+  .panel-title h3 { font-size: 30px; }
+  .steps li, .steps.roomy li { grid-template-columns: 44px 1fr; font-size: 17px; }
+  .snippet { flex-direction: column; }
+  .snippet pre { padding: 18px; font-size: 14px; }
+  .snippet button { border-left: 0; border-top: 1px solid var(--rule); padding: 14px; }
+  .try { grid-template-columns: 1fr; gap: 8px; }
+  .try q { font-size: 22px; }
+  .proof-grid { grid-template-columns: 1fr; }
+  .shot { height: 380px; }
+  .proof-caption { font-size: 20px; }
+  .inside .detail { font-size: 15px; }
+  .footer { padding: 72px var(--pad) 32px; gap: 40px; }
+  .br-desktop { display: none; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="hero">
+    <nav class="nav" aria-label="Main">
+      <div>apple-design-mcp.com</div>
+      <div class="nav-links"><a href="#setup">Setup</a><a href="#proof">Proof</a><a href="#inside">What's inside</a><a href="#" data-todo="github">GitHub</a></div>
+    </nav>
+    <div class="hero-head">
+      <h1 class="display display-xl">No more<br>made-up<br>iPhones.</h1>
+    </div>
+    <div class="hero-bar">
+      <div class="hero-url">
+        <div class="urlbox urlbox-orange">
+          <div class="url" data-url>https://apple-design-mcp.com/mcp</div>
+          <button type="button" data-copy="url">Copy</button>
+        </div>
+        <p class="small-mono">No install. No sign-in. No API key.</p>
+      </div>
+      <p class="hero-blurb">Human Interface Guidelines, every SF Symbol, Apple's iOS and macOS components and device frames. watchOS coming soon.</p>
+      <p class="hero-works">Works in Claude, ChatGPT, Perplexity,<br class="br-desktop"> Grok, Cursor, VS Code, and more.</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="setup" class="section" aria-labelledby="setup-title">
+      <div class="setup-head">
+        <div class="section-head">
+          <p class="eyebrow">01 / Setup</p>
+          <h2 id="setup-title" class="display display-l">How to<br>use it.</h2>
+        </div>
+        <p class="setup-intro">Works in Claude, ChatGPT, Perplexity, Grok, Cursor, VS Code, and pretty much anything else. Pick yours:</p>
+      </div>
+
+      <div class="tabs">
+        <div class="tablist" role="tablist" aria-label="AI clients">
+          <button type="button" class="tab" role="tab" id="tab-claude" aria-controls="setup-claude">Claude</button>
+          <button type="button" class="tab" role="tab" id="tab-code" aria-controls="setup-code">Claude Code</button>
+          <button type="button" class="tab" role="tab" id="tab-cursor" aria-controls="setup-cursor">Cursor</button>
+          <button type="button" class="tab" role="tab" id="tab-vscode" aria-controls="setup-vscode">VS Code</button>
+          <button type="button" class="tab" role="tab" id="tab-chatgpt" aria-controls="setup-chatgpt">ChatGPT</button>
+          <button type="button" class="tab" role="tab" id="tab-perplexity" aria-controls="setup-perplexity">Perplexity</button>
+          <button type="button" class="tab" role="tab" id="tab-grok" aria-controls="setup-grok">Grok</button>
+          <button type="button" class="tab" role="tab" id="tab-other" aria-controls="setup-other">Anything else</button>
+        </div>
+
+        <div class="panel" role="tabpanel" id="setup-claude" aria-labelledby="tab-claude" tabindex="0">
+          <div class="panel-title"><h3>Claude</h3><p>Chat, projects, Claude Design, desktop and mobile apps</p></div>
+          <ol class="steps roomy">
+            <li><span class="n">01</span><span>Open <b>Settings → Connectors</b> and choose <b>Add custom connector</b>.</span></li>
+            <li><span class="n">02</span><span>Name it "Apple Design" and paste the URL.</span></li>
+            <li><span class="n">03</span><span>Ask for an Apple screen.</span></li>
+          </ol>
+        </div>
+
+        <div class="panel" role="tabpanel" id="setup-code" aria-labelledby="tab-code" tabindex="0" hidden>
+          <div class="panel-title"><h3>Claude Code</h3><p>Run in your terminal</p></div>
+          <div class="snippet">
+            <pre><span class="hl">$ </span>claude mcp add --transport http apple-design <span class="hl" data-url>https://apple-design-mcp.com/mcp</span></pre>
+            <button type="button" data-copy="code">Copy</button>
+          </div>
+        </div>
+
+        <div class="panel" role="tabpanel" id="setup-cursor" aria-labelledby="tab-cursor" tabindex="0" hidden>
+          <div class="panel-title"><h3>Cursor</h3><p>In ~/.cursor/mcp.json</p></div>
+          <div class="snippet">
+            <pre>{ "mcpServers": { "apple-design": { "url": "<span class="hl" data-url>https://apple-design-mcp.com/mcp</span>" } } }</pre>
+            <button type="button" data-copy="cursor">Copy</button>
+          </div>
+        </div>
+
+        <div class="panel" role="tabpanel" id="setup-vscode" aria-labelledby="tab-vscode" tabindex="0" hidden>
+          <div class="panel-title"><h3>VS Code</h3><p>In .vscode/mcp.json</p></div>
+          <div class="snippet">
+            <pre>{ "servers": { "apple-design": { "type": "http", "url": "<span class="hl" data-url>https://apple-design-mcp.com/mcp</span>" } } }</pre>
+            <button type="button" data-copy="vscode">Copy</button>
+          </div>
+        </div>
+
+        <div class="panel" role="tabpanel" id="setup-chatgpt" aria-labelledby="tab-chatgpt" tabindex="0" hidden>
+          <div class="panel-title"><h3>ChatGPT</h3><p>Plus, Pro, Business and Enterprise, on the web</p></div>
+          <ol class="steps">
+            <li><span class="n">01</span><span>Go to <a href="https://chatgpt.com/plugins">chatgpt.com/plugins</a>.</span></li>
+            <li><span class="n">02</span><span>Click <b>+</b>, then <b>Add custom MCP server</b>.</span></li>
+            <li><span class="n">03</span><span>Name it "Apple Design", paste the URL under <b>Server URL</b> and choose <b>No authentication</b>.</span></li>
+            <li><span class="n">04</span><span>Tick <b>I understand and want to continue</b>, then click <b>Create as a plugin</b>.</span></li>
+            <li><span class="n">05</span><span>Install Apple Design from your personal plugins.</span></li>
+            <li><span class="n">06</span><span>In a new chat, type <code>@</code> and pick Apple Design.</span></li>
+          </ol>
+          <p class="note">If <b>+</b> doesn't show <b>Add custom MCP server</b>, turn on <b>Developer mode</b> at <a href="https://chatgpt.com/settings/security">chatgpt.com/settings/security</a> and reload the Plugins page.</p>
+        </div>
+
+        <div class="panel" role="tabpanel" id="setup-perplexity" aria-labelledby="tab-perplexity" tabindex="0" hidden>
+          <div class="panel-title"><h3>Perplexity</h3><p>Pro, Max and Enterprise</p></div>
+          <ol class="steps">
+            <li><span class="n">01</span><span>Open <b>Plugins</b> in the sidebar (or <b>Customize → Connectors</b>).</span></li>
+            <li><span class="n">02</span><span>Click <b>Add custom → Connector → Add MCP connector</b>, then select <b>Remote</b>.</span></li>
+            <li><span class="n">03</span><span>Name it "Apple Design", paste the URL under <b>MCP Server URL</b>, set <b>Authentication</b> to <b>None</b> and <b>Transport</b> to <b>Streamable HTTP</b>.</span></li>
+            <li><span class="n">04</span><span>Tick the risk acknowledgement and click <b>Add</b>.</span></li>
+            <li><span class="n">05</span><span>Click the Apple Design card on the Plugins page to enable it.</span></li>
+          </ol>
+        </div>
+
+        <div class="panel" role="tabpanel" id="setup-grok" aria-labelledby="tab-grok" tabindex="0" hidden>
+          <div class="panel-title"><h3>Grok</h3><p>grok.com</p></div>
+          <ol class="steps">
+            <li><span class="n">01</span><span>Go to <a href="https://grok.com/connectors">grok.com/connectors</a>.</span></li>
+            <li><span class="n">02</span><span>Click <b>New Connector</b>, then select <b>Custom</b>.</span></li>
+            <li><span class="n">03</span><span>Name it "Apple Design", paste the URL under <b>Server URL</b> and click <b>Add Connector</b>.</span></li>
+            <li><span class="n">04</span><span>Start a new chat. Apple Design's tools are available without a per-chat toggle.</span></li>
+          </ol>
+        </div>
+
+        <div class="panel" role="tabpanel" id="setup-other" aria-labelledby="tab-other" tabindex="0" hidden>
+          <div class="panel-title"><h3>Anything else</h3></div>
+          <p class="other-text">Add the URL as a remote MCP server. No authentication.</p>
+          <div class="urlbox urlbox-orange urlbox-small" style="align-self:flex-start">
+            <div class="url" data-url>https://apple-design-mcp.com/mcp</div>
+            <button type="button" data-copy="url">Copy</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="try">
+        <p class="eyebrow">Try:</p>
+        <q>Design a Settings screen for iPhone 18 Pro, light and dark. Place Apple's components as they are.</q>
+      </div>
+    </section>
+
+    <section id="proof" class="section" aria-labelledby="proof-title">
+      <div class="section-head">
+        <p class="eyebrow">02 / Proof</p>
+        <h2 id="proof-title" class="display display-l">Same brief,<br>same model.</h2>
+      </div>
+      <div class="proof-grid">
+        <figure>
+          <figcaption>FROM MEMORY</figcaption>
+          <div class="shot">before-after.png · left</div>
+        </figure>
+        <figure class="with">
+          <figcaption>WITH APPLE DESIGN</figcaption>
+          <div class="shot">before-after.png · right</div>
+        </figure>
+      </div>
+      <p class="proof-caption"><span>Without it, the AI guesses screen sizes, draws its own icons and rebuilds tab bars in CSS.</span> With it, it places Apple's own symbols, components and frames.</p>
+    </section>
+
+    <section id="inside" class="section" aria-labelledby="inside-title">
+      <div class="section-head">
+        <p class="eyebrow">03 / Contents</p>
+        <h2 id="inside-title" class="display display-l">What's inside.</h2>
+      </div>
+      <ul class="inside">
+        <li><div class="big"><span>9,184</span><span>SF Symbols</span></div><div class="detail">In all 9 weights</div></li>
+        <li><div class="big"><span>2,310</span><span>Components</span></div><div class="detail">From Apple's iOS and macOS UI kits, as Apple's own drawings. watchOS coming soon.</div></li>
+        <li><div class="big"><span>210</span><span>Bezels</span></div><div class="detail">Apple product frames</div></li>
+        <li><div class="big"><span>Every</span><span>Screen size</span></div><div class="detail">And safe area, for every current device</div></li>
+        <li><div class="big"><span>The</span><span>HIG</span></div><div class="detail">The Human Interface Guidelines</div></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="display">Designed by Apple.<br>Delivered to<br>your bot.</p>
+    <div class="footer-row">
+      <div class="urlbox urlbox-dark">
+        <div class="url" data-url>https://apple-design-mcp.com/mcp</div>
+        <button type="button" data-copy="url">Copy</button>
+      </div>
+      <div class="footer-links"><a href="#" data-todo="privacy">Privacy</a><a href="#" data-todo="support">Support</a><a href="#" data-todo="github">GitHub</a></div>
+    </div>
+    <div class="footer-base"><span>apple-design-mcp.com</span><span>Not affiliated with or endorsed by Apple.</span></div>
+  </footer>
+
+</div>
+<script>
+(() => {
+  // Show the address this page is served from, so the copied URL always works
+  // (apple-design-mcp.com in production, the workers.dev or local address elsewhere).
+  const host = location.protocol.startsWith('http') ? location.origin : 'https://apple-design-mcp.com';
+  const URL_ = host + '/mcp';
+  document.querySelectorAll('[data-url]').forEach(el => { el.textContent = URL_; });
+  const SNIPPETS = {
+    url: URL_,
+    code: 'claude mcp add --transport http apple-design ' + URL_,
+    cursor: '{ "mcpServers": { "apple-design": { "url": "' + URL_ + '" } } }',
+    vscode: '{ "servers": { "apple-design": { "type": "http", "url": "' + URL_ + '" } } }',
+  };
+
+  // Copy buttons: one "Copied" at a time, for 1600ms.
+  let timer, lit;
+  const reset = () => { if (lit) lit.textContent = 'Copy'; lit = null; };
+  document.querySelectorAll('[data-copy]').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(SNIPPETS[btn.dataset.copy]); } catch (e) {}
+      clearTimeout(timer); reset();
+      btn.textContent = 'Copied'; lit = btn;
+      timer = setTimeout(reset, 1600);
+    });
+  });
+
+  // Tabs (ARIA tabs with arrow keys), synced with #setup-<id> so a client's steps can be linked.
+  const tabs = [...document.querySelectorAll('[role="tab"]')];
+  const select = (tab, focus) => {
+    tabs.forEach(t => {
+      const on = t === tab;
+      t.setAttribute('aria-selected', on);
+      t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+    });
+    if (focus) tab.focus();
+  };
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => {
+      select(t);
+      history.replaceState(null, '', '#' + t.getAttribute('aria-controls'));
+    });
+    t.addEventListener('keydown', e => {
+      const keys = { ArrowDown: 1, ArrowRight: 1, ArrowUp: -1, ArrowLeft: -1 };
+      let j = null;
+      if (e.key in keys) j = (i + keys[e.key] + tabs.length) % tabs.length;
+      else if (e.key === 'Home') j = 0;
+      else if (e.key === 'End') j = tabs.length - 1;
+      if (j === null) return;
+      e.preventDefault();
+      select(tabs[j], true);
+    });
+  });
+  const fromHash = () => {
+    const t = tabs.find(t => '#' + t.getAttribute('aria-controls') === location.hash);
+    if (t) { select(t); document.getElementById('setup').scrollIntoView(); }
+    return t;
+  };
+  if (!fromHash()) select(tabs[0]);
+  addEventListener('hashchange', fromHash);
+})();
+</script>
+</body>
+</html>
