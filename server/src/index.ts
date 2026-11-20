@@ -10,7 +10,7 @@ import { WebStandardStreamableHTTPServerTransport } from "@modelcontextprotocol/
 import { z } from "zod";
 import { deviceMetrics, devicePack, FAMILIES } from "./devices.js";
 import { bezelPack } from "./bezels.js";
-import { deviceFrames, framePack } from "./frames.js";
+import { deviceFrames, framePack, frameSvg } from "./frames.js";
 import { higPack, lookupHig, platformsIn, readPage } from "./hig.js";
 import { fromShard, lookupSymbols, readSymbols, shardOf, symbolPack, WEIGHTS } from "./symbols.js";
 import type { ShapeLoader, Weight } from "./symbols.js";
@@ -20,7 +20,7 @@ import type { DrawingLoader, OutlineLoader } from "./uikit.js";
 import { designValues, valuesPack, VALUE_PLATFORMS, VALUE_TOPICS } from "./values.js";
 
 const SERVER_NAME = "apple-design";
-const SERVER_VERSION = "0.12.1";
+const SERVER_VERSION = "0.12.2";
 
 const HIG_DATE = higPack.pack_version;
 
@@ -288,7 +288,7 @@ function buildServer(app: string, env: Env, origin: string): McpServer {
         "Get Apple's pictures of a device to show a design inside it. For each device it returns Apple's product " +
         "bezels (photographic PNGs of the real device in each finish and orientation, with a see-through screen and " +
         "the screen's exact position) where Apple publishes them, and a flat vector frame as SVG from Xcode's " +
-        "Simulator. Covers iPhone, iPad, Apple Watch, Apple TV, MacBook, iMac and Studio Display. Name every device " +
+        "Simulator (as an address when bezels come with it). Covers iPhone, iPad, Apple Watch, Apple TV, MacBook, iMac and Studio Display. Name every device " +
         "in one call as `devices`, such as [\"iPhone Duo\", \"MacBook Air 13\"]. A folding device returns one " +
         "picture per pose. Use it instead of drawing a device by hand.",
       inputSchema: {
@@ -495,6 +495,18 @@ export default {
         console.error("mcp request failed", err);
         return rpcError(500, "Internal server error");
       }
+    }
+
+    // A device's vector frame from Xcode's Simulator: /frames/ID.svg.
+    const frameMatch = /^\/frames\/([^/]+)\.svg$/.exec(url.pathname);
+    if (frameMatch && request.method === "GET") {
+      let id = frameMatch[1];
+      try { id = decodeURIComponent(id); } catch {}
+      const svg = frameSvg(id);
+      if (!svg) return new Response("Not found\n", { status: 404, headers: CORS });
+      return new Response(svg + "\n", {
+        headers: { ...CORS, "Content-Type": "image/svg+xml; charset=utf-8", "Cache-Control": "public, max-age=86400" },
+      });
     }
 
     // A symbol in another weight, read from its shard: /symbols/WEIGHT/NAME.svg.
