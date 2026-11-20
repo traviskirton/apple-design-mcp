@@ -47,11 +47,10 @@ p, h1, h2, h3, ol, ul, figure { margin: 0; }
 .nav-links a { color: var(--ink); }
 .hero-head { flex: 1; display: flex; align-items: center; }
 .hero-title { font-size: 218px; color: var(--accent); }
-.hero-bar { display: grid; grid-template-columns: auto minmax(0,1fr) minmax(0,1fr); gap: 40px; align-items: end; padding-bottom: 48px; }
+.hero-bar { display: grid; grid-template-columns: auto minmax(0,1fr); gap: 64px; align-items: end; padding-bottom: 48px; }
 .hero-url { display: flex; flex-direction: column; gap: 12px; }
 .hero-note { font: 500 14px var(--mono); }
 .hero-blurb { font-size: 19px; line-height: 1.4; font-weight: 500; text-wrap: pretty; }
-.hero-works { font: 500 14px/1.7 var(--mono); text-align: right; }
 
 /* URL boxes: the URL with an attached copy button */
 .urlbox { display: flex; align-self: flex-start; max-width: 100%; font-family: var(--mono); }
@@ -74,14 +73,14 @@ p, h1, h2, h3, ol, ul, figure { margin: 0; }
 .section-title { font-size: 160px; }
 
 /* Setup */
-.setup-head { display: grid; grid-template-columns: minmax(0,1fr) 440px; gap: 64px; align-items: end; }
+.setup-head { display: flex; flex-direction: column; align-items: stretch; gap: 28px; }
+.setup-intro { max-width: 640px; }
 .setup-intro { font-size: 20px; line-height: 1.45; color: var(--muted); text-wrap: pretty; }
 .tabs { display: grid; grid-template-columns: 320px minmax(0,1fr); border: 1px solid var(--rule); }
 .tablist { display: flex; flex-direction: column; border-right: 1px solid var(--rule); }
 .tab { display: flex; justify-content: space-between; align-items: center; height: 60px; padding: 0 24px; border-bottom: 1px solid var(--rule); background: transparent; color: var(--ink); font: 500 17px var(--mono); text-align: left; white-space: nowrap; }
 .tab:hover { background: var(--tab-hover); }
 .tab[aria-selected="true"] { background: var(--accent); color: var(--on-accent); font-weight: 700; }
-.tab[aria-selected="true"]::after { content: "→"; }
 .tab:focus-visible { outline-offset: -4px; }
 .panel { padding: 48px 56px; min-height: 420px; display: flex; flex-direction: column; gap: 32px; }
 .panel[hidden] { display: none; }
@@ -93,6 +92,9 @@ p, h1, h2, h3, ol, ul, figure { margin: 0; }
 .steps li { display: grid; grid-template-columns: 64px minmax(0,1fr); padding: 14px 0; border-bottom: 1px solid var(--rule); font-size: 19px; line-height: 1.4; }
 .steps.roomy li { padding: 18px 0; font-size: 21px; }
 .steps .n { font: 700 15px/1.8 var(--mono); color: var(--accent); }
+.skill { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; }
+.skill .note { flex: 1 1 360px; min-width: 0; }
+.skill-dl { flex: none; padding: 14px 22px; background: var(--accent); color: var(--on-accent); font: 700 15px var(--mono); text-transform: uppercase; letter-spacing: .04em; }
 .steps.roomy .n { line-height: 1.9; }
 .steps code { font-family: var(--mono); color: var(--accent); }
 .note { font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 760px; text-wrap: pretty; }
@@ -113,6 +115,9 @@ p, h1, h2, h3, ol, ul, figure { margin: 0; }
 .shot { height: 520px; border: 1px solid var(--rule); display: flex; align-items: center; justify-content: center; text-align: center; padding: 16px; font: 13px var(--mono); color: var(--placeholder); background: repeating-linear-gradient(135deg, #e4e3dd 0 12px, #ebeae5 12px 24px); }
 .with .shot { border-color: var(--accent); background: repeating-linear-gradient(135deg, #dfe6f7 0 12px, #e8edf9 12px 24px); }
 .shot img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.shot.shot-img, .with .shot-img { padding: 32px; background: #fff; }
+.shot-img picture { display: contents; }
+.shot-img img { object-fit: contain; object-position: center; }
 .proof-caption { font-size: 26px; line-height: 1.4; font-weight: 500; max-width: 980px; text-wrap: pretty; }
 .proof-caption span { color: var(--muted); }
 
@@ -133,17 +138,16 @@ p, h1, h2, h3, ol, ul, figure { margin: 0; }
 .footer-base { border-top: 1.5px solid var(--on-accent); padding-top: 20px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font: 500 14px var(--mono); }
 
 /* ---------- Medium: 735–1068px ---------- */
-@media (max-width: 1068px) {
+@media (max-width: 1359px) {
   .hero { min-height: 0; }
   .nav { padding: 28px 0; font-size: 14px; }
   .nav-links { gap: 28px; }
   .hero-head { flex: none; padding: 72px 0 56px; }
   .hero-title { font-size: 160px; }
-  .hero-bar { grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 56px 40px; padding-bottom: 72px; }
+  .hero-bar { grid-template-columns: minmax(0,1fr); gap: 48px; padding-bottom: 72px; }
   .hero-url { grid-column: 1 / -1; }
   .hero-note { font-size: 13px; }
-  .hero-blurb { font-size: 18px; line-height: 1.45; }
-  .hero-works { font-size: 13px; }
+  .hero-blurb { font-size: 18px; line-height: 1.45; max-width: 620px; }
   .urlbox .url { padding: 18px 22px; font-size: 18px; }
   .urlbox button { padding: 0 24px; min-width: 110px; font-size: 15px; }
   .urlbox-other .url { padding: 16px 20px; font-size: 16px; }
@@ -205,7 +209,6 @@ p, h1, h2, h3, ol, ul, figure { margin: 0; }
   .hero-bar { display: flex; flex-direction: column; align-items: stretch; gap: 36px; padding-bottom: 56px; }
   .hero-blurb { order: 1; font-size: 17px; }
   .hero-url { order: 2; gap: 10px; }
-  .hero-works { order: 3; font-size: 12px; text-align: left; color: var(--muted); }
   .hero-note { font-size: 12px; }
 
   .urlbox { flex-direction: column; align-self: stretch; }
@@ -230,7 +233,6 @@ p, h1, h2, h3, ol, ul, figure { margin: 0; }
   .tab { flex: none; height: 44px; padding: 0 16px; border: 1px solid var(--rule); font-size: 14px; }
   .tab:hover { background: transparent; }
   .tab[aria-selected="true"] { border-color: var(--accent); }
-  .tab[aria-selected="true"]::after { content: none; }
   .panel { padding: 0; min-height: 0; gap: 20px; }
   .panel:focus-visible { outline-offset: 6px; }
   .panel-title h3 { font-size: 28px; }
@@ -268,11 +270,11 @@ p, h1, h2, h3, ol, ul, figure { margin: 0; }
 
 <header class="hero">
   <nav class="nav wrap" aria-label="Main">
-    <div><span class="not-small">apple-design-mcp.com</span><span class="only-small">apple-design-mcp</span></div>
-    <div class="nav-links"><a class="nav-setup" href="#setup">Setup<span class="only-small"> ↓</span></a><a href="#proof">Proof</a><a href="#inside">What's inside</a><a href="#">GitHub</a></div>
+    <div>APPLE DESIGN MCP</div>
+    <div class="nav-links"><a href="#proof">Proof</a><a class="nav-setup" href="#setup">Setup<span class="only-small"> ↓</span></a><a href="#inside">What's inside</a><a href="#">GitHub</a></div>
   </nav>
   <div class="hero-head wrap">
-    <h1 class="display hero-title">No more<br>made-up<br>iPhones</h1>
+    <h1 class="display hero-title">No more made-up iPhones</h1>
   </div>
   <div class="hero-bar wrap">
     <div class="hero-url">
@@ -283,16 +285,47 @@ p, h1, h2, h3, ol, ul, figure { margin: 0; }
       <p class="hero-note">No install. No sign-in. No API key.</p>
     </div>
     <p class="hero-blurb">Human Interface Guidelines, every SF Symbol, Apple's iOS and macOS components and device frames. watchOS coming soon.</p>
-    <p class="hero-works">Works in Claude, ChatGPT, Perplexity,<br class="not-small"> Grok, Cursor, VS Code, and more.</p>
   </div>
 </header>
 
 <main>
+  <section id="proof" class="section" aria-labelledby="proof-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="proof-title" class="display section-title">Same model, more Apple</h2>
+      </div>
+      <div class="proof-grid">
+        <figure>
+          <figcaption>FROM MEMORY</figcaption>
+          <div class="shot shot-img shot-before">
+            <picture>
+              <source media="(max-width: 734px)" type="image/avif" srcset="/proof/before-closed.avif">
+              <source media="(max-width: 734px)" type="image/webp" srcset="/proof/before-closed.webp">
+              <source type="image/avif" srcset="/proof/before-open.avif">
+              <img src="/proof/before-open.webp" alt="The same recipe screen designed from memory, without Apple Design MCP" width="929" height="1000" loading="lazy" decoding="async">
+            </picture>
+          </div>
+        </figure>
+        <figure class="with">
+          <figcaption>WITH APPLE DESIGN</figcaption>
+          <div class="shot shot-img">
+            <picture>
+              <source media="(max-width: 734px)" type="image/avif" srcset="/proof/duo-closed.avif">
+              <source media="(max-width: 734px)" type="image/webp" srcset="/proof/duo-closed.webp">
+              <source type="image/avif" srcset="/proof/duo-open.avif">
+              <img src="/proof/duo-open.webp" alt="A recipe screen for iPhone Duo, designed with Apple Design MCP" width="1396" height="1000" loading="lazy" decoding="async">
+            </picture>
+          </div>
+        </figure>
+      </div>
+      <p class="proof-caption"><span>Without it, the AI guesses screen sizes, draws its own icons and rebuilds tab bars in CSS.</span> With it, it places Apple's own symbols, components and frames.</p>
+    </div>
+  </section>
+
   <section id="setup" class="section" aria-labelledby="setup-title">
     <div class="wrap">
       <div class="setup-head">
         <div class="section-head">
-          <p class="eyebrow">01 / Setup</p>
           <h2 id="setup-title" class="display section-title">How to use it</h2>
         </div>
         <p class="setup-intro">Works in Claude, ChatGPT, Perplexity, Grok, Cursor, VS Code, and pretty much anything else. Pick yours:</p>
@@ -317,6 +350,10 @@ p, h1, h2, h3, ol, ul, figure { margin: 0; }
             <li><span class="n">02</span><span>Name it "Apple Design" and paste the URL.</span></li>
             <li><span class="n">03</span><span>Ask for an Apple screen.</span></li>
           </ol>
+          <div class="skill">
+            <p class="note"><b>Optional:</b> add the Apple Design skill so Claude knows when and how to use these tools. Download it, then upload it under <b>Settings → Capabilities → Skills</b>.</p>
+            <a class="skill-dl" href="/apple-design-skill.zip" download>Download skill</a>
+          </div>
         </div>
 
         <div class="panel" role="tabpanel" id="setup-code" aria-labelledby="tab-code" tabindex="0" hidden>
@@ -324,6 +361,12 @@ p, h1, h2, h3, ol, ul, figure { margin: 0; }
           <div class="snippet">
             <pre><span class="hl">$ </span>claude mcp add --transport http apple-design <span class="hl" data-url>https://apple-design-mcp.com/mcp</span></pre>
             <button type="button" data-copy="code">Copy</button>
+          </div>
+          <p class="note"><b>Optional:</b> add the Apple Design skill so Claude Code knows when and how to use these tools. Type these in Claude Code:</p>
+          <div class="snippet">
+            <pre>/plugin marketplace add traviskirton/apple-design-mcp
+/plugin install apple-design@apple-design-mcp</pre>
+            <button type="button" data-copy="plugin">Copy</button>
           </div>
         </div>
 
@@ -394,30 +437,9 @@ p, h1, h2, h3, ol, ul, figure { margin: 0; }
     </div>
   </section>
 
-  <section id="proof" class="section" aria-labelledby="proof-title">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">02 / Proof</p>
-        <h2 id="proof-title" class="display section-title">Same brief,<br>same model</h2>
-      </div>
-      <div class="proof-grid">
-        <figure>
-          <figcaption>FROM MEMORY</figcaption>
-          <div class="shot">before-after · left</div>
-        </figure>
-        <figure class="with">
-          <figcaption>WITH APPLE DESIGN</figcaption>
-          <div class="shot">before-after · right</div>
-        </figure>
-      </div>
-      <p class="proof-caption"><span>Without it, the AI guesses screen sizes, draws its own icons and rebuilds tab bars in CSS.</span> With it, it places Apple's own symbols, components and frames.</p>
-    </div>
-  </section>
-
   <section id="inside" class="section" aria-labelledby="inside-title">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow">03 / Contents</p>
         <h2 id="inside-title" class="display section-title">What's inside</h2>
       </div>
       <ul class="inside">
@@ -439,9 +461,9 @@ p, h1, h2, h3, ol, ul, figure { margin: 0; }
         <div class="url" data-url>https://apple-design-mcp.com/mcp</div>
         <button type="button" data-copy="url">Copy</button>
       </div>
-      <div class="footer-links"><a href="#">Privacy</a><a href="#">Support</a><a href="#">GitHub</a></div>
+      <div class="footer-links"><a href="#">GitHub</a></div>
     </div>
-    <div class="footer-base"><span>apple-design-mcp.com</span><span>Not affiliated with or endorsed by Apple.</span></div>
+    <div class="footer-base"><span>Not affiliated with or endorsed by Apple… but hopefully one day maybe.</span></div>
   </div>
 </footer>
 
@@ -455,6 +477,7 @@ p, h1, h2, h3, ol, ul, figure { margin: 0; }
   const SNIPPETS = {
     url: URL_,
     code: 'claude mcp add --transport http apple-design ' + URL_,
+    plugin: '/plugin marketplace add traviskirton/apple-design-mcp\n/plugin install apple-design@apple-design-mcp',
     cursor: '{ "mcpServers": { "apple-design": { "url": "' + URL_ + '" } } }',
     vscode: '{ "servers": { "apple-design": { "type": "http", "url": "' + URL_ + '" } } }',
   };
