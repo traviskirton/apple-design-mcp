@@ -23,7 +23,7 @@
     "export:ui-kit-svg": "node scripts/export-ui-kit-svg.mjs",
     "redraw:ui-kit-svg": "node scripts/redraw-flattened.mjs",
     "gallery": "node scripts/build-ui-kit-gallery.mjs",
-    "check:drawings": "node scripts/check-drawings.mjs"
+    "check:drawings": "node --max-old-space-size=8192 scripts/check-drawings.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.32.2",
