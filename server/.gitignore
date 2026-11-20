@@ -4,3 +4,6 @@ dist/
 # assets/ is committed: the symbols, symbol weights, technology artwork, UI kit outlines and
 # drawings, and bezels are built on a Mac and are needed by every deploy (scripts/check-assets.mjs).
 .DS_Store
+
+# Built from plugin/skills/apple-design by scripts/build-skill-zip.mjs before every deploy.
+/assets/apple-design-skill.zip
