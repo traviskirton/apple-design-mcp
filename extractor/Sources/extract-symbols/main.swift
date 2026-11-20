@@ -5,6 +5,10 @@
 //   swift run -c release extract-symbols --verify 60     also compare 60 SVGs (some fixed, the rest random)
 //                                                        with the system's own rendering, pixel by pixel
 //   swift run -c release extract-symbols --verify-only 60  compare without writing anything
+//   swift run -c release extract-symbols --verify-only all --verify-weights all --report FILE
+//                                                        compare every symbol in every weight; FILE gets the
+//                                                        summary and those below --flag-below (default 0.97),
+//                                                        DIFF_DIR a PNG of each of those (scripts/check-drawings.mjs)
 //   swift run -c release extract-symbols --weights all   the other eight weights (or --weights medium,semibold),
 //                                                        into server/assets/symbol-weights/WEIGHT/SHARD.txt;
 //                                                        with --only, only those symbols are updated
@@ -53,15 +57,18 @@ func shard(_ name: String) -> String {
 
 // MARK: - Verification
 
-/// Overlap of the SVG's pixels and the system's own drawing of the symbol:
-/// the PDF that SwiftUI draws, rasterized by Core Graphics with its soft masks, at 2x.
-@MainActor func overlap(_ name: String, svg: String) -> Double? {
+/// The system's own drawing of the symbol (the PDF that SwiftUI draws, rasterized by Core Graphics with its
+/// soft masks) and the SVG's drawing, as coverage at 2x, and their overlap: intersection over union on
+/// coverage, so translucent layers and anti-aliasing count by how much they cover (1.0 is identical).
+struct Comparison { let score: Double; let system: [Int]; let svg: [Int]; let width: Int; let height: Int }
+
+@MainActor func compare(_ name: String, svg: String, weight: Font.Weight = .regular) -> Comparison? {
     guard let vb = svg.range(of: #"viewBox="0 0 (\d+) (\d+)""#, options: .regularExpression) else { return nil }
     let dims = svg[vb].split(whereSeparator: { !$0.isNumber }).compactMap { Int($0) }
     let (w, h) = (dims[2], dims[3])
     let (W, H) = (w * 2, h * 2)
-    guard let pdf = renderPDF(name), let provider = CGDataProvider(data: pdf as CFData),
-          let page = CGPDFDocument(provider)?.page(at: 1) else { print("  \(name): no reference drawing"); return nil }
+    guard let pdf = renderPDF(name, weight: weight), let provider = CGDataProvider(data: pdf as CFData),
+          let page = CGPDFDocument(provider)?.page(at: 1) else { return nil }
     let a = coverage(width: W, height: H) { ctx in ctx.scaleBy(x: 2, y: 2); ctx.drawPDFPage(page) }
     let b = coverage(width: W, height: H) { ctx in
         ctx.scaleBy(x: 2, y: 2); ctx.translateBy(x: 0, y: CGFloat(h)); ctx.scaleBy(x: 1, y: -1)
@@ -74,23 +81,106 @@ func shard(_ name: String) -> String {
             ctx.fillPath(using: evenOdd ? .evenOdd : .winding)
         }
     }
-    // Intersection over union on coverage, so translucent layers and anti-aliasing count by how much they cover.
-    var inter = 0, uni = 0
-    for i in 0..<a.count { inter += min(a[i], b[i]); uni += max(a[i], b[i]) }
-    if let dir = ProcessInfo.processInfo.environment["DIFF_DIR"] {
-        // Gray where both agree, red where only the system draws, blue where only the SVG does.
-        var px = [UInt8](repeating: 255, count: W * H * 4)
-        for i in 0..<a.count {
-            let (x, y) = (a[i] > 127, b[i] > 127)
-            let c: (UInt8, UInt8, UInt8) = x && y ? (160, 160, 160) : x ? (230, 0, 0) : y ? (0, 0, 230) : (255, 255, 255)
-            px[i * 4] = c.0; px[i * 4 + 1] = c.1; px[i * 4 + 2] = c.2
-        }
-        let ctx = CGContext(data: &px, width: W, height: H, bitsPerComponent: 8, bytesPerRow: W * 4,
-                            space: CGColorSpaceCreateDeviceRGB(), bitmapInfo: CGImageAlphaInfo.noneSkipLast.rawValue)!
-        let rep = NSBitmapImageRep(cgImage: ctx.makeImage()!)
-        try? rep.representation(using: .png, properties: [:])?.write(to: URL(fileURLWithPath: dir).appendingPathComponent("\(name).png"))
+    return Comparison(score: overlapScore(a, b), system: a, svg: b, width: W, height: H)
+}
+
+/// A PNG of a comparison: gray where both agree, red where only the system draws, blue where only the SVG does.
+func writeDiff(_ c: Comparison, to file: URL) {
+    let (W, H) = (c.width, c.height)
+    var px = [UInt8](repeating: 255, count: W * H * 4)
+    for i in 0..<c.system.count {
+        let (x, y) = (c.system[i] > 127, c.svg[i] > 127)
+        let color: (UInt8, UInt8, UInt8) = x && y ? (160, 160, 160) : x ? (230, 0, 0) : y ? (0, 0, 230) : (255, 255, 255)
+        px[i * 4] = color.0; px[i * 4 + 1] = color.1; px[i * 4 + 2] = color.2
     }
-    return uni == 0 ? 1 : Double(inter) / Double(uni)
+    let ctx = CGContext(data: &px, width: W, height: H, bitsPerComponent: 8, bytesPerRow: W * 4,
+                        space: CGColorSpaceCreateDeviceRGB(), bitmapInfo: CGImageAlphaInfo.noneSkipLast.rawValue)!
+    try? FileManager.default.createDirectory(at: file.deletingLastPathComponent(), withIntermediateDirectories: true)
+    let rep = NSBitmapImageRep(cgImage: ctx.makeImage()!)
+    try? rep.representation(using: .png, properties: [:])?.write(to: file)
+}
+
+/// The overlap for --verify N; with DIFF_DIR set, also writes the comparison as DIFF_DIR/NAME.png.
+@MainActor func overlap(_ name: String, svg: String) -> Double? {
+    guard let c = compare(name, svg: svg) else { print("  \(name): no reference drawing"); return nil }
+    if let dir = ProcessInfo.processInfo.environment["DIFF_DIR"] {
+        writeDiff(c, to: URL(fileURLWithPath: dir).appendingPathComponent("\(name).png"))
+    }
+    return c.score
+}
+
+/// The SVGs of one weight, by name, read from its shards in server/assets/symbol-weights/WEIGHT.
+func weightSVGs(_ weightName: String) -> [String: String] {
+    var table: [String: String] = [:]
+    let dir = weightDir.appendingPathComponent(weightName)
+    for file in (try? FileManager.default.contentsOfDirectory(atPath: dir.path)) ?? [] where file.hasSuffix(".txt") {
+        let text = (try? String(contentsOf: dir.appendingPathComponent(file), encoding: .utf8)) ?? ""
+        for line in text.split(separator: "\n") {
+            guard let tab = line.firstIndex(of: "\t") else { continue }
+            table[String(line[..<tab])] = String(line[line.index(after: tab)...])
+        }
+    }
+    return table
+}
+
+/// --verify all: every symbol in regular weight, and with --verify-weights in those weights too.
+/// Prints a summary per weight and the worst symbols; --report FILE writes the summary and every
+/// symbol below --flag-below (default 0.97) as JSON, and DIFF_DIR gets a PNG for each of those only.
+@MainActor func verifyAll(_ names: [String], svgs: [String: String]) throws {
+    let threshold = Double(option("--flag-below") ?? "") ?? 0.97
+    let diffDir = ProcessInfo.processInfo.environment["DIFF_DIR"].map { URL(fileURLWithPath: $0) }
+    var groups: [(name: String, weight: Font.Weight, svgs: [String: String])] = []
+    var regular = svgs
+    for name in names where regular[name] == nil {
+        if let svg = try? String(contentsOf: svgDir.appendingPathComponent("\(name).svg"), encoding: .utf8) { regular[name] = svg }
+    }
+    groups.append(("regular", .regular, regular))
+    if let list = option("--verify-weights") {
+        for (weightName, weight) in weights where list == "all" || list.split(separator: ",").contains(where: { $0 == weightName }) {
+            groups.append((weightName, weight, weightSVGs(weightName)))
+        }
+    }
+    var flagged: [[String: Any]] = []
+    var summary: [[String: Any]] = []
+    for group in groups {
+        var compared = 0, noDrawing = 0, below = 0, total = 0.0
+        var worst: [(String, Double)] = []
+        let started = Date()
+        for (i, name) in names.enumerated() {
+            autoreleasepool {
+                guard let svg = group.svgs[name], let c = compare(name, svg: svg, weight: group.weight) else { noDrawing += 1; return }
+                compared += 1
+                total += c.score
+                worst.append((name, c.score))
+                if c.score < threshold {
+                    below += 1
+                    var entry: [String: Any] = ["name": name, "weight": group.name, "overlap": (c.score * 10000).rounded() / 10000]
+                    if let dir = diffDir {
+                        let file = "\(group.name)/\(name).png"
+                        writeDiff(c, to: dir.appendingPathComponent(file))
+                        entry["diff"] = file
+                    }
+                    flagged.append(entry)
+                }
+            }
+            if (i + 1) % 2000 == 0 { print("  \(group.name): \(i + 1)/\(names.count)") }
+        }
+        worst.sort { $0.1 < $1.1 }
+        let mean = compared == 0 ? 0 : total / Double(compared)
+        print(String(format: "%@: %d symbols compared, mean overlap %.4f, worst %.4f, %d below %.3f, %d without a drawing (%.0f s)",
+                     group.name, compared, mean, worst.first?.1 ?? 0, below, threshold, noDrawing, Date().timeIntervalSince(started)))
+        for (name, s) in worst.prefix(5) { print(String(format: "  %.4f  %@", s, name)) }
+        summary.append(["weight": group.name, "compared": compared, "no_drawing": noDrawing, "flagged": below,
+                        "mean": (mean * 10000).rounded() / 10000, "worst": ((worst.first?.1 ?? 0) * 10000).rounded() / 10000])
+    }
+    if let path = option("--report") {
+        let report: [String: Any] = ["kind": "symbols", "threshold": threshold, "generated_at": ISO8601DateFormatter().string(from: Date()),
+                                     "groups": summary, "flagged": flagged]
+        let url = URL(fileURLWithPath: path)
+        try FileManager.default.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
+        try JSONSerialization.data(withJSONObject: report, options: [.prettyPrinted, .sortedKeys]).write(to: url)
+        print("Report: \(path)")
+    }
 }
 
 // MARK: - Main
@@ -186,6 +276,11 @@ func shard(_ name: String) -> String {
         try node.run()
         node.waitUntilExit()
         if node.terminationStatus != 0 { print("  the symbol index was not rebuilt; run npm run pack:symbol-index in server/") }
+    }
+
+    if (option("--verify") ?? verifyOnly) == "all" {
+        try verifyAll(meta.names, svgs: svgs)
+        return
     }
 
     if let count = Int(option("--verify") ?? verifyOnly ?? "") {

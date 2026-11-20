@@ -47,7 +47,10 @@ for (const [id, frameIds] of Object.entries(frames.framePack.devices)) {
   const device = devices.devicePack.devices.find((d) => d.id === id);
   if (!device || !frameIds.length) continue;
   const result = frames.deviceFrames([device.name], ORIGIN);
-  check("frame for device", result.ok && result.text.includes("```svg"), device.name);
+  // Inline, or as its /frames/ID.svg address when Apple's bezels come with it (src/frames.ts); that address must draw.
+  const inline = result.text?.includes("```svg");
+  const addressed = frameIds.every((f) => result.text?.includes(`${ORIGIN}/frames/${encodeURIComponent(f)}.svg`) && frames.frameSvg(f));
+  check("frame for device", result.ok && (inline || addressed), device.name);
 }
 for (const name of bezels.bezelModelNames()) {
   check("bezel model found by name", bezels.findBezelModels(name)[0]?.name === name, name);

@@ -2,6 +2,7 @@
 //
 //   swift run -c release extract-frames               write the pack
 //   swift run -c release extract-frames --verify      also compare every frame with Xcode's own art
+//   swift run -c release extract-frames --verify-only --report FILE   compare only, write the results to FILE as JSON
 //   DIFF_DIR=/some/folder ...                         write a PNG per frame: Xcode's art | the SVG
 //
 // Xcode keeps one frame ("chrome") per device design in /Library/Developer/DeviceKit/Chrome. A chrome
@@ -13,7 +14,9 @@ import AppKit
 import PDFVector
 
 let args = CommandLine.arguments
-let verify = args.contains("--verify")
+let verifyOnly = args.contains("--verify-only") // compare, but leave frames.js as it is
+let verify = verifyOnly || args.contains("--verify")
+let reportPath = args.firstIndex(of: "--report").flatMap { $0 + 1 < args.count ? args[$0 + 1] : nil }
 let diffDir = ProcessInfo.processInfo.environment["DIFF_DIR"]
 let repo = URL(fileURLWithPath: #filePath).deletingLastPathComponent().deletingLastPathComponent()
     .deletingLastPathComponent().deletingLastPathComponent()
@@ -438,9 +441,9 @@ let now = ISO8601DateFormatter().string(from: Date())
 let head = "\"pack_version\":\(json(String(now.prefix(10)))),\"generated_at\":\(json(now)),"
     + "\"source\":{\"name\":\"Xcode Simulator device frames\",\"version\":\(json(xcode)),\"frames\":\(frames.count)}"
 let text = "export default {\(head),\n\"frames\":[\n" + entries.joined(separator: ",\n") + "\n],\n\"devices\":\(json(deviceMap))};\n"
-try! text.write(to: outURL, atomically: true, encoding: .utf8)
+if !verifyOnly { try! text.write(to: outURL, atomically: true, encoding: .utf8) }
 
-print("Frames: \(frames.count) for \(deviceMap.count) devices from \(xcode), written to server/src/pack/frames.js (\(text.utf8.count / 1024) KB)")
+print("Frames: \(frames.count) for \(deviceMap.count) devices from \(xcode)" + (verifyOnly ? " (frames.js left as it is)" : ", written to server/src/pack/frames.js (\(text.utf8.count / 1024) KB)"))
 if !skipped.isEmpty { print("  no frame for: \(skipped.joined(separator: ", "))") }
 let finals = sizes.map(\.2)
 print("  SVG sizes: largest \(finals.max() ?? 0) bytes (\(sizes.max { $0.2 < $1.2 }?.0 ?? "")), average \(finals.reduce(0, +) / max(1, finals.count)) bytes")
@@ -454,5 +457,20 @@ if verify {
     for (id, c) in checks {
         print(String(format: "  %.4f overlap, color error %.1f/255, screen ink %d px, screen edge covered %.1f%%  %@",
                      c.overlap, c.colorError, c.screenInk, c.edgeCover * 100, id))
+    }
+    if let path = reportPath {
+        // Read by server/scripts/check-drawings.mjs; DIFF_DIR's PNGs are named by frame id.
+        let round4 = { (v: Double) in (v * 10000).rounded() / 10000 }
+        let report: [String: Any] = ["kind": "frames", "source": xcode, "generated_at": now, "frames": checks.map { item -> [String: Any] in
+            let (id, c) = item
+            var e: [String: Any] = ["id": id, "overlap": round4(c.overlap), "color_error": round4(c.colorError),
+                                    "screen_ink": c.screenInk, "edge_cover": round4(c.edgeCover)]
+            if diffDir != nil { e["diff"] = "\(id).png" }
+            return e
+        }]
+        let url = URL(fileURLWithPath: path)
+        try! FileManager.default.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
+        try! JSONSerialization.data(withJSONObject: report, options: [.prettyPrinted, .sortedKeys]).write(to: url)
+        print("Report: \(path)")
     }
 }

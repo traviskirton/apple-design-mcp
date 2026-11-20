@@ -1,6 +1,9 @@
 # Apple's design resources downloaded by scripts/fetch_apple_design_resources.py
 /apple-resources/
 
+# Reports and Figma renders written by server/scripts/check-drawings.mjs
+/visual-check/
+
 .DS_Store
 __pycache__/
 *.pyc
