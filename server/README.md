@@ -23,7 +23,7 @@ The server is stateless. Each request builds a fresh server and gets a plain JSO
 
 ## The guidelines pack
 
-`scripts/build-hig-pack.mjs` downloads every guidelines page from developer.apple.com (about 160 pages, under a minute), splits each at its headings, builds the search index, and writes `src/pack/hig.js`. That file is not committed.
+`scripts/build-hig-pack.mjs` downloads every guidelines page from developer.apple.com (about 160 pages, under a minute), splits each at its headings, builds the search index, and writes `src/pack/hig.js`. That file is committed: refresh it on purpose with `npm run pack` and review the change in a pull request.
 
 - The first `npm run dev` or `npx wrangler deploy` builds the pack if it is missing.
 - `npm run pack` rebuilds it. Do that before a deploy to pick up Apple's changes.
