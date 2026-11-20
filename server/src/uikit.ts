@@ -291,8 +291,9 @@ function header(kit: Kit, c: KitComponent): string[] {
 }
 
 const DRAWING =
-  "Using a drawing: the SVG is Apple's own component, exported from Apple's UI kit by Figma. Place it as it is and only change its icons and labels; " +
+  "Using a drawing: the SVG is Apple's own component, exported from Apple's UI kit by Figma. In a mockup, place it as it is and only change its icons and labels; " +
   "do not rebuild it in HTML or CSS, even for tap states (lay clickable areas over it instead). " +
+  "In SwiftUI, UIKit or AppKit code, use the system's own component and SF Symbols by name instead, and use the drawing and measurements as reference. " +
   "Its width and height are the component's own size in points; a shadow reaches past that box. In HTML, put the SVG into the page, where its " +
   "shadow shows around it and its labels and icons can be changed, or show it unchanged by its address in an img, which cuts the shadow off at the box. " +
   "Layers are groups and shapes with the layer's name as id. Labels are text elements: change a label by editing its text, and keep its position and font. " +

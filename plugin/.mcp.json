@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "apple-design": {
+      "type": "http",
+      "url": "https://apple-design-mcp.com/mcp"
+    }
+  }
+}
