@@ -27,6 +27,11 @@ swift run -c release extract-symbols --weights all     # the other eight weights
 
 Run it again after a macOS or SF Symbols update, then deploy the server.
 
+To check every drawing at once (all symbols in all weights, every frame, every UI kit drawing) and get a
+report of only the ones that differ from Apple's, run `npm run check:drawings` in `server/`
+(`server/scripts/check-drawings.mjs`; it calls `--verify-only all` here). The report is
+`visual-check/report.html` at the top of the repository.
+
 ## How a shape is made
 
 1. SwiftUI's `ImageRenderer` draws `Image(systemName:)` at a 100-point font into a one-page PDF.
