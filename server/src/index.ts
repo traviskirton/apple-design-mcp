@@ -21,7 +21,7 @@ import type { DrawingLoader, OutlineLoader } from "./uikit.js";
 import { designValues, valuesPack, VALUE_PLATFORMS, VALUE_TOPICS } from "./values.js";
 
 const SERVER_NAME = "apple-design";
-const SERVER_VERSION = "0.13.0";
+const SERVER_VERSION = "0.13.1";
 
 const HIG_DATE = higPack.pack_version;
 
@@ -153,8 +153,10 @@ function buildServer(app: string, env: Env, origin: string): McpServer {
         "For system colors, text styles and standard sizes, call get_design_values instead of recalling them. " +
         "For a standard component such as a toolbar, tab bar, list row, alert, sheet or button, call search_ui_kit " +
         "once with every component the design needs; it returns Apple's own drawing of each one as SVG with its " +
-        "measurements. Place those SVGs as they are and only change their icons and labels; do not rebuild a component in " +
-        "HTML or CSS, even for tap states (lay clickable areas over the SVG instead).",
+        "measurements. In a mockup (HTML or a design tool), place those SVGs as they are and only change their icons and labels; " +
+        "do not rebuild a component in HTML or CSS, even for tap states (lay clickable areas over the SVG instead). In SwiftUI, " +
+        "UIKit or AppKit code, use the system's own components and SF Symbols by name instead, and use the drawings and " +
+        "measurements only as reference.",
     },
   );
 
@@ -425,8 +427,8 @@ function buildServer(app: string, env: Env, origin: string): McpServer {
         "Beside it come the component's variants and properties and an outline of its layers: exact sizes, auto layout " +
         "(direction, gap, padding), corner radii, colors and text styles by Apple's names, for building it in code. Pass " +
         "every component of the design in one call as `queries`, such as [\"tab bar\", \"large title toolbar\", \"list row\"]. " +
-        "Add a device or a variant's words to narrow a query, such as \"iPad sidebar\", \"destructive button\" or \"tab bar 4 tabs\"; the variant a query names is the drawing it returns. Place " +
-        "the SVG as it is for every standard Apple component in a design and only change its icons and labels; do not rebuild it in HTML or CSS. Without `queries` it lists every component.",
+        "Add a device or a variant's words to narrow a query, such as \"iPad sidebar\", \"destructive button\" or \"tab bar 4 tabs\"; the variant a query names is the drawing it returns. In a mockup, place " +
+        "the SVG as it is for every standard Apple component and only change its icons and labels; do not rebuild it in HTML or CSS. In SwiftUI, UIKit or AppKit code, use the system's own component instead. Without `queries` it lists every component.",
       inputSchema: {
         queries: z
           .array(z.string().min(1).max(120))
@@ -463,8 +465,8 @@ function buildServer(app: string, env: Env, origin: string): McpServer {
         "component, Apple's own drawing of each component as SVG in the device's variant, the icons as SF Symbols, and " +
         "the platform's system colors, text styles and sizes. Everything is limited to the device's platform, so a " +
         "watch design gets only watchOS material. Call it first, once, naming every component and icon of the " +
-        "design; use the other tools only for what it does not cover. Place the component SVGs as they are and only " +
-        "change their icons and labels.",
+        "design; use the other tools only for what it does not cover. In a mockup, place the component SVGs as they are and " +
+        "only change their icons and labels; in SwiftUI, UIKit or AppKit code, use the system's own components instead.",
       inputSchema: {
         device: z.string().min(1).max(100).describe("One device, such as \"iPhone 18 Pro\", \"iPad Pro 13\", \"Apple Watch Series 11\" or \"MacBook Air 13\"."),
         components: z
