@@ -9,6 +9,11 @@
   // ranking tests fail.
   "build": { "command": "node scripts/build-hig-pack.mjs --if-missing && npm run check" },
   // One SVG per SF Symbol, written by the extractor on a Mac. Served at /symbols/NAME.svg and read by the symbol tools.
+  // assets/ also holds the website: index.html at / and privacy.html at /privacy. Static files are served
+  // before the Worker runs, so never add a file or folder named "mcp" there: it would shadow the server at /mcp.
   "assets": { "directory": "./assets", "binding": "ASSETS" },
+  // The site and the server on apple-design-mcp.com; the workers.dev address stays on as a backup.
+  "routes": [{ "pattern": "apple-design-mcp.com", "custom_domain": true }],
+  "workers_dev": true,
   "observability": { "enabled": true }
 }
