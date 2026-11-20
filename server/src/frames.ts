@@ -22,7 +22,13 @@ function radius(r: Screen["corner_radius_pt"]): string {
   return `, corner radii top-left ${num(r.top_left)}, top-right ${num(r.top_right)}, bottom-right ${num(r.bottom_right)}, bottom-left ${num(r.bottom_left)}`;
 }
 
-function describe(title: string, frame: Frame, screen?: Screen): string {
+/** A vector frame's SVG, for the /frames/ID.svg address. */
+export function frameSvg(id: string): string | undefined {
+  return framesById.get(id)?.svg.trim();
+}
+
+/** `svgUrl` set: the SVG is given as that address instead of inline, to keep the reply small. */
+function describe(title: string, frame: Frame, screen?: Screen, svgUrl?: string): string {
   const s = frame.screen;
   const facts = [
     `Frame: ${num(frame.width)} × ${num(frame.height)} points` + (frame.corner_radius ? `, body corner radius ${num(frame.corner_radius)}.` : "."),
@@ -38,6 +44,10 @@ function describe(title: string, frame: Frame, screen?: Screen): string {
   }
   if (frame.buttons?.length) {
     facts.push("Buttons: " + frame.buttons.map((b) => `${b.name} at x ${num(b.x)}, y ${num(b.y)}, ${num(b.width)} × ${num(b.height)}`).join("; ") + ".");
+  }
+  if (svgUrl) {
+    facts.push(`SVG: ${svgUrl}`);
+    return [`### ${title}`, facts.join("\n")].join("\n\n");
   }
   return [`### ${title}`, facts.join("\n"), "```svg\n" + frame.svg.trim() + "\n```"].join("\n\n");
 }
@@ -72,7 +82,9 @@ export function deviceFrames(queries: string[], origin: string): { text: string;
       const frame = framesById.get(id);
       if (!frame) return;
       const screen = device.screens[i];
-      parts.push(describe(`${screen?.role ? `${device.name}, ${ROLE[screen.role]}` : device.name}, vector frame`, frame, screen));
+      // With Apple's bezels in the reply, the vector frame is a fallback: its address, not its drawing.
+      const svgUrl = pictures.length ? `${origin}/frames/${encodeURIComponent(id)}.svg` : undefined;
+      parts.push(describe(`${screen?.role ? `${device.name}, ${ROLE[screen.role]}` : device.name}, vector frame`, frame, screen, svgUrl));
       frames++;
     });
   }
