@@ -4,11 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Apple Design MCP</title>
-<meta name="description" content="Apple's design kit for your AI: the Human Interface Guidelines, every SF Symbol, Apple's UI kit components, device sizes and bezels, behind one URL.">
+<meta name="description" content="Apple's design resources for your bot: Human Interface Guidelines, every SF Symbol, Apple's iOS and macOS components and device frames, behind one URL.">
 <meta property="og:title" content="Apple Design MCP">
-<meta property="og:description" content="Apple's design kit for your AI, behind one URL. Free, with no sign-in.">
+<meta property="og:description" content="Apple's design resources for your bot. No install. No sign-in. No API key.">
 <meta property="og:image" content="https://apple-design-mcp.com/site/after.jpg">
 <link rel="stylesheet" href="/site/ds.css">
+<link rel="stylesheet" href="/site/site.css">
 <script src="/site/ds.js" defer></script>
 <script src="/site/site.js" defer></script>
 </head>
@@ -19,9 +20,9 @@
   <div class="globalnav-inner">
     <a class="globalnav-name" href="/">Apple Design MCP</a>
     <ul class="globalnav-links">
-      <li><a href="#chapter-setup">How to use</a></li>
+      <li><a href="#chapter-setup">How to use it</a></li>
       <li><a href="#chapter-proof">Proof</a></li>
-      <li><a href="#questions">Questions</a></li>
+      <li><a href="#highlights">What's inside</a></li>
     </ul>
   </div>
 </nav>
@@ -30,7 +31,7 @@
   <div class="localnav-inner">
     <a class="localnav-title" href="#top">Apple Design MCP</a>
     <div class="localnav-menu">
-      <a class="localnav-link" href="#chapter-setup">How to use</a>
+      <a class="localnav-link" href="#chapter-setup">How to use it</a>
       <button class="pill pill-blue pill-sm" type="button" data-copy-url>Copy the URL</button>
     </div>
   </div>
@@ -42,16 +43,16 @@
   <div class="wrap welcome-head">
     <span class="chiclet chiclet-fill"><span>A</span></span>
     <div class="badges">
-      <span class="badge badge-accent">Free</span>
-      <span class="badge badge-outline">No sign-in</span>
-      <span class="badge">One URL</span>
+      <span class="badge">No install</span>
+      <span class="badge">No sign-in</span>
+      <span class="badge">No API key</span>
     </div>
     <p class="welcome-eyebrow eyebrow-gradient">Apple Design MCP</p>
-    <h1 class="welcome-headline">Apple's design kit, handed to your AI.</h1>
-    <p class="welcome-body">The Human Interface Guidelines, every SF Symbol, Apple's own UI kit components and the real size of every device. <strong>Add one URL and Claude designs with Apple's parts instead of guessing.</strong></p>
+    <h1 class="welcome-headline">Apple’s design resources for your bot.</h1>
+    <p class="welcome-body">Human Interface Guidelines, every SF Symbol, <strong>Apple’s iOS and macOS components and device frames.</strong> watchOS coming soon.</p>
     <div class="pills">
-      <button class="pill pill-neutral" type="button" data-copy-url>Copy the server URL</button>
-      <a class="pill pill-outline" href="#chapter-proof">See the proof</a>
+      <span class="pill pill-outline" data-server-url>https://apple-design-mcp.com/mcp</span>
+      <button class="pill pill-blue" type="button" data-copy-url>Copy</button>
     </div>
   </div>
   <div class="welcome-media wrap">
@@ -61,34 +62,71 @@
   </div>
 </section>
 
-<section class="section section-flush-top" aria-labelledby="facts-title">
-  <h2 class="visually-hidden" id="facts-title">At a glance</h2>
-  <dl class="facts facts-3">
-    <div><dt>Server URL</dt><dd><code data-server-url>https://apple-design-mcp.com/mcp</code></dd></div>
-    <div><dt>Cost</dt><dd><span class="badge badge-accent">Free</span></dd></div>
-    <div><dt>Sign-in</dt><dd>None</dd></div>
-    <div><dt>Works in</dt><dd>Claude chat, projects and Claude Design</dd></div>
-    <div><dt>Guidelines</dt><dd>Copied from Apple on 19 November 2026</dd></div>
-    <div><dt>Tools</dt><dd>11, all read-only</dd></div>
-  </dl>
+<section class="section chapter" id="chapter-setup">
+  <div class="stack">
+    <div class="wrap chapter-head">
+      <p class="chapter-eyebrow">How to use it</p>
+      <h2 class="chapter-headline">Works in Claude, Cursor, VS Code, and pretty much anything else.</h2>
+      <p class="chapter-body"><strong>Pick yours.</strong> Try: “Design a Settings screen for iPhone 18 Pro, light and dark. Place Apple's components as they are.”</p>
+    </div>
+    <div class="wrap tabgallery setup-tabs" data-tabgallery>
+      <div class="tabnav">
+        <div class="tabnav-platter" aria-label="Apps">
+          <button class="tabnav-tab" type="button">Claude</button>
+          <button class="tabnav-tab" type="button">Claude Code</button>
+          <button class="tabnav-tab" type="button">Cursor</button>
+          <button class="tabnav-tab" type="button">VS Code</button>
+          <button class="tabnav-tab" type="button">ChatGPT</button>
+          <button class="tabnav-tab" type="button">Anything else</button>
+        </div>
+      </div>
+      <div class="tabgallery-media">
+        <div class="media tabgallery-panel media-pad"><pre class="code"><code><span data-server-url>https://apple-design-mcp.com/mcp</span></code></pre></div>
+        <div class="media tabgallery-panel media-pad"><pre class="code"><code>claude mcp add --transport http apple-design <span data-server-url>https://apple-design-mcp.com/mcp</span></code></pre></div>
+        <div class="media tabgallery-panel media-pad"><pre class="code"><code>{ "mcpServers": { "apple-design": { "url": "<span data-server-url>https://apple-design-mcp.com/mcp</span>" } } }</code></pre></div>
+        <div class="media tabgallery-panel media-pad"><pre class="code"><code>{ "servers": { "apple-design": { "type": "http", "url": "<span data-server-url>https://apple-design-mcp.com/mcp</span>" } } }</code></pre></div>
+        <div class="media tabgallery-panel media-pad"><pre class="code"><code><span data-server-url>https://apple-design-mcp.com/mcp</span></code></pre></div>
+        <div class="media tabgallery-panel media-pad"><pre class="code"><code><span data-server-url>https://apple-design-mcp.com/mcp</span></code></pre></div>
+      </div>
+      <div class="tabgallery-captions">
+        <p class="tabgallery-caption"><strong>Claude</strong> (chat, projects, Claude Design, desktop and mobile apps).<br>1. Open Settings → Connectors and choose Add custom connector.<br>2. Name it “Apple Design” and paste the URL.<br>3. Ask for an Apple screen.</p>
+        <p class="tabgallery-caption"><strong>Claude Code.</strong> Run this once in a terminal.</p>
+        <p class="tabgallery-caption"><strong>Cursor.</strong> Add this to <code>~/.cursor/mcp.json</code>.</p>
+        <p class="tabgallery-caption"><strong>VS Code.</strong> Add this to <code>.vscode/mcp.json</code>.</p>
+        <p class="tabgallery-caption"><strong>ChatGPT</strong> (Plus, Pro, Business and Enterprise, on the web).<br>1. Open Settings → Connectors → Advanced and turn on Developer mode. <br>2. Back on Connectors, click Create. <br>3. Name it “Apple Design”, paste the URL and choose No authentication. <br>4. In a new chat, open the + menu, choose Developer mode and tick Apple Design.<br>On Business and Enterprise, a workspace owner has to allow developer mode first.</p>
+        <p class="tabgallery-caption"><strong>Anything else.</strong> Add the URL as a remote MCP server. No authentication.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section chapter" id="chapter-proof">
+  <div class="stack">
+    <div class="wrap chapter-head">
+      <p class="chapter-eyebrow">Proof</p>
+      <h2 class="chapter-headline">Same brief, same model.</h2>
+      <p class="chapter-body">Without it, the AI guesses screen sizes, draws its own icons and rebuilds tab bars in CSS. <strong>With it, it places Apple's own symbols, components and frames.</strong></p>
+    </div>
+    <div class="media-grid compare">
+      <figure>
+        <div class="media ratio-16x10 media-contain" style="--matte: #f5f5f7"><img src="/site/before.jpg" alt="The recipe design from memory: a generic phone outline, invented screen sizes and hand-drawn controls." loading="lazy" width="1600" height="1000"><span class="media-label">From memory</span></div>
+        <figcaption class="media-caption"><strong>From memory.</strong> A generic phone, invented sizes and hand-drawn controls.</figcaption>
+      </figure>
+      <figure>
+        <div class="media ratio-16x10 media-contain" style="--matte: #e5e5ea"><img src="/site/after.jpg" alt="The recipe design with Apple Design: Apple's iPhone Duo bezel, real screen sizes, SF Symbols and UI kit components." loading="lazy" width="1600" height="1000"><span class="media-label">With Apple Design</span></div>
+        <figcaption class="media-caption"><strong>With Apple Design.</strong> Apple's bezel, real screen sizes, SF Symbols and UI kit components.</figcaption>
+      </figure>
+    </div>
+  </div>
 </section>
 
 <section class="section highlights" id="highlights">
   <div class="stack">
     <div class="wrap gallery-header">
-      <h2 class="gallery-header-headline">Get to know what is inside.</h2>
+      <h2 class="gallery-header-headline">What's inside.</h2>
     </div>
-    <div class="gallery" data-highlights data-interval="6000" data-label="What is inside">
+    <div class="gallery" data-highlights data-interval="6000" data-label="What's inside">
       <ul class="track">
-        <li class="media-card caption-ink">
-          <div class="media">
-            <picture>
-              <source media="(max-width: 734px)" srcset="/site/uikit-tall.jpg">
-              <img src="/site/uikit.jpg" alt="Three iPhone screens drawn from Apple's iOS 27 UI kit: a tab bar, a context menu and an alert." loading="lazy">
-            </picture>
-          </div>
-          <p class="media-overlay-caption">Apple's own drawing of 505 components, ready to place.</p>
-        </li>
         <li class="media-card caption-ink">
           <div class="media">
             <picture>
@@ -96,7 +134,16 @@
               <img src="/site/symbols.jpg" alt="A grid of SF Symbols in colour: heart, star, bell, house, camera and more." loading="lazy">
             </picture>
           </div>
-          <p class="media-overlay-caption">Every SF Symbol as SVG, in all nine weights.</p>
+          <p class="media-overlay-caption">9,184 SF Symbols, in all 9 weights.</p>
+        </li>
+        <li class="media-card caption-ink">
+          <div class="media">
+            <picture>
+              <source media="(max-width: 734px)" srcset="/site/uikit-tall.jpg">
+              <img src="/site/uikit.jpg" alt="Three iPhone screens drawn from Apple's iOS 27 UI kit: a tab bar, a context menu and an alert." loading="lazy">
+            </picture>
+          </div>
+          <p class="media-overlay-caption">2,310 components from Apple's iOS and macOS UI kits, as Apple's own drawings.</p>
         </li>
         <li class="media-card caption-ink">
           <div class="media">
@@ -105,125 +152,17 @@
               <img src="/site/bezels.jpg" alt="Apple's product bezels for MacBook Air, iPad Pro, iPhone 17 Pro and Apple Watch Ultra." loading="lazy">
             </picture>
           </div>
-          <p class="media-overlay-caption">Real screen sizes, safe areas and Apple's product bezels.</p>
-        </li>
-        <li class="media-card caption-ink">
-          <div class="media">
-            <picture>
-              <source media="(max-width: 734px)" srcset="/site/tech-tall.jpg">
-              <img src="/site/tech.jpg" alt="Apple technology artwork: the Add Apple Watch Face button, the AR badge and the Health, Siri, Home and Games icons." loading="lazy">
-            </picture>
-          </div>
-          <p class="media-overlay-caption">Apple's artwork for its technologies, from AirPlay to Siri.</p>
+          <p class="media-overlay-caption">210 Apple product bezels.</p>
         </li>
       </ul>
       <div class="highlights-controls"></div>
     </div>
-  </div>
-</section>
-
-<section class="section chapter" id="chapter-setup">
-  <div class="stack">
-    <div class="wrap chapter-head">
-      <p class="chapter-eyebrow">The setup</p>
-      <h2 class="chapter-headline">Add one URL. Then ask for a screen.</h2>
-      <p class="chapter-body"><strong>There is nothing to install and no account to make.</strong> The connector shows up in chat, in projects and in Claude Design.</p>
-    </div>
-    <ol class="callouts callouts-cards">
-      <li class="callout">
-        <span class="chiclet chiclet-fill"><span>1</span></span>
-        <h3 class="callout-title">Open Connectors.</h3>
-        <p class="callout-body">On claude.ai, open Settings, then Connectors, and choose Add custom connector.</p>
-      </li>
-      <li class="callout">
-        <span class="chiclet chiclet-fill"><span>2</span></span>
-        <h3 class="callout-title">Paste the URL.</h3>
-        <p class="callout-body">Name it Apple Design and paste <code data-server-url>https://apple-design-mcp.com/mcp</code>. Save. There is no sign-in step.</p>
-      </li>
-      <li class="callout">
-        <span class="chiclet chiclet-fill"><span>3</span></span>
-        <h3 class="callout-title">Ask for an Apple screen.</h3>
-        <p class="callout-body">Name the device and the parts. Claude calls the server for sizes, guidelines, symbols and components.</p>
-      </li>
-    </ol>
-    <div class="reduced">
-      <h3 class="reduced-headline">Try one of these.</h3>
-      <p class="reduced-body"><strong>Ask for Apple's SVGs to be placed as they are.</strong> Without that line, models often rebuild components in code and drift from Apple's look.</p>
-    </div>
-    <ul class="feature-list feature-list-3">
-      <li><strong>A Settings screen.</strong> “Design a Settings screen for iPhone 17 Pro, light and dark. Use Apple Design for the screen size, SF Symbols and Apple's own components.”</li>
-      <li><strong>An iPad notes app.</strong> “Design a notes app for iPad Pro 13 with a sidebar, a list and a detail view. Place Apple's UI kit SVGs as they are; only change their icons and labels.”</li>
-      <li><strong>A Mac window.</strong> “Design a macOS 27 window for a photo editor with a toolbar and an inspector. Show it inside a MacBook Air frame.”</li>
-    </ul>
-    <pre class="code"><code># Claude Code
-claude mcp add --transport http apple-design https://apple-design-mcp.com/mcp</code></pre>
-  </div>
-</section>
-
-<section class="section chapter" id="chapter-proof">
-  <div class="stack">
-    <div class="wrap chapter-head">
-      <p class="chapter-eyebrow">The proof</p>
-      <h2 class="chapter-headline">The same brief, without and with.</h2>
-      <p class="chapter-body">Both designs come from one brief in Claude Design: a recipe screen for iPhone Duo. <strong>With the server, the sizes, bezel, symbols and controls are Apple's own.</strong></p>
-    </div>
-    <div class="media-grid compare">
-      <figure>
-        <div class="media ratio-16x10 media-contain" style="--matte: #f5f5f7"><img src="/site/before.jpg" alt="The recipe design without the server: a generic phone outline, invented screen sizes and hand-drawn controls." loading="lazy" width="1600" height="1000"><span class="media-label">Without</span></div>
-        <figcaption class="media-caption"><strong>Without the server.</strong> A generic phone, invented sizes and hand-drawn controls.</figcaption>
-      </figure>
-      <figure>
-        <div class="media ratio-16x10 media-contain" style="--matte: #e5e5ea"><img src="/site/after.jpg" alt="The recipe design with the server: Apple's iPhone Duo bezel, real screen sizes, SF Symbols and UI kit components." loading="lazy" width="1600" height="1000"><span class="media-label">With</span></div>
-        <figcaption class="media-caption"><strong>With Apple Design MCP.</strong> Apple's bezel, real screen sizes (466 × 678 and 951 × 669 pt), SF Symbols and UI kit components.</figcaption>
-      </figure>
-    </div>
-    <figure class="wrap">
-      <div class="media media-hero ratio-keep"><img src="/site/runs.jpg" alt="Twelve test runs of the same recipe brief, laid side by side." loading="lazy" width="2000" height="1120"></div>
-      <figcaption class="media-caption"><strong>Twelve runs of the same brief.</strong> Each release of the server was tested on it before shipping.</figcaption>
-    </figure>
-  </div>
-</section>
-
-<section class="section faq" id="questions">
-  <div class="wrap">
-    <h2 class="faq-headline">Questions? Answers.</h2>
-    <ul class="faq-list">
-      <li class="faq-item">
-        <details>
-          <summary class="faq-question"><span>What does it cost?</span><span class="faq-chevron" aria-hidden="true"></span></summary>
-          <div class="faq-answer"><div class="faq-answer-inner"><p><strong>Nothing.</strong> There is no account, no key and no plan to choose.</p></div></div>
-        </details>
-      </li>
-      <li class="faq-item">
-        <details>
-          <summary class="faq-question"><span>Which apps can use it?</span><span class="faq-chevron" aria-hidden="true"></span></summary>
-          <div class="faq-answer"><div class="faq-answer-inner"><p><strong>It was built and tested in Claude Design</strong>, where it makes the biggest difference. It also works in Claude chat, Claude projects, Claude Code and other apps that accept a remote MCP server over Streamable HTTP with no authentication.</p></div></div>
-        </details>
-      </li>
-      <li class="faq-item">
-        <details>
-          <summary class="faq-question"><span>How current are the guidelines?</span><span class="faq-chevron" aria-hidden="true"></span></summary>
-          <div class="faq-answer"><div class="faq-answer-inner"><p><strong>They were copied from Apple's site on 19 November 2026.</strong> Ask Claude to call <code>get_pack_info</code> to see the date the live server holds. The server is refreshed after Apple's major releases.</p></div></div>
-        </details>
-      </li>
-      <li class="faq-item">
-        <details>
-          <summary class="faq-question"><span>The tools look out of date in my app.</span><span class="faq-chevron" aria-hidden="true"></span></summary>
-          <div class="faq-answer"><div class="faq-answer-inner"><p><strong>Remove the connector and add it again.</strong> Apps keep the tool list they first saw until the connector is added again.</p></div></div>
-        </details>
-      </li>
-      <li class="faq-item">
-        <details>
-          <summary class="faq-question"><span>What does the server keep?</span><span class="faq-chevron" aria-hidden="true"></span></summary>
-          <div class="faq-answer"><div class="faq-answer-inner"><p><strong>No account and no conversation.</strong> Each tool call is logged for a short time to keep the server running. <a class="link-more" href="/privacy">Read the privacy policy</a></p></div></div>
-        </details>
-      </li>
-      <li class="faq-item">
-        <details>
-          <summary class="faq-question"><span>Is this made by Apple?</span><span class="faq-chevron" aria-hidden="true"></span></summary>
-          <div class="faq-answer"><div class="faq-answer-inner"><p><strong>No.</strong> It is an independent project and is not affiliated with or endorsed by Apple.</p></div></div>
-        </details>
-      </li>
+    <ul class="feature-list">
+      <li><strong>9,184 SF Symbols</strong>in all 9 weights</li>
+      <li><strong>2,310 components</strong>from Apple's iOS and macOS UI kits, as Apple's own drawings (watchOS coming soon)</li>
+      <li><strong>210 Apple product bezels</strong>for iPhone, iPad, Mac, Apple Watch and Apple TV</li>
+      <li><strong>Screen sizes and safe areas</strong>for every current device</li>
+      <li><strong>The Human Interface Guidelines</strong>copied from Apple on 19 November 2026</li>
     </ul>
   </div>
 </section>
@@ -234,14 +173,13 @@ claude mcp add --transport http apple-design https://apple-design-mcp.com/mcp</c
   <div class="wrap">
     <nav class="site-footer-crumbs" aria-label="Breadcrumb"><a href="https://postfl.com">Postfl</a><span class="chev" aria-hidden="true">›</span><span>Apple Design MCP</span></nav>
     <ul class="site-footer-links">
-      <li><a href="#chapter-setup">How to use</a></li>
-      <li><a href="#chapter-proof">Proof</a></li>
-      <li><a href="#questions">Questions</a></li>
       <li><a href="/privacy">Privacy</a></li>
       <li><a href="mailto:support@apple-design-mcp.com">Support</a></li>
+      <li><a href="https://github.com/traviskirton/apple-mcp">GitHub</a></li>
     </ul>
     <div class="site-footer-legal">
-      <span>Copyright © 2026 Postfl Design &amp; Development. Not affiliated with or endorsed by Apple. Apple, SF Symbols and the names of Apple products are trademarks of Apple Inc.</span>
+      <span>Designed by Apple. Delivered to your bot. Not affiliated with or endorsed by Apple.</span>
+      <span>© 2026 Postfl Design &amp; Development</span>
     </div>
   </div>
 </footer>
