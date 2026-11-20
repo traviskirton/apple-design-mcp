@@ -38,7 +38,7 @@ try {
 
   const { tools } = await client.listTools();
   console.log("tools:", tools.map((t) => t.name).join(", "));
-  for (const name of ["get_pack_info", "search_hig", "get_hig_page", "get_device_metrics", "get_device_frame", "search_symbols", "get_symbol", "get_technology_assets", "get_design_values", "search_ui_kit"]) {
+  for (const name of ["get_pack_info", "search_hig", "get_hig_page", "get_device_metrics", "get_device_frame", "search_symbols", "get_symbol", "get_technology_assets", "get_design_values", "search_ui_kit", "get_design_brief"]) {
     check(tools.some((t) => t.name === name), `${name} is missing`);
   }
 
@@ -117,6 +117,10 @@ try {
   }
   const plain = await call("get_device_frame", { devices: ["iPhone SE"] });
   check(!plain.isError && /<svg [^>]*viewBox="0 0 [\d.]+ [\d.]+"/.test(plain.text), "a device with no bezel should get its vector frame inline");
+
+  const brief = await call("get_design_brief", { device: "Apple Watch Series 11", components: ["button"], icons: ["heart"] });
+  check(!brief.isError && brief.text.includes("# Designing for watchOS") && !brief.text.includes("Designing for iOS"), "get_design_brief should give a watch only watchOS guidelines");
+  check(brief.text.includes("<svg"), "get_design_brief should include drawings or symbols as SVG");
 
   const noFrame = await call("get_device_frame", { devices: ["nokia"] });
   check(noFrame.isError && noFrame.text.includes("No bezel or frame is loaded"), "get_device_frame should say when it has no frame");
