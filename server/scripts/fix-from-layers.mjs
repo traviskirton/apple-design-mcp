@@ -16,6 +16,7 @@ import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { figma, workingToken } from "./export-ui-kit-svg.mjs";
+import { browserFixes } from "./svg-for-browsers.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const NODES = 6; // drawings per request for their layers
@@ -109,6 +110,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
         const file = join(dir, id.replace(":", "-") + ".svg");
         const before = readFileSync(file, "utf8");
         const out = applyLayers(before, layersOf(root));
+        out.svg = browserFixes(out.svg); // Figma's variable weights to named ones, among others
         weights += out.weights; pictures += out.pictures;
         if (out.svg !== before) { changed++; if (!dry) writeFileSync(file, out.svg); }
       }
