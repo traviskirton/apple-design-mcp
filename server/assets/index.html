@@ -66,7 +66,7 @@
   <div class="stack">
     <div class="wrap chapter-head">
       <p class="chapter-eyebrow">How to use it</p>
-      <h2 class="chapter-headline">Works in Claude, Cursor, VS Code, and pretty much anything else.</h2>
+      <h2 class="chapter-headline">Works in Claude, ChatGPT, Perplexity, Grok, Cursor, VS Code, and pretty much anything else.</h2>
       <p class="chapter-body"><strong>Pick yours.</strong> Try: “Design a Settings screen for iPhone 18 Pro, light and dark. Place Apple's components as they are.”</p>
     </div>
     <div class="wrap tabgallery setup-tabs" data-tabgallery>
@@ -77,6 +77,8 @@
           <button class="tabnav-tab" type="button">Cursor</button>
           <button class="tabnav-tab" type="button">VS Code</button>
           <button class="tabnav-tab" type="button">ChatGPT</button>
+          <button class="tabnav-tab" type="button">Perplexity</button>
+          <button class="tabnav-tab" type="button">Grok</button>
           <button class="tabnav-tab" type="button">Anything else</button>
         </div>
       </div>
@@ -87,13 +89,17 @@
         <div class="media tabgallery-panel media-pad"><pre class="code"><code>{ "servers": { "apple-design": { "type": "http", "url": "<span data-server-url>https://apple-design-mcp.com/mcp</span>" } } }</code></pre></div>
         <div class="media tabgallery-panel media-pad"><pre class="code"><code><span data-server-url>https://apple-design-mcp.com/mcp</span></code></pre></div>
         <div class="media tabgallery-panel media-pad"><pre class="code"><code><span data-server-url>https://apple-design-mcp.com/mcp</span></code></pre></div>
+        <div class="media tabgallery-panel media-pad"><pre class="code"><code><span data-server-url>https://apple-design-mcp.com/mcp</span></code></pre></div>
+        <div class="media tabgallery-panel media-pad"><pre class="code"><code><span data-server-url>https://apple-design-mcp.com/mcp</span></code></pre></div>
       </div>
       <div class="tabgallery-captions">
         <p class="tabgallery-caption"><strong>Claude</strong> (chat, projects, Claude Design, desktop and mobile apps).<br>1. Open Settings → Connectors and choose Add custom connector.<br>2. Name it “Apple Design” and paste the URL.<br>3. Ask for an Apple screen.</p>
         <p class="tabgallery-caption"><strong>Claude Code.</strong> Run this once in a terminal.</p>
         <p class="tabgallery-caption"><strong>Cursor.</strong> Add this to <code>~/.cursor/mcp.json</code>.</p>
         <p class="tabgallery-caption"><strong>VS Code.</strong> Add this to <code>.vscode/mcp.json</code>.</p>
-        <p class="tabgallery-caption"><strong>ChatGPT</strong> (Plus, Pro, Business and Enterprise, on the web).<br>1. Open Settings → Connectors → Advanced and turn on Developer mode. <br>2. Back on Connectors, click Create. <br>3. Name it “Apple Design”, paste the URL and choose No authentication. <br>4. In a new chat, open the + menu, choose Developer mode and tick Apple Design.<br>On Business and Enterprise, a workspace owner has to allow developer mode first.</p>
+        <p class="tabgallery-caption"><strong>ChatGPT</strong> (Plus, Pro, Business and Enterprise, on the web).<br>1. Go to <a href="https://chatgpt.com/plugins">chatgpt.com/plugins</a>.<br>2. Click +, then Add custom MCP server.<br>3. Name it “Apple Design”, paste the URL under Server URL and choose No authentication.<br>4. Tick I understand and want to continue, then click Create as a plugin.<br>5. Install Apple Design from your personal plugins.<br>6. In a new chat, type <code>@</code> and pick Apple Design.<br>If + doesn’t show Add custom MCP server, turn on Developer mode at <a href="https://chatgpt.com/settings/security">chatgpt.com/settings/security</a> and reload the Plugins page.</p>
+        <p class="tabgallery-caption"><strong>Perplexity</strong> (Pro, Max and Enterprise).<br>1. Open Plugins in the sidebar (or Customize → Connectors).<br>2. Click Add custom → Connector → Add MCP connector, then select Remote.<br>3. Name it “Apple Design”, paste the URL under MCP Server URL, set Authentication to None and Transport to Streamable HTTP.<br>4. Tick the risk acknowledgement and click Add.<br>5. Click the Apple Design card on the Plugins page to enable it.</p>
+        <p class="tabgallery-caption"><strong>Grok</strong> (grok.com).<br>1. Go to <a href="https://grok.com/connectors">grok.com/connectors</a>.<br>2. Click New Connector, then select Custom.<br>3. Name it “Apple Design”, paste the URL under Server URL and click Add Connector.<br>4. Start a new chat. Apple Design’s tools are available without a per-chat toggle.</p>
         <p class="tabgallery-caption"><strong>Anything else.</strong> Add the URL as a remote MCP server. No authentication.</p>
       </div>
     </div>

@@ -11,3 +11,6 @@
   .setup-tabs .tabgallery-panel { aspect-ratio: auto; min-height: 180px; }
   .setup-tabs .code { font-size: 14px; line-height: 20px; }
 }
+
+/* setup steps read as a list, so their captions run left-aligned in the centred column */
+.setup-tabs .tabgallery-caption { text-align: left; }
