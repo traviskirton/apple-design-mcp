@@ -1,0 +1,8 @@
+{
+  "name": "apple-design",
+  "version": "0.1.0",
+  "description": "Apple's design resources for designing Apple apps: Human Interface Guidelines, SF Symbols, UI kit components, device sizes and frames.",
+  "author": { "name": "Travis Kirton" },
+  "homepage": "https://apple-design-mcp.com",
+  "repository": "https://github.com/traviskirton/apple-design-mcp"
+}
