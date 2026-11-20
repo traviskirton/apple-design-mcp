@@ -105,7 +105,18 @@ try {
   check(!frames.isError && frames.text.includes("### iPhone Duo, outer screen (closed)"), "get_device_frame did not return the iPhone Duo outer frame");
   check(frames.text.includes("### iPhone Duo, inner screen (open)"), "get_device_frame did not return the iPhone Duo inner frame");
   check(frames.text.includes("Screen: 466 × 678 points"), "the outer frame's screen should be 466 × 678 points");
-  check(/<svg [^>]*viewBox="0 0 [\d.]+ [\d.]+"/.test(frames.text), "a frame should come as an SVG with a viewBox");
+  // Beside Apple's bezels the vector frame comes as an address; without them, as the drawing itself.
+  const frameUrl = /^SVG: (https?:\/\/\S+\/frames\/[^ ]+\.svg)$/m.exec(frames.text)?.[1];
+  if (frameUrl) {
+    check(!frames.text.includes("<svg"), "with bezels in the reply, the vector frame should come as an address, not inline");
+    const res = await fetch(frameUrl);
+    check(res.ok && res.headers.get("content-type")?.startsWith("image/svg+xml"), `the vector frame at ${frameUrl} should be served as SVG`);
+    check(/<svg [^>]*viewBox="0 0 [\d.]+ [\d.]+"/.test(await res.text()), "a served frame should be an SVG with a viewBox");
+  } else {
+    check(/<svg [^>]*viewBox="0 0 [\d.]+ [\d.]+"/.test(frames.text), "a frame should come as an SVG with a viewBox");
+  }
+  const plain = await call("get_device_frame", { devices: ["iPhone SE"] });
+  check(!plain.isError && /<svg [^>]*viewBox="0 0 [\d.]+ [\d.]+"/.test(plain.text), "a device with no bezel should get its vector frame inline");
 
   const noFrame = await call("get_device_frame", { devices: ["nokia"] });
   check(noFrame.isError && noFrame.text.includes("No bezel or frame is loaded"), "get_device_frame should say when it has no frame");
