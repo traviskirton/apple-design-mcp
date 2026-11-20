@@ -1,6 +1,6 @@
 {
   "name": "apple-design-mcp-server",
-  "version": "0.13.1",
+  "version": "0.13.2",
   "private": true,
   "type": "module",
   "scripts": {
@@ -14,9 +14,9 @@
     "pack:values": "node scripts/build-design-values.mjs",
     "pack:ui-kit": "node scripts/build-ui-kit-pack.mjs",
     "pack:bezels": "node scripts/build-bezel-pack.mjs",
-    "pack:skill": "node scripts/pack-skill.mjs",
+    "pack:skill": "node scripts/build-skill-zip.mjs",
     "typecheck": "tsc --noEmit",
-    "check": "node scripts/check-assets.mjs && tsc --noEmit && node test/svg.mjs && node test/ranking.mjs && node test/coverage.mjs && node test/brief.mjs && node test/skill-zip.mjs",
+    "check": "node scripts/check-assets.mjs && tsc --noEmit && node test/svg.mjs && node test/ranking.mjs && node test/coverage.mjs && node test/brief.mjs",
     "test": "node test/smoke.mjs",
     "test:svg": "node test/svg.mjs",
     "test:ranking": "node test/ranking.mjs",
