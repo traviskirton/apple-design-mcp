@@ -46,16 +46,17 @@ const DRAWINGS = join(SERVER, "assets", "ui-kit-svg");
  * compared over the part they share; the size difference is reported separately.
  *
  * Shape everywhere, color only where both are opaque. A pixel is wrong when one image covers it
- * (alpha over `cover`) and the other covers neither it nor a pixel within `radius`; or when both are
+ * (alpha over `cover`) and the other draws nothing (alpha up to `faint`) at it or within `radius`; or when both are
  * opaque there and no opaque pixel within `radius` in the other image is within `tolerance` in every
  * channel. Translucent areas count by shape only: Figma draws Liquid Glass against whatever is behind
  * it, which in a lone component is nothing, so its glass comes out a dark gray that no app shows,
  * while our drawings carry the glass as it looks over a light backdrop.
- * Anything drawn over that glass comes out darker too (a multiply-blended page dot: 111 in Figma,
+ * Our glass is often a white fill at 9-18% opacity, hence `faint`; `radius` 2 (1 point at 2x) allows
+ * for Chrome and Figma placing text a pixel apart. Anything drawn over that glass comes out darker too (a multiply-blended page dot: 111 in Figma,
  * 179 in ours), hence the wide color tolerance; it still catches black bands, missing pictures and
  * wrong colors such as blue for gray.
  */
-export function compareImages(ref, ours, { tolerance = 80, radius = 1, cover = 64, opaque = 240 } = {}) {
+export function compareImages(ref, ours, { tolerance = 80, radius = 2, cover = 64, faint = 8, opaque = 240 } = {}) {
   const w = Math.min(ref.width, ours.width), h = Math.min(ref.height, ours.height);
   const alpha = (img) => { const a = new Uint8Array(w * h); for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) a[y * w + x] = img.data[(y * img.width + x) * 4 + 3]; return a; };
   const rgb = (img) => { const c = new Uint8Array(w * h * 3); for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) for (let k = 0; k < 3; k++) c[(y * w + x) * 3 + k] = img.data[(y * img.width + x) * 4 + k]; return c; };
@@ -75,8 +76,8 @@ export function compareImages(ref, ours, { tolerance = 80, radius = 1, cover = 6
     const inA = aA[p] > cover, inB = aB[p] > cover;
     if (aA[p] > 8 || aB[p] > 8) ink++;
     let off = false;
-    if (inA && !near(x, y, (q) => aB[q] > cover)) off = true;
-    else if (inB && !near(x, y, (q) => aA[q] > cover)) off = true;
+    if (inA && !near(x, y, (q) => aB[q] > faint)) off = true;
+    else if (inB && !near(x, y, (q) => aA[q] > faint)) off = true;
     else if (aA[p] >= opaque && aB[p] >= opaque) {
       off = !near(x, y, (q) => aB[q] >= opaque && sameColor(cA, p, cB, q)) || !near(x, y, (q) => aA[q] >= opaque && sameColor(cB, p, cA, q));
     }
@@ -198,6 +199,8 @@ async function checkUiKit({ out, kitFilter, limit, refresh, maxScore }) {
         const m = /<svg\b[^>]*?\bwidth="([\d.]+)"[^>]*?\bheight="([\d.]+)"/.exec(svg);
         if (!m) { entry.error = "the SVG has no width and height"; results.push(entry); continue; }
         const [width, height] = [Number(m[1]), Number(m[2])];
+        // A knob's box can be 1 or 2 points wide with the knob drawn outside it; there is nothing to compare.
+        if (width < 4 || height < 4) { entry.error = `its box is only ${width}x${height}`; results.push(entry); continue; }
         const page = join(tmp, "drawing.svg");
         writeFileSync(page, svg);
         const ours = decodePNG(await chrome.screenshot(pathToFileURL(page).href + `?n=${i}`, { width, height, scale: 2 }));
