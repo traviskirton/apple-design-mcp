@@ -9,3 +9,6 @@ __pycache__/
 *.pyc
 .build/
 node_modules/
+
+# Private to-do list (repo is public)
+/TODO.md
