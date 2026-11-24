@@ -135,7 +135,7 @@ p, h1, h2, h3, ol, ul, figure { margin: 0; }
 
 /* What's inside */
 .inside { list-style: none; padding: 0; border-top: 1.5px solid var(--ink); }
-.inside li { display: grid; grid-template-columns: auto minmax(240px,420px); justify-content: space-between; gap: 40px; align-items: center; padding: 22px 0; border-bottom: 1px solid var(--rule); }
+.inside li { display: grid; grid-template-columns: minmax(0,1fr) 320px; gap: 40px; align-items: center; padding: 22px 0; border-bottom: 1px solid var(--rule); }
 .inside .big { display: flex; flex-wrap: nowrap; white-space: nowrap; column-gap: .22em; align-items: baseline; font-stretch: 68%; font-weight: 900; font-size: 104px; line-height: .9; text-transform: uppercase; letter-spacing: -.01em; }
 .inside .big span:first-child { color: var(--accent); }
 .inside .detail { font: 500 17px/1.5 var(--mono); color: var(--muted); }
