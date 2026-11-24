@@ -11,7 +11,7 @@ let results = [
 
 let package = Package(
     name: "QualityTest",
-    platforms: [.iOS("27.1"), .macOS("27.0")],
+    platforms: [.iOS("27.1"), .macOS("26.0")],
     products: results.map { .library(name: $0, targets: [$0]) },
     targets: results.map { .target(name: $0, swiftSettings: [.swiftLanguageMode(.v5)]) }
 )
