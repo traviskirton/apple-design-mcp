@@ -143,7 +143,7 @@ p, h1, h2, h3, ol, ul, figure { margin: 0; }
 /* Footer */
 .footer { background: var(--accent); color: var(--on-accent); padding: 100px 0 40px; }
 .footer > .wrap { display: flex; flex-direction: column; gap: 64px; }
-/* Three lines, sized so the longest ("Designed by Apple", 7.9em wide) fits the column; four lines on narrow phones. */
+/* Two lines; same size as before. Two lines on narrow phones too. */
 .footer-title { font-size: min(150px, 10.8vw); }
 .ft-narrow { display: none; }
 @media (max-width: 519px) { .ft-wide { display: none; } .ft-narrow { display: inline; } .footer-title { font-size: min(56px, 14.5vw); } }
@@ -471,7 +471,7 @@ p, h1, h2, h3, ol, ul, figure { margin: 0; }
 
 <footer class="footer">
   <div class="wrap">
-    <p class="display footer-title"><span class="ft-wide">Designed by Apple<br>Delivered to<br>your bot</span><span class="ft-narrow">Designed<br>by Apple<br>Delivered<br>to your bot</span></p>
+    <p class="display footer-title"><span class="ft-wide">Delivered to<br>your bot</span><span class="ft-narrow">Delivered<br>to your bot</span></p>
     <div class="footer-row">
       <div class="urlbox urlbox-dark">
         <div class="url" data-url>https://apple-design-mcp.com/mcp</div>
